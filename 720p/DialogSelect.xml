@@ -1,0 +1,229 @@
+<window id="2000">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<include>GlobalOverlay</include>
+
+
+		<control type="group">
+	
+				<animation effect="fade" time="300" tween="cubic" easing="out">WindowOpen</animation>
+			<animation effect="fade" time="200" tween="cubic" easing="in">WindowClose</animation>
+			<posx>300</posx>
+			<posy>80</posy>
+
+			<control type="image">
+				<posx>-20</posx>
+				<posy>-20</posy>
+				<width>720</width>
+				<height>600</height>
+				<texture border="22">button.png</texture>
+			</control>
+
+		
+
+			<control type="label" id="1">
+				<description>header label</description>
+				<posx>10</posx>
+				<posy>10</posy>
+				<width>660</width>
+				<align>Left</align>
+				<font>Home_header</font>
+				<textcolor>black</textcolor>
+				<label>13406</label>
+			</control>
+
+			<control type="list" id="3">
+				<posx>10</posx>
+				<posy>80</posy>
+				<width>440</width>
+				<height>460</height>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+
+				<itemlayout height="46">
+
+					<control type="image">
+						<width>440</width>
+						<height>44</height>
+					</control>
+
+					<control type="label">
+						<posx>20</posx>
+						<width>400</width>
+						<info>ListItem.Label</info>
+						<font>Medium</font>
+						<textcolor>black</textcolor>
+					</control>
+
+					<control type="label">
+						<posx>420</posx>
+						<width>400</width>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+						<font>Medium</font>
+						<textcolor>black</textcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="46">
+
+					<control type="image">
+						<width>440</width>
+						<height>44</height>
+						<texture border="5">tile.png</texture>
+						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(3)">Conditional</animation>
+					</control>
+
+					<control type="label">
+						<posx>20</posx>
+						<width>400</width>
+						<font>Medium</font>
+						<info>ListItem.Label</info>
+					</control>
+
+					<control type="label">
+						<posx>420</posx>
+						<width>400</width>
+						<align>right</align>
+						<font>Medium</font>
+						<info>ListItem.Label2</info>
+					</control>
+
+				</focusedlayout>
+
+			</control>
+
+			<control type="list" id="6">
+				<posx>10</posx>
+				<posy>80</posy>
+				<width>440</width>
+				<height>460</height>
+				<onleft>5</onleft>
+				<onright>5</onright>
+				<onup>6</onup>
+				<ondown>6</ondown>
+
+				<itemlayout height="92">
+
+					<control type="image">
+						<width>440</width>
+						<height>90</height>
+					</control>
+
+					<control type="image">
+						<posx>8</posx>
+						<posy>8</posy>
+						<width>74</width>
+						<height>74</height>
+						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+					</control>
+
+					<control type="label">
+						<posx>100</posx>
+						<width>400</width>
+						<height>90</height>
+						<info>ListItem.Label</info>
+						<font>Medium</font>
+						<textcolor>black</textcolor>
+					</control>
+
+					<control type="label">
+						<posx>420</posx>
+						<width>400</width>
+						<height>90</height>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+						<font>Medium</font>
+						<textcolor>black</textcolor>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="92">
+
+					<control type="image">
+						<width>440</width>
+						<height>90</height>
+						<texture border="5">other_textures/ButtonFO.png</texture>
+						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(6)">Conditional</animation>
+					</control>
+
+					<control type="image">
+						<posx>8</posx>
+						<posy>8</posy>
+						<width>74</width>
+						<height>74</height>
+						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+					</control>
+
+					<control type="label">
+						<posx>100</posx>
+						<width>400</width>
+						<height>90</height>
+						<info>ListItem.Label</info>
+						<font>Medium</font>
+					</control>
+
+					<control type="label">
+						<posx>420</posx>
+						<width>400</width>
+						<height>90</height>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+						<font>Medium</font>
+					</control>
+
+				</focusedlayout>
+
+			</control>
+
+			<control type="label" id="2">
+				<description>Number Of Files</description>
+				<posx>470</posx>
+				<posy>80</posy>
+				<width>200</width>
+				<align>center</align>
+						<font>Medium</font>
+						<textcolor>black</textcolor>
+				<label>-</label>
+			</control>
+
+			<control type="button" id="5">
+				<description>Manual</description>
+				<posx>470</posx>
+				<posy>126</posy>
+				<width>200</width>
+				<label>368</label>
+				<onleft>3</onleft>
+				<onright>3</onright>
+				<onup>3</onup>
+				<ondown>3</ondown>
+				
+						<textcolor>black</textcolor>
+			</control>
+
+			<control type="image">
+				<description>Large Icon Image</description>
+				<posx>470</posx>
+				<posy>238</posy>
+				<width>200</width>
+				<height>300</height>
+				<texture fallback="DefaultAddonNone.png">$INFO[Container(6).ListItem.Icon]</texture>
+				<aspectratio align="center" aligny="bottom">keep</aspectratio>
+				<bordertexture border="5">white_box.png</bordertexture>
+				<bordersize>5</bordersize>
+			</control>
+
+		</control>
+
+		<include>Debug_Grid</include>
+
+	</controls>
+
+</window>

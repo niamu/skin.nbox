@@ -1,0 +1,208 @@
+<window id="2903">
+	<defaultcontrol always="true">2</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+	
+	<animation type="WindowOpen">
+		<effect type="slide" start="-200,0" end="0,0" time="600" tween="cubic" easing="out" />
+		<effect type="fade" start="0" end="100" time="600" />
+	</animation>
+	<animation type="WindowClose">
+		<effect type="slide" start="0,0" end="-200,0" time="600" tween="cubic" easing="out" />
+		<effect type="fade" start="100" end="0" time="600" />
+	</animation>
+
+
+	<controls>
+		<control type="group">
+			   <posx>15</posx>
+			   <posy>610</posy>
+			   <control type="group">
+				        <visible>!Window.IsActive(visualisation) + !Window.IsActive(karaoke) + !Window.IsActive(slideshow)</visible>
+                <control type="image">
+				              <posx>345</posx>
+				              <posy>-2</posy>
+				              <width>1000</width>
+				              <height>800</height>
+				              <texture>tile.png</texture>
+			           </control>
+                 	<control id="950">
+		                  <type>button</type>
+					            <label></label>
+					            <posx>345</posx>
+				              <posy>-2</posy>
+				              <width>1000</width>
+				              <height>800</height>
+					            <align>left</align>
+					            <onup>504</onup>
+					            <ondown>501</ondown>
+					            <onleft></onleft>
+					            <onright></onright>
+					            <onclick>ActivateWindow(visualisation,return)</onclick>
+		              </control>
+                  <control type="image">
+				              <posx>345</posx>
+				              <posy>-2</posy>
+				              <width>1000</width>
+				              <height>800</height>
+				              <texture>button.png</texture>
+				              <visible>[Control.HasFocus(950)]</visible>
+				              <animation effect="fade" time="200" tween="square">VisibleChange</animation>
+				              <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(950)">Conditional</animation>
+		            </control>
+                <!-- CD ART -->
+                	  <control type="group">
+                    <!--
+		                      <animation type="Conditional" reversible="false" condition="MusicPlayer.HasNext" loop="true">
+			                     <effect type="slide" start="-400,0" end="0,0" time="500" delay="0" />
+			                     <effect type="slide" start="0,0" end="-400,0" time="500" delay="11000" />
+			                     <effect type="slide" start="0,0" end="-400,0" time="500" delay="18000" />
+		                      </animation>
+                      -->
+                     <control type="image" id="7026">
+				                  <description>dirty hack for showing cdart image</description>
+                          <posx>310</posx>
+				                  <posy>3</posy>
+                          <width>100</width>
+				                  <height>100</height>
+				                  <texture fallback="music/vinyls.png">$INFO[Player.FolderPath]cdart.png</texture>
+				                  <aspectratio align="bottom">keep</aspectratio>
+				                  <include>cdartspinNP</include>
+			               </control>
+			               <control type="image">
+				                  <description>cover image</description>
+				                  <posx>350</posx>
+				                  <posy>3</posy>
+				                  <width>100</width>
+				                  <height>100</height>
+				                  <texture diffuse="music/musicwallmatte.png">$INFO[MusicPlayer.Cover]</texture>
+				                  <visible>Player.HasAudio</visible>
+			               </control>
+                     <!--
+			               <control type="image">
+				                  <posx>350</posx>
+				                  <posy>3</posy>
+				                  <width>110</width>
+				                  <height>110</height>
+				                  <texture>music/musicwallframeF.png</texture>
+				                  <aspectratio scalediffuse="false">stretch</aspectratio>
+				                  <visible>Player.HasAudio</visible>
+			               </control>
+                     -->
+		            </control>
+
+                <!-- FIN CD ART -->
+                <!--
+				        <control type="image">
+					             <posx>350</posx>
+					             <posy>3</posy>
+					             <width>50</width>
+					             <height>50</height>
+					             <texture >disc.png</texture>
+				        </control>
+
+				        <control type="image">
+					             <posx>350</posx>
+					             <posy>3</posy>
+					             <width>50</width>
+					             <height>50</height>
+					             <texture >disc_marker.png</texture>
+					             <animation effect="rotate" end="-360" center="auto" time="2500" loop="true" reversible="false" condition="!Player.Paused+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Forwarding2x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="-360" center="auto" time="1600" loop="true" reversible="false" condition="Player.Forwarding4x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="-360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Forwarding8x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="-360" center="auto" time="700" loop="true" reversible="false" condition="Player.Forwarding16x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="-360" center="auto" time="400" loop="true" reversible="false" condition="Player.Forwarding32x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Rewinding2x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="360" center="auto" time="850" loop="true" reversible="false" condition="Player.Rewinding4x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="360" center="auto" time="700" loop="true" reversible="false" condition="Player.Rewinding8x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="360" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding16x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="360" center="auto" time="350" loop="true" reversible="false" condition="Player.Rewinding32x+Player.HasAudio">Conditional</animation>
+				      </control>
+-->
+			         <control type="label">
+					           <description>Now Playing</description>
+					           <posx>520</posx>
+					           <posy>0</posy>
+					           <width>1220</width>
+					           <label>[LOWERCASE][COLOR Accent]$INFO[MusicPlayer.Artist,,][/COLOR][/LOWERCASE]</label>
+					           <scroll>true</scroll>
+					           <font>Home_menu</font>
+					           <align>left</align>
+				       </control>
+
+		            <control type="label">
+					             <description>Now Playing</description>
+					             <posx>520</posx>
+					             <posy>32</posy>
+					             <width>1220</width>
+					             <label>[LOWERCASE]$INFO[MusicPlayer.Title,,][COLOR Accent]$INFO[MusicPlayer.Album, ,][/COLOR][/LOWERCASE]</label>
+					             <scroll>true</scroll>
+					             <font>Medium</font>
+					             <align>left</align>
+				        </control>
+			</control>
+      <visible>!Container.Content(songs)</visible>
+		</control>
+		
+		<control type="group">
+			<posx>15</posx>
+			<posy>610</posy>
+			<control type="group">
+				    <visible>!Window.IsActive(visualisation) + !Window.IsActive(karaoke) + !Window.IsActive(slideshow)</visible>
+				    <control type="image">
+					         <posx>0</posx>
+					         <posy>3</posy>
+					         <width>50</width>
+					         <height>50</height>
+					         <texture >disc_black.png</texture>
+				    </control>
+
+				    <control type="image">
+					         <posx>0</posx>
+					         <posy>3</posy>
+					         <width>50</width>
+					         <height>50</height>
+					         <texture >disc_marker_black.png</texture>
+					         <animation effect="rotate" end="-360" center="auto" time="2500" loop="true" reversible="false" condition="!Player.Paused+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Forwarding2x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="-360" center="auto" time="1600" loop="true" reversible="false" condition="Player.Forwarding4x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="-360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Forwarding8x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="-360" center="auto" time="700" loop="true" reversible="false" condition="Player.Forwarding16x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="-360" center="auto" time="400" loop="true" reversible="false" condition="Player.Forwarding32x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Rewinding2x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="360" center="auto" time="850" loop="true" reversible="false" condition="Player.Rewinding4x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="360" center="auto" time="700" loop="true" reversible="false" condition="Player.Rewinding8x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="360" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding16x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="360" center="auto" time="350" loop="true" reversible="false" condition="Player.Rewinding32x+Player.HasAudio">Conditional</animation>
+				    </control>
+			       <control type="label">
+					         <description>Now Playing</description>
+					         <posx>60</posx>
+					         <posy>0</posy>
+					         <width>566</width>
+					         <label>[LOWERCASE][COLOR Black]$INFO[MusicPlayer.Artist,,][/COLOR][/LOWERCASE]</label>
+					         <scroll>true</scroll>
+					         <font>Home_menu</font>
+					         <align>left</align>
+				      </control>
+		          <control type="label">
+					         <description>Now Playing</description>
+					         <posx>60</posx>
+					         <posy>32</posy>
+					         <width>566</width>
+					         <label>[LOWERCASE]$INFO[MusicPlayer.Title,,][COLOR Black]$INFO[MusicPlayer.Album, ,][/COLOR][/LOWERCASE]</label>
+					         <scroll>true</scroll>
+					         <font>Medium</font>
+					         <align>left</align>
+				      </control>
+			</control>
+				<visible>Window.IsActive(musiclibrary) + Container.Content(songs)</visible>
+		</control>
+		
+		
+
+		<include>Debug_Grid</include>
+
+	</controls>
+
+</window>

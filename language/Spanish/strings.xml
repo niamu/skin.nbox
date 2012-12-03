@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="yes"?>
+
+<!--Translator: KiSUAN-->
+<!--Date of translation: 20/11/2010-->
+
+<strings>
+
+	<!-- Main Labels -->
+	
+	
+	
+	
+	<string id="31007">Plugins</string><!-- GOOD -->
+	<string id="31024">Página</string><!-- GOOD -->
+	<string id="31025">Elementos</string><!-- GOOD -->
+	<string id="31326">Creado</string>
+	<string id="31327">Resolución</string>
+	<string id="31029">Deshabilitar Vistas</string><!-- GOOD -->
+	
+	<!-- Settings labels -->
+	
+	<string id="31032">Deshabilitar Reloj</string><!-- GOOD -->
+	<string id="31033">Desplazar Trama para Películas y Series</string>
+	<string id="31034">Deshabilitar Etiquetas Multimedia</string>
+	<string id="31035">Habilitar Marcas para Películas Vistas</string>
+	<string id="31036">Habilitar Marcas para Series Vistas</string>
+	<string id="31037">Bloquear Vistas en Lugar(Modo Kiosk)</string>
+	<string id="31038">Opciones de Visualización de Música</string>
+	<string id="31039">Usar Fanart en lugar de Visualización</string>
+	<string id="31040">Usar JukeBox al Reproducir en Pantalla Completa</string>
+	<string id="31041">Habilitar Fanart Oscuro para reproducción en Pantalla Completa</string>
+	<string id="31042">Ocultar Elementos del Menú Principal</string>
+	<string id="31043">Ajustar Opciones para Series</string>
+	<string id="31044">Usar Posters para Series</string>
+	<string id="31045">Usar Banners para Series</string>
+	<string id="31047">Deshabilitar Vistas para Películas y Series</string><!-- GOOD -->
+	
+<!--VIEWS -->	
+	<string id="31048">16x9</string>
+	<string id="31049">Panel Banners</string>
+	<string id="31213">Panel Muro</string>
+	<string id="31051">Panel</string>
+	<string id="31052">Apaisado</string>
+	<string id="31053">Apaisado 3D</string>
+	<string id="31054">Panel Apaisado</string>
+	<string id="31062">Poster</string>
+	<string id="31063">Carátula</string>
+	<string id="31064">Muro</string>
+	<string id="31065">Deshabilitar Vistas de Música</string>
+	<string id="31066">Jukebox</string>
+	<string id="31250">3D Banner</string>
+	<string id="31245">Fanart Apaisado</string>
+	
+	
+<!--MORE COMMON PHRASES -->	
+	<string id="31067">Explorador</string><!-- GOOD -->
+	<string id="31073">SILENCIO</string><!-- GOOD -->
+	<string id="31074">Hora Actual</string><!-- GOOD -->
+	<string id="31075">Hora Finalización</string><!-- GOOD -->
+	<string id="31076">Modo Kiosk</string><!-- GOOD -->
+	<string id="31079">Títulos</string><!-- GOOD -->
+	<string id="31081">Recientemente Añadido</string><!-- GOOD -->
+	<string id="31082">Créditos</string>
+	<string id="31086">Mostrar Fanart</string><!-- GOOD -->
+	<string id="31088">Tipo de Vistas</string><!-- GOOD -->
+	<string id="31094">Carátula Oscura</string><!-- GOOD -->
+	<string id="31095">VER</string>
+	<string id="31096">Expuestos</string><!-- GOOD -->
+	<string id="31097">Ocultos</string><!-- GOOD -->
+	<string id="31098">Vistos</string>
+	<string id="31099">TITULO</string>
+	<string id="31200">Mostrar Miniaturas</string><!-- GOOD -->
+	<string id="31201">Deshabilitar Miniaturas</string><!-- GOOD -->
+	<string id="31202">Usar Logo</string><!-- GOOD -->
+	<string id="31203">Sin Logo</string><!-- GOOD -->
+	<string id="31204">Deshabilitar Etiquetas</string><!-- GOOD -->
+	<string id="31205">Mostrar Etiquetas</string><!-- GOOD -->
+	<string id="31206">Miniaturas Extra</string><!-- GOOD -->
+	<string id="31207">Etiquetas</string>
+	<string id="31208">Titulo</string>
+	<string id="31209">Series</string><!-- GOOD -->
+	<string id="31210">Fanart Miniatura</string>
+	<string id="31211">Miniaturas 16x9</string>
+	<string id="31212">Teatro</string>
+	<string id="31214">Vista Oscura</string><!-- GOOD -->
+	<string id="31215">Mostrar Botón de Script de Subtítulos en OSD</string><!-- GOOD -->
+	<string id="31216">Ruta del Script:</string><!-- GOOD -->
+	<string id="31217">Habilitar Script Centro de Entretenimiento</string>
+	<string id="31218">Opciones Energía</string>
+	<string id="31219">landscape.jpg</string><!-- GOOD -->
+	<string id="31220">Miniaturas en Cache</string><!-- GOOD -->
+	<string id="31221">Usar Fanart según Clima</string>
+	<string id="31226">Clasificación</string><!-- GOOD -->
+	<string id="31229">Estrenada en</string><!-- GOOD -->
+	<string id="31230">Estrenada en</string><!-- GOOD -->
+	<string id="31231">Estrenada</string><!-- GOOD -->
+	<string id="31232">IR [CR]ATRÁS</string>
+	<string id="31233">Elija una canción</string><!-- GOOD -->
+	<string id="31234">on</string><!-- GODD -->
+	<string id="31235">RETROCEDER</string>
+	<string id="31237">Presionar Abajo para ver Avance</string>
+	<string id="31238">Presionar "X" para Parar</string>
+	<string id="31240">Presionar "Izquierda" para ver Avances</string>
+	<string id="31241">Mostrar Widget del Clima</string>
+	<string id="31242">Ajustar Temporizador</string><!-- GOOD -->
+	<string id="31243">Cancelar Temporizador</string><!-- GOOD -->
+	<string id="31244">Menú de Inicio Horizontal</string>
+	<string id="31246">Mostrar Trama</string>
+	<string id="31247">Habilitar Reloj Global</string>
+	<string id="31248">Usar "Reproduciendo..." Pequeño para Música</string>
+	<string id="31249">Obtener Logo</string>
+	<string id="31251">Ubicación</string>
+	<string id="31252">Ultima Actualización</string><!-- GOOD -->
+	<string id="31253">Álbumes  Recientes</string><!-- GOOD -->
+	<string id="31254">3 Días Mínimo</string>
+	<string id="31255">4 Días Máximo</string>
+	<string id="31256">Ajustes Globales</string>
+	<string id="31257">Usar Fondos Aleatorios para Música - Mismos que en Pantalla Principal</string>
+	<string id="31258">Usar Fondos Aleatorios para Fotos - Mismos que en Pantalla Principal</string>
+	<string id="31259">Opciones de Pantalla de Inicio</string>
+	<string id="31260">Añadir Elementos Personalizados al Inicio</string>
+	<string id="31261">Favoritos Personalizados</string>
+	<string id="31262">Fijar Etiqueta</string>
+	<string id="31263">Script para Descargar Logos Automáticamente</string>
+	<string id="31264">Presionar para Iniciar el Script de Logo</string>
+	<string id="31265">Al presionar el botón el script automáticamente buscara el logo para cualquier serie agregada a la biblioteca, y los descargara si hay alguno, salvándolos como logo.png en la raíz de la carpeta de cada serie[CR]**Ir a www.lockstockmods.net si deseas seleccionar uno por uno**</string>
+	
+
+
+<!-- 
+These last blocks are from Confluence and you can 
+just copy the translations from Confluence to here
+-->
+	
+	<!-- Playlist Editor labels -->
+  <string id="31055">Abrir Lista de Reproducción</string>
+  <string id="31056">Salvar Lista de Reproducción</string>
+  <string id="31057">Cerrar Lista de Reproducción</string>
+  <string id="31058">Sistema de Archivos de Música</string>
+  <string id="31059">Lista de Reproducción Actual</string>
+  <string id="31060">Este archivo está agrupado, selecciona la parte a reproducir</string>
+  <string id="31061">Selección Actual</string>
+	
+	<!-- Confluence Labels -->
+  <string id="91000">Cambia Tus</string>
+  <string id="31110">Editar Fondo de Pantalla del Botón de Inicio</string>
+  <string id="31113">Imagen Única</string><!-- GOOD -->
+  <string id="31114">Imágenes Múltiples</string><!-- GOOD -->
+	 <!-- Description Labels  -->
+  
+  <string id="31106">Opciones de Misceláneas</string>
+  <string id="31115">Personalizar</string><!-- GOOD -->
+  <string id="31116">Addon Scripts</string><!-- GOOD -->
+  <string id="31117">Mostrar Contenido Agregado Recientemente en Inicio</string>
+  <string id="31118">Comprobar si Utiliza Versión Actual</string>
+  <string id="31323">Ultimas Películas</string>
+  <string id="31309">Memoria Usada:</string>
+  <string id="31200">Atajos</string>
+  <string id="31122">Pagina del Clima</string>
+  <string id="31324">Últimos Episodios</string><!-- good -->
+  <string id="31325">Opciones de Reproducción</string>
+  <string id="31126">Habilitar Letras en OSD de Música</string>
+  <string id="31127">Ruta a Script de Letras</string>
+  <string id="31128">Letras XBMC</string>
+  <string id="31129">Habilitar Descarga de Subtítulos en el OSD de Vídeo</string>
+  <string id="31130">Ruta a Script de Subtítulos</string>
+
+ 
+  <string id="31400">[B]CONFIGURAR OPCIONES DE APARIENCIA[/B][CR][CR]Cambia de skin · Selecciona idioma y región · Cambia opciones de listas de archivos[CR]Elige un salva pantallas</string>
+  <string id="31401">[B]CONFIGURAR OPCIONES DE VÍDEO[/B][CR][CR]Administra la librería de vídeo · Elige opciones de reproducción · Cambia opciones de listado de vídeo[CR]Elige fuentes de subtítulos</string>
+  <string id="31402">[B]CONFIGURAR OPCIONES DE MÚSICA[/B][CR][CR]Administra la librería de música · Elige opciones de reproducción · Cambia opciones de listado de música[CR]Configura canciones a enviar· Elige opciones de karaoke</string>
+  <string id="31403">[B]CONFIGURAR OPCIONES DE IMÁGENES[/B][CR][CR]Cambia opciones de listado de imágenes · Configura diapositivas</string>
+  <string id="31404">[B]CONFIGURAR OPCIONES DE CLIMA[/B][CR][CR]Elige las ciudades a visualizar el Clima</string>
+  <string id="31405">[B]CONFIGURAR OPCIONES DE RED[/B][CR][CR]Configura el control de XBMC vía UPnP y HTTP · Configura compartir archivos[CR]Elige opciones de acceso a Internet</string>
+  <string id="31406">[B]CONFIGURAR OPCIONES DE SISTEMA[/B][CR][CR]Configura y calibra las pantallas· Configura salida de audio · Configura controles remotos[CR]Elige opciones de ahorro de energía· Habilita modo debug · Configura el bloqueo maestro</string>
+  <string id="31407">[B]CONFIGURAR OPCIONES DE SKIN[/B][CR][CR]Configura Night skin · Añade y remueve elementos del Inicio [CR]Cambia fondos del skin</string>
+  <string id="31408">[B]CONFIGURAR ADD-ONS[/B][CR][CR]Administra tus Add-ons instalados · Explora e instala Add-ons desde xbmc.org[CR]Modifica las opciones de Add-on</string>
+  <string id="31420">[B][COLOR=white]XBMC no a detectado un Disco.[/COLOR][/B][CR][CR]Inserta un disco y vuelve a intentar o cancela</string>
+  <string id="31421">Selecciona tu Perfil de Usuario [CR] para conectarte y continua</string>
+  <string id="31319">Perfil Seleccionado</string>
+  <string id="31320">Ultima Conexión</string>
+  
+  
+  
+  
+    <!-- NEW 6/12-->
+  
+  <string id="31003">Lista de Reproducción Personalizada</string>
+  <string id="31004">Series</string>
+  <string id="31005">Esta opción permitirá mostrar mas información cuando se pausa una película</string>
+  <string id="31006">PosterPlus</string>
+  <string id="31008">Apagar</string><!-- GOOD -->
+  <string id="31119">Habilitar Botón Personalizado para Scripts</string>
+  <string id="31120">Etiqueta de Botón</string>
+  <string id="31121">RUTA A SCRIPT</string>
+  
+  
+  
+ 
+  <string id="31090">Orden</string>
+  <string id="31093">Secuencia</string>
+  <string id="31266">Habilitar "fanart extra" - permite un ciclo aleatorio de fanart en Modo Librería</string>
+  <string id="31267">El Usuario necesita carpeta "extrafanart" en la raíz de la carpeta de la Serie o película</string>
+  <string id="31268">Logo</string>
+  <string id="31269">Usar landscape.jpg en lugar de miniaturas en Nivel de Series</string>
+  <string id="31270">El Usuario necesita la imagen landscape.jpg en la raíz de la carpeta de la Serie</string>
+  <string id="40281">Elementos</string>
+  <string id="31271">Establecer Inicio Abajo</string>
+  <string id="31272">Addons</string>
+  <string id="31273">Explorar Addons</string>
+  <string id="31274">REPRODUCIENDO</string>
+  <string id="31275">Episodios Recientes</string>
+  <string id="31276">Reproducir Avances En Pantalla Completa</string>
+  <string id="31277">Mostrar Botón de Letras en OSD de Música</string>
+  <string id="31278">Reproducir Vídeos en Fondo, No en Ventana Pequeña de Reproducción</string>
+  <string id="31279">Diapositiva</string>
+  <string id="31280">Películas HD</string>
+  <string id="31281">Efecto Ken Burns - Rotar/Zoom Fanart en Inicio</string>
+  <string id="31282">Habilitar Fanart de Temporadas en Nivel de Episodios, deshabilitara "Fanart Extra"</string>
+  
+  <!-- NEW 9/7-->
+  <string id="31283">Usar en Librería de Música y Vistas de Películas/Series</string>
+  
+  
+  <!-- NEW 9/17-->
+  <string id="31284">Remover Información</string>
+  <string id="31285">Mostrar Información</string>
+  <string id="31286">Abajo Trama</string>
+  <string id="31287">Trama Automática</string>
+  <string id="31288">Estantería</string>
+  <string id="31290">Añadir a Favorito</string>
+  <string id="31291">Añadir a Lista Reproducción</string>
+  <string id="31292">SubMenus de Película Personalizado</string>
+  <string id="31293">SubMenus de Favoritos Personalizado</string>
+  <string id="31294">SubMenus de Lista de Reproducción Personalizado</string>
+  <string id="31295">SubMenus de Series Personalizado</string>
+  <string id="31296">Recientes</string>
+  
+  <!-- NEW 9/23-->
+  <string id="31297">*Presionar "Abajo" para ver Información*</string>
+  <string id="31298">*Presionar "Abajo" para ver Avance*</string>
+  <string id="31299">Apagar</string>
+  <string id="31300">Prender</string>
+  <string id="31500">Cuadro 3D</string>
+  <string id="31501">Inicio Personalizado</string>
+  <string id="31502">SubMenus de Música Personalizados</string>
+  <string id="31503">Añadir SubMenu para Scripts en Inicio</string>
+  <string id="31504">Asignar Carpeta de Clima Condicionado</string>
+  <string id="31505">Trama</string>
+  <string id="31506">Grilla</string>
+  <string id="31507">Diapositiva</string>
+  <string id="31508">MovieSet</string>
+  <string id="31509">Calificar -</string>
+  <string id="31510">Calificar +</string>
+  <string id="31511">Reproduciendo</string>
+  <string id="31512">Canción</string>
+  
+  <!-- NEW 9/30-->
+  <string id="31513">Usar Elementos Aleatorios en lugar de Elementos Recientes</string>
+  <string id="31514">Un Día</string>
+  <string id="31515">Presionar Abajo para ver Episodios Recientes</string>
+  <string id="31516">*Presionar "Arriba" o "X" para detener el Avance*</string>
+  <string id="31517">Películas Aleatorias</string>
+  <string id="31518">Albumes Aleatorios</string>
+  
+  
+  <!-- NEW 9/30-->
+  <string id="31519">Pausa</string>
+  <string id="31520">Parar</string>
+  <string id="31521">Adelantar</string>
+  <string id="31522">Rebobinar</string>
+  <string id="31523">Expandir</string>
+  <string id="31524">Colapsar</string>
+  <string id="31525">Letras</string>
+  <string id="31526">Menú Películas</string>
+  <string id="31527">SubMenus Personalizados</string>
+  <string id="31528">El Usuario necesita una imagen "banner.jpg" en la raíz de la carpeta de la serie</string>
+  <string id="31529">Usar "banner.jpg" en Series</string>
+  
+  
+  
+  </strings>
+
+  
+  

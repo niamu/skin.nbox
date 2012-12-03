@@ -1,0 +1,110 @@
+<window id="130">
+	<defaultcontrol always="true">5</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<include>GlobalOverlay</include>
+
+		<control type="group">
+			<posx>420</posx>
+			<posy>140</posy>
+
+			<control type="image">
+				<posx>-20</posx>
+				<posy>-20</posy>
+				<width>480</width>
+				<height>496</height>
+				<texture border="22">other_textures/ContentPanel.png</texture>
+			</control>
+
+			<control type="label">
+				<include>DialogID</include>
+				<label>ProfileSettings.xml</label>
+			</control>
+
+			<control type="label" id="1000">
+				<description>Profile Name</description>
+				<posx>10</posx>
+				<posy>32</posy>
+				<width>300</width>
+				<font>Medium</font>
+				<shadowcolor>black</shadowcolor>
+			</control>
+
+			<control type="label" id="1001">
+				<description>Profile Directory</description>
+				<posx>10</posx>
+				<posy>64</posy>
+				<width>300</width>
+			</control>
+
+			<control type="image" id="2">
+				<description>profile image</description>
+				<posx>320</posx>
+				<posy>10</posy>
+				<width>110</width>
+				<height>110</height>
+				<bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+				<bordersize>5</bordersize>
+				<texture>other_textures/unknown-user.png</texture>
+				<aspectratio align="right" aligny="top">keep</aspectratio>
+			</control>
+
+			<control type="grouplist" id="5">
+				<description>Control Area</description>
+				<posx>10</posx>
+				<posy>148</posy>
+				<width>420</width>
+				<height>235</height>
+				<itemgap>2</itemgap>
+				<orientation>vertical</orientation>
+				<onleft>28</onleft>
+				<onright>28</onright>
+				<onup>28</onup>
+				<ondown>28</ondown>
+			</control>
+
+			<control type="button" id="7">
+				<description>button</description>
+			</control>
+
+			<control type="radiobutton" id="8">
+				<description>radio_button</description>
+			</control>
+
+			<control type="spincontrolex" id="9">
+				<description>spin_controlex</description>
+			</control>
+
+			<control type="button" id="28">
+				<description>Ok</description>
+				<posx>10</posx>
+				<posy>392</posy>
+				<width>160</width>
+				<label>186</label>
+				<onleft>5</onleft>
+				<onright>29</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+			</control>
+
+			<control type="button" id="29">
+				<description>Cancel</description>
+				<posx>270</posx>
+				<posy>392</posy>
+				<width>160</width>
+				<label>222</label>
+				<onleft>28</onleft>
+				<onright>5</onright>
+				<onup>5</onup>
+				<ondown>5</ondown>
+			</control>
+
+		</control>
+
+		<include>Debug_Grid</include>
+
+	</controls>
+
+</window>
