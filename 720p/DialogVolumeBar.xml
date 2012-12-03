@@ -1,0 +1,81 @@
+<window id="104">
+	<defaultcontrol always="true">-</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<control type="group">
+			<posx>840</posx>
+			<posy>20</posy>
+
+			<control type="label">
+				<posy>-18</posy>
+				<include>DialogID</include>
+				<label>DialogVolumeBar.xml</label>
+			</control>
+
+			<control type="image">
+				<description>background image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>400</width>
+				<height>44</height>
+				<texture border="20">other_textures/OverlayDialogBackground.png</texture>
+			</control>
+
+			<control type="group">
+				<visible>!player.passthrough</visible>
+
+				<control type="image">
+					<description>Lite Volume Logo</description>
+					<posx>10</posx>
+					<posy>4</posy>
+					<width>40</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<texture>other_textures/VolumeIcon.png</texture>
+				</control>
+
+				<control type="progress" id="1">
+					<description>progress control</description>
+					<posx>50</posx>
+					<posy>12</posy>
+					<width>330</width>
+					<height>18</height>
+					<info>Player.Volume</info>
+				</control>
+
+			</control>
+
+			<control type="group">
+				<visible>player.passthrough</visible>
+
+				<control type="image">
+					<description>Lite Volume Logo</description>
+					<posx>10</posx>
+					<posy>4</posy>
+					<width>40</width>
+					<height>35</height>
+					<aspectratio>keep</aspectratio>
+					<colordiffuse>Red</colordiffuse>
+					<texture>other_textures/VolumeIcon.png</texture>
+				</control>
+
+				<control type="label">
+					<description>Passthrough Label</description>
+					<posx>50</posx>
+					<posy>10</posy>
+					<width>330</width>
+					<height>20</height>
+					<label>29802</label>
+				</control>
+
+			</control>
+
+		</control>
+
+		<include>Debug_Grid</include>
+
+	</controls>
+
+</window>

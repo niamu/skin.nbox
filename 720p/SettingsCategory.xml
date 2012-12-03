@@ -1,0 +1,137 @@
+<window id="12">
+	<defaultcontrol always="true">3</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+		
+			<animation effect="fade" time="400" start="0" end="100" >WindowOpen</animation>
+			<animation effect="fade" time="400" start="100" end="0"  >WindowClose</animation>
+		
+
+	<controls>
+		
+		<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>1280</width>
+				<height>720</height>
+				<texture>button.png</texture>
+				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+		</control>
+
+
+
+		<control type="image" id="2">
+			<description>top left bar</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>20</width>
+			<height>138</height>
+			<visible>true</visible>
+			<texture>bar.png</texture>
+			<animation effect="fade" time="400">WindowOpen</animation>
+			<animation effect="fade" time="400">WindowClose</animation>
+		</control>	
+
+
+		
+		<control type="label">
+			<label>settings</label>
+					<posx>70</posx>
+					<posy>190</posy>
+					<height>30</height>
+					<width>250</width>
+					<font>Home_header</font>
+					<textcolor>black</textcolor>
+					<align>left</align>
+		</control>
+
+
+
+		<control type="grouplist" id="3">
+			<description>Button Area</description>
+			<posx>10</posx>
+			<posy>280</posy>
+			<width>300</width>
+			<height>330</height>
+			<itemgap>2</itemgap>
+			<onleft>5</onleft>
+			<onright>5</onright>
+			<onup>3</onup>
+			<ondown>3</ondown>
+			<orientation>vertical</orientation>
+			<textcolor>black</textcolor>
+			
+
+		</control>
+
+		<control type="grouplist" id="5">
+			<description>Control Area</description>
+			<posx>340</posx>
+			<posy>280</posy>
+			<width>820</width>
+			<height>330</height>
+			<itemgap>2</itemgap>
+			<onleft>3</onleft>
+			<onright>3</onright>
+			<onup>5</onup>
+			<ondown>5</ondown>
+			<orientation>vertical</orientation>
+			<textcolor>black</textcolor>
+			</control>
+
+		<control type="button" id="7">
+			<description>Default Button</description>
+			<align>left</align>
+			<textcolor>black</textcolor>
+		</control>
+
+		<control type="radiobutton" id="8">
+			<description>Default Radio Button</description>
+			<radioposx>770</radioposx>
+			<align>left</align>
+			<textcolor>black</textcolor>
+		</control>
+
+		<control type="spincontrolex" id="9">
+			<description>Default Spin Control</description>
+			<align>left</align>
+			<textcolor>black</textcolor>
+		</control>
+
+		<control type="button" id="10">
+			<description>Default Category Button</description>
+			<align>right</align>
+			<textcolor>black</textcolor>
+		</control>
+
+
+			<control type="image">
+					<posx>1200</posx>
+						<posy>280</posy>
+						<width>40</width>
+						<height>40</height>
+				<texture flipy="true">black_down_arrow.png</texture>
+				<visible>Container(5).HasPrevious</visible>
+<animation effect="fade" time="400">VisibleChange</animation>
+			</control>
+
+			<control type="image">
+					<posx>1200</posx>
+						<posy>566</posy>
+						<width>40</width>
+						<height>40</height>
+				<texture>black_down_arrow.png</texture>
+				<visible>Container(5).HasNext</visible>
+
+<animation effect="fade" time="400">VisibleChange</animation>
+			</control>
+
+
+
+<include>Setting_Heading</include>
+
+		<include>Debug_Grid</include>
+
+	</controls>
+
+</window>

@@ -1,0 +1,104 @@
+<window id="34">
+	<defaultcontrol always="true">4</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<include>GlobalOverlay</include>
+
+		<control type="group">
+			<posx>340</posx>
+			<posy>140</posy>
+
+			<control type="image">
+				<posx>-20</posx>
+				<posy>-20</posy>
+				<width>640</width>
+				<height>496</height>
+				<texture border="22">other_textures/ContentPanel.png</texture>
+			</control>
+
+			<control type="label">
+				<include>DialogID</include>
+				<label>SettingsProfile.xml</label>
+			</control>
+
+			<control type="radiobutton" id="4">
+				<description>Enable Login Screen</description>
+				<posx>10</posx>
+				<posy>36</posy>
+				<width>580</width>
+				<label>20096</label>
+				<align>left</align>
+				<onright>-</onright>
+				<onleft>-</onleft>
+				<onup>-</onup>
+				<ondown>2</ondown>
+			</control>
+
+			<control type="list" id="2">
+				<posx>10</posx>
+				<posy>106</posy>
+				<width>580</width>
+				<height>322</height>
+				<onleft>-</onleft>
+				<onright>-</onright>
+				<onup>4</onup>
+				<ondown>-</ondown>
+
+				<itemlayout height="46">
+
+					<control type="image">
+						<width>580</width>
+						<height>44</height>
+						<texture border="2">other_textures/ButtonNF.png</texture>
+					</control>
+
+					<control type="label">
+						<posx>15</posx>
+						<width>550</width>
+						<info>ListItem.Label</info>
+					</control>
+
+					<control type="label">
+						<posx>565</posx>
+						<width>550</width>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="46">
+
+					<control type="image">
+						<width>580</width>
+						<height>44</height>
+						<texture border="5">other_textures/ButtonFO.png</texture>
+						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(2)">Conditional</animation>
+					</control>
+
+					<control type="label">
+						<posx>15</posx>
+						<width>550</width>
+						<info>ListItem.Label</info>
+					</control>
+
+					<control type="label">
+						<posx>565</posx>
+						<width>550</width>
+						<align>right</align>
+						<info>ListItem.Label2</info>
+					</control>
+
+				</focusedlayout>
+
+			</control>
+
+		</control>
+
+		<include>Debug_Grid</include>
+
+	</controls>
+
+</window>

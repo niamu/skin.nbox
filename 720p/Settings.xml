@@ -1,0 +1,122 @@
+<window id="4">
+	<defaultcontrol always="true">9000</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<include>GlobalBackground</include>
+
+		<control type="label">
+			<include>WindowID</include>
+			<label>Settings.xml</label>
+		</control>
+
+		<control type="list" id="9000">
+			<posx>520</posx>
+			<posy>108</posy>
+			<width>240</width>
+			<height>644</height>
+			<onup>9000</onup>
+			<ondown>9000</ondown>
+			<viewtype label="List">list</viewtype>
+			<scrolltime>200</scrolltime>
+			<itemlayout width="240" height="46">
+
+				<control type="image">
+					<width>240</width>
+					<height>44</height>
+					<texture border="2">other_textures/ButtonNF.png</texture>
+				</control>
+
+				<control type="label">
+					<posx>120</posx>
+					<width>200</width>
+					<font>Medium</font>
+					<align>center</align>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+
+			</itemlayout>
+
+			<focusedlayout width="240" height="46">
+
+				<control type="image">
+					<width>240</width>
+					<height>44</height>
+					<texture border="5">other_textures/ButtonFo.png</texture>
+				</control>
+
+				<control type="label">
+					<posx>120</posx>
+					<width>200</width>
+					<font>Medium</font>
+					<align>center</align>
+					<label>$INFO[ListItem.Label]</label>
+				</control>
+
+			</focusedlayout>
+
+			<content>
+				<item id="1">
+					<description>Appearance</description>
+					<label>480</label>
+					<onclick>activatewindow(AppearanceSettings)</onclick>
+				</item>
+				<item id="2">
+					<description>Videos</description>
+					<label>3</label>
+					<onclick>activatewindow(VideosSettings)</onclick>
+				</item>
+				<item id="3">
+					<description>Music</description>
+					<label>2</label>
+					<onclick>activatewindow(MusicSettings)</onclick>
+				</item>
+				<item id="4">
+					<description>Addons</description>
+					<label>24001</label>
+					<onclick>activatewindow(AddonBrowser)</onclick>
+				</item>
+				<item id="5">
+					<description>Pictures</description>
+					<label>1</label>
+					<onclick>activatewindow(PicturesSettings)</onclick>
+				</item>
+				<item id="6">
+					<description>Weather</description>
+					<label>8</label>
+					<onclick>activatewindow(WeatherSettings)</onclick>
+				</item>
+				<item id="7">
+					<description>Network</description>
+					<label>705</label>
+					<onclick>activatewindow(NetworkSettings)</onclick>
+				</item>
+				<item id="8">
+					<description>System</description>
+					<label>13000</label>
+					<onclick>activatewindow(SystemSettings)</onclick>
+				</item>
+				<item id="9">
+					<description>Profiles</description>
+					<label>13200</label>
+					<onclick>activatewindow(Profiles)</onclick>
+				</item>
+				<item id="10">
+					<description>System Info</description>
+					<label>130</label>
+					<onclick>activatewindow(7)</onclick>
+				</item>
+				<item id="11">
+					<description>Custom Settings</description>
+					<label>636</label>
+					<onclick>activatewindow(56)</onclick>
+				</item>
+			</content>
+		</control>
+
+		<include>Debug_Grid</include>
+
+	</controls>
+
+</window>

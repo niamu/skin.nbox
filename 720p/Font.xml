@@ -1,0 +1,200 @@
+<fonts>
+	<fontset id="default" unicode="true">
+
+		<font>
+			<name>Home</name>
+			<filename>Arial.ttf</filename>
+			<size>64</size>
+		</font>
+		
+		<font>
+			<name>Home_header</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>80</size>
+		</font>
+		
+		
+		<font>
+			<name>Home_numbers</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>70</size>
+		</font>
+		
+		
+		<font>
+			<name>Home_sub_header</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>47</size>
+		</font>
+		
+		
+		<font>
+			<name>Home_time</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>110</size>
+		</font>
+		
+		<font>
+			<name>time_vis</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>230</size>
+		</font>
+
+
+
+		<font>
+			<name>Home_date</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>45</size>
+		</font>
+		
+		
+		<font>
+			<name>Home_menu</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>47</size>
+		</font>
+		
+		<font>
+			<name>Home_menu_over</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>50</size>
+		</font>
+		
+		
+		<font>
+			<name>weather_loc</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>48</size>
+		</font>
+
+		<font>
+			<name>button_title_big</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>32</size>
+		</font>	
+		
+	
+		
+		<font>
+			<name>temp_big</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>80</size>
+		</font>		
+		
+		
+		<font>
+			<name>Large</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>32</size>
+		</font>
+		
+		<font>
+			<name>Medium</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>26</size>
+		</font>
+		
+		<font>
+			<name>Small</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>20</size>
+		</font>
+
+		<!-- Required for system -->
+		<font>
+			<name>font13</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>20</size>
+		</font>
+		
+		<font>
+			<name>letter_bold</name>
+			<filename>CartoGothicStd-Book.otf</filename>
+			<size>24</size>
+		</font>		
+	
+	
+		
+		<font>
+			<name>button_bold</name>
+			<filename>CartoGothicStd-Book.otf</filename>
+			<size>16</size>
+		</font>	
+		
+		<font>
+			<name>button_title</name>
+			<filename>CartoGothicStd-Book.otf</filename>
+			<size>16</size>
+		</font>	
+		
+		
+		<font>
+			<name>weather_med</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>24</size>
+		</font>	
+		
+		<font>
+			<name>weather_small</name>
+			<filename>CartoGothicStd-Book.otf</filename>
+			<size>12</size>
+		</font>			
+
+		<font>
+			<name>rss_small</name>
+			<filename>CartoGothicStd-Book.otf</filename>
+			<size>14</size>
+		</font>	
+
+		<font>
+			<name>plot_scroll_small</name>
+			<filename>CartoGothicStd-Book.otf</filename>
+			<size>16</size>
+		</font>	
+		
+		
+	
+		<font>
+			<name>Artist_Font</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>42</size>
+		</font>
+		
+		<font>
+			<name>Genre_Font_Small</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>16</size>
+		</font>
+		
+		<font>
+			<name>Genre_Font</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>17</size>
+		</font>
+		
+		<font>
+			<name>Plot_Font</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>18</size>
+		</font>
+		
+		<font>
+			<name>Sort_Font_Small</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>24</size>
+		</font>
+		
+			
+		<font>
+			<name>Large_Letter_Music</name>
+			<filename>GeosansLight.ttf</filename>
+			<size>220</size>
+		</font>
+		
+		
+		
+		
+
+	</fontset>
+</fonts>
