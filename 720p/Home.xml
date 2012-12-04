@@ -2562,11 +2562,13 @@
 					<thumb>icons/info.png</thumb>
 					<onclick>activatewindow(7,return)</onclick>
 				</item>
+				<!--
 				<item id="11">
 					<description>Custom Settings</description>
 					<label>636</label>
 					<onclick>activatewindow(56,return)</onclick>
 				</item>
+				-->
 			</content>
 </control>  
 </control>
