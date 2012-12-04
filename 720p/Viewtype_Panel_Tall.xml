@@ -45,16 +45,14 @@
 
 			<!-- Browser -->
 			<control type="panel" id="54">
-				    <viewtype label="Movie Panel">Movie Panel</viewtype>
+				    <viewtype label="Poster View">Poster View</viewtype>
 				    <posx>295</posx>
 				    <posy>288</posy>
 				    <width>315</width>
 				    <height>320</height>
 				    <scrolltime>200</scrolltime>
 				    <orientation>vertical</orientation>
-				    <onright>-</onright>
-				    <onleft></onleft>
-            <onup>9000</onup>
+				    <onleft>9000</onleft>
             <pagecontrol>62</pagecontrol>
 				    <preloaditems>2</preloaditems>
 				    <include>Animation_HiddenByInfo</include>
