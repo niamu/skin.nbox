@@ -172,16 +172,14 @@
 			
 
 			
-				<viewtype label="Season Panel">Season Panel</viewtype>
+				<viewtype label="Seasons View">Seasons View</viewtype>
 				<posx>75</posx>
 				<posy>250</posy>
 				<width>1200</width>
 				<height>315</height>
 				<scrolltime>200</scrolltime>
 				<orientation>horizontal</orientation>
-				<onright>-</onright>
-				<onleft></onleft>
-        <onup>9000</onup>
+				<onleft>9000</onleft>
 				<pagecontrol>63</pagecontrol>
 				<preloaditems>2</preloaditems>
 				<include>Animation_HiddenByInfo</include>
