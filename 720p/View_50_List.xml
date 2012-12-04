@@ -139,7 +139,7 @@
 			     <onup>50</onup>
 			     <ondown>50</ondown>
 			     <pagecontrol>60</pagecontrol>
-			     <viewtype label="50 list">50 list</viewtype>
+			     <viewtype label="List">List</viewtype>
 			     <scrolltime>200</scrolltime>
 			     <itemlayout width="350" height="38">
                 <control type="label">
