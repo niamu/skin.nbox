@@ -227,6 +227,7 @@
 		<control type="group">
 			<visible>[Player.HasAudio + !Skin.HasSetting(NoBackgroundVisualiser)] | [Player.HasVideo + !Skin.HasSetting(NoBackgroundVideo)]</visible>
 
+<!--
 			<control type="visualisation">
 				<include>Dimensions_Fullscreen</include>
 				<visible>Player.HasAudio + !Skin.HasSetting(NoBackgroundVisualiser)</visible>
@@ -236,7 +237,7 @@
 				<include>Dimensions_Fullscreen</include>
 				<visible>Player.HasVideo + !Skin.HasSetting(NoBackgroundVideo)</visible>
 			</control>
-
+-->
 
 	<control type="image">
 				<posx>0</posx>
