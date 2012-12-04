@@ -127,6 +127,7 @@
 					<onclick>Skin.ToggleSetting(NoBackgroundVideo)</onclick>
 					<selected>Skin.HasSetting(NoBackgroundVideo)</selected>
 				</control>
+
 <!--BACKGROUNDS ITEM MENUS -->
         <!--movies-->
         <control type="radiobutton" id="801">

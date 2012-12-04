@@ -157,14 +157,12 @@
 		<height>720</height>
 	</include>
 
-	<include name="Debug_Grid">
-	
+	<include name="Debug_Grid">	
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
 			<texture>debuggrid720.png</texture>
 			<visible>Skin.HasSetting(DebugGrid)</visible>
 		</control>
-		
 	</include>
 
 	<include name="GlobalOverlay">
