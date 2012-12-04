@@ -61,7 +61,7 @@
 
 
 		<control type="label">
-			<label>film</label>
+			<label>films</label>
 					<posx>74</posx>
 					<posy>285</posy>
 					<height>30</height>
@@ -110,7 +110,7 @@
 		
 		
 		<control type="label">
-			<label>[COLOR Accent]film[/COLOR]</label>
+			<label>[COLOR Accent]films[/COLOR]</label>
 					<posx>74</posx>
 					<posy>285</posy>
 					<height>30</height>
@@ -196,7 +196,7 @@
 		<type>image</type>
 					<label></label>
 					<posx>15</posx>
-					<posy>283</posy>
+					<posy>275</posy>
 					<height>50</height>
 					<width>50</width>
 					<align>left</align>
@@ -343,7 +343,7 @@
 		
 		
 		<control type="label">
-			<label>recent movies</label>
+			<label>recent</label>
 					<posx>720</posx>
 					<posy>200</posy>
 					<height>30</height>
@@ -482,7 +482,7 @@
 
 			
 		<control type="label">
-			<label>All Movies </label>
+			<label>All Films</label>
 					<posx>370</posx>
 					<posy>410</posy>
 					<height>30</height>
@@ -1377,7 +1377,7 @@
 		
 		
 		<control type="label">
-			<label>recent tv shows</label>
+			<label>recent</label>
 					<posx>720</posx>
 					<posy>200</posy>
 					<height>30</height>
