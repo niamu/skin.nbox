@@ -61,7 +61,7 @@
 
 
 		<control type="label">
-			<label>movies</label>
+			<label>film</label>
 					<posx>74</posx>
 					<posy>285</posy>
 					<height>30</height>
@@ -110,7 +110,7 @@
 		
 		
 		<control type="label">
-			<label>[COLOR Accent]movies[/COLOR]</label>
+			<label>[COLOR Accent]film[/COLOR]</label>
 					<posx>74</posx>
 					<posy>285</posy>
 					<height>30</height>
@@ -258,7 +258,7 @@
 					<ondown>506</ondown>
 					<onleft></onleft>
 					<onright>69</onright>
-					<onclick>ActivateWindow(settings,return)</onclick>
+					<onclick>activatewindow(AppearanceSettings,return)</onclick>
 		</control>
 		
 		<control id="515">
@@ -2524,7 +2524,7 @@
 					<description>Addons</description>
 					<label>24001</label>
 					<thumb>icons/addons.png</thumb>
-					<onclick>activatewindow(AddonBrowser,return)</onclick>
+					<onclick>activatewindow(AddonBrowser)</onclick>
 				</item>
 				<item id="5">
 					<description>Pictures</description>

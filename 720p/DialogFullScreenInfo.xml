@@ -22,15 +22,7 @@
 			</control>
 -->
 
-		<control type="image">
-				<description>black bar</description>
-				<posx>0</posx>
-				<posy>340</posy>
-				<width>1280</width>
-				<height>400</height>
-				<fadetime>200</fadetime>
-				<texture background="true">video_info_bottom.png</texture>	
-			</control>
+
 
 
 		<control type="image">
@@ -107,50 +99,7 @@
 				<animation effect="slide" end="0,34" condition="!VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos)">Conditional</animation>
 			</control>
 			
--->			
-			
-			
-
-			
-			
-
-
-
-
-
-        <control type="fadelabel">
-          <posx>0</posx>
-          <posy>685</posy>
-          <width>1280</width>
-          <height>25</height>
-          <align>center</align>
-          <font>plot_scroll_small</font>
-          <textcolor>white</textcolor>
-          <label>$INFO[VideoPlayer.Plot]</label>
-		   <label>$INFO[VideoPlayer.Genre]</label>
-          <scroll>true</scroll>
-          <scrollout>false</scrollout>
-          <scrollspeed>100</scrollspeed>
-          <pauseatend>5000</pauseatend>
-          <visible>VideoPlayer.Content(movies)</visible>
-        </control>
-		
-		
-		<control type="fadelabel">
-          <posx>0</posx>
-          <posy>685</posy>
-          <width>1280</width>
-          <height>25</height>
-          <align>center</align>
-          <font>plot_scroll_small</font>
-          <textcolor>white</textcolor>
-          <label>$INFO[VideoPlayer.Plot]</label>
-          <scroll>true</scroll>
-          <scrollout>false</scrollout>
-          <scrollspeed>100</scrollspeed>
-          <pauseatend>5000</pauseatend>
-          <visible>VideoPlayer.Content(Episodes)</visible>
-        </control>
+-->
 		
 		
 		  
