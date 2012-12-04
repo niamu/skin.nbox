@@ -4,70 +4,61 @@
 
 	<controls>
 
-		<include>GlobalOverlay</include>
-
 		<control type="group">
-			<posx>420</posx>
-			<posy>588</posy>
+			<posx>20</posx>
+			<posy>0</posy>
 
 
 			<control type="image">
 				<description>background image</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>440</width>
-				<height>104</height>
+				<width>340</width>
+				<height>138</height>
 				<aspectratio>scale</aspectratio>
-				<texture border="20">button.png</texture>
+				<texture border="20">tile.png</texture>
 			</control>
-
-
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>12</width>
-				<height>104</height>
-				<texture>bar.png</texture>
-			</control>
-			
-			
-
+						
+<!--
 			<control type="image" id="400">
 				<description>Image</description>
-				<posx>30</posx>
-				<posy>20</posy>
+				<posx>20</posx>
+				<posy>35</posy>
 				<width>64</width>
 				<height>64</height>
 				<aspectratio>keep</aspectratio>
 				<texture>DefaultFile.png</texture>
 			</control>
+-->
 
 			<control type="label" id="401">
 				<description>heading</description>
-				<posx>110</posx>
-				<posy>52</posy>
-				<width>290</width>
+				<posx>20</posx>
+				<posy>68</posy>
+				<width>300</width>
 				<height>32</height>
 				<label>-</label>
-				<textcolor>black</textcolor>
+				<textcolor>white</textcolor>
 				<scroll>true</scroll>
 			</control>
 
 			<control type="label" id="402">
 				<description>message</description>
-				<posx>110</posx>
-				<posy>20</posy>
-				<width>290</width>
+				<posx>20</posx>
+				<posy>35</posy>
+				<width>300</width>
 				<height>32</height>
 				<label>-</label>
-				<textcolor>black</textcolor>
+				<textcolor>white</textcolor>
 				<scroll>true</scroll>
+				<font>Large</font>
 			</control>
 
+<!--
 			<control type="image" id="403">
 				<description>Image</description>
 				<posx>20</posx>
-				<posy>20</posy>
+				<posy>35</posy>
 				<width>64</width>
 				<height>64</height>
 				<aspectratio>keep</aspectratio>
@@ -78,7 +69,7 @@
 			<control type="image" id="404">
 				<description>Image</description>
 				<posx>20</posx>
-				<posy>20</posy>
+				<posy>35</posy>
 				<width>64</width>
 				<height>64</height>
 				<aspectratio>keep</aspectratio>
@@ -89,14 +80,14 @@
 			<control type="image" id="405">
 				<description>Image</description>
 				<posx>20</posx>
-				<posy>20</posy>
+				<posy>35</posy>
 				<width>64</width>
 				<height>64</height>
 				<aspectratio>keep</aspectratio>
 				<visible>false</visible>
 				<texture>DefaultIconError.png</texture>
 			</control>
-
+-->
 		</control>
 
 		<include>Debug_Grid</include>
