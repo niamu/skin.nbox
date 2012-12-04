@@ -107,7 +107,8 @@
 						              <posy></posy>
 						              <width>100</width>
 						              <height>155</height>
-								          <texture>$INFO[ListItem.Icon]</texture>
+								      <texture background="true" >$INFO[ListItem.Icon]</texture>
+						              <colordiffuse>ImageDiffuse</colordiffuse>
 						              <animation type="Focus" reversible="false">
 							                 <effect type="fade" start="80" end="100" time="300" />
 						              </animation>
@@ -121,7 +122,7 @@
 						              <height>155</height>
 						              <texture>video_button.png</texture>
 						              <animation type="Focus" reversible="false">
-							                 <effect type="fade" start="20" end="100" time="2000" />
+							                 <effect type="fade" start="20" end="100" time="400" />
 						              </animation>
 						              <aspectratio scalediffuse="false">stretch</aspectratio>
 					         </control>
