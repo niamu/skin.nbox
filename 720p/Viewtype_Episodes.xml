@@ -88,6 +88,7 @@
 				<onup>57</onup>
 				<ondown>57</ondown>
 				<onright>60</onright>
+				<onleft>9000</onleft>
 				<scrolltime>0</scrolltime>
 				<viewtype label="episode list">episode list</viewtype>
 				<orientation>vertical</orientation>
