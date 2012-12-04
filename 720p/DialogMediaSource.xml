@@ -15,7 +15,7 @@
 				<posy>-20</posy>
 				<width>720</width>
 				<height>600</height>
-				<texture border="22">other_textures/ContentPanel.png</texture>
+				<texture border="22">button.png</texture>
 			</control>
 
 			<control type="label">
@@ -125,7 +125,7 @@
 				<onup>10</onup>
 				<onleft>12</onleft>
 				<onright>18</onright>
-				<ondown>19</ondown>
+				<ondown>18</ondown>
 			</control>
 
 			<control type="button" id="18">

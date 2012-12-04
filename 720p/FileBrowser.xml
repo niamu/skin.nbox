@@ -11,37 +11,33 @@
 		
 			
 		<control type="group">
-			<posx>300</posx>
-			<posy>80</posy>
+			<posx>880</posx>
+			<posy>0</posy>
 			
-			
-			
+			<animation type="WindowOpen">
+	          <effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
+	        </animation>
+	        <animation type="WindowClose">
+	          <effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+	        </animation>
 			
 			<control type="image">
-				<posx>-20</posx>
-				<posy>-20</posy>
-				<width>720</width>
-				<height>600</height>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>400</width>
+				<height>720</height>
 				<texture border="22">button.png</texture>
 			</control>
 
-
-<control type="image">
-				<posx>-20</posx>
-				<posy>-20</posy>
-				<width>12</width>
-				<height>80</height>
-				<texture>bar.png</texture>
-			</control>
 
 			<control type="label" id="411">
 				<description>Heading</description>
 				<posx>10</posx>
 				<posy>10</posy>
-				<width>660</width>
+				<width>380</width>
 				<align>left</align>
 				<font>Large</font>
-				<textcolor>black</textcolor>
+				<textcolor>white</textcolor>
 				<label>1023</label>
 			</control>
 
@@ -49,61 +45,61 @@
 				<description>Path</description>
 				<posx>10</posx>
 				<posy>38</posy>
-				<width>500</width>
+				<width>380</width>
 				<haspath>true</haspath>
-				<textcolor>black</textcolor>
+				<textcolor>white</textcolor>
 			</control>
 
 			<control type="list" id="450">
 				<posx>10</posx>
 				<posy>80</posy>
-				<width>440</width>
-				<height>460</height>
+				<width>380</width>
+				<height>560</height>
 				<onup>450</onup>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<ondown>450</ondown>
 
-				<itemlayout height="92">
+				<itemlayout height="66">
 
 					<control type="image">
-						<width>440</width>
-						<height>90</height>
+						<width>380</width>
+						<height>64</height>
 						<texture border="2">other_textures/ButtonNF.png</texture>
 					</control>
 
 					<control type="image">
 						<posx>8</posx>
 						<posy>8</posy>
-						<width>74</width>
-						<height>74</height>
+						<width>48</width>
+						<height>48</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 					</control>
 
 					<control type="label">
-						<posx>100</posx>
-						<width>400</width>
-						<height>90</height>
-				<textcolor>black</textcolor>
+						<posx>80</posx>
+						<width>320</width>
+						<height>64</height>
+				<textcolor>white</textcolor>
 						<info>ListItem.Label</info>
 					</control>
 
 					<control type="label">
-						<posx>420</posx>
-						<width>400</width>
-						<height>90</height>
+						<posx>336</posx>
+						<width>64</width>
+						<height>64</height>
 						<align>right</align>
-				<textcolor>black</textcolor>
+				<textcolor>white</textcolor>
 						<info>ListItem.Label2</info>
 					</control>
 
 				</itemlayout>
 
-				<focusedlayout height="92">
+				<focusedlayout height="66">
 
 					<control type="image">
-						<width>440</width>
-						<height>90</height>
+						<width>380</width>
+						<height>64</height>
 						<texture border="5">other_textures/ButtonFO.png</texture>
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(450)">Conditional</animation>
 					</control>
@@ -111,22 +107,22 @@
 					<control type="image">
 						<posx>8</posx>
 						<posy>8</posy>
-						<width>74</width>
-						<height>74</height>
+						<width>48</width>
+						<height>48</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 					</control>
 
 					<control type="label">
-						<posx>100</posx>
-						<width>400</width>
-						<height>90</height>
+						<posx>80</posx>
+						<width>320</width>
+						<height>64</height>
 						<info>ListItem.Label</info>
 					</control>
 
 					<control type="label">
-						<posx>420</posx>
-						<width>400</width>
-						<height>90</height>
+						<posx>336</posx>
+						<width>64</width>
+						<height>64</height>
 						<align>right</align>
 						<info>ListItem.Label2</info>
 					</control>
@@ -136,32 +132,33 @@
 			</control>
 
 			<control type="grouplist" id="9000">
-				<posx>470</posx>
-				<posy>80</posy>
+				<posx>10</posx>
+				<posy>660</posy>
 				<itemgap>2</itemgap>
-				<orientation>vertical</orientation>
+				<orientation>horizontal</orientation>
 				<onright>450</onright>
 				<onleft>450</onleft>
 
 				<control type="button" id="413">
 					<description>Ok</description>
-					<width>200</width>
+					<width>190</width>
 					<label>186</label>
-				<textcolor>black</textcolor>
+				<textcolor>white</textcolor>
 				</control>
 
 				<control type="button" id="414">
 					<description>Cancel</description>
-					<width>200</width>
+					<width>190</width>
 					<label>222</label>
-				<textcolor>black</textcolor>
+				<textcolor>white</textcolor>
 				</control>
 
+<!--
 				<control type="button" id="415">
 					<description>Create Folder</description>
 					<width>200</width>
 					<label>119</label>
-				<textcolor>black</textcolor>
+				<textcolor>white</textcolor>
 				</control>
 
 				<control type="radiobutton" id="416">
@@ -169,11 +166,13 @@
 					<width>200</width>
 					<align>left</align>
 					<label>749</label>
-				<textcolor>black</textcolor>
+				<textcolor>white</textcolor>
 				</control>
+-->
 
 			</control>
 
+<!--
 			<control type="image">
 				<description>Large Icon Image</description>
 				<posx>470</posx>
@@ -199,7 +198,7 @@
 				<bordersize>5</bordersize>
 				<visible>SubString(Control.GetLabel(416),*)</visible>
 			</control>
-
+-->
 		</control>
 
 		<include>Debug_Grid</include>

@@ -6,12 +6,12 @@
 
 		<control type="group">
 
-			<animation type="WindowOpen">
-				<effect type="zoom" start="108" end="100" time="400" center="640,360" tween="cubic" easing="out" />
+						<animation type="WindowOpen">
+				<effect type="slide" start="0,+300" end="0,0" time="400" tween="cubic" easing="out" />
 				<effect type="fade" start="0" end="100" time="400" />
 			</animation>
 			<animation type="WindowClose">
-				<effect type="zoom" start="100" end="108" time="400"  center="640,360" tween="cubic" easing="out" />
+				<effect type="slide" start="0,0" end="0,+300" time="400" tween="cubic" easing="out" />
 				<effect type="fade" start="100" end="0" time="400" />
 			</animation>
 
@@ -215,40 +215,6 @@
 						<bordertexture border="5">white_box.png</bordertexture>
 						<bordersize>5</bordersize>
 						<visible>VideoPlayer.Content(Movies)</visible>
-					</control>
-
-					<control type="fadelabel">
-						<posx>0</posx>
-						<posy>685</posy>
-						<width>1280</width>
-						<height>25</height>
-						<align>center</align>
-						<font>plot_scroll_small</font>
-						<textcolor>white</textcolor>
-						<label>$INFO[VideoPlayer.Plot]</label>
-						<label>$INFO[VideoPlayer.Genre]</label>
-						<scroll>true</scroll>
-						<scrollout>false</scrollout>
-						<scrollspeed>100</scrollspeed>
-						<pauseatend>5000</pauseatend>
-						<visible>VideoPlayer.Content(movies)</visible>
-					</control>
-
-
-					<control type="fadelabel">
-						<posx>0</posx>
-						<posy>685</posy>
-						<width>1280</width>
-						<height>25</height>
-						<align>center</align>
-						<font>plot_scroll_small</font>
-						<textcolor>white</textcolor>
-						<label>$INFO[VideoPlayer.Plot]</label>
-						<scroll>true</scroll>
-						<scrollout>false</scrollout>
-						<scrollspeed>100</scrollspeed>
-						<pauseatend>5000</pauseatend>
-						<visible>VideoPlayer.Content(Episodes)</visible>
 					</control>
 
 

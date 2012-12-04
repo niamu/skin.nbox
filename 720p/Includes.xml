@@ -210,14 +210,6 @@
 				<visible>Container.Content(Movies) | Container.Content(Genres)</visible>
 			</control>
 			
-			<control type="image">
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true" fallback="backgrounds/album_fallback.png">$INFO[ListItem.Property(Fanart_Image)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>Container.Content(albums) | Container.Content(albums) | Container.Content(albums) | Container.Content(artists) | Container.Content(songs) | Container.Content(musicvideos) </visible>
-			</control>
-			
 			
 		<control type="image">
 				<posx>0</posx>
@@ -245,13 +237,6 @@
 				<visible>Player.HasVideo + !Skin.HasSetting(NoBackgroundVideo)</visible>
 			</control>
 
-		<control type="image">
-				<include>Dimensions_Fullscreen</include>
-				<texture fallback="backgrounds/album_fallback.png">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>true</visible>
-			</control>
-
 
 	<control type="image">
 				<posx>0</posx>
@@ -274,12 +259,7 @@
 
 	
 
-		<control type="image">
-				<include>Dimensions_Fullscreen</include>
-				<texture fallback="backgrounds/album_fallback.png">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-				<colordiffuse>99FFFFFF</colordiffuse>
-				<visible>true</visible>
-			</control>
+
 
 
 
