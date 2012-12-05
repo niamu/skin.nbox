@@ -19,12 +19,6 @@
 			</control>
 
 			<control type="label">
-				<posy>-40</posy>
-				<include>DialogID</include>
-				<label>DialogPictureInfo.xml</label>
-			</control>
-
-			<control type="label">
 				<description>heading</description>
 				<posx>10</posx>
 				<width>560</width>

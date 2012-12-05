@@ -7,11 +7,6 @@
 
 		<include>GlobalBackground</include>
 
-		<control type="label">
-			<include>WindowID</include>
-			<label>MyMusicPlaylistEditor.xml</label>
-		</control>
-
 		<control type="group">
 			<description>Left panel</description>
 			<posx>30</posx>

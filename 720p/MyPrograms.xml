@@ -7,11 +7,6 @@
 
 		<include>GlobalBackground</include>
 
-		<control type="label">
-			<include>WindowID</include>
-			<label>MyPrograms.xml</label>
-		</control>
-
 		<include>View_50_List</include>
 
 		<control type="grouplist" id="9000">

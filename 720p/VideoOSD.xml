@@ -33,7 +33,6 @@
 			<control type="group">
 				<visible>!Window.IsVisible(sliderdialog)</visible>
 
-
 				<!--
 				<control type="label">
 					<description>Current Control</description>
@@ -43,17 +42,8 @@
 					<align>center</align>
 					<label>$INFO[System.CurrentControl]</label>
 				</control>
-
-	
-
-				<control type="label">
-					<posx>150</posx>
-					<posy>80</posy>
-					<include>DialogID</include>
-					<label>VideoOSD.xml</label>
-				</control>
-
--->
+				-->
+				
 				<control type="grouplist" id="100">
 					<posx>1010</posx>
 					<posy>2</posy>

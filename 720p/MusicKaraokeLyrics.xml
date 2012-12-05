@@ -25,13 +25,6 @@
 			<posy>0</posy>
 			<visible>MusicPlayer.Offset(number).Exists + !IntegerGreaterThan(Player.TimeRemaining,20)</visible>
 
-			<control type="label">
-				<posx>20</posx>
-				<posy>52</posy>
-				<include>DialogID</include>
-				<label>MusicKaraokeLyrics.xml</label>
-			</control>
-
 			<control type="image">
 				<posx>0</posx>
 				<posy>-20</posy>

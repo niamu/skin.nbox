@@ -18,11 +18,6 @@
 				<texture border="22">button.png</texture>
 			</control>
 
-			<control type="label">
-				<include>DialogID</include>
-				<label>DialogMediaSource.xml</label>
-			</control>
-
 			<control type="label" id="0">
 				<description>Path</description>
 				<posx>10</posx>

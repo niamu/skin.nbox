@@ -7,11 +7,6 @@
 			<posx>10</posx>
 			<posy>10</posy>
 
-			<control type="label">
-				<include>WindowID</include>
-				<label>SlideShow.xml</label>
-			</control>
-
 		</control>
 
 		<include>Debug_Grid</include>

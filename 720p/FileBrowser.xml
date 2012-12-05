@@ -47,7 +47,6 @@
 				<posy>38</posy>
 				<width>380</width>
 				<haspath>true</haspath>
-				<textcolor>white</textcolor>
 			</control>
 
 			<control type="list" id="450">
@@ -58,48 +57,46 @@
 				<onup>450</onup>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<ondown>450</ondown>
+				<ondown>9000</ondown>
 
-				<itemlayout height="66">
+				<itemlayout height="144">
 
 					<control type="image">
 						<width>380</width>
-						<height>64</height>
+						<height>142</height>
 						<texture border="2">other_textures/ButtonNF.png</texture>
 					</control>
 
 					<control type="image">
 						<posx>8</posx>
 						<posy>8</posy>
-						<width>48</width>
-						<height>48</height>
+						<width>128</width>
+						<height>128</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 					</control>
 
 					<control type="label">
-						<posx>80</posx>
-						<width>320</width>
-						<height>64</height>
-				<textcolor>white</textcolor>
+						<posx>144</posx>
+						<width>228</width>
 						<info>ListItem.Label</info>
+						<textcolor>black</textcolor>
 					</control>
 
 					<control type="label">
-						<posx>336</posx>
-						<width>64</width>
-						<height>64</height>
-						<align>right</align>
-				<textcolor>white</textcolor>
+						<posx>144</posx>
+						<posy>30</posy>
+						<width>228</width>
 						<info>ListItem.Label2</info>
+						<textcolor>black</textcolor>
 					</control>
 
 				</itemlayout>
 
-				<focusedlayout height="66">
+				<focusedlayout height="144">
 
 					<control type="image">
 						<width>380</width>
-						<height>64</height>
+						<height>142</height>
 						<texture border="5">other_textures/ButtonFO.png</texture>
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(450)">Conditional</animation>
 					</control>
@@ -107,23 +104,21 @@
 					<control type="image">
 						<posx>8</posx>
 						<posy>8</posy>
-						<width>48</width>
-						<height>48</height>
+						<width>128</width>
+						<height>128</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 					</control>
 
 					<control type="label">
-						<posx>80</posx>
-						<width>320</width>
-						<height>64</height>
+						<posx>144</posx>
+						<width>228</width>
 						<info>ListItem.Label</info>
 					</control>
 
 					<control type="label">
-						<posx>336</posx>
-						<width>64</width>
-						<height>64</height>
-						<align>right</align>
+						<posx>144</posx>
+						<posy>30</posy>
+						<width>228</width>
 						<info>ListItem.Label2</info>
 					</control>
 
@@ -136,21 +131,21 @@
 				<posy>660</posy>
 				<itemgap>2</itemgap>
 				<orientation>horizontal</orientation>
-				<onright>450</onright>
-				<onleft>450</onleft>
+				<onup>450</onup>
+				<ondown>450</ondown>
 
 				<control type="button" id="413">
 					<description>Ok</description>
 					<width>190</width>
 					<label>186</label>
-				<textcolor>white</textcolor>
+					<textcolor>black</textcolor>
 				</control>
 
 				<control type="button" id="414">
 					<description>Cancel</description>
 					<width>190</width>
 					<label>222</label>
-				<textcolor>white</textcolor>
+					<textcolor>black</textcolor>
 				</control>
 
 <!--

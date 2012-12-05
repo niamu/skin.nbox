@@ -18,11 +18,6 @@
 				<texture border="22">button.png</texture>
 			</control>
 
-			<control type="label">
-				<include>DialogID</include>
-				<label>DialogContentSettings.xml</label>
-			</control>
-
 			<control type="label" id="20">
 				<description>Header Label</description>
 				<posx>10</posx>

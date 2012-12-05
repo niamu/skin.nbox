@@ -6,11 +6,6 @@
 
 		<include>GlobalBackground</include>
 
-		<control type="label">
-			<include>WindowID</include>
-			<label>Settings.xml</label>
-		</control>
-
 		<control type="list" id="9000">
 			<posx>520</posx>
 			<posy>108</posy>
