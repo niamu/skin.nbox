@@ -8,14 +8,6 @@
 			<posx>1222</posx>
 			<posy>0</posy>
 
-			<control type="label">
-				<posx>48</posx>
-				<posy>2</posy>
-				<align>right</align>
-				<include>DialogID</include>
-				<label>DialogMuteBug.xml</label>
-			</control>
-
 			<control type="image" id="901">
 				<description>Mute Image</description>
 				<posx>0</posx>

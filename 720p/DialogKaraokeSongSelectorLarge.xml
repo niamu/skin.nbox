@@ -16,13 +16,6 @@
 				<texture border="22">button.png</texture>
 			</control>
 
-			<control type="label">
-				<posx>10</posx>
-				<posy>-30</posy>
-				<include>DialogID</include>
-				<label>DialogKaraokeSongSelectorLarge.xml</label>
-			</control>
-
 			<control type="label" id="1">
 				<description>header label</description>
 				<posx>20</posx>

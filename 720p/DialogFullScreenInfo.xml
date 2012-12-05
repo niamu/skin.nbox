@@ -13,13 +13,6 @@
 		<effect type="fade" start="100" end="0" time="400" />
 	</animation>
 
-<!--
-			<control type="label">
-				<include>DialogID</include>
-				<label>DialogFullscreenInfo.xml</label>
-			</control>
--->
-
 
 
 

@@ -19,11 +19,6 @@
 			</control>
 
 			<control type="label">
-				<include>DialogID</include>
-				<label>LockSettings.xml</label>
-			</control>
-
-			<control type="label">
 				<description>Header Label</description>
 				<posx>10</posx>
 				<width>560</width>

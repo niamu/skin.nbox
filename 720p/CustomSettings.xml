@@ -6,11 +6,6 @@
 
 		<include>GlobalBackground</include>
 
-		<control type="label">
-			<include>DialogID</include>
-			<label>CustomSettings.xml</label>
-		</control>
-
 		<control type="list" id="100">
 			<description>List</description>
 			<posx>10</posx>

@@ -8,13 +8,6 @@
 			<posx>100</posx>
 			<posy>0</posy>
 
-			<control type="label">
-				<posx>20</posx>
-				<posy>80</posy>
-				<include>DialogID</include>
-				<label>DialogKaraokeSongSelector.xml</label>
-			</control>
-
 			<control type="image">
 				<posx>-20</posx>
 				<posy>-30</posy>

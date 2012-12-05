@@ -5,11 +5,6 @@
 	<controls>
 
 		<include>GlobalBackground</include>
-
-		<control type="label">
-			<include>DialogID</include>
-			<label>AddonBrowser.xml</label>
-		</control>
 		
 			<control type="image">
 				<posx>0</posx>

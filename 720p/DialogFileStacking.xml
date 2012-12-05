@@ -19,11 +19,6 @@
 			</control>
 
 			<control type="label">
-				<include>DialogID</include>
-				<label>DialogFileStacking.xml</label>
-			</control>
-
-			<control type="label">
 				<posx>10</posx>
 				<posy>32</posy>
 				<width>582</width>

@@ -9,11 +9,6 @@
 			<texture>other_textures/black-back.png</texture>
 		</control>
 
-		<control type="label">
-			<include>WindowID</include>
-			<label>VideoFullScreen.xml</label>
-		</control>
-
 		<control type="label" id="10">
 			<description>row 1 label</description>
 			<posx>20</posx>

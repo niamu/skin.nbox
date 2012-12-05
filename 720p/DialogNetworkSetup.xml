@@ -18,12 +18,6 @@
 				<texture border="22">button.png</texture>
 			</control>
 
-			<control type="label">
-				<posy>-40</posy>
-				<include>DialogID</include>
-				<label>DialogNetworkSetup.xml</label>
-			</control>
-
 			<control type="label" id="2">
 				<description>Heading</description>
 				<posx>10</posx>

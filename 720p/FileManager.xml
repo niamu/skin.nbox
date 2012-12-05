@@ -6,11 +6,6 @@
 
 		<include>GlobalBackground</include>
 
-		<control type="label">
-			<include>WindowID</include>
-			<label>FileManager.xml</label>
-		</control>
-
 		<control type="group">
 			<description>Left panel</description>
 			<posx>50</posx>

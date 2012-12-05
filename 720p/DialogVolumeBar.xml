@@ -8,12 +8,6 @@
 			<posx>840</posx>
 			<posy>20</posy>
 
-			<control type="label">
-				<posy>-18</posy>
-				<include>DialogID</include>
-				<label>DialogVolumeBar.xml</label>
-			</control>
-
 			<control type="image">
 				<description>background image</description>
 				<posx>0</posx>
