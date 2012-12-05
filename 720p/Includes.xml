@@ -14,899 +14,285 @@
 
 
 <!-- Settings Headings -->
-	<include name="Setting_Heading">
-		<control type="group">
-			<posx>360</posx>
-			<posy>194</posy>
-			
-			<include>Animation_SlideDownFadeOut</include>
-	
-			<control type="label">
-				<description>Settings Menu</description>
-				<label>[LOWERCASE]$LOCALIZE[33061][/LOWERCASE]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(settings)</visible>
-				<font>Home_sub_header</font>
-				<textcolor>black</textcolor>
-				<align>left</align>
-			</control>
-			<control type="label">
-				<description>Video</description>
-				<label>[LOWERCASE]$LOCALIZE[3][/LOWERCASE]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(videossettings)</visible>
-				<font>Home_sub_header</font>
-				<textcolor>black</textcolor>
-				<align>left</align>
-			</control>
-			<control type="label">
-				<description>Picture</description>
-				<label>[LOWERCASE]$LOCALIZE[1][/LOWERCASE]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(picturessettings)</visible>
-				<font>Home_sub_header</font>
-				<textcolor>black</textcolor>
-				<align>left</align>
-			</control>
-			<control type="label">
-				<description>Appearance</description>
-				<label>[LOWERCASE]$LOCALIZE[480][/LOWERCASE]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(appearancesettings)</visible>
-				<font>Home_sub_header</font>
-				<textcolor>black</textcolor>
-				<align>left</align>
-			</control>
-			<control type="label">
-				<description>Network</description>
-				<label>[LOWERCASE]$LOCALIZE[705][/LOWERCASE]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(networksettings)</visible>
-				<font>Home_sub_header</font>
-				<textcolor>black</textcolor>
-				<align>left</align>
-			</control>
-			<control type="label">
-				<description>System</description>
-				<label>[LOWERCASE]$LOCALIZE[13000][/LOWERCASE]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(systemsettings)</visible>
-				<font>Home_sub_header</font>
-				<textcolor>black</textcolor>
-				<align>left</align>
-			</control>
-			<control type="label">
-				<description>Music</description>
-				<label>[LOWERCASE]$LOCALIZE[2][/LOWERCASE]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(musicsettings)</visible>
-				<font>Home_sub_header</font>
-				<textcolor>black</textcolor>
-				<align>left</align>
-			</control>
-			<control type="label">
-				<description>Weather</description>
-				<label>[LOWERCASE]$LOCALIZE[8][/LOWERCASE]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(weathersettings)</visible>
-				<font>Home_sub_header</font>
-				<textcolor>black</textcolor>
-				<align>left</align>
-			</control>
-			<control type="label">
-				<description>Profiles</description>
-				<label>[LOWERCASE]$LOCALIZE[13200][/LOWERCASE]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(profiles)</visible>
-				<font>Home_sub_header</font>
-				<textcolor>black</textcolor>
-				<align>left</align>
-			</control>
-			<control type="label">
-				<description>Alaska</description>
-				<label>[LOWERCASE]$LOCALIZE[31011][/LOWERCASE]</label>
-				<include>Global_HeadingDetailVars</include>
-				<visible>Window.IsActive(56)</visible>
-				<font>Home_sub_header</font>
-				<textcolor>black</textcolor>
-				<align>left</align>
-			</control>
+<include name="Setting_Heading">
+	<control type="group">
+		<posx>360</posx>
+		<posy>194</posy>
+
+		<include>Animation_SlideDownFadeOut</include>
+
+		<control type="label">
+			<description>Settings Menu</description>
+			<label>[LOWERCASE]$LOCALIZE[33061][/LOWERCASE]</label>
+			<include>Global_HeadingDetailVars</include>
+			<visible>Window.IsActive(settings)</visible>
+			<font>Home_sub_header</font>
+			<textcolor>black</textcolor>
+			<align>left</align>
 		</control>
-	</include>
-	
-	
-	
+		<control type="label">
+			<description>Video</description>
+			<label>[LOWERCASE]$LOCALIZE[3][/LOWERCASE]</label>
+			<include>Global_HeadingDetailVars</include>
+			<visible>Window.IsActive(videossettings)</visible>
+			<font>Home_sub_header</font>
+			<textcolor>black</textcolor>
+			<align>left</align>
+		</control>
+		<control type="label">
+			<description>Picture</description>
+			<label>[LOWERCASE]$LOCALIZE[1][/LOWERCASE]</label>
+			<include>Global_HeadingDetailVars</include>
+			<visible>Window.IsActive(picturessettings)</visible>
+			<font>Home_sub_header</font>
+			<textcolor>black</textcolor>
+			<align>left</align>
+		</control>
+		<control type="label">
+			<description>Appearance</description>
+			<label>[LOWERCASE]$LOCALIZE[480][/LOWERCASE]</label>
+			<include>Global_HeadingDetailVars</include>
+			<visible>Window.IsActive(appearancesettings)</visible>
+			<font>Home_sub_header</font>
+			<textcolor>black</textcolor>
+			<align>left</align>
+		</control>
+		<control type="label">
+			<description>Network</description>
+			<label>[LOWERCASE]$LOCALIZE[705][/LOWERCASE]</label>
+			<include>Global_HeadingDetailVars</include>
+			<visible>Window.IsActive(networksettings)</visible>
+			<font>Home_sub_header</font>
+			<textcolor>black</textcolor>
+			<align>left</align>
+		</control>
+		<control type="label">
+			<description>System</description>
+			<label>[LOWERCASE]$LOCALIZE[13000][/LOWERCASE]</label>
+			<include>Global_HeadingDetailVars</include>
+			<visible>Window.IsActive(systemsettings)</visible>
+			<font>Home_sub_header</font>
+			<textcolor>black</textcolor>
+			<align>left</align>
+		</control>
+		<control type="label">
+			<description>Music</description>
+			<label>[LOWERCASE]$LOCALIZE[2][/LOWERCASE]</label>
+			<include>Global_HeadingDetailVars</include>
+			<visible>Window.IsActive(musicsettings)</visible>
+			<font>Home_sub_header</font>
+			<textcolor>black</textcolor>
+			<align>left</align>
+		</control>
+		<control type="label">
+			<description>Weather</description>
+			<label>[LOWERCASE]$LOCALIZE[8][/LOWERCASE]</label>
+			<include>Global_HeadingDetailVars</include>
+			<visible>Window.IsActive(weathersettings)</visible>
+			<font>Home_sub_header</font>
+			<textcolor>black</textcolor>
+			<align>left</align>
+		</control>
+		<control type="label">
+			<description>Profiles</description>
+			<label>[LOWERCASE]$LOCALIZE[13200][/LOWERCASE]</label>
+			<include>Global_HeadingDetailVars</include>
+			<visible>Window.IsActive(profiles)</visible>
+			<font>Home_sub_header</font>
+			<textcolor>black</textcolor>
+			<align>left</align>
+		</control>
+		<control type="label">
+			<description>Alaska</description>
+			<label>[LOWERCASE]$LOCALIZE[31011][/LOWERCASE]</label>
+			<include>Global_HeadingDetailVars</include>
+			<visible>Window.IsActive(56)</visible>
+			<font>Home_sub_header</font>
+			<textcolor>black</textcolor>
+			<align>left</align>
+		</control>
+	</control>
+</include>
 
 
-	<include name="HiddenButton">
-		<posx>-20</posx>
-		<posy>-20</posy>
-		<width>1</width>
-		<height>1</height>
-		<label>-</label>
-		<texturenofocus>-</texturenofocus>
-		<texturefocus>-</texturefocus>
-	</include>
 
-	<include name="Dimensions_Fullscreen">
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>1280</width>
-		<height>720</height>
-	</include>
 
-	<include name="GlobalOverlay">
+
+<include name="HiddenButton">
+	<posx>-20</posx>
+	<posy>-20</posy>
+	<width>1</width>
+	<height>1</height>
+	<label>-</label>
+	<texturenofocus>-</texturenofocus>
+	<texturefocus>-</texturefocus>
+</include>
+
+<include name="Dimensions_Fullscreen">
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>1280</width>
+	<height>720</height>
+</include>
+
+<include name="GlobalOverlay">
+
+	<control type="image">
+		<include>Dimensions_Fullscreen</include>
+		<texture border="2">other_textures/black-back.png</texture>
+	</control>
+
+</include>
+
+
+<include name="GlobalBackground">
+
+	<control type="group">
+		<visible>!Player.HasMedia | [Player.HasAudio + Skin.HasSetting(NoBackgroundVisualiser)] | [Player.HasVideo + Skin.HasSetting(NoBackgroundVideo)]</visible>
+
+
 
 		<control type="image">
 			<include>Dimensions_Fullscreen</include>
-			<texture border="2">other_textures/black-back.png</texture>
+			<fadetime>800</fadetime>
+			<texture background="true"></texture>
+			<colordiffuse>FanartDiffuse</colordiffuse>
+			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
 		</control>
 
-	</include>
 
 
-	<include name="GlobalBackground">
-
-		<control type="group">
-			<visible>!Player.HasMedia | [Player.HasAudio + Skin.HasSetting(NoBackgroundVisualiser)] | [Player.HasVideo + Skin.HasSetting(NoBackgroundVideo)]</visible>
-
-
-
-			<control type="image">
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true"></texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>Container.Content(tvshows)</visible>
-			</control>
-			
-			<control type="image">
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true"></texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>Container.Content(seasons) | Container.Content(episodes)</visible>
-			</control>
-			
-			
-			
-			<control type="image">
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true"></texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>Container.Content(Movies) | Container.Content(Genres)</visible>
-			</control>
-			
-			
 		<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture>music_fanart_diffuse_blue.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<visible>!Container.Content(songs) + !Container.Content(episodes)</visible>
-			</control>
-			
-			
+			<include>Dimensions_Fullscreen</include>
+			<fadetime>800</fadetime>
+			<texture background="true"></texture>
+			<colordiffuse>FanartDiffuse</colordiffuse>
+			<visible>Container.Content(Movies) | Container.Content(Genres)</visible>
 		</control>
 
-		<control type="group">
-			<visible>[Player.HasAudio + !Skin.HasSetting(NoBackgroundVisualiser)] | [Player.HasVideo + !Skin.HasSetting(NoBackgroundVideo)]</visible>
+
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>music_fanart_diffuse_blue.png</texture>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<visible>!Container.Content(songs)</visible>
+		</control>
+
+
+	</control>
+
+	<control type="group">
+		<visible>[Player.HasAudio + !Skin.HasSetting(NoBackgroundVisualiser)] | [Player.HasVideo + !Skin.HasSetting(NoBackgroundVideo)]</visible>
 
 <!--
-			<control type="visualisation">
-				<include>Dimensions_Fullscreen</include>
-				<visible>Player.HasAudio + !Skin.HasSetting(NoBackgroundVisualiser)</visible>
-			</control>
+<control type="visualisation">
+<include>Dimensions_Fullscreen</include>
+<visible>Player.HasAudio + !Skin.HasSetting(NoBackgroundVisualiser)</visible>
+</control>
 
-			<control type="videowindow">
-				<include>Dimensions_Fullscreen</include>
-				<visible>Player.HasVideo + !Skin.HasSetting(NoBackgroundVideo)</visible>
-			</control>
+<control type="videowindow">
+<include>Dimensions_Fullscreen</include>
+<visible>Player.HasVideo + !Skin.HasSetting(NoBackgroundVideo)</visible>
+</control>
 -->
 
-	<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture>music_fanart_diffuse_blue.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<visible>!Container.Content(songs) + !Container.Content(episodes)</visible>
-			</control>
-
-
-		</control>
-
-	</include>
-
-
-
-	<include name="GlobalBackground2">
-
-	
-
-
-
-
-
-	</include>
-
-
-
-
-
-	<include name="BackgroundTextScroll">
-
-<control type="group">
-<visible>Container.Content(episodes)</visible>
-<control type="group" id="3333">	
-<visible> IntegerGreaterThan(System.Time(ss),40)</visible>		
-<animation effect="fade" time="600">Visible</animation>
-<animation effect="fade" time="600">Hidden</animation>	
-	
-				<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<height>25</height>
-					<label>$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]</label>
-					<scroll>true</scroll>
-					<font>time_vis</font>
-					<pauseatend>0</pauseatend>
-					<textcolor>White60</textcolor>
-					<angle>45</angle>
-					<align>left</align>
-				</control>
-				
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>170</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
-					<angle>45</angle>
-					<align>left</align>
-					<scrollspeed>100</scrollspeed>
-				</control>
-
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>320</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<angle>45</angle>
-					<align>left</align>
-					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
-</control>
-	
-	
-	
-
-<control type="group" id="3334">	
-<visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),21)</visible>
-	
-<animation effect="fade" time="600">Visible</animation>
-<animation effect="fade" time="600">Hidden</animation>
-	
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>500</posy>
-					<width>1350</width>
-					<height>25</height>
-					<label>$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]</label>
-					<scroll>true</scroll>
-					<font>time_vis</font>
-					<pauseatend>0</pauseatend>
-					<textcolor>White60</textcolor>
-					<align>left</align>
-				</control>
-				
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>600</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
-					<align>left</align>
-					<scrollspeed>100</scrollspeed>
-				</control>
-
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>600</posy>
-					<width>1350</width>
-					<label>Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<align>left</align>
-					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
-							
-
-</control>
-
-
-<control type="group" id="3335">	
-<visible>IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),41)</visible>		
-<animation effect="fade" time="600">Visible</animation>
-<animation effect="fade" time="600">Hidden</animation>	
-	
-				<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<height>25</height>
-					<label>$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]</label>
-					<scroll>true</scroll>
-					<font>time_vis</font>
-					<pauseatend>0</pauseatend>
-					<textcolor>White60</textcolor>
-					<angle>90</angle>
-					<scrollspeed>-120</scrollspeed>
-					<align>left</align>
-				</control>
-				
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>170</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]$INFO[ListItem.TVShowTitle,  ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
-					<angle>90</angle>
-					<align>left</align>
-					<scrollspeed>-100</scrollspeed>
-				</control>
-
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>320</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode] Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<angle>90</angle>
-					<align>left</align>
-					<scrollspeed>-80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
-</control>
-
-
-
-
-
-
-</control>
-
-<control type="group">
-<visible>Container.Content(songs) + !Container.Content(episodes)</visible>
-
-<control type="group" id="3333">	
-<visible> IntegerGreaterThan(System.Time(ss),40)</visible>		
-<animation effect="fade" time="600">Visible</animation>
-<animation effect="fade" time="600">Hidden</animation>	
-	
-				<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<height>25</height>
-					<label>$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]</label>
-					<scroll>true</scroll>
-					<font>time_vis</font>
-					<pauseatend>0</pauseatend>
-					<textcolor>White60</textcolor>
-					<angle>45</angle>
-					<align>left</align>
-				</control>
-				
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>170</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist,,]$INFO[ListItem.Artist,,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
-					<angle>45</angle>
-					<align>left</align>
-					<scrollspeed>100</scrollspeed>
-				</control>
-
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>320</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<angle>45</angle>
-					<align>left</align>
-					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
-</control>
-	
-	
-	
-
-<control type="group" id="3334">	
-<visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),21)</visible>
-	
-<animation effect="fade" time="600">Visible</animation>
-<animation effect="fade" time="600">Hidden</animation>
-	
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>500</posy>
-					<width>1350</width>
-					<height>25</height>
-					<label>$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]</label>
-					<scroll>true</scroll>
-					<font>time_vis</font>
-					<pauseatend>0</pauseatend>
-					<textcolor>White60</textcolor>
-					<align>left</align>
-				</control>
-				
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>600</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist,,]$INFO[ListItem.Artist,,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
-					<align>left</align>
-					<scrollspeed>100</scrollspeed>
-				</control>
-
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>600</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<align>left</align>
-					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
-							
-				
-			<control type="label">
-				<description>Player Times</description>
-				<posx>760</posx>
-				<posy>80</posy>
-				<width>900</width>
-				<label>$INFO[ListItem.Time]</label>
-				<align>left</align>
-				<font>time_vis</font>
-				<textcolor>White40</textcolor>
-			</control>
-</control>
-
-
-
-<control type="group" id="3335">	
-<visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),41)</visible>
-	
-<animation effect="fade" time="600">Visible</animation>
-<animation effect="fade" time="600">Hidden</animation>
-	
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>400</posx>
-					<posy>900</posy>
-					<width>1050</width>
-					<height>25</height>
-					<label>$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]</label>
-					<scroll>true</scroll>
-					<font>time_vis</font>
-					<pauseatend>0</pauseatend>
-					<angle>90</angle>
-					<textcolor>White60</textcolor>
-				</control>
-				
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>580</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist,,]$INFO[ListItem.Artist,,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
-					<align>left</align>
-					<angle>90</angle>
-					<scrollspeed>100</scrollspeed>
-				</control>
-
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>580</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<align>left</align>
-					<angle>90</angle>
-					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
-							
-				
-			<control type="label">
-				<description>Player Times</description>
-				<posx>-40</posx>
-				<posy>280</posy>
-				<width>900</width>
-				<label>$INFO[MusicPlayer.Time]</label>
-				<align>left</align>
-				<font>time_vis</font>
-				<textcolor>White40</textcolor>
-			</control>
+<control type="image">
+	<posx>0</posx>
+	<posy>0</posy>
+	<width>1280</width>
+	<height>720</height>
+	<texture>music_fanart_diffuse_blue.png</texture>
+	<aspectratio scalediffuse="false">stretch</aspectratio>
+	<visible>!Container.Content(songs) + !Container.Content(episodes)</visible>
 </control>
 
 
 </control>
-
-
-
-
-
-
-<control type="group">
-<visible>Player.HasAudio + !Control.IsVisible(503) + !Container.Content(episodes)</visible>
-<control type="group" id="3333">	
-<visible> IntegerGreaterThan(System.Time(ss),41)</visible>		
-<animation effect="fade" time="600">Visible</animation>
-<animation effect="fade" time="600">Hidden</animation>
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<height>25</height>
-					<label>$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]</label>
-					<scroll>true</scroll>
-					<font>time_vis</font>
-					<pauseatend>0</pauseatend>
-					<textcolor>White60</textcolor>
-					<angle>45</angle>
-					<align>left</align>
-				</control>
-				
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>170</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
-					<angle>45</angle>
-					<align>left</align>
-					<scrollspeed>100</scrollspeed>
-				</control>
-
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>320</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<angle>45</angle>
-					<align>left</align>
-					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
-				
-				
-			<control type="label">
-				<description>Player Times</description>
-				<posx>70</posx>
-				<posy>0</posy>
-				<width>900</width>
-				<label>$INFO[MusicPlayer.Time]</label>
-				<align>left</align>
-				<font>time_vis</font>
-				<angle>-45</angle>
-				<textcolor>White40</textcolor>
-			</control>
-</control>
-
-
-
-
-<control type="group" id="3334">	
-<visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),21)</visible>
-	
-<animation effect="fade" time="600">Visible</animation>
-<animation effect="fade" time="600">Hidden</animation>
-	
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>500</posy>
-					<width>1350</width>
-					<height>25</height>
-					<label>$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]</label>
-					<scroll>true</scroll>
-					<font>time_vis</font>
-					<pauseatend>0</pauseatend>
-					<textcolor>White60</textcolor>
-					<align>left</align>
-				</control>
-				
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>600</posy>
-					<width>1350</width>
-					<label>$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
-					<align>left</align>
-					<scrollspeed>100</scrollspeed>
-				</control>
-
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>600</posy>
-					<width>1350</width>
-					<label>$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<align>left</align>
-					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
-							
-				
-			<control type="label">
-				<description>Player Times</description>
-				<posx>760</posx>
-				<posy>80</posy>
-				<width>900</width>
-				<label>$INFO[MusicPlayer.Time]</label>
-				<align>left</align>
-				<font>time_vis</font>
-				<textcolor>White40</textcolor>
-			</control>
-</control>
-
-
-
-<control type="group" id="3335">	
-<visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),41)</visible>
-	
-<animation effect="fade" time="600">Visible</animation>
-<animation effect="fade" time="600">Hidden</animation>
-	
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>400</posx>
-					<posy>900</posy>
-					<width>1050</width>
-					<height>25</height>
-					<label>$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]$INFO[MusicPlayer.Title,  ,]</label>
-					<scroll>true</scroll>
-					<font>time_vis</font>
-					<pauseatend>0</pauseatend>
-					<angle>90</angle>
-					<textcolor>White60</textcolor>
-				</control>
-				
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>580</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
-					<align>left</align>
-					<angle>90</angle>
-					<scrollspeed>100</scrollspeed>
-				</control>
-
-			<control type="label">
-					<description>Now Playing</description>
-					<posx>580</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<align>left</align>
-					<angle>90</angle>
-					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
-							
-				
-			<control type="label">
-				<description>Player Times</description>
-				<posx>-40</posx>
-				<posy>280</posy>
-				<width>900</width>
-				<label>$INFO[MusicPlayer.Time]</label>
-				<align>left</align>
-				<font>time_vis</font>
-				<textcolor>White40</textcolor>
-			</control>
-</control>
-
-
-
-</control>
-
-
-	</include>
-
-
-
-
-
-
-
-
-<include name="ListWalls">
-
- 	<control type="image">
- 				<posx>0</posx>
- 				<posy>0</posy>
- 				<width>1280</width>
- 				<height>720</height>
- 				<texture>music_fanart_diffuse_blue.png</texture>
- 				<aspectratio scalediffuse="false">stretch</aspectratio>
- 				<visible>true</visible>
- 			</control>
 
 </include>
 
 
 
-	<include name="HomeBackground">
 
-		<control type="multiimage">
-			<include>Dimensions_Fullscreen</include>
-			<randomize>true</randomize>
-			<timeperimage>8000</timeperimage>
-			<fadetime>3000</fadetime>
-			<pauseatend>0</pauseatend>
-			<loop>true</loop>
-			<aspectratio background="true" aligny="top">stretch</aspectratio>
-			<colordiffuse>HomeFanart</colordiffuse>
-			<visible>Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)</visible>
-			<animation effect="fade" time="1000">Hidden</animation>
-		</control>	
-		
-		<control type="multiimage">
-			<include>Dimensions_Fullscreen</include>
-			<randomize>true</randomize>
-			<timeperimage>8000</timeperimage>
-			<fadetime>3000</fadetime>
-			<pauseatend>0</pauseatend>
-			<loop>true</loop>
-			<aspectratio background="true" aligny="top">stretch</aspectratio>
-			<colordiffuse>HomeFanart</colordiffuse>
-			<visible>Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)</visible>
-			<animation effect="fade" time="1000">Hidden</animation>
-		</control>	
-		
-		<control type="multiimage">
-			<include>Dimensions_Fullscreen</include>
-			<randomize>true</randomize>
-			<timeperimage>8000</timeperimage>
-			<fadetime>3000</fadetime>
-			<pauseatend>0</pauseatend>
-			<loop>true</loop>
-			<aspectratio background="true" aligny="top">stretch</aspectratio>
-			<colordiffuse>HomeFanart</colordiffuse>
-			<visible>Control.HasFocus(505) | Control.HasFocus(69)</visible>
-			<animation effect="fade" time="1000">Hidden</animation>
-		</control>
-		
-		<control type="multiimage">
-			<include>Dimensions_Fullscreen</include>
-			<randomize>true</randomize>
-			<timeperimage>8000</timeperimage>
-			<fadetime>3000</fadetime>
-			<pauseatend>0</pauseatend>
-			<loop>true</loop>
-			<aspectratio background="true" aligny="top">stretch</aspectratio>
-			<imagepath background="true">backgrounds/shutdown</imagepath>
-			<colordiffuse>HomeFanart</colordiffuse>
-			<visible>Control.HasFocus(506)</visible>
-			<animation effect="fade" time="1000">Hidden</animation>
-		</control>
+<include name="HomeBackground">
+
+	<control type="multiimage">
+		<include>Dimensions_Fullscreen</include>
+		<randomize>true</randomize>
+		<timeperimage>8000</timeperimage>
+		<fadetime>3000</fadetime>
+		<pauseatend>0</pauseatend>
+		<loop>true</loop>
+		<aspectratio background="true" aligny="top">stretch</aspectratio>
+		<colordiffuse>HomeFanart</colordiffuse>
+		<visible>Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)</visible>
+		<animation effect="fade" time="1000">Hidden</animation>
+	</control>	
+
+	<control type="multiimage">
+		<include>Dimensions_Fullscreen</include>
+		<randomize>true</randomize>
+		<timeperimage>8000</timeperimage>
+		<fadetime>3000</fadetime>
+		<pauseatend>0</pauseatend>
+		<loop>true</loop>
+		<aspectratio background="true" aligny="top">stretch</aspectratio>
+		<colordiffuse>HomeFanart</colordiffuse>
+		<visible>Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)</visible>
+		<animation effect="fade" time="1000">Hidden</animation>
+	</control>	
+
+	<control type="multiimage">
+		<include>Dimensions_Fullscreen</include>
+		<randomize>true</randomize>
+		<timeperimage>8000</timeperimage>
+		<fadetime>3000</fadetime>
+		<pauseatend>0</pauseatend>
+		<loop>true</loop>
+		<aspectratio background="true" aligny="top">stretch</aspectratio>
+		<colordiffuse>HomeFanart</colordiffuse>
+		<visible>Control.HasFocus(505) | Control.HasFocus(69)</visible>
+		<animation effect="fade" time="1000">Hidden</animation>
+	</control>
+
+	<control type="multiimage">
+		<include>Dimensions_Fullscreen</include>
+		<randomize>true</randomize>
+		<timeperimage>8000</timeperimage>
+		<fadetime>3000</fadetime>
+		<pauseatend>0</pauseatend>
+		<loop>true</loop>
+		<aspectratio background="true" aligny="top">stretch</aspectratio>
+		<imagepath background="true">backgrounds/shutdown</imagepath>
+		<colordiffuse>HomeFanart</colordiffuse>
+		<visible>Control.HasFocus(506)</visible>
+		<animation effect="fade" time="1000">Hidden</animation>
+	</control>
 
 
 	<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture>music_fanart_diffuse_blue.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-			<colordiffuse>Diffuse3</colordiffuse>
-				<visible>true</visible>
-			</control>
+		<posx>0</posx>
+		<posy>0</posy>
+		<width>1280</width>
+		<height>720</height>
+		<texture>music_fanart_diffuse_blue.png</texture>
+		<aspectratio scalediffuse="false">stretch</aspectratio>
+		<colordiffuse>Diffuse3</colordiffuse>
+		<visible>true</visible>
+	</control>
 
 
 
- <control type="image">
-			<include>Dimensions_Fullscreen</include>
-				<texture background="true">other_textures/overlay.png</texture>
-			<colordiffuse>White60</colordiffuse>
-			</control> 	
+	<control type="image">
+		<include>Dimensions_Fullscreen</include>
+		<texture background="true">other_textures/overlay.png</texture>
+		<colordiffuse>White60</colordiffuse>
+	</control> 	
 
-	</include>
+</include>
 
 
 
