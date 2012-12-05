@@ -104,7 +104,7 @@
 						<posx>995</posx>
 						<posy>580</posy>
 							<width>215</width>
-						<height>313</height>
+						<height>315</height>
 						<texture background="true">tile.png</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
             <visible>!IsEmpty(Control.GetLabel(6001))</visible>
@@ -127,7 +127,7 @@
 						<posx>765</posx>
 						<posy>580</posy>
 							<width>215</width>
-						<height>313</height>
+						<height>315</height>
 						<texture background="true">tile.png</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
             <visible>!IsEmpty(Control.GetLabel(6002))</visible>
@@ -138,7 +138,7 @@
 						<posx>535</posx>
 						<posy>580</posy>
 							<width>215</width>
-						<height>313</height>
+						<height>315</height>
 						<texture background="true">tile.png</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
             <visible>!IsEmpty(Control.GetLabel(6003))</visible>
@@ -149,7 +149,7 @@
 						<posx>305</posx>
 						<posy>580</posy>
 							<width>215</width>
-						<height>313</height>
+						<height>315</height>
 						<texture background="true">tile.png</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
             <visible>!IsEmpty(Control.GetLabel(6004))</visible>
@@ -160,7 +160,7 @@
 						<posx>75</posx>
 						<posy>580</posy>
 							<width>215</width>
-						<height>313</height>
+						<height>315</height>
 						<texture background="true">tile.png</texture>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
             <visible>!IsEmpty(Control.GetLabel(6005))</visible>
@@ -173,8 +173,8 @@
 
 			
 				<viewtype label="Seasons View">Seasons View</viewtype>
-				<posx>75</posx>
-				<posy>250</posy>
+				<posx>76</posx>
+				<posy>288</posy>
 				<width>1200</width>
 				<height>315</height>
 				<scrolltime>200</scrolltime>
@@ -192,18 +192,28 @@
 				
 				<itemlayout width="230" height="320">
 				
-				
-				
-				<control type="image">
+					
+					<control type="image">
 						<posx></posx>
 						<posy></posy>
 						<width>215</width>
-						<height>313</height>
+						<height>315</height>
+						<texture>white_box.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>!StringCompare(ListItem.Label, )</visible>
+					</control>
+					
+					<control type="image">
+						<posx></posx>
+						<posy></posy>
+						<width>215</width>
+						<height>315</height>
 						<texture background="true">tile.png</texture>
 						<!--
 						<colordiffuse>PanelDiffuse</colordiffuse>
 						-->
 						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordersize>4</bordersize>
 					</control>
 				
 				
@@ -211,19 +221,34 @@
 						<posx></posx>
 						<posy></posy>
 						<width>215</width>
-						<height>313</height>
+						<height>315</height>
 						<texture background="true" >$INFO[ListItem.Icon]</texture>
-						<colordiffuse>ImageDiffuse2</colordiffuse>
+						<!--<colordiffuse>ImageDiffuse2</colordiffuse>-->
 						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordersize>4</bordersize>
+					</control>
+					
+					<control type="image">
+								<posx></posx>
+								<posy></posy>
+								<width>215</width>
+								<height>315</height>
+						<texture>music_fanart_diffuse.png</texture>
+						<animation type="Focus" reversible="false">
+									<effect type="fade" start="80" end="100" time="300" />
+								</animation>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordersize>4</bordersize>
 					</control>
 
 					<control type="image">
 						<posx></posx>
 						<posy>-70</posy>
 						<width>215</width>
-						<height>313</height>
+						<height>315</height>
 						<texture>$INFO[ListItem.Overlay]</texture>
 						<colordiffuse>PanelDiffuse</colordiffuse>
+						<bordersize>4</bordersize>
 						<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
 					</control>
 					
@@ -231,38 +256,34 @@
 						<posx></posx>
 						<posy></posy>
 						<width>215</width>
-						<height>313</height>
+						<height>315</height>
 						<texture>New.png</texture>
 						<colordiffuse>PanelDiffuse</colordiffuse>
+						<bordersize>4</bordersize>
 						<visible>Container.Content(TVShows) + !Skin.HasSetting(HideNewEpisodes) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="230" height="320">
+					
+					<control type="image">
+						<posx></posx>
+						<posy></posy>
+						<width>215</width>
+						<height>315</height>
+						<texture>white_box.png</texture>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<visible>!StringCompare(ListItem.Label, )</visible>
+					</control>
 
 					<control type="image">
 						<posx></posx>
 						<posy></posy>
 						<width>215</width>
-						<height>313</height>
+						<height>315</height>
 								<texture>$INFO[ListItem.Icon]</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="fade" start="80" end="100" time="300" />
-						</animation>
 						<aspectratio scalediffuse="false">stretch</aspectratio>
+						<bordersize>4</bordersize>
 					</control>
-					
-					
-			<control type="image">
-						<posx></posx>
-						<posy></posy>
-						<width>215</width>
-						<height>313</height>
-				<texture>music_fanart_diffuse.png</texture>
-				<animation type="Focus" reversible="false">
-							<effect type="fade" start="80" end="100" time="300" />
-						</animation>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-			</control>
 			
 		
 	<control type="image" id="2">
@@ -272,9 +293,6 @@
 			<width>10</width>
 			<height>55</height>
 			<texture>bar.png</texture>
-			<animation type="Focus">
-							<effect type="fade" start="0" end="100" time="400" />
-						</animation>
 				<visible></visible>
 		</control>			
 					
