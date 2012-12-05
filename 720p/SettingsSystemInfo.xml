@@ -211,7 +211,7 @@
 			<animation effect="fade" time="400">WindowClose</animation>
 		</control>	
 
-		<include>Debug_Grid</include>
+		
 
 	</controls>
 

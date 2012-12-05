@@ -1,6 +1,6 @@
 <includes>
 	<include name="Viewtype_Season_Tall">
-	<include>Debug_Grid</include>
+	
 	
 			
 <control type="group">

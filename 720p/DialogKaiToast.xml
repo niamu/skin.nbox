@@ -106,7 +106,7 @@
 			<texture>bar.png</texture>
 		</control>
 
-		<include>Debug_Grid</include>
+		
 
 	</controls>
 

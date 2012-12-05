@@ -128,41 +128,11 @@
 		<texturefocus>-</texturefocus>
 	</include>
 
-	<include name="DialogID">
-		<posx>10</posx>
-		<posy>10</posy>
-		<width>520</width>
-		<height>14</height>
-		<textcolor>Red</textcolor>
-		<shadowcolor>Black</shadowcolor>
-		<align>left</align>
-		<visible>!Skin.HasSetting(HideDebugInfo)</visible>
-	</include>
-
-	<include name="WindowID">
-		<posx>10</posx>
-		<posy>10</posy>
-		<width>520</width>
-		<height>14</height>
-		<textcolor>Blue</textcolor>
-		<shadowcolor>Black</shadowcolor>
-		<align>left</align>
-		<visible>!Skin.HasSetting(HideDebugInfo)</visible>
-	</include>
-
 	<include name="Dimensions_Fullscreen">
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
 		<height>720</height>
-	</include>
-
-	<include name="Debug_Grid">	
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<texture>debuggrid720.png</texture>
-			<visible>Skin.HasSetting(DebugGrid)</visible>
-		</control>
 	</include>
 
 	<include name="GlobalOverlay">
