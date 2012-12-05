@@ -311,7 +311,7 @@
 				</control>
 
 				<control type="button" id ="10">
-					<description>Get Thumb</description>
+					<description>Poster</description>
 					<label>13405</label>
 					<width>180</width>
 					<align>right</align>
