@@ -18,15 +18,6 @@
 				<texture border="22">button.png</texture>
 			</control>
 
-
-<control type="image">
-				<posx>-20</posx>
-				<posy>-20</posy>
-				<width>12</width>
-				<height>80</height>
-				<texture>bar.png</texture>
-			</control>
-
 			<control type="label" id="1">
 				<description>Heading</description>
 				<posx>10</posx>
