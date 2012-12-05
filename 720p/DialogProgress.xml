@@ -77,15 +77,6 @@
 				<ondown>10</ondown>
 				<textcolor>black</textcolor>
 			</control>
-			
-<control type="image">
-				<posx>-20</posx>
-				<posy>-20</posy>
-				<width>12</width>
-				<height>80</height>
-				<texture>bar.png</texture>
-			</control>
-		</control>
 
 		<include>Debug_Grid</include>
 
