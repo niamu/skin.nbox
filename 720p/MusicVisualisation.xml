@@ -9,7 +9,6 @@
 			<include>Dimensions_Fullscreen</include>
 		</control>
 
-<!--<include>GlobalBackground2</include>-->
 <control type="multiimage">
     <posx>0</posx>
     <posy>0</posy>
