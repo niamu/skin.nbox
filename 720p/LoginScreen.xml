@@ -1,59 +1,177 @@
 <window id="29">
 	<defaultcontrol always="true">52</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-
+	<allowoverlay>no</allowoverlay>
+	<coordinates>
+		<system>1</system>
+		<posx>0</posx>
+		<posy>0</posy>
+	</coordinates>
 	<controls>
-
+		
 		<include>GlobalBackground</include>
-
+		
 		<control type="label">
-			<include>WindowID</include>
-			<label>LoginScreen.xml</label>
+			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
+					<posx>1284</posx>
+					<posy>-10</posy>
+					<height>100</height>
+					<width>550</width>
+					<font>Home_time</font>
+					<align>right</align>
 		</control>
-
-		<control type="wraplist" id="52">
-			<description>Login Wraplist</description>
-			<posx>280</posx>
-			<posy>228</posy>
-			<width>720</width>
-			<height>264</height>
-			<visible>-</visible>
-			<onup>300</onup>
-			<ondown>300</ondown>
-			<onleft>300</onleft>
-			<onright>300</onright>
-			<focusposition>2</focusposition>
-			<scrolltime>200</scrolltime>
-
-			<itemlayout height="50">
-
-				<control type="label">
-					<posx>360</posx>
-					<width>720</width>
-					<font>Large</font>
-					<info>ListItem.Label</info>
-					<align>center</align>
-				</control>
-
-			</itemlayout>
-
-			<focusedlayout height="64">
-
-				<control type="label">
-					<posx>360</posx>
-					<width>720</width>
-					<info>ListItem.Label</info>
-					<font>Home</font>
-					<textcolor>Blue</textcolor>
-					<align>center</align>
-				</control>
-
-			</focusedlayout>
-
+		
+		<control type="label">
+			<label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(MMM)] $INFO[System.Date(dd)][/LOWERCASE]</label>
+					<posx>1280</posx>
+					<posy>54</posy>
+					<height>100</height>
+					<width>750</width>
+					<font>Home_date</font>
+					<align>right</align>
 		</control>
+		
+		<control type="group">
+			<posx>0</posx>
+			<posy>-10</posy>
 
-		<include>Debug_Grid</include>
+			<control type="image">
+				<description>black bar</description>
+				<posx>0</posx>
+				<posy>524</posy>
+				<width>1280</width>
+				<height>168</height>
+				<fadetime>200</fadetime>
+				<texture background="true">tile.png</texture>
+				<colordiffuse>White80</colordiffuse>
+				<animation type="VisibleChange">
+					<effect type="fade" start="0" end="100" time="600" />
+				</animation>
+			</control>
+			
+			<control type="fixedlist" id="52">
+				<posx>10</posx>
+				<posy>534</posy>
+				<width>1280</width>
+				<height>148</height>
+				<onup>52</onup>
+				<onleft>20</onleft>
+				<onright>20</onright>
+				<ondown>52</ondown>
+				<orientation>horizontal</orientation>
 
+				<itemlayout height="148" width="500">
+
+					<control type="image">
+						<width>478</width>
+						<height>148</height>
+						<texture border="2">other_textures/ButtonNF.png</texture>
+					</control>
+
+					<control type="image">
+						<posx>10</posx>
+						<posy>10</posy>
+						<width>128</width>
+						<height>128</height>
+						<texture>$INFO[Listitem.Icon]</texture>
+					</control>
+
+					<control type="label">
+						<posx>148</posx>
+						<posy>40</posy>
+						<width>320</width>
+						<font>large</font>
+						<textcolor>white</textcolor>
+						<info>ListItem.Label</info>
+					</control>
+
+					<control type="label">
+						<posx>148</posx>
+						<posy>70</posy>
+						<width>320</width>
+						<textcolor>white</textcolor>
+						<info>ListItem.Label2</info>
+					</control>
+
+				</itemlayout>
+
+				<focusedlayout height="148" width="500">
+
+					<control type="image">
+						<width>478</width>
+						<height>148</height>
+						<texture border="5">other_textures/ButtonFO.png</texture>
+						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(450)">Conditional</animation>
+					</control>
+
+					<control type="image">
+						<posx>10</posx>
+						<posy>10</posy>
+						<width>128</width>
+						<height>128</height>
+						<texture>$INFO[Listitem.Icon]</texture>
+					</control>
+
+					<control type="label">
+						<posx>148</posx>
+						<posy>40</posy>
+						<width>320</width>
+						<font>large</font>
+						<textcolor>white</textcolor>
+						<info>ListItem.Label</info>
+					</control>
+
+					<control type="label">
+						<posx>148</posx>
+						<posy>70</posy>
+						<width>320</width>
+						<textcolor>white</textcolor>
+						<info>ListItem.Label2</info>
+					</control>
+
+				</focusedlayout>
+
+			</control>
+			<control type="group">
+				<posx>940</posx>
+				<posy>600</posy>
+				<control type="label">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>580</width>
+					<height>35</height>
+					<font>font12caps</font>
+					<textcolor>grey2</textcolor>
+					<align>right</align>
+					<aligny>center</aligny>
+					<label>$LOCALIZE[31003]</label>
+				</control>
+				<control type="button" id="20">
+					<description>Power push button</description>
+					<posx>10</posx>
+					<posy>0</posy>
+					<width>40</width>
+					<height>40</height>
+					<label>-</label>
+					<font>-</font>
+					<aligny>-</aligny>
+					<onclick>ActivateWindow(ShutdownMenu)</onclick>
+					<texturefocus>home-power-FO.png</texturefocus>
+					<texturenofocus>home-power.png</texturenofocus>
+					<onleft>52</onleft>
+					<onright>52</onright>
+					<onup>52</onup>
+					<ondown>52</ondown>
+					<colordiffuse>CCFFFFFF</colordiffuse>
+				</control>
+				<control type="image">
+					<posx>13</posx>
+					<posy>3</posy>
+					<width>30</width>
+					<height>29</height>
+					<texture>home-power-focus.gif</texture>
+					<visible>Control.HasFocus(20)</visible>
+				</control>
+			</control>
+		</control>
 	</controls>
-
 </window>
