@@ -27,26 +27,7 @@
 				  <visible allowhiddenfocus="true">[Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums) | Container.Content(Artists)] | Container.Content(Movies)]</visible>
 			    <animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(60) | Container.Scrolling">Conditional</animation>
 
-			       <control type="image">
-					       <posx>30</posx>
-						     <posy>292</posy>
-						     <width>30</width>
-						     <height>30</height>
-				         <texture>box.png</texture>
-			       </control>
 
-				     <control type="label">
-					       <posx>60</posx>
-					       <posy>288</posy>
-					       <width>150</width>
-					       <height>50</height>
-					       <align>right</align>
-					       <aligny>bottom</aligny>
-					       <font>letter_bold</font>
-					       <textcolor>white</textcolor>
-					       <label>$INFO[ListItem.SortLetter]</label>
-	               <!--     $INFO[Container(50).NumPages] $INFO[Container(50).CurrentPage]     -->
-				      </control>
 		   </control>
 
 			 <control type="image">
