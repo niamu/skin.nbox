@@ -214,7 +214,7 @@
 				<control type="button" id ="13">
 					<description>Poster button</description>
 					<width>255</width>
-					<label>13405</label>
+					<label>Poster</label>
 				</control>
 
 			</control>

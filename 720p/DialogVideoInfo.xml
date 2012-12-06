@@ -312,7 +312,7 @@
 
 				<control type="button" id ="10">
 					<description>Poster</description>
-					<label>13405</label>
+					<label>Poster</label>
 					<width>180</width>
 					<align>right</align>
 				</control>
@@ -388,10 +388,10 @@
 			<visible></visible>
 			<subtype>page</subtype>
 			<font>-</font>
-      <textureup>ScrollPlot_UpArrow_NF.png</textureup>
-      <textureupfocus>ScrollPlot_UpArrow_FO.png</textureupfocus>
-      <texturedown>ScrollPlot_DownArrow_NF.png</texturedown>
-      <texturedownfocus>ScrollPlot_DownArrow_FO.png</texturedownfocus>
+			<textureup>-</textureup>
+			<textureupfocus>-</textureupfocus>
+			<texturedown>-</texturedown>
+			<texturedownfocus>-</texturedownfocus>
 			<pulseonselect>no</pulseonselect>
 			<onup>50</onup>
 			<onleft>9000</onleft>

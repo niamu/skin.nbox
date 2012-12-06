@@ -226,7 +226,7 @@
 					<description>Poster</description>n>
 					<width>210</width>
 					<align>right</align>
-					<label>13405</label>
+					<label>Poster</label>
 				</control>
 
 				<control type="button" id="12">
