@@ -212,7 +212,7 @@
 				</control>
 
 				<control type="button" id ="13">
-					<description>Get Thumb button</description>
+					<description>Poster button</description>
 					<width>255</width>
 					<label>13405</label>
 				</control>

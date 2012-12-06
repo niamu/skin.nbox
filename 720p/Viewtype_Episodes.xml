@@ -1,282 +1,265 @@
 <includes>
 	<include name="Viewtype_Episodes">
-	
-	
+
 		<control type="group">
 			<visible>Control.IsVisible(57)</visible>
-			<!-- Browser -->
+
 			<description>Episode List View (id=57)</description>
-				<visible>Container.Content(episodes)</visible>
-					
+			<visible>Container.Content(episodes)</visible>
 
-		<control type="image">
-				<description>Music bar</description>
-				<posx>0</posx>
-				<posy>260</posy>
-				<width>1280</width>
-				<height>200</height>
+			<animation type="TYPE" condition="Window.IsVisible(2003)" reversible="false">
+				<effect type="slide" end="-1500,0" time="200"/>
+			</animation>
+			<animation type="TYPE" condition="!Window.IsVisible(2003)" reversible="false">
+				<effect type="slide" start="-1500,0" time="200"/>
+			</animation>		
+
+
+			<animation type="WindowClose">
+				<effect type="fade" time="300"/>
+				<effect type="slide" end="+1500,0" time="300"/>
+			</animation>
+			<animation type="WindowOpen">
+				<effect type="fade" time="300"/>
+				<effect type="slide" start="+1500,0" time="300"/>
+			</animation>
+
+			<control type="image">
+				<posx>-12</posx>
+				<posy>174</posy>
+				<width>72</width>
+				<height>72</height>
+				<texture background="true">other_textures/OSD/PlaylistNF.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(57)">Conditional</animation>
+			</control>
+
+			<control type="image">
+				<posx>76</posx>
+				<posy>288</posy>
+				<width>215</width>
+				<height>315</height>
+				<texture>white_box.png</texture>
 				<fadetime>200</fadetime>
-				<texture background="true">tile.png</texture>
-	</control>
-	
-	<!--
-		<control type="image">
-				<description>Music bar</description>
-				<posx>282</posx>
-				<posy>0</posy>
-				<width>410</width>
-				<height>720</height>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>!StringCompare(ListItem.Label, )</visible>
+			</control>
+
+			<control type="image">
+				<posx>76</posx>
+				<posy>288</posy>
+				<width>215</width>
+				<height>315</height>
+				<texture fallback="DefaultVideo.png" background="true" >$INFO[ListItem.Art(tvshow.poster)]</texture>
 				<fadetime>200</fadetime>
-				<texture background="true">tile.png</texture>
-	</control>
-	-->
-			
-		
-	
-<!--------scrolling text here------->
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>!IsEmpty(ListItem.Icon)</visible>
+				<bordersize>4</bordersize>
+			</control>
 
-
-
-			<include>GlobalBackground</include>
-
-	
-
-		<control type="image">
-				<description>Music bar</description>
-				<posx>0</posx>
-				<posy>260</posy>
-				<width>1280</width>
-				<height>200</height>
-				<fadetime>200</fadetime>
-				<texture background="true">tile.png</texture>
-				<colordiffuse>White60</colordiffuse>
-	</control>
-	
-	
-		<control type="image">
-				<description>Music bar</description>
-				<posx>282</posx>
-				<posy>0</posy>
-				<width>410</width>
-				<height>720</height>
-				<fadetime>200</fadetime>
-				<texture background="true">tile.png</texture>
-				<colordiffuse>White60</colordiffuse>
-	</control>		
-	
-	<control type="image" id="2">
-		<description>top left bar</description>
-		<posx>0</posx>
-		<posy>0</posy>
-		<width>20</width>
-		<height>138</height>
-		<visible>true</visible>
-		<texture>bar.png</texture>
-		
-		<animation effect="fade" time="400">WindowOpen</animation>
-		<animation effect="fade" time="400">WindowClose</animation>
-	</control>
-
-
-
-		<!--LIST 57-->
-			<control type="fixedlist" id="57">
-				<posx>70</posx>
-				<posy>-72</posy>
-				<height>800</height>
-				<width>1200</width>
+			<control type="panel" id="57">
+				<posx>295</posx>
+				<posy>288</posy>
+				<width>510</width>
+				<height>320</height>
+				<scrolltime>200</scrolltime>
 				<onup>57</onup>
 				<ondown>57</ondown>
-				<onright>60</onright>
+				<onright>57</onright>
 				<onleft>9000</onleft>
-				<scrolltime>0</scrolltime>
+
 				<viewtype label="Episodes View">Episodes View</viewtype>
 				<orientation>vertical</orientation>
 				<focusposition>4</focusposition>
-				<pagecontrol>61</pagecontrol>
+				<pagecontrol>63</pagecontrol>
 				<include>Animation_ZoomInZoomOut</include>
 				<include>Animation_ZoomedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>Container.Content(episodes)</visible>
-				
-				<itemlayout width="885" height="80">
-					<control type="label">
-						<posx>230</posx>
-						<posy>20</posy>
-						<width>392</width>
-						<height>25</height>
-						<aligny>center</aligny>
-						<font>Medium</font>
-						<textcolor>Black60</textcolor>
-						<selectedcolor>white</selectedcolor>
-						<label>$INFO[ListItem.Title]</label>
-					</control>
-					<control type="label">
-						<posx>230</posx>
-						<posy>35</posy>
-						<width>392</width>
-						<height>49</height>
-						<aligny>center</aligny>
-						<font>Small</font>
-						<textcolor>Black60</textcolor>
-						<selectedcolor>white</selectedcolor>
-						<label>$INFO[ListItem.TVShowTitle] | Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode]</label>
-						<visible>!IsEmpty(ListItem.Title)</visible>
+
+				<itemlayout width="170" height="107">
+					<control type="image">
+						<posx></posx>
+						<posy></posy>
+						<width>165</width>
+						<height>101</height>
+						<aspectratio>scale</aspectratio>
+						<texture>$INFO[ListItem.Icon]</texture>
+						<colordiffuse>ImageDiffuse</colordiffuse>
+						<visible>!IsEmpty(ListItem.Icon)</visible>						
 					</control>
 				</itemlayout>
-				
-				
-				<focusedlayout width="1000" height="200">				
+
+				<focusedlayout width="170" height="107">				
 					<control type="image">
-						<posx>12</posx>
-						<posy>12</posy>
-						<width>200</width>
-						<height>200</height>
-						<align>left</align>						
-						<fadetime>500</fadetime>
-				     	<aspectratio>scale</aspectratio>
+						<posx></posx>
+						<posy></posy>
+						<width>165</width>
+						<height>101</height>
+						<aspectratio>scale</aspectratio>
 						<texture>$INFO[ListItem.Icon]</texture>
 						<visible>!IsEmpty(ListItem.Icon)</visible>						
 					</control>
 
-					<!--WATCHED OVERLAY-->
 					<control type="image">
-						<posx>12</posx>							
-						<posy>12</posy>							
+						<posx></posx>							
+						<posy></posy>							
 						<height>60</height>
 						<width>60</width>
 						<fadetime>500</fadetime>
 						<aspectratio>keep</aspectratio>
 						<texture>$INFO[ListItem.Overlay,overlays/]</texture>						
-					</control>	
-					
-					<control type="label">
-						<posx>230</posx>
-						<posy>34</posy>
-						<width>392</width>
-						<height>25</height>
-						<aligny>left</aligny>
-						<font>Large</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>Accent</selectedcolor>
-						<label>$INFO[ListItem.Title]</label>						
-						<visible>!IsEmpty(ListItem.Title) + !SubString(Container.FolderPath,plugin)</visible>
-					</control>		
-					
-					
-					<control type="label">
-						<posx>230</posx>
-						<posy>75</posy>
-						<width>392</width>
-						<height>17</height>
-						<aligny>center</aligny>
-						<font>Font_ListDetail</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>Accent</selectedcolor>						
-						<label>[B]$INFO[ListItem.TVShowTitle][/B]</label>						
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
 					</control>
 					
-					<control type="label">
-						<posx>230</posx>
-						<posy>100</posy>
-						<width>392</width>
-						<height>17</height>
-						<aligny>center</aligny>
-						<font>Font_ListDetail</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>Accent</selectedcolor>
-						<label>Season $INFO[ListItem.Season] Episode $INFO[ListItem.Episode]</label>						
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
-					</control>					
-					
-					<control type="label">
-						<posx>230</posx>
-						<posy>130</posy>
-						<width>392</width>
-						<height>17</height>
-						<aligny>center</aligny>
-						<font>Font_ListDetail</font>
-						<textcolor>black</textcolor>
-						<selectedcolor>Accent</selectedcolor>
-						<label>Aired $INFO[ListItem.Premiered]</label>						
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
-					</control>					
-					
-					<control type="label">
-						<posx>640</posx>
-						<posy>22</posy>
-						<width>500</width>
-						<height>140</height>
-						<aligny>Left</aligny>
-						<font>Artist_Font</font>
-						<label>Synopsys</label>
-					</control>					
-					
 					<control type="image">
-						<posx>228</posx>
-						<posy>156</posy>
-						<width>150</width>
-						<height>40</height>
-						<texture>other_textures/leftrating/$INFO[ListItem.StarRating]</texture>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
+						<posx></posx>
+						<posy></posy>
+						<width>165</width>
+						<height>101</height>
+						<texture>images/episode_play.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="fade" start="20" end="100" time="400" />
+						</animation>
+						<aspectratio scalediffuse="false">stretch</aspectratio>
 					</control>
 				</focusedlayout>
 			</control>
 
-
-
-
-			
-		</control>
-		
-	
-		
-		
-		
-		
-		
-		
-		
-<control type="group">
+			<control type="fadelabel" id="140">
+				<posx>295</posx>
+				<posy>175</posy>
+				<height>30</height>
+				<width>900</width>
+				<font>Home_menu</font>
+				<textcolor>White</textcolor>
+				<aligny>top</aligny>
+				<label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] $INFO[ListItem.Title]</label>
+				<visible>true</visible>
+				<scroll>true</scroll>
+				<scrollout>false</scrollout>
+				<pauseatend>600</pauseatend>
+				<scrollspeed>50</scrollspeed>
 				<visible>Container.Content(episodes)</visible>
-			<control type="textbox" id="4">
-				<description>Plot</description>
-				<posx>714</posx>
-				<posy>320</posy>
-				<width>400</width>
-				<height>124</height>
-				<info>ListItem.Plot </info>
-						<align>justify</align>
-						<autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
-						<font>small</font>
-						<textcolor>white</textcolor>
-         		<pagecontrol>60</pagecontrol>
+			</control>
+			
+			<control type="label">
+				<posx>295</posx>
+				<posy>210</posy>
+				<width>600</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>Genre_Font</font>
+				<textcolor>White</textcolor>
+				<label>Season $INFO[ListItem.Season] [B]Episode $INFO[ListItem.Episode][/B]</label>
+				<visible>!IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
 			</control>
 
-<!--qqqq--->
+			<control type="label">
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+				<visible>Container.Content(Movies) | Container.Content(TvShows)</visible>
+			</control>
 
-	  <control type="spincontrol" id="60">
-			<posx>980</posx>
-			<posy>280</posy>
-			<width>46</width>
-			<height>30</height>
-			<visible></visible>
-			<subtype>page</subtype>
-			<font>-</font>
-			<textureup>ScrollPlot_UpArrow_BLACK.png</textureup>
-			<textureupfocus>ScrollPlot_UpArrow_NF.png</textureupfocus>
-			<texturedown>ScrollPlot_DownArrow_BLACK.png</texturedown>
-			<texturedownfocus>ScrollPlot_DownArrow_NF.png</texturedownfocus>
-			<pulseonselect>no</pulseonselect>
-			<onup>60</onup>
-			<onleft>57</onleft>
-			<onright>60</onright>
-			<ondown>60</ondown>
-			<showonepage>true</showonepage>
-      </control>			
- </control>			
+			<control type="label">
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+				<visible>Container.Content(episodes)</visible>
+			</control>
+
+			<control type="label">
+				<label>tv</label>
+				<posx>70</posx>
+				<posy>170</posy>
+				<height>30</height>
+				<width>400</width>
+				<font>Home_header</font>
+				<textcolor>White</textcolor>
+				<align>left</align>
+				<visible>Container.Content(episodes)</visible>
+			</control>
 			
+			<control type="image">
+				<posx>805</posx>
+				<posy>288</posy>
+				<width>475</width>
+				<height>315</height>
+				<texture background="true" >tile.png</texture>
+				<fadetime>200</fadetime>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
 			
+			<control type="scrollbar" id="63">
+				<posx>805</posx>
+				<posy>288</posy>
+				<width>10</width>
+				<height>315</height>
+				<texturesliderbackground></texturesliderbackground>
+				<textureslidernib>bar.png</textureslidernib>
+				<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+				<texturesliderbar></texturesliderbar>
+				<texturesliderbarfocus></texturesliderbarfocus>
+				<showonepage>true</showonepage>
+				<orientation>vertical</orientation>
+			</control>
+			
+			<control type="label">
+				<posx>825</posx>
+				<posy>300</posy>
+				<width>435</width>
+				<height>50</height>
+				<aligny>Left</aligny>
+				<font>Artist_Font</font>
+				<textcolor>White</textcolor>
+				<label>Description</label>
+			</control>
+			
+			<control type="label">
+				<posx>1260</posx>
+				<posy>320</posy>
+				<width>100</width>
+				<height>25</height>
+				<align>right</align>
+				<textcolor>White</textcolor>
+				<label>[B]IMDb[/B] $INFO[ListItem.Rating]</label>
+			</control>
+
+			<control type="textbox">
+				<posx>825</posx>
+				<posy>360</posy>
+				<width>435</width>
+				<height>215</height>
+				<info>ListItem.Plot</info>
+				<align>justify</align>
+				<autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
+				<font>Plot_Font</font>
+				<textcolor>White</textcolor>
+			</control>
+
+		</control>
+
+		<control type="image" id="2">
+			<description>top left bar</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>20</width>
+			<height>138</height>
+			<texture>bar.png</texture>
+			<animation effect="fade" time="400">WindowOpen</animation>
+			<animation effect="fade" time="400">WindowClose</animation>
+			<visible>container.content(episodes)</visible>
+		</control>	
+
 	</include>
 </includes>
