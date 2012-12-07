@@ -1,116 +1,226 @@
 <window id="4">
-	<defaultcontrol always="true">9000</defaultcontrol>
+	<defaultcontrol always="true">91</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
 
 		<include>GlobalBackground</include>
 
-		<control type="list" id="9000">
-			<posx>520</posx>
-			<posy>108</posy>
-			<width>240</width>
-			<height>644</height>
-			<onup>9000</onup>
-			<ondown>9000</ondown>
-			<viewtype label="List">list</viewtype>
-			<scrolltime>200</scrolltime>
-			<itemlayout width="240" height="46">
+		<control type="group">
 
-				<control type="image">
-					<width>240</width>
-					<height>44</height>
-					<texture border="2">other_textures/ButtonNF.png</texture>
-				</control>
+			<visible>Control.IsVisible(91)</visible>	
 
-				<control type="label">
-					<posx>120</posx>
-					<width>200</width>
-					<font>Medium</font>
-					<align>center</align>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
+			<animation type="WindowClose">
+				<effect type="fade" time="300"/>
+				<effect type="slide" end="+1500,0" time="300"/>
+			</animation>
+			<animation type="WindowOpen">
+				<effect type="fade" time="300"/>
+				<effect type="slide" start="+1500,0" time="300"/>
+			</animation>
 
-			</itemlayout>
+			<control type="image">
+				<posx>-12</posx>
+				<posy>174</posy>
+				<width>72</width>
+				<height>72</height>
+				<texture background="true">other_textures/OSD/PlaylistNF.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(91)">Conditional</animation>
+			</control>
 
-			<focusedlayout width="240" height="46">
+			<animation effect="fade" time="300">WindowOpen</animation>
 
-				<control type="image">
-					<width>240</width>
-					<height>44</height>
-					<texture border="5">other_textures/ButtonFo.png</texture>
-				</control>
+			<animation type="WindowClose">
+				<effect type="fade" time="300"/>
+			</animation>
 
-				<control type="label">
-					<posx>120</posx>
-					<width>200</width>
-					<font>Medium</font>
-					<align>center</align>
-					<label>$INFO[ListItem.Label]</label>
-				</control>
+			<control type="panel" id="91">
+				<posx>70</posx>
+				<posy>290</posy>
+				<width>1180</width>
+				<height>320</height>
+				<preloaditems>2</preloaditems>
+				<!--<animation effect="slide" start="+1300,0" time="300" condition="[Control.HasFocus(502) | Control.HasFocus(66)]" >condition</animation> -->
 
-			</focusedlayout>
+				<visible>true</visible>
+				<onup>91</onup>
+				<ondown>91</ondown>
+				<onleft>91</onleft>
+				<onright>91</onright>
+				<orientation>vertical</orientation>
+				<pagecontrol>98</pagecontrol>
+				<focusposition>0</focusposition>
+				<scrolltime tween="cubic" easing="out">400</scrolltime>
+				<itemlayout width="159" height="159">
 
-			<content>
-				<item id="1">
-					<description>Appearance</description>
-					<label>480</label>
-					<onclick>activatewindow(AppearanceSettings)</onclick>
-				</item>
-				<item id="2">
-					<description>Videos</description>
-					<label>3</label>
-					<onclick>activatewindow(VideosSettings)</onclick>
-				</item>
-				<item id="3">
-					<description>Music</description>
-					<label>2</label>
-					<onclick>activatewindow(MusicSettings)</onclick>
-				</item>
-				<item id="4">
-					<description>Addons</description>
-					<label>24001</label>
-					<onclick>activatewindow(AddonBrowser)</onclick>
-				</item>
-				<item id="5">
-					<description>Pictures</description>
-					<label>1</label>
-					<onclick>activatewindow(PicturesSettings)</onclick>
-				</item>
-				<item id="6">
-					<description>Weather</description>
-					<label>8</label>
-					<onclick>activatewindow(WeatherSettings)</onclick>
-				</item>
-				<item id="7">
-					<description>Network</description>
-					<label>705</label>
-					<onclick>activatewindow(NetworkSettings)</onclick>
-				</item>
-				<item id="8">
-					<description>System</description>
-					<label>13000</label>
-					<onclick>activatewindow(SystemSettings)</onclick>
-				</item>
-				<item id="9">
-					<description>Profiles</description>
-					<label>13200</label>
-					<onclick>activatewindow(Profiles)</onclick>
-				</item>
-				<item id="10">
-					<description>System Info</description>
-					<label>130</label>
-					<onclick>activatewindow(7)</onclick>
-				</item>
-				<item id="11">
+					<control type="image">
+						<posx>9</posx>
+						<posy>0</posy>
+						<width>155</width>
+						<height>155</height>
+						<texture blend="false">tile.png</texture>
+						<aspectratio>scale</aspectratio>
+					</control>
+
+
+					<control type="label">
+						<label>  $INFO[ListItem.Label]</label>
+						<posx>10</posx>
+						<posy>121</posy>
+						<height>30</height>
+						<width>153</width>
+						<font>button_bold</font>
+						<align>left</align>
+						<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
+					</control>
+
+					<control type="image">
+						<posx>39</posx>
+						<posy>20</posy>
+						<width>100</width>
+						<height>100</height>
+						<texture >$INFO[ListItem.Thumb]</texture>
+						<aspectratio>scale</aspectratio>
+					</control>
+
+				</itemlayout>
+
+
+				<focusedlayout width="215" height="348">
+
+					<control type="group">
+						<posx>0</posx>
+						<posy>0</posy>
+
+						<control type="image">
+							<posx>9</posx>
+							<posy>0</posy>
+							<width>155</width>
+							<height>155</height>
+							<texture >button.png</texture>
+							<animation effect="fade" start="0" time="400" easing="out" tween="square">Focus</animation>
+						</control>
+
+						<control type="image">
+							<posx>39</posx>
+							<posy>20</posy>
+							<width>100</width>
+							<height>100</height>
+							<texture >$INFO[ListItem.Thumb]</texture>
+							<aspectratio>scale</aspectratio>
+						</control>
+
+					</control>
+
+					<control type="label">
+						<label>  $INFO[ListItem.Label]</label>
+						<posx>10</posx>
+						<posy>121</posy>
+						<height>30</height>
+						<width>153</width>
+						<font>button_bold</font>
+						<align>left</align>
+					</control>
+
+				</focusedlayout>
+
+
+
+				<content>
+					<item id="1">
+						<description>Appearance</description>
+						<label>480</label>
+						<thumb>icons/appearance.png</thumb>
+						<onclick>activatewindow(AppearanceSettings)</onclick>
+					</item>
+					<item id="2">
+						<description>Videos</description>
+						<label>3</label>
+						<thumb>icons/videos.png</thumb>
+						<onclick>activatewindow(VideosSettings)</onclick>
+					</item>
+					<item id="3">
+						<description>Music</description>
+						<label>2</label>
+						<thumb>icons/music.png</thumb>
+						<onclick>activatewindow(MusicSettings,return)</onclick>
+					</item>
+					<item id="4">
+						<description>Addons</description>
+						<label>24001</label>
+						<thumb>icons/addons.png</thumb>
+						<onclick>activatewindow(AddonBrowser)</onclick>
+					</item>
+					<item id="5">
+						<description>Pictures</description>
+						<label>1</label>
+						<thumb>icons/pictures.png</thumb>
+						<onclick>activatewindow(PicturesSettings,return)</onclick>
+					</item>
+					<item id="6">
+						<description>Weather</description>
+						<label>8</label>
+						<thumb>icons/weather.png</thumb>
+						<onclick>activatewindow(WeatherSettings,return)</onclick>
+					</item>
+					<item id="7">
+						<description>Network</description>
+						<label>705</label>
+						<thumb>icons/network.png</thumb>
+						<onclick>activatewindow(NetworkSettings,return)</onclick>
+					</item>
+					<item id="8">
+						<description>System</description>
+						<label>13000</label>
+						<thumb>icons/system.png</thumb>
+						<onclick>activatewindow(SystemSettings,return)</onclick>
+					</item>
+					<item id="9">
+						<description>Profiles</description>
+						<label>13200</label>
+						<thumb>icons/profile.png</thumb>
+						<onclick>activatewindow(Profiles,return)</onclick>
+					</item>
+					<item id="10">
+						<description>System Info</description>
+						<label>130</label>
+						<thumb>icons/info.png</thumb>
+						<onclick>activatewindow(7,return)</onclick>
+					</item>
+					<!--
+					<item id="11">
 					<description>Custom Settings</description>
 					<label>636</label>
-					<onclick>activatewindow(56)</onclick>
-				</item>
-			</content>
+					<onclick>activatewindow(56,return)</onclick>
+					</item>
+					-->
+				</content>
+			</control>
+
+			<control type="label">
+				<label>settings</label>
+				<posx>70</posx>
+				<posy>170</posy>
+				<height>30</height>
+				<width>400</width>
+				<font>Home_header</font>
+				<textcolor>White</textcolor>
+				<align>left</align>
+			</control>
+			
 		</control>
 
-		
+		<control type="image" id="2">
+			<description>top left bar</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>20</width>
+			<height>138</height>
+			<texture>bar.png</texture>
+			<animation effect="fade" time="400">WindowOpen</animation>
+			<animation effect="fade" time="400">WindowClose</animation>
+		</control>
 
 	</controls>
 

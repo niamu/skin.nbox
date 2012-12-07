@@ -9,6 +9,7 @@
 	<include file="Viewtype_Panel_Genre.xml" />
 	<include file="Viewtype_Season_Tall.xml" />
 	<include file="Viewtype_Panel_Square.xml" />
+	<include file="Viewtype_Showcase.xml" />
 
 
 

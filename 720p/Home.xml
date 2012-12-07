@@ -438,6 +438,7 @@
 		<ondown>701</ondown>
 		<onleft>501</onleft>
 		<onright>703</onright>
+		<onfocus>SetProperty(genre,"film")</onfocus> 
 		<onclick>ActivateWindow(Videos, MovieGenres,return)</onclick>
 	</control>
 
@@ -1186,7 +1187,8 @@
 		<ondown>801</ondown>
 		<onleft>503</onleft>
 		<onright>803</onright>
-		<onclick>ActivateWindow(Videos, MovieGenres,return)</onclick>
+		<onfocus>SetProperty(genre,"tv")</onfocus> 
+		<onclick>ActivateWindow(Videos, TvShowGenres,return)</onclick>
 	</control>
 
 

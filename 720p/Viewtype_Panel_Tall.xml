@@ -214,7 +214,7 @@
 				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
-				<label>Description</label>
+				<label>Plot</label>
 			</control>
 
 			<control type="textbox">

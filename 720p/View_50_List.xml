@@ -110,7 +110,7 @@
       </control>
 
       <control type="list" id="50">
-	         <visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(movies) + !Container.Content(seasons)</visible>
+	         <visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(movies) + !Container.Content(seasons) + !Container.Content(genres)</visible>
 			     <posx>55</posx>
 			     <posy>285</posy>
 			     <width>290</width>

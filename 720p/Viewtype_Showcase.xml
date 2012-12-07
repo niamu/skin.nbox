@@ -6,18 +6,18 @@
 			<control type="image">
 				<posx>0</posx>
 				<posy>288</posy>
-				<width>1400</width>
-				<height>314</height>
+				<width>1280</width>
+				<height>315</height>
 				<texture background="true" >tile.png</texture>
 				<fadetime>200</fadetime>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 
 			<control type="wraplist" id="58">
-				<posx>-135</posx>
-				<posy>200</posy>
-				<height>460</height>
-				<width>1480</width>
+				<posx>0</posx>
+				<posy>288</posy>
+				<height>315</height>
+				<width>1280</width>
 				<onleft>9000</onleft>
 				<onright>58</onright>
 				<viewtype label="Showcase">Showcase</viewtype>
@@ -31,6 +31,7 @@
 
 				<itemlayout width="168" height="245">
 					<control type="group" id="159">
+						<posx>-108</posx>
 						<animation effect="slide" start="0,0" end="0,20" time="0" tween="cubic" easing="inout" condition="Control.IsVisible(58) + [Container.Content(movies) | Container.Content(tvshows)] + Skin.HasSetting(ShowcaseFanart)">Conditional</animation>
 						<animation effect="fade" start="100" end="0" time="400" delay="2800" condition="[Container.Content(movies) | Container.Content(tvshows)] + ![Container(58).OnNext | Container(58).OnPrevious]">Conditional</animation>
 
@@ -80,17 +81,18 @@
 					</control>
 				</itemlayout>
 
-				<focusedlayout width="210" height="515">
+				<focusedlayout width="210" height="315">
 					<control type="group" id="57">
+						<posx>-115</posx>
 						<animation effect="zoom" start="100" end="100" time="600" delay="2800" condition="[Container.Content(movies) | Container.Content(tvshows)] + ![Container(58).OnNext | Container(58).OnPrevious]">Conditional</animation>
 						<animation effect="slide" start="0,0" end="-470,0" time="600" delay="2800" condition="[Container.Content(movies) | Container.Content(tvshows)] + ![Container(58).OnNext | Container(58).OnPrevious]">Conditional</animation>
 
 
 						<control type="image">
 							<posx>2</posx>
-							<posy>90</posy>
+							<posy></posy>
 							<width>215</width>
-							<height>314</height>
+							<height>315</height>
 							<texture background="true" diffuse="postermatte.png">$INFO[ListItem.Icon]</texture>
 							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -101,7 +103,7 @@
 						<control type="image" id="2">
 							<description>top left bar</description>
 							<posx>0</posx>
-							<posy>90</posy>
+							<posy></posy>
 							<width>10</width>
 							<height>55</height>
 							<texture>bar.png</texture>
@@ -112,7 +114,7 @@
 
 						<control type="image">
 							<posx>15</posx>
-							<posy>90</posy>
+							<posy></posy>
 							<width>50</width>
 							<height>50</height>
 							<texture>vu.png</texture>
