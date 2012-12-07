@@ -11,8 +11,8 @@
 
 
 
-			
-			
+
+
 		<control type="image" id="2">
 			<description>top left bar</description>
 			<posx>0</posx>
@@ -21,298 +21,298 @@
 			<height>138</height>
 			<visible>true</visible>
 			<texture>bar.png</texture>
-			
+
 			<animation effect="fade" time="400">WindowOpen</animation>
 			<animation effect="fade" time="400">WindowClose</animation>
 		</control>		
-					
 
-	
-		
+
+
+
 		<control type="label">
 			<label>home</label>
-					<posx>70</posx>
-					<posy>190</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_header</font>
-					<align>left</align>
+			<posx>70</posx>
+			<posy>190</posy>
+			<height>30</height>
+			<width>250</width>
+			<font>Home_header</font>
+			<align>left</align>
 		</control>
-		
+
 		<control type="label">
 			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
-					<posx>1284</posx>
-					<posy>-10</posy>
-					<height>100</height>
-					<width>550</width>
-					<font>Home_time</font>
-					<align>right</align>
+			<posx>1284</posx>
+			<posy>-10</posy>
+			<height>100</height>
+			<width>550</width>
+			<font>Home_time</font>
+			<align>right</align>
 		</control>
-		
+
 		<control type="label">
 			<label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(MMM)] $INFO[System.Date(dd)][/LOWERCASE]</label>
-					<posx>1280</posx>
-					<posy>54</posy>
-					<height>100</height>
-					<width>750</width>
-					<font>Home_date</font>
-					<align>right</align>
+			<posx>1280</posx>
+			<posy>54</posy>
+			<height>100</height>
+			<width>750</width>
+			<font>Home_date</font>
+			<align>right</align>
 		</control>
 
 
 		<control type="label">
 			<label>films</label>
-					<posx>74</posx>
-					<posy>285</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_menu</font>
-					<align>left</align>
+			<posx>74</posx>
+			<posy>285</posy>
+			<height>30</height>
+			<width>250</width>
+			<font>Home_menu</font>
+			<align>left</align>
 		</control>
 
 
 		<control type="label">
 			<label>tv shows</label>
-			    <posx>74</posx>
-			    <posy>325</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_menu</font>
-					<align>left</align>
+			<posx>74</posx>
+			<posy>325</posy>
+			<height>30</height>
+			<width>250</width>
+			<font>Home_menu</font>
+			<align>left</align>
 		</control>
-		
-		
 
-		
+
+
+
 		<control type="label">
 			<label>settings</label>
-					<posx>74</posx>
-					<posy>485</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_menu</font>
-					<align>left</align>
+			<posx>74</posx>
+			<posy>485</posy>
+			<height>30</height>
+			<width>250</width>
+			<font>Home_menu</font>
+			<align>left</align>
 		</control>
-		
-	<control type="label">
+
+		<control type="label">
 			<label>shutdown</label>
-					<posx>74</posx>
-					<posy>525</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_menu</font>
-					<align>left</align>
+			<posx>74</posx>
+			<posy>525</posy>
+			<height>30</height>
+			<width>250</width>
+			<font>Home_menu</font>
+			<align>left</align>
 		</control>
-		
-		
-		
+
+
+
 		<!-- text highlighted -->
-		
-		
+
+
 		<control type="label">
 			<label>[COLOR Accent]films[/COLOR]</label>
-					<posx>74</posx>
-					<posy>285</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_menu</font>
-					<align>left</align>
-					<visible>Control.HasFocus(501)</visible>
-					<animation effect="fade" start="0" time="500" condition="Control.HasFocus(501)" >Conditional</animation>
-					<animation effect="fade" time="200" delay="200">Hidden</animation>
+			<posx>74</posx>
+			<posy>285</posy>
+			<height>30</height>
+			<width>250</width>
+			<font>Home_menu</font>
+			<align>left</align>
+			<visible>Control.HasFocus(501)</visible>
+			<animation effect="fade" start="0" time="500" condition="Control.HasFocus(501)" >Conditional</animation>
+			<animation effect="fade" time="200" delay="200">Hidden</animation>
 		</control>
 
 
 		<control type="label">
 			<label>[COLOR Accent]tv shows[/COLOR]</label>
-					<posx>74</posx>
-					<posy>325</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_menu</font>
-					<align>left</align>
-				    <visible>Control.HasFocus(503)</visible>
-					<animation effect="fade" start="0" time="500" condition="Control.HasFocus(503)" >Conditional</animation>
-					<animation effect="fade" time="200" delay="200">Hidden</animation>
+			<posx>74</posx>
+			<posy>325</posy>
+			<height>30</height>
+			<width>250</width>
+			<font>Home_menu</font>
+			<align>left</align>
+			<visible>Control.HasFocus(503)</visible>
+			<animation effect="fade" start="0" time="500" condition="Control.HasFocus(503)" >Conditional</animation>
+			<animation effect="fade" time="200" delay="200">Hidden</animation>
 		</control>
-		
-		
+
+
 		<control type="label">
 			<label>[COLOR Accent]settings[/COLOR]</label>
-					<posx>74</posx>
-					<posy>485</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_menu</font>
-					<align>left</align>
-					<visible>Control.HasFocus(505)</visible>
-					<animation effect="fade" start="0" time="500" condition="Control.HasFocus(505)" >Conditional</animation>
-					<animation effect="fade" time="200" delay="200">Hidden</animation>
+			<posx>74</posx>
+			<posy>485</posy>
+			<height>30</height>
+			<width>250</width>
+			<font>Home_menu</font>
+			<align>left</align>
+			<visible>Control.HasFocus(505)</visible>
+			<animation effect="fade" start="0" time="500" condition="Control.HasFocus(505)" >Conditional</animation>
+			<animation effect="fade" time="200" delay="200">Hidden</animation>
 		</control>
-		
-	<control type="label">
+
+		<control type="label">
 			<label>[COLOR Accent]shutdown[/COLOR]</label>
-					<posx>74</posx>
-					<posy>525</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_menu</font>
-					<align>left</align>
-					<visible>Control.HasFocus(506)</visible>
-					<animation effect="fade" start="0" time="500" condition="Control.HasFocus(506)" >Conditional</animation>
-					<animation effect="fade" time="200" delay="200">Hidden</animation>
+			<posx>74</posx>
+			<posy>525</posy>
+			<height>30</height>
+			<width>250</width>
+			<font>Home_menu</font>
+			<align>left</align>
+			<visible>Control.HasFocus(506)</visible>
+			<animation effect="fade" start="0" time="500" condition="Control.HasFocus(506)" >Conditional</animation>
+			<animation effect="fade" time="200" delay="200">Hidden</animation>
 		</control>
-		
-		
-		
-		
-		
-		
-		
-		
-		
-	<control type="group" id="777">   
-	
 
 
-		
-		<control id="501">
-		<type>button</type>
-					<label></label>
-					<posx>20</posx>
-					<posy>288</posy>
-					<height>40</height>
-					<width>40</width>
-					<font>Home_menu</font>
-					<align>left</align>
-					<onup>506</onup>
-					<ondown>503</ondown>
-					<onleft></onleft>
-					<onright>701</onright>
-					<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+
+
+
+
+
+
+
+		<control type="group" id="777">   
+
+
+
+
+			<control id="501">
+				<type>button</type>
+				<label></label>
+				<posx>20</posx>
+				<posy>288</posy>
+				<height>40</height>
+				<width>40</width>
+				<font>Home_menu</font>
+				<align>left</align>
+				<onup>506</onup>
+				<ondown>503</ondown>
+				<onleft></onleft>
+				<onright>701</onright>
+				<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+			</control>
+
+			<control id="511">
+				<type>image</type>
+				<label></label>
+				<posx>15</posx>
+				<posy>275</posy>
+				<height>50</height>
+				<width>50</width>
+				<align>left</align>
+				<texture>marker.png</texture>
+				<visible>Control.HasFocus(501)</visible>
+				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(501)" pulse="true">Conditional</animation>
+				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(501)" >Conditional</animation>
+				<animation effect="fade" time="200" delay="200">Hidden</animation>
+			</control>
+
+
+
+
+			<control id="503">
+				<type>button</type>
+				<label></label>
+				<posx>20</posx>
+				<posy>328</posy>
+				<height>40</height>
+				<width>40</width>
+				<font>Home_menu</font>
+				<align>left</align>
+				<onup>501</onup>
+				<ondown>505</ondown>
+				<onleft></onleft>
+				<onright>801</onright>
+				<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
+			</control>
+
+			<control id="513">
+				<type>image</type>
+				<label></label>
+				<posx>15</posx>
+				<posy>323</posy>
+				<height>50</height>
+				<width>50</width>
+				<align>left</align>
+				<texture>marker.png</texture>
+				<visible>Control.HasFocus(503)</visible>
+				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(503)" pulse="true">Conditional</animation>
+				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(503)" >Conditional</animation>
+				<animation effect="fade" time="200" delay="200">Hidden</animation>
+			</control>	
+
+
+
+
+
+			<control id="505">
+				<type>button</type>
+				<label></label>
+				<posx>20</posx>
+				<posy>485</posy>
+				<height>40</height>
+				<width>40</width>
+				<font>Home_menu</font>
+				<align>left</align>
+				<onup>503</onup>
+				<ondown>506</ondown>
+				<onleft></onleft>
+				<onright>69</onright>
+				<onclick>activatewindow(Settings,return)</onclick>
+			</control>
+
+			<control id="515">
+				<type>image</type>
+				<label></label>
+				<posx>15</posx>
+				<posy>482</posy>
+				<height>50</height>
+				<width>50</width>
+				<align>left</align>
+				<texture>marker.png</texture>
+				<visible>Control.HasFocus(505)</visible>
+				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(505)" pulse="true">Conditional</animation>
+				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(505)" >Conditional</animation>
+				<animation effect="fade" time="200" delay="200">Hidden</animation>
+			</control>		
+
+
+
+
+			<control id="506">
+				<type>button</type>
+				<label></label>
+				<posx>20</posx>
+				<posy>525</posy>
+				<height>40</height>
+				<width>40</width>
+				<font>Home_menu</font>
+				<align>left</align>
+				<onup>505</onup>
+				<ondown>501</ondown>
+				<onleft>300</onleft>
+				<onright>300</onright>
+				<onclick>ActivateWindow(shutdownmenu)</onclick>
+			</control>
+
+			<control id="516">
+				<type>image</type>
+				<label></label>
+				<posx>15</posx>
+				<posy>522</posy>
+				<height>50</height>
+				<width>50</width>
+				<align>left</align>
+				<texture>marker.png</texture>
+				<visible>Control.HasFocus(506)</visible>
+				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(506)" pulse="true">Conditional</animation>
+				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(506)" >Conditional</animation>
+				<animation effect="fade" time="200" delay="200">Hidden</animation>
+			</control>
+
+
+
 		</control>
-		
-		<control id="511">
-		<type>image</type>
-					<label></label>
-					<posx>15</posx>
-					<posy>275</posy>
-					<height>50</height>
-					<width>50</width>
-					<align>left</align>
-					<texture>marker.png</texture>
-					<visible>Control.HasFocus(501)</visible>
-					<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(501)" pulse="true">Conditional</animation>
-					<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(501)" >Conditional</animation>
-					<animation effect="fade" time="200" delay="200">Hidden</animation>
-		</control>
-		
-		
-		
-		
-		<control id="503">
-		<type>button</type>
-					<label></label>
-					<posx>20</posx>
-					<posy>328</posy>
-					<height>40</height>
-					<width>40</width>
-					<font>Home_menu</font>
-					<align>left</align>
-					<onup>501</onup>
-					<ondown>505</ondown>
-					<onleft></onleft>
-					<onright>801</onright>
-					<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
-		</control>
-		
-		<control id="513">
-		<type>image</type>
-					<label></label>
-					<posx>15</posx>
-					<posy>323</posy>
-					<height>50</height>
-					<width>50</width>
-					<align>left</align>
-					<texture>marker.png</texture>
-					<visible>Control.HasFocus(503)</visible>
-					<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(503)" pulse="true">Conditional</animation>
-					<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(503)" >Conditional</animation>
-					<animation effect="fade" time="200" delay="200">Hidden</animation>
-		</control>	
-		
-		
-		
-		
-		
-		<control id="505">
-		<type>button</type>
-					<label></label>
-					<posx>20</posx>
-					<posy>485</posy>
-					<height>40</height>
-					<width>40</width>
-					<font>Home_menu</font>
-					<align>left</align>
-					<onup>503</onup>
-					<ondown>506</ondown>
-					<onleft></onleft>
-					<onright>69</onright>
-					<onclick>activatewindow(AppearanceSettings,return)</onclick>
-		</control>
-		
-		<control id="515">
-		<type>image</type>
-					<label></label>
-					<posx>15</posx>
-					<posy>482</posy>
-					<height>50</height>
-					<width>50</width>
-					<align>left</align>
-					<texture>marker.png</texture>
-					<visible>Control.HasFocus(505)</visible>
-					<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(505)" pulse="true">Conditional</animation>
-					<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(505)" >Conditional</animation>
-					<animation effect="fade" time="200" delay="200">Hidden</animation>
-		</control>		
-		
-		
-		
-		
-		<control id="506">
-		<type>button</type>
-					<label></label>
-					<posx>20</posx>
-					<posy>525</posy>
-					<height>40</height>
-					<width>40</width>
-					<font>Home_menu</font>
-					<align>left</align>
-					<onup>505</onup>
-					<ondown>501</ondown>
-					<onleft>300</onleft>
-					<onright>300</onright>
-					<onclick>ActivateWindow(shutdownmenu)</onclick>
-		</control>
-		
-		<control id="516">
-		<type>image</type>
-					<label></label>
-					<posx>15</posx>
-					<posy>522</posy>
-					<height>50</height>
-					<width>50</width>
-					<align>left</align>
-					<texture>marker.png</texture>
-					<visible>Control.HasFocus(506)</visible>
-					<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(506)" pulse="true">Conditional</animation>
-					<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(506)" >Conditional</animation>
-					<animation effect="fade" time="200" delay="200">Hidden</animation>
-		</control>
-		
-		
-		
-	</control>
 
 
 
@@ -322,1406 +322,1104 @@
 
 <control type="group" id="355">   	
 
-<visible>[Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701)] | Control.HasFocus(702) | Control.HasFocus(703)</visible>
-<animation effect="fade" time="400">VisibleChange</animation>
-<animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)">Conditional</animation>
-<animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)" reversible="false">Conditional</animation>	
-<animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(506) | Control.HasFocus(503)" reversible="false">Conditional</animation>
-			
-			
-			
-			
-		<control type="label">
-			<label>library</label>
-					<posx>360</posx>
-					<posy>200</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_sub_header</font>
-					<align>left</align>
-		</control>	
-		
-		
-		<control type="label">
-			<label>recent</label>
-					<posx>720</posx>
-					<posy>200</posy>
-					<height>30</height>
-					<width>400</width>
-					<font>Home_sub_header</font>
-					<align>left</align>
-		</control>
-		
-		<control type="image">
-				<posx>360</posx>
-				<posy>290</posy>
-				<width>315</width>
-				<height>155</height>
-				<texture>tile.png</texture>
-		</control>
-			
-		<control type="image">
-				<posx>360</posx>
-				<posy>290</posy>
-				<width>315</width>
-				<height>155</height>
-				<texture>button.png</texture>
-				<visible>[Control.HasFocus(701)]</visible>
-				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(701)">Conditional</animation>
-		</control>
-			
-		
-		<control id="701">
-		<type>button</type>
-					<label></label>
-					<posx>360</posx>
-					<posy>290</posy>
-					<width>315</width>
-					<height>155</height>
-					<align>left</align>
-					<onup>702</onup>
-					<ondown>702</ondown>
-					<onleft>501</onleft>
-					<onright>66</onright>
-					<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
-		</control>
-			
-		<control type="image">
-				<posx>400</posx>
-				<posy>315</posy>
-				<width>90</width>
-				<height>90</height>
-				<texture>movies.png</texture>
-			</control>	
-			
-	
-		<control type="label">
-			<label>$INFO[Window.Property(Movies.Count)]$INFO[Movies.Count]</label>
-					<posx>490</posx>
-					<posy>350</posy>
-					<height>30</height>
-					<width>400</width>
-					<font>Home_numbers</font>
-					<align>left</align>
-		</control>
+	<visible>[Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701)] | Control.HasFocus(702) | Control.HasFocus(703)</visible>
+	<animation effect="fade" time="400">VisibleChange</animation>
+	<animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)">Conditional</animation>
+	<animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)" reversible="false">Conditional</animation>	
+	<animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(506) | Control.HasFocus(503)" reversible="false">Conditional</animation>
 
-		<control type="image">
-				<posx>360</posx>
-				<posy>449</posy>
-				<width>155</width>
-				<height>155</height>
-				<texture>tile.png</texture>
-			</control>
-		
-		<control type="image">
-				<posx>360</posx>
-				<posy>449</posy>
-				<width>155</width>
-				<height>155</height>
-				<texture>button.png</texture>
-				<visible>[Control.HasFocus(702)]</visible>
-				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(702)">Conditional</animation>
-		</control>
-			
-		
-		<control id="702">
+
+
+
+	<control type="label">
+		<label>library</label>
+		<posx>360</posx>
+		<posy>200</posy>
+		<height>30</height>
+		<width>250</width>
+		<font>Home_sub_header</font>
+		<align>left</align>
+	</control>	
+
+
+	<control type="label">
+		<label>recent</label>
+		<posx>720</posx>
+		<posy>200</posy>
+		<height>30</height>
+		<width>400</width>
+		<font>Home_sub_header</font>
+		<align>left</align>
+	</control>
+
+	<control type="image">
+		<posx>360</posx>
+		<posy>290</posy>
+		<width>315</width>
+		<height>155</height>
+		<texture>tile.png</texture>
+	</control>
+
+	<control type="image">
+		<posx>360</posx>
+		<posy>290</posy>
+		<width>315</width>
+		<height>155</height>
+		<texture>button.png</texture>
+		<visible>[Control.HasFocus(701)]</visible>
+		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(701)">Conditional</animation>
+	</control>
+
+
+	<control id="701">
 		<type>button</type>
-					<label></label>
-					<posx>360</posx>
-					<posy>449</posy>
+		<label></label>
+		<posx>360</posx>
+		<posy>290</posy>
+		<width>315</width>
+		<height>155</height>
+		<align>left</align>
+		<onup>702</onup>
+		<ondown>702</ondown>
+		<onleft>501</onleft>
+		<onright>66</onright>
+		<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+	</control>
+
+	<control type="image">
+		<posx>400</posx>
+		<posy>315</posy>
+		<width>90</width>
+		<height>90</height>
+		<texture>movies.png</texture>
+	</control>	
+
+
+	<control type="label">
+		<label>$INFO[Window.Property(Movies.Count)]$INFO[Movies.Count]</label>
+		<posx>490</posx>
+		<posy>350</posy>
+		<height>30</height>
+		<width>400</width>
+		<font>Home_numbers</font>
+		<align>left</align>
+	</control>
+
+	<control type="image">
+		<posx>360</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<texture>tile.png</texture>
+	</control>
+
+	<control type="image">
+		<posx>360</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<texture>button.png</texture>
+		<visible>[Control.HasFocus(702)]</visible>
+		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(702)">Conditional</animation>
+	</control>
+
+
+	<control id="702">
+		<type>button</type>
+		<label></label>
+		<posx>360</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<align>left</align>
+		<onup>701</onup>
+		<ondown>701</ondown>
+		<onleft>501</onleft>
+		<onright>703</onright>
+		<onclick>ActivateWindow(Videos, MovieGenres,return)</onclick>
+	</control>
+
+
+
+
+	<control type="image">
+		<posx>520</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<texture>tile.png</texture>
+	</control>
+
+	<control type="image">
+		<posx>520</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<texture>button.png</texture>
+		<visible>[Control.HasFocus(703)]</visible>
+		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(703)">Conditional</animation>
+	</control>
+
+
+	<control id="703">
+		<type>button</type>
+		<label></label>
+		<posx>520</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<align>left</align>
+		<onup>701</onup>
+		<ondown>701</ondown>
+		<onleft>702</onleft>
+		<onright>66</onright>
+		<onclick>ActivateWindow(Videos, RecentlyAddedMovies,return)</onclick>
+	</control>			
+
+
+
+	<control type="label">
+		<label>All Films</label>
+		<posx>370</posx>
+		<posy>410</posy>
+		<height>30</height>
+		<width>320</width>
+		<font>button_title</font>
+		<align>left</align>
+	</control>	
+
+	<control type="label">
+		<label>Genres</label>
+		<posx>370</posx>
+		<posy>568</posy>
+		<height>30</height>
+		<width>250</width>
+		<font>button_title</font>
+		<align>left</align>
+	</control>
+
+	<control type="image">
+		<posx>395</posx>
+		<posy>475</posy>
+		<width>90</width>
+		<height>90</height>
+		<texture>genre.png</texture>
+	</control>	
+
+
+	<control type="label">
+		<label>All Recent</label>
+		<posx>530</posx>
+		<posy>568</posy>
+		<height>30</height>
+		<width>250</width>
+		<font>button_title</font>
+		<align>left</align>
+	</control>	
+
+	<control type="image">
+		<posx>555</posx>
+		<posy>475</posy>
+		<width>90</width>
+		<height>90</height>
+		<texture>recent.png</texture>
+	</control>	
+
+
+	<control type="panel" id="66">
+		<posx>710</posx>
+		<posy>290</posy>
+		<width>560</width>
+		<height>320</height>
+		<preloaditems>2</preloaditems>
+
+		<visible>true</visible>
+		<onup>66</onup>
+		<ondown>66</ondown>
+		<onleft>701</onleft>
+		<onright>66</onright>
+		<orientation>vertical</orientation>
+		<pagecontrol>98</pagecontrol>
+		<focusposition>0</focusposition>
+		<scrolltime tween="cubic" easing="out">400</scrolltime>
+		<itemlayout width="159" height="159">
+
+			<control type="image">
+				<posx>9</posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<texture blend="false">tile.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+
+
+			<control type="image">
+				<posx>9</posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<texture blend="false">$INFO[ListItem.Thumb]</texture>
+				<aspectratio>scale</aspectratio>
+				<colordiffuse>ImageDiffuse</colordiffuse>
+			</control>
+		</itemlayout>
+
+
+		<focusedlayout width="215" height="348">
+			<control type="image">
+				<posx>9</posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<texture >$INFO[ListItem.Thumb]</texture>
+				<aspectratio>scale</aspectratio>
+				<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+			</control>
+
+			<control type="group">
+				<posx>0</posx>
+				<posy>0</posy>
+				<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+
+				<control type="image">
+					<posx>9</posx>
+					<posy>0</posy>
 					<width>155</width>
 					<height>155</height>
-					<align>left</align>
-					<onup>701</onup>
-					<ondown>701</ondown>
-					<onleft>501</onleft>
-					<onright>703</onright>
-					<onclick>ActivateWindow(Videos, MovieGenres,return)</onclick>
-		</control>
-		
-		
-		
-		
-		<control type="image">
-				<posx>520</posx>
-				<posy>449</posy>
-				<width>155</width>
-				<height>155</height>
-				<texture>tile.png</texture>
+					<texture >Button_fade.png</texture>
+
+				</control>
 			</control>
-			
-		<control type="image">
-				<posx>520</posx>
-				<posy>449</posy>
-				<width>155</width>
-				<height>155</height>
-				<texture>button.png</texture>
-				<visible>[Control.HasFocus(703)]</visible>
-				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(703)">Conditional</animation>
-		</control>
-			
-		
-		<control id="703">
-		<type>button</type>
-					<label></label>
-					<posx>520</posx>
-					<posy>449</posy>
-					<width>155</width>
-					<height>155</height>
-					<align>left</align>
-					<onup>701</onup>
-					<ondown>701</ondown>
-					<onleft>702</onleft>
-					<onright>66</onright>
-					<onclick>ActivateWindow(Videos, RecentlyAddedMovies,return)</onclick>
-		</control>			
 
+			<control type="label">
+				<label> $INFO[ListItem.Label2][COLOR Accent] $INFO[ListItem.Label][/COLOR]</label>
+				<posx>10</posx>
+				<posy>121</posy>
+				<height>30</height>
+				<width>153</width>
+				<font>button_bold</font>
+				<align>left</align>
+				<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
+			</control>
 
-			
-		<control type="label">
-			<label>All Films</label>
-					<posx>370</posx>
-					<posy>410</posy>
-					<height>30</height>
-					<width>320</width>
-					<font>button_title</font>
-					<align>left</align>
-		</control>	
-
-		<control type="label">
-			<label>Genres</label>
-					<posx>370</posx>
-					<posy>568</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>button_title</font>
-					<align>left</align>
-		</control>
-		
-		<control type="image">
-				<posx>395</posx>
-				<posy>475</posy>
-				<width>90</width>
-				<height>90</height>
-				<texture>genre.png</texture>
-		</control>	
-			
-		
-		<control type="label">
-			<label>All Recent</label>
-					<posx>530</posx>
-					<posy>568</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>button_title</font>
-					<align>left</align>
-		</control>	
-
-		<control type="image">
-				<posx>555</posx>
-				<posy>475</posy>
-				<width>90</width>
-				<height>90</height>
-				<texture>recent.png</texture>
-		</control>	
-		
-		
-			<control type="panel" id="66">
-    <posx>710</posx>
-    <posy>290</posy>
-    <width>560</width>
-    <height>315</height>
-	<preloaditems>2</preloaditems>
-    <!--<animation effect="slide" start="+1300,0" time="300" condition="[Control.HasFocus(502) | Control.HasFocus(66)]" >condition</animation> -->
-	
-	<visible>true</visible>
-    <onup>66</onup>
-    <ondown>66</ondown>
-    <onleft>701</onleft>
-    <onright>66</onright>
-    <orientation>vertical</orientation>
-    <pagecontrol>98</pagecontrol>
-    <focusposition>0</focusposition>
-    <scrolltime tween="cubic" easing="out">400</scrolltime>
-    <itemlayout width="159" height="159">
-	
-	    <control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">tile.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-	
-	
-        <control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">$INFO[ListItem.Thumb]</texture>
-            <aspectratio>scale</aspectratio>
-			<colordiffuse>ImageDiffuse</colordiffuse>
-        </control>
-    </itemlayout>
-	
-	
-    <focusedlayout width="215" height="348">
-        <control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture >$INFO[ListItem.Thumb]</texture>
-            <aspectratio>scale</aspectratio>
-			<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
-        </control>
-		
-		<control type="group">
-		<posx>0</posx>
-		<posy>0</posy>
-		<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
-		
-		<control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture >Button_fade.png</texture>
-			
-        </control>
-		</control>
-		
-		<control type="label">
-			<label> $INFO[ListItem.Label2][COLOR Accent] $INFO[ListItem.Label][/COLOR]</label>
-					<posx>10</posx>
-					<posy>121</posy>
-					<height>30</height>
-					<width>153</width>
-					<font>button_bold</font>
-					<align>left</align>
-					<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
-		</control>
-		
-		<!--
-		<control type="label">
+			<!--
+			<control type="label">
 			<label>[LOWERCASE][COLOR Accent]$INFO[ListItem.Label][/COLOR][/LOWERCASE]</label>
-					<posx>10</posx>
-					<posy>123</posy>
-					<height>30</height>
-					<width>153</width>
-					<font>button_bold</font>
-					<align>left</align>
-					<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
+			<posx>10</posx>
+			<posy>123</posy>
+			<height>30</height>
+			<width>153</width>
+			<font>button_bold</font>
+			<align>left</align>
+			<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
+			</control>
+			-->
+
+
+
+		</focusedlayout>
+		<!-- XXX
+		<focusedlayout width="215" height="348">
+		<control type="image">
+		<posx>9</posx>
+		<posy>0</posy>
+		<width>155</width>
+		<height>155</height>
+		<texture blend="false">$INFO[ListItem.Thumb]</texture>
+		<aspectratio>scale</aspectratio>
+		<colordiffuse>white</colordiffuse>
+		<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
 		</control>
-		-->
-		
-
-		
-    </focusedlayout>
-	<!-- XXX
-    <focusedlayout width="215" height="348">
-        <control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">$INFO[ListItem.Thumb]</texture>
-            <aspectratio>scale</aspectratio>
-			<colordiffuse>white</colordiffuse>
-			<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
-        </control>
-    </focusedlayout> -->
-    <content>
-        <item id="11">
-            <label>$INFO[Window.Property(LatestMovie.1.Year)]</label>
-			<label2>$INFO[Window.Property(LatestMovie.1.Title)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestMovie.1.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestMovie.1.Fanart)]</thumb>
-        </item>
-        <item id="12">
-            <label>$INFO[Window.Property(LatestMovie.2.Year)]</label>
-			<label2>$INFO[Window.Property(LatestMovie.2.Title)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestMovie.2.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestMovie.2.Fanart)]</thumb>
-        </item>
-        <item id="13">
-            <label>$INFO[Window.Property(LatestMovie.3.Year)]</label>
-			<label2>$INFO[Window.Property(LatestMovie.3.Title)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestMovie.3.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestMovie.3.Fanart)]</thumb>
-        </item>
-        <item id="14">
-            <label>$INFO[Window.Property(LatestMovie.4.Year)]</label>
-			<label2>$INFO[Window.Property(LatestMovie.4.Title)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestMovie.4.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestMovie.4.Fanart)]</thumb>
-        </item>
-        <item id="15">
-            <label>$INFO[Window.Property(LatestMovie.5.Year)]</label>
-			<label2>$INFO[Window.Property(LatestMovie.5.Title)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestMovie.5.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestMovie.5.Fanart)]</thumb>
-        </item>
-        <item id="16">
-            <label>$INFO[Window.Property(LatestMovie.6.Year)]</label>
-			<label2>$INFO[Window.Property(LatestMovie.6.Title)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestMovie.6.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestMovie.6.Fanart)]</thumb>
-        </item>
-        <item id="17">
-            <label>$INFO[Window.Property(LatestMovie.7.Year)]</label>
-			<label2>$INFO[Window.Property(LatestMovie.7.Title)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestMovie.7.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestMovie.7.Fanart)]</thumb>
-        </item>
-        <item id="18">
-            <label>$INFO[Window.Property(LatestMovie.8.Year)]</label>
-			<label2>$INFO[Window.Property(LatestMovie.8.Title)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestMovie.8.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestMovie.8.Fanart)]</thumb>
-        </item>
-        <item id="19">
-            <label>$INFO[Window.Property(LatestMovie.9.Year)]</label>
-			<label2>$INFO[Window.Property(LatestMovie.9.Title)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestMovie.9.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestMovie.9.Fanart)]</thumb>
-        </item>
-
-    </content>
-</control>  
+		</focusedlayout> -->
+		<content>
+			<item id="11">
+				<label>$INFO[Window.Property(LatestMovie.1.Year)]</label>
+				<label2>$INFO[Window.Property(LatestMovie.1.Title)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.1.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestMovie.1.Fanart)]</thumb>
+			</item>
+			<item id="12">
+				<label>$INFO[Window.Property(LatestMovie.2.Year)]</label>
+				<label2>$INFO[Window.Property(LatestMovie.2.Title)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.2.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestMovie.2.Fanart)]</thumb>
+			</item>
+			<item id="13">
+				<label>$INFO[Window.Property(LatestMovie.3.Year)]</label>
+				<label2>$INFO[Window.Property(LatestMovie.3.Title)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.3.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestMovie.3.Fanart)]</thumb>
+			</item>
+			<item id="14">
+				<label>$INFO[Window.Property(LatestMovie.4.Year)]</label>
+				<label2>$INFO[Window.Property(LatestMovie.4.Title)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.4.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestMovie.4.Fanart)]</thumb>
+			</item>
+			<item id="15">
+				<label>$INFO[Window.Property(LatestMovie.5.Year)]</label>
+				<label2>$INFO[Window.Property(LatestMovie.5.Title)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.5.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestMovie.5.Fanart)]</thumb>
+			</item>
+			<item id="16">
+				<label>$INFO[Window.Property(LatestMovie.6.Year)]</label>
+				<label2>$INFO[Window.Property(LatestMovie.6.Title)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.6.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestMovie.6.Fanart)]</thumb>
+			</item>
+		</content>
+	</control>  
 </control> 
 
 
 <!-- recently added movies overlay ZZZ-->
 
 <control type= "group">
-<visible>Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)</visible>
-				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-				
-				<animation effect="fade" delay="400" start="0" end="100" time="300" easing="Out" tween="square" condition="Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)">Conditional</animation>
-    <posx>719</posx>
-    <posy>290</posy>
-    <width>560</width>
-    <height>315</height>
+	<visible>Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)</visible>
+	<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+
+	<animation effect="fade" delay="400" start="0" end="100" time="300" easing="Out" tween="square" condition="Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)">Conditional</animation>
+	<posx>719</posx>
+	<posy>290</posy>
+	<width>560</width>
+	<height>320</height>
 
 
-<control type= "group"> <!------start black 1 --------->	
-            <posx>0</posx>
-            <posy>0</posy>
-	    <control type="image">
-<visible>IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
+	<control type= "group"> <!------start black 1 --------->	
+		<posx>0</posx>
+		<posy>0</posy>
+		<control type="image">
+			<visible>IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
 			<label> $INFO[Window.Property(LatestMovie.1.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
 			<font>button_bold</font>
 			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.4.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
+			<scrollspeed>50</scrollspeed>
+		</control>
+
+
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out" tween="square">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
 
 		<control type="fadelabel">
-<visible>!Container(66).HasNext + Container(66).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.7.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out" tween="square">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+			<visible>IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
 			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.1.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
 			<font>Home_sub_header</font>
 			<align>left</align>
 		</control>		
 
 
-<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.4.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>	
-		
-		
-<control type="fadelabel">
-<visible>!Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.7.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>		
-				
-		
-		
-</control>		<!------end black 1 --------->	
-	
-		
 
-<control type= "group"> <!------start black 2 --------->	
-            <posx>159</posx>
-            <posy>0</posy>
-	    <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
+	</control>		<!------end black 1 --------->	
+
+
+
+	<control type= "group"> <!------start black 2 --------->	
+		<posx>159</posx>
+		<posy>0</posy>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
 			<label> $INFO[Window.Property(LatestMovie.2.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
 			<font>button_bold</font>
 			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
+			<scrollspeed>50</scrollspeed>
 		</control>	
 
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.5.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
-<control type="fadelabel">
-<visible>!Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.8.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>	
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
 
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>	
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
 			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.2.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>	
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.5.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>	
-
-<control type="fadelabel">
-<visible>!Container(66).HasNext + Container(66).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.8.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
 			<font>Home_sub_header</font>
 			<align>left</align>
 		</control>			
-				
-		
-		
-</control>		<!------end black 2 --------->	
+
+
+
+	</control>		<!------end black 2 --------->	
 
 
 
 
-<control type= "group"> <!------start black 3 --------->	
-            <posx>318</posx>
-            <posy>0</posy>
-	    <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
+	<control type= "group"> <!------start black 3 --------->	
+		<posx>318</posx>
+		<posy>0</posy>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>Container(66).HasNext + !Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
 			<label> $INFO[Window.Property(LatestMovie.3.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
 			<font>button_bold</font>
 			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
+			<scrollspeed>50</scrollspeed>
+		</control>
 
 
-<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.6.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>	
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
 
-<control type="fadelabel">
-<visible>!Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.9.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>	
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
 			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.3.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
 			<font>Home_sub_header</font>
 			<align>left</align>
 		</control>	
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.6.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
+
+
+
+	</control>		<!------end black 3 --------->	
+
+
+
+	<control type= "group"> <!------start black 4 --------->	
+		<posx>0</posx>
+		<posy>159</posy>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
+			<label> $INFO[Window.Property(LatestMovie.4.Title)]</label>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
+			<font>button_bold</font>
 			<align>left</align>
+			<scrollspeed>50</scrollspeed>
 		</control>	
-		
-<control type="fadelabel">
-<visible>!Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.9.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
+
+
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>	
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.4.Title)][/B][/COLOR]</label>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
 			<font>Home_sub_header</font>
 			<align>left</align>
 		</control>			
-				
-		
-		
-</control>		<!------end black 3 --------->	
+
+	</control>		<!------end black 4 --------->			
 
 
 
-<control type= "group"> <!------start black 4 --------->	
-<visible>[Container(66).HasNext + !Container(66).HasPrevious] | [Container(66).HasNext + Container(66).HasPrevious]</visible>
-            <posx>0</posx>
-            <posy>159</posy>
-	    <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.4.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
+	<control type= "group"> <!------start black 5 --------->	
+		<posx>159</posx>
+		<posy>159</posy>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
+			<label> $INFO[Window.Property(LatestMovie.5.Title)]</label>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
 			<font>button_bold</font>
 			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
+			<scrollspeed>50</scrollspeed>
 		</control>	
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.7.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
+
+
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>	
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.5.Title)][/B][/COLOR]</label>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
+			<font>Home_sub_header</font>
+			<align>left</align>
+		</control>				
+
+
+
+	</control>		<!------end black 5 --------->	
+
+
+
+	<control type= "group"> <!------start black 6 --------->	
+		<posx>318</posx>
+		<posy>159</posy>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
+			<label> $INFO[Window.Property(LatestMovie.6.Title)]</label>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
 			<font>button_bold</font>
 			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>	
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
+			<scrollspeed>50</scrollspeed>
+		</control>
 
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.4.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
+
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>	
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.6.Title)][/B][/COLOR]</label>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
 			<font>Home_sub_header</font>
 			<align>left</align>
 		</control>						
 
-<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.7.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>				
-		
-</control>		<!------end black 4 --------->			
-		
 
-
-<control type= "group"> <!------start black 5 --------->	
-<visible>[Container(66).HasNext + !Container(66).HasPrevious] | [Container(66).HasNext + Container(66).HasPrevious]</visible>
-            <posx>159</posx>
-            <posy>159</posy>
-	    <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.5.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-
-
-<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.8.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>	
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.5.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>	
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.8.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>			
-				
-		
-		
-</control>		<!------end black 5 --------->	
+	</control>		<!------end black 6 --------->	
 
 
 
-<control type= "group"> <!------start black 6 --------->	
-<visible>[Container(66).HasNext + !Container(66).HasPrevious] | [Container(66).HasNext + Container(66).HasPrevious]</visible>
-            <posx>318</posx>
-            <posy>159</posy>
-	    <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.6.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-			<label> $INFO[Window.Property(LatestMovie.9.Title)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>	
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
 
-<control type="fadelabel">
-<visible>Container(66).HasNext + !Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.6.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>			
-				
-		
-<control type="fadelabel">
-<visible>Container(66).HasNext + Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.9.Title)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>			
-		
-		
-</control>		<!------end black 6 --------->	
-
-
-		
-		
 
 </control> <!-- end movies overlays-->
 
 
 <!--TV SHOWS-->
-	<control type="group" id="375">   	
+<control type="group" id="375">   	
 
-<visible>[Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801)] | Control.HasFocus(802) | Control.HasFocus(803)</visible>
-<animation effect="fade" time="400">VisibleChange</animation>
-<animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)">Conditional</animation>
-<animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)" reversible="false">Conditional</animation>	
-<animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(501) | Control.HasFocus(505)" reversible="false">Conditional</animation>
-			
+	<visible>[Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801)] | Control.HasFocus(802) | Control.HasFocus(803)</visible>
+	<animation effect="fade" time="400">VisibleChange</animation>
+	<animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)">Conditional</animation>
+	<animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)" reversible="false">Conditional</animation>	
+	<animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(501) | Control.HasFocus(505)" reversible="false">Conditional</animation>
 
-<control type="label">
-			<label>library</label>
-					<posx>360</posx>
-					<posy>200</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_sub_header</font>
-					<align>left</align>
-		</control>	
-		
-		
-		<control type="label">
-			<label>recent</label>
-					<posx>720</posx>
-					<posy>200</posy>
-					<height>30</height>
-					<width>400</width>
-					<font>Home_sub_header</font>
-					<align>left</align>
-		</control>
-		
-		<control type="image">
-				<posx>360</posx>
-				<posy>290</posy>
-				<width>315</width>
-				<height>155</height>
-				<texture>tile.png</texture>
-		</control>
-			
-		<control type="image">
-				<posx>360</posx>
-				<posy>290</posy>
-				<width>315</width>
-				<height>155</height>
-				<texture>button.png</texture>
-				<visible>[Control.HasFocus(801)]</visible>
-				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(801)">Conditional</animation>
-		</control>
-			
-<control id="801">
+
+	<control type="label">
+		<label>library</label>
+		<posx>360</posx>
+		<posy>200</posy>
+		<height>30</height>
+		<width>250</width>
+		<font>Home_sub_header</font>
+		<align>left</align>
+	</control>	
+
+
+	<control type="label">
+		<label>recent</label>
+		<posx>720</posx>
+		<posy>200</posy>
+		<height>30</height>
+		<width>400</width>
+		<font>Home_sub_header</font>
+		<align>left</align>
+	</control>
+
+	<control type="image">
+		<posx>360</posx>
+		<posy>290</posy>
+		<width>315</width>
+		<height>155</height>
+		<texture>tile.png</texture>
+	</control>
+
+	<control type="image">
+		<posx>360</posx>
+		<posy>290</posy>
+		<width>315</width>
+		<height>155</height>
+		<texture>button.png</texture>
+		<visible>[Control.HasFocus(801)]</visible>
+		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(801)">Conditional</animation>
+	</control>
+
+	<control id="801">
 		<type>button</type>
-					<label></label>
-					<posx>360</posx>
-					<posy>290</posy>
-					<width>315</width>
-					<height>155</height>
-					<align>left</align>
-					<onup>802</onup>
-					<ondown>802</ondown>
-					<onleft>503</onleft>
-					<onright>68</onright>
-					<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
-		</control>
-			
-		<control type="image">
-				<posx>410</posx>
-				<posy>315</posy>
-				<width>90</width>
-				<height>90</height>
-				<texture>tv_shows.png</texture>
-			</control>	
-			
-	
-		<control type="label">
-			<label>$INFO[Window.Property(TVShows.Count)]$INFO[TVShows.Count]</label>
-					<posx>510</posx>
-					<posy>350</posy>
-					<height>30</height>
-					<width>400</width>
-					<font>Home_numbers</font>
-					<align>left</align>
-		</control>
+		<label></label>
+		<posx>360</posx>
+		<posy>290</posy>
+		<width>315</width>
+		<height>155</height>
+		<align>left</align>
+		<onup>802</onup>
+		<ondown>802</ondown>
+		<onleft>503</onleft>
+		<onright>68</onright>
+		<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
+	</control>
 
-		<control type="image">
-				<posx>360</posx>
-				<posy>449</posy>
-				<width>155</width>
-				<height>155</height>
-				<texture>tile.png</texture>
-			</control>
-		
-		<control type="image">
-				<posx>360</posx>
-				<posy>449</posy>
-				<width>155</width>
-				<height>155</height>
-				<texture>button.png</texture>
-				<visible>[Control.HasFocus(802)]</visible>
-				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(802)">Conditional</animation>
-		</control>	
-		
-		<control id="802">
+	<control type="image">
+		<posx>410</posx>
+		<posy>315</posy>
+		<width>90</width>
+		<height>90</height>
+		<texture>tv_shows.png</texture>
+	</control>	
+
+
+	<control type="label">
+		<label>$INFO[Window.Property(TVShows.Count)]$INFO[TVShows.Count]</label>
+		<posx>510</posx>
+		<posy>350</posy>
+		<height>30</height>
+		<width>400</width>
+		<font>Home_numbers</font>
+		<align>left</align>
+	</control>
+
+	<control type="image">
+		<posx>360</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<texture>tile.png</texture>
+	</control>
+
+	<control type="image">
+		<posx>360</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<texture>button.png</texture>
+		<visible>[Control.HasFocus(802)]</visible>
+		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(802)">Conditional</animation>
+	</control>	
+
+	<control id="802">
 		<type>button</type>
-					<label></label>
-					<posx>360</posx>
-					<posy>449</posy>
-					<width>155</width>
-					<height>155</height>
-					<align>left</align>
-					<onup>801</onup>
-					<ondown>801</ondown>
-					<onleft>503</onleft>
-					<onright>803</onright>
-					<onclick>ActivateWindow(Videos, MovieGenres,return)</onclick>
-		</control>
-		
-		
-		
-		
-		<control type="image">
-				<posx>520</posx>
-				<posy>449</posy>
-				<width>155</width>
-				<height>155</height>
-				<texture>tile.png</texture>
-			</control>
-			
-		<control type="image">
-				<posx>520</posx>
-				<posy>449</posy>
-				<width>155</width>
-				<height>155</height>
-				<texture>button.png</texture>
-				<visible>[Control.HasFocus(803)]</visible>
-				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(803)">Conditional</animation>
-		</control>
-			
-		
-		<control id="803">
+		<label></label>
+		<posx>360</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<align>left</align>
+		<onup>801</onup>
+		<ondown>801</ondown>
+		<onleft>503</onleft>
+		<onright>803</onright>
+		<onclick>ActivateWindow(Videos, MovieGenres,return)</onclick>
+	</control>
+
+
+
+
+	<control type="image">
+		<posx>520</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<texture>tile.png</texture>
+	</control>
+
+	<control type="image">
+		<posx>520</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<texture>button.png</texture>
+		<visible>[Control.HasFocus(803)]</visible>
+		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(803)">Conditional</animation>
+	</control>
+
+
+	<control id="803">
 		<type>button</type>
-					<label></label>
-					<posx>520</posx>
-					<posy>449</posy>
-					<width>155</width>
-					<height>155</height>
-					<align>left</align>
-					<onup>801</onup>
-					<ondown>801</ondown>
-					<onleft>802</onleft>
-					<onright>68</onright>
-					<onclick>ActivateWindow(Videos, RecentlyAddedEpisodes,return)</onclick>
-		</control>			
+		<label></label>
+		<posx>520</posx>
+		<posy>449</posy>
+		<width>155</width>
+		<height>155</height>
+		<align>left</align>
+		<onup>801</onup>
+		<ondown>801</ondown>
+		<onleft>802</onleft>
+		<onright>68</onright>
+		<onclick>ActivateWindow(Videos, RecentlyAddedEpisodes,return)</onclick>
+	</control>			
 
 
-			
-		<control type="label">
-			<label>All TV Shows</label>
-					<posx>370</posx>
-					<posy>410</posy>
-					<height>30</height>
-					<width>280</width>
-					<font>button_title</font>
-					<align>left</align>
-		</control>	
 
-		<control type="label">
-			<label>Genres</label>
-					<posx>370</posx>
-					<posy>568</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>button_title</font>
-					<align>left</align>
-		</control>
-		
-		<control type="image">
-				<posx>395</posx>
-				<posy>475</posy>
-				<width>90</width>
-				<height>90</height>
-				<texture>genre.png</texture>
-		</control>	
-			
-		
-		<control type="label">
-			<label>All Recent</label>
-					<posx>530</posx>
-					<posy>568</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>button_title</font>
-					<align>left</align>
-		</control>	
+	<control type="label">
+		<label>All TV Shows</label>
+		<posx>370</posx>
+		<posy>410</posy>
+		<height>30</height>
+		<width>280</width>
+		<font>button_title</font>
+		<align>left</align>
+	</control>	
 
-		<control type="image">
-				<posx>555</posx>
-				<posy>475</posy>
-				<width>90</width>
-				<height>90</height>
-				<texture>recent.png</texture>
-		</control>	
-	
-	
-	
-	
-	
-		
+	<control type="label">
+		<label>Genres</label>
+		<posx>370</posx>
+		<posy>568</posy>
+		<height>30</height>
+		<width>250</width>
+		<font>button_title</font>
+		<align>left</align>
+	</control>
+
+	<control type="image">
+		<posx>395</posx>
+		<posy>475</posy>
+		<width>90</width>
+		<height>90</height>
+		<texture>genre.png</texture>
+	</control>	
+
+
+	<control type="label">
+		<label>All Recent</label>
+		<posx>530</posx>
+		<posy>568</posy>
+		<height>30</height>
+		<width>250</width>
+		<font>button_title</font>
+		<align>left</align>
+	</control>	
+
+	<control type="image">
+		<posx>555</posx>
+		<posy>475</posy>
+		<width>90</width>
+		<height>90</height>
+		<texture>recent.png</texture>
+	</control>	
+
+
+
+
+
+
 	<control type="panel" id="68">
-    <posx>710</posx>
-    <posy>290</posy>
-    <width>560</width>
-    <height>315</height>
-	<preloaditems>2</preloaditems>
-    <!--<animation effect="slide" start="+1300,0" time="300" condition="[Control.HasFocus(502) | Control.HasFocus(67)]" >condition</animation> -->
-	
-	<visible>true</visible>
-    <onup>68</onup>
-    <ondown>68</ondown>
-    <onleft>801</onleft>
-    <onright>68</onright>
-    <orientation>vertical</orientation>
-    <pagecontrol>98</pagecontrol>
-    <focusposition>0</focusposition>
-    <scrolltime tween="cubic" easing="out">400</scrolltime>
-    <itemlayout width="159" height="159">
-	
-	    <control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">tile.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-	
-	
-        <control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">$INFO[ListItem.Thumb]</texture>
-            <aspectratio>scale</aspectratio>
-			<colordiffuse>ImageDiffuse</colordiffuse>
-        </control>
-    </itemlayout>
-	
-	
-    <focusedlayout width="215" height="348">
-        <control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture >$INFO[ListItem.Thumb]</texture>
-            <aspectratio>scale</aspectratio>
-			<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
-        </control>
-		
-		<control type="group">
-		<posx>0</posx>
+		<posx>710</posx>
+		<posy>290</posy>
+		<width>560</width>
+		<height>320</height>
+		<preloaditems>2</preloaditems>
+		<!--<animation effect="slide" start="+1300,0" time="300" condition="[Control.HasFocus(502) | Control.HasFocus(67)]" >condition</animation> -->
+
+		<visible>true</visible>
+		<onup>68</onup>
+		<ondown>68</ondown>
+		<onleft>801</onleft>
+		<onright>68</onright>
+		<orientation>vertical</orientation>
+		<pagecontrol>98</pagecontrol>
+		<focusposition>0</focusposition>
+		<scrolltime tween="cubic" easing="out">400</scrolltime>
+		<itemlayout width="159" height="159">
+
+			<control type="image">
+				<posx>9</posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<texture blend="false">tile.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+
+
+			<control type="image">
+				<posx>9</posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<texture blend="false">$INFO[ListItem.Thumb]</texture>
+				<aspectratio>scale</aspectratio>
+				<colordiffuse>ImageDiffuse</colordiffuse>
+			</control>
+		</itemlayout>
+
+
+		<focusedlayout width="215" height="348">
+			<control type="image">
+				<posx>9</posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<texture >$INFO[ListItem.Thumb]</texture>
+				<aspectratio>scale</aspectratio>
+				<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+			</control>
+
+			<control type="group">
+				<posx>0</posx>
+				<posy>0</posy>
+				<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+
+
+
+
+
+				<control type="image">
+					<posx>9</posx>
+					<posy>0</posy>
+					<width>155</width>
+					<height>155</height>
+					<texture >Button_fade.png</texture>
+
+				</control>
+			</control>
+
+			<control type="label">
+				<label> $INFO[ListItem.Label2][COLOR Accent] $INFO[ListItem.Label][/COLOR]</label>
+				<posx>10</posx>
+				<posy>121</posy>
+				<height>30</height>
+				<width>153</width>
+				<font>button_bold</font>
+				<align>left</align>
+				<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
+			</control>	
+
+
+
+		</focusedlayout>
+		<!-- XXX
+		<focusedlayout width="215" height="348">
+		<control type="image">
+		<posx>9</posx>
 		<posy>0</posy>
+		<width>155</width>
+		<height>155</height>
+		<texture blend="false">$INFO[ListItem.Thumb]</texture>
+		<aspectratio>scale</aspectratio>
+		<colordiffuse>white</colordiffuse>
 		<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
-		
-		
-		
-		
-		
-<control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture >Button_fade.png</texture>
-			
-        </control>
 		</control>
-		
-		<control type="label">
-			<label> $INFO[ListItem.Label2][COLOR Accent] $INFO[ListItem.Label][/COLOR]</label>
-					<posx>10</posx>
-					<posy>121</posy>
-					<height>30</height>
-					<width>153</width>
-					<font>button_bold</font>
-					<align>left</align>
-					<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
-		</control>	
-		
+		</focusedlayout> -->
+		<content>
+			<item id="11">
+				<label>$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.1.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
+			</item>
+			<item id="12">
+				<label>$INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
+			</item>
+			<item id="13">
+				<label>$INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.3.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
+			</item>
+			<item id="14">
+				<label>$INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.4.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestEpisode.4.Thumb)]</thumb>
+			</item>
+			<item id="15">
+				<label>$INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.5.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestEpisode.5.Thumb)]</thumb>
+			</item>
+			<item id="16">
+				<label>$INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
+				<label2>$INFO[Window.Property(LatestEpisode.6.ShowTitle)]</label2>
+				<onclick>PlayMedia($INFO[Window.Property(LatestEpisode.6.Path)])</onclick>
+				<thumb>$INFO[Window.Property(LatestEpisode.6.Thumb)]</thumb>
+			</item>
 
-		
-    </focusedlayout>
-	<!-- XXX
-    <focusedlayout width="215" height="348">
-        <control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">$INFO[ListItem.Thumb]</texture>
-            <aspectratio>scale</aspectratio>
-			<colordiffuse>white</colordiffuse>
-			<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
-        </control>
-    </focusedlayout> -->
-    <content>
-                <item id="11">
-            <label>$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.1.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
-        </item>
-        <item id="12">
-            <label>$INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
-        </item>
-        <item id="13">
-            <label>$INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.3.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
-        </item>
-        <item id="14">
-            <label>$INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.4.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestEpisode.4.Thumb)]</thumb>
-        </item>
-        <item id="15">
-            <label>$INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.5.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestEpisode.5.Thumb)]</thumb>
-        </item>
-        <item id="16">
-            <label>$INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.6.ShowTitle)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.6.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestEpisode.6.Thumb)]</thumb>
-        </item>
-        <item id="17">
-            <label>$INFO[Window.Property(LatestEpisode.7.EpisodeTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.7.ShowTitle)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.7.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestEpisode.7.Thumb)]</thumb>
-        </item>
-        <item id="18">
-            <label>$INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.8.ShowTitle)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.8.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestEpisode.8.Thumb)]</thumb>
-        </item>
-        <item id="19">
-            <label>$INFO[Window.Property(LatestEpisode.9.EpisodeTitle)]</label>
-			<label2>$INFO[Window.Property(LatestEpisode.9.ShowTitle)]</label2>
-            <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.9.Path)])</onclick>
-            <thumb>$INFO[Window.Property(LatestEpisode.9.Thumb)]</thumb>
-        </item>
+		</content>
+	</control>  
 
-    </content>
-</control>  
-				  
 </control> 
 
 
@@ -1729,850 +1427,584 @@
 <!-- recently added tvshows overlay ZZZ-->
 
 <control type= "group">
-<visible>Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)</visible>
-				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-				
-				<animation effect="fade" delay="400" start="0" end="100" time="300" easing="Out" tween="square" condition="Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)">Conditional</animation>
-    <posx>719</posx>
-    <posy>290</posy>
-    <width>560</width>
-    <height>315</height>
+	<visible>Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)</visible>
+	<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+
+	<animation effect="fade" delay="400" start="0" end="100" time="300" easing="Out" tween="square" condition="Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)">Conditional</animation>
+	<posx>719</posx>
+	<posy>290</posy>
+	<width>560</width>
+	<height>320</height>
 
 
-<control type= "group"> <!------start black 1 --------->	
-            <posx>0</posx>
-            <posy>0</posy>
-	    <control type="image">
-<visible>IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
+	<control type= "group"> <!------start black 1 --------->	
+		<posx>0</posx>
+		<posy>0</posy>
+		<control type="image">
+			<visible>IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
 			<label> $INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
 			<font>button_bold</font>
 			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-			<label> $INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
+			<scrollspeed>50</scrollspeed>
 		</control>	
 
-		<control type="fadelabel">
-<visible>!Container(68).HasNext + Container(68).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-			<label> $INFO[Window.Property(LatestEpisode.7.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out" tween="square">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
 
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out" tween="square">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
 			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.1.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
 			<font>Home_sub_header</font>
 			<align>left</align>
 		</control>		
 
 
-<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.4.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>	
-		
-		
-<control type="fadelabel">
-<visible>!Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.7.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>		
-				
-		
-		
-</control>		<!------end black 1 --------->	
-	
-		
 
-<control type= "group"> <!------start black 2 --------->	
-            <posx>159</posx>
-            <posy>0</posy>
-	    <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
+	</control>		<!------end black 1 --------->	
+
+
+
+	<control type= "group"> <!------start black 2 --------->	
+		<posx>159</posx>
+		<posy>0</posy>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
 			<label> $INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
 			<font>button_bold</font>
 			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
+			<scrollspeed>50</scrollspeed>
 		</control>	
 
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-			<label> $INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
-<control type="fadelabel">
-<visible>!Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-			<label> $INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>	
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
 
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>	
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
 			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.2.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>	
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.5.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>	
-
-<control type="fadelabel">
-<visible>!Container(68).HasNext + Container(68).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.8.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
 			<font>Home_sub_header</font>
 			<align>left</align>
 		</control>			
-				
-		
-		
-</control>		<!------end black 2 --------->	
+
+
+
+	</control>		<!------end black 2 --------->	
 
 
 
 
-<control type= "group"> <!------start black 3 --------->	
-            <posx>318</posx>
-            <posy>0</posy>
-	    <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
+	<control type= "group"> <!------start black 3 --------->	
+		<posx>318</posx>
+		<posy>0</posy>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
 			<label> $INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
 			<font>button_bold</font>
 			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
+			<scrollspeed>50</scrollspeed>
 		</control>	
 
 
-<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-			<label> $INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>	
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
 
-<control type="fadelabel">
-<visible>!Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-			<label> $INFO[Window.Property(LatestEpisode.9.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>	
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
 			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.3.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>	
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.6.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>	
-		
-<control type="fadelabel">
-<visible>!Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.9.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
 			<font>Home_sub_header</font>
 			<align>left</align>
 		</control>			
-				
-		
-		
-</control>		<!------end black 3 --------->	
 
 
 
-<control type= "group"> <!------start black 4 --------->	
-<visible>[Container(68).HasNext + !Container(68).HasPrevious] | [Container(68).HasNext + Container(68).HasPrevious]</visible>
-            <posx>0</posx>
-            <posy>159</posy>
-	    <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
+	</control>		<!------end black 3 --------->	
+
+
+
+	<control type= "group"> <!------start black 4 --------->	
+		<posx>0</posx>
+		<posy>159</posy>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
 			<label> $INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
 			<font>button_bold</font>
 			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-			<label> $INFO[Window.Property(LatestEpisode.7.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>	
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
+			<scrollspeed>50</scrollspeed>
+		</control>		
 
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>	
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
 			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.4.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
 			<font>Home_sub_header</font>
 			<align>left</align>
-		</control>						
+		</control>										
 
-<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.7.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>				
-		
-</control>		<!------end black 4 --------->			
-		
+	</control>		<!------end black 4 --------->			
 
 
-<control type= "group"> <!------start black 5 --------->	
-<visible>[Container(68).HasNext + !Container(68).HasPrevious] | [Container(68).HasNext + Container(68).HasPrevious]</visible>
-            <posx>159</posx>
-            <posy>159</posy>
-	    <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
+
+	<control type= "group"> <!------start black 5 --------->	
+		<posx>159</posx>
+		<posy>159</posy>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
 			<label> $INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
 			<font>button_bold</font>
 			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
+			<scrollspeed>50</scrollspeed>
 		</control>	
 
 
-<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-			<label> $INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>	
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>	
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
 
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
 			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.5.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
 			<font>Home_sub_header</font>
 			<align>left</align>
-		</control>	
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.8.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>			
-				
-		
-		
-</control>		<!------end black 5 --------->	
+		</control>		
 
 
 
-<control type= "group"> <!------start black 6 --------->	
-<visible>[Container(68).HasNext + !Container(68).HasPrevious] | [Container(68).HasNext + Container(68).HasPrevious]</visible>
-            <posx>318</posx>
-            <posy>159</posy>
-	    <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
+	</control>		<!------end black 5 --------->	
+
+
+
+	<control type= "group"> <!------start black 6 --------->
+		<posx>318</posx>
+		<posy>159</posy>
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
+			<animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
 			<label> $INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>56</posy>
+			<width>155</width>
+			<height>155</height>
 			<font>button_bold</font>
 			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
+			<scrollspeed>50</scrollspeed>
 		</control>	
-		
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-			<label> $INFO[Window.Property(LatestEpisode.9.EpisodeTitle)]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-			<font>button_bold</font>
-			<align>left</align>
-    	    <scrollspeed>50</scrollspeed>
-		</control>	
-		
-		
- <control type="image">
-<visible> IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>	
-<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
-<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">black.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
 
-<control type="fadelabel">
-<visible>Container(68).HasNext + !Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+
+		<control type="image">
+			<visible> IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>	
+			<animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
+			<animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<texture blend="false">black.png</texture>
+			<aspectratio>scale</aspectratio>
+		</control>
+
+		<control type="fadelabel">
+			<visible>IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
 			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.6.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
+			<scroll>true</scroll>
+			<pauseatend>300</pauseatend>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>155</width>
+			<height>155</height>
+			<scrollspeed>50</scrollspeed>
 			<font>Home_sub_header</font>
 			<align>left</align>
-		</control>			
-				
-		
-<control type="fadelabel">
-<visible>Container(68).HasNext + Container(68).HasPrevious +  IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-			<label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.9.ShowTitle)][/B][/COLOR]</label>
-        <scroll>true</scroll>
-        <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-    	    <scrollspeed>50</scrollspeed>
-			<font>Home_sub_header</font>
-			<align>left</align>
-		</control>			
-		
-		
-</control>		<!------end black 6 --------->	
+		</control>		
+
+	</control>		<!------end black 6 --------->	
 
 
-		
-		
+
+
 
 </control> <!-- end tvshows overlays-->
 
 
 <!-- Settings -->
 
-	<control type="group" id="378">   	
+<control type="group" id="378">   	
 
-<visible>Control.HasFocus(505) | Control.HasFocus(69)</visible>
-<animation effect="fade" time="400">VisibleChange</animation>
-<animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(505) | Control.HasFocus(69)">Conditional</animation>
-<animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(505) | Control.HasFocus(69)" reversible="false">Conditional</animation>	
-<animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(503) | Control.HasFocus(506)" reversible="false">Conditional</animation>
-			
-
-<control type="label">
-			<label>settings</label>
-					<posx>360</posx>
-					<posy>200</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_sub_header</font>
-					<align>left</align>
-		</control>	
-		
-		
+	<visible>Control.HasFocus(505) | Control.HasFocus(69)</visible>
+	<animation effect="fade" time="400">VisibleChange</animation>
+	<animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(505) | Control.HasFocus(69)">Conditional</animation>
+	<animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(505) | Control.HasFocus(69)" reversible="false">Conditional</animation>	
+	<animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(503) | Control.HasFocus(506)" reversible="false">Conditional</animation>
 
 
-<control type="panel" id="69">
-    <posx>350</posx>
-    <posy>290</posy>
-    <width>800</width>
-    <height>315</height>
-	<preloaditems>2</preloaditems>
-    <!--<animation effect="slide" start="+1300,0" time="300" condition="[Control.HasFocus(502) | Control.HasFocus(66)]" >condition</animation> -->
-	
-	<visible>true</visible>
-    <onup>69</onup>
-    <ondown>69</ondown>
-    <onleft>505</onleft>
-    <onright>69</onright>
-    <orientation>vertical</orientation>
-    <pagecontrol>98</pagecontrol>
-    <focusposition>0</focusposition>
-    <scrolltime tween="cubic" easing="out">400</scrolltime>
-    <itemlayout width="159" height="159">
-	
-	    <control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture blend="false">tile.png</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-	
-		
-		<control type="label">
-			<label>  $INFO[ListItem.Label]</label>
-					<posx>10</posx>
-					<posy>121</posy>
-					<height>30</height>
-					<width>153</width>
-					<font>button_bold</font>
-					<align>left</align>
-					<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
-		</control>
-		
+	<control type="label">
+		<label>settings</label>
+		<posx>360</posx>
+		<posy>200</posy>
+		<height>30</height>
+		<width>250</width>
+		<font>Home_sub_header</font>
+		<align>left</align>
+	</control>	
+
+
+
+
+	<control type="panel" id="69">
+		<posx>350</posx>
+		<posy>290</posy>
+		<width>800</width>
+		<height>320</height>
+		<preloaditems>2</preloaditems>
+
+		<visible>true</visible>
+		<onup>69</onup>
+		<ondown>69</ondown>
+		<onleft>505</onleft>
+		<onright>69</onright>
+		<orientation>vertical</orientation>
+		<pagecontrol>98</pagecontrol>
+		<focusposition>0</focusposition>
+		<scrolltime tween="cubic" easing="out">400</scrolltime>
+		<itemlayout width="159" height="159">
+
+			<control type="image">
+				<posx>9</posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<texture blend="false">tile.png</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+
+
+			<control type="label">
+				<label>  $INFO[ListItem.Label]</label>
+				<posx>10</posx>
+				<posy>121</posy>
+				<height>30</height>
+				<width>153</width>
+				<font>button_bold</font>
+				<align>left</align>
+				<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
+			</control>
+
+			<control type="image">
+				<posx>39</posx>
+				<posy>20</posy>
+				<width>100</width>
+				<height>100</height>
+				<texture >$INFO[ListItem.Thumb]</texture>
+				<aspectratio>scale</aspectratio>
+			</control>
+
+		</itemlayout>
+
+
+		<focusedlayout width="215" height="348">
+
+			<control type="group">
+				<posx>0</posx>
+				<posy>0</posy>
+
+
 				<control type="image">
-            <posx>39</posx>
-            <posy>20</posy>
-            <width>100</width>
-            <height>100</height>
-            <texture >$INFO[ListItem.Thumb]</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-    </itemlayout>
-	
-	
-    <focusedlayout width="215" height="348">
-		
-		<control type="group">
-		<posx>0</posx>
-		<posy>0</posy>
-		
-		
-		<control type="image">
-            <posx>9</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <texture >button.png</texture>
-			<animation effect="fade" start="0" time="400" easing="out" tween="square">Focus</animation>
-        </control>
-		
-		<control type="image">
-            <posx>39</posx>
-            <posy>20</posy>
-            <width>100</width>
-            <height>100</height>
-            <texture >$INFO[ListItem.Thumb]</texture>
-            <aspectratio>scale</aspectratio>
-        </control>
-		
-		</control>
-		
-		<control type="label">
-			<label>  $INFO[ListItem.Label]</label>
-					<posx>10</posx>
-					<posy>121</posy>
-					<height>30</height>
-					<width>153</width>
-					<font>button_bold</font>
-					<align>left</align>
-		</control>
-		
-    </focusedlayout>
+					<posx>9</posx>
+					<posy>0</posy>
+					<width>155</width>
+					<height>155</height>
+					<texture >button.png</texture>
+					<animation effect="fade" start="0" time="400" easing="out" tween="square">Focus</animation>
+				</control>
+
+				<control type="image">
+					<posx>39</posx>
+					<posy>20</posy>
+					<width>100</width>
+					<height>100</height>
+					<texture >$INFO[ListItem.Thumb]</texture>
+					<aspectratio>scale</aspectratio>
+				</control>
+
+			</control>
+
+			<control type="label">
+				<label>  $INFO[ListItem.Label]</label>
+				<posx>10</posx>
+				<posy>121</posy>
+				<height>30</height>
+				<width>153</width>
+				<font>button_bold</font>
+				<align>left</align>
+			</control>
+
+		</focusedlayout>
 
 
 
-			<content>
-				<item id="1">
-					<description>Appearance</description>
-					<label>480</label>
-					<thumb>icons/appearance.png</thumb>
-					<onclick>activatewindow(AppearanceSettings)</onclick>
-				</item>
-				<item id="2">
-					<description>Videos</description>
-					<label>3</label>
-					<thumb>icons/videos.png</thumb>
-					<onclick>activatewindow(VideosSettings)</onclick>
-				</item>
-				<item id="3">
-					<description>Music</description>
-					<label>2</label>
-					<thumb>icons/music.png</thumb>
-					<onclick>activatewindow(MusicSettings,return)</onclick>
-				</item>
-				<item id="4">
-					<description>Addons</description>
-					<label>24001</label>
-					<thumb>icons/addons.png</thumb>
-					<onclick>activatewindow(AddonBrowser)</onclick>
-				</item>
-				<item id="5">
-					<description>Pictures</description>
-					<label>1</label>
-					<thumb>icons/pictures.png</thumb>
-					<onclick>activatewindow(PicturesSettings,return)</onclick>
-				</item>
-				<item id="6">
-					<description>Weather</description>
-					<label>8</label>
-					<thumb>icons/weather.png</thumb>
-					<onclick>activatewindow(WeatherSettings,return)</onclick>
-				</item>
-				<item id="7">
-					<description>Network</description>
-					<label>705</label>
-					<thumb>icons/network.png</thumb>
-					<onclick>activatewindow(NetworkSettings,return)</onclick>
-				</item>
-				<item id="8">
-					<description>System</description>
-					<label>13000</label>
-					<thumb>icons/system.png</thumb>
-					<onclick>activatewindow(SystemSettings,return)</onclick>
-				</item>
-				<item id="9">
-					<description>Profiles</description>
-					<label>13200</label>
-					<thumb>icons/profile.png</thumb>
-					<onclick>activatewindow(Profiles,return)</onclick>
-				</item>
-				<item id="10">
-					<description>System Info</description>
-					<label>130</label>
-					<thumb>icons/info.png</thumb>
-					<onclick>activatewindow(7,return)</onclick>
-				</item>
-				<!--
-				<item id="11">
-					<description>Custom Settings</description>
-					<label>636</label>
-					<onclick>activatewindow(56,return)</onclick>
-				</item>
-				-->
-			</content>
-</control>  
+		<content>
+			<item id="1">
+				<description>Appearance</description>
+				<label>480</label>
+				<thumb>icons/appearance.png</thumb>
+				<onclick>activatewindow(AppearanceSettings)</onclick>
+			</item>
+			<item id="2">
+				<description>Videos</description>
+				<label>3</label>
+				<thumb>icons/videos.png</thumb>
+				<onclick>activatewindow(VideosSettings)</onclick>
+			</item>
+			<item id="3">
+				<description>Music</description>
+				<label>2</label>
+				<thumb>icons/music.png</thumb>
+				<onclick>activatewindow(MusicSettings,return)</onclick>
+			</item>
+			<item id="4">
+				<description>Addons</description>
+				<label>24001</label>
+				<thumb>icons/addons.png</thumb>
+				<onclick>activatewindow(AddonBrowser)</onclick>
+			</item>
+			<item id="5">
+				<description>Pictures</description>
+				<label>1</label>
+				<thumb>icons/pictures.png</thumb>
+				<onclick>activatewindow(PicturesSettings,return)</onclick>
+			</item>
+			<item id="6">
+				<description>Weather</description>
+				<label>8</label>
+				<thumb>icons/weather.png</thumb>
+				<onclick>activatewindow(WeatherSettings,return)</onclick>
+			</item>
+			<item id="7">
+				<description>Network</description>
+				<label>705</label>
+				<thumb>icons/network.png</thumb>
+				<onclick>activatewindow(NetworkSettings,return)</onclick>
+			</item>
+			<item id="8">
+				<description>System</description>
+				<label>13000</label>
+				<thumb>icons/system.png</thumb>
+				<onclick>activatewindow(SystemSettings,return)</onclick>
+			</item>
+			<item id="9">
+				<description>Profiles</description>
+				<label>13200</label>
+				<thumb>icons/profile.png</thumb>
+				<onclick>activatewindow(Profiles,return)</onclick>
+			</item>
+			<item id="10">
+				<description>System Info</description>
+				<label>130</label>
+				<thumb>icons/info.png</thumb>
+				<onclick>activatewindow(7,return)</onclick>
+			</item>
+			<!--
+			<item id="11">
+			<description>Custom Settings</description>
+			<label>636</label>
+			<onclick>activatewindow(56,return)</onclick>
+			</item>
+			-->
+		</content>
+	</control>  
 </control>
 
-	</controls>
+</controls>
 
 </window>
