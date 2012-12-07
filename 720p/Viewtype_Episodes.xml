@@ -162,7 +162,8 @@
 				<aligny>center</aligny>
 				<font>Genre_Font</font>
 				<textcolor>White</textcolor>
-				<label>Writer: [COLOR Accent]$INFO[ListItem.Writer][/COLOR] Director: [COLOR Accent]$INFO[ListItem.Director][/COLOR]</label>
+				<label>Writer: [COLOR Accent]$INFO[ListItem.Writer][/COLOR]  Director: [COLOR Accent]$INFO[ListItem.Director][/COLOR]</label>
+				<visible>!IsEmpty(ListItem.Writer) + !IsEmpty(ListItem.Director)</visible>
 			</control>
 
 			<control type="label">
@@ -190,9 +191,9 @@
 			</control>
 			
 			<control type="image">
-				<posx>805</posx>
+				<posx>775</posx>
 				<posy>288</posy>
-				<width>475</width>
+				<width>505</width>
 				<height>315</height>
 				<texture background="true" >tile.png</texture>
 				<fadetime>200</fadetime>
@@ -200,7 +201,7 @@
 			</control>
 			
 			<control type="scrollbar" id="63">
-				<posx>805</posx>
+				<posx>775</posx>
 				<posy>288</posy>
 				<width>10</width>
 				<height>315</height>
@@ -214,14 +215,14 @@
 			</control>
 			
 			<control type="label">
-				<posx>825</posx>
+				<posx>795</posx>
 				<posy>300</posy>
-				<width>435</width>
+				<width>465</width>
 				<height>50</height>
 				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
-				<label>Description</label>
+				<label>Plot</label>
 			</control>
 			
 			<control type="label">
@@ -235,9 +236,9 @@
 			</control>
 
 			<control type="textbox">
-				<posx>825</posx>
+				<posx>795</posx>
 				<posy>360</posy>
-				<width>435</width>
+				<width>465</width>
 				<height>215</height>
 				<info>ListItem.Plot</info>
 				<align>justify</align>
