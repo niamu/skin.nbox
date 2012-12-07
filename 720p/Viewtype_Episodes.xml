@@ -77,50 +77,62 @@
 				<include>Animation_HiddenByInfo</include>
 				<visible>Container.Content(episodes)</visible>
 
-				<itemlayout width="170" height="107">
+				<itemlayout width="160" height="160">
 					<control type="image">
-						<posx></posx>
-						<posy></posy>
-						<width>165</width>
-						<height>101</height>
-						<aspectratio>scale</aspectratio>
-						<texture>$INFO[ListItem.Icon]</texture>
+			            <posx>0</posx>
+			            <posy>0</posy>
+			            <width>155</width>
+			            <height>155</height>
+			            <texture blend="false">tile.png</texture>
+			            <aspectratio>scale</aspectratio>
+			        </control>
+
+			        <control type="image">
+			            <posx>0</posx>
+			            <posy>0</posy>
+			            <width>155</width>
+			            <height>155</height>
+			            <texture blend="false">$INFO[ListItem.Icon]</texture>
+			            <aspectratio>scale</aspectratio>
 						<colordiffuse>ImageDiffuse</colordiffuse>
-						<visible>!IsEmpty(ListItem.Icon)</visible>						
-					</control>
+			        </control>
 				</itemlayout>
 
-				<focusedlayout width="170" height="107">				
-					<control type="image">
-						<posx></posx>
-						<posy></posy>
-						<width>165</width>
-						<height>101</height>
-						<aspectratio>scale</aspectratio>
-						<texture>$INFO[ListItem.Icon]</texture>
-						<visible>!IsEmpty(ListItem.Icon)</visible>						
-					</control>
+				<focusedlayout width="160" height="160">				
 
 					<control type="image">
-						<posx></posx>							
-						<posy></posy>							
-						<height>60</height>
-						<width>60</width>
-						<fadetime>500</fadetime>
-						<aspectratio>keep</aspectratio>
-						<texture>$INFO[ListItem.Overlay,overlays/]</texture>						
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>155</width>
+						<height>155</height>
+						<texture >$INFO[ListItem.Icon]</texture>
+						<aspectratio>scale</aspectratio>
+						<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
 					</control>
-					
-					<control type="image">
-						<posx></posx>
-						<posy></posy>
-						<width>165</width>
-						<height>101</height>
-						<texture>images/episode_play.png</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="fade" start="20" end="100" time="400" />
-						</animation>
-						<aspectratio scalediffuse="false">stretch</aspectratio>
+
+					<control type="group">
+						<posx>0</posx>
+						<posy>0</posy>
+						<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+
+						<control type="image">
+							<posx>0</posx>
+							<posy>0</posy>
+							<width>155</width>
+							<height>155</height>
+							<texture >Button_fade.png</texture>
+						</control>
+					</control>
+
+					<control type="label">
+						<label>Episode $INFO[ListItem.Episode][COLOR Accent] $INFO[ListItem.Title][/COLOR]</label>
+						<posx>6</posx>
+						<posy>121</posy>
+						<height>30</height>
+						<width>143</width>
+						<font>button_bold</font>
+						<align>left</align>
+						<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
 					</control>
 				</focusedlayout>
 			</control>
@@ -133,7 +145,7 @@
 				<font>Home_menu</font>
 				<textcolor>White</textcolor>
 				<aligny>top</aligny>
-				<label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] $INFO[ListItem.Title]</label>
+				<label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] Season $INFO[ListItem.Season]</label>
 				<visible>true</visible>
 				<scroll>true</scroll>
 				<scrollout>false</scrollout>
@@ -150,20 +162,7 @@
 				<aligny>center</aligny>
 				<font>Genre_Font</font>
 				<textcolor>White</textcolor>
-				<label>Season $INFO[ListItem.Season] [B]Episode $INFO[ListItem.Episode][/B]</label>
-				<visible>!IsEmpty(ListItem.Title) + Container.Content(episodes)</visible>
-			</control>
-
-			<control type="label">
-				<posx>75</posx>
-				<posy>220</posy>
-				<width>300</width>
-				<align>left</align>
-				<aligny>top</aligny>
-				<label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
-				<font>Sort_Font_Small</font>
-				<textcolor>White</textcolor>
-				<visible>Container.Content(Movies) | Container.Content(TvShows)</visible>
+				<label>Writer: [COLOR Accent]$INFO[ListItem.Writer][/COLOR] Director: [COLOR Accent]$INFO[ListItem.Director][/COLOR]</label>
 			</control>
 
 			<control type="label">
