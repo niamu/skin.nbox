@@ -835,7 +835,7 @@
 
 
 		<control type="fadelabel">
-			<visible>Container(66).HasNext + !Container(66).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
+			<visible>IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
 			<label> $INFO[Window.Property(LatestMovie.3.Title)]</label>
 			<scroll>true</scroll>
 			<pauseatend>300</pauseatend>
