@@ -146,78 +146,6 @@
 </include>
 
 
-<include name="GlobalBackground">
-
-	<control type="group">
-		<visible>!Player.HasMedia | [Player.HasAudio + Skin.HasSetting(NoBackgroundVisualiser)] | [Player.HasVideo + Skin.HasSetting(NoBackgroundVideo)]</visible>
-
-
-
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<fadetime>800</fadetime>
-			<texture background="true"></texture>
-			<colordiffuse>FanartDiffuse</colordiffuse>
-			<visible>Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)</visible>
-		</control>
-
-
-
-		<control type="image">
-			<include>Dimensions_Fullscreen</include>
-			<fadetime>800</fadetime>
-			<texture background="true"></texture>
-			<colordiffuse>FanartDiffuse</colordiffuse>
-			<visible>Container.Content(Movies) | Container.Content(Genres)</visible>
-		</control>
-
-
-		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>music_fanart_diffuse_blue.png</texture>
-			<aspectratio scalediffuse="false">stretch</aspectratio>
-			<visible>!Container.Content(songs)</visible>
-		</control>
-
-
-	</control>
-
-	<control type="group">
-		<visible>[Player.HasAudio + !Skin.HasSetting(NoBackgroundVisualiser)] | [Player.HasVideo + !Skin.HasSetting(NoBackgroundVideo)]</visible>
-
-<!--
-<control type="visualisation">
-<include>Dimensions_Fullscreen</include>
-<visible>Player.HasAudio + !Skin.HasSetting(NoBackgroundVisualiser)</visible>
-</control>
-
-<control type="videowindow">
-<include>Dimensions_Fullscreen</include>
-<visible>Player.HasVideo + !Skin.HasSetting(NoBackgroundVideo)</visible>
-</control>
--->
-
-<control type="image">
-	<posx>0</posx>
-	<posy>0</posy>
-	<width>1280</width>
-	<height>720</height>
-	<texture>music_fanart_diffuse_blue.png</texture>
-	<aspectratio scalediffuse="false">stretch</aspectratio>
-	<visible>!Container.Content(songs) + !Container.Content(episodes)</visible>
-</control>
-
-
-</control>
-
-</include>
-
-
-
-
 <include name="HomeBackground">
 
 	<control type="multiimage">
@@ -269,7 +197,7 @@
 		<aspectratio background="true" aligny="top">stretch</aspectratio>
 		<imagepath background="true">backgrounds/shutdown</imagepath>
 		<colordiffuse>HomeFanart</colordiffuse>
-		<visible>Control.HasFocus(506)</visible>
+		<visible>Control.HasFocus(506) | Control.HasFocus(20)</visible>
 		<animation effect="fade" time="1000">Hidden</animation>
 	</control>
 

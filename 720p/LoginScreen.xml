@@ -1,5 +1,5 @@
 <window id="29">
-	<defaultcontrol always="true">52</defaultcontrol>
+	<defaultcontrol always="false">2001</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<coordinates>
 		<system>1</system>
@@ -8,7 +8,7 @@
 	</coordinates>
 	<controls>
 		
-		<include>GlobalBackground</include>
+		<include>HomeBackground</include>
 		
 		<control type="label">
 			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
@@ -30,148 +30,237 @@
 					<align>right</align>
 		</control>
 		
-		<control type="group">
-			<posx>0</posx>
-			<posy>-10</posy>
-
-			<control type="image">
-				<description>black bar</description>
-				<posx>0</posx>
-				<posy>524</posy>
-				<width>1280</width>
-				<height>168</height>
-				<fadetime>200</fadetime>
-				<texture background="true">tile.png</texture>
-				<colordiffuse>White80</colordiffuse>
-				<animation type="VisibleChange">
-					<effect type="fade" start="0" end="100" time="600" />
-				</animation>
+		<control type="group" id="2077">
+			<control type="label">
+				<label>profiles</label>
+				<posx>74</posx>
+				<posy>285</posy>
+				<height>30</height>
+				<width>250</width>
+				<font>Home_menu</font>
+				<align>left</align>
+			</control>
+			<control type="label">
+				<label>[COLOR Accent]profiles[/COLOR]</label>
+				<posx>74</posx>
+				<posy>285</posy>
+				<height>30</height>
+				<width>250</width>
+				<font>Home_menu</font>
+				<align>left</align>
+				<visible>Control.HasFocus(2001)</visible>
+				<animation effect="fade" start="0" time="500" condition="Control.HasFocus(2001)" >Conditional</animation>
+				<animation effect="fade" time="200" delay="200">Hidden</animation>
+			</control>
+			<control id="2001">
+				<type>button</type>
+				<label></label>
+				<posx>20</posx>
+				<posy>288</posy>
+				<height>40</height>
+				<width>40</width>
+				<font>Home_menu</font>
+				<align>left</align>
+				<onup>20</onup>
+				<ondown>20</ondown>
+				<onleft>-</onleft>
+				<onright>52</onright>
+			</control>
+			<control id="2011">
+				<type>image</type>
+				<label></label>
+				<posx>15</posx>
+				<posy>275</posy>
+				<height>50</height>
+				<width>50</width>
+				<align>left</align>
+				<texture>marker.png</texture>
+				<visible>Control.HasFocus(2001) | Control.HasFocus(52)</visible>
+				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(2001) | Control.HasFocus(52)" pulse="true">Conditional</animation>
+				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(2001) | Control.HasFocus(52)" >Conditional</animation>
+				<animation effect="fade" time="200" delay="200">Hidden</animation>
 			</control>
 			
-			<control type="fixedlist" id="52">
-				<posx>10</posx>
-				<posy>534</posy>
-				<width>1280</width>
-				<height>148</height>
+			<control type="label">
+				<label>shutdown</label>
+				<posx>74</posx>
+				<posy>525</posy>
+				<height>30</height>
+				<width>250</width>
+				<font>Home_menu</font>
+				<align>left</align>
+			</control>
+			<control type="label">
+				<label>[COLOR Accent]shutdown[/COLOR]</label>
+				<posx>74</posx>
+				<posy>525</posy>
+				<height>30</height>
+				<width>250</width>
+				<font>Home_menu</font>
+				<align>left</align>
+				<visible>Control.HasFocus(20)</visible>
+				<animation effect="fade" start="0" time="500" condition="Control.HasFocus(20)" >Conditional</animation>
+				<animation effect="fade" time="200" delay="200">Hidden</animation>
+			</control>
+			<control id="20">
+				<type>button</type>
+				<label></label>
+				<posx>20</posx>
+				<posy>525</posy>
+				<height>40</height>
+				<width>40</width>
+				<font>Home_menu</font>
+				<align>left</align>
+				<onup>2001</onup>
+				<ondown>2001</ondown>
+				<onleft>-</onleft>
+				<onright>-</onright>
+				<onclick>ActivateWindow(shutdownmenu)</onclick>
+			</control>
+			<control id="2016">
+				<type>image</type>
+				<label></label>
+				<posx>15</posx>
+				<posy>522</posy>
+				<height>50</height>
+				<width>50</width>
+				<align>left</align>
+				<texture>marker.png</texture>
+				<visible>Control.HasFocus(20)</visible>
+				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(20)" pulse="true">Conditional</animation>
+				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(20)" >Conditional</animation>
+				<animation effect="fade" time="200" delay="200">Hidden</animation>
+			</control>
+		</control>
+		
+		<control type="group" id="2055">
+
+			<visible>!Control.HasFocus(20)</visible>
+			<animation effect="fade" time="400">VisibleChange</animation>
+			<animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="!Control.HasFocus(20)">Conditional</animation>
+			<animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="!Control.HasFocus(20)" reversible="false">Conditional</animation>	
+			<animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(20)" reversible="false">Conditional</animation>
+			
+			<control type="label">
+				<label>[LOWERCASE][COLOR Accent]$INFO[ListItem.Label][/COLOR][/LOWERCASE]</label>
+				<posx>360</posx>
+				<posy>200</posy>
+				<height>30</height>
+				<width>250</width>
+				<font>Home_sub_header</font>
+				<align>left</align>
+			</control>
+
+			<control type="label">
+				<posx>360</posx>
+				<posy>220</posy>
+				<width>600</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>Genre_Font</font>
+				<textcolor>White</textcolor>
+				<label>[LOWERCASE]$INFO[ListItem.Label2][/LOWERCASE]</label>
+			</control>
+			
+			<control type="panel" id="52">
+				<posx>350</posx>
+				<posy>290</posy>
+				<width>800</width>
+				<height>320</height>
+				<focusposition>0</focusposition>
+				<scrolltime tween="cubic" easing="out">400</scrolltime>
+				<orientation>vertical</orientation>
 				<onup>52</onup>
-				<onleft>20</onleft>
-				<onright>20</onright>
+				<onleft>2001</onleft>
+				<onright>-</onright>
 				<ondown>52</ondown>
-				<orientation>horizontal</orientation>
+				<pagecontrol>63</pagecontrol>
+				<preloaditems>2</preloaditems>
 
-				<itemlayout height="148" width="500">
-
-					<control type="image">
-						<width>478</width>
-						<height>148</height>
-						<texture border="2">other_textures/ButtonNF.png</texture>
-					</control>
+				<itemlayout width="159" height="159">
 
 					<control type="image">
-						<posx>10</posx>
-						<posy>10</posy>
-						<width>128</width>
-						<height>128</height>
-						<texture>$INFO[Listitem.Icon]</texture>
+						<posx>9</posx>
+						<posy>0</posy>
+						<width>155</width>
+						<height>155</height>
+						<texture blend="false">tile.png</texture>
+						<aspectratio>scale</aspectratio>
 					</control>
 
-					<control type="label">
-						<posx>148</posx>
-						<posy>40</posy>
-						<width>320</width>
-						<font>large</font>
-						<textcolor>white</textcolor>
-						<info>ListItem.Label</info>
-					</control>
-
-					<control type="label">
-						<posx>148</posx>
-						<posy>70</posy>
-						<width>320</width>
-						<textcolor>white</textcolor>
-						<info>ListItem.Label2</info>
+					<control type="image">
+						<posx>9</posx>
+						<posy>0</posy>
+						<width>155</width>
+						<height>155</height>
+						<texture blend="false">$INFO[ListItem.Icon]</texture>
+						<aspectratio>scale</aspectratio>
+						<colordiffuse>ImageDiffuse</colordiffuse>
 					</control>
 
 				</itemlayout>
 
-				<focusedlayout height="148" width="500">
+				<focusedlayout width="159" height="159">
 
 					<control type="image">
-						<width>478</width>
-						<height>148</height>
-						<texture border="5">other_textures/ButtonFO.png</texture>
-						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(450)">Conditional</animation>
+						<posx>9</posx>
+						<posy>0</posy>
+						<width>155</width>
+						<height>155</height>
+						<texture >$INFO[ListItem.Icon]</texture>
+						<aspectratio>scale</aspectratio>
+						<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
 					</control>
 
-					<control type="image">
+					<control type="group">
+						<posx>0</posx>
+						<posy>0</posy>
+						<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+
+						<control type="image">
+							<posx>9</posx>
+							<posy>0</posy>
+							<width>155</width>
+							<height>155</height>
+							<texture >Button_fade.png</texture>
+						</control>
+					</control>
+
+					<control type="label">
+						<label> $INFO[ListItem.Label]</label>
 						<posx>10</posx>
-						<posy>10</posy>
-						<width>128</width>
-						<height>128</height>
-						<texture>$INFO[Listitem.Icon]</texture>
-					</control>
-
-					<control type="label">
-						<posx>148</posx>
-						<posy>40</posy>
-						<width>320</width>
-						<font>large</font>
-						<textcolor>white</textcolor>
-						<info>ListItem.Label</info>
-					</control>
-
-					<control type="label">
-						<posx>148</posx>
-						<posy>70</posy>
-						<width>320</width>
-						<textcolor>white</textcolor>
-						<info>ListItem.Label2</info>
+						<posy>121</posy>
+						<height>30</height>
+						<width>153</width>
+						<font>button_bold</font>
+						<align>left</align>
+						<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
 					</control>
 
 				</focusedlayout>
-
-			</control>
-			<control type="group">
-				<posx>940</posx>
-				<posy>600</posy>
-				<control type="label">
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>580</width>
-					<height>35</height>
-					<font>font12caps</font>
-					<textcolor>grey2</textcolor>
-					<align>right</align>
-					<aligny>center</aligny>
-					<label>$LOCALIZE[31003]</label>
-				</control>
-				<control type="button" id="20">
-					<description>Power push button</description>
-					<posx>10</posx>
-					<posy>0</posy>
-					<width>40</width>
-					<height>40</height>
-					<label>-</label>
-					<font>-</font>
-					<aligny>-</aligny>
-					<onclick>ActivateWindow(ShutdownMenu)</onclick>
-					<texturefocus>home-power-FO.png</texturefocus>
-					<texturenofocus>home-power.png</texturenofocus>
-					<onleft>52</onleft>
-					<onright>52</onright>
-					<onup>52</onup>
-					<ondown>52</ondown>
-					<colordiffuse>CCFFFFFF</colordiffuse>
-				</control>
-				<control type="image">
-					<posx>13</posx>
-					<posy>3</posy>
-					<width>30</width>
-					<height>29</height>
-					<texture>home-power-focus.gif</texture>
-					<visible>Control.HasFocus(20)</visible>
-				</control>
 			</control>
 		</control>
+		
+		<control type="label">
+			<label>login</label>
+			<posx>70</posx>
+			<posy>190</posy>
+			<height>30</height>
+			<width>400</width>
+			<font>Home_header</font>
+			<align>left</align>
+		</control>
+		
+		<control type="image" id="2">
+			<description>top left bar</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>20</width>
+			<height>138</height>
+			<texture>bar.png</texture>
+			<animation effect="fade" time="400">WindowOpen</animation>
+			<animation effect="fade" time="400">WindowClose</animation>
+		</control>
+		
 	</controls>
 </window>
