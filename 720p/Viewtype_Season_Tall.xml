@@ -29,7 +29,7 @@
 				<height>72</height>
 				<texture background="true">other_textures/OSD/PlaylistNF.png</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(54)">Conditional</animation>
+				<animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(55)">Conditional</animation>
 			</control>
 
 			<animation effect="fade" time="300">WindowOpen</animation>
@@ -37,63 +37,6 @@
 			<animation type="WindowClose">
 				<effect type="fade" time="300"/>
 			</animation>
-
-			<control type="image" id="6001">
-				<posx>1000</posx>
-				<posy>585</posy>
-				<width>215</width>
-				<height>130</height>
-				<texture background="true">$INFO[ListItem.Path]characters/1.png</texture>
-				<aspectratio scalediffuse="false">keep</aspectratio>
-				<visible>Window.IsActive(1) | Container.Content(Seasons)</visible>
-			</control>
-			<control type="image" id="6002">
-				<posx>765</posx>
-				<posy>585</posy>
-				<width>215</width>
-				<height>130</height>
-				<texture background="true">$INFO[ListItem.Path]characters/2.png</texture>
-				<aspectratio scalediffuse="false">keep</aspectratio>
-				<visible>Window.IsActive(1) | Container.Content(Seasons)</visible>
-			</control>
-			<control type="image" id="6003">
-				<posx>535</posx>
-				<posy>585</posy>
-				<width>215</width>
-				<height>130</height>
-				<texture background="true">$INFO[ListItem.Path]characters/3.png</texture>
-				<aspectratio scalediffuse="false">keep</aspectratio>
-				<visible>Window.IsActive(1) | Container.Content(Seasons)</visible>
-			</control>
-			<control type="image" id="6004">
-				<posx>300</posx>
-				<posy>585</posy>
-				<width>215</width>
-				<height>130</height>
-				<texture background="true">$INFO[ListItem.Path]characters/4.png</texture>
-				<aspectratio scalediffuse="false">keep</aspectratio>
-				<visible>Window.IsActive(1) | Container.Content(Seasons)</visible>
-			</control>
-			<control type="image" id="6005">
-				<posx>80</posx>
-				<posy>585</posy>
-				<width>215</width>
-				<height>130</height>
-				<texture background="true">$INFO[ListItem.Path]characters/5.png</texture>
-				<aspectratio scalediffuse="false">keep</aspectratio>
-				<visible>Window.IsActive(1) | Container.Content(Seasons)</visible>
-			</control>
-
-			<control type="image">
-				<posx>995</posx>
-				<posy>580</posy>
-				<width>215</width>
-				<height>315</height>
-				<texture background="true">tile.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<visible>!IsEmpty(Control.GetLabel(6001))</visible>
-				<animation effect="slide" start="0,150" time="200">VisibleChange</animation>
-			</control>
 
 			<control type="label">
 				<label>Personnages</label>
@@ -104,50 +47,6 @@
 				<font>button_bold</font>
 				<align>left</align>
 				<visible>!IsEmpty(Control.GetLabel(6001))</visible>
-				<animation effect="slide" start="0,150" time="200">VisibleChange</animation>
-			</control>
-
-			<control type="image">
-				<posx>765</posx>
-				<posy>580</posy>
-				<width>215</width>
-				<height>315</height>
-				<texture background="true">tile.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<visible>!IsEmpty(Control.GetLabel(6002))</visible>
-				<animation effect="slide" start="0,150" time="200">VisibleChange</animation>
-			</control>
-
-			<control type="image">
-				<posx>535</posx>
-				<posy>580</posy>
-				<width>215</width>
-				<height>315</height>
-				<texture background="true">tile.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<visible>!IsEmpty(Control.GetLabel(6003))</visible>
-				<animation effect="slide" start="0,150" time="200">VisibleChange</animation>
-			</control>
-
-			<control type="image">
-				<posx>305</posx>
-				<posy>580</posy>
-				<width>215</width>
-				<height>315</height>
-				<texture background="true">tile.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<visible>!IsEmpty(Control.GetLabel(6004))</visible>
-				<animation effect="slide" start="0,150" time="200">VisibleChange</animation>
-			</control>
-
-			<control type="image">
-				<posx>75</posx>
-				<posy>580</posy>
-				<width>215</width>
-				<height>315</height>
-				<texture background="true">tile.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<visible>!IsEmpty(Control.GetLabel(6005))</visible>
 				<animation effect="slide" start="0,150" time="200">VisibleChange</animation>
 			</control>
 
@@ -376,30 +275,6 @@
 				<align>left</align>
 				<visible>Container.Content(Seasons)</visible>
 			</control>
-
-			<control type="group">
-				<visible>Container.content(Seasons)</visible>
-
-				<control type="image">
-					<posx>28</posx>
-					<posy>286</posy>
-					<width>40</width>
-					<height>40</height>
-					<texture flipy="true">down_arrow.png</texture>
-					<visible>Container(55).HasPrevious</visible>
-					<animation effect="fade" time="400">VisibleChange</animation>
-				</control>
-
-				<control type="image">
-					<posx>28</posx>
-					<posy>556</posy>
-					<width>40</width>
-					<height>40</height>
-					<texture>down_arrow.png</texture>
-					<visible>Container(55).HasNext</visible>
-					<animation effect="fade" time="400">VisibleChange</animation>
-				</control>
-			</control>	
 
 		</control>	
 
