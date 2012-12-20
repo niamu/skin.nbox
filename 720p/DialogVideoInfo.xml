@@ -35,11 +35,24 @@
 				<posy>180</posy>
 				<width>290</width>
 				<height>424</height>
+				<texture>$INFO[ListItem.Art(tvshow.poster)]</texture>
+				<aspectratio align="right" aligny="center">stretch</aspectratio>
+				<bordertexture border="5">white_box.png</bordertexture>
+				<bordersize>5</bordersize>
+				<visible>!Control.HasFocus(50) + Container.Content(episodes)</visible>
+			</control>
+			
+			<control type="image" id="3">
+				<description>Cover Image</description>
+				<posx>230</posx>
+				<posy>180</posy>
+				<width>290</width>
+				<height>424</height>
 				<texture>-</texture>
 				<aspectratio align="right" aligny="center">stretch</aspectratio>
 				<bordertexture border="5">white_box.png</bordertexture>
 				<bordersize>5</bordersize>
-				<visible>!Control.HasFocus(50)</visible>
+				<visible>!Control.HasFocus(50) + !Container.Content(episodes)</visible>
 			</control>
 
 			<control type="image">
