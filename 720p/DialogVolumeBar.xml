@@ -5,17 +5,8 @@
 	<controls>
 
 		<control type="group">
-			<posx>840</posx>
-			<posy>20</posy>
-
-			<control type="image">
-				<description>background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>400</width>
-				<height>44</height>
-				<texture border="20">other_textures/OverlayDialogBackground.png</texture>
-			</control>
+			<posx>825</posx>
+			<posy>655</posy>
 
 			<control type="group">
 				<visible>!player.passthrough</visible>
@@ -23,7 +14,7 @@
 				<control type="image">
 					<description>Lite Volume Logo</description>
 					<posx>10</posx>
-					<posy>4</posy>
+					<posy>-3</posy>
 					<width>40</width>
 					<height>35</height>
 					<aspectratio>keep</aspectratio>
@@ -35,8 +26,10 @@
 					<posx>50</posx>
 					<posy>12</posy>
 					<width>330</width>
-					<height>18</height>
+					<height>5</height>
 					<info>Player.Volume</info>
+					<texturebg>ProgressMidGreen.png</texturebg>
+					<midtexture>ProgressLime.png</midtexture>
 				</control>
 
 			</control>
