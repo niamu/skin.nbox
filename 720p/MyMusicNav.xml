@@ -9,7 +9,7 @@
 
 	<controls>
 	
-		<include>GlobalBackground</include>
+		<include>HomeBackground</include>
 		<include>Viewtype_List</include>
 		<include>View_50_List</include>
 		<include>Viewtype_Panel_Square</include>
