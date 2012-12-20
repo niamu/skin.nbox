@@ -1,90 +1,108 @@
 <window id="2904">
 	<defaultcontrol always="true">2</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-
-
-
+	
 	<animation type="WindowOpen">
-		<effect type="slide" start="-200,0" end="0,0" time="600" tween="cubic" easing="out" />
+		<effect type="slide" start="0,200" end="0,0" time="600" tween="cubic" easing="out" />
 		<effect type="fade" start="0" end="100" time="600" />
 	</animation>
 	<animation type="WindowClose">
-		<effect type="slide" start="0,0" end="-200,0" time="600" tween="cubic" easing="out" />
+		<effect type="slide" start="0,0" end="0,200" time="600" tween="cubic" easing="out" />
 		<effect type="fade" start="100" end="0" time="600" />
 	</animation>
 
-
 	<controls>
 
-
-
-
-
 		<control type="group">
-			<posx>15</posx>
-			<posy>610</posy>
+			<posx>0</posx>
+			<posy>615</posy>
 
 			<control type="group">
 
-				<visible>!Window.IsActive(visualisation) + !Window.IsActive(karaoke)</visible>
-
-
-				<control type="image">
-					<posx>0</posx>
-					<posy>3</posy>
-					<width>50</width>
-					<height>50</height>
-					<texture >tv_shows.png</texture>
-					
-				</control>
-
-
-
-
-
-
-
-			<control type="label">
+				<control type="label">
 					<description>Now Playing</description>
-					<posx>60</posx>
-					<posy>0</posy>
+					<posx>72</posx>
+					<posy>8</posy>
 					<width>1220</width>
-					<label>[COLOR Accent][LOWERCASE]$INFO[VideoPlayer.TVShowTitle,, - ]$INFO[VideoPlayer.Title][/COLOR] $INFO[VideoPlayer.Year][/LOWERCASE]</label>
+					<label>[COLOR Accent]$INFO[VideoPlayer.TVShowTitle][/COLOR] - $INFO[VideoPlayer.Title] $INFO[VideoPlayer.Year]</label>
 					<scroll>true</scroll>
-					<font>Home_menu</font>
+					<font>large</font>
 					<align>left</align>
-				</control>
-
-
-		<control type="label">
-					<description>Now Playing</description>
-					<posx>60</posx>
-					<posy>36</posy>
-					<width>1220</width>
-					<label>[LOWERCASE]$INFO[VideoPlayer.Time,,  ][COLOR Accent]$INFO[VideoPlayer.Duration][/COLOR] [/LOWERCASE]</label>
-					<scroll>true</scroll>
-					<font>plot_scroll_small</font>
-					<align>left</align>
+					<visible>!VideoPlayer.Content(Movies)</visible>
 				</control>
 				
+				<control type="label">
+					<description>Now Playing</description>
+					<posx>72</posx>
+					<posy>8</posy>
+					<width>1220</width>
+					<label>[COLOR Accent]$INFO[VideoPlayer.Title][/COLOR] $INFO[VideoPlayer.Year]</label>
+					<scroll>true</scroll>
+					<font>large</font>
+					<align>left</align>
+					<visible>VideoPlayer.Content(Movies)</visible>
+				</control>
+				
+				<control type="label">
+					<description>Now Playing</description>
+					<posx>72</posx>
+					<posy>38</posy>
+					<width>1220</width>
+					<label>$INFO[VideoPlayer.Season,Season ] $INFO[VideoPlayer.Episode,Episode ]</label>
+					<scroll>true</scroll>
+					<font>Small</font>
+					<align>left</align>
+					<visible>!VideoPlayer.Content(Movies)</visible>
+				</control>
+				
+				<control type="label">
+					<description>Now Playing</description>
+					<posx>72</posx>
+					<posy>38</posy>
+					<width>1220</width>
+					<label>$INFO[VideoPlayer.Tagline]</label>
+					<scroll>true</scroll>
+					<font>Small</font>
+					<align>left</align>
+					<visible>VideoPlayer.Content(Movies)</visible>
+				</control>
+
+				<control type="label">
+					<description>Now Playing</description>
+					<posx>0</posx>
+					<posy>62</posy>
+					<width>75</width>
+					<label>$INFO[VideoPlayer.Time]</label>
+					<scroll>true</scroll>
+					<font>Genre_Font_Small</font>
+					<align>center</align>
+				</control>
+				
+				<control type="label">
+					<description>Now Playing</description>
+					<posx>1205</posx>
+					<posy>62</posy>
+					<width>75</width>
+					<label>[COLOR Accent]$INFO[VideoPlayer.Duration][/COLOR]</label>
+					<scroll>true</scroll>
+					<font>Genre_Font_Small</font>
+					<align>center</align>
+				</control>
+
+				<control type="progress">
+					<description>Progressbar</description>
+					<posx>75</posx>
+					<posy>82</posy>
+					<width>1130</width>
+					<height>5</height>
+					<info>Player.Progress</info>
+					<texturebg>ProgressMidGreen.png</texturebg>
+					<midtexture>ProgressLime.png</midtexture>
+				</control>
 
 			</control>
-				<visible>!VideoPlayer.IsFullscreen + !Window.IsVisible(screencalibration)</visible>
+			<visible>!VideoPlayer.IsFullscreen + !Window.IsVisible(screencalibration)</visible>
 		</control>
-		
-
-
-
-
-
-
-
-
-
-
-
-		
 
 	</controls>
-
 </window>
