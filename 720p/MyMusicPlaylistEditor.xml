@@ -5,7 +5,7 @@
 
 	<controls>
 
-		<include>GlobalBackground</include>
+		<include>HomeBackground</include>
 
 		<control type="group">
 			<description>Left panel</description>

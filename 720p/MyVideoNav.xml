@@ -5,7 +5,7 @@
 
 	<controls>
 		<control type="group">
-			<include>GlobalBackground</include>
+			<include>HomeBackground</include>
 			<include>View_50_List</include>
 			<include>Viewtype_Episodes</include>
 			<include>Viewtype_Panel_Tall</include>
