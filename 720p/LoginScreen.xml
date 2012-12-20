@@ -13,7 +13,7 @@
 		<control type="label">
 			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
 					<posx>1284</posx>
-					<posy>-10</posy>
+					<posy>-5</posy>
 					<height>100</height>
 					<width>550</width>
 					<font>Home_time</font>
@@ -23,7 +23,7 @@
 		<control type="label">
 			<label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(MMM)] $INFO[System.Date(dd)][/LOWERCASE]</label>
 					<posx>1280</posx>
-					<posy>54</posy>
+					<posy>60</posy>
 					<height>100</height>
 					<width>750</width>
 					<font>Home_date</font>

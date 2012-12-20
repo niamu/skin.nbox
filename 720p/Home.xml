@@ -42,7 +42,7 @@
 		<control type="label">
 			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
 			<posx>1284</posx>
-			<posy>-10</posy>
+			<posy>-5</posy>
 			<height>100</height>
 			<width>550</width>
 			<font>Home_time</font>
@@ -52,7 +52,7 @@
 		<control type="label">
 			<label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(MMM)] $INFO[System.Date(dd)][/LOWERCASE]</label>
 			<posx>1280</posx>
-			<posy>54</posy>
+			<posy>60</posy>
 			<height>100</height>
 			<width>750</width>
 			<font>Home_date</font>
@@ -641,37 +641,37 @@
 				<label>$INFO[Window.Property(LatestMovie.1.Year)]</label>
 				<label2>$INFO[Window.Property(LatestMovie.1.Title)]</label2>
 				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.1.Path)])</onclick>
-				<thumb>$INFO[Window.Property(LatestMovie.1.Fanart)]</thumb>
+				<thumb>$INFO[Window.Property(LatestMovie.1.Thumb)]</thumb>
 			</item>
 			<item id="12">
 				<label>$INFO[Window.Property(LatestMovie.2.Year)]</label>
 				<label2>$INFO[Window.Property(LatestMovie.2.Title)]</label2>
 				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.2.Path)])</onclick>
-				<thumb>$INFO[Window.Property(LatestMovie.2.Fanart)]</thumb>
+				<thumb>$INFO[Window.Property(LatestMovie.2.Thumb)]</thumb>
 			</item>
 			<item id="13">
 				<label>$INFO[Window.Property(LatestMovie.3.Year)]</label>
 				<label2>$INFO[Window.Property(LatestMovie.3.Title)]</label2>
 				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.3.Path)])</onclick>
-				<thumb>$INFO[Window.Property(LatestMovie.3.Fanart)]</thumb>
+				<thumb>$INFO[Window.Property(LatestMovie.3.Thumb)]</thumb>
 			</item>
 			<item id="14">
 				<label>$INFO[Window.Property(LatestMovie.4.Year)]</label>
 				<label2>$INFO[Window.Property(LatestMovie.4.Title)]</label2>
 				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.4.Path)])</onclick>
-				<thumb>$INFO[Window.Property(LatestMovie.4.Fanart)]</thumb>
+				<thumb>$INFO[Window.Property(LatestMovie.4.Thumb)]</thumb>
 			</item>
 			<item id="15">
 				<label>$INFO[Window.Property(LatestMovie.5.Year)]</label>
 				<label2>$INFO[Window.Property(LatestMovie.5.Title)]</label2>
 				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.5.Path)])</onclick>
-				<thumb>$INFO[Window.Property(LatestMovie.5.Fanart)]</thumb>
+				<thumb>$INFO[Window.Property(LatestMovie.5.Thumb)]</thumb>
 			</item>
 			<item id="16">
 				<label>$INFO[Window.Property(LatestMovie.6.Year)]</label>
 				<label2>$INFO[Window.Property(LatestMovie.6.Title)]</label2>
 				<onclick>PlayMedia($INFO[Window.Property(LatestMovie.6.Path)])</onclick>
-				<thumb>$INFO[Window.Property(LatestMovie.6.Fanart)]</thumb>
+				<thumb>$INFO[Window.Property(LatestMovie.6.Thumb)]</thumb>
 			</item>
 		</content>
 	</control>  
