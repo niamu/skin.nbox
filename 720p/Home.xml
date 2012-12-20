@@ -201,9 +201,9 @@
 				<width>50</width>
 				<align>left</align>
 				<texture>marker.png</texture>
-				<visible>Control.HasFocus(501)</visible>
-				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(501)" pulse="true">Conditional</animation>
-				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(501)" >Conditional</animation>
+				<visible>Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(66)</visible>
+				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(66)" pulse="true">Conditional</animation>
+				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(66)" >Conditional</animation>
 				<animation effect="fade" time="200" delay="200">Hidden</animation>
 			</control>
 
@@ -235,9 +235,9 @@
 				<width>50</width>
 				<align>left</align>
 				<texture>marker.png</texture>
-				<visible>Control.HasFocus(503)</visible>
-				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(503)" pulse="true">Conditional</animation>
-				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(503)" >Conditional</animation>
+				<visible>Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(68)</visible>
+				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(68)" pulse="true">Conditional</animation>
+				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(68)" >Conditional</animation>
 				<animation effect="fade" time="200" delay="200">Hidden</animation>
 			</control>	
 
@@ -270,9 +270,9 @@
 				<width>50</width>
 				<align>left</align>
 				<texture>marker.png</texture>
-				<visible>Control.HasFocus(505)</visible>
-				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(505)" pulse="true">Conditional</animation>
-				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(505)" >Conditional</animation>
+				<visible>Control.HasFocus(505) | Control.HasFocus(69)</visible>
+				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(505) | Control.HasFocus(69)" pulse="true">Conditional</animation>
+				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(505) | Control.HasFocus(69)" >Conditional</animation>
 				<animation effect="fade" time="200" delay="200">Hidden</animation>
 			</control>		
 
