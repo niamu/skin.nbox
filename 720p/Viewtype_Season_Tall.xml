@@ -111,14 +111,16 @@
 					</control>
 
 					<control type="image">
-						<posx></posx>
-						<posy>-70</posy>
-						<width>215</width>
-						<height>315</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<colordiffuse>PanelDiffuse</colordiffuse>
-						<bordersize>4</bordersize>
-						<visible>[Container.Content(movies) + !Skin.HasSetting(HideMovieWatchedOverlays)] | [!Container.Content(movies) + !Skin.HasSetting(HideTVWatchedOverlays)]</visible>
+						<posx>4</posx>
+						<posy>4</posy>
+						<width>60</width>
+						<height>60</height>
+						<texture>images/OverlayWatched.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
+							<effect type="fade" start="80" end="100" time="400" />
+						</animation>
+						<visible>[Container.Content(Seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 					</control>
 
 					<control type="image">
@@ -154,6 +156,18 @@
 						<bordersize>4</bordersize>
 					</control>
 
+					<control type="image">
+						<posx>4</posx>
+						<posy>4</posy>
+						<width>60</width>
+						<height>60</height>
+						<texture>images/OverlayWatched.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
+							<effect type="fade" start="80" end="100" time="400" />
+						</animation>
+						<visible>[Container.Content(Seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
+					</control>
 
 					<control type="image" id="2">
 						<description>top left bar</description>
@@ -165,19 +179,6 @@
 						<visible></visible>
 					</control>			
 
-
-					<control type="image">
-						<posx>140</posx>
-						<posy>20</posy>
-						<width>40</width>
-						<height>40</height>
-						<texture>vu.png</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="49,72" start="80" end="120" time="400" tween="back" easing="out" />
-							<effect type="fade" start="80" end="100" time="400" />
-						</animation>
-						<visible>[Container.Content(Seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
-					</control>
 					<control type="image">
 						<posx>88</posx>
 						<posy>130</posy>

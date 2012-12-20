@@ -96,6 +96,19 @@
 			            <aspectratio>scale</aspectratio>
 						<colordiffuse>ImageDiffuse</colordiffuse>
 			        </control>
+			
+					<control type="image">
+						<posx>-</posx>
+						<posy>-</posy>
+						<width>60</width>
+						<height>60</height>
+						<texture>images/OverlayWatched.png</texture>
+						<animation type="Unfocus" reversible="false">
+							<effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
+							<effect type="fade" start="80" end="100" time="400" />
+						</animation>
+						<visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
+					</control>
 				</itemlayout>
 
 				<focusedlayout width="160" height="160">				
@@ -108,6 +121,19 @@
 						<texture >$INFO[ListItem.Icon]</texture>
 						<aspectratio>scale</aspectratio>
 						<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+					</control>
+					
+					<control type="image">
+						<posx>-</posx>
+						<posy>-</posy>
+						<width>60</width>
+						<height>60</height>
+						<texture>images/OverlayWatched.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
+							<effect type="fade" start="80" end="100" time="400" />
+						</animation>
+						<visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 					</control>
 
 					<control type="group">

@@ -112,28 +112,19 @@
 				<textcolor>black</textcolor>
 			</control>
 
-			<control type="button" id="21">
-				<description>Activate Filter</description>
-				<width>240</width>
+			<control type="radiobutton" id="14">
+				<description>Watched Toggle</description>
+				<textwidth>170</textwidth>
+				<height>40</height>
+				<width>250</width>
+				<radioposx>200</radioposx>
+				<textoffsetx>10</textoffsetx>
+				<textwidth>200</textwidth>
 				<align>left</align>
-				<label>587</label>
-				<onclick>SendClick(musiclibrary,19)</onclick>
-				<onclick>SetFocus(22)</onclick>
-				<visible>IsEmpty(Window.Property(filter))</visible>
 				<font>small</font>
 				<textcolor>black</textcolor>
-			</control>
-
-			<control type="button" id="22">
-				<description>Show Filter Label</description>
-				<width>240</width>
-				<align>left</align>
-				<label>$LOCALIZE[587] - $INFO[Window.Property(filter)]</label>
-				<onclick>SendClick(musiclibrary,19)</onclick>
-				<onclick>SetFocus(21)</onclick>
-				<visible>!IsEmpty(Window.Property(filter))</visible>
-				<font>small</font>
-				<textcolor>black</textcolor>
+				<pulseonselect>false</pulseonselect>
+				<label>  Hide Watched</label>
 			</control>
 
 			<control type="button" id="98">

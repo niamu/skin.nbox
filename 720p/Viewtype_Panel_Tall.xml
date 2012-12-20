@@ -69,14 +69,18 @@
 					</control>
 
 					<control type="image">
-						<posx></posx>
-						<posy>-20</posy>
-						<width>100</width>
-						<height>155</height>
-						<texture>$INFO[ListItem.Overlay]</texture>
-						<colordiffuse>PanelDiffuse</colordiffuse>
+						<posx>-</posx>
+						<posy>-</posy>
+						<width>60</width>
+						<height>60</height>
+						<texture>images/OverlayWatched.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
+							<effect type="fade" start="80" end="100" time="400" />
+						</animation>
 						<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [!Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 					</control>
+
 					<control type="image">
 						<posx></posx>
 						<posy></posy>
@@ -180,13 +184,13 @@
 			</control>
 
 			<control type="image">
-				<posx>230</posx>
-				<posy>290</posy>
+				<posx>80</posx>
+				<posy>292</posy>
 				<width>60</width>
 				<height>60</height>
-				<texture>vu.png</texture>
+				<texture>images/OverlayWatched.png</texture>
 				<animation type="Focus" reversible="false">
-					<effect type="zoom" center="49,72" start="80" end="120" time="400" tween="back" easing="out" />
+					<effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
 					<effect type="fade" start="80" end="100" time="400" />
 				</animation>
 				<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
