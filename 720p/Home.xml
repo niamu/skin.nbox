@@ -4,14 +4,48 @@
 	<allowoverlay>yes</allowoverlay>	
 
 	<controls>
-
-
-
+		
 		<include>HomeBackground</include>
 
+		<control type="group">
+			<posx>20</posx>
+			<posy>0</posy>
+			<visible>!Window.IsVisible(107)</visible>
+			<animation effect="slide" time="300" start="-138,0" end="0,0" easing="in" tween="cubic">Visible</animation>
+			<animation effect="slide" time="300" start="0, 0" end="-138,0" easing="out" tween="cubic">Hidden</animation>
 
+			<control type="image" id="4">
+				<description>profile thumb</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>138</width>
+				<height>138</height>
+				<visible>true</visible>
+				<texture>$INFO[System.ProfileThumb]</texture>
+			</control>
 
-
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>138</width>
+				<height>138</height>
+				<texture>music_fanart_diffuse.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<colordiffuse>Diffuse3</colordiffuse>
+				<visible>true</visible>
+			</control>
+			
+			<control type="label">
+				<label>[LOWERCASE]$INFO[System.ProfileName][/LOWERCASE]</label>
+				<posx>10</posx>
+				<posy>110</posy>
+				<height>30</height>
+				<width>153</width>
+				<font>button_bold</font>
+				<align>left</align>
+				<visible>!Window.IsVisible(107)</visible>
+			</control>
+		</control>
 
 		<control type="image" id="2">
 			<description>top left bar</description>
@@ -24,10 +58,7 @@
 
 			<animation effect="fade" time="400">WindowOpen</animation>
 			<animation effect="fade" time="400">WindowClose</animation>
-		</control>		
-
-
-
+		</control>
 
 		<control type="label">
 			<label>home</label>
