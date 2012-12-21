@@ -37,7 +37,7 @@
 				<width>380</width>
 				<align>left</align>
 				<font>Large</font>
-				<textcolor>white</textcolor>
+				<textcolor>black</textcolor>
 				<label>1023</label>
 			</control>
 
@@ -47,6 +47,7 @@
 				<posy>38</posy>
 				<width>380</width>
 				<haspath>true</haspath>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="list" id="450">

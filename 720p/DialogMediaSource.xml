@@ -26,6 +26,7 @@
 				<align>center</align>
 				<font>Medium</font>
 				<label>1021</label>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="list" id="10">
@@ -49,6 +50,7 @@
 						<posx>20</posx>
 						<width>400</width>
 						<info>ListItem.Label</info>
+						<textcolor>black</textcolor>
 					</control>
 
 				</itemlayout>
@@ -85,18 +87,21 @@
 					<description>Browse</description>
 					<width>200</width>
 					<label>1024</label>
+					<textcolor>black</textcolor>
 				</control>
 
 				<control type="button" id="13">
 					<description>Add</description>
 					<width>200</width>
 					<label>15019</label>
+					<textcolor>black</textcolor>
 				</control>
 
 				<control type="button" id="14">
 					<description>remove</description>
 					<width>200</width>
 					<label>1210</label>
+					<textcolor>black</textcolor>
 				</control>
 
 			</control>
@@ -107,6 +112,7 @@
 				<posy>398</posy>
 				<width>660</width>
 				<label>1022</label>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="12">
@@ -120,7 +126,8 @@
 				<onup>10</onup>
 				<onleft>12</onleft>
 				<onright>18</onright>
-				<ondown>18</ondown>
+				<ondown>19</ondown>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="18">
@@ -133,6 +140,7 @@
 				<onleft>20</onleft>
 				<onright>19</onright>
 				<ondown>10</ondown>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="19">
@@ -145,6 +153,7 @@
 				<onleft>18</onleft>
 				<onright>20</onright>
 				<ondown>10</ondown>
+				<textcolor>black</textcolor>
 			</control>
 
 		</control>
