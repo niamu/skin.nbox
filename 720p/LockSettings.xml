@@ -24,7 +24,7 @@
 				<width>560</width>
 				<label>20043</label>
 				<font>Medium</font>
-				<shadowcolor>black</shadowcolor>
+				<textcolor>black</textcolor>
 				<align>center</align>
 			</control>
 
@@ -46,24 +46,28 @@
 				<description>button</description>
 				<width>580</width>
 				<align>left</align>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="radiobutton" id="8">
 				<description>radio_button</description>
 				<width>580</width>
 				<align>left</align>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="spincontrolex" id="9">
 				<description>spin_controlex</description>
 				<width>580</width>
 				<align>left</align>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="sliderex" id="10">
 				<description>slider</description>
 				<width>580</width>
 				<align>left</align>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="28">
@@ -76,6 +80,7 @@
 				<onright>29</onright>
 				<onup>5</onup>
 				<ondown>5</ondown>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="29">
@@ -88,6 +93,7 @@
 				<onright>5</onright>
 				<onup>5</onup>
 				<ondown>5</ondown>
+				<textcolor>black</textcolor>
 			</control>
 
 		</control>
