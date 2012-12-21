@@ -146,7 +146,7 @@
 				<posx>384</posx>
 				<posy>185</posy>
 				<height>30</height>
-				<width>900</width>
+				<width>985</width>
 				<font>Home_menu</font>
 				<aligny>top</aligny>
 				<label>$INFO[ListItem.Label]</label>

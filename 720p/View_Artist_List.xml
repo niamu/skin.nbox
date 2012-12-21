@@ -350,7 +350,7 @@
             <control type="textbox">
                   <posx>360</posx>
                   <posy>150</posy>
-                  <width>900</width>
+                  <width>985</width>
                   <height>100</height>
                   <font>Medium</font>
                   <label fallback="547">$INFO[ListItem.Property(Artist_Description)]</label>
