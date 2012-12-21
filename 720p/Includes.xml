@@ -11,219 +11,104 @@
 	<include file="Viewtype_Panel_Square.xml" />
 	<include file="Viewtype_Showcase.xml" />
 
+	<include name="HiddenButton">
+		<posx>-20</posx>
+		<posy>-20</posy>
+		<width>1</width>
+		<height>1</height>
+		<label>-</label>
+		<texturenofocus>-</texturenofocus>
+		<texturefocus>-</texturefocus>
+	</include>
 
-
-
-<!-- Settings Headings -->
-<include name="Setting_Heading">
-	<control type="group">
-		<posx>360</posx>
-		<posy>194</posy>
-
-		<include>Animation_SlideDownFadeOut</include>
-
-		<control type="label">
-			<description>Settings Menu</description>
-			<label>[LOWERCASE]$LOCALIZE[33061][/LOWERCASE]</label>
-			<include>Global_HeadingDetailVars</include>
-			<visible>Window.IsActive(settings)</visible>
-			<font>Home_sub_header</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-		</control>
-		<control type="label">
-			<description>Video</description>
-			<label>[LOWERCASE]$LOCALIZE[3][/LOWERCASE]</label>
-			<include>Global_HeadingDetailVars</include>
-			<visible>Window.IsActive(videossettings)</visible>
-			<font>Home_sub_header</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-		</control>
-		<control type="label">
-			<description>Picture</description>
-			<label>[LOWERCASE]$LOCALIZE[1][/LOWERCASE]</label>
-			<include>Global_HeadingDetailVars</include>
-			<visible>Window.IsActive(picturessettings)</visible>
-			<font>Home_sub_header</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-		</control>
-		<control type="label">
-			<description>Appearance</description>
-			<label>[LOWERCASE]$LOCALIZE[480][/LOWERCASE]</label>
-			<include>Global_HeadingDetailVars</include>
-			<visible>Window.IsActive(appearancesettings)</visible>
-			<font>Home_sub_header</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-		</control>
-		<control type="label">
-			<description>Network</description>
-			<label>[LOWERCASE]$LOCALIZE[705][/LOWERCASE]</label>
-			<include>Global_HeadingDetailVars</include>
-			<visible>Window.IsActive(networksettings)</visible>
-			<font>Home_sub_header</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-		</control>
-		<control type="label">
-			<description>System</description>
-			<label>[LOWERCASE]$LOCALIZE[13000][/LOWERCASE]</label>
-			<include>Global_HeadingDetailVars</include>
-			<visible>Window.IsActive(systemsettings)</visible>
-			<font>Home_sub_header</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-		</control>
-		<control type="label">
-			<description>Music</description>
-			<label>[LOWERCASE]$LOCALIZE[2][/LOWERCASE]</label>
-			<include>Global_HeadingDetailVars</include>
-			<visible>Window.IsActive(musicsettings)</visible>
-			<font>Home_sub_header</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-		</control>
-		<control type="label">
-			<description>Weather</description>
-			<label>[LOWERCASE]$LOCALIZE[8][/LOWERCASE]</label>
-			<include>Global_HeadingDetailVars</include>
-			<visible>Window.IsActive(weathersettings)</visible>
-			<font>Home_sub_header</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-		</control>
-		<control type="label">
-			<description>Profiles</description>
-			<label>[LOWERCASE]$LOCALIZE[13200][/LOWERCASE]</label>
-			<include>Global_HeadingDetailVars</include>
-			<visible>Window.IsActive(profiles)</visible>
-			<font>Home_sub_header</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-		</control>
-		<control type="label">
-			<description>Alaska</description>
-			<label>[LOWERCASE]$LOCALIZE[31011][/LOWERCASE]</label>
-			<include>Global_HeadingDetailVars</include>
-			<visible>Window.IsActive(56)</visible>
-			<font>Home_sub_header</font>
-			<textcolor>black</textcolor>
-			<align>left</align>
-		</control>
-	</control>
-</include>
-
-
-
-
-
-<include name="HiddenButton">
-	<posx>-20</posx>
-	<posy>-20</posy>
-	<width>1</width>
-	<height>1</height>
-	<label>-</label>
-	<texturenofocus>-</texturenofocus>
-	<texturefocus>-</texturefocus>
-</include>
-
-<include name="Dimensions_Fullscreen">
-	<posx>0</posx>
-	<posy>0</posy>
-	<width>1280</width>
-	<height>720</height>
-</include>
-
-<include name="GlobalOverlay">
-
-	<control type="image">
-		<include>Dimensions_Fullscreen</include>
-		<texture border="2">other_textures/black-back.png</texture>
-	</control>
-
-</include>
-
-
-<include name="HomeBackground">
-
-	<control type="multiimage">
-		<include>Dimensions_Fullscreen</include>
-		<randomize>true</randomize>
-		<timeperimage>8000</timeperimage>
-		<fadetime>3000</fadetime>
-		<pauseatend>0</pauseatend>
-		<loop>true</loop>
-		<aspectratio background="true" aligny="top">stretch</aspectratio>
-		<colordiffuse>HomeFanart</colordiffuse>
-		<visible>Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)</visible>
-		<animation effect="fade" time="1000">Hidden</animation>
-	</control>	
-
-	<control type="multiimage">
-		<include>Dimensions_Fullscreen</include>
-		<randomize>true</randomize>
-		<timeperimage>8000</timeperimage>
-		<fadetime>3000</fadetime>
-		<pauseatend>0</pauseatend>
-		<loop>true</loop>
-		<aspectratio background="true" aligny="top">stretch</aspectratio>
-		<colordiffuse>HomeFanart</colordiffuse>
-		<visible>Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)</visible>
-		<animation effect="fade" time="1000">Hidden</animation>
-	</control>	
-
-	<control type="multiimage">
-		<include>Dimensions_Fullscreen</include>
-		<randomize>true</randomize>
-		<timeperimage>8000</timeperimage>
-		<fadetime>3000</fadetime>
-		<pauseatend>0</pauseatend>
-		<loop>true</loop>
-		<aspectratio background="true" aligny="top">stretch</aspectratio>
-		<colordiffuse>HomeFanart</colordiffuse>
-		<visible>Control.HasFocus(505) | Control.HasFocus(69)</visible>
-		<animation effect="fade" time="1000">Hidden</animation>
-	</control>
-
-	<control type="multiimage">
-		<include>Dimensions_Fullscreen</include>
-		<randomize>true</randomize>
-		<timeperimage>8000</timeperimage>
-		<fadetime>3000</fadetime>
-		<pauseatend>0</pauseatend>
-		<loop>true</loop>
-		<aspectratio background="true" aligny="top">stretch</aspectratio>
-		<imagepath background="true">backgrounds/shutdown</imagepath>
-		<colordiffuse>HomeFanart</colordiffuse>
-		<visible>Control.HasFocus(506) | [Control.HasFocus(20) + Window.IsActive(loginscreen)]</visible>
-		<animation effect="fade" time="1000">Hidden</animation>
-	</control>
-
-
-	<control type="image">
+	<include name="Dimensions_Fullscreen">
 		<posx>0</posx>
 		<posy>0</posy>
 		<width>1280</width>
 		<height>720</height>
-		<texture>music_fanart_diffuse_blue.png</texture>
-		<aspectratio scalediffuse="false">stretch</aspectratio>
-		<colordiffuse>Diffuse3</colordiffuse>
-		<visible>true</visible>
-	</control>
+	</include>
+
+	<include name="GlobalOverlay">
+
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture border="2">other_textures/black-back.png</texture>
+		</control>
+
+	</include>
 
 
+	<include name="HomeBackground">
 
-	<control type="image">
-		<include>Dimensions_Fullscreen</include>
-		<texture background="true">other_textures/overlay.png</texture>
-		<colordiffuse>White60</colordiffuse>
-	</control> 	
+		<control type="multiimage">
+			<include>Dimensions_Fullscreen</include>
+			<randomize>true</randomize>
+			<timeperimage>8000</timeperimage>
+			<fadetime>3000</fadetime>
+			<pauseatend>0</pauseatend>
+			<loop>true</loop>
+			<aspectratio background="true" aligny="top">stretch</aspectratio>
+			<colordiffuse>HomeFanart</colordiffuse>
+			<visible>Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)</visible>
+			<animation effect="fade" time="1000">Hidden</animation>
+		</control>	
 
-</include>
+		<control type="multiimage">
+			<include>Dimensions_Fullscreen</include>
+			<randomize>true</randomize>
+			<timeperimage>8000</timeperimage>
+			<fadetime>3000</fadetime>
+			<pauseatend>0</pauseatend>
+			<loop>true</loop>
+			<aspectratio background="true" aligny="top">stretch</aspectratio>
+			<colordiffuse>HomeFanart</colordiffuse>
+			<visible>Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)</visible>
+			<animation effect="fade" time="1000">Hidden</animation>
+		</control>	
 
+		<control type="multiimage">
+			<include>Dimensions_Fullscreen</include>
+			<randomize>true</randomize>
+			<timeperimage>8000</timeperimage>
+			<fadetime>3000</fadetime>
+			<pauseatend>0</pauseatend>
+			<loop>true</loop>
+			<aspectratio background="true" aligny="top">stretch</aspectratio>
+			<colordiffuse>HomeFanart</colordiffuse>
+			<visible>Control.HasFocus(505) | Control.HasFocus(69)</visible>
+			<animation effect="fade" time="1000">Hidden</animation>
+		</control>
 
+		<control type="multiimage">
+			<include>Dimensions_Fullscreen</include>
+			<randomize>true</randomize>
+			<timeperimage>8000</timeperimage>
+			<fadetime>3000</fadetime>
+			<pauseatend>0</pauseatend>
+			<loop>true</loop>
+			<aspectratio background="true" aligny="top">stretch</aspectratio>
+			<imagepath background="true">backgrounds/shutdown</imagepath>
+			<colordiffuse>HomeFanart</colordiffuse>
+			<visible>Control.HasFocus(506) | [Control.HasFocus(20) + Window.IsActive(loginscreen)]</visible>
+			<animation effect="fade" time="1000">Hidden</animation>
+		</control>
+		
+		<control type="image">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture>music_fanart_diffuse_blue.png</texture>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<colordiffuse>Diffuse3</colordiffuse>
+			<visible>true</visible>
+		</control>
+		
+		<control type="image">
+			<include>Dimensions_Fullscreen</include>
+			<texture background="true">other_textures/overlay.png</texture>
+			<colordiffuse>White60</colordiffuse>
+		</control> 	
 
-
+	</include>
 </includes>

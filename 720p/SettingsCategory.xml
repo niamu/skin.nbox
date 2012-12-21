@@ -126,12 +126,6 @@
 <animation effect="fade" time="400">VisibleChange</animation>
 			</control>
 
-
-
-<include>Setting_Heading</include>
-
-		
-
 	</controls>
 
 </window>
