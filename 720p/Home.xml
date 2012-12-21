@@ -10,7 +10,7 @@
 		<control type="group">
 			<posx>20</posx>
 			<posy>0</posy>
-			<visible>!Window.IsVisible(107)</visible>
+			<visible>!Window.IsVisible(107) + IntegerGreaterThan(System.ProfileCount,1)</visible>
 			<animation effect="slide" time="300" start="-138,0" end="0,0" easing="in" tween="cubic">Visible</animation>
 			<animation effect="slide" time="300" start="0, 0" end="-138,0" easing="out" tween="cubic">Hidden</animation>
 
@@ -43,7 +43,6 @@
 				<width>153</width>
 				<font>button_bold</font>
 				<align>left</align>
-				<visible>!Window.IsVisible(107)</visible>
 			</control>
 		</control>
 
