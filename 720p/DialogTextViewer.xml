@@ -20,9 +20,11 @@
 			<control type="label" id="1">
 				<description>header label</description>
 				<posx>10</posx>
-				<posy>32</posy>
+				<posy>10</posy>
 				<width>940</width>
 				<height>30</height>
+				<font>Large</font>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="textbox" id="5">
@@ -32,17 +34,25 @@
 				<width>922</width>
 				<height>516</height>
 				<align>justify</align>
+				<textcolor>black</textcolor>
 			</control>
-
+			
 			<control type="scrollbar" id="61">
 				<posx>940</posx>
 				<posy>72</posy>
-				<width>25</width>
+				<width>10</width>
 				<height>516</height>
 				<onleft>Close</onleft>
 				<onright>Close</onright>
 				<ondown>61</ondown>
 				<onup>61</onup>
+				<texturesliderbackground></texturesliderbackground>
+				<textureslidernib>bar.png</textureslidernib>
+				<textureslidernibfocus>other_textures/ButtonFO.png</textureslidernibfocus>
+				<texturesliderbar></texturesliderbar>
+				<texturesliderbarfocus></texturesliderbarfocus>
+				<showonepage>true</showonepage>
+				<orientation>vertical</orientation>
 			</control>
 
 		</control>

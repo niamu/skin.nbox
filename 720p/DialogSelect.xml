@@ -30,7 +30,7 @@
 				<posy>10</posy>
 				<width>660</width>
 				<align>Left</align>
-				<font>Home_header</font>
+				<font>large</font>
 				<textcolor>black</textcolor>
 				<label>13406</label>
 			</control>

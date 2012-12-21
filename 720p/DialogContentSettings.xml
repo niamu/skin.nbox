@@ -25,6 +25,7 @@
 				<font>Medium</font>
 				<width>860</width>
 				<label>20333</label>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="image">
@@ -50,6 +51,7 @@
 				<ondown>4</ondown>
 				<onleft>28</onleft>
 				<onright>28</onright>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="label">
@@ -58,6 +60,7 @@
 				<posy>45</posy>
 				<width>300</width>
 				<label>20344</label>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="label">
@@ -67,6 +70,7 @@
 				<width>305</width>
 				<align>right</align>
 				<label>$INFO[Control.GetLabel(3)]</label>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="list" id="4">
@@ -90,6 +94,7 @@
 						<posx>15</posx>
 						<width>380</width>
 						<info>ListItem.Label</info>
+						<textcolor>black</textcolor>
 					</control>
 
 				</itemlayout>
@@ -125,16 +130,19 @@
 				<onleft>4</onleft>
 				<onright>29</onright>
 				<orientation>vertical</orientation>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="7">
 				<description>default</description>
 				<align>left</align>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="radiobutton" id="8">
 				<description>radioButton</description>
 				<align>left</align>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="6">
@@ -147,6 +155,7 @@
 				<onleft>29</onleft>
 				<onright>28</onright>
 				<ondown>3</ondown>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="28">
@@ -159,6 +168,7 @@
 				<onright>29</onright>
 				<onup>5</onup>
 				<ondown>3</ondown>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="29">
@@ -171,6 +181,7 @@
 				<onright>6</onright>
 				<onup>5</onup>
 				<ondown>3</ondown>
+				<textcolor>black</textcolor>
 			</control>
 
 		</control>
