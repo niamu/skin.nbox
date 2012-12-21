@@ -197,7 +197,7 @@
 		<aspectratio background="true" aligny="top">stretch</aspectratio>
 		<imagepath background="true">backgrounds/shutdown</imagepath>
 		<colordiffuse>HomeFanart</colordiffuse>
-		<visible>Control.HasFocus(506) | Control.HasFocus(20)</visible>
+		<visible>Control.HasFocus(506) | [Control.HasFocus(20) + Window.IsActive(loginscreen)]</visible>
 		<animation effect="fade" time="1000">Hidden</animation>
 	</control>
 
