@@ -198,7 +198,7 @@
 				<posx>295</posx>
 				<posy>175</posy>
 				<height>30</height>
-				<width>900</width>
+				<width>985</width>
 				<font>Home_menu</font>
 				<aligny>top</aligny>
 				<label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] $INFO[ListItem.Label]</label>
