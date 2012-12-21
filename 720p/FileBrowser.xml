@@ -4,23 +4,19 @@
 
 	<controls>
 
+		<include>GlobalOverlay</include>		
 
-			
-
-		<include>GlobalOverlay</include>
-		
-			
 		<control type="group">
 			<posx>880</posx>
 			<posy>0</posy>
-			
+
 			<animation type="WindowOpen">
-	          <effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
-	        </animation>
-	        <animation type="WindowClose">
-	          <effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
-	        </animation>
-			
+				<effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+			</animation>
+
 			<control type="image">
 				<posx>0</posx>
 				<posy>0</posy>
@@ -149,55 +145,24 @@
 					<textcolor>black</textcolor>
 				</control>
 
-<!--
-				<control type="button" id="415">
-					<description>Create Folder</description>
-					<width>200</width>
-					<label>119</label>
-				<textcolor>white</textcolor>
-				</control>
-
-				<control type="radiobutton" id="416">
-					<description>Horizontal Flip</description>
-					<width>200</width>
-					<align>left</align>
-					<label>749</label>
-				<textcolor>white</textcolor>
-				</control>
--->
-
 			</control>
 
-<!--
 			<control type="image">
 				<description>Large Icon Image</description>
-				<posx>470</posx>
-				<posy>298</posy>
-				<width>200</width>
-				<height>240</height>
-				<texture>$INFO[Container(450).ListItem.Icon]</texture>
-				<aspectratio align="center" aligny="bottom">keep</aspectratio>
-				<bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+				<posx>-765</posx>
+				<posy>110</posy>
+				<width>650</width>
+				<height>500</height>
+				<texture fallback="DefaultAddonNone.png">$INFO[Container(450).ListItem.Icon]</texture>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<bordertexture border="5">white_box.png</bordertexture>
 				<bordersize>5</bordersize>
-				<visible>!SubString(Control.GetLabel(416),*)</visible>
+				<visible>!IsEmpty(Container(450).ListItem(0).Icon)</visible>
 			</control>
 
-			<control type="image">
-				<description>Flipped Large Icon Image</description>
-				<posx>470</posx>
-				<posy>298</posy>
-				<width>200</width>
-				<height>240</height>
-				<texture flipx="true">$INFO[Container(450).ListItem.Icon]</texture>
-				<aspectratio align="center" aligny="bottom">keep</aspectratio>
-				<bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
-				<bordersize>5</bordersize>
-				<visible>SubString(Control.GetLabel(416),*)</visible>
-			</control>
--->
 		</control>
 
-		
+
 
 	</controls>
 
