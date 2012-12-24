@@ -4,22 +4,7 @@
 
 	<controls>
 
-		<control type="group">
-			<posx>1222</posx>
-			<posy>0</posy>
-
-			<control type="image" id="901">
-				<description>Mute Image</description>
-				<posx>0</posx>
-				<posy>20</posy>
-				<width>48</width>
-				<height>48</height>
-				<texture>other_textures/icon-mute.png</texture>
-			</control>
-
-		</control>
-
-		
+    
 
 	</controls>
 
