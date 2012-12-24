@@ -39,7 +39,7 @@
 				<viewtype label="Poster View">Poster View</viewtype>
 				<posx>295</posx>
 				<posy>288</posy>
-				<width>315</width>
+				<width>525</width>
 				<height>320</height>
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
@@ -151,9 +151,9 @@
 			</control>
 
 			<control type="image">
-				<posx>610</posx>
+				<posx>820</posx>
 				<posy>288</posy>
-				<width>680</width>
+				<width>470</width>
 				<height>315</height>
 				<texture background="true" >tile.png</texture>
 				<fadetime>200</fadetime>
@@ -197,7 +197,7 @@
 			</control>
 
 			<control type="scrollbar" id="62">
-				<posx>610</posx>
+				<posx>821</posx>
 				<posy>288</posy>
 				<width>10</width>
 				<height>315</height>
@@ -211,9 +211,9 @@
 			</control>
 
 			<control type="label">
-				<posx>630</posx>
+				<posx>840</posx>
 				<posy>300</posy>
-				<width>610</width>
+				<width>400</width>
 				<height>50</height>
 				<aligny>Left</aligny>
 				<font>Artist_Font</font>
@@ -222,9 +222,9 @@
 			</control>
 
 			<control type="textbox">
-				<posx>630</posx>
+				<posx>840</posx>
 				<posy>360</posy>
-				<width>630</width>
+				<width>420</width>
 				<height>215</height>
 				<info>ListItem.Plot</info>
 				<align>justify</align>
@@ -345,16 +345,16 @@
 			</control>		
 
 			<control type="label">
-				<posx>930</posx>
+				<posx>1100</posx>
 				<posy>300</posy>
-				<width>480</width>
+				<width>250</width>
 				<height>50</height>
 				<align>right</align>
 				<aligny>top</aligny>
 				<font>Large_Letter_Music</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.SortLetter]</label>
-				<animation effect="slide" start="-120,0" time="200">VisibleChange</animation>
+				<animation effect="slide" start="-60,0" time="100">VisibleChange</animation>
 				<visible>Container.Scrolling + !container.content(episodes)</visible>
 			</control>
 		</control>	
