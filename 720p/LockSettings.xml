@@ -7,25 +7,33 @@
 		<include>GlobalOverlay</include>
 
 		<control type="group">
-			<posx>340</posx>
-			<posy>140</posy>
+			<posx>880</posx>
+			<posy>0</posy>
 
+			<animation type="WindowOpen">
+				<effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+			</animation>
+			
 			<control type="image">
-				<posx>-20</posx>
-				<posy>-20</posy>
-				<width>640</width>
-				<height>496</height>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>400</width>
+				<height>720</height>
 				<texture border="22">button.png</texture>
 			</control>
 
-			<control type="label">
-				<description>Header Label</description>
+      <control type="label">
+				<description>Heading</description>
 				<posx>10</posx>
-				<width>560</width>
-				<label>20043</label>
-				<font>Medium</font>
+				<posy>10</posy>
+				<width>380</width>
+				<align>left</align>
+				<font>Large</font>
 				<textcolor>black</textcolor>
-				<align>center</align>
+				<label>20043</label>
 			</control>
 
 			<control type="grouplist" id="5">
@@ -33,7 +41,7 @@
 				<posx>10</posx>
 				<posy>88</posy>
 				<height>275</height>
-				<width>580</width>
+				<width>380</width>
 				<itemgap>2</itemgap>
 				<orientation>vertical</orientation>
 				<onleft>28</onleft>
@@ -44,37 +52,37 @@
 
 			<control type="button" id="7">
 				<description>button</description>
-				<width>580</width>
+				<width>380</width>
 				<align>left</align>
 				<textcolor>black</textcolor>
 			</control>
 
 			<control type="radiobutton" id="8">
 				<description>radio_button</description>
-				<width>580</width>
+				<width>380</width>
 				<align>left</align>
 				<textcolor>black</textcolor>
 			</control>
 
 			<control type="spincontrolex" id="9">
 				<description>spin_controlex</description>
-				<width>580</width>
+				<width>380</width>
 				<align>left</align>
 				<textcolor>black</textcolor>
 			</control>
 
 			<control type="sliderex" id="10">
 				<description>slider</description>
-				<width>580</width>
+				<width>380</width>
 				<align>left</align>
 				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="28">
 				<description>Ok</description>
-				<posx>90</posx>
-				<posy>392</posy>
-				<width>160</width>
+				<posx>10</posx>
+				<posy>660</posy>
+				<width>180</width>
 				<label>186</label>
 				<onleft>5</onleft>
 				<onright>29</onright>
@@ -85,9 +93,9 @@
 
 			<control type="button" id="29">
 				<description>Cancel</description>
-				<posx>350</posx>
-				<posy>392</posy>
-				<width>160</width>
+				<posx>210</posx>
+				<posy>660</posy>
+				<width>180</width>
 				<label>222</label>
 				<onleft>28</onleft>
 				<onright>5</onright>

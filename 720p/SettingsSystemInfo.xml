@@ -105,7 +105,7 @@
 				<control type="label" id="23">
 					<description>Memory Text</description>
 					<width>800</width>
-					<label>$LOCALIZE[31030] $INFO[system.memory(used.percent)]</label>
+					<label>RAM Usage: $INFO[system.memory(used.percent)]</label>
 			<textcolor>black</textcolor>
 				</control>
 
