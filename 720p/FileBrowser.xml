@@ -16,6 +16,26 @@
 			<animation type="WindowClose">
 				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
 			</animation>
+			
+			<control type="image">
+				<description>Large Icon Image</description>
+				<posx>-765</posx>
+				<posy>110</posy>
+				<width>650</width>
+				<height>500</height>
+				<texture fallback="DefaultAddonNone.png">$INFO[Container(450).ListItem.Icon]</texture>
+				<aspectratio align="center" aligny="center">keep</aspectratio>
+				<bordertexture border="5">white_box.png</bordertexture>
+				<bordersize>5</bordersize>
+				<visible>!IsEmpty(Container(450).ListItem(0).Icon) + [SubString(Container(450).ListItem(0).Label,.jpg) | SubString(Container(450).ListItem(0).Label,.png) | SubString(Container(450).ListItem(0).Label,Current thumb)]</visible>
+				
+				<animation type="WindowOpen">
+  				<effect type="slide" time="300" start="+1165, 0" end="0,0" easing="out" tween="cubic" />
+  			</animation>
+  			<animation type="WindowClose">
+  				<effect type="slide" time="300" start="0,0" end="+1165,0" easing="in" tween="cubic" />
+  			</animation>
+			</control>
 
 			<control type="image">
 				<posx>0</posx>
@@ -145,19 +165,6 @@
 					<textcolor>black</textcolor>
 				</control>
 
-			</control>
-
-			<control type="image">
-				<description>Large Icon Image</description>
-				<posx>-765</posx>
-				<posy>110</posy>
-				<width>650</width>
-				<height>500</height>
-				<texture fallback="DefaultAddonNone.png">$INFO[Container(450).ListItem.Icon]</texture>
-				<aspectratio align="center" aligny="center">keep</aspectratio>
-				<bordertexture border="5">white_box.png</bordertexture>
-				<bordersize>5</bordersize>
-				<visible>!IsEmpty(Container(450).ListItem(0).Icon)</visible>
 			</control>
 
 		</control>
