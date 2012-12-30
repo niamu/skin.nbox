@@ -24,7 +24,7 @@
 					<posx>72</posx>
 					<posy>8</posy>
 					<width>1220</width>
-					<label>[COLOR Accent]$INFO[VideoPlayer.TVShowTitle][/COLOR] - $INFO[VideoPlayer.Title] $INFO[VideoPlayer.Year]</label>
+					<label>[COLOR Accent]$INFO[VideoPlayer.TVShowTitle][/COLOR] $INFO[VideoPlayer.Title,, -] $INFO[VideoPlayer.Year]</label>
 					<scroll>true</scroll>
 					<font>large</font>
 					<align>left</align>
