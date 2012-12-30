@@ -1,138 +1,222 @@
 <window id="34">
-	<defaultcontrol always="true">4</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
+  <defaultcontrol always="true">9004</defaultcontrol>
+  <allowoverlay>yes</allowoverlay>
 
-	<controls>
-		
-		<control type="image">
-	        <animation type="WindowOpen">
-          <effect type="fade" time="400" start="0" end="100" />
-        </animation>
-        <animation type="WindowClose">
-          <effect type="fade" time="400" start="100" end="0" />
-        </animation>	
-	
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture border="2">other_textures/black-back.png</texture>
-		</control>
+  <animation effect="fade" time="400" start="0" end="100" >WindowOpen</animation>
+  <animation effect="fade" time="400" start="100" end="0"  >WindowClose</animation>
 
-		<control type="group">
-			<posx>880</posx>
-			<posy>0</posy>
 
-			<animation type="WindowOpen">
-				<effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
-			</animation>
-			<animation type="WindowClose">
-				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
-			</animation>
+  <controls>
 
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>400</width>
-				<height>720</height>
-				<texture border="22">button.png</texture>
-			</control>
-
-			<control type="label">
-				<description>Menu Title</description>
-				<posx>44</posx>
-				<posy>90</posy>
-				<width>400</width>
-				<label>profiles</label>
-				<font>Home_sub_header</font>
-				<align>left</align>
-				<textcolor>black</textcolor>
-			</control>
-
-			<control type="group">
-				<posx>40</posx>
-				<posy>200</posy>
-
-				<control type="radiobutton" id="4">
-					<description>Enable Login Screen</description>
-					<posx>0</posx>
-					<posy>0</posy>
-					<width>320</width>
-					<label>20096</label>
-					<align>left</align>
-					<onright>-</onright>
-					<onleft>-</onleft>
-					<onup>-</onup>
-					<ondown>2</ondown>
-					<textcolor>black</textcolor>
-				</control>
-
-				<control type="list" id="2">
-					<posx>0</posx>
-					<posy>56</posy>
-					<width>320</width>
-					<height>322</height>
-					<onleft>-</onleft>
-					<onright>-</onright>
-					<onup>4</onup>
-					<ondown>-</ondown>
-
-					<itemlayout height="46">
-
-						<control type="image">
-							<width>320</width>
-							<height>44</height>
-							<texture border="2">other_textures/ButtonNF.png</texture>
-						</control>
-
-						<control type="label">
-							<posx>15</posx>
-							<width>320</width>
-							<info>ListItem.Label</info>
-							<textcolor>black</textcolor>
-						</control>
-
-						<control type="label">
-							<posx>565</posx>
-							<width>320</width>
-							<align>right</align>
-							<info>ListItem.Label2</info>
-							<textcolor>black</textcolor>
-						</control>
-
-					</itemlayout>
-
-					<focusedlayout height="46">
-
-						<control type="image">
-							<width>320</width>
-							<height>44</height>
-							<texture border="5">other_textures/ButtonFO.png</texture>
-							<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(2)">Conditional</animation>
-						</control>
-
-						<control type="label">
-							<posx>15</posx>
-							<width>320</width>
-							<info>ListItem.Label</info>
-						</control>
-
-						<control type="label">
-							<posx>565</posx>
-							<width>320</width>
-							<align>right</align>
-							<info>ListItem.Label2</info>
-						</control>
-
-					</focusedlayout>
-
-				</control>
-			</control>
-
-		</control>
+    <control type="image">
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>1280</width>
+      <height>720</height>
+      <texture>button.png</texture>
+      <animation effect="fade" time="200" tween="square">VisibleChange</animation>
+    </control>
 
 
 
-	</controls>
+    <control type="image" id="2">
+      <description>top left bar</description>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>20</width>
+      <height>138</height>
+      <visible>true</visible>
+      <texture>bar.png</texture>
+      <animation effect="fade" time="400">WindowOpen</animation>
+      <animation effect="fade" time="400">WindowClose</animation>
+    </control>	
+
+
+
+    <control type="label">
+      <label>settings</label>
+      <posx>70</posx>
+      <posy>190</posy>
+      <height>30</height>
+      <width>250</width>
+      <font>Home_header</font>
+      <textcolor>black</textcolor>
+      <align>left</align>
+    </control>
+
+    <control type="label">
+      <label>[LOWERCASE]Profiles[/LOWERCASE]</label>
+      <posx>360</posx>
+      <posy>200</posy>
+      <height>30</height>
+      <width>450</width>
+      <font>Home_sub_header</font>
+      <textcolor>black</textcolor>
+      <align>left</align>
+    </control>
+
+    <control type="grouplist" id="9004">
+      <posx>10</posx>
+      <posy>280</posy>
+      <width>300</width>
+      <height>345</height>
+      <itemgap>2</itemgap>
+      <onleft>-</onleft>
+      <onright>-</onright>
+      <onup>9004</onup>
+      <ondown>9004</ondown>
+
+      <control type="button" id="4495">
+        <description>General</description>
+        <width>300</width>
+        <label>Profiles</label>
+        <textcolor>black</textcolor>
+        <align>right</align>
+        <onright>4</onright>
+
+      </control>
+    </control>
+
+    <control type="group">
+      <posx>340</posx>
+      <posy>280</posy>
+      <width>820</width>
+      <height>330</height>
+
+      <control type="radiobutton" id="4">
+        <description>Enable Login Screen</description>
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>820</width>
+        <label>20096</label>
+        <align>left</align>
+        <onright>-</onright>
+        <onleft>4495</onleft>
+        <onup>-</onup>
+        <ondown>2</ondown>
+        <textcolor>black</textcolor>
+      </control>
+
+      <control type="list" id="2">
+        <posx>0</posx>
+        <posy>56</posy>
+        <width>820</width>
+        <height>322</height>
+        <onleft>4495</onleft>
+        <onright>-</onright>
+        <onup>4</onup>
+        <ondown>-</ondown>
+
+        <itemlayout height="110">
+
+          <control type="image">
+            <width>820</width>
+            <height>104</height>
+            <texture border="2">other_textures/ButtonNF.png</texture>
+            <visible>!SubString(ListItem.Label,Add profile)</visible>
+          </control>
+          
+          <control type="image">
+            <width>820</width>
+            <height>44</height>
+            <texture border="2">other_textures/ButtonNF.png</texture>
+            <visible>SubString(ListItem.Label,Add profile)</visible>
+          </control>
+
+          <control type="image">
+            <posx>4</posx>
+            <posy>4</posy>
+            <width>96</width>
+            <height>96</height>
+            <bordertexture border="2">other_textures/ButtonFO.png</bordertexture>
+            <bordersize>5</bordersize>
+            <texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
+          </control>
+          
+          <control type="label">
+            <posx>110</posx>
+            <width>820</width>
+            <height>96</height>
+            <info>ListItem.Label</info>
+            <textcolor>black</textcolor>
+            <visible>!SubString(ListItem.Label,Add profile)</visible>
+          </control>
+          
+          <control type="label">
+            <posx>15</posx>
+            <width>820</width>
+            <info>ListItem.Label</info>
+            <textcolor>black</textcolor>
+            <visible>SubString(ListItem.Label,Add profile)</visible>
+          </control>
+
+          <control type="label">
+            <posx>800</posx>
+            <width>820</width>
+            <height>96</height>
+            <align>right</align>
+            <info>ListItem.Label2</info>
+            <textcolor>black</textcolor>
+          </control>
+
+        </itemlayout>
+
+        <focusedlayout height="110">
+
+          <control type="image">
+            <width>820</width>
+            <height>104</height>
+            <texture border="5">other_textures/ButtonFO.png</texture>
+            <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(2)">Conditional</animation>
+            <visible>!SubString(ListItem.Label,Add profile)</visible>
+          </control>
+          
+          <control type="image">
+            <width>820</width>
+            <height>44</height>
+            <texture border="5">other_textures/ButtonFO.png</texture>
+            <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(2)">Conditional</animation>
+            <visible>SubString(ListItem.Label,Add profile)</visible>
+          </control>
+          
+          <control type="image">
+            <posx>4</posx>
+            <posy>4</posy>
+            <width>96</width>
+            <height>96</height>
+            <bordertexture border="2">other_textures/ButtonFO.png</bordertexture>
+            <bordersize>5</bordersize>
+            <texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
+          </control>
+
+          <control type="label">
+            <posx>110</posx>
+            <width>820</width>
+            <height>96</height>
+            <info>ListItem.Label</info>
+            <visible>!SubString(ListItem.Label,Add profile)</visible>
+          </control>
+          
+          <control type="label">
+            <posx>15</posx>
+            <width>820</width>
+            <info>ListItem.Label</info>
+            <visible>SubString(ListItem.Label,Add profile)</visible>
+          </control>
+
+          <control type="label">
+            <posx>800</posx>
+            <width>820</width>
+            <height>96</height>
+            <align>right</align>
+            <info>ListItem.Label2</info>
+          </control>
+
+        </focusedlayout>
+
+      </control>
+    </control>
+
+  </controls>
 
 </window>
