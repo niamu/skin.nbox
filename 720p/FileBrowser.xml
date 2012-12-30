@@ -27,7 +27,7 @@
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<bordertexture border="5">white_box.png</bordertexture>
 				<bordersize>5</bordersize>
-				<visible>!IsEmpty(Container(450).ListItem(0).Icon) + [SubString(Container(450).ListItem(0).Label,.jpg) | SubString(Container(450).ListItem(0).Label,.png) | SubString(Container(450).ListItem(0).Label,Current thumb)]</visible>
+				<visible>!IsEmpty(Container(450).ListItem(0).Icon) + [SubString(Container(450).ListItem(0).Label,.jpg) | SubString(Container(450).ListItem(0).Label,.png) | SubString(Container(450).ListItem(0).Label,Current thumb) | SubString(Container(450).ListItem(0).Label,Current art) | SubString(Container(450).ListItem(0).Label,Remote art)]</visible>
 				
 				<animation type="WindowOpen">
   				<effect type="slide" time="300" start="+1165, 0" end="0,0" easing="out" tween="cubic" />
