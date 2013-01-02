@@ -4,7 +4,7 @@
 	<allowoverlay>yes</allowoverlay>	
 
 	<controls>
-		
+
 		<include>HomeBackground</include>
 
 		<control type="group">
@@ -36,7 +36,7 @@
 				<colordiffuse>Diffuse3</colordiffuse>
 				<visible>true</visible>
 			</control>
-			
+
 			<control type="label">
 				<label>[LOWERCASE]$INFO[System.ProfileName][/LOWERCASE]</label>
 				<posx>10</posx>
@@ -221,7 +221,7 @@
 				<ondown>503</ondown>
 				<onleft></onleft>
 				<onright>701</onright>
-				<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+				<onclick>right</onclick>
 			</control>
 
 			<control id="511">
@@ -233,9 +233,9 @@
 				<width>50</width>
 				<align>left</align>
 				<texture>marker.png</texture>
-				<visible>Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(66)</visible>
-				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(66)" pulse="true">Conditional</animation>
-				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(66)" >Conditional</animation>
+				<visible>Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(66)</visible>
+				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(66)" pulse="true">Conditional</animation>
+				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(66)" >Conditional</animation>
 				<animation effect="fade" time="200" delay="200">Hidden</animation>
 			</control>
 
@@ -255,7 +255,7 @@
 				<ondown>505</ondown>
 				<onleft></onleft>
 				<onright>801</onright>
-				<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
+				<onclick>right</onclick>
 			</control>
 
 			<control id="513">
@@ -267,9 +267,9 @@
 				<width>50</width>
 				<align>left</align>
 				<texture>marker.png</texture>
-				<visible>Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(68)</visible>
-				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(68)" pulse="true">Conditional</animation>
-				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(68)" >Conditional</animation>
+				<visible>Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(68)</visible>
+				<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(68)" pulse="true">Conditional</animation>
+				<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(68)" >Conditional</animation>
 				<animation effect="fade" time="200" delay="200">Hidden</animation>
 			</control>	
 
@@ -290,7 +290,7 @@
 				<ondown>506</ondown>
 				<onleft></onleft>
 				<onright>69</onright>
-				<onclick>activatewindow(Settings,return)</onclick>
+				<onclick>right</onclick>
 			</control>
 
 			<control id="515">
@@ -354,10 +354,10 @@
 
 <control type="group" id="355">   	
 
-	<visible>[Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701)] | Control.HasFocus(702) | Control.HasFocus(703)</visible>
+	<visible>[Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701)] | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704)</visible>
 	<animation effect="fade" time="400">VisibleChange</animation>
-	<animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)">Conditional</animation>
-	<animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703)" reversible="false">Conditional</animation>	
+	<animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704)">Conditional</animation>
+	<animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704)" reversible="false">Conditional</animation>	
 	<animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(506) | Control.HasFocus(503)" reversible="false">Conditional</animation>
 
 
@@ -384,182 +384,283 @@
 		<align>left</align>
 	</control>
 
-	<control type="image">
+	<control type="grouplist" id="7000">
 		<posx>360</posx>
 		<posy>290</posy>
 		<width>315</width>
-		<height>155</height>
-		<texture>tile.png</texture>
-	</control>
+		<height>314</height>
+		<itemgap>4</itemgap>
+		<pagecontrol>7001</pagecontrol>
 
-	<control type="image">
-		<posx>360</posx>
-		<posy>290</posy>
-		<width>315</width>
-		<height>155</height>
-		<texture>button.png</texture>
-		<visible>[Control.HasFocus(701)]</visible>
+
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>315</width>
+			<height>155</height>
+			<control type="image">
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<texture>tile.png</texture>
+			</control>
+
+			<control type="image">
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<texture>button.png</texture>
+				<visible>[Control.HasFocus(701)]</visible>
+				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(701)">Conditional</animation>
+			</control>
+
+			<control id="701">
+				<type>button</type>
+				<label></label>
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<align>left</align>
+				<onup>702</onup>
+				<ondown>702</ondown>
+				<onleft>501</onleft>
+				<onright>66</onright>
+				<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+			</control>
+
+			<control type="image">
+				<posx>50</posx>
+				<posy>25</posy>
+				<width>90</width>
+				<height>90</height>
+				<texture>movies.png</texture>
+			</control>	
+
+
+			<control type="label">
+				<label>$INFO[Window.Property(Movies.Count)]$INFO[Movies.Count]</label>
+				<posx>150</posx>
+				<posy>60</posy>
+				<height>30</height>
+				<width>160</width>
+				<font>Home_numbers</font>
+				<align>center</align>
+			</control>
+			
+			<control type="label">
+				<label>All Films</label>
+				<posx>10</posx>
+				<posy>120</posy>
+				<height>30</height>
+				<width>280</width>
+				<font>button_title</font>
+				<align>left</align>
+			</control>
+		</control>
+
+		<control type="group">
+			<posx>0</posx>
+			<posy>159</posy>
+			<width>155</width>
+			<height>155</height>
+			<control type="image">
+				<posx></posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<texture>tile.png</texture>
+			</control>
+
+			<control type="image">
+				<posx></posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<texture>button.png</texture>
+				<visible>[Control.HasFocus(702)]</visible>
+				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(702)">Conditional</animation>
+			</control>	
+
+			<control id="702">
+				<type>button</type>
+				<label></label>
+				<posx></posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<align>left</align>
+				<onup>701</onup>
+				<ondown>704</ondown>
+				<onleft>501</onleft>
+				<onright>703</onright>
+				<onfocus>SetProperty(genre,"film")</onfocus> 
+				<onclick>ActivateWindow(Videos, MovieGenres,return)</onclick>
+			</control>
+			
+			<control type="label">
+				<label>Genres</label>
+				<posx>10</posx>
+				<posy>119</posy>
+				<height>30</height>
+				<width>250</width>
+				<font>button_title</font>
+				<align>left</align>
+			</control>
+
+			<control type="image">
+				<posx>35</posx>
+				<posy>26</posy>
+				<width>90</width>
+				<height>90</height>
+				<texture>genre.png</texture>
+			</control>
+
+			<control type="image">
+				<posx>160</posx>
+				<posy></posy>
+				<width>155</width>
+				<height>155</height>
+				<texture>tile.png</texture>
+			</control>
+
+			<control type="image">
+				<posx>160</posx>
+				<posy></posy>
+				<width>155</width>
+				<height>155</height>
+				<texture>button.png</texture>
+				<visible>[Control.HasFocus(703)]</visible>
+				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(703)">Conditional</animation>
+			</control>
+
+
+			<control id="703">
+				<type>button</type>
+				<label></label>
+				<posx>1</posx>
+				<posy></posy>
+				<width>155</width>
+				<height>155</height>
+				<align>left</align>
+				<onup>701</onup>
+				<ondown>704</ondown>
+				<onleft>702</onleft>
+				<onright>66</onright>
+				<onclick>ActivateWindow(Videos, RecentlyAddedMovies,return)</onclick>
+			</control>
+			
+			<control type="label">
+				<label>All Recent</label>
+				<posx>170</posx>
+				<posy>120</posy>
+				<height>30</height>
+				<width>250</width>
+				<font>button_title</font>
+				<align>left</align>
+			</control>	
+
+			<control type="image">
+				<posx>190</posx>
+				<posy>25</posy>
+				<width>90</width>
+				<height>90</height>
+				<texture>recent.png</texture>
+			</control>
+		</control>
+		
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>315</width>
+			<height>155</height>
+			<control type="image">
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<texture>tile.png</texture>
+			</control>
+
+			<control type="image">
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<texture>button.png</texture>
+				<visible>[Control.HasFocus(704)]</visible>
+				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(704)">Conditional</animation>
+			</control>
+
+			<control id="704">
+				<type>button</type>
+				<label></label>
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<align>left</align>
+				<onup>702</onup>
+				<ondown>701</ondown>
+				<onleft>501</onleft>
+				<onright>66</onright>
+				<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
+			</control>
+
+			<control type="image">
+				<posx>50</posx>
+				<posy>25</posy>
+				<width>90</width>
+				<height>90</height>
+				<texture>movies.png</texture>
+			</control>	
+
+
+			<control type="label">
+				<label>$INFO[Window.Property(Movies.Count)]$INFO[Movies.Count]</label>
+				<posx>150</posx>
+				<posy>60</posy>
+				<height>30</height>
+				<width>160</width>
+				<font>Home_numbers</font>
+				<align>center</align>
+			</control>
+			
+			<control type="label">
+				<label>All Films</label>
+				<posx>10</posx>
+				<posy>120</posy>
+				<height>30</height>
+				<width>280</width>
+				<font>button_title</font>
+				<align>left</align>
+			</control>
+		</control>
+
+	</control>
+	
+	<control type="scrollbar" id="7001">
+		<posx>680</posx>
+		<posy>287</posy>
+		<width>10</width>
+		<height>320</height>
+		<texturesliderbackground></texturesliderbackground>
+		<textureslidernib>bar.png</textureslidernib>
+		<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+		<texturesliderbar></texturesliderbar>
+		<texturesliderbarfocus></texturesliderbarfocus>
+		<showonepage>true</showonepage>
+		<orientation>vertical</orientation>
+		<visible>[Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704)]</visible>
+		
 		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(701)">Conditional</animation>
 	</control>
-
-
-	<control id="701">
-		<type>button</type>
-		<label></label>
-		<posx>360</posx>
-		<posy>290</posy>
-		<width>315</width>
-		<height>155</height>
-		<align>left</align>
-		<onup>702</onup>
-		<ondown>702</ondown>
-		<onleft>501</onleft>
-		<onright>66</onright>
-		<onclick>ActivateWindow(Videos,MovieTitles,return)</onclick>
-	</control>
-
-	<control type="image">
-		<posx>400</posx>
-		<posy>315</posy>
-		<width>90</width>
-		<height>90</height>
-		<texture>movies.png</texture>
-	</control>	
-
-
-	<control type="label">
-		<label>$INFO[Window.Property(Movies.Count)]$INFO[Movies.Count]</label>
-		<posx>490</posx>
-		<posy>350</posy>
-		<height>30</height>
-		<width>400</width>
-		<font>Home_numbers</font>
-		<align>left</align>
-	</control>
-
-	<control type="image">
-		<posx>360</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<texture>tile.png</texture>
-	</control>
-
-	<control type="image">
-		<posx>360</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<texture>button.png</texture>
-		<visible>[Control.HasFocus(702)]</visible>
-		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(702)">Conditional</animation>
-	</control>
-
-
-	<control id="702">
-		<type>button</type>
-		<label></label>
-		<posx>360</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<align>left</align>
-		<onup>701</onup>
-		<ondown>701</ondown>
-		<onleft>501</onleft>
-		<onright>703</onright>
-		<onfocus>SetProperty(genre,"film")</onfocus> 
-		<onclick>ActivateWindow(Videos, MovieGenres,return)</onclick>
-	</control>
-
-
-
-
-	<control type="image">
-		<posx>520</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<texture>tile.png</texture>
-	</control>
-
-	<control type="image">
-		<posx>520</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<texture>button.png</texture>
-		<visible>[Control.HasFocus(703)]</visible>
-		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(703)">Conditional</animation>
-	</control>
-
-
-	<control id="703">
-		<type>button</type>
-		<label></label>
-		<posx>520</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<align>left</align>
-		<onup>701</onup>
-		<ondown>701</ondown>
-		<onleft>702</onleft>
-		<onright>66</onright>
-		<onclick>ActivateWindow(Videos, RecentlyAddedMovies,return)</onclick>
-	</control>			
-
-
-
-	<control type="label">
-		<label>All Films</label>
-		<posx>370</posx>
-		<posy>410</posy>
-		<height>30</height>
-		<width>320</width>
-		<font>button_title</font>
-		<align>left</align>
-	</control>	
-
-	<control type="label">
-		<label>Genres</label>
-		<posx>370</posx>
-		<posy>568</posy>
-		<height>30</height>
-		<width>250</width>
-		<font>button_title</font>
-		<align>left</align>
-	</control>
-
-	<control type="image">
-		<posx>395</posx>
-		<posy>475</posy>
-		<width>90</width>
-		<height>90</height>
-		<texture>genre.png</texture>
-	</control>	
-
-
-	<control type="label">
-		<label>All Recent</label>
-		<posx>530</posx>
-		<posy>568</posy>
-		<height>30</height>
-		<width>250</width>
-		<font>button_title</font>
-		<align>left</align>
-	</control>	
-
-	<control type="image">
-		<posx>555</posx>
-		<posy>475</posy>
-		<width>90</width>
-		<height>90</height>
-		<texture>recent.png</texture>
-	</control>	
 
 
 	<control type="panel" id="66">
@@ -1107,10 +1208,10 @@
 <!--TV SHOWS-->
 <control type="group" id="375">   	
 
-	<visible>[Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801)] | Control.HasFocus(802) | Control.HasFocus(803)</visible>
+	<visible>[Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801)] | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)</visible>
 	<animation effect="fade" time="400">VisibleChange</animation>
-	<animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)">Conditional</animation>
-	<animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)" reversible="false">Conditional</animation>	
+	<animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)">Conditional</animation>
+	<animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)" reversible="false">Conditional</animation>	
 	<animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(501) | Control.HasFocus(505)" reversible="false">Conditional</animation>
 
 
@@ -1135,180 +1236,283 @@
 		<align>left</align>
 	</control>
 
-	<control type="image">
+	<control type="grouplist" id="8000">
 		<posx>360</posx>
 		<posy>290</posy>
 		<width>315</width>
-		<height>155</height>
-		<texture>tile.png</texture>
-	</control>
+		<height>314</height>
+		<itemgap>4</itemgap>
+		<pagecontrol>8001</pagecontrol>
 
-	<control type="image">
-		<posx>360</posx>
-		<posy>290</posy>
-		<width>315</width>
-		<height>155</height>
-		<texture>button.png</texture>
-		<visible>[Control.HasFocus(801)]</visible>
+
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>315</width>
+			<height>155</height>
+			<control type="image">
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<texture>tile.png</texture>
+			</control>
+
+			<control type="image">
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<texture>button.png</texture>
+				<visible>[Control.HasFocus(801)]</visible>
+				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(801)">Conditional</animation>
+			</control>
+
+			<control id="801">
+				<type>button</type>
+				<label></label>
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<align>left</align>
+				<onup>802</onup>
+				<ondown>802</ondown>
+				<onleft>503</onleft>
+				<onright>68</onright>
+				<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
+			</control>
+
+			<control type="image">
+				<posx>50</posx>
+				<posy>25</posy>
+				<width>90</width>
+				<height>90</height>
+				<texture>tv_shows.png</texture>
+			</control>	
+
+
+			<control type="label">
+				<label>$INFO[Window.Property(TVShows.Count)]$INFO[TVShows.Count]</label>
+				<posx>150</posx>
+				<posy>60</posy>
+				<height>30</height>
+				<width>160</width>
+				<font>Home_numbers</font>
+				<align>center</align>
+			</control>
+			
+			<control type="label">
+				<label>All TV Shows</label>
+				<posx>10</posx>
+				<posy>120</posy>
+				<height>30</height>
+				<width>280</width>
+				<font>button_title</font>
+				<align>left</align>
+			</control>
+		</control>
+
+		<control type="group">
+			<posx>0</posx>
+			<posy>159</posy>
+			<width>155</width>
+			<height>155</height>
+			<control type="image">
+				<posx></posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<texture>tile.png</texture>
+			</control>
+
+			<control type="image">
+				<posx></posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<texture>button.png</texture>
+				<visible>[Control.HasFocus(802)]</visible>
+				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(802)">Conditional</animation>
+			</control>	
+
+			<control id="802">
+				<type>button</type>
+				<label></label>
+				<posx></posx>
+				<posy>0</posy>
+				<width>155</width>
+				<height>155</height>
+				<align>left</align>
+				<onup>801</onup>
+				<ondown>804</ondown>
+				<onleft>503</onleft>
+				<onright>803</onright>
+				<onfocus>SetProperty(genre,"tv")</onfocus> 
+				<onclick>ActivateWindow(Videos, TvShowGenres,return)</onclick>
+			</control>
+			
+			<control type="label">
+				<label>Genres</label>
+				<posx>10</posx>
+				<posy>119</posy>
+				<height>30</height>
+				<width>250</width>
+				<font>button_title</font>
+				<align>left</align>
+			</control>
+
+			<control type="image">
+				<posx>35</posx>
+				<posy>26</posy>
+				<width>90</width>
+				<height>90</height>
+				<texture>genre.png</texture>
+			</control>
+
+			<control type="image">
+				<posx>160</posx>
+				<posy></posy>
+				<width>155</width>
+				<height>155</height>
+				<texture>tile.png</texture>
+			</control>
+
+			<control type="image">
+				<posx>160</posx>
+				<posy></posy>
+				<width>155</width>
+				<height>155</height>
+				<texture>button.png</texture>
+				<visible>[Control.HasFocus(803)]</visible>
+				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(803)">Conditional</animation>
+			</control>
+
+
+			<control id="803">
+				<type>button</type>
+				<label></label>
+				<posx>1</posx>
+				<posy></posy>
+				<width>155</width>
+				<height>155</height>
+				<align>left</align>
+				<onup>801</onup>
+				<ondown>804</ondown>
+				<onleft>802</onleft>
+				<onright>68</onright>
+				<onclick>ActivateWindow(Videos, RecentlyAddedEpisodes,return)</onclick>
+			</control>
+			
+			<control type="label">
+				<label>All Recent</label>
+				<posx>170</posx>
+				<posy>120</posy>
+				<height>30</height>
+				<width>250</width>
+				<font>button_title</font>
+				<align>left</align>
+			</control>	
+
+			<control type="image">
+				<posx>190</posx>
+				<posy>25</posy>
+				<width>90</width>
+				<height>90</height>
+				<texture>recent.png</texture>
+			</control>
+		</control>
+		
+		<control type="group">
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>315</width>
+			<height>155</height>
+			<control type="image">
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<texture>tile.png</texture>
+			</control>
+
+			<control type="image">
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<texture>button.png</texture>
+				<visible>[Control.HasFocus(804)]</visible>
+				<animation effect="fade" time="200" tween="square">VisibleChange</animation>
+				<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(804)">Conditional</animation>
+			</control>
+
+			<control id="804">
+				<type>button</type>
+				<label></label>
+				<posx></posx>
+				<posy></posy>
+				<width>315</width>
+				<height>155</height>
+				<align>left</align>
+				<onup>802</onup>
+				<ondown>801</ondown>
+				<onleft>503</onleft>
+				<onright>68</onright>
+				<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
+			</control>
+
+			<control type="image">
+				<posx>50</posx>
+				<posy>25</posy>
+				<width>90</width>
+				<height>90</height>
+				<texture>tv_shows.png</texture>
+			</control>	
+
+
+			<control type="label">
+				<label>$INFO[Window.Property(TVShows.Count)]$INFO[TVShows.Count]</label>
+				<posx>150</posx>
+				<posy>60</posy>
+				<height>30</height>
+				<width>160</width>
+				<font>Home_numbers</font>
+				<align>center</align>
+			</control>
+			
+			<control type="label">
+				<label>All TV Shows</label>
+				<posx>10</posx>
+				<posy>120</posy>
+				<height>30</height>
+				<width>280</width>
+				<font>button_title</font>
+				<align>left</align>
+			</control>
+		</control>
+
+	</control>
+	
+	<control type="scrollbar" id="8001">
+		<posx>680</posx>
+		<posy>287</posy>
+		<width>10</width>
+		<height>320</height>
+		<texturesliderbackground></texturesliderbackground>
+		<textureslidernib>bar.png</textureslidernib>
+		<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+		<texturesliderbar></texturesliderbar>
+		<texturesliderbarfocus></texturesliderbarfocus>
+		<showonepage>true</showonepage>
+		<orientation>vertical</orientation>
+		<visible>[Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804)]</visible>
+		
 		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(801)">Conditional</animation>
 	</control>
-
-	<control id="801">
-		<type>button</type>
-		<label></label>
-		<posx>360</posx>
-		<posy>290</posy>
-		<width>315</width>
-		<height>155</height>
-		<align>left</align>
-		<onup>802</onup>
-		<ondown>802</ondown>
-		<onleft>503</onleft>
-		<onright>68</onright>
-		<onclick>ActivateWindow(VideoLibrary,tvshowtitles,return)</onclick>
-	</control>
-
-	<control type="image">
-		<posx>410</posx>
-		<posy>315</posy>
-		<width>90</width>
-		<height>90</height>
-		<texture>tv_shows.png</texture>
-	</control>	
-
-
-	<control type="label">
-		<label>$INFO[Window.Property(TVShows.Count)]$INFO[TVShows.Count]</label>
-		<posx>510</posx>
-		<posy>350</posy>
-		<height>30</height>
-		<width>400</width>
-		<font>Home_numbers</font>
-		<align>left</align>
-	</control>
-
-	<control type="image">
-		<posx>360</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<texture>tile.png</texture>
-	</control>
-
-	<control type="image">
-		<posx>360</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<texture>button.png</texture>
-		<visible>[Control.HasFocus(802)]</visible>
-		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(802)">Conditional</animation>
-	</control>	
-
-	<control id="802">
-		<type>button</type>
-		<label></label>
-		<posx>360</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<align>left</align>
-		<onup>801</onup>
-		<ondown>801</ondown>
-		<onleft>503</onleft>
-		<onright>803</onright>
-		<onfocus>SetProperty(genre,"tv")</onfocus> 
-		<onclick>ActivateWindow(Videos, TvShowGenres,return)</onclick>
-	</control>
-
-
-
-
-	<control type="image">
-		<posx>520</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<texture>tile.png</texture>
-	</control>
-
-	<control type="image">
-		<posx>520</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<texture>button.png</texture>
-		<visible>[Control.HasFocus(803)]</visible>
-		<animation effect="fade" time="200" tween="square">VisibleChange</animation>
-		<animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(803)">Conditional</animation>
-	</control>
-
-
-	<control id="803">
-		<type>button</type>
-		<label></label>
-		<posx>520</posx>
-		<posy>449</posy>
-		<width>155</width>
-		<height>155</height>
-		<align>left</align>
-		<onup>801</onup>
-		<ondown>801</ondown>
-		<onleft>802</onleft>
-		<onright>68</onright>
-		<onclick>ActivateWindow(Videos, RecentlyAddedEpisodes,return)</onclick>
-	</control>			
-
-
-
-	<control type="label">
-		<label>All TV Shows</label>
-		<posx>370</posx>
-		<posy>410</posy>
-		<height>30</height>
-		<width>280</width>
-		<font>button_title</font>
-		<align>left</align>
-	</control>	
-
-	<control type="label">
-		<label>Genres</label>
-		<posx>370</posx>
-		<posy>568</posy>
-		<height>30</height>
-		<width>250</width>
-		<font>button_title</font>
-		<align>left</align>
-	</control>
-
-	<control type="image">
-		<posx>395</posx>
-		<posy>475</posy>
-		<width>90</width>
-		<height>90</height>
-		<texture>genre.png</texture>
-	</control>	
-
-
-	<control type="label">
-		<label>All Recent</label>
-		<posx>530</posx>
-		<posy>568</posy>
-		<height>30</height>
-		<width>250</width>
-		<font>button_title</font>
-		<align>left</align>
-	</control>	
-
-	<control type="image">
-		<posx>555</posx>
-		<posy>475</posy>
-		<width>90</width>
-		<height>90</height>
-		<texture>recent.png</texture>
-	</control>	
 
 
 
