@@ -118,11 +118,11 @@
 					</control>
 					
 					<control type="image">
-						<posx>-</posx>
-						<posy>-</posy>
-						<width>60</width>
-						<height>60</height>
-						<texture>images/OverlayWatched.png</texture>
+						<posx>8</posx>
+						<posy>11</posy>
+						<width>18</width>
+						<height>15</height>
+						<texture>images/OverlayWatchedPanel.png</texture>
 						<animation type="Focus" reversible="false">
 							<effect type="fade" start="80" end="100" time="400" />
 						</animation>
