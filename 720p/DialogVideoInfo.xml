@@ -325,7 +325,7 @@
 
 				<control type="button" id ="10">
 					<description>Poster</description>
-					<label>Poster</label>
+					<label>Art</label>
 					<width>180</width>
 					<align>right</align>
 				</control>
