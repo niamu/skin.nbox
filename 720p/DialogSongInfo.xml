@@ -193,7 +193,7 @@
 				<itemgap>2</itemgap>
 				<orientation>vertical</orientation>
 
-				<control type="button" id ="10">
+				<control type="button" id="10">
 					<description>Ok button</description>
 					<width>255</width>
 					<label>186</label>
@@ -211,7 +211,7 @@
 					<label>10523</label>
 				</control>
 
-				<control type="button" id ="13">
+				<control type="button" id="13">
 					<description>Poster button</description>
 					<width>255</width>
 					<label>Poster</label>
