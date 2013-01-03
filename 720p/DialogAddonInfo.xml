@@ -137,7 +137,7 @@
 					<onleft>50</onleft>
 					<orientation>vertical</orientation>
 
-					<control type="button" id ="6">
+					<control type="button" id="6">
 						<description>Enable Addon button</description>
 						<width>255</width>
 						<label>24022</label>
