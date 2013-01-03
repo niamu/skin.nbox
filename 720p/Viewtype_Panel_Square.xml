@@ -308,8 +308,8 @@
 		</control>
 		
 				<control type="label">
-					<posx>1050</posx>
-					<posy>300</posy>
+					<posx>1125</posx>
+					<posy>320</posy>
 					<width>480</width>
 					<height>50</height>
 					<align>left</align>
