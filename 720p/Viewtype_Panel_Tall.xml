@@ -344,8 +344,8 @@
 			</control>		
 
 			<control type="label">
-				<posx>1100</posx>
-				<posy>300</posy>
+				<posx>1125</posx>
+				<posy>320</posy>
 				<width>250</width>
 				<height>50</height>
 				<align>right</align>
@@ -353,7 +353,7 @@
 				<font>Large_Letter_Music</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.SortLetter]</label>
-				<animation effect="slide" start="-60,0" time="100">VisibleChange</animation>
+				<animation effect="fade" time="500">Visible</animation>
 				<visible>Container.Scrolling + !container.content(episodes)</visible>
 			</control>
 		</control>	
