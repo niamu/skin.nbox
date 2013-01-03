@@ -45,12 +45,11 @@
 				<posx>60</posx>
 				<posy>290</posy>
 				<width>1200</width>
-				<height>315</height>
+				<height>318</height>
 				<scrolltime>200</scrolltime>
 				<orientation>vertical</orientation>
 				<onright>56</onright>
-				<onleft>56</onleft>
-				<onup>9000</onup>
+				<onleft>9000</onleft>
 				<pagecontrol>62</pagecontrol>
 				<preloaditems>2</preloaditems>
 				<include>Animation_HiddenByInfo</include>

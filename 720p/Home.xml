@@ -648,7 +648,7 @@
 	<control type="scrollbar" id="7001">
 		<posx>680</posx>
 		<posy>287</posy>
-		<width>10</width>
+		<width>6</width>
 		<height>320</height>
 		<texturesliderbackground></texturesliderbackground>
 		<textureslidernib>bar.png</textureslidernib>
@@ -1500,7 +1500,7 @@
 	<control type="scrollbar" id="8001">
 		<posx>680</posx>
 		<posy>287</posy>
-		<width>10</width>
+		<width>6</width>
 		<height>320</height>
 		<texturesliderbackground></texturesliderbackground>
 		<textureslidernib>bar.png</textureslidernib>
