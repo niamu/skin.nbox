@@ -627,7 +627,7 @@
 				<posy>26</posy>
 				<width>90</width>
 				<height>90</height>
-				<texture>movies.png</texture>
+				<texture>icons/videos.png</texture>
 			</control>
 
 			<control type="image">
@@ -680,7 +680,7 @@
 				<posy>25</posy>
 				<width>90</width>
 				<height>90</height>
-				<texture>recent.png</texture>
+				<texture>icons/addons.png</texture>
 			</control>
 		</control>
 
@@ -1715,7 +1715,7 @@
 				<posy>26</posy>
 				<width>90</width>
 				<height>90</height>
-				<texture>tv_shows.png</texture>
+				<texture>icons/videos.png</texture>
 			</control>
 
 			<control type="image">
@@ -1768,7 +1768,7 @@
 				<posy>25</posy>
 				<width>90</width>
 				<height>90</height>
-				<texture>recent.png</texture>
+				<texture>icons/addons.png</texture>
 			</control>
 		</control>
 
@@ -1963,30 +1963,6 @@
       </item>
 
 		</content>
-		<control type="scrollbar" id="98">
-  		<posx>1196</posx>
-  		<posy>287</posy>
-  		<width>6</width>
-  		<height>320</height>
-  		<texturesliderbackground></texturesliderbackground>
-  		<textureslidernib>bar.png</textureslidernib>
-  		<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
-  		<texturesliderbar></texturesliderbar>
-  		<texturesliderbarfocus></texturesliderbarfocus>
-  		<showonepage>true</showonepage>
-  		<orientation>vertical</orientation>
-  		<visible>Control.HasFocus(66)</visible>
-
-  		<animation effect="fade" time="200" tween="square">Visible</animation>
-
-  		<animation type="Conditional" condition="Control.HasFocus(66) + Container(66).Row(0)">
-  		  <effect type="fade" start="100" end="0" time="200" delay="1500"/>
-  		</animation>
-
-  		<animation type="Conditional" condition="Control.HasFocus(66) + Container(66).Row(1)">
-  		  <effect type="fade" start="100" end="0" time="200" delay="1500"/>
-  		</animation>
-  	</control>
 	</control>
 	
 	<control type="scrollbar" id="98">
@@ -2005,11 +1981,11 @@
 		
 		<animation effect="fade" time="200" tween="square">Visible</animation>
 		
-		<animation type="Conditional" condition="Container(68).Row(0)">
+		<animation type="Conditional" condition="Control.HasFocus(68) + Container(68).Row(0)">
 		  <effect type="fade" start="100" end="0" time="200" delay="1500"/>
 		</animation>
 		
-		<animation type="Conditional" condition="Container(68).Row(1)">
+		<animation type="Conditional" condition="Control.HasFocus(68) + Container(68).Row(1)">
 		  <effect type="fade" start="100" end="0" time="200" delay="1500"/>
 		</animation>
 	</control>
