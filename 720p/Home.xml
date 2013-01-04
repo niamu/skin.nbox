@@ -869,11 +869,11 @@
 		
 		<animation effect="fade" time="200" tween="square">Visible</animation>
 		
-		<animation type="Conditional" condition="Container(66).Row(0)">
+		<animation type="Conditional" condition="Control.HasFocus(66) + Container(66).Row(0)">
 		  <effect type="fade" start="100" end="0" time="200" delay="1500"/>
 		</animation>
 		
-		<animation type="Conditional" condition="Container(66).Row(1)">
+		<animation type="Conditional" condition="Control.HasFocus(66) + Container(66).Row(1)">
 		  <effect type="fade" start="100" end="0" time="200" delay="1500"/>
 		</animation>
 	</control>
@@ -1979,11 +1979,11 @@
 
   		<animation effect="fade" time="200" tween="square">Visible</animation>
 
-  		<animation type="Conditional" condition="Container(66).Row(0)">
+  		<animation type="Conditional" condition="Control.HasFocus(66) + Container(66).Row(0)">
   		  <effect type="fade" start="100" end="0" time="200" delay="1500"/>
   		</animation>
 
-  		<animation type="Conditional" condition="Container(66).Row(1)">
+  		<animation type="Conditional" condition="Control.HasFocus(66) + Container(66).Row(1)">
   		  <effect type="fade" start="100" end="0" time="200" delay="1500"/>
   		</animation>
   	</control>
