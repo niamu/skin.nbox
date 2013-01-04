@@ -20,6 +20,16 @@
 				<effect type="fade" time="300"/>
 				<effect type="slide" start="+1500,0" time="300"/>
 			</animation>
+			
+			<control type="image">
+				<posx>-12</posx>
+				<posy>174</posy>
+				<width>72</width>
+				<height>72</height>
+				<texture background="true">other_textures/OSD/PlaylistNF.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(54)">Conditional</animation>
+			</control>
 
 			<control type="group">
 				<posy>60</posy>
@@ -48,73 +58,68 @@
 				<visible>Container(50).HasNext</visible>
 				<animation effect="fade" time="400">VisibleChange</animation>
 			</control>
-
-
+			
 			<control type="label">
-				<label>films</label>
+				<label>[LOWERCASE]$INFO[Container.FolderName][/LOWERCASE]</label>
 				<posx>70</posx>
-				<posy>190</posy>
+				<posy>170</posy>
 				<height>30</height>
-				<width>750</width>
+				<width>275</width>
 				<font>Home_header</font>
-				<visible>Container.Content(Movies)</visible>
+				<textcolor>White</textcolor>
 				<align>left</align>
+				<visible>!IsEmpty(Container.FolderName) + !Window.IsVisible(AddonBrowser.xml)</visible>
 			</control>
-
+			
 			<control type="label">
-				<label>musique</label>
+				<label>[LOWERCASE]Library[/LOWERCASE]</label>
 				<posx>70</posx>
-				<posy>190</posy>
+				<posy>170</posy>
 				<height>30</height>
-				<width>750</width>
+				<width>275</width>
 				<font>Home_header</font>
-				<visible>Container.Content(Albums)</visible>
+				<textcolor>White</textcolor>
 				<align>left</align>
+				<visible>IsEmpty(Container.FolderName) + !Window.IsVisible(AddonBrowser.xml)</visible>
 			</control>
-
+			
 			<control type="label">
-				<label>artistes</label>
-				<posx>70</posx>
-				<posy>190</posy>
-				<height>30</height>
-				<width>750</width>
-				<font>Home_header</font>
-				<visible>Container.Content(Artists)</visible>
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
 				<align>left</align>
-			</control>
-
-			<control type="label">
-				<label>tv</label>
-				<posx>70</posx>
-				<posy>190</posy>
-				<height>30</height>
-				<width>750</width>
-				<font>Home_header</font>
-				<visible>Container.Content(tvshows)</visible>
-				<align>left</align>
+				<aligny>top</aligny>
+				<label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
 			</control>
 
 			<control type="label">
 				<label>add-ons</label>
 				<posx>70</posx>
-				<posy>190</posy>
+				<posy>170</posy>
 				<height>30</height>
-				<width>750</width>
+				<width>275</width>
 				<font>Home_header</font>
 				<visible>Window.IsVisible(AddonBrowser.xml)</visible>
 				<align>left</align>
 			</control>
 
 
-			<control type="label">
-				<label>[LOWERCASE]$INFO[ListItem.label2][/LOWERCASE]</label>
+			<control type="fadelabel" id="140">
 				<posx>360</posx>
-				<posy>200</posy>
+				<posy>175</posy>
 				<height>30</height>
-				<width>750</width>
-				<font>Home_sub_header</font>
-				<align>left</align>
-				<visible>Window.IsVisible(AddonBrowser.xml) + ![SubString(ListItem.label2,enabled) | SubString(ListItem.label2,disabled)]</visible>
+				<width>985</width>
+				<font>Home_menu</font>
+				<textcolor>White</textcolor>
+				<aligny>top</aligny>
+				<label>$INFO[ListItem.Label]</label>
+				<visible>true</visible>
+				<scroll>true</scroll>
+				<scrollout>false</scrollout>
+				<pauseatend>600</pauseatend>
+				<scrollspeed>50</scrollspeed>
 			</control>
 
 			<control type="list" id="50">

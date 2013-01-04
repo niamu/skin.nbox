@@ -5,15 +5,6 @@
 	<controls>
 
 		<include>HomeBackground</include>
-		
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture border="22">button.png</texture>
-			</control>
-
 
 		<control type="image" id="2">
 			<description>top left bar</description>
@@ -27,12 +18,106 @@
 			<animation effect="fade" time="400">WindowClose</animation>
 		</control>		
 		
-
 		<include>View_50_List</include>
-
 		
+		<control type="label">
+			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
+			<posx>1284</posx>
+			<posy>-5</posy>
+			<height>100</height>
+			<width>550</width>
+			<font>Home_time</font>
+			<align>right</align>
+		</control>
 
-		
+		<control type="label">
+			<label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(dd)] $INFO[System.Date(MMM)] [/LOWERCASE]</label>
+			<posx>1280</posx>
+			<posy>60</posy>
+			<height>100</height>
+			<width>750</width>
+			<font>Home_date</font>
+			<align>right</align>
+		</control>	
+
+		<control type="image">
+			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+				<effect type="fade" time="300" start="100" end="0" />
+			</animation>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>1280</width>
+			<height>720</height>
+			<texture border="2">other_textures/black-back.png</texture>
+		</control>
+
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>-0</posy>
+			<width>305</width>
+			<height>720</height>
+			<texture border="22">button.png</texture>
+			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+				<effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic"/>
+			</animation>
+		</control>
+
+		<control type="radiobutton" id="19">
+			<description>Filter (hidden)</description>
+			<include>HiddenButton</include>
+		</control>
+
+		<control type="grouplist" id="9000">
+			<posx>30</posx>
+			<posy>140</posy>
+			<width>240</width>
+			<height>600</height>
+			<itemgap>0</itemgap>
+			<onleft>50</onleft>
+			<onright>50</onright>
+			<onup></onup>
+			<ondown></ondown>
+			<orientation>vertical</orientation>
+			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+				<effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic"/>
+			</animation>
+
+			<control type="button" id="20">
+				<align>left</align>
+				<label>$INFO[Container.ViewMode]</label>
+				<onclick>Container.NextViewMode</onclick>
+			</control>
+
+			<control type="button" id="3">
+				<description>Sort</description>
+				<width>240</width>
+				<align>left</align>
+				<font>small</font>
+				<textcolor>black</textcolor>
+			</control>
+
+			<control type="togglebutton" id="4">
+				<description>Ascending</description>
+				<width>240</width>
+				<align>left</align>
+				<label>584</label>
+				<altlabel>585</altlabel>
+				<font>small</font>
+				<textcolor>black</textcolor>
+			</control>
+
+			<control type="button" id="98">
+				<description>Open Player Controls</description>
+				<width>240</width>
+				<align>left</align>
+				<label>31015</label>
+				<onclick>ActivateWindow(playercontrols)</onclick>
+				<visible>Player.HasMedia</visible>
+				<font>small</font>
+				<textcolor>black</textcolor>
+			</control>
+		</control>
 
 	</controls>
 
