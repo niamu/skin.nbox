@@ -48,7 +48,7 @@
 
 			<control type="label">
 					<description>Menu Title</description>
-					<posx>480</posx>
+					<posx>470</posx>
 					<posy>-110</posy>
 					<width>400</width>
 					<label>menu</label>
