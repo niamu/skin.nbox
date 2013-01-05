@@ -69,7 +69,7 @@
 					</control>
 
 					<control type="image">
-						<posx>-</posx>
+						<posx>40</posx>
 						<posy>-</posy>
 						<width>60</width>
 						<height>60</height>
@@ -118,14 +118,15 @@
 					</control>
 					
 					<control type="image">
-						<posx>8</posx>
-						<posy>11</posy>
+						<posx>75</posx>
+						<posy>9</posy>
 						<width>18</width>
 						<height>15</height>
 						<texture>images/OverlayWatchedPanel.png</texture>
 						<animation type="Focus" reversible="false">
-							<effect type="fade" start="80" end="100" time="400" />
-						</animation>
+              <effect type="zoom" center="100,0" start="80" end="120" time="400" tween="back" easing="out" />
+              <effect type="fade" start="80" end="100" time="400" />
+            </animation>
 						<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [!Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 					</control>
 

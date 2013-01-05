@@ -105,12 +105,12 @@
             <visible>true</visible>
             <align>center</align>
             <aligny>center</aligny>
-            <label>[COLOR Accent][B]$INFO[ListItem.Season].$INFO[ListItem.Episode][/B][/COLOR]</label>
+            <label>[COLOR White][B]$INFO[ListItem.Episode][/B][/COLOR]</label>
             <font>Home_sub_header</font>
           </control>
           
           <control type="label">
-            <label>[COLOR Accent][B]$INFO[ListItem.Title][/B][/COLOR]</label>
+            <label>[COLOR White][B]$INFO[ListItem.Title][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>77</posx>
@@ -124,7 +124,7 @@
           </control>
 
           <control type="image">
-            <posx>-</posx>
+            <posx>95</posx>
             <posy>-</posy>
             <width>60</width>
             <height>60</height>
@@ -149,19 +149,6 @@
             <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
           </control>
 
-          <control type="image">
-            <posx>-</posx>
-            <posy>-</posy>
-            <width>60</width>
-            <height>60</height>
-            <texture>images/OverlayWatched.png</texture>
-            <animation type="Focus" reversible="false">
-              <effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
-              <effect type="fade" start="80" end="100" time="400" />
-            </animation>
-            <visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
-          </control>
-
           <control type="group">
             <posx>0</posx>
             <posy>0</posy>
@@ -174,6 +161,19 @@
               <height>155</height>
               <texture >Button_fade.png</texture>
             </control>
+          </control>
+          
+          <control type="image">
+            <posx>95</posx>
+            <posy>0</posy>
+            <width>60</width>
+            <height>60</height>
+            <texture>images/OverlayWatched.png</texture>
+            <animation type="Focus" reversible="false">
+              <effect type="zoom" center="155,0" start="80" end="120" time="400" tween="back" easing="out" />
+              <effect type="fade" start="80" end="100" time="400" />
+            </animation>
+            <visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
           </control>
 
           <control type="label">
