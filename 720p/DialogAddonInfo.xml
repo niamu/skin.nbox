@@ -24,11 +24,18 @@
 		</control>
 
 		<control type="group">
+		  <visible>!Window.IsVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
 			<animation type="WindowOpen">
         <effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
       </animation>
       <animation type="WindowClose">
         <effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+      </animation>
+      <animation type="Hidden">
+        <effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+      </animation>
+      <animation type="Visible">
+        <effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" delay="200" />
       </animation>
 
 
@@ -58,7 +65,6 @@
 			  <posx>470</posx>
   			<posy>0</posy>
   			<width>340</width>
-				<visible>!Window.IsVisible(AddonSettings) + !Window.IsActive(TextViewer)</visible>
 
 				<control type="grouplist" id="9000">
 					<width>340</width>
