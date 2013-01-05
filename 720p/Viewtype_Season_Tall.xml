@@ -111,7 +111,7 @@
 					</control>
 
 					<control type="image">
-						<posx>4</posx>
+						<posx>151</posx>
 						<posy>4</posy>
 						<width>60</width>
 						<height>60</height>
@@ -157,13 +157,13 @@
 					</control>
 
 					<control type="image">
-						<posx>4</posx>
+						<posx>151</posx>
 						<posy>4</posy>
 						<width>60</width>
 						<height>60</height>
 						<texture>images/OverlayWatched.png</texture>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
+							<effect type="zoom" center="215,0" start="80" end="120" time="400" tween="back" easing="out" />
 							<effect type="fade" start="80" end="100" time="400" />
 						</animation>
 						<visible>[Container.Content(Seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
@@ -171,9 +171,9 @@
 
 					<control type="image" id="2">
 						<description>top left bar</description>
-						<posx>4</posx>
-						<posy>4</posy>
-						<width>6</width>
+						<posx>0</posx>
+						<posy>0</posy>
+						<width>8</width>
 						<height>55</height>
 						<texture>bar.png</texture>
 						<visible></visible>
