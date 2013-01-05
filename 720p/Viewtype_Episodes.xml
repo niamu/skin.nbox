@@ -1,291 +1,307 @@
 <includes>
-	<include name="Viewtype_Episodes">
+  <include name="Viewtype_Episodes">
 
-		<control type="group">
-			<visible>Control.IsVisible(57)</visible>
+    <control type="group">
+      <visible>Control.IsVisible(57)</visible>
 
-			<description>Episode List View (id=57)</description>
-			<visible>Container.Content(episodes)</visible>
+      <description>Episode List View (id=57)</description>
+      <visible>Container.Content(episodes)</visible>
 
-			<animation type="TYPE" condition="Window.IsVisible(2003)" reversible="false">
-				<effect type="slide" end="-1500,0" time="200"/>
-			</animation>
-			<animation type="TYPE" condition="!Window.IsVisible(2003)" reversible="false">
-				<effect type="slide" start="-1500,0" time="200"/>
-			</animation>		
+      <animation type="TYPE" condition="Window.IsVisible(2003)" reversible="false">
+        <effect type="slide" end="-1500,0" time="200"/>
+      </animation>
+      <animation type="TYPE" condition="!Window.IsVisible(2003)" reversible="false">
+        <effect type="slide" start="-1500,0" time="200"/>
+      </animation>		
 
 
-			<animation type="WindowClose">
-				<effect type="fade" time="300"/>
-				<effect type="slide" end="+1500,0" time="300"/>
-			</animation>
-			<animation type="WindowOpen">
-				<effect type="fade" time="300"/>
-				<effect type="slide" start="+1500,0" time="300"/>
-			</animation>
+      <animation type="WindowClose">
+        <effect type="fade" time="300"/>
+        <effect type="slide" end="+1500,0" time="300"/>
+      </animation>
+      <animation type="WindowOpen">
+        <effect type="fade" time="300"/>
+        <effect type="slide" start="+1500,0" time="300"/>
+      </animation>
 
-			<control type="image">
-				<posx>-12</posx>
-				<posy>174</posy>
-				<width>72</width>
-				<height>72</height>
-				<texture background="true">other_textures/OSD/PlaylistNF.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(57)">Conditional</animation>
-			</control>
+      <control type="image">
+        <posx>-12</posx>
+        <posy>174</posy>
+        <width>72</width>
+        <height>72</height>
+        <texture background="true">other_textures/OSD/PlaylistNF.png</texture>
+        <aspectratio scalediffuse="false">stretch</aspectratio>
+        <animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(57)">Conditional</animation>
+      </control>
 
-			<control type="image">
-				<posx>76</posx>
-				<posy>288</posy>
-				<width>215</width>
-				<height>315</height>
-				<texture>white_box.png</texture>
-				<fadetime>200</fadetime>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<visible>!StringCompare(ListItem.Label, )</visible>
-			</control>
+      <control type="image">
+        <posx>76</posx>
+        <posy>288</posy>
+        <width>215</width>
+        <height>315</height>
+        <texture>white_box.png</texture>
+        <fadetime>200</fadetime>
+        <aspectratio scalediffuse="false">stretch</aspectratio>
+        <visible>!StringCompare(ListItem.Label, )</visible>
+      </control>
 
-			<control type="image">
-				<posx>76</posx>
-				<posy>288</posy>
-				<width>215</width>
-				<height>315</height>
-				<texture fallback="DefaultVideo.png" background="true" >$INFO[ListItem.Art(tvshow.poster)]</texture>
-				<fadetime>200</fadetime>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<visible>!IsEmpty(ListItem.Icon)</visible>
-				<bordersize>4</bordersize>
-			</control>
+      <control type="image">
+        <posx>76</posx>
+        <posy>288</posy>
+        <width>215</width>
+        <height>315</height>
+        <texture fallback="DefaultVideo.png" background="true" >$INFO[ListItem.Art(tvshow.poster)]</texture>
+        <fadetime>200</fadetime>
+        <aspectratio scalediffuse="false">stretch</aspectratio>
+        <visible>!IsEmpty(ListItem.Icon)</visible>
+        <bordersize>4</bordersize>
+      </control>
 
-			<control type="panel" id="57">
-				<posx>295</posx>
-				<posy>288</posy>
-				<width>510</width>
-				<height>320</height>
-				<scrolltime>200</scrolltime>
-				<onup>57</onup>
-				<ondown>57</ondown>
-				<onright>57</onright>
-				<onleft>9000</onleft>
+      <control type="panel" id="57">
+        <posx>295</posx>
+        <posy>288</posy>
+        <width>510</width>
+        <height>320</height>
+        <scrolltime>200</scrolltime>
+        <onup>57</onup>
+        <ondown>57</ondown>
+        <onright>57</onright>
+        <onleft>9000</onleft>
 
-				<viewtype label="Episodes View">Episodes View</viewtype>
-				<orientation>vertical</orientation>
-				<focusposition>4</focusposition>
-				<pagecontrol>63</pagecontrol>
-				<include>Animation_ZoomInZoomOut</include>
-				<include>Animation_ZoomedByMenu</include>
-				<include>Animation_HiddenByInfo</include>
-				<visible>Container.Content(episodes)</visible>
+        <viewtype label="Episodes View">Episodes View</viewtype>
+        <orientation>vertical</orientation>
+        <focusposition>4</focusposition>
+        <pagecontrol>63</pagecontrol>
+        <include>Animation_ZoomInZoomOut</include>
+        <include>Animation_ZoomedByMenu</include>
+        <include>Animation_HiddenByInfo</include>
+        <visible>Container.Content(episodes)</visible>
 
-				<itemlayout width="160" height="160">
-					<control type="image">
-			            <posx>0</posx>
-			            <posy>0</posy>
-			            <width>155</width>
-			            <height>155</height>
-			            <texture blend="false">tile.png</texture>
-			            <aspectratio>scale</aspectratio>
-			        </control>
+        <itemlayout width="160" height="160">
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>155</width>
+            <height>155</height>
+            <texture blend="false">tile.png</texture>
+            <aspectratio>scale</aspectratio>
+          </control>
 
-			        <control type="image">
-			            <posx>0</posx>
-			            <posy>0</posy>
-			            <width>155</width>
-			            <height>155</height>
-			            <texture blend="false">$INFO[ListItem.Icon]</texture>
-			            <aspectratio>scale</aspectratio>
-						<colordiffuse>ImageDiffuse</colordiffuse>
-			        </control>
-			
-					<control type="image">
-						<posx>-</posx>
-						<posy>-</posy>
-						<width>60</width>
-						<height>60</height>
-						<texture>images/OverlayWatched.png</texture>
-						<animation type="Unfocus" reversible="false">
-							<effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
-							<effect type="fade" start="80" end="100" time="400" />
-						</animation>
-						<visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
-					</control>
-				</itemlayout>
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>155</width>
+            <height>155</height>
+            <texture blend="false">$INFO[ListItem.Icon]</texture>
+            <aspectratio>scale</aspectratio>
+            <colordiffuse>ImageDiffuse</colordiffuse>
+          </control>
 
-				<focusedlayout width="160" height="160">				
+          <control type="label">
+            <posx>77</posx>
+            <posy></posy>
+            <width>155</width>
+            <height>155</height>
+            <visible>true</visible>
+            <align>center</align>
+            <aligny>center</aligny>
+            <label>[COLOR Accent][B]$INFO[ListItem.Season].$INFO[ListItem.Episode][/B][/COLOR]</label>
+            <font>Home_sub_header</font>
+          </control>
+          
+          <control type="label">
+            <label>[COLOR Accent][B]$INFO[ListItem.Title][/B][/COLOR]</label>
+            <scroll>true</scroll>
+            <pauseatend>300</pauseatend>
+            <posx>77</posx>
+            <posy>30</posy>
+            <width>155</width>
+            <height>155</height>
+            <visible>true</visible>
+            <align>center</align>
+            <aligny>center</aligny>
+            <scrollspeed>50</scrollspeed>
+          </control>
 
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>155</width>
-						<height>155</height>
-						<texture >$INFO[ListItem.Icon]</texture>
-						<aspectratio>scale</aspectratio>
-						<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
-					</control>
-					
-					<control type="image">
-						<posx>-</posx>
-						<posy>-</posy>
-						<width>60</width>
-						<height>60</height>
-						<texture>images/OverlayWatched.png</texture>
-						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
-							<effect type="fade" start="80" end="100" time="400" />
-						</animation>
-						<visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
-					</control>
+          <control type="image">
+            <posx>-</posx>
+            <posy>-</posy>
+            <width>60</width>
+            <height>60</height>
+            <texture>images/OverlayWatched.png</texture>
+            <animation type="Unfocus" reversible="false">
+              <effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
+              <effect type="fade" start="80" end="100" time="400" />
+            </animation>
+            <visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
+          </control>
+        </itemlayout>
 
-					<control type="group">
-						<posx>0</posx>
-						<posy>0</posy>
-						<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+        <focusedlayout width="160" height="160">				
 
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>155</width>
-							<height>155</height>
-							<texture >Button_fade.png</texture>
-						</control>
-					</control>
+          <control type="image">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>155</width>
+            <height>155</height>
+            <texture >$INFO[ListItem.Icon]</texture>
+            <aspectratio>scale</aspectratio>
+            <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+          </control>
 
-					<control type="label">
-						<label>Episode $INFO[ListItem.Episode][COLOR Accent] $INFO[ListItem.Title][/COLOR]</label>
-						<posx>6</posx>
-						<posy>121</posy>
-						<height>30</height>
-						<width>143</width>
-						<font>button_bold</font>
-						<align>left</align>
-						<animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
-					</control>
-				</focusedlayout>
-			</control>
+          <control type="image">
+            <posx>-</posx>
+            <posy>-</posy>
+            <width>60</width>
+            <height>60</height>
+            <texture>images/OverlayWatched.png</texture>
+            <animation type="Focus" reversible="false">
+              <effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
+              <effect type="fade" start="80" end="100" time="400" />
+            </animation>
+            <visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
+          </control>
 
-			<control type="fadelabel" id="140">
-				<posx>295</posx>
-				<posy>171</posy>
-				<height>30</height>
-				<width>985</width>
-				<font>Home_menu</font>
-				<textcolor>White</textcolor>
-				<aligny>top</aligny>
-				<label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] Season $INFO[ListItem.Season]</label>
-				<visible>true</visible>
-				<scroll>true</scroll>
-				<scrollout>false</scrollout>
-				<pauseatend>600</pauseatend>
-				<scrollspeed>50</scrollspeed>
-				<visible>Container.Content(episodes)</visible>
-			</control>
-			
-			<control type="label">
-				<posx>295</posx>
-				<posy>210</posy>
-				<width>600</width>
-				<height>50</height>
-				<aligny>center</aligny>
-				<font>Genre_Font</font>
-				<textcolor>White</textcolor>
-				<label>Writer: [COLOR Accent]$INFO[ListItem.Writer][/COLOR]  Director: [COLOR Accent]$INFO[ListItem.Director][/COLOR]</label>
-				<visible>!IsEmpty(ListItem.Writer) + !IsEmpty(ListItem.Director)</visible>
-			</control>
+          <control type="group">
+            <posx>0</posx>
+            <posy>0</posy>
+            <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
 
-			<control type="label">
-				<posx>75</posx>
-				<posy>220</posy>
-				<width>300</width>
-				<align>left</align>
-				<aligny>top</aligny>
-				<label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
-				<font>Sort_Font_Small</font>
-				<textcolor>White</textcolor>
-				<visible>Container.Content(episodes)</visible>
-			</control>
+            <control type="image">
+              <posx>0</posx>
+              <posy>0</posy>
+              <width>155</width>
+              <height>155</height>
+              <texture >Button_fade.png</texture>
+            </control>
+          </control>
 
-			<control type="label">
-				<label>tv</label>
-				<posx>70</posx>
-				<posy>170</posy>
-				<height>30</height>
-				<width>400</width>
-				<font>Home_header</font>
-				<textcolor>White</textcolor>
-				<align>left</align>
-				<visible>Container.Content(episodes)</visible>
-			</control>
-			
-			<control type="image">
-				<posx>775</posx>
-				<posy>288</posy>
-				<width>505</width>
-				<height>315</height>
-				<texture background="true" >tile.png</texture>
-				<fadetime>200</fadetime>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-			</control>
-			
-			<control type="scrollbar" id="63">
-				<posx>775</posx>
-				<posy>288</posy>
-				<width>6</width>
-				<height>315</height>
-				<texturesliderbackground></texturesliderbackground>
-				<textureslidernib>bar.png</textureslidernib>
-				<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
-				<texturesliderbar></texturesliderbar>
-				<texturesliderbarfocus></texturesliderbarfocus>
-				<showonepage>true</showonepage>
-				<orientation>vertical</orientation>
-			</control>
-			
-			<control type="label">
-				<posx>795</posx>
-				<posy>300</posy>
-				<width>465</width>
-				<height>50</height>
-				<aligny>Left</aligny>
-				<font>Artist_Font</font>
-				<textcolor>White</textcolor>
-				<label>Plot</label>
-			</control>
-			
-			<control type="label">
-				<posx>1260</posx>
-				<posy>320</posy>
-				<width>100</width>
-				<height>25</height>
-				<align>right</align>
-				<textcolor>White</textcolor>
-				<label>[B]IMDb[/B] $INFO[ListItem.Rating]</label>
-			</control>
+          <control type="label">
+            <label>Episode $INFO[ListItem.Episode][COLOR Accent] $INFO[ListItem.Title][/COLOR]</label>
+            <posx>6</posx>
+            <posy>121</posy>
+            <height>30</height>
+            <width>143</width>
+            <font>button_bold</font>
+            <align>left</align>
+            <animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
+          </control>
+        </focusedlayout>
+      </control>
 
-			<control type="textbox">
-				<posx>795</posx>
-				<posy>360</posy>
-				<width>465</width>
-				<height>215</height>
-				<info>ListItem.Plot</info>
-				<align>justify</align>
-				<autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
-				<font>Plot_Font</font>
-				<textcolor>White</textcolor>
-			</control>
+      <control type="fadelabel" id="140">
+        <posx>295</posx>
+        <posy>171</posy>
+        <height>30</height>
+        <width>985</width>
+        <font>Home_menu</font>
+        <textcolor>White</textcolor>
+        <aligny>top</aligny>
+        <label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] Season $INFO[ListItem.Season]</label>
+        <visible>true</visible>
+        <scroll>true</scroll>
+        <scrollout>false</scrollout>
+        <pauseatend>600</pauseatend>
+        <scrollspeed>50</scrollspeed>
+        <visible>Container.Content(episodes)</visible>
+      </control>
 
-		</control>
+      <control type="label">
+        <posx>295</posx>
+        <posy>210</posy>
+        <width>600</width>
+        <height>50</height>
+        <aligny>center</aligny>
+        <font>Genre_Font</font>
+        <textcolor>White</textcolor>
+        <label>Writer: [COLOR Accent]$INFO[ListItem.Writer][/COLOR]  Director: [COLOR Accent]$INFO[ListItem.Director][/COLOR]</label>
+        <visible>!IsEmpty(ListItem.Writer) + !IsEmpty(ListItem.Director)</visible>
+      </control>
 
-		<control type="image" id="2">
-			<description>top left bar</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>20</width>
-			<height>138</height>
-			<texture>bar.png</texture>
-			<animation effect="fade" time="400">WindowOpen</animation>
-			<animation effect="fade" time="400">WindowClose</animation>
-			<visible>container.content(episodes)</visible>
-		</control>	
+      <control type="label">
+        <posx>75</posx>
+        <posy>220</posy>
+        <width>300</width>
+        <align>left</align>
+        <aligny>top</aligny>
+        <label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
+        <font>Sort_Font_Small</font>
+        <textcolor>White</textcolor>
+        <visible>Container.Content(episodes)</visible>
+      </control>
 
-	</include>
+      <control type="label">
+        <label>tv</label>
+        <posx>70</posx>
+        <posy>170</posy>
+        <height>30</height>
+        <width>400</width>
+        <font>Home_header</font>
+        <textcolor>White</textcolor>
+        <align>left</align>
+        <visible>Container.Content(episodes)</visible>
+      </control>
+
+      <control type="image">
+        <posx>775</posx>
+        <posy>288</posy>
+        <width>505</width>
+        <height>315</height>
+        <texture background="true" >tile.png</texture>
+        <fadetime>200</fadetime>
+        <aspectratio scalediffuse="false">stretch</aspectratio>
+      </control>
+
+      <control type="scrollbar" id="63">
+        <posx>775</posx>
+        <posy>288</posy>
+        <width>6</width>
+        <height>315</height>
+        <texturesliderbackground></texturesliderbackground>
+        <textureslidernib>bar.png</textureslidernib>
+        <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+        <texturesliderbar></texturesliderbar>
+        <texturesliderbarfocus></texturesliderbarfocus>
+        <showonepage>true</showonepage>
+        <orientation>vertical</orientation>
+      </control>
+
+      <control type="label">
+        <posx>795</posx>
+        <posy>300</posy>
+        <width>465</width>
+        <height>50</height>
+        <aligny>Left</aligny>
+        <font>Artist_Font</font>
+        <textcolor>White</textcolor>
+        <label>$INFO[ListItem.Title]</label>
+      </control>
+
+      <control type="textbox">
+        <posx>795</posx>
+        <posy>360</posy>
+        <width>465</width>
+        <height>215</height>
+        <info>ListItem.Plot</info>
+        <align>justify</align>
+        <autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
+        <font>Plot_Font</font>
+        <textcolor>White</textcolor>
+      </control>
+
+    </control>
+
+    <control type="image" id="2">
+      <description>top left bar</description>
+      <posx>0</posx>
+      <posy>0</posy>
+      <width>20</width>
+      <height>138</height>
+      <texture>bar.png</texture>
+      <animation effect="fade" time="400">WindowOpen</animation>
+      <animation effect="fade" time="400">WindowClose</animation>
+      <visible>container.content(episodes)</visible>
+    </control>	
+
+  </include>
 </includes>
