@@ -35,7 +35,7 @@
         <effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
       </animation>
       <animation type="Visible">
-        <effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" delay="200" />
+        <effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" delay="500" />
       </animation>
 
 
@@ -81,6 +81,7 @@
 						<width>340</width>
 						<label>24022</label>
 						<textcolor>black</textcolor>
+						<align>right</align>
 					</control>
 
 					<control type="button" id="7">
@@ -88,6 +89,7 @@
 						<width>340</width>
 						<label>24021</label>
 						<textcolor>black</textcolor>
+						<align>right</align>
 					</control>
 
 					<control type="button" id="9">
@@ -95,6 +97,7 @@
 						<width>340</width>
 						<label>24020</label>
 						<textcolor>black</textcolor>
+						<align>right</align>
 					</control>
 
 					<control type="button" id="8">
@@ -102,6 +105,7 @@
 						<width>340</width>
 						<label>24069</label>
 						<textcolor>black</textcolor>
+						<align>right</align>
 					</control>
 
 					<control type="button" id="10">
@@ -109,6 +113,7 @@
 						<width>340</width>
 						<label>24036</label>
 						<textcolor>black</textcolor>
+						<align>right</align>
 					</control>
 
 				</control>

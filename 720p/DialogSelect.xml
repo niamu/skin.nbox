@@ -23,11 +23,11 @@
         <posy>110</posy>
         <width>650</width>
         <height>500</height>
-        <texture fallback="DefaultAddonNone.png">$INFO[Container(6).ListItem.Icon]</texture>
+        <texture fallback="DefaultAddonNone.png">$INFO[Container(3).ListItem.Icon]</texture>
         <aspectratio align="center" aligny="center">keep</aspectratio>
         <bordertexture border="5">white_box.png</bordertexture>
         <bordersize>5</bordersize>
-        <visible>!IsEmpty(Container(6).ListItem(0).Icon) + [SubString(Container(6).ListItem(0).Label,.jpg) | SubString(Container(6).ListItem(0).Label,.png) | SubString(Container(6).ListItem(0).Label,banner) | SubString(Container(6).ListItem(0).Label,poster) | SubString(Container(6).ListItem(0).Label,fanart)]</visible>
+        <visible>!IsEmpty(Container(3).ListItem(0).Icon)</visible>
         
         <animation type="WindowOpen">
   				<effect type="slide" time="300" start="+1165, 0" end="0,0" easing="out" tween="cubic" />
@@ -45,165 +45,55 @@
         <texture border="22">button.png</texture>
       </control>
 
-      <control type="label" id="1">
-        <description>header label</description>
-        <posx>10</posx>
-        <posy>10</posy>
-        <width>660</width>
-        <align>Left</align>
-        <font>large</font>
-        <textcolor>black</textcolor>
-        <label>13406</label>
+      <control type="label">
+        <posx>30</posx>
+				<posy>70</posy>
+				<width>400</width>
+				<font>Home_sub_header</font>
+				<align>left</align>
+				<textcolor>black</textcolor>
+        <label>[LOWERCASE]skin[/LOWERCASE]</label>
       </control>
 
       <control type="list" id="3">
-        <posx>10</posx>
-        <posy>80</posy>
-        <width>380</width>
-        <height>560</height>
+        <posx>30</posx>
+				<posy>180</posy>
+				<width>340</width>
+				<height>440</height>
+				<itemgap>2</itemgap>
         <onleft>5</onleft>
         <onright>5</onright>
         <onup>3</onup>
         <ondown>3</ondown>
 
-        <itemlayout height="144">
-
-          <control type="image">
-            <width>380</width>
-            <height>142</height>
-            <texture border="2">other_textures/ButtonNF.png</texture>
-          </control>
-
-          <control type="image">
-            <posx>8</posx>
-            <posy>8</posy>
-            <width>128</width>
-            <height>128</height>
-            <texture>$INFO[Listitem.Icon]</texture>
-          </control>
+        <itemlayout height="48">
 
           <control type="label">
-            <posx>144</posx>
-            <width>228</width>
-            <info>ListItem.Label</info>
+            <posx>340</posx>
+            <width>340</width>
+            <label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
             <textcolor>black</textcolor>
-          </control>
-
-          <control type="label">
-            <posx>144</posx>
-            <posy>30</posy>
-            <width>228</width>
-            <info>ListItem.Label2</info>
-            <textcolor>black</textcolor>
+            <align>right</align>
+            <textoffsetx>20</textoffsetx>
           </control>
 
         </itemlayout>
 
-        <focusedlayout height="144">
+        <focusedlayout height="48">
 
           <control type="image">
             <width>380</width>
-            <height>142</height>
-            <texture border="5">other_textures/ButtonFO.png</texture>
+            <height>44</height>
+            <texture border="5">tile.png</texture>
             <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(450)">Conditional</animation>
           </control>
 
-          <control type="image">
-            <posx>8</posx>
-            <posy>8</posy>
-            <width>128</width>
-            <height>128</height>
-            <texture>$INFO[Listitem.Icon]</texture>
-          </control>
-
           <control type="label">
-            <posx>144</posx>
-            <width>228</width>
-            <info>ListItem.Label</info>
-          </control>
-
-          <control type="label">
-            <posx>144</posx>
-            <posy>30</posy>
-            <width>228</width>
-            <info>ListItem.Label2</info>
-          </control>
-
-        </focusedlayout>
-
-      </control>
-
-      <control type="list" id="6">
-        <posx>10</posx>
-        <posy>80</posy>
-        <width>380</width>
-        <height>560</height>
-        <onleft>5</onleft>
-        <onright>5</onright>
-        <onup>6</onup>
-        <ondown>6</ondown>
-
-        <itemlayout height="144">
-
-          <control type="image">
-            <width>380</width>
-            <height>142</height>
-            <texture border="2">other_textures/ButtonNF.png</texture>
-          </control>
-
-          <control type="image">
-            <posx>8</posx>
-            <posy>8</posy>
-            <width>128</width>
-            <height>128</height>
-            <texture>$INFO[Listitem.Icon]</texture>
-          </control>
-
-          <control type="label">
-            <posx>144</posx>
-            <width>228</width>
-            <info>ListItem.Label</info>
-            <textcolor>black</textcolor>
-          </control>
-
-          <control type="label">
-            <posx>144</posx>
-            <posy>30</posy>
-            <width>228</width>
-            <info>ListItem.Label2</info>
-            <textcolor>black</textcolor>
-          </control>
-
-        </itemlayout>
-
-        <focusedlayout height="144">
-
-          <control type="image">
-            <width>380</width>
-            <height>142</height>
-            <texture border="5">other_textures/ButtonFO.png</texture>
-            <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(450)">Conditional</animation>
-          </control>
-
-          <control type="image">
-            <posx>8</posx>
-            <posy>8</posy>
-            <width>128</width>
-            <height>128</height>
-            <texture>$INFO[Listitem.Icon]</texture>
-          </control>
-
-          <control type="label">
-            <posx>144</posx>
-            <width>228</width>
-            <info>ListItem.Label</info>
-          </control>
-
-          <control type="label">
-            <posx>144</posx>
-            <posy>30</posy>
-            <width>228</width>
-            <info>ListItem.Label2</info>
+            <posx>340</posx>
+            <width>340</width>
+            <label>$INFO[ListItem.Label] $INFO[ListItem.Label2]</label>
+            <align>right</align>
+            <textoffsetx>20</textoffsetx>
           </control>
 
         </focusedlayout>
