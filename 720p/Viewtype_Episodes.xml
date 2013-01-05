@@ -266,7 +266,7 @@
         <orientation>vertical</orientation>
       </control>
 
-      <control type="label">
+      <control type="fadelabel">
         <posx>795</posx>
         <posy>300</posy>
         <width>465</width>
