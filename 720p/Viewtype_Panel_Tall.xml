@@ -208,6 +208,54 @@
 				<showonepage>true</showonepage>
 				<orientation>vertical</orientation>
 			</control>
+			
+			<control type="label">
+				<posx>840</posx>
+				<posy>300</posy>
+				<width>400</width>
+				<height>50</height>
+				<aligny>Left</aligny>
+				<font>Artist_Font</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[ListItem.Property(TotalSeasons)] seasons, $INFO[ListItem.Property(TotalEpisodes)] episodes</label>
+      	<visible>!Container.Content(movies) + IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
+			</control>
+			
+			<control type="label">
+				<posx>840</posx>
+				<posy>300</posy>
+				<width>400</width>
+				<height>50</height>
+				<aligny>Left</aligny>
+				<font>Artist_Font</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[ListItem.Property(TotalSeasons)] season, $INFO[ListItem.Property(TotalEpisodes)] episodes</label>
+      	<visible>!Container.Content(movies) + !IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
+			</control>
+			
+			<control type="label">
+				<posx>840</posx>
+				<posy>300</posy>
+				<width>400</width>
+				<height>50</height>
+				<aligny>Left</aligny>
+				<font>Artist_Font</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[ListItem.Property(TotalSeasons)] seasons, $INFO[ListItem.Property(TotalEpisodes)] episode</label>
+      	<visible>!Container.Content(movies) + IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + !IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
+			</control>
+			
+			<control type="label">
+				<posx>840</posx>
+				<posy>300</posy>
+				<width>400</width>
+				<height>50</height>
+				<aligny>Left</aligny>
+				<font>Artist_Font</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[ListItem.Property(TotalSeasons)] season, $INFO[ListItem.Property(TotalEpisodes)] episode</label>
+      	<visible>!Container.Content(movies) + !IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + !IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
+			</control>
 
 			<control type="label">
 				<posx>840</posx>
@@ -217,7 +265,20 @@
 				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
-				<label>Plot</label>
+				<label>$INFO[ListItem.Duration]</label>
+      	<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + Container.Content(movies)</visible>
+			</control>
+			
+			<control type="label">
+				<posx>840</posx>
+				<posy>300</posy>
+				<width>400</width>
+				<height>50</height>
+				<aligny>Left</aligny>
+				<font>Artist_Font</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[ListItem.Duration,, min]</label>
+      	<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + Container.Content(movies)</visible>
 			</control>
 
 			<control type="textbox">
@@ -257,8 +318,20 @@
 				<aligny>center</aligny>
 				<font>Genre_Font</font>
 				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Property(TotalSeasons)] seasons [B]$INFO[ListItem.Property(TotalEpisodes)] episodes[/B]</label>
-				<visible>!IsEmpty(ListItem.Genre) + [Container.Content(tvshows) | Container.Content(albums)] + !Container.Content(movies)</visible>
+				<label>$INFO[ListItem.Property(UnWatchedEpisodes),, unwatched episodes]</label>
+				<visible>[IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),1) | StringCompare(ListItem.Property(UnWatchedEpisodes),0)] + [Container.Content(tvshows) | !Container.Content(albums)] + !Container.Content(movies)</visible>
+			</control>
+			
+			<control type="label">
+				<posx>295</posx>
+				<posy>210</posy>
+				<width>600</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>Genre_Font</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[ListItem.Property(UnWatchedEpisodes),, unwatched episode]</label>
+				<visible>!IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),1) + IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),0) + [Container.Content(tvshows) | !Container.Content(albums)] + !Container.Content(movies)</visible>
 			</control>
 
 			<control type="grouplist">
@@ -272,18 +345,20 @@
 				<orientation>horizontal</orientation>
 				<include>VideoTypeHackFlaggingConditions</include>
 			</control>
+
+			<control type="label">
+				<posx>295</posx>
+				<posy>210</posy>
+				<width>600</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>Genre_Font</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[ListItem.Tagline]</label>
+				<visible>!IsEmpty(ListItem.Tagline)</visible>
+			</control>
 			
 			<control type="label">
-				<posx>1260</posx>
-				<posy>320</posy>
-				<width>100</width>
-				<height>25</height>
-				<align>right</align>
-				<textcolor>White</textcolor>
-				<label>[B]IMDb[/B] $INFO[ListItem.Rating]</label>
-			</control>
-
-			<control type="label">
 				<posx>295</posx>
 				<posy>210</posy>
 				<width>600</width>
@@ -291,21 +366,33 @@
 				<aligny>center</aligny>
 				<font>Genre_Font</font>
 				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Duration]</label>
-				<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min)</visible>
+				<label>[COLOR Accent]$INFO[ListItem.Director,[COLOR White]Director:[/COLOR] ][/COLOR]</label>
+				<visible>IsEmpty(ListItem.Tagline)</visible>
 			</control>
-
+			
 			<control type="label">
-				<posx>295</posx>
-				<posy>210</posy>
-				<width>600</width>
-				<height>50</height>
-				<aligny>center</aligny>
-				<font>Genre_Font</font>
-				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Duration,, min]</label>
-				<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min)</visible>
-			</control>
+      	<posx>295</posx>
+      	<posy>210</posy>
+      	<width>600</width>
+      	<height>50</height>
+      	<aligny>center</aligny>
+      	<font>Genre_Font</font>
+      	<textcolor>White</textcolor>
+      	<label>$INFO[ListItem.Duration]</label>
+      	<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline)</visible>
+      </control>
+
+      <control type="label">
+      	<posx>295</posx>
+      	<posy>210</posy>
+      	<width>600</width>
+      	<height>50</height>
+      	<aligny>center</aligny>
+      	<font>Genre_Font</font>
+      	<textcolor>White</textcolor>
+      	<label>$INFO[ListItem.Duration,, min]</label>
+      	<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline)</visible>
+      </control>
 
 			<control type="label">
 				<posx>75</posx>
