@@ -1636,7 +1636,7 @@
 				<height>155</height>
 				<align>left</align>
 				<onup>801</onup>
-				<ondown>804</ondown>
+				<ondown>805</ondown>
 				<onleft>802</onleft>
 				<onright>68</onright>
 				<onclick>ActivateWindow(Videos, RecentlyAddedEpisodes,return)</onclick>
