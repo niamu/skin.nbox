@@ -110,7 +110,7 @@
 		
 		<font>
 			<name>letter_bold</name>
-			<filename>CartoGothicStd-Book.otf</filename>
+			<filename>CartoGothicStd-Book.ttf</filename>
 			<size>24</size>
 		</font>		
 	
@@ -118,13 +118,13 @@
 		
 		<font>
 			<name>button_bold</name>
-			<filename>CartoGothicStd-Book.otf</filename>
+			<filename>CartoGothicStd-Book.ttf</filename>
 			<size>16</size>
 		</font>	
 		
 		<font>
 			<name>button_title</name>
-			<filename>CartoGothicStd-Book.otf</filename>
+			<filename>CartoGothicStd-Book.ttf</filename>
 			<size>16</size>
 		</font>	
 		
@@ -137,19 +137,19 @@
 		
 		<font>
 			<name>weather_small</name>
-			<filename>CartoGothicStd-Book.otf</filename>
+			<filename>CartoGothicStd-Book.ttf</filename>
 			<size>12</size>
 		</font>			
 
 		<font>
 			<name>rss_small</name>
-			<filename>CartoGothicStd-Book.otf</filename>
+			<filename>CartoGothicStd-Book.ttf</filename>
 			<size>14</size>
 		</font>	
 
 		<font>
 			<name>plot_scroll_small</name>
-			<filename>CartoGothicStd-Book.otf</filename>
+			<filename>CartoGothicStd-Book.ttf</filename>
 			<size>16</size>
 		</font>	
 		
