@@ -165,7 +165,7 @@
 
 			<control type="fadelabel" id="140">
 				<posx>295</posx>
-				<posy>175</posy>
+				<posy>171</posy>
 				<height>30</height>
 				<width>985</width>
 				<font>Home_menu</font>
