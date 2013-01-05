@@ -70,6 +70,7 @@
 				<orientation>vertical</orientation>
 
 				<control type="grouplist" id="3110">
+				  <height>240</height>
 
 					<control type="button" id="3111">
 						<description>Master mode button</description>
