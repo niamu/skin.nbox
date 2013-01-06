@@ -11,7 +11,7 @@
         <effect type="fade" time="500" delay="200" />
       </animation>
       <animation type="WindowClose">
-        <effect type="fade" time="500" delay="200" />
+        <effect type="fade" time="500" />
       </animation>
 			<posx>160</posx>
 			<posy>55</posy>
