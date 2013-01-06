@@ -35,7 +35,7 @@
         <effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
       </animation>
       <animation type="Visible">
-        <effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" delay="500" />
+        <effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" delay="200" />
       </animation>
 
 
