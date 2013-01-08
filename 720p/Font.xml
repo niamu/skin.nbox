@@ -120,7 +120,13 @@
 			<name>button_bold</name>
 			<filename>CartoGothicStd-Book.ttf</filename>
 			<size>16</size>
-		</font>	
+		</font>
+		
+		<font>
+			<name>button_bold_focus</name>
+			<filename>CartoGothicStd-Book.ttf</filename>
+			<size>18</size>
+		</font>
 		
 		<font>
 			<name>button_title</name>

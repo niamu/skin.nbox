@@ -98,29 +98,23 @@
           </control>
 
           <control type="label">
-            <posx>77</posx>
-            <posy></posy>
-            <width>155</width>
-            <height>155</height>
-            <visible>true</visible>
-            <align>center</align>
-            <aligny>center</aligny>
-            <label>[COLOR White][B]$INFO[ListItem.Episode][/B][/COLOR]</label>
-            <font>Home_sub_header</font>
+            <label>$INFO[ListItem.Episode]</label>
+            <posx>12</posx>
+            <posy>2</posy>
+            <height>30</height>
+            <width>143</width>
+            <font>button_bold</font>
+            <align>left</align>
           </control>
-          
+
           <control type="label">
-            <label>[COLOR White][B]$INFO[ListItem.Title][/B][/COLOR]</label>
-            <scroll>true</scroll>
-            <pauseatend>300</pauseatend>
-            <posx>77</posx>
-            <posy>30</posy>
-            <width>155</width>
-            <height>155</height>
-            <visible>true</visible>
-            <align>center</align>
-            <aligny>center</aligny>
-            <scrollspeed>50</scrollspeed>
+            <label>$INFO[ListItem.Title]</label>
+            <posx>6</posx>
+            <posy>121</posy>
+            <height>30</height>
+            <width>143</width>
+            <font>button_bold</font>
+            <align>left</align>
           </control>
 
           <control type="image">
@@ -175,16 +169,28 @@
             </animation>
             <visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
           </control>
+          
+          <control type="label">
+            <label>[COLOR Accent][B]$INFO[ListItem.Episode][/B][/COLOR]</label>
+            <posx>12</posx>
+            <posy>-1</posy>
+            <height>30</height>
+            <width>143</width>
+            <font>button_bold_focus</font>
+            <align>left</align>
+            <animation type="Focus" reversible="true">
+              <effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
+            </animation>
+          </control>
 
           <control type="label">
-            <label>Episode $INFO[ListItem.Episode][COLOR Accent] $INFO[ListItem.Title][/COLOR]</label>
+            <label>[COLOR Accent]$INFO[ListItem.Title][/COLOR]</label>
             <posx>6</posx>
             <posy>121</posy>
             <height>30</height>
             <width>143</width>
             <font>button_bold</font>
             <align>left</align>
-            <animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
           </control>
         </focusedlayout>
       </control>
@@ -209,7 +215,7 @@
       <control type="label">
         <posx>295</posx>
         <posy>210</posy>
-        <width>600</width>
+        <width>985</width>
         <height>50</height>
         <aligny>center</aligny>
         <font>Genre_Font</font>
