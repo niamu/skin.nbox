@@ -74,7 +74,7 @@
 					<posx>548</posx>
 					<posy>171</posy>
 					<height>30</height>
-					<width>600</width>
+					<width>732</width>
 					<font>Home_menu</font>
 					<aligny>top</aligny>
 					<label>[COLOR Accent]$INFO[ListItem.Label][/COLOR] $INFO[ListItem.Year]</label>
@@ -90,7 +90,7 @@
 					<posx>548</posx>
 					<posy>171</posy>
 					<height>30</height>
-					<width>600</width>
+					<width>732</width>
 					<font>Home_menu</font>
 					<aligny>top</aligny>
 					<label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] $INFO[ListItem.Label]</label>
@@ -106,10 +106,10 @@
 					<posx>548</posx>
 					<posy>171</posy>
 					<height>30</height>
-					<width>600</width>
+					<width>732</width>
 					<font>Home_menu</font>
 					<aligny>top</aligny>
-					<label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] $INFO[ListItem.Label]</label>
+					<label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] $INFO[ListItem.Title]</label>
 					<visible>true</visible>
 					<scroll>true</scroll>
 					<scrollout>false</scrollout>
@@ -130,7 +130,31 @@
 					<font>Genre_Font</font>
 					<textcolor>white</textcolor>
 					<label>$LOCALIZE[515]: [B]$INFO[ListItem.Genre][/B]</label>
-					<visible>!IsEmpty(ListItem.Genre) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(albums)]</visible>
+					<visible>!IsEmpty(ListItem.Genre) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
+				</control>
+				
+				<control type="label">
+					<posx>550</posx>
+					<posy>230</posy>
+					<width>600</width>
+					<height>50</height>
+					<aligny>top</aligny>
+					<font>Genre_Font</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.Duration]</label>
+					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + IsEmpty(ListItem.Genre) + Container.Content(movies)</visible>
+				</control>
+				
+				<control type="label">
+					<posx>550</posx>
+					<posy>230</posy>
+					<width>600</width>
+					<height>50</height>
+					<aligny>top</aligny>
+					<font>Genre_Font</font>
+					<textcolor>white</textcolor>
+					<label>$INFO[ListItem.Duration,, min]</label>
+					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + IsEmpty(ListItem.Genre) + Container.Content(movies)</visible>
 				</control>
 
 				<control type="label">
@@ -141,8 +165,8 @@
 					<aligny>top</aligny>
 					<font>Genre_Font</font>
 					<textcolor>white</textcolor>
-					<label>$INFO[ListItem.Season,Season ]</label>
-					<visible>[Container.Content(movies) | Container.Content(tvshows) | Container.Content(Episodes)]</visible>
+					<label>$INFO[ListItem.Season,Season ], $INFO[ListItem.Episode,Episode ]</label>
+					<visible>!Container.Content(movies) + Container.Content(Episodes)</visible>
 				</control>
 
 
