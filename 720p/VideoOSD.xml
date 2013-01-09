@@ -5,19 +5,15 @@
 	<controls>
 
 		<control type="group">
+			<posx>0</posx>
+			<posy>10</posy>
 
-						<animation type="WindowOpen">
+			<animation type="WindowOpen">
 				<effect type="fade" start="0" end="100" time="400" />
 			</animation>
 			<animation type="WindowClose">
 				<effect type="fade" start="100" end="0" time="400" />
 			</animation>
-
-
-
-
-			<posx>0</posx>
-			<posy>10</posy>
 
 			<control type="image">
 				<posx>0</posx>
@@ -29,21 +25,9 @@
 				<visible>Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings)</visible>
 			</control>
 
-
 			<control type="group">
 				<visible>!Window.IsVisible(sliderdialog)</visible>
 
-				<!--
-				<control type="label">
-					<description>Current Control</description>
-					<posx>470</posx>
-					<posy>63</posy>
-					<width>340</width>
-					<align>center</align>
-					<label>$INFO[System.CurrentControl]</label>
-				</control>
-				-->
-				
 				<control type="grouplist" id="100">
 					<posx>1010</posx>
 					<posy>2</posy>
@@ -94,8 +78,6 @@
 						<onclick>ActivateWindow(123)</onclick>
 					</control>
 
-
-
 					<control type="button" id="4">
 						<description>Subtitles</description>
 						<width>50</width>
@@ -122,17 +104,12 @@
 						<onclick>XBMC.RunScript($INFO[Skin.String(SubtitlesPath)])</onclick>
 						<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
 					</control>
-
-
 				</control>
-
-
 
 				<control type="group">
 					<posx>0</posx>
 					<posy>-10</posy>
-					<!-- changes start
--->
+
 					<control type="image">
 						<description>black bar</description>
 						<posx>0</posx>
@@ -174,11 +151,6 @@
 						<visible>VideoPlayer.Content(Movies)</visible>
 					</control>
 
-
-
-
-
-
 					<control type="group">
 						<posx>325</posx>
 						<posy>515</posy>
@@ -195,7 +167,6 @@
 							<visible>VideoPlayer.Content(Movies) | !VideoPlayer.Content(Movies)</visible>
 						</control>
 
-
 						<control type="label">
 							<description>Now Playing</description>
 							<posx>4</posx>
@@ -206,7 +177,6 @@
 							<font>Medium</font>
 							<align>left</align>
 						</control>
-
 
 						<control type="label">
 							<description>Now Playing</description>
@@ -219,7 +189,6 @@
 							<align>left</align>
 							<visible>VideoPlayer.Content(Movies) + IsEmpty(VideoPlayer.Tagline) + !IsEmpty(VideoPlayer.Director)</visible>
 						</control>
-
 
 						<control type="label">
 							<description>Now Playing</description>
@@ -256,12 +225,10 @@
 							<aspectratio align="left">keep</aspectratio>
 							<texture>other_textures/ColorRating/$INFO[Player.StarRating]</texture>
 						</control>
-
-
 					</control>
 
 					<control type="group">
-                        <visible>player.playing</visible>
+						<visible>player.playing</visible>
 						<control type="progress">
 							<description>Progressbar</description>
 							<posx>527</posx>
@@ -295,24 +262,16 @@
 						</control>
 					</control>
 
-
-
-
-					<!-- changes end
--->
-
 					<control type="button" id="12">
 						<description>Skip Back</description>
 						<posx>37</posx>
 						<posy>546</posy>
 						<width>74</width>
 						<height>74</height>
-
 						<onleft>-</onleft>
 						<onright>13</onright>
 						<onup>100</onup>
 						<ondown>-</ondown>
-
 						<label>210</label>
 						<font>-</font>
 						<texturefocus>other_textures/OSD/PrevTrackGreenFO.png</texturefocus>
@@ -326,12 +285,10 @@
 						<posy>609</posy>
 						<width>40</width>
 						<height>40</height>	
-
 						<onleft>12</onleft>
 						<onright>14</onright>
 						<onup>1</onup>
 						<ondown>-</ondown>
-
 						<label>31036</label>
 						<font>-</font>
 						<texturefocus>other_textures/OSD/RewindGreenFO.png</texturefocus>
@@ -345,12 +302,10 @@
 						<posy>597</posy>
 						<width>66</width>
 						<height>66</height>
-
 						<onleft>13</onleft>
 						<onright>15</onright>
 						<onup>2</onup>
 						<ondown>-</ondown>
-
 						<label>31037</label>
 						<altlabel>208</altlabel>
 						<font>-</font>
@@ -368,12 +323,10 @@
 						<posy>609</posy>
 						<width>40</width>
 						<height>40</height>
-
 						<onleft>14</onleft>
 						<onright>16</onright>
 						<onup>3</onup>
 						<ondown>-</ondown>
-
 						<label>31038</label>
 						<font>-</font>
 						<texturefocus>other_textures/OSD/StopGreenFO.png</texturefocus>
@@ -387,12 +340,10 @@
 						<posy>609</posy>
 						<width>40</width>
 						<height>40</height>
-
 						<onleft>15</onleft>
 						<onright>17</onright>
 						<onup>4</onup>
 						<ondown>-</ondown>
-
 						<label>31039</label>
 						<font>-</font>
 						<texturefocus>other_textures/OSD/ForwardGreenFO.png</texturefocus>
@@ -406,13 +357,10 @@
 						<posy>546</posy>
 						<width>74</width>
 						<height>74</height>
-
 						<onleft>16</onleft>
 						<onright>17</onright>
 						<onup>4</onup>
 						<ondown>-</ondown>
-
-
 						<label>209</label>
 						<font>-</font>
 						<texturefocus>other_textures/OSD/NextTrackGreenFO.png</texturefocus>
@@ -421,17 +369,7 @@
 					</control>
 
 				</control>
-
-
-
-
-
 			</control>
-
 		</control>
-
-		
-
 	</controls>
-
 </window>

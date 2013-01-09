@@ -2,89 +2,56 @@
 	<defaultcontrol always="true">1000</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
 
-	<coordinates>
-		<origin x="440" y="180" />
-	</coordinates>
-
 	<controls>
 
-		<control type="image">
-	        <animation type="WindowOpen">
-          <effect type="fade" time="400" start="0" end="100" />
-        </animation>
-        <animation type="WindowClose">
-          <effect type="fade" time="400" start="100" end="0" />
-        </animation>	
-	
-			<posx>-440</posx>
-			<posy>-180</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture border="2">other_textures/black-back.png</texture>
-		</control>
+		<include>GlobalOverlay</include>
 
+		<control type="group">
+			<posx>880</posx>
+			<posy>0</posy>
 
+			<animation type="WindowOpen">
+				<effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+			</animation>
 
-<control type="group">
-
-        <animation type="WindowOpen">
-          <effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
-        </animation>
-        <animation type="WindowClose">
-          <effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
-        </animation>
-
-
-		<control type="image">
-			<description>background image</description>
-			<posx>440</posx>
-			<posy>-180</posy>
-			<width>400</width>
-			<height>720</height>
-			<texture border="22">button.png</texture>
-		</control>
-
-
+			<control type="image">
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>440</width>
+				<height>720</height>
+				<texture border="22">button.png</texture>
+			</control>
 
 			<control type="label">
-					<description>Menu Title</description>
-					<posx>470</posx>
-					<posy>-110</posy>
-					<width>400</width>
-					<label>menu</label>
-					<font>Home_sub_header</font>
-					<align>left</align>
-					<textcolor>black</textcolor>
-				</control>
+				<description>Menu Title</description>
+				<posx>30</posx>
+				<posy>70</posy>
+				<width>400</width>
+				<label>menu</label>
+				<font>Home_sub_header</font>
+				<align>left</align>
+				<textcolor>black</textcolor>
+			</control>
 
+			<control type="button" id="1000">
+				<animation type="WindowOpen">
+					<effect type="slide" time="300" start="+1280, +180" end="+880,+180" easing="out" tween="cubic" />
+				</animation>
+				<animation type="WindowClose">
+					<effect type="slide" time="300" start="+880,+180" end="+1280,+180" easing="in" tween="cubic" />
+				</animation>
+				<description>Buttons</description>
+				<posx>30</posx>
+				<posy>0</posy>
+				<width>340</width>
+				<font>Small</font>
+				<align>right</align>
+				<textcolor>black</textcolor>
+			</control>
 
-		<control type="button" id="1000">
-		        <animation type="WindowOpen">
-          <effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
-        </animation>
-        <animation type="WindowClose">
-          <effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
-        </animation>
-			<description>Buttons</description>
-			<posx>470</posx>
-			<posy>0</posy>
-			<width>340</width>
-							<font>Small</font>
-					<align>right</align>
-					<textcolor>black</textcolor>
 		</control>
-
-		<control type="image">
-			<posx>-440</posx>
-			<posy>-80</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture>debuggrid720.png</texture>
-			<visible>Skin.HasSetting(DebugGrid)</visible>
-		</control>
-		
-	</control>
-
 	</controls>
-
 </window>

@@ -4,18 +4,22 @@
 
 	<controls>
 
-		<include>GlobalOverlay</include>
-
 		<control type="group">
 			<posx>880</posx>
 			<posy>0</posy>
 			<visible>![Window.IsVisible(DialogNumeric.xml) | Window.IsVisible(DialogContextMenu.xml)]</visible>
 
 			<animation type="WindowOpen">
-				<effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
+				<effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" delay="300" />
 			</animation>
 			<animation type="WindowClose">
 				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+			</animation>
+			<animation type="Hidden">
+				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+			</animation>
+			<animation type="Visible">
+				<effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" delay="300" />
 			</animation>
 
 			<control type="image">

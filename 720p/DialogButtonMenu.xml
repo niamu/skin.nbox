@@ -4,37 +4,18 @@
 
 	<controls>
 
-		<control type="image">
-	        <animation type="WindowOpen">
-          <effect type="fade" time="400" start="0" end="100" />
-        </animation>
-        <animation type="WindowClose">
-          <effect type="fade" time="400" start="100" end="0" />
-        </animation>	
-	
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
-			<texture border="2">other_textures/black-back.png</texture>
-		</control>
-		
-		
-		
+		<include>GlobalOverlay</include>
+
 		<control type="group">
 			<posx>880</posx>
 			<posy>0</posy>
 
-
-
-        <animation type="WindowOpen">
-          <effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
-        </animation>
-        <animation type="WindowClose">
-          <effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
-        </animation>
-
-
+			<animation type="WindowOpen">
+				<effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+			</animation>
 
 			<control type="image">
 				<posx>0</posx>
@@ -44,18 +25,16 @@
 				<texture border="22">button.png</texture>
 			</control>
 
-
 			<control type="label">
-					<description>Menu Title</description>
-					<posx>30</posx>
-					<posy>70</posy>
-					<width>400</width>
-					<label>shutdown</label>
-					<font>Home_sub_header</font>
-					<align>left</align>
-					<textcolor>black</textcolor>
-				</control>
-
+				<description>Menu Title</description>
+				<posx>30</posx>
+				<posy>70</posy>
+				<width>400</width>
+				<label>shutdown</label>
+				<font>Home_sub_header</font>
+				<align>left</align>
+				<textcolor>black</textcolor>
+			</control>
 
 			<control type="grouplist" id="1">
 				<posx>30</posx>
@@ -70,7 +49,7 @@
 				<orientation>vertical</orientation>
 
 				<control type="grouplist" id="3110">
-				  <height>240</height>
+					<height>240</height>
 
 					<control type="button" id="3111">
 						<description>Master mode button</description>
@@ -127,8 +106,7 @@
 						<textcolor>black</textcolor>
 						<focusedcolor>white</focusedcolor>
 					</control>
-					
-					
+
 					<control type="button" id="3113">
 						<description>Custom Shutdown Timer button</description>
 						<width>340</width>
@@ -157,10 +135,9 @@
 						<align>center</align>
 						<label>$LOCALIZE[20145] [B]$INFO[System.Alarmpos][/B]</label>
 						<visible>System.HasAlarm(shutdowntimer)</visible>
-						
-					<align>right</align>
-					<textcolor>black</textcolor>
-					<focusedcolor>white</focusedcolor>
+						<align>right</align>
+						<textcolor>black</textcolor>
+						<focusedcolor>white</focusedcolor>
 					</control>
 
 					<control type="button" id="3119">
@@ -175,13 +152,7 @@
 					</control>
 
 				</control>
-
 			</control>
-
 		</control>
-
-		
-
 	</controls>
-
 </window>
