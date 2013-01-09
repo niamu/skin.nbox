@@ -52,7 +52,7 @@
 			</control>
 
 
-			<control type="label" id="411">
+			<control type="label">
 				<description>Heading</description>
 				<posx>30</posx>
 				<posy>70</posy>
@@ -60,7 +60,7 @@
 				<align>left</align>
 				<font>Home_sub_header</font>
 				<textcolor>black</textcolor>
-				<label>[LOWERCASE]$LOCALIZE[1023][/LOWERCASE]</label>
+				<label>browse</label>
 			</control>
 
 			<control type="label" id="412">
