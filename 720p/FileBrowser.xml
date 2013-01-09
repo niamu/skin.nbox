@@ -16,7 +16,13 @@
 			<animation type="WindowClose">
 				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
 			</animation>
-			
+			<animation type="Hidden">
+				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+			</animation>
+			<animation type="Visible">
+				<effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
+			</animation>
+
 			<control type="image">
 				<description>Large Icon Image</description>
 				<posx>-765</posx>
@@ -28,13 +34,13 @@
 				<bordertexture border="5">white_box.png</bordertexture>
 				<bordersize>5</bordersize>
 				<visible>!IsEmpty(Container(450).ListItem(0).Icon) + [SubString(Container(450).ListItem(0).Label,.jpg) | SubString(Container(450).ListItem(0).Label,.png) | SubString(Container(450).ListItem(0).Label,Current thumb) | SubString(Container(450).ListItem(0).Label,Current art) | SubString(Container(450).ListItem(0).Label,Remote art) | SubString(Container(450).ListItem(0).Label,Remote fanart)]</visible>
-				
+
 				<animation type="WindowOpen">
-  				<effect type="slide" time="300" start="+1165, 0" end="0,0" easing="out" tween="cubic" />
-  			</animation>
-  			<animation type="WindowClose">
-  				<effect type="slide" time="300" start="0,0" end="+1165,0" easing="in" tween="cubic" />
-  			</animation>
+					<effect type="slide" time="300" start="+1165, 0" end="0,0" easing="out" tween="cubic" />
+				</animation>
+				<animation type="WindowClose">
+					<effect type="slide" time="300" start="0,0" end="+1165,0" easing="in" tween="cubic" />
+				</animation>
 			</control>
 
 			<control type="image">
@@ -48,59 +54,59 @@
 
 			<control type="label" id="411">
 				<description>Heading</description>
-				<posx>10</posx>
-				<posy>10</posy>
-				<width>380</width>
+				<posx>30</posx>
+				<posy>70</posy>
+				<width>400</width>
 				<align>left</align>
-				<font>Large</font>
+				<font>Home_sub_header</font>
 				<textcolor>black</textcolor>
-				<label>1023</label>
+				<label>[LOWERCASE]$LOCALIZE[1023][/LOWERCASE]</label>
 			</control>
 
 			<control type="label" id="412">
 				<description>Path</description>
-				<posx>10</posx>
-				<posy>38</posy>
-				<width>380</width>
+				<posx>30</posx>
+				<posy>100</posy>
+				<width>400</width>
 				<haspath>true</haspath>
 				<textcolor>black</textcolor>
 			</control>
 
 			<control type="list" id="450">
-				<posx>10</posx>
-				<posy>80</posy>
-				<width>380</width>
-				<height>560</height>
+				<posx>30</posx>
+				<posy>180</posy>
+				<width>340</width>
+				<height>440</height>
 				<onup>450</onup>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
-				<ondown>9000</ondown>
+				<ondown>450</ondown>
 
-				<itemlayout height="144">
+				<itemlayout height="114">
 
 					<control type="image">
 						<width>380</width>
-						<height>142</height>
-						<texture border="2">other_textures/ButtonNF.png</texture>
+						<height>112</height>
+						<texture>other_textures/ButtonNF.png</texture>
 					</control>
 
 					<control type="image">
 						<posx>8</posx>
 						<posy>8</posy>
-						<width>128</width>
-						<height>128</height>
+						<width>96</width>
+						<height>96</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 					</control>
 
 					<control type="label">
-						<posx>144</posx>
+						<posx>115</posx>
 						<width>228</width>
 						<info>ListItem.Label</info>
 						<textcolor>black</textcolor>
 					</control>
 
 					<control type="label">
-						<posx>144</posx>
+						<posx>115</posx>
 						<posy>30</posy>
 						<width>228</width>
 						<info>ListItem.Label2</info>
@@ -109,31 +115,31 @@
 
 				</itemlayout>
 
-				<focusedlayout height="144">
+				<focusedlayout height="114">
 
 					<control type="image">
 						<width>380</width>
-						<height>142</height>
-						<texture border="5">other_textures/ButtonFO.png</texture>
+						<height>112</height>
+						<texture>other_textures/ButtonFO.png</texture>
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(450)">Conditional</animation>
 					</control>
 
 					<control type="image">
 						<posx>8</posx>
 						<posy>8</posy>
-						<width>128</width>
-						<height>128</height>
+						<width>96</width>
+						<height>96</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 					</control>
 
 					<control type="label">
-						<posx>144</posx>
+						<posx>115</posx>
 						<width>228</width>
 						<info>ListItem.Label</info>
 					</control>
 
 					<control type="label">
-						<posx>144</posx>
+						<posx>115</posx>
 						<posy>30</posy>
 						<width>228</width>
 						<info>ListItem.Label2</info>
