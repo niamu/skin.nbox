@@ -4,18 +4,9 @@
 
 	<controls>
 
+		<include>GlobalOverlay</include>
+
 		<control type="group">
-			<posx>0</posx>
-			<posy>0</posy>
-
-			<control type="image">
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture>other_textures/black-back.png</texture>
-			</control>
-
 
 			<control type="label">
 				<description>header label</description>
@@ -26,8 +17,6 @@
 				<font>Large</font>
 				<label>[COLOR Accent]$LOCALIZE[298][/COLOR] - ($INFO[Container(11).NumItems]) $LOCALIZE[31027]  $LOCALIZE[31028] ($INFO[Container(11).CurrentPage]/$INFO[Container(11).NumPages])</label>
 			</control>
-
-
 
 			<control type="panel" id="11">
 				<posx>500</posx>
@@ -122,7 +111,7 @@
 					<label>294</label>
 					<width>460</width>
 					<focusedcolor>Accent</focusedcolor>
-						<align>left</align>
+					<align>left</align>
 					<include>ButtonInfoDialogsCommonValues</include>
 				</control>
 
@@ -131,7 +120,7 @@
 					<label>296</label>
 					<width>460</width>
 					<focusedcolor>Accent</focusedcolor>
-						<align>left</align>
+					<align>left</align>
 					<include>ButtonInfoDialogsCommonValues</include>
 				</control>
 
@@ -140,7 +129,7 @@
 					<label>20406</label>
 					<width>460</width>
 					<focusedcolor>Accent</focusedcolor>
-						<align>left</align>
+					<align>left</align>
 					<include>ButtonInfoDialogsCommonValues</include>
 					<visible>videoplayer.content(episodes)</visible>
 				</control>
@@ -149,32 +138,25 @@
 
 		</control>
 
+		<control type="image">
+			<posx>1220</posx>
+			<posy>65</posy>
+			<width>40</width>
+			<height>40</height>
+			<texture flipy="true">down_arrow.png</texture>
+			<visible>Container(11).HasPrevious</visible>
+			<animation effect="fade" time="400">VisibleChange</animation>
+		</control>
 
-
-
-			<control type="image">
-						<posx>1220</posx>
-						<posy>65</posy>
-						<width>40</width>
-						<height>40</height>
-						<texture flipy="true">down_arrow.png</texture>
-						<visible>Container(11).HasPrevious</visible>
-						<animation effect="fade" time="400">VisibleChange</animation>
-			</control>
-
-			<control type="image">
-						<posx>1220</posx>
-						<posy>385</posy>
-						<width>40</width>
-						<height>40</height>
-						<texture>down_arrow.png</texture>
-						<visible>Container(11).HasNext</visible>
-						<animation effect="fade" time="400">VisibleChange</animation>
-			</control>
-
-
-		
+		<control type="image">
+			<posx>1220</posx>
+			<posy>385</posy>
+			<width>40</width>
+			<height>40</height>
+			<texture>down_arrow.png</texture>
+			<visible>Container(11).HasNext</visible>
+			<animation effect="fade" time="400">VisibleChange</animation>
+		</control>
 
 	</controls>
-
 </window>
