@@ -52,18 +52,6 @@
 				<textcolor>black</textcolor>
 			</control>
 
-			<control type="image" id="2">
-				<description>profile image</description>
-				<posx>280</posx>
-				<posy>10</posy>
-				<width>110</width>
-				<height>110</height>
-				<bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
-				<bordersize>5</bordersize>
-				<texture>other_textures/unknown-user.png</texture>
-				<aspectratio align="right" aligny="top">keep</aspectratio>
-			</control>
-
 			<control type="grouplist" id="5">
 				<description>Control Area</description>
 				<posx>30</posx>
@@ -94,6 +82,18 @@
 				<description>spin_controlex</description>
 				<textcolor>black</textcolor>
 				<align>right</align>
+			</control>
+			
+			<control type="image" id="2">
+				<description>profile image</description>
+				<posx>50</posx>
+				<posy>340</posy>
+				<width>300</width>
+				<height>300</height>
+				<bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+				<bordersize>5</bordersize>
+				<texture>other_textures/unknown-user.png</texture>
+				<aspectratio align="right" aligny="top">keep</aspectratio>
 			</control>
 
 			<control type="button" id="28">
