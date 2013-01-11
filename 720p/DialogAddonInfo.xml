@@ -31,6 +31,7 @@
 				<height>720</height>
 				<texture border="22">button.png</texture>
 			</control>
+			
 			<control type="fadelabel">
 				<description>Menu Title</description>
 				<posx>30</posx>
