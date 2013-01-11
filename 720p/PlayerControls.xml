@@ -129,6 +129,15 @@
 				<visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
 			</control>
       
+      <control type="group">
+        <visible>!IntegerGreaterThan(System.Time(ss),30)</visible>
+        <animation type="Hidden">
+  				<effect type="fade" time="300" />
+  			</animation>
+  			<animation type="Visible">
+  				<effect type="fade" time="300" />
+  			</animation>
+      
       <control type="textbox">
 				<posx>30</posx>
 				<posy>180</posy>
@@ -153,7 +162,7 @@
 			
 			<control type="label">
 				<posx>30</posx>
-				<posy>500</posy>
+				<posy>490</posy>
 				<width>340</width>
 				<textcolor>black</textcolor>
 				<label>$INFO[VideoPlayer.Director,[B]Director[/B]: ]</label>
@@ -162,12 +171,49 @@
 			
 			<control type="label">
 				<posx>30</posx>
-				<posy>530</posy>
+				<posy>520</posy>
 				<width>340</width>
 				<textcolor>black</textcolor>
 				<label>$INFO[VideoPlayer.Writer,[B]Writer[/B]: ]</label>
 				<visible>!IsEmpty(VideoPlayer.Writer)</visible>
 			</control>
+			
+		</control>
+		
+		<control type="group">
+      <visible>IntegerGreaterThan(System.Time(ss),30)</visible>
+      <animation type="Hidden">
+				<effect type="fade" time="300" />
+			</animation>
+			<animation type="Visible">
+				<effect type="fade" time="300" />
+			</animation>
+			
+			<control type="image">
+        <posx>72</posx>
+				<posy>172</posy>
+				<width>255</width>
+				<height>375</height>
+        <texture border="2">$INFO[Player.Art(tvshow.poster)]</texture>
+        <bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+				<bordersize>5</bordersize>
+				<aspectratio align="right" aligny="top">stretch</aspectratio>
+				<visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
+      </control>
+      
+      <control type="image">
+        <posx>72</posx>
+				<posy>172</posy>
+				<width>255</width>
+				<height>375</height>
+        <texture border="2">$INFO[Player.Art(poster)]</texture>
+        <bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+				<bordersize>5</bordersize>
+				<aspectratio align="right" aligny="top">stretch</aspectratio>
+				<visible>IsEmpty(VideoPlayer.TVShowTitle)</visible>
+      </control>
+      
+    </control>
 
       <control type="grouplist" id="1">
         <posx>8</posx>
