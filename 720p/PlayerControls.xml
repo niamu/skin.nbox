@@ -43,6 +43,14 @@
           <bordertexture border="5">white_box.png</bordertexture>
           <bordersize>5</bordersize>
         </control>
+        
+        <control type="image">
+          <posx>-760</posx>
+          <posy>177</posy>
+          <width>650</width>
+          <height>366</height>
+          <texture>black.png</texture>
+        </control>
 
         <control type="videowindow">
           <description>video</description>
