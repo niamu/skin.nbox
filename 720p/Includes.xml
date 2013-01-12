@@ -69,7 +69,7 @@
 				<fadetime>800</fadetime>
 				<texture background="true">$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>
 				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>[IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),6)]</visible>
+				<visible>!IntegerGreaterThan(System.Time(ss),6)</visible>
 			</control>
 			<control type="image">
 				<animation effect="fade" time="500">VisibleChange</animation>
@@ -146,7 +146,7 @@
 				<fadetime>800</fadetime>
 				<texture background="true">$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>
 				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>[IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),6)]</visible>
+				<visible>!IntegerGreaterThan(System.Time(ss),6)</visible>
 			</control>
 			<control type="image">
 				<animation effect="fade" time="500">VisibleChange</animation>
