@@ -7,53 +7,54 @@
 		<include>GlobalOverlay</include>
 
 		<control type="group">
-			<posx>340</posx>
+			<posx>420</posx>
 			<posy>240</posy>
 
 			<control type="image">
-				<posx>-20</posx>
-				<posy>-20</posy>
-				<width>640</width>
-				<height>296</height>
+				<posx></posx>
+				<posy></posy>
+				<width>440</width>
+				<height>220</height>
 				<texture border="22">button.png</texture>
 			</control>
 
 			<control type="label" id="1">
 				<description>Heading</description>
-				<posx>10</posx>
+				<posx>30</posx>
+				<posy>20</posy>
 				<label>-</label>
 				<textcolor>black</textcolor>
-				<width>590</width>
+				<width>370</width>
 				<font>Large</font>
 				<align>left</align>
 			</control>
 
 			<control type="label" id="2">
 				<description>Line 1</description>
-				<posx>10</posx>
-				<posy>72</posy>
+				<posx>30</posx>
+				<posy>60</posy>
 				<label>-</label>
-				<width>590</width>
+				<width>370</width>
 				<textcolor>black</textcolor>
 				<scroll>true</scroll>
 			</control>
 
 			<control type="label" id="3">
 				<description>Line 2</description>
-				<posx>10</posx>
-				<posy>104</posy>
+				<posx>30</posx>
+				<posy>85</posy>
 				<label>-</label>
-				<width>590</width>
+				<width>370</width>
 				<textcolor>black</textcolor>
 				<scroll>true</scroll>
 			</control>
 
 			<control type="label" id="4">
 				<description>Line 3</description>
-				<posx>10</posx>
-				<posy>136</posy>
+				<posx>30</posx>
+				<posy>115</posy>
 				<label>-</label>
-				<width>590</width>
+				<width>370</width>
 				<textcolor>black</textcolor>
 				<scroll>true</scroll>
 			</control>
@@ -61,8 +62,8 @@
 			<control type="button" id="10">
 				<description>No</description>
 				<textcolor>black</textcolor>
-				<posx>100</posx>
-				<posy>190</posy>
+				<posx>30</posx>
+				<posy>145</posy>
 				<width>180</width>
 				<label>106</label>
 				<onleft>11</onleft>
@@ -74,8 +75,8 @@
 			<control type="button" id="11">
 				<description>Yes</description>			
 				<textcolor>black</textcolor>
-				<posx>320</posx>
-				<posy>190</posy>
+				<posx>230</posx>
+				<posy>145</posy>
 				<width>180</width>
 				<label>107</label>
 				<onleft>10</onleft>
