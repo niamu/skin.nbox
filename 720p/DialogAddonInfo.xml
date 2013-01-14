@@ -80,6 +80,7 @@
 						<label>24020</label>
 						<textcolor>black</textcolor>
 						<align>right</align>
+						<onfocus>SetProperty(addon,$INFO[ListItem.Property(Addon.Name)],10140)</onfocus>
 					</control>
 
 					<control type="button" id="8">
