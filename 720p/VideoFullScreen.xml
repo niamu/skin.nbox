@@ -1,47 +1,65 @@
 <window id="2005">
-	<defaultcontrol>-</defaultcontrol>
+  <defaultcontrol>-</defaultcontrol>
 
-	<controls>
+  <controls>
 
-		<control type="image">
-			<width>1280</width>
-			<height>148</height>
-			<texture>other_textures/black-back.png</texture>
-		</control>
+    <control type="label" id="10">
+      <description>row 1 label</description>
+      <posx>20</posx>
+      <posy>32</posy>
+      <label>-</label>
+    </control>
 
-		<control type="label" id="10">
-			<description>row 1 label</description>
-			<posx>20</posx>
-			<posy>32</posy>
-			<label>-</label>
-		</control>
+    <control type="label" id="11">
+      <description>row 2 label</description>
+      <posx>20</posx>
+      <posy>64</posy>
+      <label>-</label>
+    </control>
 
-		<control type="label" id="11">
-			<description>row 2 label</description>
-			<posx>20</posx>
-			<posy>64</posy>
-			<label>-</label>
-		</control>
+    <control type="label" id="12">
+      <description>row 3 label</description>
+      <posx>20</posx>
+      <posy>96</posy>
+      <label>-</label>
+    </control>
 
-		<control type="label" id="12">
-			<description>row 3 label</description>
-			<posx>20</posx>
-			<posy>96</posy>
-			<label>-</label>
-		</control>
+    <control type="group">
+      <posx>515</posx>
+      <posy>324</posy>
 
-		<control type="label" id="24">
-			<description>buffering label</description>
-			<posx>0</posx>
-			<posy>350</posy>
-			<width>1280</width>
-			<label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
-			<align>center</align>
-			<font>Large</font>
-		</control>
+      <control type="image">
+        <description>background image</description>
+        <posx>0</posx>
+        <posy>0</posy>
+        <width>250</width>
+        <height>78</height>
+        <texture border="20">button.png</texture>
+      </control>
 
-		
+      <control type="image">
+        <description>Busy animation</description>
+        <posx>20</posx>
+        <posy>20</posy>
+        <width>32</width>
+        <height>32</height>
+        <texture>other_textures/busy.png</texture>
+        <aspectratio>keep</aspectratio>
+        <animation effect="rotate" start="360" end="0" center="36,36" time="1200" loop="true" condition="true">conditional</animation>
+      </control>
 
-	</controls>
+      <control type="label" id="24">
+        <description>buffering label</description>
+        <posx>70</posx>
+        <posy>20</posy>
+        <width>200</width>
+        <height>32</height>
+        <label>$LOCALIZE[15107] $INFO[Player.CacheLevel]%</label>
+        <align>left</align>
+        <font>Medium</font>
+      </control>
 
+    </control>
+
+  </controls>
 </window>

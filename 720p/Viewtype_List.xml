@@ -75,6 +75,7 @@
 				<onup>503</onup>
 				<ondown>503</ondown>
 				<onright>1</onright>
+				<onleft>9000</onleft>
 				<scrolltime>0</scrolltime>
 				<viewtype label="song list">song list</viewtype>
 				<orientation>vertical</orientation>
@@ -273,8 +274,8 @@
 						<onleft>503</onleft>
 						<label></label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/PlayVidFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/PlayVidNF.png</texturenofocus>
+						<texturefocus>other_textures/osd/playVidfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/playVidnf.png</texturenofocus>
 						<onclick>PlayMedia($ESCINFO[Window.Property(SongToMusicVideo.Path)])</onclick>
 						<visible>!IsEmpty(Window.Property(SongToMusicVideo.Path))</visible>
 						<animation effect="slide" start="200,0" end="0,0" time="200" tween="cubic" easing="out"  >VisibleChange</animation>

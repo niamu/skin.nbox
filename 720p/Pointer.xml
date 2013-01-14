@@ -8,14 +8,14 @@
 			<description>Pointer</description>
 			<width>30</width>
 			<height>30</height>
-			<texture>other_textures/PointerNF.png</texture>
+			<texture>other_textures/Pointernf.png</texture>
 		</control>
 
 		<control type="image" id="2">
 			<description>Pointer Focus</description>
 			<width>30</width>
 			<height>30</height>
-			<texture>other_textures/PointerFo.png</texture>
+			<texture>other_textures/Pointerfo.png</texture>
 		</control>
 
 		<control type="image" id="3">

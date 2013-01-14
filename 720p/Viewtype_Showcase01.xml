@@ -70,7 +70,7 @@
 							<posy>131</posy>
 							<width>162</width>
 							<height>241</height>
-							<texture background="true" diffuse="postermatteNF.png">$INFO[ListItem.Icon]</texture>
+							<texture background="true" diffuse="postermattenf.png">$INFO[ListItem.Icon]</texture>
 							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 						</control>
@@ -157,7 +157,7 @@
 						<posy>78</posy>
 						<width>225</width>
 						<height>325</height>
-						<texture>posterframeF.png</texture>
+						<texture>posterframef.png</texture>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="90,258" start="81" end="100" time="300" tween="back" easing="out" />
 							<effect type="fade" start="0" end="60" time="600" />
@@ -476,7 +476,7 @@
 					<width>261</width>
 					<height>147</height>
 					<aspectratio>stretch</aspectratio>
-					<texture background="true" diffuse="tv-landscape/landscapematteFO.png">$INFO[ListItem.Path,,extrathumbs/thumb1.jpg]</texture>
+					<texture background="true" diffuse="tv-landscape/landscapemattefo.png">$INFO[ListItem.Path,,extrathumbs/thumb1.jpg]</texture>
 					<fadetime>200</fadetime>
 				</control>
 				<control type="image">
@@ -484,7 +484,7 @@
 					<posy>20</posy>
 					<width>284</width>
 					<height>166</height>
-					<texture>tv-landscape/landscapeframeFO.png</texture>
+					<texture>tv-landscape/landscapeframefo.png</texture>
 				</control>
 				<control type="image">
 					<posx>1010</posx>
@@ -492,7 +492,7 @@
 					<width>261</width>
 					<height>147</height>
 					<aspectratio>stretch</aspectratio>
-					<texture background="true" diffuse="tv-landscape/landscapematteFO.png">$INFO[ListItem.Path,,extrathumbs/thumb2.jpg]</texture>
+					<texture background="true" diffuse="tv-landscape/landscapemattefo.png">$INFO[ListItem.Path,,extrathumbs/thumb2.jpg]</texture>
 					<fadetime>200</fadetime>
 				</control>
 				<control type="image">
@@ -500,7 +500,7 @@
 					<posy>190</posy>
 					<width>284</width>
 					<height>166</height>
-					<texture>tv-landscape/landscapeframeFO.png</texture>
+					<texture>tv-landscape/landscapeframefo.png</texture>
 				</control>
 			</control>
 			
@@ -557,7 +557,7 @@
 			<height>25</height>
 			<visible allowhiddenfocus="true">Control.IsVisible(58) + Control.HasFocus(68)</visible>
 			<texturesliderbackground>osd/osd_progress_back1.png</texturesliderbackground>
-			<textureslidernibfocus>ScrollBarV_Nib_Focus1.png</textureslidernibfocus>
+			<textureslidernibfocus>scrollbarv_nib_focus1.png</textureslidernibfocus>
 			<onup>7000</onup>
 			<ondown>58</ondown>
 			<showonepage>true</showonepage>

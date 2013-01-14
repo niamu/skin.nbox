@@ -24,7 +24,7 @@
 				<posy>174</posy>
 				<width>72</width>
 				<height>72</height>
-				<texture background="true">other_textures/OSD/PlaylistNF.png</texture>
+				<texture background="true">other_textures/osd/playlistnf.png</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(54)">Conditional</animation>
 			</control>
@@ -73,12 +73,12 @@
 						<posy>-</posy>
 						<width>60</width>
 						<height>60</height>
-						<texture>overlaywatched.png</texture>
+						<texture>watched.png</texture>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
 							<effect type="fade" start="80" end="100" time="400" />
 						</animation>
-						<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,overlaywatched.png)] | [!Container.Content(movies) + stringcompare(ListItem.Overlay,overlaywatched.png)]</visible>
+						<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [!Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 					</control>
 
 					<control type="image">
@@ -88,7 +88,7 @@
 						<height>155</height>
 						<texture>New.png</texture>
 						<colordiffuse>PanelDiffuse</colordiffuse>
-						<visible>Container.Content(TVShows) + !Skin.HasSetting(HideNewEpisodes) + !stringcompare(ListItem.Overlay,overlaywatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]</visible>
+						<visible>Container.Content(TVShows) + !Skin.HasSetting(HideNewEpisodes) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="105" height="160">
@@ -122,12 +122,12 @@
 						<posy>9</posy>
 						<width>18</width>
 						<height>15</height>
-						<texture>overlaywatchedpanel.png</texture>
+						<texture>watchedpanel.png</texture>
 						<animation type="Focus" reversible="false">
               <effect type="zoom" center="100,0" start="80" end="120" time="400" tween="back" easing="out" />
               <effect type="fade" start="80" end="100" time="400" />
             </animation>
-						<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,overlaywatched.png)] | [!Container.Content(movies) + stringcompare(ListItem.Overlay,overlaywatched.png)]</visible>
+						<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [!Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 					</control>
 
 					<control type="image">
@@ -140,7 +140,7 @@
 							<effect type="zoom" center="49,72" start="80" end="120" time="400" tween="back" easing="out" />
 							<effect type="fade" start="80" end="100" time="400" />
 						</animation>
-						<visible>Container.Content(TVShows) + !stringcompare(ListItem.Overlay,overlaywatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]</visible>
+						<visible>Container.Content(TVShows) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]</visible>
 					</control>
 				</focusedlayout>
 			</control>

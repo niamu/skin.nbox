@@ -60,7 +60,7 @@
 					<textcolor>Text-Filemode</textcolor>
 					<selectedcolor>mainblue</selectedcolor>
 					<label>$INFO[ListItem.label]</label>
-					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + stringcompare(ListItem.Overlay,overlaywatched.png) + [Skin.HasSetting(movieoverlays) | Skin.HasSetting(tvoverlays)]] | [Container.Content(movies) + IsEmpty(ListItem.foldername) + !substring(Container.Listitem.Label,..,left) + !Container.Content(genres) + Window.IsActive(videolibrary)]">Conditional</animation>
+					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + stringcompare(ListItem.Overlay,OverlayWatched.png) + [Skin.HasSetting(movieoverlays) | Skin.HasSetting(tvoverlays)]] | [Container.Content(movies) + IsEmpty(ListItem.foldername) + !substring(Container.Listitem.Label,..,left) + !Container.Content(genres) + Window.IsActive(videolibrary)]">Conditional</animation>
  					<visible>![Window.IsActive(Programs) | Window.IsActive(musicplaylist)]</visible>
 				</control>
 				<control type="label">
@@ -215,7 +215,7 @@
 					<font>LiberationSans_Regular_24</font>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Label]</label>
-					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + stringcompare(ListItem.Overlay,overlaywatched.png) + [Skin.HasSetting(movieoverlays) | Skin.HasSetting(tvoverlays)]] | [Container.Content(movies) + IsEmpty(ListItem.foldername) + !substring(Container.Listitem.Label,..,left) + !Container.Content(genres) + Window.IsActive(videolibrary)]">Conditional</animation>
+					<animation effect="slide" start="0,0" end="30,0" time="0" condition="[[Container.Content(movies) | Container.Content(tvshows) | Container.Content(seasons) | Container.Content(episodes)] + stringcompare(ListItem.Overlay,OverlayWatched.png) + [Skin.HasSetting(movieoverlays) | Skin.HasSetting(tvoverlays)]] | [Container.Content(movies) + IsEmpty(ListItem.foldername) + !substring(Container.Listitem.Label,..,left) + !Container.Content(genres) + Window.IsActive(videolibrary)]">Conditional</animation>
  					<visible>[!Window.IsActive(Programs) | Window.IsActive(musicplaylist)]</visible>
 				</control>
 				<control type="label">
@@ -563,7 +563,7 @@
 			<posy>454</posy>
 			<width>400</width>
 			<height>224</height>
-			<texture background="true" diffuse="tv-landscape/landscapematteFO.png">$INFO[ListItem.Icon]</texture>
+			<texture background="true" diffuse="tv-landscape/landscapemattefo.png">$INFO[ListItem.Icon]</texture>
 			<fadetime>400</fadetime>
 		</control>
 		<control type="image">
@@ -571,14 +571,14 @@
 			<posy>440</posy>
 			<width>430</width>
 			<height>252</height>
-			<texture>tv-landscape/landscapeframeFO.png</texture>
+			<texture>tv-landscape/landscapeframefo.png</texture>
 		</control>
 		<control type="image">
 			<posx>854</posx>
 			<posy>454</posy>
 			<width>400</width>
 			<height>224</height>
-			<texture background="true" diffuse="tv-landscape/landscapematteFO.png">$INFO[ListItem(-1).Icon]</texture>
+			<texture background="true" diffuse="tv-landscape/landscapemattefo.png">$INFO[ListItem(-1).Icon]</texture>
 			<animation type="Hidden">
 			<effect type="zoom" time="400" center="1040,600" start="100" end="180" tween="cubic" easing="in" />
 				<effect type="fade" time="400" center="1040,600" start="100" end="0" />
@@ -590,7 +590,7 @@
 			<posy>454</posy>
 			<width>400</width>
 			<height>224</height>
-			<texture background="true" diffuse="tv-landscape/landscapematteFO.png">$INFO[ListItem(1).Icon]</texture>
+			<texture background="true" diffuse="tv-landscape/landscapemattefo.png">$INFO[ListItem(1).Icon]</texture>
 			<animation type="Hidden">
 			<effect type="zoom" time="400" center="1040,600" start="100" end="180" tween="cubic" easing="in" />
 				<effect type="fade" time="400" center="1040,600" start="100" end="0" />
@@ -731,8 +731,8 @@
 			<width>25</width>
 			<height>460</height>
 			<visible allowhiddenfocus="true">Control.IsVisible(50) + Control.HasFocus(60)</visible>
-			<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-			<textureslidernibfocus>ScrollBarV_Nib_Focus1.png</textureslidernibfocus>
+			<texturesliderbackground border="0,14,0,14">scrollbarv.png</texturesliderbackground>
+			<textureslidernibfocus>scrollbarv_nib_focus1.png</textureslidernibfocus>
 			<onleft>50</onleft>
 			<onright>50</onright>
 			<showonepage>true</showonepage>

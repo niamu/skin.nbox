@@ -29,7 +29,7 @@
 				<posy>110</posy>
 				<width>650</width>
 				<height>500</height>
-				<texture fallback="DefaultAddonNone.png">$INFO[Container(450).ListItem.Icon]</texture>
+				<texture fallback="defaultaddonnone.png">$INFO[Container(450).ListItem.Icon]</texture>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<bordertexture border="5">white_box.png</bordertexture>
 				<bordersize>5</bordersize>
@@ -87,7 +87,7 @@
 					<control type="image">
 						<width>380</width>
 						<height>112</height>
-						<texture>other_textures/ButtonNF.png</texture>
+						<texture>other_textures/buttonnf.png</texture>
 					</control>
 
 					<control type="image">
@@ -120,7 +120,7 @@
 					<control type="image">
 						<width>380</width>
 						<height>112</height>
-						<texture>other_textures/ButtonFO.png</texture>
+						<texture>other_textures/buttonfo.png</texture>
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(450)">Conditional</animation>
 					</control>
 

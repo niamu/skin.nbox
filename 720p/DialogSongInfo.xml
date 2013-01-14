@@ -35,7 +35,7 @@
 				<height>255</height>
 				<texture>$INFO[ListItem.Icon]</texture>
 				<aspectratio align="center" aligny="top">keep</aspectratio>
-				<bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+				<bordertexture border="5">other_textures/buttonfo.png</bordertexture>
 				<bordersize>5</bordersize>
 			</control>
 
@@ -133,7 +133,7 @@
 				<posy>320</posy>
 				<width>255</width>
 				<height>44</height>				
-				<texture border="5">other_textures/ButtonFo.png</texture>
+				<texture border="5">other_textures/buttonfo.png</texture>
 				<visible>!ControlGroup(9000).HasFocus</visible>
 			</control>
 
@@ -142,7 +142,7 @@
 				<posy>320</posy>
 				<width>255</width>
 				<height>44</height>				
-				<texture border="2">other_textures/ButtonNF.png</texture>
+				<texture border="2">other_textures/buttonnf.png</texture>
 				<visible>ControlGroup(9000).HasFocus</visible>
 			</control>
 

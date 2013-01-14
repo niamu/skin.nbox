@@ -44,7 +44,7 @@
         <animation effect="slide" start="0,0" end="0,30" time="100">Hidden</animation>
       </control>
       <control type="label">
-        <description>Paused Label</description>
+        <description>paused Label</description>
         <posx>512</posx>
         <posy>-3</posy>
         <width>256</width>
@@ -60,7 +60,7 @@
         <animation effect="slide" start="0,0" end="0,30" time="100">Hidden</animation>
       </control>
       <control type="label">
-        <description>Paused Label</description>
+        <description>paused Label</description>
         <posx>512</posx>
         <posy>-3</posy>
         <width>256</width>
@@ -77,7 +77,7 @@
         <animation effect="slide" start="0,0" end="0,30" time="100">Hidden</animation>
       </control>
       <control type="label">
-        <description>Paused Label</description>
+        <description>paused Label</description>
         <posx>512</posx>
         <posy>-3</posy>
         <width>256</width>
@@ -1054,7 +1054,7 @@
         <!-- bottom panel - visible when paused/fast forwarding/rewinding -->
         <control type="group">
           <include>Animation_CommonFade</include>
-          <visible>Player.Paused | Player.Forwarding | Player.Rewinding</visible>
+          <visible>Player.paused | Player.Forwarding | Player.rewinding</visible>
           <control type="image">
             <posx>35</posx>
             <posy>646</posy>
@@ -1099,10 +1099,10 @@
             <font>Font_Reg15</font>
           </control>
         </control>
-        <!-- Pause button -->
+        <!-- pause button -->
         <control type="group">
           <include>Animation_CommonFade</include>
-          <visible>Player.Paused</visible>
+          <visible>Player.paused</visible>
           <control type="image">
             <posx>175</posx>
             <posy>630</posy>
@@ -1120,7 +1120,7 @@
             <font>Font_Reg15</font>
             <textcolor>FF363636</textcolor>
             <label>31043</label>
-            <!-- PAUSED -->
+            <!-- pauseD -->
           </control>
         </control>
         <!-- seek forward button -->
@@ -1217,7 +1217,7 @@
             <width>125</width>
             <height>18</height>
             <texture>home/nowplaying/osd_button_advance2.png</texture>
-            <visible>Player.Rewinding2x</visible>
+            <visible>Player.rewinding2x</visible>
           </control>
           <control type="label">
             <include>Animation_CommonFade</include>
@@ -1226,7 +1226,7 @@
             <font>Font_Reg15</font>
             <textcolor>FFececec</textcolor>
             <label>$LOCALIZE[31045] 2X</label>
-            <visible>Player.Rewinding2x</visible>
+            <visible>Player.rewinding2x</visible>
           </control>
           <control type="image">
             <include>Animation_CommonFade</include>
@@ -1234,7 +1234,7 @@
             <width>145</width>
             <height>18</height>
             <texture>home/nowplaying/osd_button_advance2.png</texture>
-            <visible>Player.Rewinding4x</visible>
+            <visible>Player.rewinding4x</visible>
           </control>
           <control type="label">
             <include>Animation_CommonFade</include>
@@ -1243,7 +1243,7 @@
             <font>Font_Reg15</font>
             <textcolor>FFececec</textcolor>
             <label>$LOCALIZE[31045] 4X</label>
-            <visible>Player.Rewinding4x</visible>
+            <visible>Player.rewinding4x</visible>
           </control>
           <control type="image">
             <include>Animation_CommonFade</include>
@@ -1251,7 +1251,7 @@
             <width>165</width>
             <height>18</height>
             <texture>home/nowplaying/osd_button_advance2.png</texture>
-            <visible>Player.Rewinding8x</visible>
+            <visible>Player.rewinding8x</visible>
           </control>
           <control type="label">
             <include>Animation_CommonFade</include>
@@ -1260,7 +1260,7 @@
             <font>Font_Reg15</font>
             <textcolor>FFececec</textcolor>
             <label>$LOCALIZE[31045] 8X</label>
-            <visible>Player.Rewinding8x</visible>
+            <visible>Player.rewinding8x</visible>
           </control>
           <control type="image">
             <include>Animation_CommonFade</include>
@@ -1268,7 +1268,7 @@
             <width>185</width>
             <height>18</height>
             <texture>home/nowplaying/osd_button_advance2.png</texture>
-            <visible>Player.Rewinding16x</visible>
+            <visible>Player.rewinding16x</visible>
           </control>
           <control type="label">
             <include>Animation_CommonFade</include>
@@ -1277,7 +1277,7 @@
             <font>Font_Reg15</font>
             <textcolor>FFececec</textcolor>
             <label>$LOCALIZE[31045] 16X</label>
-            <visible>Player.Rewinding16x</visible>
+            <visible>Player.rewinding16x</visible>
           </control>
           <control type="image">
             <include>Animation_CommonFade</include>
@@ -1285,7 +1285,7 @@
             <width>205</width>
             <height>18</height>
             <texture>home/nowplaying/osd_button_advance2.png</texture>
-            <visible>Player.Rewinding32x</visible>
+            <visible>Player.rewinding32x</visible>
           </control>
           <control type="label">
             <include>Animation_CommonFade</include>
@@ -1294,7 +1294,7 @@
             <font>Font_Reg15</font>
             <textcolor>FFececec</textcolor>
             <label>$LOCALIZE[31045] 32X</label>
-            <visible>Player.Rewinding32x</visible>
+            <visible>Player.rewinding32x</visible>
           </control>
         </control>
         <control type="image">
@@ -1313,7 +1313,7 @@
           <height>30</height>
           <width>30</width>
           <texture>home/nowplaying/nowplaying_pause.png</texture>
-          <visible>Player.Paused</visible>
+          <visible>Player.paused</visible>
         </control>
         <control type="label">
           <posx>480</posx>
@@ -1322,7 +1322,7 @@
           <label>[UPPERCASE]$LOCALIZE[31040][/UPPERCASE]</label>
           <font>Font_Reg18_Caps</font>
           <include>Animation_CommonFade</include>
-          <visible>!Player.Paused</visible>
+          <visible>!Player.paused</visible>
         </control>
         <control type="label">
           <posx>480</posx>
@@ -1331,7 +1331,7 @@
           <label>31043</label>
           <font>Font_Reg18_Caps</font>
           <include>Animation_CommonFade</include>
-          <visible>Player.Paused</visible>
+          <visible>Player.paused</visible>
         </control>
         <control type="label">
           <posx>480</posx>
@@ -1541,7 +1541,7 @@
         <effect type="slide" start="0" end="-114" time="700" tween="cubic" easing="in" delay="0"/>
         <effect type="fade" start="100" end="0" time="600"/>
       </animation>
-      <animation effect="rotate" end="-360" center="auto" time="6000" loop="true" reversible="false" condition="!Player.Paused">Conditional</animation>
+      <animation effect="rotate" end="-360" center="auto" time="6000" loop="true" reversible="false" condition="!Player.paused">Conditional</animation>
       <width>240</width>
       <height>240</height>
       <posx>125</posx>
@@ -1637,7 +1637,7 @@
       <textcolor>ab749a9a</textcolor>
       <label>[UPPERCASE]$LOCALIZE[31040][/UPPERCASE]</label>
       <font>Font_Info_Caps</font>
-      <visible>!Player.Paused</visible>
+      <visible>!Player.paused</visible>
       <animation effect="slide" time="400" tween="cubic" easing="inout" end="65" condition="!Skin.HasSetting(disablecdart)">Conditional</animation>
     </control>
     <control type="label">
@@ -1646,7 +1646,7 @@
       <textcolor>ab749a9a</textcolor>
       <label>31043</label>
       <font>Font_Info_Caps</font>
-      <visible>Player.Paused</visible>
+      <visible>Player.paused</visible>
       <animation effect="slide" time="400" tween="cubic" easing="inout" end="65" condition="!Skin.HasSetting(disablecdart)">Conditional</animation>
     </control>
     <control type="label">

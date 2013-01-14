@@ -90,7 +90,7 @@
 				<posy>340</posy>
 				<width>300</width>
 				<height>300</height>
-				<bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+				<bordertexture border="5">other_textures/buttonfo.png</bordertexture>
 				<bordersize>5</bordersize>
 				<texture>other_textures/unknown-user.png</texture>
 				<aspectratio align="right" aligny="top">keep</aspectratio>

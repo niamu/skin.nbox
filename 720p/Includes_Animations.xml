@@ -61,15 +61,15 @@
 		<animation effect="rotate" end="-360" center="auto" time="1500" loop="true" reversible="false" condition="Player.Forwarding8x">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="1000" loop="true" reversible="false" condition="Player.Forwarding16x">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="500" loop="true" reversible="false" condition="Player.Forwarding32x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="Player.Rewinding2x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="Player.Rewinding4x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="Player.Rewinding8x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="Player.Rewinding16x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding32x">Conditional</animation>
-		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="Player.Paused">Conditional</animation>
-		<animation effect="rotate" end="-28" center="auto" time="500" reversible="false" condition="Player.Paused">Conditional</animation>
-		<animation effect="rotate" end="-15" center="auto" time="500" delay="500" reversible="false" condition="Player.Paused">Conditional</animation>
-		<animation effect="rotate" end="-3" center="auto" time="250" delay="1000" reversible="false" condition="Player.Paused">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="Player.rewinding2x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="Player.rewinding4x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="Player.rewinding8x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="Player.rewinding16x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="Player.rewinding32x">Conditional</animation>
+		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="Player.paused">Conditional</animation>
+		<animation effect="rotate" end="-28" center="auto" time="500" reversible="false" condition="Player.paused">Conditional</animation>
+		<animation effect="rotate" end="-15" center="auto" time="500" delay="500" reversible="false" condition="Player.paused">Conditional</animation>
+		<animation effect="rotate" end="-3" center="auto" time="250" delay="1000" reversible="false" condition="Player.paused">Conditional</animation>
 	</include>
 	<include name="cdartspin">
 		<animation type="WindowOpen">
@@ -90,15 +90,15 @@
 		<animation effect="rotate" end="-360" center="auto" time="1500" loop="true" reversible="false" condition="Player.Forwarding8x">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="1000" loop="true" reversible="false" condition="Player.Forwarding16x">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="500" loop="true" reversible="false" condition="Player.Forwarding32x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="Player.Rewinding2x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="Player.Rewinding4x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="Player.Rewinding8x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="Player.Rewinding16x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding32x">Conditional</animation>
-		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="Player.Paused">Conditional</animation>
-		<animation effect="rotate" end="-28" center="auto" time="500" reversible="false" condition="Player.Paused">Conditional</animation>
-		<animation effect="rotate" end="-15" center="auto" time="500" delay="500" reversible="false" condition="Player.Paused">Conditional</animation>
-		<animation effect="rotate" end="-3" center="auto" time="250" delay="1000" reversible="false" condition="Player.Paused">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="Player.rewinding2x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="Player.rewinding4x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="Player.rewinding8x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="Player.rewinding16x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="Player.rewinding32x">Conditional</animation>
+		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="Player.paused">Conditional</animation>
+		<animation effect="rotate" end="-28" center="auto" time="500" reversible="false" condition="Player.paused">Conditional</animation>
+		<animation effect="rotate" end="-15" center="auto" time="500" delay="500" reversible="false" condition="Player.paused">Conditional</animation>
+		<animation effect="rotate" end="-3" center="auto" time="250" delay="1000" reversible="false" condition="Player.paused">Conditional</animation>
 	</include>
 	<include name="cdartspin3">
 		<animation type="WindowOpen">
@@ -119,15 +119,15 @@
 		<animation effect="rotate" end="-360" center="auto" time="1500" loop="true" reversible="false" condition="Player.Forwarding8x">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="1000" loop="true" reversible="false" condition="Player.Forwarding16x">Conditional</animation>
 		<animation effect="rotate" end="-360" center="auto" time="500" loop="true" reversible="false" condition="Player.Forwarding32x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="Player.Rewinding2x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="Player.Rewinding4x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="Player.Rewinding8x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="Player.Rewinding16x">Conditional</animation>
-		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding32x">Conditional</animation>
-		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="Player.Paused">Conditional</animation>
-		<animation effect="rotate" end="-28" center="auto" time="500" reversible="false" condition="Player.Paused">Conditional</animation>
-		<animation effect="rotate" end="-15" center="auto" time="500" delay="500" reversible="false" condition="Player.Paused">Conditional</animation>
-		<animation effect="rotate" end="-3" center="auto" time="250" delay="1000" reversible="false" condition="Player.Paused">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="3000" loop="true" reversible="false" condition="Player.rewinding2x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="2000" loop="true" reversible="false" condition="Player.rewinding4x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1500" loop="true" reversible="false" condition="Player.rewinding8x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="1000" loop="true" reversible="false" condition="Player.rewinding16x">Conditional</animation>
+		<animation effect="rotate" end="720" center="auto" time="500" loop="true" reversible="false" condition="Player.rewinding32x">Conditional</animation>
+		<animation effect="rotate" end="36000" center="auto" time="500000" loop="true" reversible="false" condition="Player.paused">Conditional</animation>
+		<animation effect="rotate" end="-28" center="auto" time="500" reversible="false" condition="Player.paused">Conditional</animation>
+		<animation effect="rotate" end="-15" center="auto" time="500" delay="500" reversible="false" condition="Player.paused">Conditional</animation>
+		<animation effect="rotate" end="-3" center="auto" time="250" delay="1000" reversible="false" condition="Player.paused">Conditional</animation>
 	</include>
 	
 	

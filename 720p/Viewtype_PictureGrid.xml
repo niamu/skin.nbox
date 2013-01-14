@@ -214,11 +214,11 @@
 				<posy>80</posy>
 				<width>25</width>
 				<height>576</height>
-				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>ScrollBarNib.png</textureslidernib>
-				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
+				<texturesliderbackground border="0,14,0,14">scrollbarv.png</texturesliderbackground>
+				<texturesliderbar border="0,14,0,14">scrollbarv_bar.png</texturesliderbar>
+				<texturesliderbarfocus border="0,14,0,14">scrollbarv_bar_focus.png</texturesliderbarfocus>
+				<textureslidernib>scrollbarnib.png</textureslidernib>
+				<textureslidernibfocus>scrollbarnib.png</textureslidernibfocus>
 				<onleft>510</onleft>
 				<onright>2</onright>
 				<showonepage>false</showonepage>

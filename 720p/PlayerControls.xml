@@ -203,7 +203,7 @@
 				<width>255</width>
 				<height>375</height>
         <texture border="2">$INFO[Player.Art(tvshow.poster)]</texture>
-        <bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+        <bordertexture border="5">other_textures/buttonfo.png</bordertexture>
 				<bordersize>5</bordersize>
 				<aspectratio align="right" aligny="top">stretch</aspectratio>
 				<visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
@@ -215,7 +215,7 @@
 				<width>255</width>
 				<height>375</height>
         <texture border="2">$INFO[Player.Art(poster)]</texture>
-        <bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+        <bordertexture border="5">other_textures/buttonfo.png</bordertexture>
 				<bordersize>5</bordersize>
 				<aspectratio align="right" aligny="top">stretch</aspectratio>
 				<visible>IsEmpty(VideoPlayer.TVShowTitle)</visible>
@@ -243,33 +243,33 @@
           <width>70</width>
           <height>70</height>
           <label>-</label>
-          <texturefocus>other_textures/OSD/PrevTrackFO.png</texturefocus>
-          <texturenofocus>other_textures/OSD/PrevTrackNF.png</texturenofocus>
+          <texturefocus>other_textures/osd/prevtrackfo.png</texturefocus>
+          <texturenofocus>other_textures/osd/prevtracknf.png</texturenofocus>
           <onclick>playercontrol(previous)</onclick>
         </control>
 
         <control type="button" id="402">
-          <description>Rewind</description>
+          <description>rewind</description>
           <posy>15</posy>
           <posx>5</posx>
           <width>50</width>
           <height>50</height>
           <label>-</label>
-          <texturefocus>other_textures/OSD/RewindFO.png</texturefocus>
-          <texturenofocus>other_textures/OSD/RewindNF.png</texturenofocus>
+          <texturefocus>other_textures/osd/rewindfo.png</texturefocus>
+          <texturenofocus>other_textures/osd/rewindnf.png</texturenofocus>
           <onclick>playercontrol(rewind)</onclick>
         </control>
 
         <control type="togglebutton" id="403">
-          <description>Play/Pause</description>
+          <description>Play/pause</description>
           <width>80</width>
           <height>80</height>
           <label>-</label>
-          <texturefocus>other_textures/OSD/PauseFO.png</texturefocus>
-          <texturenofocus>other_textures/OSD/PauseNF.png</texturenofocus>
-          <usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-          <alttexturefocus>other_textures/OSD/PlayFO.png</alttexturefocus>
-          <alttexturenofocus>other_textures/OSD/PlayNF.png</alttexturenofocus>
+          <texturefocus>other_textures/osd/pausefo.png</texturefocus>
+          <texturenofocus>other_textures/osd/pausenf.png</texturenofocus>
+          <usealttexture>Player.paused | Player.Forwarding | Player.rewinding</usealttexture>
+          <alttexturefocus>other_textures/osd/playfo.png</alttexturefocus>
+          <alttexturenofocus>other_textures/osd/playnf.png</alttexturenofocus>
           <onclick>playercontrol(play)</onclick>
         </control>
 
@@ -279,8 +279,8 @@
           <width>50</width>
           <height>50</height>
           <label>-</label>
-          <texturefocus>other_textures/OSD/StopFO.png</texturefocus>
-          <texturenofocus>other_textures/OSD/StopNF.png</texturenofocus>
+          <texturefocus>other_textures/osd/stopfo.png</texturefocus>
+          <texturenofocus>other_textures/osd/stopnf.png</texturenofocus>
           <onclick>playercontrol(stop)</onclick>
         </control>
 
@@ -290,8 +290,8 @@
           <width>50</width>
           <height>50</height>
           <label>-</label>
-          <texturefocus>other_textures/OSD/ForwardFO.png</texturefocus>
-          <texturenofocus>other_textures/OSD/ForwardNF.png</texturenofocus>
+          <texturefocus>other_textures/osd/forwardfo.png</texturefocus>
+          <texturenofocus>other_textures/osd/forwardnf.png</texturenofocus>
           <onclick>playercontrol(forward)</onclick>
         </control>
 
@@ -302,8 +302,8 @@
           <width>70</width>
           <height>70</height>
           <label>-</label>
-          <texturefocus>other_textures/OSD/NextTrackFO.png</texturefocus>
-          <texturenofocus>other_textures/OSD/NextTrackNF.png</texturenofocus>
+          <texturefocus>other_textures/osd/nexttrackfo.png</texturefocus>
+          <texturenofocus>other_textures/osd/nexttracknf.png</texturenofocus>
           <onclick>playercontrol(next)</onclick>
         </control>
 
@@ -329,7 +329,7 @@
             <width>305</width>
             <height>231</height>
             <texture border="2">other_textures/black-back.png</texture>
-            <bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+            <bordertexture border="5">other_textures/buttonfo.png</bordertexture>
             <bordersize>6</bordersize>
             <onleft>-</onleft>
             <onright>-</onright>

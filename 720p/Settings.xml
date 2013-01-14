@@ -24,7 +24,7 @@
 				<posy>174</posy>
 				<width>72</width>
 				<height>72</height>
-				<texture background="true">other_textures/OSD/PlaylistNF.png</texture>
+				<texture background="true">other_textures/osd/playlistnf.png</texture>
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(91)">Conditional</animation>
 			</control>
@@ -80,7 +80,7 @@
 						<posy>20</posy>
 						<width>100</width>
 						<height>100</height>
-						<texture >$INFO[ListItem.Thumb]</texture>
+						<texture>$INFO[ListItem.Thumb]</texture>
 						<aspectratio>scale</aspectratio>
 					</control>
 
@@ -98,7 +98,7 @@
 							<posy>0</posy>
 							<width>155</width>
 							<height>155</height>
-							<texture >button.png</texture>
+							<texture>button.png</texture>
 							<animation effect="fade" start="0" time="400" easing="out" tween="square">Focus</animation>
 						</control>
 
@@ -107,7 +107,7 @@
 							<posy>20</posy>
 							<width>100</width>
 							<height>100</height>
-							<texture >$INFO[ListItem.Thumb]</texture>
+							<texture>$INFO[ListItem.Thumb]</texture>
 							<aspectratio>scale</aspectratio>
 						</control>
 
