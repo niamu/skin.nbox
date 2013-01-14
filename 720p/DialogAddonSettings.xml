@@ -112,9 +112,9 @@
 				<posy>342</posy>
 				<width>255</width>
 				<height>255</height>
-				<texture fallback="DefaultAddon.png">$INFO[ListItem.Icon]</texture>
+				<texture fallback="defaultaddon.png">$INFO[ListItem.Icon]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
-				<bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+				<bordertexture border="5">other_textures/buttonfo.png</bordertexture>
 				<bordersize>5</bordersize>
 			</control>
 

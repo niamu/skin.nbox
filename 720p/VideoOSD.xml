@@ -48,8 +48,8 @@
 						<ondown>13</ondown>
 						<label>298</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/BookMarksFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/BookMarksNF.png</texturenofocus>
+						<texturefocus>other_textures/osd/BookMarksfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/BookMarksnf.png</texturenofocus>
 						<onclick>ActivateWindow(125)</onclick>
 					</control>
 
@@ -60,8 +60,8 @@
 						<ondown>14</ondown>
 						<label>13396</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/AudioFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/AudioNF.png</texturenofocus>
+						<texturefocus>other_textures/osd/Audiofo.png</texturefocus>
+						<texturenofocus>other_textures/osd/Audionf.png</texturenofocus>
 						<onclick>ActivateWindow(124)</onclick>
 					</control>
 
@@ -73,8 +73,8 @@
 						<label>13395</label>
 						<align>left</align>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/VideoFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/VideoNF.png</texturenofocus>
+						<texturefocus>other_textures/osd/Videofo.png</texturefocus>
+						<texturenofocus>other_textures/osd/Videonf.png</texturenofocus>
 						<onclick>ActivateWindow(123)</onclick>
 					</control>
 
@@ -85,8 +85,8 @@
 						<ondown>16</ondown>
 						<label>287</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/SubtitlesFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/SubtitlesNF.png</texturenofocus>
+						<texturefocus>other_textures/osd/Subtitlesfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/Subtitlesnf.png</texturenofocus>
 						<onclick>Close</onclick>
 						<onclick>XBMC.RunScript(script.xbmc.subtitles)</onclick>
 						<visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
@@ -98,8 +98,8 @@
 						<height>50</height>
 						<label>287</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/SubtitlesFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/SubtitlesNF.png</texturenofocus>
+						<texturefocus>other_textures/osd/Subtitlesfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/Subtitlesnf.png</texturenofocus>
 						<onclick>Close</onclick>
 						<onclick>XBMC.RunScript($INFO[Skin.String(SubtitlesPath)])</onclick>
 						<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
@@ -122,7 +122,7 @@
 						<animation type="VisibleChange">
 							<effect type="fade" start="0" end="100" time="600" />
 						</animation>
-						<visible>[VideoPlayer.Content(Movies) | !VideoPlayer.Content(Movies)] + !Player.Paused + !Window.IsVisible(fullscreeninfo)</visible>
+						<visible>[VideoPlayer.Content(Movies) | !VideoPlayer.Content(Movies)] + !Player.paused + !Window.IsVisible(fullscreeninfo)</visible>
 					</control>
 
 					<control type="image">
@@ -171,18 +171,19 @@
 							<description>Now Playing</description>
 							<posx>4</posx>
 							<posy>32</posy>
-							<width>700</width>
+							<width>830</width>
 							<label>[LOWERCASE]$INFO[VideoPlayer.Tagline][/LOWERCASE]</label>
 							<scroll>true</scroll>
 							<font>Medium</font>
 							<align>left</align>
+							<visible>[VideoPlayer.Content(Movies) | !VideoPlayer.Content(Movies)] + !Player.paused + !Window.IsVisible(fullscreeninfo)</visible>
 						</control>
 
 						<control type="label">
 							<description>Now Playing</description>
 							<posx>4</posx>
 							<posy>32</posy>
-							<width>700</width>
+							<width>830</width>
 							<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]Director: [/COLOR]][/COLOR]</label>
 							<scroll>true</scroll>
 							<font>Medium</font>
@@ -195,7 +196,7 @@
 							<visible>IsEmpty(VideoPlayer.Tagline)</visible>
 							<posx>4</posx>
 							<posy>32</posy>
-							<width>700</width>
+							<width>830</width>
 							<label>$INFO[VideoPlayer.TVShowTitle][COLOR Accent] $INFO[VideoPlayer.Season,Season ]$INFO[VideoPlayer.Episode, Episode ][/COLOR]</label>
 							<scroll>true</scroll>
 							<font>Medium</font>
@@ -208,7 +209,7 @@
 							<visible>IsEmpty(VideoPlayer.Tagline)</visible>
 							<posx>60</posx>
 							<posy>32</posy>
-							<width>700</width>
+							<width>830</width>
 							<label>$INFO[VideoPlayer.Artist] [COLOR Accent]$INFO[VideoPlayer.Album][/COLOR]</label>
 							<scroll>true</scroll>
 							<font>Medium</font>
@@ -231,35 +232,35 @@
 						<visible>player.playing</visible>
 						<control type="progress">
 							<description>Progressbar</description>
-							<posx>527</posx>
-							<posy>627</posy>
-							<width>380</width>
+							<posx>0</posx>
+							<posy>715</posy>
+							<width>1280</width>
 							<height>5</height>
 							<info>Player.Progress</info>
-							<texturebg>ProgressMidGreen.png</texturebg>
-							<midtexture>ProgressLime.png</midtexture>
+							<texturebg>progressmidgreen.png</texturebg>
+							<midtexture>progresslime.png</midtexture>
 						</control>
 
 						<control type="label">
-							<description>Player Times</description>
-							<posx>527</posx>
-							<posy>622</posy>
-							<width>100</width>
-							<label>[COLOR Accent]$INFO[Player.Time][/COLOR]</label>
-							<align>left</align>
-							<font>Small</font>
-						</control>
+              <description>Player Times</description>
+              <posx>40</posx>
+              <posy>670</posy>
+              <width>100</width>
+              <label>[COLOR Accent]$INFO[Player.Time][/COLOR]</label>
+              <align>left</align>
+              <font>Medium</font>
+            </control>
 
 						<control type="label">
-							<description>Player Times</description>
-							<posx>907</posx>
-							<posy>622</posy>
-							<width>100</width>
-							<label>$INFO[Player.TimeRemaining,-]</label>
-							<align>right</align>
-							<font>Small</font>
-							<textcolor>white</textcolor>
-						</control>
+              <description>Player Times</description>
+              <posx>1240</posx>
+              <posy>670</posy>
+              <width>100</width>
+              <label>$INFO[Player.TimeRemaining,-]</label>
+              <align>right</align>
+              <font>Medium</font>
+              <textcolor>white</textcolor>
+            </control>
 					</control>
 
 					<control type="button" id="12">
@@ -274,14 +275,14 @@
 						<ondown>-</ondown>
 						<label>210</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/PrevTrackGreenFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/PrevTrackNF.png</texturenofocus>
+						<texturefocus>other_textures/osd/prevtrackGreenfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/prevtracknf.png</texturenofocus>
 						<onclick>PlayerControl(Previous)</onclick>
 					</control>
 
 					<control type="button" id="13">
-						<description>Rewind</description>						
-						<posx>935</posx>
+						<description>rewind</description>						
+						<posx>540</posx>
 						<posy>609</posy>
 						<width>40</width>
 						<height>40</height>	
@@ -291,14 +292,14 @@
 						<ondown>-</ondown>
 						<label>31036</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/RewindGreenFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/RewindNF.png</texturenofocus>
-						<onclick>PlayerControl(Rewind)</onclick>
+						<texturefocus>other_textures/osd/rewindGreenfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/rewindnf.png</texturenofocus>
+						<onclick>PlayerControl(rewind)</onclick>
 					</control>
 
 					<control type="togglebutton" id="14">
-						<description>Play/Pause</description>
-						<posx>980</posx>
+						<description>Play/pause</description>
+						<posx>585</posx>
 						<posy>597</posy>
 						<width>66</width>
 						<height>66</height>
@@ -309,17 +310,17 @@
 						<label>31037</label>
 						<altlabel>208</altlabel>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/PauseGreenFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/PauseNF.png</texturenofocus>
-						<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-						<alttexturefocus>other_textures/OSD/PlayGreenFO.png</alttexturefocus>
-						<alttexturenofocus>other_textures/OSD/PlayNF.png</alttexturenofocus>
+						<texturefocus>other_textures/osd/pauseGreenfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/pausenf.png</texturenofocus>
+						<usealttexture>Player.paused | Player.Forwarding | Player.rewinding</usealttexture>
+						<alttexturefocus>other_textures/osd/playGreenfo.png</alttexturefocus>
+						<alttexturenofocus>other_textures/osd/playnf.png</alttexturenofocus>
 						<onclick>PlayerControl(Play)</onclick>
 					</control>
 
 					<control type="button" id="15">
 						<description>Stop</description>						
-						<posx>1050</posx>
+						<posx>655</posx>
 						<posy>609</posy>
 						<width>40</width>
 						<height>40</height>
@@ -329,14 +330,14 @@
 						<ondown>-</ondown>
 						<label>31038</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/StopGreenFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/StopNF.png</texturenofocus>
+						<texturefocus>other_textures/osd/stopGreenfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/stopnf.png</texturenofocus>
 						<onclick>PlayerControl(Stop)</onclick>
 					</control>
 
 					<control type="button" id="16">
 						<description>Fast Forward</description>						
-						<posx>1096</posx>
+						<posx>700</posx>
 						<posy>609</posy>
 						<width>40</width>
 						<height>40</height>
@@ -346,8 +347,8 @@
 						<ondown>-</ondown>
 						<label>31039</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/ForwardGreenFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/ForwardNF.png</texturenofocus>
+						<texturefocus>other_textures/osd/forwardGreenfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/forwardnf.png</texturenofocus>
 						<onclick>PlayerControl(Forward)</onclick>
 					</control>
 
@@ -363,8 +364,8 @@
 						<ondown>-</ondown>
 						<label>209</label>
 						<font>-</font>
-						<texturefocus>other_textures/OSD/NextTrackGreenFO.png</texturefocus>
-						<texturenofocus>other_textures/OSD/NextTrackNF.png</texturenofocus>
+						<texturefocus>other_textures/osd/nexttrackGreenfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/nexttracknf.png</texturenofocus>
 						<onclick>PlayerControl(Next)</onclick>
 					</control>
 

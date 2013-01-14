@@ -54,7 +54,7 @@
 		<focusedcolor>White</focusedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<texturefocus border="5">tile.png</texturefocus>
-		<texturenofocus border="2">other_textures/ButtonNF.png</texturenofocus>
+		<texturenofocus border="2">other_textures/buttonnf.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</default>
 
@@ -69,10 +69,10 @@
 		<textcolor>White</textcolor>
 		<focusedcolor>White</focusedcolor>
 		<disabledcolor>Red</disabledcolor>
-		<texturenofocus border="2">other_textures/ButtonNF.png</texturenofocus>
-		<texturefocus border="5">other_textures/ButtonFo.png</texturefocus>
-		<alttexturenofocus border="2">other_textures/ButtonNF.png</alttexturenofocus>
-		<alttexturefocus border="5">other_textures/ButtonFo.png</alttexturefocus>
+		<texturenofocus border="2">other_textures/buttonnf.png</texturenofocus>
+		<texturefocus border="5">other_textures/buttonfo.png</texturefocus>
+		<alttexturenofocus border="2">other_textures/buttonnf.png</alttexturenofocus>
+		<alttexturefocus border="5">other_textures/buttonfo.png</alttexturefocus>
 		<align>center</align>
 		<aligny>center</aligny>
 		<pulseonselect>false</pulseonselect>
@@ -92,10 +92,10 @@
 		<disabledcolor>Red</disabledcolor>
 		<radiowidth>30</radiowidth>
 		<radioheight>30</radioheight>
-		<texturenofocus border="2">other_textures/ButtonNF.png</texturenofocus>
-		<texturefocus border="5">other_textures/ButtonFo.png</texturefocus>
-		<textureradiofocus>other_textures/RadiobuttonFo.png</textureradiofocus>
-		<textureradionofocus>other_textures/RadiobuttonNF.png</textureradionofocus>
+		<texturenofocus border="2">other_textures/buttonnf.png</texturenofocus>
+		<texturefocus border="5">other_textures/buttonfo.png</texturefocus>
+		<textureradiofocus>other_textures/Radiobuttonfo.png</textureradiofocus>
+		<textureradionofocus>other_textures/Radiobuttonnf.png</textureradionofocus>
 		<textoffsetx>20</textoffsetx>
 		<pulseonselect>false</pulseonselect>
 	</default>
@@ -109,12 +109,12 @@
 		<font>Small</font>
 		<spinwidth>26</spinwidth>
 		<spinheight>26</spinheight>
-		<texturenofocus border="2">other_textures/ButtonNF.png</texturenofocus>
-		<texturefocus border="5">other_textures/ButtonFo.png</texturefocus>
-		<textureup>other_textures/ArrowUpNF.png</textureup>
-		<texturedown>other_textures/ArrowDownNF.png</texturedown>
-		<textureupfocus>other_textures/ArrowUpFo.png</textureupfocus>
-		<texturedownfocus>other_textures/ArrowDownFo.png</texturedownfocus>
+		<texturenofocus border="2">other_textures/buttonnf.png</texturenofocus>
+		<texturefocus border="5">other_textures/buttonfo.png</texturefocus>
+		<textureup>other_textures/arrowupnf.png</textureup>
+		<texturedown>other_textures/arrowdownnf.png</texturedown>
+		<textureupfocus>other_textures/arrowupfo.png</textureupfocus>
+		<texturedownfocus>other_textures/arrowdownfo.png</texturedownfocus>
 		<textcolor>White</textcolor>
 		<focusedcolor>White</focusedcolor>
 		<disabledcolor>Red</disabledcolor>
@@ -132,10 +132,10 @@
 		<width>15</width>
 		<spinwidth>26</spinwidth>
 		<spinheight>26</spinheight>
-		<textureup>other_textures/ArrowUpNF.png</textureup>
-		<texturedown>other_textures/ArrowDownNF.png</texturedown>
-		<textureupfocus>other_textures/ArrowUpFo.png</textureupfocus>
-		<texturedownfocus>other_textures/ArrowDownFo.png</texturedownfocus>
+		<textureup>other_textures/arrowupnf.png</textureup>
+		<texturedown>other_textures/arrowdownnf.png</texturedown>
+		<textureupfocus>other_textures/arrowupfo.png</textureupfocus>
+		<texturedownfocus>other_textures/arrowdownfo.png</texturedownfocus>
 		<font>Small</font>
 		<textcolor>White</textcolor>
 		<focusedcolor>White</focusedcolor>
@@ -152,13 +152,13 @@
 		<posy>0</posy>
 		<height>44</height>
 		<width>300</width>
-		<texturenofocus border="2">other_textures/ButtonNF.png</texturenofocus>
-		<texturefocus border="5">other_textures/ButtonFO.png</texturefocus>
+		<texturenofocus border="2">other_textures/buttonnf.png</texturenofocus>
+		<texturefocus border="5">other_textures/buttonfo.png</texturefocus>
 		<sliderwidth>150</sliderwidth>
 		<sliderheight>15</sliderheight>
-		<texturesliderbar>other_textures/OSD/slider_bg.png</texturesliderbar>
-		<textureslidernib border="2">other_textures/OSD/SliderNibNF.png</textureslidernib>
-		<textureslidernibfocus border="2">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
+		<texturesliderbar>other_textures/osd/slider_bg.png</texturesliderbar>
+		<textureslidernib border="2">other_textures/osd/slidernibnf.png</textureslidernib>
+		<textureslidernibfocus border="2">other_textures/osd/slidernibfo.png</textureslidernibfocus>
 		<font>Small</font>
 		<textcolor>White</textcolor>
 		<focusedcolor>White</focusedcolor>
@@ -170,9 +170,9 @@
 	<default type="progress">
 		<posx>150</posx>
 		<posy>325</posy>
-		<texturebg border="6">other_textures/OSD/ProgressBack.png</texturebg>
+		<texturebg border="6">other_textures/osd/progressback.png</texturebg>
 		<lefttexture>-</lefttexture>
-		<midtexture border="6">other_textures/OSD/ProgressMid.png</midtexture>
+		<midtexture border="6">other_textures/osd/progressmid.png</midtexture>
 		<righttexture>-</righttexture>
 		<overlaytexture>-</overlaytexture>
 	</default>
@@ -184,18 +184,18 @@
 		<height>15</height>
 		<texturefocus>-</texturefocus>
 		<texturenofocus>-</texturenofocus>
-		<texturesliderbar>other_textures/OSD/slider_bg_2.png</texturesliderbar>
-		<textureslidernib border="2">other_textures/OSD/SliderNibNF.png</textureslidernib>
-		<textureslidernibfocus border="2">other_textures/OSD/SliderNibFO.png</textureslidernibfocus>
+		<texturesliderbar>other_textures/osd/slider_bg_2.png</texturesliderbar>
+		<textureslidernib border="2">other_textures/osd/slidernibnf.png</textureslidernib>
+		<textureslidernibfocus border="2">other_textures/osd/slidernibfo.png</textureslidernibfocus>
 	</default>
 
 	<default type="scrollbar">
 		<width>25</width>
-		<texturesliderbackground border="0,14,0,14">other_textures/ScrollBarV.png</texturesliderbackground>
-		<texturesliderbar border="0,14,0,14">other_textures/ScrollBarV_bar_focus.png</texturesliderbar>
-		<texturesliderbarfocus border="0,14,0,14">other_textures/ScrollBarV_bar_focus.png</texturesliderbarfocus>
-		<textureslidernib>other_textures/ScrollBarNib.png</textureslidernib>
-		<textureslidernibfocus>other_textures/ScrollBarNib.png</textureslidernibfocus>
+		<texturesliderbackground border="0,14,0,14">other_textures/scrollbarv.png</texturesliderbackground>
+		<texturesliderbar border="0,14,0,14">other_textures/scrollbarv_bar_focus.png</texturesliderbar>
+		<texturesliderbarfocus border="0,14,0,14">other_textures/scrollbarv_bar_focus.png</texturesliderbarfocus>
+		<textureslidernib>other_textures/scrollbarnib.png</textureslidernib>
+		<textureslidernibfocus>other_textures/scrollbarnib.png</textureslidernibfocus>
 		<showonepage>true</showonepage>
 		<orientation>vertical</orientation>
 	</default>

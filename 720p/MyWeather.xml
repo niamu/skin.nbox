@@ -592,7 +592,7 @@
 	<posy>480</posy>
 	<height>80</height>
 	<width>80</width>
-	<texture flipx="true">other_textures/OSD/PlaylistNF.png</texture>
+	<texture flipx="true">other_textures/osd/playlistnf.png</texture>
 	<animation type="Conditional" condition="!ControlGroup(7000).HasFocus()">
 		<effect type="slide" start="0,0" end="-400,0" time="300" easing="out" tween="cubic" />
 	</animation>
@@ -702,15 +702,15 @@
 			<textcolor>-</textcolor>
 			<focusedcolor>-</focusedcolor>
 			<disabledcolor>TextDisabled</disabledcolor>
-			<texturefocus>ButtonFO2Wide.png</texturefocus>
+			<texturefocus>buttonfo2Wide.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>false</pulseonselect>
 			<spinwidth>24</spinwidth>
 			<spinheight>24</spinheight>
-			<textureup>other_textures/ArrowUpNF.png</textureup>
-			<texturedown>other_textures/ArrowDownNF.png</texturedown>
-			<textureupfocus>other_textures/ArrowUpFo.png</textureupfocus>
-			<texturedownfocus>other_textures/ArrowDownFo.png</texturedownfocus>
+			<textureup>other_textures/arrowupnf.png</textureup>
+			<texturedown>other_textures/arrowdownnf.png</texturedown>
+			<textureupfocus>other_textures/arrowupfo.png</textureupfocus>
+			<texturedownfocus>other_textures/arrowdownfo.png</texturedownfocus>
 			<reverse>yes</reverse>
 		</control>
 	</control>

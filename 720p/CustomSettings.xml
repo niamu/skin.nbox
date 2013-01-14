@@ -25,7 +25,7 @@
 				<control type="image">
 					<width>300</width>
 					<height>44</height>
-					<texture border="2">other_textures/ButtonNF.png</texture>
+					<texture border="2">other_textures/buttonnf.png</texture>
 				</control>
 
 				<control type="label">
@@ -41,7 +41,7 @@
 				<control type="image">
 					<width>300</width>
 					<height>44</height>
-					<texture border="5">other_textures/ButtonFO.png</texture>
+					<texture border="5">other_textures/buttonfo.png</texture>
 					<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(100)">Conditional</animation>
 				</control>
 
@@ -394,8 +394,8 @@
 						<label>21398</label>
 						<!--<textcolor>grey2</textcolor>
 						<focusedcolor>white</focusedcolor>
-						<texturefocus>MenuItemFO.png</texturefocus>
-						<texturenofocus>MenuItemNF.png</texturenofocus>-->
+						<texturefocus>menuitemfo.png</texturefocus>
+						<texturenofocus>menuitemnf.png</texturenofocus>-->
 						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
 						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
 					</control>

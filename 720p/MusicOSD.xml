@@ -48,8 +48,8 @@
 					<ondown>13</ondown>
 					
 					<font>-</font>
-					<texturefocus>other_textures/OSD/PlaylistFO.png</texturefocus>
-					<texturenofocus>other_textures/OSD/PlaylistNF.png</texturenofocus>
+					<texturefocus>other_textures/osd/playlistfo.png</texturefocus>
+					<texturenofocus>other_textures/osd/playlistnf.png</texturenofocus>
 					<onclick>ActivateWindow(MusicPlaylist)</onclick>
 				</control>
 
@@ -76,14 +76,14 @@
 					<onup>12</onup>
 					<ondown>-</ondown>
 					
-					<texturefocus>other_textures/OSD/PrevTrackFO.png</texturefocus>
-					<texturenofocus>other_textures/OSD/PrevTrackNF.png</texturenofocus>
+					<texturefocus>other_textures/osd/prevtrackfo.png</texturefocus>
+					<texturenofocus>other_textures/osd/prevtracknf.png</texturenofocus>
 					<onclick>PlayerControl(Previous)</onclick>
 				</control>
 
 
 				<control type="button" id="14">
-					<description>Rewind</description>
+					<description>rewind</description>
 					<posx>890</posx>
 					<posy>610</posy>
 					<width>50</width>
@@ -97,13 +97,13 @@
 					<onup>500</onup>
 					<ondown>-</ondown>
 					
-					<texturefocus>other_textures/OSD/RewindFO.png</texturefocus>
-					<texturenofocus>other_textures/OSD/RewindNF.png</texturenofocus>
-					<onclick>PlayerControl(Rewind)</onclick>
+					<texturefocus>other_textures/osd/rewindfo.png</texturefocus>
+					<texturenofocus>other_textures/osd/rewindnf.png</texturenofocus>
+					<onclick>PlayerControl(rewind)</onclick>
 				</control>
 
 				<control type="togglebutton" id="15">
-					<description>Play/Pause</description>
+					<description>Play/pause</description>
 					<posx>945</posx>
 					<posy>595</posy>
 					<width>80</width>
@@ -117,11 +117,11 @@
 					<onup>500</onup>
 					<ondown>-</ondown>
 					
-					<texturefocus>other_textures/OSD/PauseFO.png</texturefocus>
-					<texturenofocus>other_textures/OSD/PauseNF.png</texturenofocus>
-					<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-					<alttexturefocus>other_textures/OSD/PlayFO.png</alttexturefocus>
-					<alttexturenofocus>other_textures/OSD/PlayNF.png</alttexturenofocus>
+					<texturefocus>other_textures/osd/pausefo.png</texturefocus>
+					<texturenofocus>other_textures/osd/pausenf.png</texturenofocus>
+					<usealttexture>Player.paused | Player.Forwarding | Player.rewinding</usealttexture>
+					<alttexturefocus>other_textures/osd/playfo.png</alttexturefocus>
+					<alttexturenofocus>other_textures/osd/playnf.png</alttexturenofocus>
 					<onclick>PlayerControl(Play)</onclick>
 				</control>
 
@@ -140,8 +140,8 @@
 					<onup>19</onup>
 					<ondown>-</ondown>
 					
-					<texturefocus>other_textures/OSD/StopFO.png</texturefocus>
-					<texturenofocus>other_textures/OSD/StopNF.png</texturenofocus>
+					<texturefocus>other_textures/osd/stopfo.png</texturefocus>
+					<texturenofocus>other_textures/osd/stopnf.png</texturenofocus>
 					<onclick>PlayerControl(Stop)</onclick>
 				</control>
 
@@ -159,8 +159,8 @@
 					<onup>20</onup>
 					<ondown>-</ondown>
 					
-					<texturefocus>other_textures/OSD/ForwardFO.png</texturefocus>
-					<texturenofocus>other_textures/OSD/ForwardNF.png</texturenofocus>
+					<texturefocus>other_textures/osd/forwardfo.png</texturefocus>
+					<texturenofocus>other_textures/osd/forwardnf.png</texturenofocus>
 					<onclick>PlayerControl(Forward)</onclick>
 				</control>
 
@@ -181,8 +181,8 @@
 					<onup>21</onup>
 					<ondown>-</ondown>
 					
-					<texturefocus>other_textures/OSD/NextTrackFO.png</texturefocus>
-					<texturenofocus>other_textures/OSD/NextTrackNF.png</texturenofocus>
+					<texturefocus>other_textures/osd/nexttrackfo.png</texturefocus>
+					<texturenofocus>other_textures/osd/nexttracknf.png</texturenofocus>
 					<onclick>PlayerControl(Next)</onclick>
 				</control>	
 				
@@ -210,8 +210,8 @@
 					<ondown>15</ondown>
 					<label>12006</label>
 					<font>-</font>
-					<texturefocus>other_textures/OSD/VizFO_black.png</texturefocus>
-					<texturenofocus>other_textures/OSD/VizNF.png</texturenofocus>
+					<texturefocus>other_textures/osd/VizFO_black.png</texturefocus>
+					<texturenofocus>other_textures/osd/Viznf.png</texturenofocus>
 				</control>
 
 				<control type="button" id="19">
@@ -221,8 +221,8 @@
 					<ondown>16</ondown>
 					<label>$LOCALIZE[250] $LOCALIZE[21417]</label>
 					<font>-</font>
-					<texturefocus>other_textures/OSD/PresetSettingsFO_black.png</texturefocus>
-					<texturenofocus>other_textures/OSD/PresetSettingsNF.png</texturenofocus>
+					<texturefocus>other_textures/osd/PresetSettingsFO_black.png</texturefocus>
+					<texturenofocus>other_textures/osd/PresetSettingsnf.png</texturenofocus>
 					<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 				</control>
 
@@ -233,8 +233,8 @@
 					<ondown>17</ondown>
 					<label>31040</label>
 					<font>-</font>
-					<texturefocus>other_textures/OSD/PreFO_black.png</texturefocus>
-					<texturenofocus>other_textures/OSD/PreNF.png</texturenofocus>
+					<texturefocus>other_textures/osd/PreFO_black.png</texturefocus>
+					<texturenofocus>other_textures/osd/Prenf.png</texturenofocus>
 					<onclick>ActivateWindow(122)</onclick>
 				</control>
 
@@ -245,11 +245,11 @@
 					<ondown>18</ondown>
 					<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
 					<font>-</font>
-					<texturefocus>other_textures/OSD/RandomOffFO_black.png</texturefocus>
-					<texturenofocus>other_textures/OSD/RandomOffNF.png</texturenofocus>
+					<texturefocus>other_textures/osd/RandomOffFO_black.png</texturefocus>
+					<texturenofocus>other_textures/osd/RandomOffnf.png</texturenofocus>
 					<usealttexture>Playlist.IsRandom</usealttexture>
-					<alttexturefocus>other_textures/OSD/RandomOnFO_black.png</alttexturefocus>
-					<alttexturenofocus>other_textures/OSD/RandomOnNF.png</alttexturenofocus>
+					<alttexturefocus>other_textures/osd/RandomOnFO_black.png</alttexturefocus>
+					<alttexturenofocus>other_textures/osd/RandomOnnf.png</alttexturenofocus>
 					<onclick>XBMC.PlayerControl(Random)</onclick>
 				</control>
 

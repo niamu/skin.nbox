@@ -40,7 +40,7 @@
 							<posy>131</posy>
 							<width>162</width>
 							<height>241</height>
-							<texture background="true" diffuse="postermatteNF.png">$INFO[ListItem.Icon]</texture>
+							<texture background="true" diffuse="postermattenf.png">$INFO[ListItem.Icon]</texture>
 							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 						</control>
@@ -76,7 +76,7 @@
 								<effect type="zoom" center="49,72" start="80" end="120" time="400" tween="back" easing="out" />
 								<effect type="fade" start="80" end="100" time="400" />
 							</animation>
-							<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,overlaywatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,overlaywatched.png)]</visible>
+							<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 						</control>
 					</control>
 				</itemlayout>
@@ -122,7 +122,7 @@
 								<effect type="zoom" center="49,72" start="80" end="120" time="400" tween="back" easing="out" />
 								<effect type="fade" start="80" end="100" time="400" />
 							</animation>
-							<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,overlaywatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,overlaywatched.png)]</visible>
+							<visible>[Container.Content(movies) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 						</control>
 
 						<control type="image">
@@ -348,7 +348,7 @@
 			<height>25</height>
 			<visible allowhiddenfocus="true">Control.IsVisible(58) + Control.HasFocus(68)</visible>
 			<texturesliderbackground>osd/osd_progress_back1.png</texturesliderbackground>
-			<textureslidernibfocus>ScrollBarV_Nib_Focus1.png</textureslidernibfocus>
+			<textureslidernibfocus>scrollbarv_nib_focus1.png</textureslidernibfocus>
 			<onup>7000</onup>
 			<ondown>58</ondown>
 			<showonepage>true</showonepage>

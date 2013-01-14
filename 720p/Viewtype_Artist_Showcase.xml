@@ -45,7 +45,7 @@
 							<posy>131</posy>
 							<width>150</width>
 							<height>150</height>
-							<texture background="true" diffuse="postermatteNF.png">$INFO[ListItem.Icon]</texture>
+							<texture background="true" diffuse="postermattenf.png">$INFO[ListItem.Icon]</texture>
 							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
 						</control>
@@ -300,7 +300,7 @@
 			<height>25</height>
 			<visible allowhiddenfocus="true">Control.IsVisible(52) + Control.HasFocus(68)</visible>
 			<texturesliderbackground>osd/osd_progress_back1.png</texturesliderbackground>
-			<textureslidernibfocus>ScrollBarV_Nib_Focus1.png</textureslidernibfocus>
+			<textureslidernibfocus>scrollbarv_nib_focus1.png</textureslidernibfocus>
 			<onup>7000</onup>
 			<ondown>58</ondown>
 			<showonepage>true</showonepage>

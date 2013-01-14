@@ -42,7 +42,7 @@
 					<control type="image">
 						<width>440</width>
 						<height>90</height>
-						<texture border="2">other_textures/ButtonNF.png</texture>
+						<texture border="2">other_textures/buttonnf.png</texture>
 					</control>
 
 					<control type="image">
@@ -50,7 +50,7 @@
 						<posy>8</posy>
 						<width>74</width>
 						<height>74</height>
-						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+						<texture fallback="defaultaddonnone.png">$INFO[Listitem.Icon]</texture>
 					</control>
 
 					<control type="label">
@@ -75,7 +75,7 @@
 					<control type="image">
 						<width>440</width>
 						<height>90</height>
-						<texture border="5">other_textures/ButtonFO.png</texture>
+						<texture border="5">other_textures/buttonfo.png</texture>
 					</control>
 
 					<control type="image">
@@ -83,7 +83,7 @@
 						<posy>8</posy>
 						<width>74</width>
 						<height>74</height>
-						<texture fallback="DefaultAddonNone.png">$INFO[Listitem.Icon]</texture>
+						<texture fallback="defaultaddonnone.png">$INFO[Listitem.Icon]</texture>
 					</control>
 
 					<control type="label">
@@ -111,9 +111,9 @@
 				<posy>218</posy>
 				<width>200</width>
 				<height>300</height>
-				<texture fallback="DefaultAddonNone.png">$INFO[Container(450).ListItem.Icon]</texture>
+				<texture fallback="defaultaddonnone.png">$INFO[Container(450).ListItem.Icon]</texture>
 				<aspectratio align="center" aligny="bottom">keep</aspectratio>
-				<bordertexture border="5">other_textures/ButtonFO.png</bordertexture>
+				<bordertexture border="5">other_textures/buttonfo.png</bordertexture>
 				<bordersize>5</bordersize>
 			</control>
 

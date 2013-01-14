@@ -7,15 +7,14 @@
 		<include>GlobalOverlay</include>
 
 		<control type="group">
-			<posx>490</posx>
+			<posx>515</posx>
 			<posy>324</posy>
-
 
 			<control type="image">
 				<description>background image</description>
 				<posx>0</posx>
 				<posy>0</posy>
-				<width>300</width>
+				<width>250</width>
 				<height>78</height>
 				<texture border="20">button.png</texture>
 			</control>
@@ -28,14 +27,14 @@
 				<height>32</height>
 				<texture>other_textures/busy.png</texture>
 				<aspectratio>keep</aspectratio>
-				<animation effect="rotate" start="0" end="360" center="36,36" time="1200" loop="true" condition="true">conditional</animation>
+				<animation effect="rotate" start="360" end="0" center="36,36" time="1200" loop="true" condition="true">conditional</animation>
 			</control>
 
 			<control type="label">
 				<description>Busy label</description>
 				<posx>70</posx>
 				<posy>20</posy>
-				<width>280</width>
+				<width>200</width>
 				<height>32</height>
 				<align>left</align>
 				<font>Medium</font>
@@ -43,9 +42,5 @@
 			</control>
 
 		</control>
-
-		
-
 	</controls>
-
 </window>

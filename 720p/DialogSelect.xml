@@ -23,7 +23,7 @@
 				<posy>110</posy>
 				<width>650</width>
 				<height>500</height>
-				<texture fallback="DefaultAddonNone.png">$INFO[Container(3).ListItem.Icon]</texture>
+				<texture fallback="defaultaddonnone.png">$INFO[Container(3).ListItem.Icon]</texture>
 				<aspectratio align="center" aligny="center">keep</aspectratio>
 				<bordertexture border="5">white_box.png</bordertexture>
 				<bordersize>5</bordersize>

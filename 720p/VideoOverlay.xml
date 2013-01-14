@@ -103,13 +103,13 @@
 
 				<control type="progress">
 					<description>Progressbar</description>
-					<posx>75</posx>
-					<posy>82</posy>
-					<width>1130</width>
+					<posx>0</posx>
+					<posy>100</posy>
+					<width>1280</width>
 					<height>5</height>
 					<info>Player.Progress</info>
-					<texturebg>ProgressMidGreen.png</texturebg>
-					<midtexture>ProgressLime.png</midtexture>
+					<texturebg>progressmidgreen.png</texturebg>
+					<midtexture>progresslime.png</midtexture>
 				</control>
 
 			</control>

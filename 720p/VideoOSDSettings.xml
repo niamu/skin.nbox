@@ -46,8 +46,8 @@
 				<description>Default RadioButton</description>
 				<align>left</align>
         	    <focusedcolor>Accent</focusedcolor>
-      <textureradioon>other_textures/RadioButton2FO.png</textureradioon>
-      <textureradiooff>other_textures/RadioButton2NF.png</textureradiooff>
+      <textureradioon>other_textures/RadioButton2fo.png</textureradioon>
+      <textureradiooff>other_textures/RadioButton2nf.png</textureradiooff>
 
 			</control>
 
@@ -57,9 +57,9 @@
 				<reverse>yes</reverse>
         	    <focusedcolor>Accent</focusedcolor>
 				
-      <textureup>other_textures/ArrowUpFO.png</textureup>
+      <textureup>other_textures/arrowupfo.png</textureup>
       <textureupfocus>other_textures/ArrowUpG.png</textureupfocus>
-      <texturedown>other_textures/ArrowDownFO.png</texturedown>
+      <texturedown>other_textures/arrowdownfo.png</texturedown>
       <texturedownfocus>other_textures/ArrowDownG.png</texturedownfocus>
 				
 				

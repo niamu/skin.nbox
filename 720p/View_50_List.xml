@@ -26,7 +26,7 @@
         <posy>174</posy>
         <width>72</width>
         <height>72</height>
-        <texture background="true">other_textures/OSD/PlaylistNF.png</texture>
+        <texture background="true">other_textures/osd/playlistnf.png</texture>
         <aspectratio scalediffuse="false">stretch</aspectratio>
         <animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(54)">Conditional</animation>
       </control>

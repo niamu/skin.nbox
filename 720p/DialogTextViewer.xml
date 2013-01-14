@@ -52,7 +52,7 @@
 				<onup>61</onup>
 				<texturesliderbackground></texturesliderbackground>
 				<textureslidernib>bar.png</textureslidernib>
-				<textureslidernibfocus>other_textures/ButtonFO.png</textureslidernibfocus>
+				<textureslidernibfocus>other_textures/buttonfo.png</textureslidernibfocus>
 				<texturesliderbar></texturesliderbar>
 				<texturesliderbarfocus></texturesliderbarfocus>
 				<showonepage>true</showonepage>

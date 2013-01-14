@@ -97,7 +97,7 @@
 					             <posy>3</posy>
 					             <width>50</width>
 					             <height>50</height>
-					             <texture >disc.png</texture>
+					             <texture>disc.png</texture>
 				        </control>
 
 				        <control type="image">
@@ -105,18 +105,18 @@
 					             <posy>3</posy>
 					             <width>50</width>
 					             <height>50</height>
-					             <texture >disc_marker.png</texture>
-					             <animation effect="rotate" end="-360" center="auto" time="2500" loop="true" reversible="false" condition="!Player.Paused+Player.HasAudio">Conditional</animation>
+					             <texture>disc_marker.png</texture>
+					             <animation effect="rotate" end="-360" center="auto" time="2500" loop="true" reversible="false" condition="!Player.paused+Player.HasAudio">Conditional</animation>
 				               <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Forwarding2x+Player.HasAudio">Conditional</animation>
 				               <animation effect="rotate" end="-360" center="auto" time="1600" loop="true" reversible="false" condition="Player.Forwarding4x+Player.HasAudio">Conditional</animation>
 				               <animation effect="rotate" end="-360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Forwarding8x+Player.HasAudio">Conditional</animation>
 				               <animation effect="rotate" end="-360" center="auto" time="700" loop="true" reversible="false" condition="Player.Forwarding16x+Player.HasAudio">Conditional</animation>
 				               <animation effect="rotate" end="-360" center="auto" time="400" loop="true" reversible="false" condition="Player.Forwarding32x+Player.HasAudio">Conditional</animation>
-				               <animation effect="rotate" end="360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Rewinding2x+Player.HasAudio">Conditional</animation>
-				               <animation effect="rotate" end="360" center="auto" time="850" loop="true" reversible="false" condition="Player.Rewinding4x+Player.HasAudio">Conditional</animation>
-				               <animation effect="rotate" end="360" center="auto" time="700" loop="true" reversible="false" condition="Player.Rewinding8x+Player.HasAudio">Conditional</animation>
-				               <animation effect="rotate" end="360" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding16x+Player.HasAudio">Conditional</animation>
-				               <animation effect="rotate" end="360" center="auto" time="350" loop="true" reversible="false" condition="Player.Rewinding32x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="360" center="auto" time="1100" loop="true" reversible="false" condition="Player.rewinding2x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="360" center="auto" time="850" loop="true" reversible="false" condition="Player.rewinding4x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="360" center="auto" time="700" loop="true" reversible="false" condition="Player.rewinding8x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="360" center="auto" time="500" loop="true" reversible="false" condition="Player.rewinding16x+Player.HasAudio">Conditional</animation>
+				               <animation effect="rotate" end="360" center="auto" time="350" loop="true" reversible="false" condition="Player.rewinding32x+Player.HasAudio">Conditional</animation>
 				      </control>
 -->
 			         <control type="label">
@@ -154,7 +154,7 @@
 					         <posy>3</posy>
 					         <width>50</width>
 					         <height>50</height>
-					         <texture >disc_black.png</texture>
+					         <texture>disc_black.png</texture>
 				    </control>
 
 				    <control type="image">
@@ -162,18 +162,18 @@
 					         <posy>3</posy>
 					         <width>50</width>
 					         <height>50</height>
-					         <texture >disc_marker_black.png</texture>
-					         <animation effect="rotate" end="-360" center="auto" time="2500" loop="true" reversible="false" condition="!Player.Paused+Player.HasAudio">Conditional</animation>
+					         <texture>disc_marker_black.png</texture>
+					         <animation effect="rotate" end="-360" center="auto" time="2500" loop="true" reversible="false" condition="!Player.paused+Player.HasAudio">Conditional</animation>
 				           <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="Player.Forwarding2x+Player.HasAudio">Conditional</animation>
 				           <animation effect="rotate" end="-360" center="auto" time="1600" loop="true" reversible="false" condition="Player.Forwarding4x+Player.HasAudio">Conditional</animation>
 				           <animation effect="rotate" end="-360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Forwarding8x+Player.HasAudio">Conditional</animation>
 				           <animation effect="rotate" end="-360" center="auto" time="700" loop="true" reversible="false" condition="Player.Forwarding16x+Player.HasAudio">Conditional</animation>
 				           <animation effect="rotate" end="-360" center="auto" time="400" loop="true" reversible="false" condition="Player.Forwarding32x+Player.HasAudio">Conditional</animation>
-				           <animation effect="rotate" end="360" center="auto" time="1100" loop="true" reversible="false" condition="Player.Rewinding2x+Player.HasAudio">Conditional</animation>
-				           <animation effect="rotate" end="360" center="auto" time="850" loop="true" reversible="false" condition="Player.Rewinding4x+Player.HasAudio">Conditional</animation>
-				           <animation effect="rotate" end="360" center="auto" time="700" loop="true" reversible="false" condition="Player.Rewinding8x+Player.HasAudio">Conditional</animation>
-				           <animation effect="rotate" end="360" center="auto" time="500" loop="true" reversible="false" condition="Player.Rewinding16x+Player.HasAudio">Conditional</animation>
-				           <animation effect="rotate" end="360" center="auto" time="350" loop="true" reversible="false" condition="Player.Rewinding32x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="360" center="auto" time="1100" loop="true" reversible="false" condition="Player.rewinding2x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="360" center="auto" time="850" loop="true" reversible="false" condition="Player.rewinding4x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="360" center="auto" time="700" loop="true" reversible="false" condition="Player.rewinding8x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="360" center="auto" time="500" loop="true" reversible="false" condition="Player.rewinding16x+Player.HasAudio">Conditional</animation>
+				           <animation effect="rotate" end="360" center="auto" time="350" loop="true" reversible="false" condition="Player.rewinding32x+Player.HasAudio">Conditional</animation>
 				    </control>
 			       <control type="label">
 					         <description>Now Playing</description>

@@ -47,8 +47,8 @@
 				<posy>90</posy>
 				<width>360</width>
 				<height>5</height>
-				<texturebg>ProgressMidGreen.png</texturebg>
-				<midtexture>ProgressLime.png</midtexture>
+				<texturebg>progressmidgreen.png</texturebg>
+				<midtexture>progresslime.png</midtexture>
 			</control>
 
 		</control>

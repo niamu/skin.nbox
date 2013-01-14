@@ -1,5 +1,4 @@
 <window id="0">
-
   <defaultcontrol always="false">501</defaultcontrol>
   <allowoverlay>yes</allowoverlay>	
 
@@ -56,7 +55,6 @@
       <height>138</height>
       <visible>true</visible>
       <texture>bar.png</texture>
-
       <animation effect="fade" time="400">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
@@ -91,7 +89,6 @@
       <align>right</align>
     </control>
 
-
     <control type="label">
       <label>films</label>
       <posx>74</posx>
@@ -102,7 +99,6 @@
       <align>left</align>
     </control>
 
-
     <control type="label">
       <label>tv shows</label>
       <posx>74</posx>
@@ -112,20 +108,16 @@
       <font>Home_menu</font>
       <align>left</align>
     </control>
-    
-    
+
     <control type="label">
-			<label>music</label>
-					<posx>74</posx>
-					<posy>365</posy>
-					<height>30</height>
-					<width>250</width>
-					<font>Home_menu</font>
-					<align>left</align>
-		</control>
-
-
-
+      <label>music</label>
+      <posx>74</posx>
+      <posy>365</posy>
+      <height>30</height>
+      <width>250</width>
+      <font>Home_menu</font>
+      <align>left</align>
+    </control>
 
     <control type="label">
       <label>settings</label>
@@ -147,11 +139,6 @@
       <align>left</align>
     </control>
 
-
-
-    <!-- text highlighted -->
-
-
     <control type="label">
       <label>[COLOR Accent]films[/COLOR]</label>
       <posx>74</posx>
@@ -165,7 +152,6 @@
       <animation effect="fade" time="200" delay="200">Hidden</animation>
     </control>
 
-
     <control type="label">
       <label>[COLOR Accent]tv shows[/COLOR]</label>
       <posx>74</posx>
@@ -178,13 +164,12 @@
       <animation effect="fade" start="0" time="500" condition="Control.HasFocus(503)" >Conditional</animation>
       <animation effect="fade" time="200" delay="200">Hidden</animation>
     </control>
-    
-    
+
     <control type="label">
       <label>[COLOR Accent]music[/COLOR]</label>
       <posx>74</posx>
-			<posy>365</posy>
-			<height>30</height>
+      <posy>365</posy>
+      <height>30</height>
       <width>250</width>
       <font>Home_menu</font>
       <align>left</align>
@@ -192,7 +177,6 @@
       <animation effect="fade" start="0" time="500" condition="Control.HasFocus(502)" >Conditional</animation>
       <animation effect="fade" time="200" delay="200">Hidden</animation>
     </control>
-
 
     <control type="label">
       <label>[COLOR Accent]settings[/COLOR]</label>
@@ -220,18 +204,7 @@
       <animation effect="fade" time="200" delay="200">Hidden</animation>
     </control>
 
-
-
-
-
-
-
-
-
-    <control type="group" id="777">   
-
-
-
+    <control type="group" id="777">
 
       <control id="501">
         <type>button</type>
@@ -263,39 +236,37 @@
         <animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705) | Control.HasFocus(66)" >Conditional</animation>
         <animation effect="fade" time="200" delay="200">Hidden</animation>
       </control>
-      
-      
+
       <control id="502">
-  		<type>button</type>
-  					<label></label>
-  					<posx>20</posx>
-  					<posy>328</posy>
-  					<height>40</height>
-  					<width>40</width>
-  					<font>Home_menu</font>
-  					<align>left</align>
-  					<onup>503</onup>
-  					<ondown>505</ondown>
-  					<onleft>300</onleft>
-  					<onright>601</onright>
-  					<onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
-  		</control>
+        <type>button</type>
+        <label></label>
+        <posx>20</posx>
+        <posy>328</posy>
+        <height>40</height>
+        <width>40</width>
+        <font>Home_menu</font>
+        <align>left</align>
+        <onup>503</onup>
+        <ondown>505</ondown>
+        <onleft>300</onleft>
+        <onright>601</onright>
+        <onclick>right</onclick>
+      </control>
 
-  		<control id="512">
-  		<type>image</type>
-  					<label></label>
-  					<posx>15</posx>
-  					<posy>363</posy>
-  					<height>50</height>
-  					<width>50</width>
-  					<align>left</align>
-  					<texture>marker.png</texture>
-  					<visible>Control.HasFocus(502)</visible>
-  					<animation effect="fade" start="20" time="1200" condition="Control.HasFocus(502)" pulse="true">Conditional</animation>
-  					<animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(502)" >Conditional</animation>
-  					<animation effect="fade" time="200" delay="200">Hidden</animation>
-  		</control>
-
+      <control id="512">
+        <type>image</type>
+        <label></label>
+        <posx>15</posx>
+        <posy>363</posy>
+        <height>50</height>
+        <width>50</width>
+        <align>left</align>
+        <texture>marker.png</texture>
+        <visible>Control.HasFocus(502) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(67)</visible>
+        <animation effect="fade" start="20" time="1200" condition="Control.HasFocus(502) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(67)" pulse="true">Conditional</animation>
+        <animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(502) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(67)" >Conditional</animation>
+        <animation effect="fade" time="200" delay="200">Hidden</animation>
+      </control>
 
       <control id="503">
         <type>button</type>
@@ -326,11 +297,7 @@
         <animation effect="fade" start="20" time="1200" condition="Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(68)" pulse="true">Conditional</animation>
         <animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(68)" >Conditional</animation>
         <animation effect="fade" time="200" delay="200">Hidden</animation>
-      </control>	
-
-
-
-
+      </control>
 
       <control id="505">
         <type>button</type>
@@ -363,9 +330,6 @@
         <animation effect="fade" time="200" delay="200">Hidden</animation>
       </control>		
 
-
-
-
       <control id="506">
         <type>button</type>
         <label></label>
@@ -397,15 +361,9 @@
         <animation effect="fade" time="200" delay="200">Hidden</animation>
       </control>
 
-
-
     </control>
 
-
-
-
-<!--MOVIES--> 
-
+<!--MOVIES-->
 
 <control type="group" id="355">   	
 
@@ -414,9 +372,6 @@
   <animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705)">Conditional</animation>
   <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705)" reversible="false">Conditional</animation>	
   <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(506) | Control.HasFocus(503)" reversible="false">Conditional</animation>
-
-
-
 
   <control type="label">
     <label>library</label>
@@ -493,7 +448,6 @@
         <height>90</height>
         <texture>movies.png</texture>
       </control>	
-
 
       <control type="label">
         <label>$INFO[Window.Property(Movies.Count)]$INFO[Movies.Count]</label>
@@ -592,7 +546,6 @@
         <animation effect="fade" time="200" tween="square">VisibleChange</animation>
         <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(703)">Conditional</animation>
       </control>
-
 
       <control id="703">
         <type>button</type>
@@ -704,7 +657,6 @@
         <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(705)">Conditional</animation>
       </control>
 
-
       <control id="705">
         <type>button</type>
         <label></label>
@@ -770,14 +722,12 @@
     </animation>
   </control>
 
-
   <control type="panel" id="66">
     <posx>710</posx>
     <posy>290</posy>
     <width>560</width>
     <height>318</height>
     <preloaditems>2</preloaditems>
-
     <visible>true</visible>
     <onup>66</onup>
     <ondown>66</ondown>
@@ -787,8 +737,8 @@
     <pagecontrol>98</pagecontrol>
     <focusposition>0</focusposition>
     <scrolltime tween="cubic" easing="out">400</scrolltime>
-    <itemlayout width="159" height="159">
 
+    <itemlayout width="159" height="159">
       <control type="image">
         <posx>9</posx>
         <posy>0</posy>
@@ -810,14 +760,13 @@
       </control>
     </itemlayout>
 
-
     <focusedlayout width="215" height="348">
       <control type="image">
         <posx>9</posx>
         <posy>0</posy>
         <width>155</width>
         <height>155</height>
-        <texture >$INFO[ListItem.Thumb]</texture>
+        <texture>$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
         <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
       </control>
@@ -832,8 +781,7 @@
           <posy>0</posy>
           <width>155</width>
           <height>155</height>
-          <texture >Button_fade.png</texture>
-
+          <texture>button_fade.png</texture>
         </control>
       </control>
 
@@ -847,7 +795,6 @@
         <align>left</align>
         <animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
       </control>
-
     </focusedlayout>
 
     <content>
@@ -934,19 +881,16 @@
   </control>
 </control> 
 
-
 <!-- recently added movies overlay ZZZ-->
 
 <control type="group">
   <visible>Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705)</visible>
   <animation effect="fade" time="200" tween="square">VisibleChange</animation>
-
   <animation effect="fade" delay="400" start="0" end="100" time="300" easing="Out" tween="square" condition="Control.HasFocus(501) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705)">Conditional</animation>
   <posx>719</posx>
   <posy>290</posy>
   <width>560</width>
   <height>320</height>
-
 
   <control type="group"> <!------start black 1 --------->	
     <posx>0</posx>
@@ -962,7 +906,6 @@
       <texture blend="false">black.png</texture>
       <aspectratio>scale</aspectratio>
     </control>
-
 
     <control type="fadelabel">
       <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
@@ -992,7 +935,6 @@
       <scrollspeed>50</scrollspeed>
     </control>
 
-
     <control type="image">
       <visible>IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
       <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out" tween="square">Visible</animation>
@@ -1017,8 +959,7 @@
       <scrollspeed>50</scrollspeed>
       <font>Home_sub_header</font>
       <align>left</align>
-    </control>		
-
+    </control>
 
     <control type="fadelabel">
       <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
@@ -1034,11 +975,7 @@
       <align>left</align>
     </control>	
 
-
-
   </control>		<!------end black 1 --------->	
-
-
 
   <control type="group"> <!------start black 2 --------->	
     <posx>159</posx>
@@ -1055,7 +992,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
       <label> $INFO[Window.Property(LatestMovie.2.Title)]</label>
@@ -1070,7 +1006,6 @@
       <scrollspeed>50</scrollspeed>
     </control>	
 
-
     <control type="fadelabel">
       <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
       <label> $INFO[Window.Property(LatestMovie.5.Title)]</label>
@@ -1084,7 +1019,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>
-
 
     <control type="image">
       <visible>IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>	
@@ -1128,9 +1062,6 @@
 
   </control>		<!------end black 2 --------->	
 
-
-
-
   <control type="group"> <!------start black 3 --------->	
     <posx>318</posx>
     <posy>0</posy>
@@ -1146,7 +1077,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
       <label> $INFO[Window.Property(LatestMovie.3.Title)]</label>
@@ -1161,7 +1091,6 @@
       <scrollspeed>50</scrollspeed>
     </control>	
 
-
     <control type="fadelabel">
       <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
       <label> $INFO[Window.Property(LatestMovie.6.Title)]</label>
@@ -1175,7 +1104,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>
-
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>	
@@ -1219,8 +1147,6 @@
 
   </control>		<!------end black 3 --------->	
 
-
-
   <control type="group"> <!------start black 4 --------->	
     <posx>0</posx>
     <posy>159</posy>
@@ -1235,7 +1161,6 @@
       <texture blend="false">black.png</texture>
       <aspectratio>scale</aspectratio>
     </control>
-
 
     <control type="fadelabel">
       <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
@@ -1264,7 +1189,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>	
-
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>	
@@ -1308,8 +1232,6 @@
 
   </control>		<!------end black 4 --------->			
 
-
-
   <control type="group"> <!------start black 5 --------->	
     <posx>159</posx>
     <posy>159</posy>
@@ -1325,7 +1247,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
       <label> $INFO[Window.Property(LatestMovie.5.Title)]</label>
@@ -1340,7 +1261,6 @@
       <scrollspeed>50</scrollspeed>
     </control>	
 
-
     <control type="fadelabel">
       <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
       <label> $INFO[Window.Property(LatestMovie.8.Title)]</label>
@@ -1354,7 +1274,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>	
-
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>	
@@ -1396,11 +1315,7 @@
       <align>left</align>
     </control>			
 
-
-
   </control>		<!------end black 5 --------->	
-
-
 
   <control type="group"> <!------start black 6 --------->	
     <posx>318</posx>
@@ -1417,7 +1332,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
       <label> $INFO[Window.Property(LatestMovie.6.Title)]</label>
@@ -1432,7 +1346,6 @@
       <scrollspeed>50</scrollspeed>
     </control>	
 
-
     <control type="fadelabel">
       <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
       <label> $INFO[Window.Property(LatestMovie.9.Title)]</label>
@@ -1446,7 +1359,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>	
-
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>	
@@ -1474,7 +1386,6 @@
       <align>left</align>
     </control>			
 
-
     <control type="fadelabel">
       <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
       <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.9.Title)][/B][/COLOR]</label>
@@ -1489,11 +1400,8 @@
       <align>left</align>
     </control>			
 
-
   </control>		<!------end black 6 --------->
-
 </control> <!-- end movies overlays-->
-
 
 <!--TV SHOWS-->
 <control type="group" id="375">   	
@@ -1514,7 +1422,6 @@
     <font>Home_sub_header</font>
     <align>left</align>
   </control>	
-
 
   <control type="label">
     <label>recent</label>
@@ -1581,7 +1488,6 @@
         <height>90</height>
         <texture>tv_shows.png</texture>
       </control>	
-
 
       <control type="label">
         <label>$INFO[Window.Property(TVShows.Count)]$INFO[TVShows.Count]</label>
@@ -1680,7 +1586,6 @@
         <animation effect="fade" time="200" tween="square">VisibleChange</animation>
         <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(803)">Conditional</animation>
       </control>
-
 
       <control id="803">
         <type>button</type>
@@ -1792,7 +1697,6 @@
         <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(805)">Conditional</animation>
       </control>
 
-
       <control id="805">
         <type>button</type>
         <label></label>
@@ -1858,19 +1762,12 @@
     </animation>
   </control>
 
-
-
-
-
-
   <control type="panel" id="68">
     <posx>710</posx>
     <posy>290</posy>
     <width>560</width>
     <height>318</height>
     <preloaditems>2</preloaditems>
-    <!--<animation effect="slide" start="+1300,0" time="300" condition="[Control.HasFocus(502) | Control.HasFocus(67)]" >condition</animation> -->
-
     <visible>true</visible>
     <onup>68</onup>
     <ondown>68</ondown>
@@ -1880,8 +1777,8 @@
     <pagecontrol>98</pagecontrol>
     <focusposition>0</focusposition>
     <scrolltime tween="cubic" easing="out">400</scrolltime>
-    <itemlayout width="159" height="159">
 
+    <itemlayout width="159" height="159">
       <control type="image">
         <posx>9</posx>
         <posy>0</posy>
@@ -1890,7 +1787,6 @@
         <texture blend="false">tile.png</texture>
         <aspectratio>scale</aspectratio>
       </control>
-
 
       <control type="image">
         <posx>9</posx>
@@ -1903,14 +1799,13 @@
       </control>
     </itemlayout>
 
-
     <focusedlayout width="215" height="348">
       <control type="image">
         <posx>9</posx>
         <posy>0</posy>
         <width>155</width>
         <height>155</height>
-        <texture >$INFO[ListItem.Thumb]</texture>
+        <texture>$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
         <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
       </control>
@@ -1920,17 +1815,12 @@
         <posy>0</posy>
         <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
 
-
-
-
-
         <control type="image">
           <posx>9</posx>
           <posy>0</posy>
           <width>155</width>
           <height>155</height>
-          <texture >Button_fade.png</texture>
-
+          <texture>button_fade.png</texture>
         </control>
       </control>
 
@@ -1943,24 +1833,9 @@
         <font>button_bold</font>
         <align>left</align>
         <animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
-      </control>	
-
-
-
+      </control>
     </focusedlayout>
-    <!-- XXX
-    <focusedlayout width="215" height="348">
-    <control type="image">
-    <posx>9</posx>
-    <posy>0</posy>
-    <width>155</width>
-    <height>155</height>
-    <texture blend="false">$INFO[ListItem.Thumb]</texture>
-    <aspectratio>scale</aspectratio>
-    <colordiffuse>white</colordiffuse>
-    <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
-    </control>
-    </focusedlayout> -->
+
     <content>
       <item id="11">
         <label>$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label>
@@ -2016,7 +1891,6 @@
         <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.9.Path)])</onclick>
         <thumb>$INFO[Window.Property(LatestEpisode.9.Thumb)]</thumb>
       </item>
-
     </content>
   </control>
 
@@ -2047,20 +1921,16 @@
 
 </control> 
 
-
-
 <!-- recently added tvshows overlay ZZZ-->
 
 <control type="group">
   <visible>Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)</visible>
   <animation effect="fade" time="200" tween="square">VisibleChange</animation>
-
   <animation effect="fade" delay="400" start="0" end="100" time="300" easing="Out" tween="square" condition="Control.HasFocus(503) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803)">Conditional</animation>
   <posx>719</posx>
   <posy>290</posy>
   <width>560</width>
   <height>320</height>
-
 
   <control type="group"> <!------start black 1 --------->	
     <posx>0</posx>
@@ -2076,7 +1946,6 @@
       <texture blend="false">black.png</texture>
       <aspectratio>scale</aspectratio>
     </control>
-
 
     <control type="fadelabel">
       <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
@@ -2106,7 +1975,6 @@
       <scrollspeed>50</scrollspeed>
     </control>
 
-
     <control type="image">
       <visible>IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
       <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out" tween="square">Visible</animation>
@@ -2131,8 +1999,7 @@
       <scrollspeed>50</scrollspeed>
       <font>Home_sub_header</font>
       <align>left</align>
-    </control>		
-
+    </control>
 
     <control type="fadelabel">
       <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
@@ -2146,13 +2013,9 @@
       <scrollspeed>50</scrollspeed>
       <font>Home_sub_header</font>
       <align>left</align>
-    </control>	
-
-
+    </control>
 
   </control>		<!------end black 1 --------->	
-
-
 
   <control type="group"> <!------start black 2 --------->	
     <posx>159</posx>
@@ -2169,7 +2032,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
       <label> $INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label>
@@ -2184,7 +2046,6 @@
       <scrollspeed>50</scrollspeed>
     </control>	
 
-
     <control type="fadelabel">
       <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
       <label> $INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
@@ -2198,7 +2059,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>
-
 
     <control type="image">
       <visible>IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>	
@@ -2242,9 +2102,6 @@
 
   </control>		<!------end black 2 --------->	
 
-
-
-
   <control type="group"> <!------start black 3 --------->	
     <posx>318</posx>
     <posy>0</posy>
@@ -2260,7 +2117,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
       <label> $INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label>
@@ -2275,7 +2131,6 @@
       <scrollspeed>50</scrollspeed>
     </control>	
 
-
     <control type="fadelabel">
       <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
       <label> $INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
@@ -2289,7 +2144,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>
-
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>	
@@ -2333,8 +2187,6 @@
 
   </control>		<!------end black 3 --------->	
 
-
-
   <control type="group"> <!------start black 4 --------->	
     <posx>0</posx>
     <posy>159</posy>
@@ -2349,7 +2201,6 @@
       <texture blend="false">black.png</texture>
       <aspectratio>scale</aspectratio>
     </control>
-
 
     <control type="fadelabel">
       <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
@@ -2378,7 +2229,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>	
-
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>	
@@ -2422,8 +2272,6 @@
 
   </control>		<!------end black 4 --------->			
 
-
-
   <control type="group"> <!------start black 5 --------->	
     <posx>159</posx>
     <posy>159</posy>
@@ -2439,7 +2287,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
       <label> $INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
@@ -2454,7 +2301,6 @@
       <scrollspeed>50</scrollspeed>
     </control>	
 
-
     <control type="fadelabel">
       <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
       <label> $INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label>
@@ -2468,7 +2314,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>	
-
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>	
@@ -2510,11 +2355,7 @@
       <align>left</align>
     </control>			
 
-
-
   </control>		<!------end black 5 --------->	
-
-
 
   <control type="group"> <!------start black 6 --------->	
     <posx>318</posx>
@@ -2531,7 +2372,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
       <label> $INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
@@ -2546,7 +2386,6 @@
       <scrollspeed>50</scrollspeed>
     </control>	
 
-
     <control type="fadelabel">
       <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
       <label> $INFO[Window.Property(LatestEpisode.9.EpisodeTitle)]</label>
@@ -2560,7 +2399,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>	
-
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>	
@@ -2588,7 +2426,6 @@
       <align>left</align>
     </control>			
 
-
     <control type="fadelabel">
       <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
       <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.9.ShowTitle)][/B][/COLOR]</label>
@@ -2603,7 +2440,6 @@
       <align>left</align>
     </control>			
 
-
   </control>		<!------end black 6 --------->
 </control> <!-- end tvshows overlays-->
 
@@ -2612,10 +2448,10 @@
 
 <control type="group" id="335">   	
 
-  <visible>[Control.HasFocus(502) | Control.HasFocus(67) | Control.HasFocus(601)] | Control.HasFocus(602) | Control.HasFocus(603)</visible>
+  <visible>[Control.HasFocus(502) | Control.HasFocus(67) | Control.HasFocus(601)] | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)</visible>
   <animation effect="fade" time="400">VisibleChange</animation>
-  <animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(502) | Control.HasFocus(67) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603)">Conditional</animation>
-  <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(502) | Control.HasFocus(67) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603)" reversible="false">Conditional</animation>	
+  <animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(502) | Control.HasFocus(67) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)">Conditional</animation>
+  <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(502) | Control.HasFocus(67) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)" reversible="false">Conditional</animation>	
   <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(503) | Control.HasFocus(505)" reversible="false">Conditional</animation>
 
   <control type="label">
@@ -2628,7 +2464,6 @@
     <align>left</align>
   </control>	
 
-
   <control type="label">
     <label>recent</label>
     <posx>720</posx>
@@ -2639,358 +2474,501 @@
     <align>left</align>
   </control>
 
-  <control type="image">
+  <control type="grouplist" id="6000">
     <posx>360</posx>
     <posy>290</posy>
     <width>315</width>
-    <height>155</height>
-    <texture>tile.png</texture>
-  </control>
+    <height>314</height>
+    <itemgap>4</itemgap>
+    <pagecontrol>6001</pagecontrol>
 
-  <control type="image">
-    <posx>360</posx>
-    <posy>290</posy>
-    <width>315</width>
-    <height>155</height>
-    <texture>button.png</texture>
-    <visible>[Control.HasFocus(601)]</visible>
-    <animation effect="fade" time="200" tween="square">VisibleChange</animation>
-    <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(601)">Conditional</animation>
-  </control>
-
-
-  <control id="601">
-    <type>button</type>
-    <label></label>
-    <posx>360</posx>
-    <posy>290</posy>
-    <width>315</width>
-    <height>155</height>
-    <align>left</align>
-    <onup>602</onup>
-    <ondown>602</ondown>
-    <onleft>502</onleft>
-    <onright>67</onright>
-    <onclick>ActivateWindow(musiclibrary, Albums,return)</onclick>
-  </control>
-
-  <control type="image">
-    <posx>400</posx>
-    <posy>315</posy>
-    <width>90</width>
-    <height>90</height>
-    <texture>headphones.png</texture>
-  </control>	
-
-
-  <control type="label">
-    <label>$INFO[Window.Property(Music.AlbumsCount)]$INFO[Music.AlbumsCount]</label>
-    <posx>490</posx>
-    <posy>350</posy>
-    <height>30</height>
-    <width>400</width>
-    <font>Home_numbers</font>
-    <align>left</align>
-  </control>
-
-  <control type="image">
-    <posx>360</posx>
-    <posy>449</posy>
-    <width>155</width>
-    <height>155</height>
-    <texture>tile.png</texture>
-  </control>
-
-  <control type="image">
-    <posx>360</posx>
-    <posy>449</posy>
-    <width>155</width>
-    <height>155</height>
-    <texture>button.png</texture>
-    <visible>[Control.HasFocus(602)]</visible>
-    <animation effect="fade" time="200" tween="square">VisibleChange</animation>
-    <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(602)">Conditional</animation>
-  </control>
-
-
-
-  <control id="602">
-    <type>button</type>
-    <label></label>
-    <posx>360</posx>
-    <posy>449</posy>
-    <width>155</width>
-    <height>155</height>
-    <align>left</align>
-    <onup>601</onup>
-    <ondown>601</ondown>
-    <onleft>502</onleft>
-    <onright>603</onright>
-    <onclick>ActivateWindow(musiclibrary, RecentlyPlayedAlbums,return)</onclick>
-  </control>
-
-
-
-
-  <control type="image">
-    <posx>520</posx>
-    <posy>449</posy>
-    <width>155</width>
-    <height>155</height>
-    <texture>tile.png</texture>
-  </control>
-
-  <control type="image">
-    <posx>520</posx>
-    <posy>449</posy>
-    <width>155</width>
-    <height>155</height>
-    <texture>button.png</texture>
-    <visible>[Control.HasFocus(603)]</visible>
-    <animation effect="fade" time="200" tween="square">VisibleChange</animation>
-    <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(603)">Conditional</animation>
-  </control>
-
-
-  <control id="603">
-    <type>button</type>
-    <label></label>
-    <posx>520</posx>
-    <posy>449</posy>
-    <width>155</width>
-    <height>155</height>
-    <align>left</align>
-    <onup>601</onup>
-    <ondown>601</ondown>
-    <onleft>602</onleft>
-    <onright>67</onright>
-    <onclick>ActivateWindow(musiclibrary, RecentlyAddedAlbums,return)</onclick>
-  </control>			
-
-
-
-  <control type="label">
-    <label>All Albums</label>
-    <posx>370</posx>
-    <posy>410</posy>
-    <height>30</height>
-    <width>250</width>
-    <font>button_title</font>
-    <align>left</align>
-  </control>	
-
-  <control type="label">
-    <label>Last Played</label>
-    <posx>370</posx>
-    <posy>568</posy>
-    <height>30</height>
-    <width>250</width>
-    <font>button_title</font>
-    <align>left</align>
-  </control>
-
-  <control type="image">
-    <posx>395</posx>
-    <posy>475</posy>
-    <width>90</width>
-    <height>90</height>
-    <texture>top.png</texture>
-  </control>	
-
-
-  <control type="label">
-    <label>All Recent</label>
-    <posx>530</posx>
-    <posy>568</posy>
-    <height>30</height>
-    <width>250</width>
-    <font>button_title</font>
-    <align>left</align>
-  </control>	
-
-  <control type="image">
-    <posx>555</posx>
-    <posy>475</posy>
-    <width>90</width>
-    <height>90</height>
-    <texture>recent.png</texture>
-  </control>	
-
-<!-- recently added MUSIC-->
-<control type="panel" id="67">
-  <posx>710</posx>
-  <posy>290</posy>
-  <width>560</width>
-  <height>315</height>
-  <preloaditems>2</preloaditems>
-  <!--<animation effect="slide" start="+1300,0" time="300" condition="[Control.HasFocus(502) | Control.HasFocus(67)]" >condition</animation> -->
-
-  <visible>true</visible>
-  <onup>67</onup>
-  <ondown>67</ondown>
-  <onleft>601</onleft>
-  <onright>67</onright>
-  <orientation>vertical</orientation>
-  <pagecontrol>98</pagecontrol>
-  <focusposition>0</focusposition>
-  <scrolltime tween="cubic" easing="out">400</scrolltime>
-  <itemlayout width="159" height="159">
-
-    <control type="image">
-      <posx>9</posx>
+    <control type="group">
+      <posx>0</posx>
       <posy>0</posy>
-      <width>155</width>
+      <width>315</width>
       <height>155</height>
-      <texture blend="false">tile.png</texture>
-      <aspectratio>scale</aspectratio>
+      <control type="image">
+        <posx></posx>
+        <posy></posy>
+        <width>315</width>
+        <height>155</height>
+        <texture>tile.png</texture>
+      </control>
+
+      <control type="image">
+        <posx></posx>
+        <posy></posy>
+        <width>315</width>
+        <height>155</height>
+        <texture>button.png</texture>
+        <visible>[Control.HasFocus(601)]</visible>
+        <animation effect="fade" time="200" tween="square">VisibleChange</animation>
+        <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(601)">Conditional</animation>
+      </control>
+
+      <control id="601">
+        <type>button</type>
+        <label></label>
+        <posx></posx>
+        <posy></posy>
+        <width>315</width>
+        <height>155</height>
+        <align>left</align>
+        <onup>604</onup>
+        <ondown>602</ondown>
+        <onleft>502</onleft>
+        <onright>67</onright>
+        <onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
+      </control>
+
+      <control type="image">
+        <posx>50</posx>
+        <posy>25</posy>
+        <width>90</width>
+        <height>90</height>
+        <texture>headphones.png</texture>
+      </control>	
+
+      <control type="label">
+        <label>$INFO[Window.Property(Music.AlbumsCount)]$INFO[Music.AlbumsCount]</label>
+        <posx>150</posx>
+        <posy>60</posy>
+        <height>30</height>
+        <width>160</width>
+        <font>Home_numbers</font>
+        <align>left</align>
+      </control>
+
+      <control type="label">
+        <label>All Albums</label>
+        <posx>10</posx>
+        <posy>120</posy>
+        <height>30</height>
+        <width>280</width>
+        <font>button_title</font>
+        <align>left</align>
+      </control>
     </control>
 
-
-    <control type="image">
-      <posx>9</posx>
-      <posy>0</posy>
+    <control type="group">
+      <posx>0</posx>
+      <posy>159</posy>
       <width>155</width>
       <height>155</height>
-      <texture blend="false">$INFO[ListItem.Thumb]</texture>
-      <aspectratio>scale</aspectratio>
-      <colordiffuse>ImageDiffuse</colordiffuse>
-    </control>
-  </itemlayout>
+      <control type="image">
+        <posx></posx>
+        <posy>0</posy>
+        <width>155</width>
+        <height>155</height>
+        <texture>tile.png</texture>
+      </control>
 
+      <control type="image">
+        <posx></posx>
+        <posy>0</posy>
+        <width>155</width>
+        <height>155</height>
+        <texture>button.png</texture>
+        <visible>[Control.HasFocus(602)]</visible>
+        <animation effect="fade" time="200" tween="square">VisibleChange</animation>
+        <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(602)">Conditional</animation>
+      </control>	
 
-  <focusedlayout width="215" height="348">
-    <control type="image">
-      <posx>9</posx>
-      <posy>0</posy>
-      <width>155</width>
-      <height>155</height>
-      <texture >$INFO[ListItem.Thumb]</texture>
-      <aspectratio>scale</aspectratio>
-      <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+      <control id="602">
+        <type>button</type>
+        <label></label>
+        <posx></posx>
+        <posy>0</posy>
+        <width>155</width>
+        <height>155</height>
+        <align>left</align>
+        <onup>601</onup>
+        <ondown>604</ondown>
+        <onleft>502</onleft>
+        <onright>603</onright>
+        <onclick>ActivateWindow(MusicLibrary, RecentlyPlayedAlbums,return)</onclick>
+      </control>
+
+      <control type="label">
+        <label>Last Played</label>
+        <posx>10</posx>
+        <posy>119</posy>
+        <height>30</height>
+        <width>250</width>
+        <font>button_title</font>
+        <align>left</align>
+      </control>
+
+      <control type="image">
+        <posx>35</posx>
+        <posy>26</posy>
+        <width>90</width>
+        <height>90</height>
+        <texture>top.png</texture>
+      </control>
+
+      <control type="image">
+        <posx>160</posx>
+        <posy></posy>
+        <width>155</width>
+        <height>155</height>
+        <texture>tile.png</texture>
+      </control>
+
+      <control type="image">
+        <posx>160</posx>
+        <posy></posy>
+        <width>155</width>
+        <height>155</height>
+        <texture>button.png</texture>
+        <visible>[Control.HasFocus(603)]</visible>
+        <animation effect="fade" time="200" tween="square">VisibleChange</animation>
+        <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(603)">Conditional</animation>
+      </control>
+
+      <control id="603">
+        <type>button</type>
+        <label></label>
+        <posx>1</posx>
+        <posy></posy>
+        <width>155</width>
+        <height>155</height>
+        <align>left</align>
+        <onup>601</onup>
+        <ondown>605</ondown>
+        <onleft>602</onleft>
+        <onright>67</onright>
+        <onclick>ActivateWindow(MusicLibrary, RecentlyAddedAlbums,return)</onclick>
+      </control>
+
+      <control type="label">
+        <label>All Recent</label>
+        <posx>170</posx>
+        <posy>120</posy>
+        <height>30</height>
+        <width>250</width>
+        <font>button_title</font>
+        <align>left</align>
+      </control>	
+
+      <control type="image">
+        <posx>190</posx>
+        <posy>25</posy>
+        <width>90</width>
+        <height>90</height>
+        <texture>recent.png</texture>
+      </control>
     </control>
 
     <control type="group">
       <posx>0</posx>
       <posy>0</posy>
-      <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+      <width>155</width>
+      <height>155</height>
+      <control type="image">
+        <posx></posx>
+        <posy>0</posy>
+        <width>155</width>
+        <height>155</height>
+        <texture>tile.png</texture>
+      </control>
 
+      <control type="image">
+        <posx></posx>
+        <posy>0</posy>
+        <width>155</width>
+        <height>155</height>
+        <texture>button.png</texture>
+        <visible>[Control.HasFocus(604)]</visible>
+        <animation effect="fade" time="200" tween="square">VisibleChange</animation>
+        <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(604)">Conditional</animation>
+      </control>	
 
+      <control id="604">
+        <type>button</type>
+        <label></label>
+        <posx></posx>
+        <posy>0</posy>
+        <width>155</width>
+        <height>155</height>
+        <align>left</align>
+        <onup>602</onup>
+        <ondown>601</ondown>
+        <onleft>502</onleft>
+        <onright>605</onright>
+        <onclick>ActivateWindow(MusicFiles)</onclick>
+      </control>
 
+      <control type="label">
+        <label>Manage Library</label>
+        <posx>10</posx>
+        <posy>119</posy>
+        <height>30</height>
+        <width>250</width>
+        <font>button_title</font>
+        <align>left</align>
+      </control>
 
+      <control type="image">
+        <posx>35</posx>
+        <posy>26</posy>
+        <width>90</width>
+        <height>90</height>
+        <texture>icons/music.png</texture>
+      </control>
+
+      <control type="image">
+        <posx>160</posx>
+        <posy></posy>
+        <width>155</width>
+        <height>155</height>
+        <texture>tile.png</texture>
+      </control>
+
+      <control type="image">
+        <posx>160</posx>
+        <posy></posy>
+        <width>155</width>
+        <height>155</height>
+        <texture>button.png</texture>
+        <visible>[Control.HasFocus(605)]</visible>
+        <animation effect="fade" time="200" tween="square">VisibleChange</animation>
+        <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(605)">Conditional</animation>
+      </control>
+
+      <control id="605">
+        <type>button</type>
+        <label></label>
+        <posx>1</posx>
+        <posy></posy>
+        <width>155</width>
+        <height>155</height>
+        <align>left</align>
+        <onup>603</onup>
+        <ondown>601</ondown>
+        <onleft>604</onleft>
+        <onright>67</onright>
+        <onclick>ActivateWindow(MusicFiles,Addons,return)</onclick>
+      </control>
+
+      <control type="label">
+        <label>Music Add-ons</label>
+        <posx>170</posx>
+        <posy>120</posy>
+        <height>30</height>
+        <width>250</width>
+        <font>button_title</font>
+        <align>left</align>
+      </control>	
+
+      <control type="image">
+        <posx>190</posx>
+        <posy>25</posy>
+        <width>90</width>
+        <height>90</height>
+        <texture>icons/addons.png</texture>
+      </control>
+    </control>
+
+  </control>
+
+  <control type="scrollbar" id="6001">
+    <posx>680</posx>
+    <posy>287</posy>
+    <width>6</width>
+    <height>320</height>
+    <texturesliderbackground></texturesliderbackground>
+    <textureslidernib>bar.png</textureslidernib>
+    <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+    <texturesliderbar></texturesliderbar>
+    <texturesliderbarfocus></texturesliderbarfocus>
+    <showonepage>true</showonepage>
+    <orientation>vertical</orientation>
+    <visible>[Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)]</visible>
+
+    <animation effect="fade" time="200" tween="square">Visible</animation>
+
+    <animation type="Conditional" condition="Control.HasFocus(601)">
+      <effect type="fade" start="100" end="0" time="200" delay="1500"/>
+    </animation>
+
+    <animation type="Conditional" condition="Control.HasFocus(602) | Control.HasFocus(603)">
+      <effect type="fade" start="100" end="0" time="200" delay="1500"/>
+    </animation>
+
+    <animation type="Conditional" condition="Control.HasFocus(604) | Control.HasFocus(605)">
+      <effect type="fade" start="100" end="0" time="200" delay="1500"/>
+    </animation>
+  </control>	
+
+  <control type="panel" id="67">
+    <posx>710</posx>
+    <posy>290</posy>
+    <width>560</width>
+    <height>318</height>
+    <preloaditems>2</preloaditems>
+    <visible>true</visible>
+    <onup>67</onup>
+    <ondown>67</ondown>
+    <onleft>601</onleft>
+    <onright>67</onright>
+    <orientation>vertical</orientation>
+    <pagecontrol>97</pagecontrol>
+    <focusposition>0</focusposition>
+    <scrolltime tween="cubic" easing="out">400</scrolltime>
+
+    <itemlayout width="159" height="159">
+      <control type="image">
+        <posx>9</posx>
+        <posy>0</posy>
+        <width>155</width>
+        <height>155</height>
+        <texture blend="false">tile.png</texture>
+        <aspectratio>scale</aspectratio>
+      </control>
 
       <control type="image">
         <posx>9</posx>
         <posy>0</posy>
         <width>155</width>
         <height>155</height>
-        <texture >Button_fade.png</texture>
+        <texture blend="false">$INFO[ListItem.Thumb]</texture>
+        <aspectratio>scale</aspectratio>
+        <colordiffuse>ImageDiffuse</colordiffuse>
+      </control>
+    </itemlayout>
+
+    <focusedlayout width="215" height="348">
+      <control type="image">
+        <posx>9</posx>
+        <posy>0</posy>
+        <width>155</width>
+        <height>155</height>
+        <texture>$INFO[ListItem.Thumb]</texture>
+        <aspectratio>scale</aspectratio>
+        <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+      </control>
+
+      <control type="group">
+        <posx>0</posx>
+        <posy>0</posy>
+        <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+
+        <control type="image">
+          <posx>9</posx>
+          <posy>0</posy>
+          <width>155</width>
+          <height>155</height>
+          <texture>button_fade.png</texture>
+        </control>
 
       </control>
-    </control>
 
-    <control type="label">
-      <label> $INFO[ListItem.Label2][COLOR Accent] $INFO[ListItem.Label][/COLOR]</label>
-      <posx>10</posx>
-      <posy>121</posy>
-      <height>30</height>
-      <width>153</width>
-      <font>button_bold</font>
-      <align>left</align>
-      <animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
-    </control>		
+      <control type="label">
+        <label> $INFO[ListItem.Label2][COLOR Accent] $INFO[ListItem.Label][/COLOR]</label>
+        <posx>10</posx>
+        <posy>121</posy>
+        <height>30</height>
+        <width>153</width>
+        <font>button_bold</font>
+        <align>left</align>
+        <animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
+      </control>
+    </focusedlayout>
 
-
-
-
-
-
-
-  </focusedlayout>
-  <!-- XXX
-  <focusedlayout width="215" height="348">
-  <control type="image">
-  <posx>9</posx>
-  <posy>0</posy>
-  <width>155</width>
-  <height>155</height>
-  <texture blend="false">$INFO[ListItem.Thumb]</texture>
-  <aspectratio>scale</aspectratio>
-  <colordiffuse>white</colordiffuse>
-  <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
+    <content>
+      <item id="11">
+        <label>$INFO[Window.Property(LatestAlbum.1.Title)]</label>
+        <label2>$INFO[Window.Property(LatestAlbum.1.Artist)]</label2>
+        <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.1.Path)])</onclick>
+        <thumb>$INFO[Window.Property(LatestAlbum.1.Thumb)]</thumb>
+      </item>
+      <item id="12">
+        <label>$INFO[Window.Property(LatestAlbum.2.Title)]</label>
+        <label2>$INFO[Window.Property(LatestAlbum.2.Artist)]</label2>
+        <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.2.Path)])</onclick>
+        <thumb>$INFO[Window.Property(LatestAlbum.2.Thumb)]</thumb>
+      </item>
+      <item id="13">
+        <label>$INFO[Window.Property(LatestAlbum.3.Title)]</label>
+        <label2>$INFO[Window.Property(LatestAlbum.3.Artist)]</label2>
+        <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.3.Path)])</onclick>
+        <thumb>$INFO[Window.Property(LatestAlbum.3.Thumb)]</thumb>
+      </item>
+      <item id="14">
+        <label>$INFO[Window.Property(LatestAlbum.4.Title)]</label>
+        <label2>$INFO[Window.Property(LatestAlbum.4.Artist)]</label2>
+        <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.4.Path)])</onclick>
+        <thumb>$INFO[Window.Property(LatestAlbum.4.Thumb)]</thumb>
+      </item>
+      <item id="15">
+        <label>$INFO[Window.Property(LatestAlbum.5.Title)]</label>
+        <label2>$INFO[Window.Property(LatestAlbum.5.Artist)]</label2>
+        <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.5.Path)])</onclick>
+        <thumb>$INFO[Window.Property(LatestAlbum.5.Thumb)]</thumb>
+      </item>
+      <item id="16">
+        <label>$INFO[Window.Property(LatestAlbum.6.Title)]</label>
+        <label2>$INFO[Window.Property(LatestAlbum.6.Artist)]</label2>
+        <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.6.Path)])</onclick>
+        <thumb>$INFO[Window.Property(LatestAlbum.6.Thumb)]</thumb>
+      </item>
+      <item id="17">
+        <label>$INFO[Window.Property(LatestAlbum.7.Title)]</label>
+        <label2>$INFO[Window.Property(LatestAlbum.7.Artist)]</label2>
+        <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.7.Path)])</onclick>
+        <thumb>$INFO[Window.Property(LatestAlbum.7.Thumb)]</thumb>
+      </item>
+      <item id="18">
+        <label>$INFO[Window.Property(LatestAlbum.8.Title)]</label>
+        <label2>$INFO[Window.Property(LatestAlbum.8.Artist)]</label2>
+        <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.8.Path)])</onclick>
+        <thumb>$INFO[Window.Property(LatestAlbum.8.Thumb)]</thumb>
+      </item>
+      <item id="19">
+        <label>$INFO[Window.Property(LatestAlbum.9.Title)]</label>
+        <label2>$INFO[Window.Property(LatestAlbum.9.Artist)]</label2>
+        <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.9.Path)])</onclick>
+        <thumb>$INFO[Window.Property(LatestAlbum.9.Thumb)]</thumb>
+      </item>
+    </content>
   </control>
-  </focusedlayout> -->
-  <content>
-    <item id="11">
-      <label>$INFO[Window.Property(LatestAlbum.1.Title)]</label>
-      <label2>$INFO[Window.Property(LatestAlbum.1.Artist)]</label2>
-      <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.1.Path)])</onclick>
-      <thumb>$INFO[Window.Property(LatestAlbum.1.Thumb)]</thumb>
-    </item>
-    <item id="12">
-      <label>$INFO[Window.Property(LatestAlbum.2.Title)]</label>
-      <label2>$INFO[Window.Property(LatestAlbum.2.Artist)]</label2>
-      <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.2.Path)])</onclick>
-      <thumb>$INFO[Window.Property(LatestAlbum.2.Thumb)]</thumb>
-    </item>
-    <item id="13">
-      <label>$INFO[Window.Property(LatestAlbum.3.Title)]</label>
-      <label2>$INFO[Window.Property(LatestAlbum.3.Artist)]</label2>
-      <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.3.Path)])</onclick>
-      <thumb>$INFO[Window.Property(LatestAlbum.3.Thumb)]</thumb>
-    </item>
-    <item id="14">
-      <label>$INFO[Window.Property(LatestAlbum.4.Title)]</label>
-      <label2>$INFO[Window.Property(LatestAlbum.4.Artist)]</label2>
-      <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.4.Path)])</onclick>
-      <thumb>$INFO[Window.Property(LatestAlbum.4.Thumb)]</thumb>
-    </item>
-    <item id="15">
-      <label>$INFO[Window.Property(LatestAlbum.5.Title)]</label>
-      <label2>$INFO[Window.Property(LatestAlbum.5.Artist)]</label2>
-      <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.5.Path)])</onclick>
-      <thumb>$INFO[Window.Property(LatestAlbum.5.Thumb)]</thumb>
-    </item>
-    <item id="16">
-      <label>$INFO[Window.Property(LatestAlbum.6.Title)]</label>
-      <label2>$INFO[Window.Property(LatestAlbum.6.Artist)]</label2>
-      <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.6.Path)])</onclick>
-      <thumb>$INFO[Window.Property(LatestAlbum.6.Thumb)]</thumb>
-    </item>
-    <item id="17">
-      <label>$INFO[Window.Property(LatestAlbum.7.Title)]</label>
-      <label2>$INFO[Window.Property(LatestAlbum.7.Artist)]</label2>
-      <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.7.Path)])</onclick>
-      <thumb>$INFO[Window.Property(LatestAlbum.7.Thumb)]</thumb>
-    </item>
-    <item id="18">
-      <label>$INFO[Window.Property(LatestAlbum.8.Title)]</label>
-      <label2>$INFO[Window.Property(LatestAlbum.8.Artist)]</label2>
-      <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.8.Path)])</onclick>
-      <thumb>$INFO[Window.Property(LatestAlbum.8.Thumb)]</thumb>
-    </item>
-    <item id="19">
-      <label>$INFO[Window.Property(LatestAlbum.9.Title)]</label>
-      <label2>$INFO[Window.Property(LatestAlbum.9.Artist)]</label2>
-      <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.9.Path)])</onclick>
-      <thumb>$INFO[Window.Property(LatestAlbum.9.Thumb)]</thumb>
-    </item>
 
-  </content>
-</control>  
+  <control type="scrollbar" id="97">
+    <posx>1196</posx>
+    <posy>287</posy>
+    <width>6</width>
+    <height>320</height>
+    <texturesliderbackground></texturesliderbackground>
+    <textureslidernib>bar.png</textureslidernib>
+    <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+    <texturesliderbar></texturesliderbar>
+    <texturesliderbarfocus></texturesliderbarfocus>
+    <showonepage>true</showonepage>
+    <orientation>vertical</orientation>
+    <visible>Control.HasFocus(67)</visible>
+
+    <animation effect="fade" time="200" tween="square">Visible</animation>
+
+    <animation type="Conditional" condition="Control.HasFocus(67) + Container(67).Row(0)">
+      <effect type="fade" start="100" end="0" time="200" delay="1500"/>
+    </animation>
+
+    <animation type="Conditional" condition="Control.HasFocus(67) + Container(67).Row(1)">
+      <effect type="fade" start="100" end="0" time="200" delay="1500"/>
+    </animation>
+  </control>
+
 </control> 
-
-<!-- recently added music overlay ZZZ-->
 
 <control type= "group">
   <visible>Control.HasFocus(502) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603)</visible>
   <animation effect="fade" time="200" tween="square">VisibleChange</animation>
-
   <animation effect="fade" delay="400" start="0" end="100" time="300" easing="Out" tween="square" condition="Control.HasFocus(502) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603)">Conditional</animation>
   <posx>719</posx>
   <posy>290</posy>
   <width>560</width>
   <height>315</height>
-
 
   <control type= "group"> <!------start black 1 --------->	
     <posx>0</posx>
@@ -3006,7 +2984,6 @@
       <texture blend="false">black.png</texture>
       <aspectratio>scale</aspectratio>
     </control>
-
 
     <control type="fadelabel">
       <visible>Container(67).HasNext + !Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
@@ -3050,7 +3027,6 @@
       <scrollspeed>50</scrollspeed>
     </control>	
 
-
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
       <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out" tween="square">Visible</animation>
@@ -3077,7 +3053,6 @@
       <align>left</align>
     </control>		
 
-
     <control type="fadelabel">
       <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
       <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.4.Artist)][/B][/COLOR]</label>
@@ -3091,7 +3066,6 @@
       <font>Home_sub_header</font>
       <align>left</align>
     </control>	
-
 
     <control type="fadelabel">
       <visible>!Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
@@ -3107,11 +3081,7 @@
       <align>left</align>
     </control>		
 
-
-
   </control>		<!------end black 1 --------->	
-
-
 
   <control type= "group"> <!------start black 2 --------->	
     <posx>159</posx>
@@ -3128,7 +3098,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
       <label> $INFO[Window.Property(LatestAlbum.2.Title)]</label>
@@ -3141,8 +3110,7 @@
       <font>button_bold</font>
       <align>left</align>
       <scrollspeed>50</scrollspeed>
-    </control>	
-
+    </control>
 
     <control type="fadelabel">
       <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
@@ -3156,8 +3124,7 @@
       <font>button_bold</font>
       <align>left</align>
       <scrollspeed>50</scrollspeed>
-    </control>	
-
+    </control>
 
     <control type="fadelabel">
       <visible>!Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
@@ -3171,8 +3138,7 @@
       <font>button_bold</font>
       <align>left</align>
       <scrollspeed>50</scrollspeed>
-    </control>	
-
+    </control>
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>	
@@ -3226,14 +3192,9 @@
       <scrollspeed>50</scrollspeed>
       <font>Home_sub_header</font>
       <align>left</align>
-    </control>			
-
-
+    </control>
 
   </control>		<!------end black 2 --------->	
-
-
-
 
   <control type= "group"> <!------start black 3 --------->	
     <posx>318</posx>
@@ -3250,7 +3211,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
       <label> $INFO[Window.Property(LatestAlbum.3.Title)]</label>
@@ -3263,8 +3223,7 @@
       <font>button_bold</font>
       <align>left</align>
       <scrollspeed>50</scrollspeed>
-    </control>	
-
+    </control>
 
     <control type="fadelabel">
       <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
@@ -3278,8 +3237,7 @@
       <font>button_bold</font>
       <align>left</align>
       <scrollspeed>50</scrollspeed>
-    </control>	
-
+    </control>
 
     <control type="fadelabel">
       <visible>!Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
@@ -3293,8 +3251,7 @@
       <font>button_bold</font>
       <align>left</align>
       <scrollspeed>50</scrollspeed>
-    </control>	
-
+    </control>
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>	
@@ -3348,13 +3305,8 @@
       <scrollspeed>50</scrollspeed>
       <font>Home_sub_header</font>
       <align>left</align>
-    </control>			
-
-
-
+    </control>
   </control>		<!------end black 3 --------->	
-
-
 
   <control type= "group"> <!------start black 4 --------->	
     <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).HasNext + Container(67).HasPrevious]</visible>
@@ -3371,7 +3323,6 @@
       <texture blend="false">black.png</texture>
       <aspectratio>scale</aspectratio>
     </control>
-
 
     <control type="fadelabel">
       <visible>Container(67).HasNext + !Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
@@ -3400,7 +3351,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>	
-
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>	
@@ -3444,8 +3394,6 @@
 
   </control>		<!------end black 4 --------->			
 
-
-
   <control type= "group"> <!------start black 5 --------->	
     <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).HasNext + Container(67).HasPrevious]</visible>
     <posx>159</posx>
@@ -3462,7 +3410,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
       <label> $INFO[Window.Property(LatestAlbum.5.Title)]</label>
@@ -3477,7 +3424,6 @@
       <scrollspeed>50</scrollspeed>
     </control>	
 
-
     <control type="fadelabel">
       <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
       <label> $INFO[Window.Property(LatestAlbum.8.Title)]</label>
@@ -3491,7 +3437,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>	
-
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>	
@@ -3531,13 +3476,8 @@
       <scrollspeed>50</scrollspeed>
       <font>Home_sub_header</font>
       <align>left</align>
-    </control>			
-
-
-
+    </control>
   </control>		<!------end black 5 --------->	
-
-
 
   <control type= "group"> <!------start black 6 --------->	
     <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).HasNext + Container(67).HasPrevious]</visible>
@@ -3555,7 +3495,6 @@
       <aspectratio>scale</aspectratio>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
       <label> $INFO[Window.Property(LatestAlbum.6.Title)]</label>
@@ -3570,7 +3509,6 @@
       <scrollspeed>50</scrollspeed>
     </control>	
 
-
     <control type="fadelabel">
       <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
       <label> $INFO[Window.Property(LatestAlbum.9.Title)]</label>
@@ -3584,7 +3522,6 @@
       <align>left</align>
       <scrollspeed>50</scrollspeed>
     </control>
-
 
     <control type="image">
       <visible> IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>	
@@ -3612,7 +3549,6 @@
       <align>left</align>
     </control>
 
-
     <control type="fadelabel">
       <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
       <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.9.Artist)][/B][/COLOR]</label>
@@ -3627,10 +3563,8 @@
       <align>left</align>
     </control>
 
-
   </control>		<!------end black 6 --------->	
 </control> <!-- end music overlays-->
-
 
 <!-- Settings -->
 
@@ -3642,7 +3576,6 @@
   <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(505) | Control.HasFocus(69)" reversible="false">Conditional</animation>	
   <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(502) | Control.HasFocus(506)" reversible="false">Conditional</animation>
 
-
   <control type="label">
     <label>settings</label>
     <posx>360</posx>
@@ -3653,16 +3586,12 @@
     <align>left</align>
   </control>	
 
-
-
-
   <control type="panel" id="69">
     <posx>350</posx>
     <posy>290</posy>
     <width>800</width>
     <height>320</height>
     <preloaditems>2</preloaditems>
-
     <visible>true</visible>
     <onup>69</onup>
     <ondown>69</ondown>
@@ -3672,8 +3601,8 @@
     <pagecontrol>98</pagecontrol>
     <focusposition>0</focusposition>
     <scrolltime tween="cubic" easing="out">400</scrolltime>
-    <itemlayout width="159" height="159">
 
+    <itemlayout width="159" height="159">
       <control type="image">
         <posx>9</posx>
         <posy>0</posy>
@@ -3682,7 +3611,6 @@
         <texture blend="false">tile.png</texture>
         <aspectratio>scale</aspectratio>
       </control>
-
 
       <control type="label">
         <label>  $INFO[ListItem.Label]</label>
@@ -3700,26 +3628,22 @@
         <posy>20</posy>
         <width>100</width>
         <height>100</height>
-        <texture >$INFO[ListItem.Thumb]</texture>
+        <texture>$INFO[ListItem.Thumb]</texture>
         <aspectratio>scale</aspectratio>
       </control>
-
     </itemlayout>
 
-
     <focusedlayout width="215" height="348">
-
       <control type="group">
         <posx>0</posx>
         <posy>0</posy>
-
 
         <control type="image">
           <posx>9</posx>
           <posy>0</posy>
           <width>155</width>
           <height>155</height>
-          <texture >button.png</texture>
+          <texture>button.png</texture>
           <animation effect="fade" start="0" time="400" easing="out" tween="square">Focus</animation>
         </control>
 
@@ -3728,7 +3652,7 @@
           <posy>20</posy>
           <width>100</width>
           <height>100</height>
-          <texture >$INFO[ListItem.Thumb]</texture>
+          <texture>$INFO[ListItem.Thumb]</texture>
           <aspectratio>scale</aspectratio>
         </control>
 
@@ -3743,10 +3667,7 @@
         <font>button_bold</font>
         <align>left</align>
       </control>
-
     </focusedlayout>
-
-
 
     <content>
       <item id="1">
@@ -3821,5 +3742,4 @@
 </control>
 
 </controls>
-
 </window>

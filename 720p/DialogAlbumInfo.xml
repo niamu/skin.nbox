@@ -168,7 +168,7 @@
 					<control type="image">
 						<width>580</width>
 						<height>44</height>
-						<texture border="2">other_textures/ButtonNF.png</texture>
+						<texture border="2">other_textures/buttonnf.png</texture>
 					</control>
 
 					<control type="label">
@@ -184,7 +184,7 @@
 					<control type="image">
 						<width>580</width>
 						<height>44</height>
-						<texture border="5">other_textures/ButtonFO.png</texture>
+						<texture border="5">other_textures/buttonfo.png</texture>
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(50)">Conditional</animation>
 					</control>
 
@@ -250,10 +250,10 @@
 			<visible></visible>
 			<subtype>page</subtype>
 			<font>-</font>
-      <textureup>ScrollPlot_UpArrow_NF.png</textureup>
-      <textureupfocus>ScrollPlot_UpArrow_FO.png</textureupfocus>
-      <texturedown>ScrollPlot_DownArrow_NF.png</texturedown>
-      <texturedownfocus>ScrollPlot_DownArrow_FO.png</texturedownfocus>
+      <textureup>scrollplot_uparrow_nf.png</textureup>
+      <textureupfocus>scrollplot_uparrow_fo.png</textureupfocus>
+      <texturedown>scrollplot_downarrow_nf.png</texturedown>
+      <texturedownfocus>scrollplot_downarrow_fo.png</texturedownfocus>
 			<pulseonselect>no</pulseonselect>
 			<onup>50</onup>
 			<onleft>9000</onleft>

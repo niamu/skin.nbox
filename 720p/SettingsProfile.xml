@@ -33,7 +33,7 @@
         <posy>174</posy>
         <width>72</width>
         <height>72</height>
-        <texture background="true">other_textures/OSD/PlaylistNF.png</texture>
+        <texture background="true">other_textures/osd/playlistnf.png</texture>
         <aspectratio scalediffuse="false">stretch</aspectratio>
         <animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(54)">Conditional</animation>
       </control>
@@ -116,14 +116,14 @@
             <control type="image">
               <width>820</width>
               <height>104</height>
-              <texture border="2">other_textures/ButtonNF.png</texture>
+              <texture border="2">other_textures/buttonnf.png</texture>
               <visible>!SubString(ListItem.Label,Add profile)</visible>
             </control>
 
             <control type="image">
               <width>820</width>
               <height>44</height>
-              <texture border="2">other_textures/ButtonNF.png</texture>
+              <texture border="2">other_textures/buttonnf.png</texture>
               <visible>SubString(ListItem.Label,Add profile)</visible>
             </control>
 
@@ -132,7 +132,7 @@
               <posy>4</posy>
               <width>96</width>
               <height>96</height>
-              <bordertexture border="2">other_textures/ButtonFO.png</bordertexture>
+              <bordertexture border="2">other_textures/buttonfo.png</bordertexture>
               <bordersize>5</bordersize>
               <texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
             </control>
@@ -167,7 +167,7 @@
             <control type="image">
               <width>820</width>
               <height>104</height>
-              <texture border="5">other_textures/ButtonFO.png</texture>
+              <texture border="5">other_textures/buttonfo.png</texture>
               <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(2)">Conditional</animation>
               <visible>!SubString(ListItem.Label,Add profile)</visible>
             </control>
@@ -175,7 +175,7 @@
             <control type="image">
               <width>820</width>
               <height>44</height>
-              <texture border="5">other_textures/ButtonFO.png</texture>
+              <texture border="5">other_textures/buttonfo.png</texture>
               <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(2)">Conditional</animation>
               <visible>SubString(ListItem.Label,Add profile)</visible>
             </control>
@@ -185,7 +185,7 @@
               <posy>4</posy>
               <width>96</width>
               <height>96</height>
-              <bordertexture border="2">other_textures/ButtonFO.png</bordertexture>
+              <bordertexture border="2">other_textures/buttonfo.png</bordertexture>
               <bordersize>5</bordersize>
               <texture fallback="unknown-user.png">$INFO[Listitem.Icon]</texture>
             </control>

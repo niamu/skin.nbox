@@ -54,7 +54,7 @@
           <control type="image">
             <width>440</width>
             <height>44</height>
-            <texture border="2">other_textures/ButtonNF.png</texture>
+            <texture border="2">other_textures/buttonnf.png</texture>
           </control>
 
           <control type="label">
@@ -69,7 +69,7 @@
           <control type="image">
             <width>440</width>
             <height>44</height>
-            <texture border="5">other_textures/ButtonFO.png</texture>
+            <texture border="5">other_textures/buttonfo.png</texture>
             <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(10)">Conditional</animation>
           </control>
 

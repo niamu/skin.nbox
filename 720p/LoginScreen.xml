@@ -207,7 +207,7 @@
 						<posy>0</posy>
 						<width>155</width>
 						<height>155</height>
-						<texture >$INFO[ListItem.Icon]</texture>
+						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>scale</aspectratio>
 						<animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
 					</control>
@@ -222,7 +222,7 @@
 							<posy>0</posy>
 							<width>155</width>
 							<height>155</height>
-							<texture >Button_fade.png</texture>
+							<texture>button_fade.png</texture>
 						</control>
 					</control>
 

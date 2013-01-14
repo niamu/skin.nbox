@@ -66,8 +66,8 @@
 				<selectedcolor>White</selectedcolor>
 				<label>-</label>
 				<textoffsetx>20</textoffsetx>
-				<texturenofocus border="2">other_textures/ButtonNF.png</texturenofocus>
-				<texturefocus border="5">other_textures/ButtonFO.png</texturefocus>
+				<texturenofocus border="2">other_textures/buttonnf.png</texturenofocus>
+				<texturefocus border="5">other_textures/buttonfo.png</texturefocus>
 				<pulseonselect>false</pulseonselect>
 				<onup>22</onup>
 				<onleft>12</onleft>
@@ -103,7 +103,7 @@
 						<posy>0</posy>
 						<width>560</width>
 						<height>44</height>
-						<bordertexture border="2">other_textures/ButtonNF.png</bordertexture>
+						<bordertexture border="2">other_textures/buttonnf.png</bordertexture>
 					</control>
 
 					<control type="label">
@@ -122,7 +122,7 @@
 						<posy>0</posy>
 						<width>560</width>
 						<height>44</height>
-						<texture border="5">other_textures/ButtonFO.png</texture>
+						<texture border="5">other_textures/buttonfo.png</texture>
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(10)">Conditional</animation>
 					</control>
 

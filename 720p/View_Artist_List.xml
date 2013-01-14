@@ -227,7 +227,7 @@
 					<posy>330</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture >disc_white.png</texture>
+					<texture>disc_white.png</texture>
           <visible>IsEmpty(Window(Home).Property(albumsnumber))</visible>
 		</control>
     <control type="image">
@@ -235,7 +235,7 @@
 					<posy>330</posy>
 					<width>60</width>
 					<height>60</height>
-					<texture >disc_marker_white.png</texture>
+					<texture>disc_marker_white.png</texture>
 					<animation effect="rotate" end="-360" center="auto" time="2500" loop="true" reversible="false" condition="IsEmpty(Window(Home).Property(albumsnumber))">Conditional</animation>
 				  <animation effect="rotate" end="-360" center="auto" time="2000" loop="true" reversible="false" condition="IsEmpty(Window(Home).Property(albumsnumber))">Conditional</animation>
 				  <animation effect="rotate" end="-360" center="auto" time="1600" loop="true" reversible="false" condition="IsEmpty(Window(Home).Property(albumsnumber))">Conditional</animation>
