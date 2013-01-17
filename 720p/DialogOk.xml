@@ -21,6 +21,7 @@
 			<control type="label" id="1">
 				<description>heading</description>
 				<posx>30</posx>
+				<posy>20</posx>
 				<width>370</width>
 				<label>-</label>
 				<font>Large</font>
@@ -31,7 +32,7 @@
 			<control type="label" id="2">
 				<description>Line 1</description>
 				<posx>30</posx>
-				<posy>72</posy>
+				<posy>60</posy>
 				<width>370</width>
 				<label>-</label>
 				<textcolor>black</textcolor>
@@ -40,7 +41,7 @@
 			<control type="label" id="3">
 				<description>Line 2</description>
 				<posx>30</posx>
-				<posy>104</posy>
+				<posy>85</posy>
 				<width>370</width>
 				<label>-</label>
 				<textcolor>black</textcolor>
@@ -49,7 +50,7 @@
 			<control type="label" id="4">
 				<description>Line 3</description>
 				<posx>30</posx>
-				<posy>136</posy>
+				<posy>115</posy>
 				<width>370</width>
 				<label>-</label>
 				<textcolor>black</textcolor>
@@ -59,7 +60,7 @@
 				<description>Ok</description>
 				<textcolor>black</textcolor>
 				<posx>130</posx>
-				<posy>170</posy>
+				<posy>145</posy>
 				<width>180</width>
 				<label>186</label>
 				<onleft>10</onleft>
