@@ -243,9 +243,9 @@
 
 						<control type="label">
               <description>Player Times</description>
-              <posx>40</posx>
+              <posx>30</posx>
               <posy>670</posy>
-              <width>100</width>
+              <width>120</width>
               <label>[COLOR Accent]$INFO[Player.Time][/COLOR]</label>
               <align>left</align>
               <font>Medium</font>
@@ -253,9 +253,9 @@
 
 						<control type="label">
               <description>Player Times</description>
-              <posx>1240</posx>
+              <posx>1250</posx>
               <posy>670</posy>
-              <width>100</width>
+              <width>120</width>
               <label>$INFO[Player.TimeRemaining,-]</label>
               <align>right</align>
               <font>Medium</font>
