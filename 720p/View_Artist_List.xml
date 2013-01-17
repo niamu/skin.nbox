@@ -121,14 +121,6 @@
 			                       <texture fallback="">$INFO[ListItem.Icon]</texture>
 			                       <animation effect="fade" time="500"></animation>
 		                     </control>
-                         <control type="image" id="601">
-                                    <posx>130</posx>
-                                    <posy>25</posy>
-                                    <width></width>
-                                    <height>50</height>
-                                    <aspectratio align="left" >keep</aspectratio>
-                                    <texture background="true" fallback="rien">smb://MEDIAS/Public/musique/$INFO[ListItem.Path]$INFO[ListItem.Artist,,/logo.png]</texture>
-                          </control>
                           <control type="label">
 					                         <posx>135</posx>
 				  	                       <posy>60</posy>

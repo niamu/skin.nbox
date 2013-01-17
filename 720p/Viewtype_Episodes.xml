@@ -50,7 +50,7 @@
         <posy>288</posy>
         <width>215</width>
         <height>315</height>
-        <texture fallback="DefaultVideo.png" background="true" >$INFO[ListItem.Art(tvshow.poster)]</texture>
+        <texture fallback="defaultvideo.png" background="true" >$INFO[ListItem.Art(tvshow.poster)]</texture>
         <fadetime>200</fadetime>
         <aspectratio scalediffuse="false">stretch</aspectratio>
         <visible>!IsEmpty(ListItem.Icon)</visible>

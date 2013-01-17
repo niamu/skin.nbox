@@ -34,7 +34,7 @@
 				<posy>0</posy>
 				<width>436</width>
 				<height>244</height>
-				<texture background="true" diffuse="Showcase/showcase-diffuse.png" fallback="backgrounds/movies.jpg">$INFO[Container(58).listitem.property(fanart_image)]</texture>
+				<texture background="true" diffuse="showcase/showcase-diffuse.png" fallback="backgrounds/movies.jpg">$INFO[Container(58).listitem.property(fanart_image)]</texture>
 				<fadetime>400</fadetime>
 				<aspectratio>stretch</aspectratio>
 				<include>Animation_SlideUpFadeOut</include>
@@ -79,7 +79,7 @@
 							<posy>122</posy>
 							<width>180</width>
 							<height>260</height>
-							<texture>posterframeF.png</texture>
+							<texture>posterframef.png</texture>
 							<colordiffuse>39FFFFFF</colordiffuse>
 						</control>
 						<control type="image">
@@ -87,7 +87,7 @@
 							<posy>374</posy>
 							<width>162</width>
 							<height>241</height>
-							<texture background="true" flipy="true" diffuse="movie-poster/Movie_Thumb_Mask.png">$INFO[ListItem.Icon]</texture>
+							<texture background="true" flipy="true" diffuse="movie-poster/movie_thumb_mask.png">$INFO[ListItem.Icon]</texture>
 							<colordiffuse>69FFFFFF</colordiffuse>
 							<fadetime>200</fadetime>
 							<aspectratio scalediffuse="false">stretch</aspectratio>
@@ -212,7 +212,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture>Showcase/last-overlay.png</texture>
+				<texture>showcase/last-overlay.png</texture>
 			</control>
 			
 			<control type="group">

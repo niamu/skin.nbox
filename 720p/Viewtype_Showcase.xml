@@ -50,7 +50,7 @@
 							<posy>374</posy>
 							<width>162</width>
 							<height>241</height>
-							<texture background="true" flipy="true" diffuse="movie-poster/Movie_Thumb_Mask.png">$INFO[ListItem.Icon]</texture>
+							<texture background="true" flipy="true" diffuse="movie-poster/movie_thumb_mask.png">$INFO[ListItem.Icon]</texture>
 							<colordiffuse>ImageDiffuse2</colordiffuse>
 							<visible>false</visible>
 							<fadetime>200</fadetime>

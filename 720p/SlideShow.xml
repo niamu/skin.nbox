@@ -238,7 +238,7 @@
 				              <posy>-136</posy>
 				              <width>234</width>
 				              <height>234</height>
-				              <texture>music/musicwallframeF.png</texture>
+				              <texture>music/musicwallframef.png</texture>
 				              <aspectratio scalediffuse="false">stretch</aspectratio>
 				              <visible>Player.HasAudio</visible>
 			           </control>
@@ -262,7 +262,7 @@
 				      <posy>-136</posy>
 				      <width>234</width>
 				      <height>234</height>
-				      <texture>music/musicwallframeF.png</texture>
+				      <texture>music/musicwallframef.png</texture>
 				      <aspectratio scalediffuse="false">stretch</aspectratio>
 				      <visible>Player.HasAudio</visible>
 			   </control>

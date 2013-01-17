@@ -24,18 +24,6 @@
 				<aspectratio>scale</aspectratio>
 				<texture border="20">tile.png</texture>
 			</control>
-						
-<!--
-			<control type="image" id="400">
-				<description>Image</description>
-				<posx>20</posx>
-				<posy>35</posy>
-				<width>64</width>
-				<height>64</height>
-				<aspectratio>keep</aspectratio>
-				<texture>DefaultFile.png</texture>
-			</control>
--->
 
 			<control type="label" id="401">
 				<description>heading</description>
@@ -60,40 +48,6 @@
 				<font>Large</font>
 			</control>
 
-<!--
-			<control type="image" id="403">
-				<description>Image</description>
-				<posx>20</posx>
-				<posy>35</posy>
-				<width>64</width>
-				<height>64</height>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture>DefaultIconInfo.png</texture>
-			</control>
-
-			<control type="image" id="404">
-				<description>Image</description>
-				<posx>20</posx>
-				<posy>35</posy>
-				<width>64</width>
-				<height>64</height>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture>DefaultIconWarning.png</texture>
-			</control>
-
-			<control type="image" id="405">
-				<description>Image</description>
-				<posx>20</posx>
-				<posy>35</posy>
-				<width>64</width>
-				<height>64</height>
-				<aspectratio>keep</aspectratio>
-				<visible>false</visible>
-				<texture>DefaultIconError.png</texture>
-			</control>
--->
 		</control>
 		
 		<control type="image" id="2">
@@ -105,8 +59,6 @@
 			<visible>true</visible>
 			<texture>bar.png</texture>
 		</control>
-
-		
 
 	</controls>
 

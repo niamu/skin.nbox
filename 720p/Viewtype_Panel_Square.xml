@@ -31,24 +31,6 @@
         <animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(58)">Conditional</animation>
       </control>
 
-      <control type="image" id="5600">
-        <posx>10</posx>
-        <posy>0</posy>
-        <width></width>
-        <height>150</height>
-        <texture background="true">smb://MEDIAS/Public/musique/$INFO[ListItem.Path]$INFO[ListItem.Artist,,/logo.png]</texture>
-        <aspectratio align="left" aligny="center">keep</aspectratio>
-      </control>
-
-      <control type="image" id="5601">
-        <posx>10</posx>
-        <posy>0</posy>
-        <width></width>
-        <height>150</height>
-        <texture background="true">smb://MEDIAS/Public/musique/$INFO[ListItem.Path]$INFO[ListItem.Artist,,/logo.png]</texture>
-        <aspectratio align="left" aligny="center">keep</aspectratio>
-      </control>
-
       <control type="fadelabel">
         <posx>10</posx>
         <posy>0</posy>

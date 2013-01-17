@@ -514,7 +514,7 @@
 			<posy>-30</posy>
 			<width>400</width>
 			<height>400</height>
-			<texture>music/musicwallframeF.png</texture>
+			<texture>music/musicwallframef.png</texture>
 		</control>
 		<control type="image">
 			<posx>0</posx>

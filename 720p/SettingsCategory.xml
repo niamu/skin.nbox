@@ -175,8 +175,8 @@
         <radioposx>770</radioposx>
         <align>left</align>
         <focusedcolor>Accent</focusedcolor>
-        <textureradiofocus>other_textures/Radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/Radiobutton2nf.png</textureradionofocus>
+        <textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
       </control>
 
       <control type="spincontrolex" id="9">
@@ -185,8 +185,8 @@
         <focusedcolor>Accent</focusedcolor>
         <textureup>other_textures/arrowupfo.png</textureup>
         <texturedown>other_textures/arrowdownfo.png</texturedown>
-        <textureupfocus>other_textures/ArrowUpg.png</textureupfocus>
-        <texturedownfocus>other_textures/ArrowDowng.png</texturedownfocus>
+        <textureupfocus>other_textures/arrowupg.png</textureupfocus>
+        <texturedownfocus>other_textures/arrowdowng.png</texturedownfocus>
       </control>
 
       <control type="button" id="10">
