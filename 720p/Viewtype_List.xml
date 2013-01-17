@@ -140,7 +140,7 @@
 						<posy>12</posy>
 						<width>200</width>
 						<height>200</height>
-						<texture fallback="DefaultAudio.png" diffuse="list/listmatte.png">$INFO[ListItem.Thumb]</texture>
+						<texture fallback="defaultaudio.png" diffuse="list/listmatte.png">$INFO[ListItem.Thumb]</texture>
 						<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
 						<visible>!IsEmpty(ListItem.Thumb) + !Container.Content(Genres)</visible>
 					</control>
@@ -149,7 +149,7 @@
 						<posy>12</posy>
 						<width>80</width>
 						<height>80</height>
-						<texture diffuse="list/listmatte.png" fallback="DefaultMusicGenre.jpg">musicgenres/$INFO[ListItem.Label].jpg</texture>
+						<texture diffuse="list/listmatte.png" fallback="defaultmusicgenre.jpg">musicgenres/$INFO[ListItem.Label].jpg</texture>
 						<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="52,52" start="50" end="100" time="200" tween="cubic" easing="out" />
@@ -274,8 +274,8 @@
 						<onleft>503</onleft>
 						<label></label>
 						<font>-</font>
-						<texturefocus>other_textures/osd/playVidfo.png</texturefocus>
-						<texturenofocus>other_textures/osd/playVidnf.png</texturenofocus>
+						<texturefocus>other_textures/osd/playvidfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/playvidnf.png</texturenofocus>
 						<onclick>PlayMedia($ESCINFO[Window.Property(SongToMusicVideo.Path)])</onclick>
 						<visible>!IsEmpty(Window.Property(SongToMusicVideo.Path))</visible>
 						<animation effect="slide" start="200,0" end="0,0" time="200" tween="cubic" easing="out"  >VisibleChange</animation>

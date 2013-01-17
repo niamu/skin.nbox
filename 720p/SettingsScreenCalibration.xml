@@ -15,7 +15,7 @@
 			<posy>0</posy>
 			<width>128</width>
 			<height>128</height>
-			<texturefocus>other_textures/CalibrateTopLeft.png</texturefocus>
+			<texturefocus>other_textures/calibratetopleft.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 		</control>
 
@@ -25,7 +25,7 @@
 			<posy>500</posy>
 			<width>128</width>
 			<height>128</height>
-			<texturefocus>other_textures/CalibrateBottomRight.png</texturefocus>
+			<texturefocus>other_textures/calibratebottomright.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 		</control>
 
@@ -35,7 +35,7 @@
 			<posy>500</posy>
 			<width>512</width>
 			<height>128</height>
-			<texturefocus>other_textures/CalibrateSubTitles.png</texturefocus>
+			<texturefocus>other_textures/calibratesubtitles.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 		</control>
 
@@ -45,7 +45,7 @@
 			<posy>232</posy>
 			<width>256</width>
 			<height>256</height>
-			<texturefocus>other_textures/CalibratePixelRatio.png</texturefocus>
+			<texturefocus>other_textures/calibratepixelratio.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 		</control>
 

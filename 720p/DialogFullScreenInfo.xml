@@ -124,7 +124,7 @@
           <width>130</width>
           <height>25</height>
           <aspectratio align="left">keep</aspectratio>
-          <texture>other_textures/ColorRating/$INFO[Player.StarRating]</texture>
+          <texture>other_textures/colorrating/$INFO[Player.StarRating]</texture>
         </control>
 
       </control>

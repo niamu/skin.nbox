@@ -210,8 +210,8 @@
 					<ondown>15</ondown>
 					<label>12006</label>
 					<font>-</font>
-					<texturefocus>other_textures/osd/VizFO_black.png</texturefocus>
-					<texturenofocus>other_textures/osd/Viznf.png</texturenofocus>
+					<texturefocus>other_textures/osd/vizfo_black.png</texturefocus>
+					<texturenofocus>other_textures/osd/viznf.png</texturenofocus>
 				</control>
 
 				<control type="button" id="19">
@@ -221,8 +221,8 @@
 					<ondown>16</ondown>
 					<label>$LOCALIZE[250] $LOCALIZE[21417]</label>
 					<font>-</font>
-					<texturefocus>other_textures/osd/PresetSettingsFO_black.png</texturefocus>
-					<texturenofocus>other_textures/osd/PresetSettingsnf.png</texturenofocus>
+					<texturefocus>other_textures/osd/presetsettingsfo_black.png</texturefocus>
+					<texturenofocus>other_textures/osd/presetsettingsnf.png</texturenofocus>
 					<onclick>Addon.Default.OpenSettings(xbmc.player.musicviz)</onclick>
 				</control>
 
@@ -233,8 +233,8 @@
 					<ondown>17</ondown>
 					<label>31040</label>
 					<font>-</font>
-					<texturefocus>other_textures/osd/PreFO_black.png</texturefocus>
-					<texturenofocus>other_textures/osd/Prenf.png</texturenofocus>
+					<texturefocus>other_textures/osd/prefo_black.png</texturefocus>
+					<texturenofocus>other_textures/osd/prenf.png</texturenofocus>
 					<onclick>ActivateWindow(122)</onclick>
 				</control>
 
@@ -245,11 +245,11 @@
 					<ondown>18</ondown>
 					<label>$LOCALIZE[590]$INFO[Playlist.Random, : ]</label>
 					<font>-</font>
-					<texturefocus>other_textures/osd/RandomOffFO_black.png</texturefocus>
-					<texturenofocus>other_textures/osd/RandomOffnf.png</texturenofocus>
+					<texturefocus>other_textures/osd/randomofffo_black.png</texturefocus>
+					<texturenofocus>other_textures/osd/randomoffnf.png</texturenofocus>
 					<usealttexture>Playlist.IsRandom</usealttexture>
-					<alttexturefocus>other_textures/osd/RandomOnFO_black.png</alttexturefocus>
-					<alttexturenofocus>other_textures/osd/RandomOnnf.png</alttexturenofocus>
+					<alttexturefocus>other_textures/osd/randomonfo_black.png</alttexturefocus>
+					<alttexturenofocus>other_textures/osd/randomonnf.png</alttexturenofocus>
 					<onclick>XBMC.PlayerControl(Random)</onclick>
 				</control>
 

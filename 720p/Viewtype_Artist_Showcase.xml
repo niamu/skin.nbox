@@ -23,8 +23,7 @@
 			<width>1480</width>
 			<onleft>52</onleft>
 			<onright>52</onright>
-			<!--<onup>68</onup>-->
-      <onup>9000</onup>
+			<onup>9000</onup>
       
 			<viewtype label="Artist ShowCase">Artist Showcase</viewtype>
 			<orientation>horizontal</orientation>
@@ -55,7 +54,7 @@
 							<posy>374</posy>
 							<width>162</width>
 							<height>241</height>
-							<texture background="true" flipy="true" diffuse="movie-poster/Movie_Thumb_Mask.png">$INFO[ListItem.Icon]</texture>
+							<texture background="true" flipy="true" diffuse="movie-poster/movie_thumb_mask.png">$INFO[ListItem.Icon]</texture>
               <colordiffuse>ImageDiffuse2</colordiffuse>
               <visible>false</visible>
 							<fadetime>200</fadetime>
@@ -70,16 +69,6 @@
 							<texture>dialogs/movies/movieset.png</texture>
 							<visible>Container.Content(Artists) + IsEmpty(ListItem.foldername) + !substring(Container.Listitem.Label,..,left)</visible>
 						</control>
-            <!--
-            <control type="image">
-               <posx>1</posx>
-               <posy>300</posy>
-               <width></width>
-               <height>50</height>
-               <aspectratio align="left" >keep</aspectratio>
-               <texture background="true" fallback="rien">smb://MEDIAS/Public/musique/$INFO[ListItem.Path]$INFO[ListItem.Artist,,/logo.png]</texture>
-             </control>
-             -->
 				</control>
 			</itemlayout>
 			
@@ -226,7 +215,6 @@
 			<visible>Container.Content(Artists)</visible>
 		</control>
 
-
 		<control type="label">
 			    <label>artistes</label>
 					<posx>70</posx>
@@ -238,17 +226,7 @@
 					<align>left</align>
 					<visible>Container.Content(Artists)</visible>
 		</control>
-    <!--LOGO-->
-		<control type="image">
-					         <posx>25</posx>
-					         <posy>10</posy>
-					         <width>auto</width>
-					         <height>auto</height>
-					         <texture background="true">smb://MEDIAS/Public/musique/$INFO[ListItem.Path]$INFO[ListItem.Artist,,/logo.png]</texture>
-					         <aspectratio align="left" aligny="center">stretch</aspectratio>
-		 </control>
 
-  <!--------------------------------------------------------------------------------------------------->
   <control type="fadelabel" id="140">
 					       <posx>384</posx>
 					       <posy>171</posy>
@@ -286,7 +264,7 @@
 				<posy>0</posy>
 				<width>1280</width>
 				<height>720</height>
-				<texture>Showcase/last-overlay.png</texture>
+				<texture>showcase/last-overlay.png</texture>
 			</control>
 
 </control>

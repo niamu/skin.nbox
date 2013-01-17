@@ -234,7 +234,7 @@
             <width>100</width>
             <height>150</height>
             <fadetime>IconCrossfadeTime</fadetime>
-            <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+            <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="defaultvideo.png">$INFO[ListItem.Icon]</texture>
             <aspectratio scalediffuse="false">stretch</aspectratio>
           </control>
           <control type="image">
@@ -260,7 +260,7 @@
               <width>100</width>
               <height>150</height>
               <fadetime>IconCrossfadeTime</fadetime>
-              <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+              <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="defaultvideo.png">$INFO[ListItem.Icon]</texture>
               <aspectratio scalediffuse="false">stretch</aspectratio>
             </control>
             <control type="image">
@@ -505,7 +505,7 @@
             <width>100</width>
             <height>150</height>
             <fadetime>IconCrossfadeTime</fadetime>
-            <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+            <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="defaultvideo.png">$INFO[ListItem.Icon]</texture>
             <bordertexture border="-7">thumbs/poster_shadow.png</bordertexture>
             <aspectratio scalediffuse="false">stretch</aspectratio>
           </control>
@@ -527,7 +527,7 @@
             <width>100</width>
             <height>150</height>
             <fadetime>IconCrossfadeTime</fadetime>
-            <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="DefaultVideo.png">$INFO[ListItem.Icon]</texture>
+            <texture diffuse="thumbs/movieposter_mask.png" background="true" fallback="defaultvideo.png">$INFO[ListItem.Icon]</texture>
             <bordertexture border="-7">thumbs/poster_shadow.png</bordertexture>
             <aspectratio scalediffuse="false">stretch</aspectratio>
             <animation effect="zoom" center="auto" start="100" end="150" time="600" tween="back" easing="out">Focus</animation>
@@ -1036,7 +1036,7 @@
           <posy>456</posy>
           <width>420</width>
           <height>245</height>
-          <texture>home/nowplaying/OverlayDialogBackground.png</texture>
+          <texture>home/nowplaying/overlaydialogbackground.png</texture>
         </control>
         <control type="image">
           <posx>35</posx>
@@ -1558,7 +1558,7 @@
       <posy>456</posy>
       <height>242</height>
       <width>242</width>
-      <texture fallback="DefaultAlbumCover.png" diffuse="thumbs/cdcover_mask2.png">$INFO[MusicPlayer.Cover]</texture>
+      <texture fallback="defaultalbumcover.png" diffuse="thumbs/cdcover_mask2.png">$INFO[MusicPlayer.Cover]</texture>
       <visible>!Skin.HasSetting(disablecdart)</visible>
       <bordertexture border="-32">thumbs/cd_shadow2.png</bordertexture>
     </control>
@@ -1575,7 +1575,7 @@
       <posy>456</posy>
       <height>242</height>
       <width>242</width>
-      <texture fallback="DefaultAlbumCover.png" diffuse="thumbs/cdcover_mask.png">$INFO[MusicPlayer.Cover]</texture>
+      <texture fallback="defaultalbumcover.png" diffuse="thumbs/cdcover_mask.png">$INFO[MusicPlayer.Cover]</texture>
       <visible>Skin.HasSetting(disablecdart)</visible>
       <bordertexture border="-16">thumbs/cd_shadow.png</bordertexture>
     </control>

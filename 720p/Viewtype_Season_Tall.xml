@@ -128,7 +128,7 @@
 						<posy></posy>
 						<width>215</width>
 						<height>315</height>
-						<texture>New.png</texture>
+						<texture>new.png</texture>
 						<colordiffuse>PanelDiffuse</colordiffuse>
 						<bordersize>4</bordersize>
 						<visible>Container.Content(TVShows) + !Skin.HasSetting(HideNewEpisodes) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]</visible>
@@ -184,7 +184,7 @@
 						<posy>130</posy>
 						<width>20</width>
 						<height>20</height>
-						<texture>New.png</texture>
+						<texture>new.png</texture>
 						<animation type="Focus" reversible="false">
 							<effect type="zoom" center="49,72" start="80" end="120" time="400" tween="back" easing="out" />
 							<effect type="fade" start="80" end="100" time="400" />

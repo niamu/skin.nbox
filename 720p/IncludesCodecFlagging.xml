@@ -243,7 +243,7 @@
 			<width>60</width>
 			<height>40</height>
 			<aspectratio>keep</aspectratio>
-			<texture>flagging/ratings/bbfc_12A.png</texture>
+			<texture>flagging/ratings/bbfc_12a.png</texture>
 			<visible>substring(listitem.mpaa,UK:12A)</visible>
 		</control>
 		<control type="image">

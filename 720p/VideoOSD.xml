@@ -48,8 +48,8 @@
 						<ondown>13</ondown>
 						<label>298</label>
 						<font>-</font>
-						<texturefocus>other_textures/osd/BookMarksfo.png</texturefocus>
-						<texturenofocus>other_textures/osd/BookMarksnf.png</texturenofocus>
+						<texturefocus>other_textures/osd/bookmarksfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/bookmarksnf.png</texturenofocus>
 						<onclick>ActivateWindow(125)</onclick>
 					</control>
 
@@ -60,8 +60,8 @@
 						<ondown>14</ondown>
 						<label>13396</label>
 						<font>-</font>
-						<texturefocus>other_textures/osd/Audiofo.png</texturefocus>
-						<texturenofocus>other_textures/osd/Audionf.png</texturenofocus>
+						<texturefocus>other_textures/osd/audiofo.png</texturefocus>
+						<texturenofocus>other_textures/osd/audionf.png</texturenofocus>
 						<onclick>ActivateWindow(124)</onclick>
 					</control>
 
@@ -73,8 +73,8 @@
 						<label>13395</label>
 						<align>left</align>
 						<font>-</font>
-						<texturefocus>other_textures/osd/Videofo.png</texturefocus>
-						<texturenofocus>other_textures/osd/Videonf.png</texturenofocus>
+						<texturefocus>other_textures/osd/videofo.png</texturefocus>
+						<texturenofocus>other_textures/osd/videonf.png</texturenofocus>
 						<onclick>ActivateWindow(123)</onclick>
 					</control>
 
@@ -85,8 +85,8 @@
 						<ondown>16</ondown>
 						<label>287</label>
 						<font>-</font>
-						<texturefocus>other_textures/osd/Subtitlesfo.png</texturefocus>
-						<texturenofocus>other_textures/osd/Subtitlesnf.png</texturenofocus>
+						<texturefocus>other_textures/osd/subtitlesfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/subtitlesnf.png</texturenofocus>
 						<onclick>Close</onclick>
 						<onclick>XBMC.RunScript(script.xbmc.subtitles)</onclick>
 						<visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
@@ -98,8 +98,8 @@
 						<height>50</height>
 						<label>287</label>
 						<font>-</font>
-						<texturefocus>other_textures/osd/Subtitlesfo.png</texturefocus>
-						<texturenofocus>other_textures/osd/Subtitlesnf.png</texturenofocus>
+						<texturefocus>other_textures/osd/subtitlesfo.png</texturefocus>
+						<texturenofocus>other_textures/osd/subtitlesnf.png</texturenofocus>
 						<onclick>Close</onclick>
 						<onclick>XBMC.RunScript($INFO[Skin.String(SubtitlesPath)])</onclick>
 						<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
@@ -224,7 +224,7 @@
 							<width>130</width>
 							<height>25</height>
 							<aspectratio align="left">keep</aspectratio>
-							<texture>other_textures/ColorRating/$INFO[Player.StarRating]</texture>
+							<texture>other_textures/colorrating/$INFO[Player.StarRating]</texture>
 						</control>
 					</control>
 
@@ -275,7 +275,7 @@
 						<ondown>-</ondown>
 						<label>210</label>
 						<font>-</font>
-						<texturefocus>other_textures/osd/prevtrackGreenfo.png</texturefocus>
+						<texturefocus>other_textures/osd/prevtrackgreenfo.png</texturefocus>
 						<texturenofocus>other_textures/osd/prevtracknf.png</texturenofocus>
 						<onclick>PlayerControl(Previous)</onclick>
 					</control>
@@ -292,7 +292,7 @@
 						<ondown>-</ondown>
 						<label>31036</label>
 						<font>-</font>
-						<texturefocus>other_textures/osd/rewindGreenfo.png</texturefocus>
+						<texturefocus>other_textures/osd/rewindgreenfo.png</texturefocus>
 						<texturenofocus>other_textures/osd/rewindnf.png</texturenofocus>
 						<onclick>PlayerControl(rewind)</onclick>
 					</control>
@@ -310,7 +310,7 @@
 						<label>31037</label>
 						<altlabel>208</altlabel>
 						<font>-</font>
-						<texturefocus>other_textures/osd/pauseGreenfo.png</texturefocus>
+						<texturefocus>other_textures/osd/pausegreenfo.png</texturefocus>
 						<texturenofocus>other_textures/osd/pausenf.png</texturenofocus>
 						<usealttexture>Player.paused | Player.Forwarding | Player.rewinding</usealttexture>
 						<alttexturefocus>other_textures/osd/playGreenfo.png</alttexturefocus>
@@ -330,7 +330,7 @@
 						<ondown>-</ondown>
 						<label>31038</label>
 						<font>-</font>
-						<texturefocus>other_textures/osd/stopGreenfo.png</texturefocus>
+						<texturefocus>other_textures/osd/stopgreenfo.png</texturefocus>
 						<texturenofocus>other_textures/osd/stopnf.png</texturenofocus>
 						<onclick>PlayerControl(Stop)</onclick>
 					</control>
@@ -347,7 +347,7 @@
 						<ondown>-</ondown>
 						<label>31039</label>
 						<font>-</font>
-						<texturefocus>other_textures/osd/forwardGreenfo.png</texturefocus>
+						<texturefocus>other_textures/osd/forwardgreenfo.png</texturefocus>
 						<texturenofocus>other_textures/osd/forwardnf.png</texturenofocus>
 						<onclick>PlayerControl(Forward)</onclick>
 					</control>
@@ -364,7 +364,7 @@
 						<ondown>-</ondown>
 						<label>209</label>
 						<font>-</font>
-						<texturefocus>other_textures/osd/nexttrackGreenfo.png</texturefocus>
+						<texturefocus>other_textures/osd/nexttrackgreenfo.png</texturefocus>
 						<texturenofocus>other_textures/osd/nexttracknf.png</texturenofocus>
 						<onclick>PlayerControl(Next)</onclick>
 					</control>

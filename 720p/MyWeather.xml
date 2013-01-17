@@ -702,7 +702,7 @@
 			<textcolor>-</textcolor>
 			<focusedcolor>-</focusedcolor>
 			<disabledcolor>TextDisabled</disabledcolor>
-			<texturefocus>buttonfo2Wide.png</texturefocus>
+			<texturefocus>buttonfo2wide.png</texturefocus>
 			<texturenofocus>-</texturenofocus>
 			<pulseonselect>false</pulseonselect>
 			<spinwidth>24</spinwidth>

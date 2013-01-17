@@ -264,7 +264,7 @@
 						<width>90</width>
 						<height>33</height>
 						<aspectratio>keep</aspectratio>
-						<texture>other_textures/flagging/video/TV.png</texture>
+						<texture>other_textures/flagging/video/tv.png</texture>
 						<visible>[substring(ListItem.FilenameAndPath,pdtv) | substring(ListItem.FilenameAndPath,hdtv) | substring(ListItem.FilenameAndPath,dsr)] + !Skin.HasSetting(HideFilenameother_textures/flagging)</visible>
 					</control>
 
