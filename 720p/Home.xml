@@ -120,9 +120,19 @@
     </control>
 
     <control type="label">
+      <label>weather</label>
+      <posx>74</posx>
+      <posy>405</posy>
+      <height>30</height>
+      <width>250</width>
+      <font>Home_menu</font>
+      <align>left</align>
+    </control>
+
+    <control type="label">
       <label>settings</label>
       <posx>74</posx>
-      <posy>485</posy>
+      <posy>523</posy>
       <height>30</height>
       <width>250</width>
       <font>Home_menu</font>
@@ -132,7 +142,7 @@
     <control type="label">
       <label>shutdown</label>
       <posx>74</posx>
-      <posy>525</posy>
+      <posy>563</posy>
       <height>30</height>
       <width>250</width>
       <font>Home_menu</font>
@@ -179,9 +189,22 @@
     </control>
 
     <control type="label">
+      <label>[COLOR Accent]weather[/COLOR]</label>
+      <posx>74</posx>
+      <posy>405</posy>
+      <height>30</height>
+      <width>250</width>
+      <font>Home_menu</font>
+      <align>left</align>
+      <visible>Control.HasFocus(504)</visible>
+      <animation effect="fade" start="0" time="500" condition="Control.HasFocus(504)" >Conditional</animation>
+      <animation effect="fade" time="200" delay="200">Hidden</animation>
+    </control>
+
+    <control type="label">
       <label>[COLOR Accent]settings[/COLOR]</label>
       <posx>74</posx>
-      <posy>485</posy>
+      <posy>523</posy>
       <height>30</height>
       <width>250</width>
       <font>Home_menu</font>
@@ -194,7 +217,7 @@
     <control type="label">
       <label>[COLOR Accent]shutdown[/COLOR]</label>
       <posx>74</posx>
-      <posy>525</posy>
+      <posy>563</posy>
       <height>30</height>
       <width>250</width>
       <font>Home_menu</font>
@@ -247,7 +270,7 @@
         <font>Home_menu</font>
         <align>left</align>
         <onup>503</onup>
-        <ondown>505</ondown>
+        <ondown>504</ondown>
         <onleft>300</onleft>
         <onright>601</onright>
         <onclick>right</onclick>
@@ -299,16 +322,47 @@
         <animation effect="fade" time="200" delay="200">Hidden</animation>
       </control>
 
-      <control id="505">
+      <control id="504">
         <type>button</type>
         <label></label>
         <posx>20</posx>
-        <posy>485</posy>
+        <posy>408</posy>
         <height>40</height>
         <width>40</width>
         <font>Home_menu</font>
         <align>left</align>
         <onup>502</onup>
+        <ondown>505</ondown>
+        <onleft>300</onleft>
+        <onright>300</onright>
+        <onclick>ActivateWindow(weather)</onclick>
+      </control>
+
+      <control id="514">
+        <type>image</type>
+        <label></label>
+        <posx>15</posx>
+        <posy>403</posy>
+        <height>50</height>
+        <width>50</width>
+        <align>left</align>
+        <texture>marker.png</texture>
+        <visible>Control.HasFocus(504)</visible>
+        <animation effect="fade" start="20" time="1200" condition="Control.HasFocus(504)" pulse="true">Conditional</animation>
+        <animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(504)" >Conditional</animation>
+        <animation effect="fade" time="200" delay="200">Hidden</animation>
+      </control>
+
+      <control id="505">
+        <type>button</type>
+        <label></label>
+        <posx>20</posx>
+        <posy>523</posy>
+        <height>40</height>
+        <width>40</width>
+        <font>Home_menu</font>
+        <align>left</align>
+        <onup>504</onup>
         <ondown>506</ondown>
         <onleft></onleft>
         <onright>69</onright>
@@ -319,7 +373,7 @@
         <type>image</type>
         <label></label>
         <posx>15</posx>
-        <posy>482</posy>
+        <posy>520</posy>
         <height>50</height>
         <width>50</width>
         <align>left</align>
@@ -334,7 +388,7 @@
         <type>button</type>
         <label></label>
         <posx>20</posx>
-        <posy>525</posy>
+        <posy>563</posy>
         <height>40</height>
         <width>40</width>
         <font>Home_menu</font>
@@ -350,7 +404,7 @@
         <type>image</type>
         <label></label>
         <posx>15</posx>
-        <posy>522</posy>
+        <posy>560</posy>
         <height>50</height>
         <width>50</width>
         <align>left</align>
@@ -2452,7 +2506,7 @@
   <animation effect="fade" time="400">VisibleChange</animation>
   <animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(502) | Control.HasFocus(67) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)">Conditional</animation>
   <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(502) | Control.HasFocus(67) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)" reversible="false">Conditional</animation>	
-  <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(503) | Control.HasFocus(505)" reversible="false">Conditional</animation>
+  <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(503) | Control.HasFocus(504)" reversible="false">Conditional</animation>
 
   <control type="label">
     <label>library</label>
@@ -3566,6 +3620,267 @@
   </control>		<!------end black 6 --------->	
 </control> <!-- end music overlays-->
 
+
+<!-- weather -->
+
+<control type="group" id="395">     
+  <posx>360</posx>
+  <posy>170</posy>
+  <visible>[Control.HasFocus(504)]</visible>
+  <animation effect="fade" time="400">VisibleChange</animation>
+  <animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(504)">Conditional</animation>
+  <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(504)" reversible="false">Conditional</animation> 
+  <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(505) | Control.HasFocus(502)" reversible="false">Conditional</animation>
+
+  <control type="label">
+    <label>currently</label>
+    <posy>30</posy>
+    <height>30</height>
+    <width>350</width>
+    <font>Home_sub_header</font>
+    <align>left</align>
+  </control>  
+
+  <control type="label">
+    <description>Day 0 Label</description>
+    <posx>205</posx>
+    <posy>30</posy>
+    <height>30</height>
+    <width>580</width>
+    <label>[LOWERCASE]$INFO[Weather.Location][/LOWERCASE]</label>
+    <font>Home_sub_header</font>
+    <align>left</align>
+  </control>
+
+  <control type="image">
+    <posx>0</posx>
+    <posy>120</posy>
+    <width>195</width>
+    <height>315</height>
+    <texture>tile.png</texture>
+  </control>
+
+  <control type="image">
+    <posx>200</posx>
+    <posy>120</posy>
+    <width>195</width>
+    <height>315</height>
+    <texture>tile.png</texture>
+  </control>
+
+  <control type="image">
+    <posx>400</posx>
+    <posy>120</posy>
+    <width>195</width>
+    <height>315</height>
+    <texture>tile.png</texture>
+  </control>
+
+  <control type="image">
+    <posx>600</posx>
+    <posy>120</posy>
+    <width>195</width>
+    <height>315</height>
+    <texture>tile.png</texture>
+  </control>
+
+
+  <control type="group">
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>155</posy>
+      <width>360</width>
+      <label>[COLOR Accent]$INFO[Window(Weather).Property(Current.Temperature)][LOWERCASE]$INFO[System.TemperatureUnits][/LOWERCASE][/COLOR]</label> 
+      <font>temp_big</font>
+      <align>left</align>
+    </control>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>240</posy>
+      <width>200</width>
+      <label>$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits] | $INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
+      <font>weather_med</font>
+      <align>left</align>
+    </control>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>262</posy>
+      <width>200</width>
+      <label>High  |  Low</label>
+      <font>weather_small</font>
+      <align>left</align>
+    </control>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>310</posy>
+      <width>200</width>
+      <label>$INFO[Window(Weather).Property(Current.WindSpeed)] | $INFO[Window(Weather).Property(Current.WindDirection)]</label>
+      <font>weather_med</font>
+      <align>left</align>
+    </control>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>332</posy>
+      <width>200</width>
+      <label>Wind</label>
+      <font>weather_small</font>
+      <align>left</align>
+    </control>
+  </control>
+
+  <control type="group">
+    <posx>200</posx>
+
+    <control type="image">
+      <description>Day 0 Icon</description>
+      <posx>35</posx>
+      <posy>130</posy>
+      <height>100</height>
+      <width>100</width>
+      <texture>$INFO[Weather.FanartCode,extras/weather_icons/,.png]</texture>
+      <align>right</align>
+    </control>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>240</posy>
+      <width>200</width>
+      <label>$INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
+      <font>weather_med</font>
+      <align>left</align>
+    </control>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>262</posy>
+      <width>200</width>
+      <label>Feels Like</label>
+      <font>weather_small</font>
+      <align>left</align>
+    </control>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>310</posy>
+      <width>200</width>
+      <label>$INFO[Window(Weather).Property(Current.Humidity)]</label>
+      <font>weather_med</font>
+      <align>left</align>
+    </control>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>332</posy>
+      <width>200</width>
+      <label>Humidity</label>
+      <font>weather_small</font>
+      <align>left</align>
+    </control>      
+  </control>
+
+  <control type="group">
+    <posx>400</posx>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>240</posy>
+      <width>200</width>
+      <label>$INFO[Window(Weather).Property(Current.UVIndex)]</label>
+      <font>weather_med</font>
+      <align>left</align>
+    </control>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>262</posy>
+      <width>200</width>
+      <label>UV Index</label>
+      <font>weather_small</font>
+      <align>left</align>
+    </control>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>310</posy>
+      <width>200</width>
+      <label>$INFO[Window(Weather).Property(Current.DewPoint)]</label>
+      <font>weather_med</font>
+      <align>left</align>
+    </control>
+
+    <control type="label">
+      <description>Day 0 Label</description>
+      <posx>25</posx>
+      <posy>332</posy>
+      <width>200</width>
+      <label>Dew Point</label>
+      <font>weather_small</font>
+      <align>left</align>
+    </control>
+  </control>
+
+  <control type="group">
+   <posx>600</posx>
+
+   <control type="label">
+    <description>Day 0 Label</description>
+    <posx>25</posx>
+    <posy>240</posy>
+    <width>200</width>
+    <label>$INFO[Window(Weather).Property(Current.Condition)]</label>
+    <font>weather_med</font>
+    <align>left</align>
+  </control>
+
+  <control type="label">
+    <description>Day 0 Label</description>
+    <posx>25</posx>
+    <posy>262</posy>
+    <width>200</width>
+    <label>Current Condition</label>
+    <font>weather_small</font>
+    <align>left</align>
+  </control>    
+
+  <control type="label">
+    <description>Day 0 Label</description>
+    <posx>25</posx>
+    <posy>310</posy>
+    <width>200</width>
+    <label>Last Updated</label>
+    <font>weather_med</font>
+    <align>left</align>
+  </control>
+
+  <control type="label">
+    <description>Day 0 Label</description>
+    <posx>25</posx>
+    <posy>332</posy>
+    <width>200</width>
+    <label>$INFO[Window(Weather).Property(Updated)]</label>
+    <font>weather_small</font>
+    <align>left</align>
+  </control>  
+</control>
+
+</control>
+
 <!-- Settings -->
 
 <control type="group" id="378">   	
@@ -3574,7 +3889,7 @@
   <animation effect="fade" time="400">VisibleChange</animation>
   <animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="Control.HasFocus(505) | Control.HasFocus(69)">Conditional</animation>
   <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="Control.HasFocus(505) | Control.HasFocus(69)" reversible="false">Conditional</animation>	
-  <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(502) | Control.HasFocus(506)" reversible="false">Conditional</animation>
+  <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="Control.HasFocus(504) | Control.HasFocus(506)" reversible="false">Conditional</animation>
 
   <control type="label">
     <label>settings</label>
