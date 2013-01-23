@@ -164,7 +164,7 @@
 		<focusedcolor>White</focusedcolor>
 		<disabledcolor>Red</disabledcolor>
 		<textoffsetx>20</textoffsetx>
-		<textoffsety>0</textoffsety>
+		<textoffsety>10</textoffsety>
 	</default>
 
 	<default type="progress">
