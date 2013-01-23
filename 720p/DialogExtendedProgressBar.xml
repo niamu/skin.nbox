@@ -58,11 +58,11 @@
 			<control type="progress" id="32">
 				<description>progress control</description>
 				<posx>0</posx>
-				<posy>134</posy>
+				<posy>133</posy>
 				<width>340</width>
 				<height>5</height>
-				<texturebg>tile.png</texturebg>
-				<midtexture border="1">progresslime.png</midtexture>
+				<texturebg>progressnotification.png</texturebg>
+				<midtexture>progresslime.png</midtexture>
 			</control>
 
 		</control>

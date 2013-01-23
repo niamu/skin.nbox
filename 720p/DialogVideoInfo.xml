@@ -368,6 +368,7 @@
 						<label>206</label>
 						<width>180</width>
 						<align>right</align>
+						<focusedcolor>Accent</focusedcolor>
 						<onclick condition="SubString(Control.GetLabel(5),Plot)">right</onclick>
 						<onclick condition="SubString(Control.GetLabel(5),Plot)">down</onclick>
 					</control>
@@ -377,6 +378,7 @@
 						<label>208</label>
 						<width>180</width>
 						<align>right</align>
+						<focusedcolor>Accent</focusedcolor>
 					</control>
 
 					<control type="button" id="9">
@@ -384,6 +386,7 @@
 						<label>13404</label>
 						<width>180</width>
 						<align>right</align>
+						<focusedcolor>Accent</focusedcolor>
 					</control>
 
 					<control type="button" id="6">
@@ -391,6 +394,7 @@
 						<label>184</label>
 						<width>180</width>
 						<align>right</align>
+						<focusedcolor>Accent</focusedcolor>
 					</control>
 
 					<control type="button" id="10">
@@ -398,6 +402,7 @@
 						<label>Art</label>
 						<width>180</width>
 						<align>right</align>
+						<focusedcolor>Accent</focusedcolor>
 					</control>
 
 				</control>
