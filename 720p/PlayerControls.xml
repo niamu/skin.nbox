@@ -173,7 +173,7 @@
 				<posy>490</posy>
 				<width>340</width>
 				<textcolor>black</textcolor>
-				<label>$INFO[VideoPlayer.Director,[B]Director[/B]: ]</label>
+				<label>$INFO[VideoPlayer.Director,[B]director[/B]: ]</label>
 				<visible>!IsEmpty(VideoPlayer.Director)</visible>
 			</control>
 			
@@ -182,7 +182,7 @@
 				<posy>520</posy>
 				<width>340</width>
 				<textcolor>black</textcolor>
-				<label>$INFO[VideoPlayer.Writer,[B]Writer[/B]: ]</label>
+				<label>$INFO[VideoPlayer.Writer,[B]writer[/B]: ]</label>
 				<visible>!IsEmpty(VideoPlayer.Writer)</visible>
 			</control>
 			

@@ -157,7 +157,7 @@
 				<width>600</width>
 				<height>50</height>
 				<aligny>center</aligny>
-				<font>Genre_Font</font>
+				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<label>[LOWERCASE]$INFO[ListItem.Label2][/LOWERCASE]</label>
 			</control>

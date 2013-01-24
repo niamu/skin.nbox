@@ -218,9 +218,9 @@
         <width>985</width>
         <height>50</height>
         <aligny>center</aligny>
-        <font>Genre_Font</font>
+        <font>Sort_Font_Small</font>
         <textcolor>White</textcolor>
-        <label>[COLOR Accent]$INFO[ListItem.Writer,[COLOR White]Writer: [/COLOR], ][/COLOR][COLOR Accent]$INFO[ListItem.Director,[COLOR White]Director: [/COLOR]][/COLOR]</label>
+        <label>[COLOR Accent]$INFO[ListItem.Writer,[COLOR White]writer: [/COLOR], ][/COLOR][COLOR Accent]$INFO[ListItem.Director,[COLOR White]director: [/COLOR]][/COLOR]</label>
         <visible>!IsEmpty(ListItem.Writer) | !IsEmpty(ListItem.Director)</visible>
       </control>
       
@@ -230,7 +230,7 @@
         <width>985</width>
         <height>50</height>
         <aligny>center</aligny>
-        <font>Genre_Font</font>
+        <font>Sort_Font_Small</font>
         <textcolor>White</textcolor>
         <label>[COLOR Accent]$INFO[ListItem.Premiered,[COLOR White]Premiered: [/COLOR]][/COLOR]</label>
         <visible>IsEmpty(ListItem.Writer) + IsEmpty(ListItem.Director)</visible>

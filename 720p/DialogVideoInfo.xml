@@ -127,7 +127,7 @@
 					<width>600</width>
 					<height>50</height>
 					<aligny>top</aligny>
-					<font>Genre_Font</font>
+					<font>Sort_Font_Small</font>
 					<textcolor>white</textcolor>
 					<label>$LOCALIZE[515]: [B]$INFO[ListItem.Genre][/B]</label>
 					<visible>!IsEmpty(ListItem.Genre) + [Container.Content(movies) | Container.Content(tvshows)]</visible>
@@ -139,7 +139,7 @@
 					<width>600</width>
 					<height>50</height>
 					<aligny>top</aligny>
-					<font>Genre_Font</font>
+					<font>Sort_Font_Small</font>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Duration]</label>
 					<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + IsEmpty(ListItem.Genre) + Container.Content(movies)</visible>
@@ -151,7 +151,7 @@
 					<width>600</width>
 					<height>50</height>
 					<aligny>top</aligny>
-					<font>Genre_Font</font>
+					<font>Sort_Font_Small</font>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Duration,, min]</label>
 					<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + IsEmpty(ListItem.Genre) + Container.Content(movies)</visible>
@@ -163,7 +163,7 @@
 					<width>600</width>
 					<height>50</height>
 					<aligny>top</aligny>
-					<font>Genre_Font</font>
+					<font>Sort_Font_Small</font>
 					<textcolor>white</textcolor>
 					<label>$INFO[ListItem.Season,Season ], $INFO[ListItem.Episode,Episode ]</label>
 					<visible>!Container.Content(movies) + Container.Content(Episodes)</visible>

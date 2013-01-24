@@ -249,7 +249,7 @@
 					       <width>600</width>
 					       <height>50</height>
 					       <aligny>center</aligny>
-					       <font>Genre_Font</font>
+					       <font>Sort_Font_Small</font>
 					       <textcolor>White</textcolor>
 					       <label>$LOCALIZE[515]: [B]$INFO[ListItem.Genre][/B]</label>
 					       <visible>!IsEmpty(ListItem.Genre) + Container.Content(Artists)</visible>

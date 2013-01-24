@@ -72,7 +72,7 @@
 					<posx>72</posx>
 					<posy>38</posy>
 					<width>1220</width>
-					<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]Director: [/COLOR]][/COLOR]</label>
+					<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]director: [/COLOR]][/COLOR]</label>
 					<scroll>true</scroll>
 					<font>Small</font>
 					<align>left</align>
