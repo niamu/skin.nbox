@@ -1,17 +1,17 @@
-<!-- Foundation -->
 <window id="502">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>50, 503, 58, 51, 52</views>
+	<views>50,503,58,51,52</views>
 
 	<controls>
-
-		<include>HomeBackground</include>
-		<include>Viewtype_List</include>
-		<include>View_50_List</include>
-		<include>Viewtype_Panel_Square</include>
-		<include>View_Artist_List</include>
-		<include>Viewtype_Artist_Showcase</include>
+		<control type="group">
+			<include>HomeBackground</include>
+			<include>Viewtype_List</include>
+			<include>View_50_List</include>
+			<include>Viewtype_Panel_Square</include>
+			<include>View_Artist_List</include>
+			<include>Viewtype_Artist_Showcase</include>
+		</control>
 
 		<control type="label">
 			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>

@@ -3,9 +3,15 @@
 
 		<control type="group">
 			<visible>Control.IsVisible(503)</visible>
-			<!-- Browser -->
-			<description>Song List View (id=503)</description>
-			<visible>Window.IsActive(musiclibrary) + Container.Content(songs)</visible>
+
+			<animation type="WindowClose">
+				<effect type="fade" time="300"/>
+				<effect type="slide" end="+1500,0" time="300"/>
+			</animation>
+			<animation type="WindowOpen">
+				<effect type="fade" time="300"/>
+				<effect type="slide" start="+1500,0" time="300"/>
+			</animation>
 
 			<control type="image">
 				<description>Music bar</description>
@@ -111,7 +117,6 @@
 					</control>
 				</itemlayout>
 				
-				
 				<focusedlayout width="828" height="200">
 					<control type="image">
 						<posx>12</posx>
@@ -170,45 +175,6 @@
 						<label>$INFO[ListItem.Title]</label>
 						<visible>!IsEmpty(ListItem.Title) + !SubString(Container.FolderPath,plugin)</visible>
 					</control>
-	
-					<control type="label">
-						<posx>220</posx>
-						<posy>14</posy>
-						<width>392</width>
-						<height>25</height>
-						<aligny>center</aligny>
-						<font>Home_menu</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>Accent</selectedcolor>
-						<label>$INFO[ListItem.Album]</label>
-						<visible>IsEmpty(ListItem.Title)</visible>
-					</control>
-
-					<control type="label">
-						<posx>230</posx>
-						<posy>75</posy>
-						<width>392</width>
-						<height>17</height>
-						<aligny>center</aligny>
-						<font>Font_ListDetail</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>Accent</selectedcolor>
-						<label>$INFO[ListItem.Album]</label>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(songs)</visible>
-					</control>
-					
-					<control type="label">
-						<posx>230</posx>
-						<posy>100</posy>
-						<width>780</width>
-						<height>17</height>
-						<aligny>center</aligny>
-						<font>Font_ListDetail</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>Accent</selectedcolor>
-						<label>$INFO[ListItem.Artist]</label>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(songs)</visible>
-					</control>
 					
 					<control type="label">
 						<posx>230</posx>
@@ -262,7 +228,7 @@
 			<texturenofocus>other_textures/osd/playvidnf.png</texturenofocus>
 			<onclick>PlayMedia($ESCINFO[Window.Property(SongToMusicVideo.Path)])</onclick>
 			<visible>!IsEmpty(Window.Property(SongToMusicVideo.Path))</visible>
-			<animation effect="slide" start="200,0" end="0,0" time="200" tween="cubic" easing="out"  >VisibleChange</animation>
+			<animation effect="slide" start="200,0" end="0,0" time="200" tween="cubic" easing="out">VisibleChange</animation>
 		</control>
 
 		<control type="label">
@@ -276,7 +242,7 @@
 			<selectedcolor>Accent</selectedcolor>
 			<label>play video</label>
 			<visible>!IsEmpty(Window.Property(SongToMusicVideo.Path))</visible>
-			<animation effect="slide" start="200,0" end="0,0" time="200" tween="cubic" easing="out"  >VisibleChange</animation>
+			<animation effect="slide" start="200,0" end="0,0" time="200" tween="cubic" easing="out">VisibleChange</animation>
 		</control>
 
 		<control type="image" id="2">

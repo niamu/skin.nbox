@@ -1,79 +1,107 @@
 <window id="501">
 	<defaultcontrol always="true">50</defaultcontrol>
 	<allowoverlay>yes</allowoverlay>
-	<views>50</views>
+	<views>503</views>
 
 	<controls>
 
 		<include>HomeBackground</include>
 
-		<include>View_50_List</include>
+		<include>Viewtype_List</include>
+
+		<control type="image">
+			<description>background image</description>
+			<posx>0</posx>
+			<posy>-0</posy>
+			<width>305</width>
+			<height>720</height>
+			<texture border="22">button.png</texture>
+			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+				<effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic"/>
+			</animation>
+		</control>
+
+		<control type="radiobutton" id="19">
+			<description>Filter (hidden)</description>
+			<include>HiddenButton</include>
+		</control>
 
 		<control type="grouplist" id="9000">
-			<posx>10</posx>
+			<posx>30</posx>
 			<posy>140</posy>
-			<width>220</width>
+			<width>240</width>
 			<height>600</height>
-			<itemgap>2</itemgap>
+			<itemgap>0</itemgap>
 			<onleft>50</onleft>
 			<onright>50</onright>
-			<onup>9000</onup>
-			<ondown>9000</ondown>
+			<onup></onup>
+			<ondown></ondown>
 			<orientation>vertical</orientation>
 			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
-				<effect type="fade" start="100" end="50" time="200" />
-				<effect type="zoom" center="0,300" start="100" end="80" time="200" />
+				<effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic"/>
 			</animation>
 
 			<control type="button" id="2">
-				<description>View</description>
-				<width>220</width>
 				<align>left</align>
+				<label>$INFO[Container.ViewMode]</label>
+				<onclick>Container.NextViewMode</onclick>
 			</control>
 
 			<control type="button" id="3">
 				<description>Sort</description>
-				<width>220</width>
+				<width>240</width>
 				<align>left</align>
+				<font>small</font>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="togglebutton" id="4">
 				<description>Ascending</description>
-				<width>220</width>
+				<width>240</width>
 				<align>left</align>
 				<label>584</label>
 				<altlabel>585</altlabel>
+				<font>small</font>
+				<textcolor>black</textcolor>
+			</control>
+
+			<control type="button" id="11">
+				<description>Search</description>
+				<width>240</width>
+				<align>left</align>
+				<label>137</label>
+				<font>small</font>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="99">
 				<description>Library</description>
-				<width>220</width>
+				<width>240</width>
 				<align>left</align>
 				<label>29800</label>
 				<onclick>ReplaceWindow(MusicLibrary)</onclick>
 				<onclick>SetFocus(50)</onclick>
 				<enable>Library.HasContent(Music)</enable>
+				<font>small</font>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="7">
 				<description>Playlists</description>
-				<width>220</width>
+				<width>240</width>
 				<align>left</align>
 				<label>136</label>
-			</control>
-
-			<control type="button" id="11">
-				<description>Search</description>
-				<width>220</width>
-				<align>left</align>
-				<label>600</label>
+				<font>small</font>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="button" id="98">
 				<description>Open Player Controls</description>
-				<width>220</width>
+				<width>240</width>
 				<align>left</align>
 				<label>31015</label>
+				<font>small</font>
+				<textcolor>black</textcolor>
 				<onclick>ActivateWindow(playercontrols)</onclick>
 				<visible>Player.HasMedia</visible>
 			</control>

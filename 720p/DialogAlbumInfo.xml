@@ -216,21 +216,21 @@
 				</control>
 
 				<control type="button" id="6">
-					<description>Refresh button</description>n>
+					<description>Refresh button</description>
 					<width>210</width>
 					<align>right</align>
 					<label>184</label>
 				</control>
 
 				<control type="button" id="10">
-					<description>Poster</description>n>
+					<description>Poster</description>
 					<width>210</width>
 					<align>right</align>
 					<label>Poster</label>
 				</control>
 
 				<control type="button" id="12">
-					<description>Get Fanart</description>n>
+					<description>Get Fanart</description>
 					<width>210</width>
 					<align>right</align>
 					<label>20413</label>

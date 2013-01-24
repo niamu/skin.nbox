@@ -128,18 +128,7 @@
           <aspectratio scalediffuse="false">stretch</aspectratio>
           <visible>true</visible>
           <bordersize>4</bordersize>
-        </control>
-
-        <control type="image">
-          <posx>722</posx>
-          <posy>288</posy>
-          <width>560</width>
-          <height>310</height>
-          <texture background="true" >$INFO[ListItem.Property(Fanart_Image)]</texture>
-          <fadetime>200</fadetime>
-          <aspectratio scalediffuse="false">stretch</aspectratio>
-          <visible>!IsEmpty(ListItem.Property(Fanart_Image))</visible>
-        </control>			
+        </control>		
 
         <control type="image">
           <posx>796</posx>
@@ -192,7 +181,7 @@
         <pauseatend>600</pauseatend>
         <scrollspeed>50</scrollspeed>
         <label>$INFO[ListItem.Artist]</label>
-        <visible>!IsEmpty(ListItem.Genre) + Container.Content(albums)</visible>
+        <visible>Container.Content(albums)</visible>
       </control>
 
       <control type="fadelabel">
