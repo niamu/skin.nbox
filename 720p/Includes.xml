@@ -66,6 +66,20 @@
 			<visible>Control.HasFocus(506) | [Control.HasFocus(20) + Window.IsActive(loginscreen)]</visible>
 			<animation effect="fade" time="500">Hidden</animation>
 		</control>
+		
+		<control type="multiimage">
+			<include>Dimensions_Fullscreen</include>
+			<randomize>true</randomize>
+			<timeperimage>3000</timeperimage>
+			<fadetime>1000</fadetime>
+			<pauseatend>0</pauseatend>
+			<loop>true</loop>
+			<aspectratio background="true" aligny="top">stretch</aspectratio>
+			<imagepath background="true">backgrounds/music</imagepath>
+			<colordiffuse>HomeFanart</colordiffuse>
+			<visible>Control.HasFocus(502) | [Control.HasFocus(20) + Window.IsActive(loginscreen)]</visible>
+			<animation effect="fade" time="500">Hidden</animation>
+		</control>
 
 		<control type="group">
 			<animation effect="fade" time="500">VisibleChange</animation>
