@@ -184,7 +184,7 @@
 							<posx>4</posx>
 							<posy>32</posy>
 							<width>830</width>
-							<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]Director: [/COLOR]][/COLOR]</label>
+							<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]director: [/COLOR]][/COLOR]</label>
 							<scroll>true</scroll>
 							<font>Medium</font>
 							<align>left</align>

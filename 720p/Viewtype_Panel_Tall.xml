@@ -299,7 +299,7 @@
 				<width>600</width>
 				<height>50</height>
 				<aligny>center</aligny>
-				<font>Genre_Font</font>
+				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<label>[COLOR Accent]$INFO[ListItem.LastPlayed,[COLOR White]Last Played: [/COLOR]][/COLOR]</label>
 				<visible>StringCompare(ListItem.Property(UnWatchedEpisodes),0) + IsEmpty(ListItem.LastPlayed) + [Container.Content(tvshows) | !Container.Content(albums)] + !Container.Content(movies)</visible>
@@ -311,7 +311,7 @@
 				<width>600</width>
 				<height>50</height>
 				<aligny>center</aligny>
-				<font>Genre_Font</font>
+				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Property(UnWatchedEpisodes),, unwatched episodes]</label>
 				<visible>[StringCompare(ListItem.LastPlayed,12/31/1969) | IsEmpty(ListItem.LastPlayed)] + [IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),1) | StringCompare(ListItem.Property(UnWatchedEpisodes),0)] + [Container.Content(tvshows) | !Container.Content(albums)] + !Container.Content(movies)</visible>
@@ -323,7 +323,7 @@
 				<width>600</width>
 				<height>50</height>
 				<aligny>center</aligny>
-				<font>Genre_Font</font>
+				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Property(UnWatchedEpisodes),, unwatched episode]</label>
 				<visible>[StringCompare(ListItem.LastPlayed,12/31/1969) | IsEmpty(ListItem.LastPlayed)] + [!IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),1) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] + [Container.Content(tvshows) | !Container.Content(albums)] + !Container.Content(movies)</visible>
@@ -335,7 +335,7 @@
 				<width>600</width>
 				<height>50</height>
 				<aligny>center</aligny>
-				<font>Genre_Font</font>
+				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<label>[COLOR Accent]$INFO[ListItem.LastPlayed,[COLOR White]Last Played: [/COLOR]][/COLOR]</label>
 				<visible>!IsEmpty(ListItem.LastPlayed) + !StringCompare(ListItem.LastPlayed,12/31/1969) + [Container.Content(tvshows) | !Container.Content(albums)] + !Container.Content(movies)</visible>
@@ -359,7 +359,7 @@
 				<width>985</width>
 				<height>50</height>
 				<aligny>center</aligny>
-				<font>Genre_Font</font>
+				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Tagline]</label>
 				<visible>!IsEmpty(ListItem.Tagline)</visible>
@@ -371,9 +371,9 @@
 				<width>600</width>
 				<height>50</height>
 				<aligny>center</aligny>
-				<font>Genre_Font</font>
+				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[COLOR Accent]$INFO[ListItem.Director,[COLOR White]Director:[/COLOR] ][/COLOR]</label>
+				<label>[COLOR Accent]$INFO[ListItem.Director,[COLOR White]director:[/COLOR] ][/COLOR]</label>
 				<visible>IsEmpty(ListItem.Tagline)</visible>
 			</control>
 			
@@ -383,7 +383,7 @@
 				<width>600</width>
 				<height>50</height>
 				<aligny>center</aligny>
-				<font>Genre_Font</font>
+				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Duration]</label>
 				<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline)</visible>
@@ -395,7 +395,7 @@
 				<width>600</width>
 				<height>50</height>
 				<aligny>center</aligny>
-				<font>Genre_Font</font>
+				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Duration,, min]</label>
 				<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline)</visible>
