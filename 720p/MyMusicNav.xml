@@ -4,55 +4,48 @@
 	<allowoverlay>yes</allowoverlay>
 	<views>50, 503, 58, 51, 52</views>
 
-
-	<!--<onload>RunScript(script.song-to-musicvideo)</onload>-->
-
 	<controls>
-	
+
 		<include>HomeBackground</include>
 		<include>Viewtype_List</include>
 		<include>View_50_List</include>
 		<include>Viewtype_Panel_Square</include>
-	  <include>View_Artist_List</include>
-    <include>Viewtype_Artist_Showcase</include>
+		<include>View_Artist_List</include>
+		<include>Viewtype_Artist_Showcase</include>
 
-
-<control type="label">
+		<control type="label">
 			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
-					<posx>1284</posx>
-					<posy>-10</posy>
-					<height>100</height>
-					<width>550</width>
-					<font>Home_time</font>
-					<align>right</align>
-					<visible>Window.IsActive(musiclibrary) + !Container.Content(songs)</visible>
+			<posx>1284</posx>
+			<posy>-10</posy>
+			<height>100</height>
+			<width>550</width>
+			<font>Home_time</font>
+			<align>right</align>
+			<visible>Window.IsActive(musiclibrary) + !Container.Content(songs)</visible>
 		</control>
 		
 		<control type="label">
 			<label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(dd)] $INFO[System.Date(MMM)] [/LOWERCASE]</label>
-					<posx>1280</posx>
-					<posy>54</posy>
-					<height>100</height>
-					<width>750</width>
-					<font>Home_date</font>
-					<visible>Window.IsActive(musiclibrary) + !Container.Content(songs)</visible>
-					<align>right</align>
+			<posx>1280</posx>
+			<posy>54</posy>
+			<height>100</height>
+			<width>750</width>
+			<font>Home_date</font>
+			<visible>Window.IsActive(musiclibrary) + !Container.Content(songs)</visible>
+			<align>right</align>
 		</control>
 		
-		
 		<control type="image">
-	        <animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
-          <effect type="fade" time="300" start="100" end="0" />
-        </animation>
-	
+			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+				<effect type="fade" time="300" start="100" end="0" />
+			</animation>
 			<posx>0</posx>
 			<posy>0</posy>
 			<width>1280</width>
 			<height>720</height>
 			<texture border="2">other_textures/black-back.png</texture>
 		</control>
-		
-		
+
 		<control type="image">
 			<description>background image</description>
 			<posx>0</posx>
@@ -61,18 +54,14 @@
 			<height>720</height>
 			<texture border="22">button.png</texture>
 			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
-			<effect type="slide" start="0,0" end="-305,0" time="300" />
+				<effect type="slide" start="0,0" end="-305,0" time="300" />
 			</animation>
 		</control>
 		
-		
-
 		<control type="radiobutton" id="19">
 			<description>Filter (hidden)</description>
 			<include>HiddenButton</include>
 		</control>
-
-
 
 		<control type="grouplist" id="9000">
 			<posx>30</posx>
@@ -89,21 +78,19 @@
 				<effect type="slide" start="0,0" end="-300,0" time="300" />
 			</animation>
 			
-		
-
 			<control type="button" id="2">
 				<description>View</description>
 				<width>220</width>
 				<align>left</align>
 				<onclick>Container.PreviousViewMode</onclick>
-        <visible>false</visible>
+				<visible>false</visible>
 			</control>
 			
-		<control type="button" id="20">
-      <align>left</align>
-					<label>$INFO[Container.ViewMode]</label>
-					<onclick>Container.NextViewMode</onclick>
-				</control>
+			<control type="button" id="20">
+				<align>left</align>
+				<label>$INFO[Container.ViewMode]</label>
+				<onclick>Container.NextViewMode</onclick>
+			</control>
 
 			<control type="button" id="3">
 				<description>Sort</description>
@@ -161,7 +148,6 @@
 				<visible>IsEmpty(Window.Property(filter))</visible>
 				<font>small</font>
 				<textcolor>black</textcolor>
-				
 			</control>
 
 			<control type="button" id="22">
@@ -187,13 +173,7 @@
 				<textcolor>black</textcolor>
 			</control>
 
-
-
 		</control>
 
-		
-
-
 	</controls>
-
 </window>

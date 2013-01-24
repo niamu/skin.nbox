@@ -31,21 +31,6 @@
         <animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(58)">Conditional</animation>
       </control>
 
-      <control type="fadelabel">
-        <posx>10</posx>
-        <posy>0</posy>
-        <width>810</width>
-        <height>50</height>
-        <aligny>center</aligny>
-        <scrollout>false</scrollout>
-        <pauseatend>600</pauseatend>
-        <scrollspeed>20</scrollspeed>
-        <font>Font_Panel_Main</font>
-        <textcolor>White</textcolor>
-        <label>$INFO[ListItem.Label]</label>
-        <visible>IsEmpty(Control.GetLabel(5600)) + IsEmpty(Control.GetLabel(5601))</visible>
-      </control>
-
       <control type="label">
         <posx>75</posx>
         <posy>220</posy>
@@ -58,28 +43,15 @@
         <visible>Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums)</visible>
       </control>
 
-      <control type="label">
-        <posx>1050</posx>
-        <posy>300</posy>
-        <width>480</width>
-        <height>50</height>
-        <align>left</align>
-        <aligny>top</aligny>
-        <font>Large_Letter_Music</font>
-        <textcolor>White</textcolor>
-        <label>$INFO[ListItem.SortLetter]</label>
-        <visible>Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums)</visible>
-      </control>
-
       <control type="group">
         <visible>Control.IsVisible(58)</visible>
 
         <control type="panel" id="58">
           <viewtype label="Album Panel">Album Panel</viewtype>
-          <posx>402</posx>
+          <posx>396</posx>
           <posy>288</posy>
-          <width>320</width>
-          <height>310</height>
+          <width>405</width>
+          <height>320</height>
           <scrolltime>200</scrolltime>
           <orientation>vertical</orientation>
           <onright>-</onright>
@@ -87,42 +59,45 @@
           <pagecontrol>61</pagecontrol>
           <preloaditems>2</preloaditems>
           <visible>Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums)</visible>
-          <itemlayout width="80" height="81">
+
+          <itemlayout width="80" height="80">
             <control type="image">
               <posx></posx>
               <posy></posy>
-              <width>80</width>
-              <height>81</height>
+              <width>75</width>
+              <height>75</height>
               <texture background="true">tile.png</texture>
               <aspectratio scalediffuse="false">stretch</aspectratio>
             </control>
+
             <control type="image">
               <posx></posx>
               <posy></posy>
-              <width>80</width>
-              <height>81</height>
+              <width>75</width>
+              <height>75</height>
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <colordiffuse>ImageDiffuse</colordiffuse>
               <aspectratio scalediffuse="false">stretch</aspectratio>
             </control>
           </itemlayout>
-          <focusedlayout width="80" height="81">
+          <focusedlayout width="80" height="80">
             <control type="image">
               <posx></posx>
               <posy></posy>
-              <width>80</width>
-              <height>81</height>
+              <width>75</width>
+              <height>75</height>
               <texture background="true">$INFO[ListItem.Icon]</texture>
               <animation type="Focus" reversible="false">
                 <effect type="fade" start="80" end="100" time="400" />
               </animation>
               <aspectratio scalediffuse="false">stretch</aspectratio>
             </control>
+
             <control type="image">
               <posx></posx>
               <posy></posy>
-              <width>80</width>
-              <height>81</height>
+              <width>75</width>
+              <height>75</height>
               <texture>music_button.png</texture>
               <animation type="Focus" reversible="false">
                 <effect type="fade" start="80" end="100" time="400" />
@@ -135,8 +110,8 @@
         <control type="image">
           <posx>76</posx>
           <posy>288</posy>
-          <width>310</width>
-          <height>310</height>
+          <width>315</width>
+          <height>315</height>
           <texture>white_box.png</texture>
           <fadetime>200</fadetime>
           <aspectratio scalediffuse="false">stretch</aspectratio>
@@ -146,8 +121,8 @@
         <control type="image">
           <posx>76</posx>
           <posy>288</posy>
-          <width>310</width>
-          <height>310</height>
+          <width>315</width>
+          <height>315</height>
           <texture>$INFO[ListItem.Icon]</texture>
           <fadetime>200</fadetime>
           <aspectratio scalediffuse="false">stretch</aspectratio>
@@ -167,20 +142,20 @@
         </control>			
 
         <control type="image">
-          <posx>722</posx>
+          <posx>796</posx>
           <posy>288</posy>
-          <width>560</width>
-          <height>310</height>
+          <width>485</width>
+          <height>315</height>
           <texture>music_fanart_diffuse.png</texture>
           <fadetime>200</fadetime>
           <aspectratio scalediffuse="false">stretch</aspectratio>
         </control>
 
         <control type="scrollbar" id="61">
-          <posx>722</posx>
+          <posx>796</posx>
           <posy>288</posy>
           <width>10</width>
-          <height>310</height>
+          <height>315</height>
           <texturesliderbackground></texturesliderbackground>
           <textureslidernib>bar.png</textureslidernib>
           <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
@@ -204,9 +179,9 @@
       </control>
 
       <control type="fadelabel" id="144">
-        <posx>740</posx>
-        <posy>515</posy>
-        <width>520</width>
+        <posx>840</posx>
+        <posy>300</posy>
+        <width>400</width>
         <height>50</height>
         <aligny>Left</aligny>
         <font>Artist_Font</font>
@@ -220,40 +195,39 @@
         <visible>!IsEmpty(ListItem.Genre) + Container.Content(albums)</visible>
       </control>
 
-      <control type="label">
-        <posx>740</posx>
-        <posy>560</posy>
-        <width>370</width>
-        <height>50</height>
-        <aligny>left</aligny>
-        <font>Genre_Font_Small</font>
-        <textcolor>Accent</textcolor>
-        <label>$LOCALIZE[515]: [B]$INFO[ListItem.Genre][/B]</label>
-        <visible>!IsEmpty(ListItem.Genre) + Container.Content(albums)</visible>
-        <visible>Container.Content(Albums)</visible>
-      </control>	
-
       <control type="fadelabel">
         <label>[COLOR Accent]$INFO[ListItem.Album][/COLOR] $INFO[ListItem.Year]</label>
-        <posx>400</posx>
-        <posy>200</posy>
+        <posx>395</posx>
+        <posy>171</posy>
         <height>30</height>
-        <width>880</width>
+        <width>985</width>
         <font>Home_menu</font>
         <scroll>true</scroll>
         <scrollout>false</scrollout>
         <pauseatend>600</pauseatend>
         <scrollspeed>50</scrollspeed>
-        <align>left</align>
+        <aligny>top</aligny>
         <visible>Container.Content(Albums)</visible>
       </control>
 
       <control type="label">
-        <posx>1125</posx>
-        <posy>320</posy>
-        <width>480</width>
+        <posx>395</posx>
+        <posy>210</posy>
+        <width>600</width>
         <height>50</height>
-        <align>left</align>
+        <aligny>center</aligny>
+        <font>Genre_Font</font>
+        <textcolor>White</textcolor>
+        <label>$LOCALIZE[515]: [B]$INFO[ListItem.Genre][/B]</label>
+        <visible>Container.Content(Albums) + !IsEmpty(ListItem.Genre)</visible>
+      </control>
+
+      <control type="label">
+        <posx>796</posx>
+        <posy>320</posy>
+        <width>485</width>
+        <height>50</height>
+        <align>center</align>
         <aligny>top</aligny>
         <font>Large_Letter_Music</font>
         <textcolor>White</textcolor>
