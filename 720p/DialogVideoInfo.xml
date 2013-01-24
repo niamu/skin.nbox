@@ -394,6 +394,8 @@
 						<label>Trailer</label>
 						<width>180</width>
 						<align>right</align>
+						<focusedcolor>Accent</focusedcolor>
+						<visible>Container.Content(Movies)</visible>
 					</control>
 
 					<control type="button" id="6">
