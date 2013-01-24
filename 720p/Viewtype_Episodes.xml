@@ -265,7 +265,7 @@
         <posy>288</posy>
         <width>505</width>
         <height>315</height>
-        <texture background="true" >tile.png</texture>
+        <texture background="true" >music_fanart_diffuse.png</texture>
         <fadetime>200</fadetime>
         <aspectratio scalediffuse="false">stretch</aspectratio>
       </control>
