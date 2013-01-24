@@ -388,6 +388,13 @@
 						<align>right</align>
 						<focusedcolor>Accent</focusedcolor>
 					</control>
+					
+					<control type="button" id="11">
+						<description>Trailer</description>
+						<label>Trailer</label>
+						<width>180</width>
+						<align>right</align>
+					</control>
 
 					<control type="button" id="6">
 						<description>Refresh</description>
