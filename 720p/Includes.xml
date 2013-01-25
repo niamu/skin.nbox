@@ -340,7 +340,7 @@
 			<visible>Container.Content(songs)</visible>
 
 			<control type="group" id="3333">	
-				<visible> IntegerGreaterThan(System.Time(ss),40)</visible>		
+				<visible> IntegerGreaterThan(System.Time(ss),41)</visible>		
 				<animation effect="fade" time="600">Visible</animation>
 				<animation effect="fade" time="600">Hidden</animation>	
 
@@ -379,7 +379,7 @@
 					<posx>320</posx>
 					<posy>900</posy>
 					<width>1350</width>
-					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
+					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
 					<scroll>true</scroll>
 					<pauseatend>0</pauseatend>
 					<font>Home_sub_header</font>
@@ -429,7 +429,7 @@
 					<posx>0</posx>
 					<posy>600</posy>
 					<width>1350</width>
-					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
+					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
 					<scroll>true</scroll>
 					<pauseatend>0</pauseatend>
 					<font>Home_sub_header</font>
@@ -452,7 +452,7 @@
 			</control>
 
 			<control type="group" id="3335">
-				<visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),41)</visible>
+				<visible> IntegerGreaterThan(System.Time(ss),21) + !IntegerGreaterThan(System.Time(ss),41)</visible>
 				<animation effect="fade" time="600">Visible</animation>
 				<animation effect="fade" time="600">Hidden</animation>
 
@@ -490,7 +490,7 @@
 					<posx>580</posx>
 					<posy>900</posy>
 					<width>1350</width>
-					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
+					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
 					<scroll>true</scroll>
 					<pauseatend>0</pauseatend>
 					<font>Home_sub_header</font>
@@ -520,15 +520,15 @@
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include>
 			<randomize>true</randomize>
-			<timeperimage>12000</timeperimage>
-			<fadetime>4000</fadetime>
+			<timeperimage>1000</timeperimage>
+			<fadetime>1000</fadetime>
 			<pauseatend>0</pauseatend>
 			<loop>true</loop>
 			<aspectratio background="true" aligny="top">stretch</aspectratio>
 			<imagepath background="true">walls</imagepath>
 			<include>Animation_CommonFade</include>
 			<visible>true</visible>
-			<colordiffuse>WallsDiffuse</colordiffuse>
-		</control>	
+			<colordiffuse>FanartDiffuse</colordiffuse>
+		</control>
 	</include>
 </includes>

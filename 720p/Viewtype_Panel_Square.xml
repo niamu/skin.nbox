@@ -168,9 +168,9 @@
       </control>
 
       <control type="fadelabel" id="144">
-        <posx>840</posx>
+        <posx>815</posx>
         <posy>300</posy>
-        <width>400</width>
+        <width>465</width>
         <height>50</height>
         <aligny>Left</aligny>
         <font>Artist_Font</font>

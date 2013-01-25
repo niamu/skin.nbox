@@ -34,7 +34,7 @@
 			</control>
 
 			<include>BackgroundTextScroll</include>
-			<include>ListWalls</include>	
+			<include>ListWalls</include>
 
 			<control type="image">
 				<description>Music bar</description>
