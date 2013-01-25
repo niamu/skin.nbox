@@ -3,13 +3,12 @@
 	<include file="Defaults.xml" />
 	<include file="CommonViews.xml" />
 	<include file="View_50_List.xml" />
-	<include file="Viewtype_List.xml" />
+	<include file="Viewtype_Songs.xml" />
 	<include file="Viewtype_Episodes.xml" />
 	<include file="Viewtype_Panel_Tall.xml" />
 	<include file="Viewtype_Panel_Genre.xml" />
 	<include file="Viewtype_Season_Tall.xml" />
 	<include file="Viewtype_Panel_Square.xml" />
-	<include file="Viewtype_Showcase.xml" />
 
 	<include name="HiddenButton">
 		<posx>-20</posx>
@@ -303,16 +302,7 @@
 			<include>Dimensions_Fullscreen</include>
 			<fadetime>800</fadetime>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-			<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Episodes)</visible>
-			<colordiffuse>FanartDiffuse</colordiffuse>
-		</control>
-
-		<control type="image">
-			<animation effect="fade" time="500">VisibleChange</animation>
-			<include>Dimensions_Fullscreen</include>
-			<fadetime>800</fadetime>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-			<visible>Container.Content(Albums) | Container.Content(Songs)</visible>
+			<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Episodes) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Songs)</visible>
 			<colordiffuse>FanartDiffuse</colordiffuse>
 		</control>
 
@@ -335,14 +325,15 @@
 	</include>
 
 	<include name="BackgroundTextScroll">
+		<animation effect="fade" time="10000" easing="out" tween="quadratic">Visible</animation>
+		<animation effect="fade" time="10000" easing="out" tween="quadratic">WindowOpen</animation>
 
 		<control type="group">
-			<visible>Container.Content(songs)</visible>
 
 			<control type="group" id="3333">	
 				<visible> IntegerGreaterThan(System.Time(ss),41)</visible>		
-				<animation effect="fade" time="600">Visible</animation>
-				<animation effect="fade" time="600">Hidden</animation>	
+				<animation effect="fade" time="2000">Visible</animation>
+				<animation effect="fade" time="2000">Hidden</animation>	
 
 				<control type="label">
 					<description>Now Playing</description>
@@ -350,11 +341,11 @@
 					<posy>900</posy>
 					<width>1350</width>
 					<height>25</height>
-					<label>$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]</label>
+					<label>$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]</label>
 					<scroll>true</scroll>
 					<font>time_vis</font>
 					<pauseatend>0</pauseatend>
-					<textcolor>White60</textcolor>
+					<textcolor>White10</textcolor>
 					<angle>45</angle>
 					<align>left</align>
 				</control>
@@ -368,33 +359,18 @@
 					<scroll>true</scroll>
 					<pauseatend>0</pauseatend>
 					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
+					<textcolor>Black10</textcolor>
 					<angle>45</angle>
 					<align>left</align>
 					<scrollspeed>100</scrollspeed>
 				</control>
 
-				<control type="label">
-					<description>Now Playing</description>
-					<posx>320</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<angle>45</angle>
-					<align>left</align>
-					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
 			</control>
 
 			<control type="group" id="3334">
 				<visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),21)</visible>
-				<animation effect="fade" time="600">Visible</animation>
-				<animation effect="fade" time="600">Hidden</animation>
+				<animation effect="fade" time="2000">Visible</animation>
+				<animation effect="fade" time="2000">Hidden</animation>
 
 				<control type="label">
 					<description>Now Playing</description>
@@ -402,11 +378,11 @@
 					<posy>500</posy>
 					<width>1350</width>
 					<height>25</height>
-					<label>$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]</label>
+					<label>$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]</label>
 					<scroll>true</scroll>
 					<font>time_vis</font>
 					<pauseatend>0</pauseatend>
-					<textcolor>White60</textcolor>
+					<textcolor>White10</textcolor>
 					<align>left</align>
 				</control>
 
@@ -419,42 +395,17 @@
 					<scroll>true</scroll>
 					<pauseatend>0</pauseatend>
 					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
+					<textcolor>Black10</textcolor>
 					<align>left</align>
 					<scrollspeed>100</scrollspeed>
 				</control>
 
-				<control type="label">
-					<description>Now Playing</description>
-					<posx>0</posx>
-					<posy>600</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<align>left</align>
-					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
-
-				<control type="label">
-					<description>Player Times</description>
-					<posx>760</posx>
-					<posy>80</posy>
-					<width>900</width>
-					<label>$INFO[ListItem.Time]</label>
-					<align>left</align>
-					<font>time_vis</font>
-					<textcolor>White40</textcolor>
-				</control>
 			</control>
 
 			<control type="group" id="3335">
 				<visible> IntegerGreaterThan(System.Time(ss),21) + !IntegerGreaterThan(System.Time(ss),41)</visible>
-				<animation effect="fade" time="600">Visible</animation>
-				<animation effect="fade" time="600">Hidden</animation>
+				<animation effect="fade" time="2000">Visible</animation>
+				<animation effect="fade" time="2000">Hidden</animation>
 
 				<control type="label">
 					<description>Now Playing</description>
@@ -462,12 +413,12 @@
 					<posy>900</posy>
 					<width>1050</width>
 					<height>25</height>
-					<label>$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]$INFO[ListItem.Title,  ,]</label>
+					<label>$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]</label>
 					<scroll>true</scroll>
 					<font>time_vis</font>
 					<pauseatend>0</pauseatend>
 					<angle>90</angle>
-					<textcolor>White60</textcolor>
+					<textcolor>White10</textcolor>
 				</control>
 
 				<control type="label">
@@ -479,56 +430,31 @@
 					<scroll>true</scroll>
 					<pauseatend>0</pauseatend>
 					<font>Home_time</font>
-					<textcolor>Black80</textcolor>
+					<textcolor>Black10</textcolor>
 					<align>left</align>
 					<angle>90</angle>
 					<scrollspeed>100</scrollspeed>
 				</control>
 
-				<control type="label">
-					<description>Now Playing</description>
-					<posx>580</posx>
-					<posy>900</posy>
-					<width>1350</width>
-					<label>$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[ListItem.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]$INFO[MusicPlayer.Album, ,]</label>
-					<scroll>true</scroll>
-					<pauseatend>0</pauseatend>
-					<font>Home_sub_header</font>
-					<textcolor>White80</textcolor>
-					<align>left</align>
-					<angle>90</angle>
-					<scrollspeed>80</scrollspeed>
-					<pauseatend>0</pauseatend>
-				</control>
-
-				<control type="label">
-					<description>Player Times</description>
-					<posx>-40</posx>
-					<posy>280</posy>
-					<width>900</width>
-					<label>$INFO[MusicPlayer.Time]</label>
-					<align>left</align>
-					<font>time_vis</font>
-					<textcolor>White40</textcolor>
-				</control>
 			</control>
 
 		</control>
 	</include>
 
 	<include name="ListWalls">
+		<animation effect="fade" time="50000" easing="out" tween="quadratic">Visible</animation>
+		<animation effect="fade" time="50000" easing="out" tween="quadratic">WindowOpen</animation>
+
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include>
 			<randomize>true</randomize>
-			<timeperimage>1000</timeperimage>
-			<fadetime>1000</fadetime>
+			<timeperimage>10000</timeperimage>
+			<fadetime>10000</fadetime>
 			<pauseatend>0</pauseatend>
 			<loop>true</loop>
 			<aspectratio background="true" aligny="top">stretch</aspectratio>
 			<imagepath background="true">walls</imagepath>
-			<include>Animation_CommonFade</include>
 			<visible>true</visible>
-			<colordiffuse>FanartDiffuse</colordiffuse>
 		</control>
 	</include>
 </includes>

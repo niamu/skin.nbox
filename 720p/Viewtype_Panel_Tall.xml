@@ -8,7 +8,7 @@
 			</animation>
 			<animation type="TYPE" condition="!Window.IsVisible(2003)" reversible="false">
 				<effect type="slide" start="-1500,0" time="200"/>
-			</animation>		
+			</animation>
 
 			<animation type="WindowClose">
 				<effect type="fade" time="300"/>
@@ -28,12 +28,6 @@
 				<aspectratio scalediffuse="false">stretch</aspectratio>
 				<animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(54)">Conditional</animation>
 			</control>
-
-			<animation effect="fade" time="300">WindowOpen</animation>
-
-			<animation type="WindowClose">
-				<effect type="fade" time="300"/>
-			</animation>
 
 			<control type="panel" id="54">
 				<viewtype label="Poster View">Poster View</viewtype>

@@ -15,7 +15,6 @@
 				<effect type="slide" start="+1500,0" time="300"/>
 			</animation>
 
-
 			<control type="group">
 				<posx></posx>
 				<posy></posy>
@@ -27,7 +26,6 @@
 					<height>315</height>
 					<texture>music_fanart_diffuse.png</texture>
 				</control>
-
 
 				<control type="image">
 					<description>Cover Image</description>
@@ -67,8 +65,6 @@
 					<bordersize>5</bordersize>
 					<visible>Control.HasFocus(50)</visible>
 				</control>
-
-
 
 				<control type="fadelabel">
 					<posx>548</posx>
@@ -118,9 +114,6 @@
 					<visible>[Window.IsActive(1) | Container.Content(Episodes)]</visible>
 				</control>
 
-
-
-
 				<control type="label">
 					<posx>550</posx>
 					<posy>230</posy>
@@ -169,8 +162,6 @@
 					<visible>!Container.Content(movies) + Container.Content(Episodes)</visible>
 				</control>
 
-
-
 				<control type="image">
 					<posx>550</posx>
 					<posy>255</posy>
@@ -179,8 +170,6 @@
 					<texture>other_textures/colorrating/$INFO[ListItem.StarRating]</texture>
 					<visible>!IsEmpty(ListItem.Title) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(Episodes)]</visible>
 				</control>
-
-
 
 				<control type="label">
 					<posx>566</posx>
@@ -193,9 +182,6 @@
 					<label>[COLOR Accent][B]$INFO[ListItem.Property(TotalSeasons)] seasons[/B]  $INFO[ListItem.Property(TotalEpisodes)] episodes [/COLOR]</label>
 					<visible>Container.Content(tvshows) + IntegerGreaterThan(ListItem.Property(TotalSeasons),0)</visible>
 				</control>
-
-
-
 
 				<control type="grouplist">
 					<posx>560</posx>
@@ -360,7 +346,7 @@
 					<onup>9000</onup>
 					<ondown>9000</ondown>
 					<onright>60</onright>
-					<onleft>60</onleft>
+					<onleft>9000</onleft>
 					<orientation>vertical</orientation>
 
 					<control type="button" id="5">
@@ -464,7 +450,6 @@
 
 				</control>
 
-
 				<control type="textbox" id="4">
 					<description>Plot</description>
 					<posx>565</posx>
@@ -489,21 +474,15 @@
 					<texturedownfocus>-</texturedownfocus>
 					<pulseonselect>no</pulseonselect>
 					<onup>50</onup>
-					<onleft>9000</onleft>
+					<onleft>9001</onleft>
 					<onright>60</onright>
 					<ondown>50</ondown>
 					<showonepage>true</showonepage>
 				</control>
 
-
-
-
 			</control>
 
 		</control>
 
-
-
 	</controls>
-
 </window>

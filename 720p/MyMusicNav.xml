@@ -6,32 +6,38 @@
 	<controls>
 		<control type="group">
 			<include>HomeBackground</include>
-			<include>Viewtype_List</include>
+			<include>Viewtype_Songs</include>
 			<include>View_50_List</include>
 			<include>Viewtype_Panel_Square</include>
 			<include>View_Artist_List</include>
 			<include>Viewtype_Artist_Showcase</include>
 		</control>
 
+		<control type="group">
+			<visible>Container.Content(songs)</visible>
+			<include>BackgroundTextScroll</include>
+			<include>ListWalls</include>
+		</control>
+
 		<control type="label">
 			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
 			<posx>1284</posx>
-			<posy>-10</posy>
+			<posy>-5</posy>
 			<height>100</height>
 			<width>550</width>
 			<font>Home_time</font>
 			<align>right</align>
-			<visible>Window.IsActive(musiclibrary) + !Container.Content(songs)</visible>
+			<visible>Window.IsActive(musiclibrary) </visible>
 		</control>
-		
+
 		<control type="label">
 			<label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(dd)] $INFO[System.Date(MMM)] [/LOWERCASE]</label>
 			<posx>1280</posx>
-			<posy>54</posy>
+			<posy>60</posy>
 			<height>100</height>
 			<width>750</width>
 			<font>Home_date</font>
-			<visible>Window.IsActive(musiclibrary) + !Container.Content(songs)</visible>
+			<visible>Window.IsActive(musiclibrary)</visible>
 			<align>right</align>
 		</control>
 		
@@ -54,7 +60,7 @@
 			<height>720</height>
 			<texture border="22">button.png</texture>
 			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
-				<effect type="slide" start="0,0" end="-305,0" time="300" />
+				<effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic"/>
 			</animation>
 		</control>
 		
@@ -68,23 +74,15 @@
 			<posy>140</posy>
 			<width>240</width>
 			<height>600</height>
-			<itemgap>2</itemgap>
+			<itemgap>0</itemgap>
 			<onleft>50</onleft>
 			<onright>50</onright>
-			<onup>9000</onup>
-			<ondown>9000</ondown>
+			<onup></onup>
+			<ondown></ondown>
 			<orientation>vertical</orientation>
 			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
-				<effect type="slide" start="0,0" end="-300,0" time="300" />
+				<effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic"/>
 			</animation>
-			
-			<control type="button" id="2">
-				<description>View</description>
-				<width>220</width>
-				<align>left</align>
-				<onclick>Container.PreviousViewMode</onclick>
-				<visible>false</visible>
-			</control>
 			
 			<control type="button" id="20">
 				<align>left</align>

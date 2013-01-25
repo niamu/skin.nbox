@@ -2,7 +2,6 @@
   <include name="Viewtype_Panel_Square">
 
     <control type="group">
-
       <visible>Control.IsVisible(58)</visible>
       <animation type="TYPE" condition="Window.IsVisible(2001)" reversible="false">
         <effect type="slide" end="-1500,0" time="200"/>
@@ -27,133 +26,114 @@
         <height>72</height>
         <texture background="true">other_textures/osd/playlistnf.png</texture>
         <aspectratio scalediffuse="false">stretch</aspectratio>
-        <visible>Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums)</visible>
         <animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(58)">Conditional</animation>
       </control>
 
-      <control type="label">
-        <posx>75</posx>
-        <posy>220</posy>
-        <width>300</width>
-        <align>left</align>
-        <aligny>top</aligny>
-        <label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
-        <font>Sort_Font_Small</font>
-        <textcolor>White</textcolor>
-        <visible>Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums)</visible>
+      <control type="panel" id="58">
+        <viewtype label="Album View">Album View</viewtype>
+        <posx>396</posx>
+        <posy>288</posy>
+        <width>405</width>
+        <height>320</height>
+        <scrolltime>200</scrolltime>
+        <orientation>vertical</orientation>
+        <onleft>9000</onleft>
+        <pagecontrol>61</pagecontrol>
+        <preloaditems>2</preloaditems>
+        <include>Animation_HiddenByInfo</include>
+        <visible>Window.IsActive(1) | Container.Content(Albums)</visible>
+        <itemlayout width="80" height="80">
+          <control type="image">
+            <posx></posx>
+            <posy></posy>
+            <width>75</width>
+            <height>75</height>
+            <texture background="true">tile.png</texture>
+            <aspectratio scalediffuse="false">stretch</aspectratio>
+          </control>
+
+          <control type="image">
+            <posx></posx>
+            <posy></posy>
+            <width>75</width>
+            <height>75</height>
+            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <colordiffuse>ImageDiffuse</colordiffuse>
+            <aspectratio scalediffuse="false">stretch</aspectratio>
+          </control>
+        </itemlayout>
+        <focusedlayout width="80" height="80">
+          <control type="image">
+            <posx></posx>
+            <posy></posy>
+            <width>75</width>
+            <height>75</height>
+            <texture background="true">$INFO[ListItem.Icon]</texture>
+            <animation type="Focus" reversible="false">
+              <effect type="fade" start="80" end="100" time="400" />
+            </animation>
+            <aspectratio scalediffuse="false">stretch</aspectratio>
+          </control>
+
+          <control type="image">
+            <posx></posx>
+            <posy></posy>
+            <width>75</width>
+            <height>75</height>
+            <texture>music_button.png</texture>
+            <animation type="Focus" reversible="false">
+              <effect type="fade" start="80" end="100" time="400" />
+            </animation>
+            <aspectratio scalediffuse="false">stretch</aspectratio>
+          </control>
+        </focusedlayout>
       </control>
 
-      <control type="group">
-        <visible>Control.IsVisible(58)</visible>
+      <control type="image">
+        <posx>76</posx>
+        <posy>288</posy>
+        <width>315</width>
+        <height>315</height>
+        <texture>white_box.png</texture>
+        <fadetime>200</fadetime>
+        <aspectratio scalediffuse="false">stretch</aspectratio>
+        <visible>!StringCompare(ListItem.Album, )</visible>
+      </control>					
 
-        <control type="panel" id="58">
-          <viewtype label="Album Panel">Album Panel</viewtype>
-          <posx>396</posx>
-          <posy>288</posy>
-          <width>405</width>
-          <height>320</height>
-          <scrolltime>200</scrolltime>
-          <orientation>vertical</orientation>
-          <onright>-</onright>
-          <onleft>9000</onleft>
-          <pagecontrol>61</pagecontrol>
-          <preloaditems>2</preloaditems>
-          <visible>Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums)</visible>
+      <control type="image">
+        <posx>76</posx>
+        <posy>288</posy>
+        <width>315</width>
+        <height>315</height>
+        <texture>$INFO[ListItem.Icon]</texture>
+        <fadetime>200</fadetime>
+        <aspectratio scalediffuse="false">stretch</aspectratio>
+        <visible>true</visible>
+        <bordersize>4</bordersize>
+      </control>		
 
-          <itemlayout width="80" height="80">
-            <control type="image">
-              <posx></posx>
-              <posy></posy>
-              <width>75</width>
-              <height>75</height>
-              <texture background="true">tile.png</texture>
-              <aspectratio scalediffuse="false">stretch</aspectratio>
-            </control>
+      <control type="image">
+        <posx>796</posx>
+        <posy>288</posy>
+        <width>485</width>
+        <height>315</height>
+        <texture>music_fanart_diffuse.png</texture>
+        <fadetime>200</fadetime>
+        <aspectratio scalediffuse="false">stretch</aspectratio>
+      </control>
 
-            <control type="image">
-              <posx></posx>
-              <posy></posy>
-              <width>75</width>
-              <height>75</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <colordiffuse>ImageDiffuse</colordiffuse>
-              <aspectratio scalediffuse="false">stretch</aspectratio>
-            </control>
-          </itemlayout>
-          <focusedlayout width="80" height="80">
-            <control type="image">
-              <posx></posx>
-              <posy></posy>
-              <width>75</width>
-              <height>75</height>
-              <texture background="true">$INFO[ListItem.Icon]</texture>
-              <animation type="Focus" reversible="false">
-                <effect type="fade" start="80" end="100" time="400" />
-              </animation>
-              <aspectratio scalediffuse="false">stretch</aspectratio>
-            </control>
-
-            <control type="image">
-              <posx></posx>
-              <posy></posy>
-              <width>75</width>
-              <height>75</height>
-              <texture>music_button.png</texture>
-              <animation type="Focus" reversible="false">
-                <effect type="fade" start="80" end="100" time="400" />
-              </animation>
-              <aspectratio scalediffuse="false">stretch</aspectratio>
-            </control>
-          </focusedlayout>
-        </control>
-
-        <control type="image">
-          <posx>76</posx>
-          <posy>288</posy>
-          <width>315</width>
-          <height>315</height>
-          <texture>white_box.png</texture>
-          <fadetime>200</fadetime>
-          <aspectratio scalediffuse="false">stretch</aspectratio>
-          <visible>!StringCompare(ListItem.Album, )</visible>
-        </control>					
-
-        <control type="image">
-          <posx>76</posx>
-          <posy>288</posy>
-          <width>315</width>
-          <height>315</height>
-          <texture>$INFO[ListItem.Icon]</texture>
-          <fadetime>200</fadetime>
-          <aspectratio scalediffuse="false">stretch</aspectratio>
-          <visible>true</visible>
-          <bordersize>4</bordersize>
-        </control>		
-
-        <control type="image">
-          <posx>796</posx>
-          <posy>288</posy>
-          <width>485</width>
-          <height>315</height>
-          <texture>music_fanart_diffuse.png</texture>
-          <fadetime>200</fadetime>
-          <aspectratio scalediffuse="false">stretch</aspectratio>
-        </control>
-
-        <control type="scrollbar" id="61">
-          <posx>796</posx>
-          <posy>288</posy>
-          <width>10</width>
-          <height>315</height>
-          <texturesliderbackground></texturesliderbackground>
-          <textureslidernib>bar.png</textureslidernib>
-          <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
-          <texturesliderbar></texturesliderbar>
-          <texturesliderbarfocus></texturesliderbarfocus>
-          <showonepage>true</showonepage>
-          <orientation>vertical</orientation>		
-        </control>
-
+      <control type="scrollbar" id="61">
+        <posx>796</posx>
+        <posy>288</posy>
+        <width>10</width>
+        <height>315</height>
+        <texturesliderbackground></texturesliderbackground>
+        <textureslidernib>bar.png</textureslidernib>
+        <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+        <texturesliderbar></texturesliderbar>
+        <texturesliderbarfocus></texturesliderbarfocus>
+        <showonepage>true</showonepage>
+        <orientation>vertical</orientation>		
       </control>
 
       <control type="label">
@@ -182,6 +162,18 @@
         <scrollspeed>50</scrollspeed>
         <label>$INFO[ListItem.Artist]</label>
         <visible>Container.Content(albums)</visible>
+      </control>
+
+      <control type="label">
+        <posx>75</posx>
+        <posy>220</posy>
+        <width>300</width>
+        <align>left</align>
+        <aligny>top</aligny>
+        <label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
+        <font>Sort_Font_Small</font>
+        <textcolor>White</textcolor>
+        <visible>Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums)</visible>
       </control>
 
       <control type="fadelabel">
@@ -235,7 +227,7 @@
       <texture>bar.png</texture>
       <animation effect="fade" time="400">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>			
-      <visible>!container.content(episodes) + !container.content(songs)</visible>
+      <visible>!container.content(songs)</visible>
     </control>
 
   </include>
