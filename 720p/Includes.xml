@@ -325,8 +325,10 @@
 	</include>
 
 	<include name="BackgroundTextScroll">
-		<animation effect="fade" time="10000" easing="out" tween="quadratic">Visible</animation>
-		<animation effect="fade" time="10000" easing="out" tween="quadratic">WindowOpen</animation>
+		<animation effect="fade" time="5000" easing="out" tween="quadratic">Visible</animation>
+		<animation effect="fade" time="5000" easing="out" tween="quadratic">WindowOpen</animation>
+		<animation effect="fade" time="1000" easing="out" tween="quadratic">Hidden</animation>
+		<animation effect="fade" time="1000" easing="out" tween="quadratic">WindowClose</animation>
 
 		<control type="group">
 
@@ -442,8 +444,10 @@
 	</include>
 
 	<include name="ListWalls">
-		<animation effect="fade" time="50000" easing="out" tween="quadratic">Visible</animation>
-		<animation effect="fade" time="50000" easing="out" tween="quadratic">WindowOpen</animation>
+		<animation effect="fade" time="5000" easing="out" tween="quadratic" reversible="false">Visible</animation>
+		<animation effect="fade" time="5000" easing="out" tween="quadratic" reversible="false">WindowOpen</animation>
+		<animation effect="fade" time="1000" easing="out" tween="quadratic" reversible="false">Hidden</animation>
+		<animation effect="fade" time="1000" easing="out" tween="quadratic" reversible="false">WindowClose</animation>
 
 		<control type="multiimage">
 			<include>Dimensions_Fullscreen</include>
