@@ -5,7 +5,8 @@
 	<!-- Main Labels -->
 	
 	
-	
+	<string id="21515">genre</string>
+  <string id="21516">Rating</string>
 	
 	<string id="31007">Plugins</string><!-- GOOD -->
 	<string id="31024">Page</string><!-- GOOD -->

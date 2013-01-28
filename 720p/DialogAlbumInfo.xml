@@ -84,7 +84,8 @@
 						<description>Artist</description>
 						<width>530</width>
 						<height>28</height>
-						<label>$LOCALIZE[557]: [B]$INFO[ListItem.Artist][/B]   [COLOR Accent][B]$INFO[ListItem.Genre,,$LOCALIZE[515]: ][/B][/COLOR]</label>
+						<font>Sort_Font_Small</font>
+						<label>$LOCALIZE[557]: [COLOR Accent]$INFO[ListItem.Artist][/COLOR]   [COLOR Accent]$INFO[ListItem.Genre,[COLOR White]$LOCALIZE[21515]: [/COLOR]][/COLOR]</label>
 						<scroll>true</scroll>
 					</control>
 
@@ -109,7 +110,8 @@
 						<description>Artist</description>
 						<width>530</width>
 						<height>28</height>
-						<label>$LOCALIZE[515]: [B]$INFO[ListItem.Genre][/B]</label>
+						<font>Sort_Font_Small</font>
+						<label>$LOCALIZE[21515]: [COLOR Accent]$INFO[ListItem.Genre][/COLOR]</label>
 						<scroll>true</scroll>
 						<visible>!IsEmpty(ListItem.Genre)</visible>
 					</control>
@@ -158,43 +160,97 @@
 					<posx>680</posx>
 					<posy>288</posy>
 					<width>465</width>
-					<height>240</height>
+					<height>315</height>
 					<onup>50</onup>
 					<ondown>50</ondown>
 					<onleft>9001</onleft>
 					<onright>50</onright>
 					<orientation>vertical</orientation>
 					<scrolltime>200</scrolltime>
+					<pagecontrol>64</pagecontrol>
 
-					<itemlayout height="46">
+					<itemlayout height="45">
 						<control type="image">
-							<width>580</width>
-							<height>44</height>
+							<width>465</width>
+							<height>45</height>
 							<texture border="2">other_textures/buttonnf.png</texture>
 						</control>
 
 						<control type="label">
-							<posx>20</posx>
-							<width>540</width>
-							<info>ListItem.Label</info>
+						<posx>22</posx>
+						<width>45</width>
+						<align>center</align>
+						<label>$INFO[ListItem.TrackNumber]</label>
+					</control>
+
+						<control type="label">
+							<posx>65</posx>
+						<width>305</width>
+							<label>$INFO[ListItem.Label]</label>
 						</control>
+
+						<control type="label">
+						<posx>440</posx>
+						<align>right</align>
+						<width>100</width>
+						<label>$INFO[ListItem.Duration]</label>
+					</control>
 					</itemlayout>
 
-					<focusedlayout height="46">
+					<focusedlayout height="45">
 						<control type="image">
-							<width>580</width>
-							<height>44</height>
+							<width>465</width>
+							<height>45</height>
 							<texture border="5">other_textures/buttonfo.png</texture>
 							<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(50)">Conditional</animation>
 						</control>
 
+						<control type="image">
+						<width>45</width>
+						<height>45</height>
+						<texture border="5">button.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="fade" start="60" end="100" time="400" />
+						</animation>
+					</control>
+
 						<control type="label">
-							<posx>20</posx>
-							<width>540</width>
-							<info>ListItem.Label</info>
+						<posx>22</posx>
+						<width>45</width>
+						<align>center</align>
+						<label>[B]$INFO[ListItem.TrackNumber][/B]</label>
+					</control>
+
+						<control type="label">
+							<posx>65</posx>
+						<width>305</width>
+						<scroll>true</scroll>
+							<label>[COLOR Accent]$INFO[ListItem.Label][/COLOR]</label>
 						</control>
+
+						<control type="label">
+						<posx>440</posx>
+						<align>right</align>
+						<width>100</width>
+						<label>[COLOR Accent]$INFO[ListItem.Duration][/COLOR]</label>
+					</control>
 					</focusedlayout>
 
+				</control>
+
+				<control type="scrollbar" id="64">
+					<posx>1135</posx>
+					<posy>288</posy>
+					<width>10</width>
+					<height>315</height>
+					<texturesliderbackground></texturesliderbackground>
+					<textureslidernib>bar.png</textureslidernib>
+					<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+					<texturesliderbar></texturesliderbar>
+					<texturesliderbarfocus></texturesliderbarfocus>
+					<showonepage>true</showonepage>
+					<orientation>vertical</orientation>
+					<visible>Control.IsVisible(50)</visible>	
 				</control>
 
 				<control type="grouplist" id="9001">
@@ -203,8 +259,8 @@
 					<width>180</width>
 					<height>430</height>
 					<itemgap>-</itemgap>
-					<onup>9000</onup>
-					<ondown>9000</ondown>
+					<onup>9001</onup>
+					<ondown>9001</ondown>
 					<onright>60</onright>
 					<onleft>9001</onleft>
 					<orientation>vertical</orientation>
@@ -239,7 +295,7 @@
 						<description>Art</description>
 						<width>180</width>
 						<align>right</align>
-						<label>Art</label>
+						<label>Fanart</label>
 						<focusedcolor>Accent</focusedcolor>
 					</control>
 				</control>

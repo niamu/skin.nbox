@@ -511,64 +511,6 @@
 		<animation type="WindowClose">
 			<effect type="slide" start="0,0" end="-800,0" time="600" delay="400" tween="cubic" easing="inout" />
 		</animation>	
-	</include>	
-<!--VIEWTYPE SHOWCASE -->
-	<include name="Animation_Viewtype_Showcase_FocusArea">
-		<animation type="WindowOpen">
-			<effect type="slide" start="0,400" end="0,0" time="600" tween="cubic" easing="inout" />
-		</animation>			
-		<animation type="WindowClose">
-			<effect type="slide" start="0,0" end="0,400" time="600" tween="cubic" easing="inout" />
-			<effect type="fade" start="100" end="0" time="400" tween="cubic" easing="inout" />
-		</animation>	
-	</include>
-	<include name="Animation_Viewtype_Showcase_RightArea">
-		<animation type="WindowOpen">
-			<effect type="slide" start="800,0" end="0,0" time="800" delay="200" tween="cubic" easing="inout" />
-		</animation>			
-		<animation type="WindowClose">
-			<effect type="slide" start="0,0" end="800,0" time="800" delay="200" tween="cubic" easing="inout" />
-		</animation>	
-	</include>
-	<include name="Animation_Viewtype_Showcase_RightFlags">
-		<animation type="WindowOpen">
-			<effect type="slide" start="800,0" end="0,0" time="800" delay="600" tween="cubic" easing="inout" />
-		</animation>			
-		<animation type="WindowClose">
-			<effect type="slide" start="0,0" end="800,0" time="800" delay="600" tween="cubic" easing="inout" />
-		</animation>	
-	</include>
-	<include name="Animation_Viewtype_Showcase_LeftArea">
-		<animation type="WindowOpen">
-			<effect type="slide" start="-600" end="0,0" time="600" tween="cubic" easing="inout" />
-		</animation>			
-		<animation type="WindowClose">
-			<effect type="slide" start="0,0" end="-600,0" time="600" tween="cubic" easing="inout" />
-		</animation>	
-	</include>
-	<include name="Animation_Viewtype_Showcase_Trailer">
-		<animation type="WindowOpen">
-			<effect type="slide" start="-800,0" end="0,0" time="800" tween="cubic" easing="inout" />
-		</animation>			
-		<animation type="WindowClose">
-			<effect type="slide" start="0,0" end="-800,0" time="800" tween="cubic" easing="inout" />
-		</animation>	
-	</include>
-	<include name="Animation_Viewtype_Showcase_Plot">
-		<animation type="WindowOpen">
-			<effect type="slide" start="0,-800" end="0,0" time="600" tween="cubic" easing="inout" />
-		</animation>			
-		<animation type="WindowClose">
-			<effect type="slide" start="0,0" end="0,-800" time="600" tween="cubic" easing="inout" />
-		</animation>	
-	</include>
-	<include name="Animation_Viewtype_Showcase_ThumbArea">
-		<animation type="WindowOpen">
-			<effect type="slide" start="-800,0" end="0,0" time="600" delay="400" tween="cubic" easing="inout" />
-		</animation>			
-		<animation type="WindowClose">
-			<effect type="slide" start="0,0" end="-800,0" time="600" delay="400" tween="cubic" easing="inout" />
-		</animation>	
 	</include>
 <!--VIEWTYPE PANEL -->
 	<include name="Animation_Viewtype_Panel_FocusArea">

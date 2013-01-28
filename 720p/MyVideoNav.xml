@@ -33,7 +33,7 @@
 			<font>Home_date</font>
 			<visible>Window.IsActive(videolibrary)</visible>
 			<align>right</align>
-		</control>	
+		</control>
 
 		<control type="image">
 			<animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">

@@ -6,17 +6,15 @@
 	<controls>
 		<control type="group">
 			<include>HomeBackground</include>
+			<control type="group">
+				<visible>Container.Content(songs)</visible>
+				<include>BackgroundTextScroll</include>
+				<include>ListWalls</include>
+			</control>
 			<include>Viewtype_Songs</include>
 			<include>View_50_List</include>
 			<include>Viewtype_Panel_Square</include>
 			<include>View_Artist_List</include>
-			<include>Viewtype_Artist_Showcase</include>
-		</control>
-
-		<control type="group">
-			<visible>Container.Content(songs)</visible>
-			<include>BackgroundTextScroll</include>
-			<include>ListWalls</include>
 		</control>
 
 		<control type="label">

@@ -19,14 +19,6 @@
         <effect type="fade" time="300"/>
         <effect type="slide" start="+1500,0" time="300"/>
       </animation>
-	<animation type="Hidden">
-        <effect type="fade" time="300"/>
-        <effect type="slide" end="+1500,0" time="300"/>
-      </animation>
-      <animation type="Visible">
-        <effect type="fade" time="300"/>
-        <effect type="slide" start="+1500,0" time="300"/>
-      </animation>
 
       <control type="image">
         <posx>-12</posx>
@@ -154,7 +146,7 @@
         <itemlayout width="350" height="38">
           <control type="label">
             <posx>280</posx>
-            <width>300</width>
+            <width>260</width>
             <label>$INFO[ListItem.Label]</label>
             <align>right</align>
           </control>
@@ -162,7 +154,7 @@
         <focusedlayout width="350" height="38">
           <control type="label">
             <posx>280</posx>
-            <width>300</width>
+            <width>260</width>
             <align>right</align>
             <label>[COLOR Accent]$INFO[ListItem.Label][/COLOR]</label>
             <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(50)">Conditional</animation>

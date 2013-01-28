@@ -1,11 +1,11 @@
 <colors>
 	<color name="Black">FF000000</color>
-	<color name="Black10">11000000</color>
+	<color name="Black10">22000000</color>
 	<color name="Black60">77000000</color>
 	<color name="Black70">A9000000</color>
 	<color name="Black80">CC000000</color>
 	<color name="White">FFFFFFFF</color>
-	<color name="White10">05FFFFFF</color>
+	<color name="White10">11FFFFFF</color>
 	<color name="White40">44FFFFFF</color>
 	<color name="White60">77FFFFFF</color>
 	<color name="White80">CCFFFFFF</color>

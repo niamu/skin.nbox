@@ -82,7 +82,7 @@
             <height>75</height>
             <texture>music_button.png</texture>
             <animation type="Focus" reversible="false">
-              <effect type="fade" start="80" end="100" time="400" />
+              <effect type="fade" start="20" end="100" time="400" />
             </animation>
             <aspectratio scalediffuse="false">stretch</aspectratio>
           </control>
@@ -164,6 +164,20 @@
         <visible>Container.Content(albums)</visible>
       </control>
 
+      <control type="textbox">
+        <posx>815</posx>
+        <posy>360</posy>
+        <width>445</width>
+        <height>215</height>
+        <info>ListItem.Property(Album_Description)</info>
+        <align>justify</align>
+        <autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
+        <font>Plot_Font</font>
+        <textcolor>White</textcolor>
+        <pagecontrol></pagecontrol>
+        <visible>!IsEmpty(ListItem.Property(Album_Description))</visible>
+      </control>
+
       <control type="label">
         <posx>75</posx>
         <posy>220</posy>
@@ -181,7 +195,7 @@
         <posx>395</posx>
         <posy>171</posy>
         <height>30</height>
-        <width>985</width>
+        <width>885</width>
         <font>Home_menu</font>
         <scroll>true</scroll>
         <scrollout>false</scrollout>
@@ -199,7 +213,7 @@
         <aligny>center</aligny>
         <font>Sort_Font_Small</font>
         <textcolor>White</textcolor>
-        <label>$LOCALIZE[515]: [COLOR Accent]$INFO[ListItem.Genre][/COLOR]</label>
+        <label>$LOCALIZE[21515]: [COLOR Accent]$INFO[ListItem.Genre][/COLOR]</label>
         <visible>Container.Content(Albums) + !IsEmpty(ListItem.Genre)</visible>
       </control>
 

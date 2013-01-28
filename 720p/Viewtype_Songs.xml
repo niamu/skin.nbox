@@ -3,34 +3,38 @@
 
 		<control type="group">
 			<visible>Control.IsVisible(503)</visible>
+			<animation type="TYPE" condition="Window.IsVisible(135)" reversible="false">
+        <effect type="slide" end="-1500,0" time="200"/>
+      </animation>
+      <animation type="TYPE" condition="!Window.IsVisible(135)" reversible="false">
+        <effect type="slide" start="-1500,0" time="200"/>
+      </animation>
 
 			<control type="image">
-				<description>Music bar</description>
-				<posx>0</posx>
-				<posy>260</posy>
-				<width>1280</width>
-				<height>200</height>
-				<fadetime>200</fadetime>
-				<texture background="true">tile.png</texture>
-				<colordiffuse>White60</colordiffuse>
+				<posx>-12</posx>
+				<posy>174</posy>
+				<width>72</width>
+				<height>72</height>
+				<texture background="true">other_textures/osd/playlistnf.png</texture>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(503)">Conditional</animation>
 			</control>
 
 			<control type="image">
-				<description>Music bar</description>
-				<posx>640</posx>
-				<posy>0</posy>
-				<width>410</width>
-				<height>720</height>
+				<posx>396</posx>
+				<posy>288</posy>
+				<width>884</width>
+				<height>315</height>
+				<texture>music_fanart_diffuse.png</texture>
 				<fadetime>200</fadetime>
-				<texture background="true">tile.png</texture>
-				<colordiffuse>White60</colordiffuse>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
 			</control>
 			
-			<control type="fixedlist" id="503">
-				<posx>428</posx>
-				<posy>-72</posy>
-				<height>800</height>
-				<width>990</width>
+			<control type="list" id="503">
+				<posx>396</posx>
+				<posy>288</posy>
+				<width>884</width>
+				<height>315</height>
 				<onup>503</onup>
 				<ondown>503</ondown>
 				<onright>1</onright>
@@ -39,146 +43,163 @@
 				<viewtype label="Song View">Song View</viewtype>
 				<orientation>vertical</orientation>
 				<focusposition>4</focusposition>
-				<pagecontrol>61</pagecontrol>
+				<pagecontrol>63</pagecontrol>
 				<include>Animation_ZoomInZoomOut</include>
 				<include>Animation_ZoomedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
 				<visible>Window.IsActive(musiclibrary) + Container.Content(songs)</visible>
 				
-				<itemlayout width="885" height="80">
-					<control type="label">
-						<posx>230</posx>
-						<posy>20</posy>
-						<width>392</width>
-						<height>25</height>
-						<aligny>center</aligny>
-						<font>Medium</font>
-						<textcolor>Black60</textcolor>
-						<selectedcolor>white</selectedcolor>
-						<label>$INFO[ListItem.Title]</label>
+				<itemlayout height="45">
+					<control type="image">
+						<width>884</width>
+						<height>45</height>
+						<texture border="2">other_textures/buttonnf.png</texture>
 					</control>
 
 					<control type="label">
-						<posx>230</posx>
-						<posy>20</posy>
-						<width>392</width>
-						<height>49</height>
-						<aligny>center</aligny>
-						<font>Medium</font>
-						<textcolor>Black60</textcolor>
-						<selectedcolor>white</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>IsEmpty(ListItem.Title)</visible>
+						<posx>22</posx>
+						<width>45</width>
+						<align>center</align>
+						<label>$INFO[ListItem.TrackNumber]</label>
 					</control>
 
 					<control type="label">
-						<posx>230</posx>
-						<posy>55</posy>
-						<width>392</width>
-						<height>17</height>
-						<aligny>center</aligny>
-						<font>Small</font>
-						<textcolor>Black60</textcolor>
-						<selectedcolor>white</selectedcolor>
-						<label>$INFO[ListItem.Album]</label>
-						<visible>!IsEmpty(ListItem.Title)</visible>
+						<posx>65</posx>
+						<width>730</width>
+						<label>$INFO[ListItem.Title] $INFO[ListItem.Artist,by ]</label>
+					</control>
+
+					<control type="label">
+						<posx>864</posx>
+						<align>right</align>
+						<width>100</width>
+						<label>$INFO[ListItem.Duration]</label>
 					</control>
 				</itemlayout>
-				
-				<focusedlayout width="828" height="200">
+
+				<focusedlayout height="45">
 					<control type="image">
-						<posx>12</posx>
-						<posy>12</posy>
-						<width>200</width>
-						<height>200</height>
-						<texture>$INFO[ListItem.Icon]</texture>
-						<visible>IsEmpty(ListItem.Thumb)</visible>
+						<width>884</width>
+						<height>45</height>
+						<texture border="5">other_textures/buttonfo.png</texture>
+						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(50)">Conditional</animation>
 					</control>
 
 					<control type="image">
-						<posx>12</posx>
-						<posy>12</posy>
-						<width>200</width>
-						<height>200</height>
-						<texture fallback="defaultaudio.png" diffuse="list/listmatte.png">$INFO[ListItem.Thumb]</texture>
-						<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
-						<visible>!IsEmpty(ListItem.Thumb) + !Container.Content(Genres)</visible>
-					</control>
-
-					<control type="image">
-						<posx>12</posx>
-						<posy>12</posy>
-						<width>80</width>
-						<height>80</height>
-						<texture diffuse="list/listmatte.png" fallback="defaultmusicgenre.jpg">musicgenres/$INFO[ListItem.Label].jpg</texture>
-						<aspectratio scalediffuse="false" aligny="top">scale</aspectratio>
+						<width>45</width>
+						<height>45</height>
+						<texture border="5">button.png</texture>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="52,52" start="50" end="100" time="200" tween="cubic" easing="out" />
+							<effect type="fade" start="60" end="100" time="400" />
 						</animation>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(Genres)</visible>
 					</control>
 
 					<control type="label">
-						<posx>220</posx>
-						<posy>36</posy>
-						<width>480</width>
-						<height>32</height>
-						<aligny>center</aligny>
-						<font>Large</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>Accent</selectedcolor>
-						<label>$INFO[ListItem.Label]</label>
-						<visible>[IsEmpty(ListItem.Title) + [IsEmpty(ListItem.Artist) | IsEmpty(ListItem.Album)]] | SubString(Container.FolderPath,plugin)</visible>
+						<posx>22</posx>
+						<width>45</width>
+						<align>center</align>
+						<label>[B]$INFO[ListItem.TrackNumber][/B]</label>
 					</control>
 
 					<control type="label">
-						<posx>230</posx>
-						<posy>34</posy>
-						<width>392</width>
-						<height>25</height>
-						<aligny>left</aligny>
-						<font>Large</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>Accent</selectedcolor>
-						<label>$INFO[ListItem.Title]</label>
-						<visible>!IsEmpty(ListItem.Title) + !SubString(Container.FolderPath,plugin)</visible>
-					</control>
-					
-					<control type="label">
-						<posx>230</posx>
-						<posy>132</posy>
-						<width>780</width>
-						<height>17</height>
-						<aligny>center</aligny>
-						<font>small</font>
-						<textcolor>black</textcolor>
-						<selectedcolor>Accent</selectedcolor>
-						<label> $INFO[ListItem.TrackNumber,,  | ] $INFO[ListItem.Duration]</label>
-						<visible>!IsEmpty(ListItem.Title) + Container.Content(songs)</visible>
+						<posx>65</posx>
+						<width>730</width>
+						<label>[COLOR Accent]$INFO[ListItem.Title] $INFO[ListItem.Artist,[COLOR White]by [/COLOR]][/COLOR]</label>
 					</control>
 
 					<control type="label">
-						<posx>220</posx>
-						<posy>44</posy>
-						<width>780</width>
-						<height>17</height>
-						<aligny>center</aligny>
-						<font>Font_ListDetail</font>
-						<textcolor>white</textcolor>
-						<selectedcolor>Accent</selectedcolor>
-						<label>$INFO[ListItem.Artist]</label>
-						<visible>IsEmpty(ListItem.Title) + [Container.Content(albums) | Container.Content(songs)]</visible>
-					</control>
-					
-					<control type="image">
-						<posx>228</posx>
-						<posy>156</posy>
-						<width>150</width>
-						<height>40</height>
-						<texture>other_textures/leftrating/$INFO[ListItem.StarRating]</texture>
-						<visible>!IsEmpty(ListItem.Title) + [Container.Content(albums) | Container.Content(songs)]</visible>
+						<posx>864</posx>
+						<align>right</align>
+						<width>100</width>
+						<label>[COLOR Accent]$INFO[ListItem.Duration][/COLOR]</label>
 					</control>
 				</focusedlayout>
+			</control>
+
+			<control type="scrollbar" id="63">
+					<posx>1270</posx>
+					<posy>288</posy>
+					<width>10</width>
+					<height>315</height>
+					<texturesliderbackground></texturesliderbackground>
+					<textureslidernib>bar.png</textureslidernib>
+					<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+					<texturesliderbar></texturesliderbar>
+					<texturesliderbarfocus></texturesliderbarfocus>
+					<showonepage>true</showonepage>
+					<orientation>vertical</orientation>		
+				</control>
+
+			<control type="label">
+				<label>music</label>
+				<posx>70</posx>
+				<posy>170</posy>
+				<height>30</height>
+				<width>250</width>
+				<font>Home_header</font>
+				<align>left</align>
+			</control>
+
+			<control type="label">
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+				<visible>Window.IsActive(1) | Container.Content(Songs)</visible>
+			</control>
+
+			<control type="fadelabel">
+				<label>[COLOR Accent]$INFO[ListItem.Album][/COLOR] $INFO[ListItem.Year]</label>
+				<posx>395</posx>
+				<posy>171</posy>
+				<height>30</height>
+				<width>885</width>
+				<font>Home_menu</font>
+				<scroll>true</scroll>
+				<scrollout>false</scrollout>
+				<pauseatend>600</pauseatend>
+				<scrollspeed>50</scrollspeed>
+				<aligny>top</aligny>
+				<visible>Container.Content(Songs)</visible>
+			</control>
+
+			<control type="label">
+				<posx>395</posx>
+				<posy>210</posy>
+				<width>600</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+				<label>[COLOR Accent]$INFO[ListItem.Genre,[COLOR White]$LOCALIZE[21515]: [/COLOR]][/COLOR]</label>
+				<visible>Container.Content(Songs)</visible>
+			</control>
+
+			<control type="image">
+				<posx>76</posx>
+				<posy>288</posy>
+				<width>315</width>
+				<height>315</height>
+				<texture>white_box.png</texture>
+				<fadetime>200</fadetime>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>!StringCompare(ListItem.Album, )</visible>
+			</control>					
+
+			<control type="image">
+				<posx>76</posx>
+				<posy>288</posy>
+				<width>315</width>
+				<height>315</height>
+				<texture>$INFO[ListItem.Icon]</texture>
+				<fadetime>200</fadetime>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>true</visible>
+				<bordersize>4</bordersize>
 			</control>
 			
 		</control>

@@ -9,7 +9,7 @@
 			<posy>0</posy>
 			
 			<animation type="WindowOpen">
-	          <effect type="slide" time="300" start="-340, 0" end="0,0" easing="out" tween="cubic" />
+	          <effect type="slide" time="300" start="-340, 0" end="0,0" delay="300" easing="out" tween="cubic" />
 	        </animation>
 	        <animation type="WindowClose">
 	          <effect type="slide" time="300" start="0,0" end="-340,0" easing="in" tween="cubic" />
