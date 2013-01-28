@@ -68,7 +68,7 @@
 
 		<control type="group">
 			<animation effect="fade" time="500">VisibleChange</animation>
-			<visible>Control.HasFocus(501) | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705)</visible>
+			<visible>[Container(5000).HasFocus(501) + Control.HasFocus(5000)] | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705)</visible>
 			<control type="image">
 				<animation effect="fade" time="500">VisibleChange</animation>
 				<include>Dimensions_Fullscreen</include>
@@ -145,7 +145,7 @@
 		
 		<control type="group">
 			<animation effect="fade" time="500">VisibleChange</animation>
-			<visible>Control.HasFocus(503) | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805)</visible>
+			<visible>[Container(5000).HasFocus(503) + Control.HasFocus(5000)] | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805)</visible>
 			<control type="image">
 				<animation effect="fade" time="500">VisibleChange</animation>
 				<include>Dimensions_Fullscreen</include>
@@ -222,7 +222,7 @@
 
 		<control type="group">
 			<animation effect="fade" time="500">VisibleChange</animation>
-			<visible>Control.HasFocus(502) | Control.HasFocus(67) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)</visible>
+			<visible>[Container(5000).HasFocus(502) + Control.HasFocus(5000)] | Control.HasFocus(67) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)</visible>
 			<control type="image">
 				<animation effect="fade" time="500">VisibleChange</animation>
 				<include>Dimensions_Fullscreen</include>
@@ -296,13 +296,34 @@
 				<colordiffuse>FanartDiffuse</colordiffuse>
 			</control>
 		</control>
-		
+
+		<control type="group">
+			<animation effect="fade" time="500">VisibleChange</animation>
+			<visible>[Container(5000).HasFocus(504) + Control.HasFocus(5000)]</visible>
+			<control type="image">
+				<animation effect="fade" time="500">VisibleChange</animation>
+				<include>Dimensions_Fullscreen</include>
+				<fadetime>800</fadetime>
+				<texture background="true">$INFO[Window(Weather).Property(Day0.FanartCode),extras/weather_fanart/,.jpg]</texture>
+				<colordiffuse>FanartDiffuse</colordiffuse>
+			</control>
+		</control>
+
 		<control type="image">
 			<animation effect="fade" time="500">VisibleChange</animation>
 			<include>Dimensions_Fullscreen</include>
 			<fadetime>800</fadetime>
 			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
 			<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Episodes) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Songs)</visible>
+			<colordiffuse>FanartDiffuse</colordiffuse>
+		</control>
+
+		<control type="image">
+			<animation effect="fade" time="500">VisibleChange</animation>
+			<include>Dimensions_Fullscreen</include>
+			<fadetime>800</fadetime>
+			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+			<visible>Window.IsVisible(2006)</visible>
 			<colordiffuse>FanartDiffuse</colordiffuse>
 		</control>
 
@@ -331,6 +352,120 @@
 		<animation effect="fade" time="1000" easing="out" tween="quadratic">WindowClose</animation>
 
 		<control type="group">
+			<visible>Window.IsVisible(2006)</visible>
+
+			<control type="group" id="3333">	
+				<visible> IntegerGreaterThan(System.Time(ss),41)</visible>		
+				<animation effect="fade" time="2000">Visible</animation>
+				<animation effect="fade" time="2000">Hidden</animation>	
+
+				<control type="label">
+					<description>Now Playing</description>
+					<posx>0</posx>
+					<posy>900</posy>
+					<width>1350</width>
+					<height>25</height>
+					<label>$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]</label>
+					<scroll>true</scroll>
+					<font>time_vis</font>
+					<pauseatend>0</pauseatend>
+					<textcolor>White10</textcolor>
+					<angle>45</angle>
+					<align>left</align>
+				</control>
+
+				<control type="label">
+					<description>Now Playing</description>
+					<posx>170</posx>
+					<posy>900</posy>
+					<width>1350</width>
+					<label>$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]</label>
+					<scroll>true</scroll>
+					<pauseatend>0</pauseatend>
+					<font>Home_time</font>
+					<textcolor>Black10</textcolor>
+					<angle>45</angle>
+					<align>left</align>
+					<scrollspeed>100</scrollspeed>
+				</control>
+
+			</control>
+
+			<control type="group" id="3334">
+				<visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),21)</visible>
+				<animation effect="fade" time="2000">Visible</animation>
+				<animation effect="fade" time="2000">Hidden</animation>
+
+				<control type="label">
+					<description>Now Playing</description>
+					<posx>0</posx>
+					<posy>100</posy>
+					<width>1350</width>
+					<height>25</height>
+					<label>$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]</label>
+					<scroll>true</scroll>
+					<font>time_vis</font>
+					<pauseatend>0</pauseatend>
+					<textcolor>White10</textcolor>
+					<align>left</align>
+				</control>
+
+				<control type="label">
+					<description>Now Playing</description>
+					<posx>0</posx>
+					<posy>200</posy>
+					<width>1350</width>
+					<label>$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]</label>
+					<scroll>true</scroll>
+					<pauseatend>0</pauseatend>
+					<font>Home_time</font>
+					<textcolor>Black10</textcolor>
+					<align>left</align>
+					<scrollspeed>100</scrollspeed>
+				</control>
+
+			</control>
+
+			<control type="group" id="3335">
+				<visible> IntegerGreaterThan(System.Time(ss),21) + !IntegerGreaterThan(System.Time(ss),41)</visible>
+				<animation effect="fade" time="2000">Visible</animation>
+				<animation effect="fade" time="2000">Hidden</animation>
+
+				<control type="label">
+					<description>Now Playing</description>
+					<posx>450</posx>
+					<posy>900</posy>
+					<width>1050</width>
+					<height>25</height>
+					<label>$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]$INFO[MusicPlayer.Album,  ,]</label>
+					<scroll>true</scroll>
+					<font>time_vis</font>
+					<pauseatend>0</pauseatend>
+					<angle>90</angle>
+					<textcolor>White10</textcolor>
+				</control>
+
+				<control type="label">
+					<description>Now Playing</description>
+					<posx>630</posx>
+					<posy>900</posy>
+					<width>1350</width>
+					<label>$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist,,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]$INFO[MusicPlayer.Artist, ,]</label>
+					<scroll>true</scroll>
+					<pauseatend>0</pauseatend>
+					<font>Home_time</font>
+					<textcolor>Black10</textcolor>
+					<align>left</align>
+					<angle>90</angle>
+					<scrollspeed>100</scrollspeed>
+				</control>
+
+			</control>
+
+		</control>
+
+		<control type="group">
+			<visible>!Window.IsVisible(2006)</visible>
 
 			<control type="group" id="3333">	
 				<visible> IntegerGreaterThan(System.Time(ss),41)</visible>		
@@ -377,7 +512,7 @@
 				<control type="label">
 					<description>Now Playing</description>
 					<posx>0</posx>
-					<posy>500</posy>
+					<posy>100</posy>
 					<width>1350</width>
 					<height>25</height>
 					<label>$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]$INFO[ListItem.Album,  ,]</label>
@@ -391,7 +526,7 @@
 				<control type="label">
 					<description>Now Playing</description>
 					<posx>0</posx>
-					<posy>600</posy>
+					<posy>200</posy>
 					<width>1350</width>
 					<label>$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist,,]$INFO[ListItem.Artist,,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]</label>
 					<scroll>true</scroll>
@@ -411,7 +546,7 @@
 
 				<control type="label">
 					<description>Now Playing</description>
-					<posx>400</posx>
+					<posx>450</posx>
 					<posy>900</posy>
 					<width>1050</width>
 					<height>25</height>
@@ -425,7 +560,7 @@
 
 				<control type="label">
 					<description>Now Playing</description>
-					<posx>580</posx>
+					<posx>630</posx>
 					<posy>900</posy>
 					<width>1350</width>
 					<label>$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist,,]$INFO[ListItem.Artist,,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]$INFO[ListItem.Artist, ,]</label>
