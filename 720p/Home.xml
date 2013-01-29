@@ -202,20 +202,15 @@
             <onclick>Control.SetFocus(701)</onclick>
             <property name="idnum">id501</property>
           </item>
-          <item id="503">
-            <label>tv shows</label>
-            <onclick>Control.SetFocus(801)</onclick>
-            <property name="idnum">id503</property>
-          </item>
           <item id="502">
             <label>music</label>
             <onclick>Control.SetFocus(601)</onclick>
             <property name="idnum">id502</property>
           </item>
-          <item id="504">
-            <label>weather</label>
-            <onclick>ActivateWindow(weather)</onclick>
-            <property name="idnum">id504</property>
+          <item id="503">
+            <label>tv shows</label>
+            <onclick>Control.SetFocus(801)</onclick>
+            <property name="idnum">id503</property>
           </item>
         </content>
       </control>
