@@ -232,7 +232,7 @@
         <aligny>center</aligny>
         <font>Sort_Font_Small</font>
         <textcolor>White</textcolor>
-        <label>[COLOR Accent]$INFO[ListItem.Premiered,[COLOR White]Premiered: [/COLOR]][/COLOR]</label>
+        <label>[COLOR Accent]$INFO[ListItem.Premiered,[COLOR White]premiered: [/COLOR]][/COLOR]</label>
         <visible>IsEmpty(ListItem.Writer) + IsEmpty(ListItem.Director)</visible>
       </control>
 
