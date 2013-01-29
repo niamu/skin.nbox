@@ -320,6 +320,7 @@
 
 		<control type="image">
 			<animation effect="fade" time="500">VisibleChange</animation>
+			<animation effect="fade" time="500" easing="out" tween="quadratic">WindowOpen</animation>
 			<include>Dimensions_Fullscreen</include>
 			<fadetime>800</fadetime>
 			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>

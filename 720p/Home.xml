@@ -1,6 +1,7 @@
 <window id="0">
   <defaultcontrol always="false">5000</defaultcontrol>
-  <allowoverlay>yes</allowoverlay>	
+  <allowoverlay>yes</allowoverlay>
+  <onload>SetProperty(menu,main)</onload>
 
   <controls>
 
@@ -3551,267 +3552,6 @@
         </control>		<!------end black 6 --------->	
       </control> <!-- end music overlays-->
 
-
-      <!-- weather -->
-
-      <control type="group" id="395">     
-        <posx>360</posx>
-        <posy>170</posy>
-        <visible>[Container(5000).HasFocus(504) + Control.HasFocus(5000)] | [Container(5000).HasFocus(504) + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)]</visible>
-        <animation effect="fade" time="400">VisibleChange</animation>
-        <animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="[Container(5000).HasFocus(504) + Control.HasFocus(5000)] | [Container(5000).HasFocus(504) + ControlGroup(9000).HasFocus()]]">Conditional</animation>
-        <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="[Container(5000).HasFocus(504) + Control.HasFocus(5000)] | ControlGroup(9000).HasFocus()" reversible="false">Conditional</animation> 
-        <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="[!Container(5000).HasFocus(504) | !Control.HasFocus(5000)] + ![Container(5000).HasFocus(504) + ControlGroup(9000).HasFocus()]]" reversible="false">Conditional</animation>
-
-        <control type="label">
-          <label>currently</label>
-          <posy>30</posy>
-          <height>30</height>
-          <width>350</width>
-          <font>Home_sub_header</font>
-          <align>left</align>
-        </control>  
-
-        <control type="label">
-          <description>Day 0 Label</description>
-          <posx>205</posx>
-          <posy>30</posy>
-          <height>30</height>
-          <width>580</width>
-          <label>[LOWERCASE]$INFO[Weather.Location][/LOWERCASE]</label>
-          <font>Home_sub_header</font>
-          <align>left</align>
-        </control>
-
-        <control type="image">
-          <posx>0</posx>
-          <posy>120</posy>
-          <width>195</width>
-          <height>315</height>
-          <texture>tile.png</texture>
-        </control>
-
-        <control type="image">
-          <posx>200</posx>
-          <posy>120</posy>
-          <width>195</width>
-          <height>315</height>
-          <texture>tile.png</texture>
-        </control>
-
-        <control type="image">
-          <posx>400</posx>
-          <posy>120</posy>
-          <width>195</width>
-          <height>315</height>
-          <texture>tile.png</texture>
-        </control>
-
-        <control type="image">
-          <posx>600</posx>
-          <posy>120</posy>
-          <width>195</width>
-          <height>315</height>
-          <texture>tile.png</texture>
-        </control>
-
-
-        <control type="group">
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>155</posy>
-            <width>360</width>
-            <label>[COLOR Accent]$INFO[Window(Weather).Property(Current.Temperature)][LOWERCASE]$INFO[System.TemperatureUnits][/LOWERCASE][/COLOR]</label> 
-            <font>temp_big</font>
-            <align>left</align>
-          </control>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>240</posy>
-            <width>200</width>
-            <label>$INFO[Window(Weather).Property(Day0.HighTemp)]$INFO[System.TemperatureUnits] | $INFO[Window(Weather).Property(Day0.LowTemp)]$INFO[System.TemperatureUnits]</label>
-            <font>weather_med</font>
-            <align>left</align>
-          </control>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>262</posy>
-            <width>200</width>
-            <label>High  |  Low</label>
-            <font>weather_small</font>
-            <align>left</align>
-          </control>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>310</posy>
-            <width>200</width>
-            <label>$INFO[Window(Weather).Property(Current.WindSpeed)] | $INFO[Window(Weather).Property(Current.WindDirection)]</label>
-            <font>weather_med</font>
-            <align>left</align>
-          </control>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>332</posy>
-            <width>200</width>
-            <label>Wind</label>
-            <font>weather_small</font>
-            <align>left</align>
-          </control>
-        </control>
-
-        <control type="group">
-          <posx>200</posx>
-
-          <control type="image">
-            <description>Day 0 Icon</description>
-            <posx>35</posx>
-            <posy>130</posy>
-            <height>100</height>
-            <width>100</width>
-            <texture>$INFO[Weather.FanartCode,extras/weather_icons/,.png]</texture>
-            <align>right</align>
-          </control>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>240</posy>
-            <width>200</width>
-            <label>$INFO[Window(Weather).Property(Current.FeelsLike)]$INFO[System.TemperatureUnits]</label>
-            <font>weather_med</font>
-            <align>left</align>
-          </control>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>262</posy>
-            <width>200</width>
-            <label>Feels Like</label>
-            <font>weather_small</font>
-            <align>left</align>
-          </control>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>310</posy>
-            <width>200</width>
-            <label>$INFO[Window(Weather).Property(Current.Humidity)]</label>
-            <font>weather_med</font>
-            <align>left</align>
-          </control>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>332</posy>
-            <width>200</width>
-            <label>Humidity</label>
-            <font>weather_small</font>
-            <align>left</align>
-          </control>      
-        </control>
-
-        <control type="group">
-          <posx>400</posx>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>240</posy>
-            <width>200</width>
-            <label>$INFO[Window(Weather).Property(Current.UVIndex)]</label>
-            <font>weather_med</font>
-            <align>left</align>
-          </control>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>262</posy>
-            <width>200</width>
-            <label>UV Index</label>
-            <font>weather_small</font>
-            <align>left</align>
-          </control>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>310</posy>
-            <width>200</width>
-            <label>$INFO[Window(Weather).Property(Current.DewPoint)]</label>
-            <font>weather_med</font>
-            <align>left</align>
-          </control>
-
-          <control type="label">
-            <description>Day 0 Label</description>
-            <posx>25</posx>
-            <posy>332</posy>
-            <width>200</width>
-            <label>Dew Point</label>
-            <font>weather_small</font>
-            <align>left</align>
-          </control>
-        </control>
-
-        <control type="group">
-         <posx>600</posx>
-
-         <control type="label">
-          <description>Day 0 Label</description>
-          <posx>25</posx>
-          <posy>240</posy>
-          <width>200</width>
-          <label>$INFO[Window(Weather).Property(Current.Condition)]</label>
-          <font>weather_med</font>
-          <align>left</align>
-        </control>
-
-        <control type="label">
-          <description>Day 0 Label</description>
-          <posx>25</posx>
-          <posy>262</posy>
-          <width>200</width>
-          <label>Current Condition</label>
-          <font>weather_small</font>
-          <align>left</align>
-        </control>    
-
-        <control type="label">
-          <description>Day 0 Label</description>
-          <posx>25</posx>
-          <posy>310</posy>
-          <width>200</width>
-          <label>Last Updated</label>
-          <font>weather_med</font>
-          <align>left</align>
-        </control>
-
-        <control type="label">
-          <description>Day 0 Label</description>
-          <posx>25</posx>
-          <posy>332</posy>
-          <width>200</width>
-          <label>$INFO[Window(Weather).Property(Updated)]</label>
-          <font>weather_small</font>
-          <align>left</align>
-        </control>  
-      </control>
-
-    </control>
-
     <!-- Settings -->
 
     <control type="group" id="378">   	
@@ -4080,11 +3820,11 @@
         <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
         <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
         <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
-        <onclick>ActivateWindow(Videos, MovieGenres,return)</onclick>
+        <onclick>ActivateWindow(Weather,return)</onclick>
       </control>
 
       <control type="label">
-        <label>Genres</label>
+        <label>Weather</label>
         <posx>10</posx>
         <posy>119</posy>
         <height>30</height>
@@ -4094,11 +3834,11 @@
       </control>
 
       <control type="image">
-        <posx>35</posx>
-        <posy>26</posy>
-        <width>90</width>
-        <height>90</height>
-        <texture>genre.png</texture>
+        <posx>29</posx>
+        <posy>20</posy>
+        <width>100</width>
+        <height>100</height>
+        <texture>icons/weather.png</texture>
       </control>
     </control>
 
@@ -4140,11 +3880,11 @@
         <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
         <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
         <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
-        <onclick>ActivateWindow(Videos, RecentlyAddedMovies,return)</onclick>
+        <onclick>ActivateWindow(Favourites,return)</onclick>
       </control>
 
       <control type="label">
-        <label>All Recent</label>
+        <label>Favourites</label>
         <posx>10</posx>
         <posy>120</posy>
         <height>30</height>
@@ -4154,11 +3894,11 @@
       </control>  
 
       <control type="image">
-        <posx>30</posx>
+        <posx>32</posx>
         <posy>25</posy>
         <width>90</width>
         <height>90</height>
-        <texture>recent.png</texture>
+        <texture>top.png</texture>
       </control>
     </control>
 
@@ -4199,11 +3939,11 @@
         <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
         <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
         <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
-        <onclick>ActivateWindow(Video,Files,return)</onclick>
+        <onclick>ActivateWindow(Pictures,return)</onclick>
       </control>
 
       <control type="label">
-        <label>Manage Library</label>
+        <label>Pictures</label>
         <posx>10</posx>
         <posy>119</posy>
         <height>30</height>
@@ -4213,11 +3953,11 @@
       </control>
 
       <control type="image">
-        <posx>35</posx>
+        <posx>32</posx>
         <posy>26</posy>
         <width>90</width>
         <height>90</height>
-        <texture>icons/videos.png</texture>
+        <texture>icons/pictures.png</texture>
       </control>
     </control>
 
@@ -4259,11 +3999,11 @@
         <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
         <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
         <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
-        <onclick>ActivateWindow(Videos,Addons,return)</onclick>
+        <onclick>ActivateWindow(Programs,return)</onclick>
       </control>
 
       <control type="label">
-        <label>Video Add-ons</label>
+        <label>Programs</label>
         <posx>10</posx>
         <posy>120</posy>
         <height>30</height>
