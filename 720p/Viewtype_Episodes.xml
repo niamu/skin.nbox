@@ -1,6 +1,23 @@
 <includes>
   <include name="Viewtype_Episodes">
 
+    <control type="image">
+      <posx>-12</posx>
+      <posy>174</posy>
+      <width>72</width>
+      <height>72</height>
+      <texture background="true">other_textures/osd/playlistnf.png</texture>
+      <aspectratio scalediffuse="false">stretch</aspectratio>
+      <animation effect="slide" start="0,0" end="-100,0" time="300" condition="ControlGroup(57).HasFocus()" reversible="false">Conditional</animation>
+      <animation effect="slide" start="-100,0" end="0,0" time="300" delay="100" condition="!ControlGroup(57).HasFocus()" reversible="false">Conditional</animation>
+      <animation type="WindowClose">
+        <effect type="slide" start="0,0" end="-100,0" time="200" />
+      </animation>
+      <animation type="WindowOpen">
+        <effect type="slide" start="-100,0" end="0,0" time="200" delay="100" />
+      </animation>
+    </control>
+
     <control type="group">
       <visible>Control.IsVisible(57)</visible>
 
@@ -14,7 +31,6 @@
         <effect type="slide" start="-1500,0" time="200"/>
       </animation>		
 
-
       <animation type="WindowClose">
         <effect type="fade" time="300"/>
         <effect type="slide" end="+1500,0" time="300"/>
@@ -23,16 +39,6 @@
         <effect type="fade" time="300"/>
         <effect type="slide" start="+1500,0" time="300"/>
       </animation>
-
-      <control type="image">
-        <posx>-12</posx>
-        <posy>174</posy>
-        <width>72</width>
-        <height>72</height>
-        <texture background="true">other_textures/osd/playlistnf.png</texture>
-        <aspectratio scalediffuse="false">stretch</aspectratio>
-        <animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(57)">Conditional</animation>
-      </control>
 
       <control type="image">
         <posx>76</posx>

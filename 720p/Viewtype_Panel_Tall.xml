@@ -1,6 +1,23 @@
 <includes>
 	<include name="Viewtype_Panel_Tall">
 
+		<control type="image">
+			<posx>-12</posx>
+			<posy>174</posy>
+			<width>72</width>
+			<height>72</height>
+			<texture background="true">other_textures/osd/playlistnf.png</texture>
+			<aspectratio scalediffuse="false">stretch</aspectratio>
+			<animation effect="slide" start="0,0" end="-100,0" time="300" condition="ControlGroup(54).HasFocus()" reversible="false">Conditional</animation>
+			<animation effect="slide" start="-100,0" end="0,0" time="300" delay="100" condition="!ControlGroup(54).HasFocus()" reversible="false">Conditional</animation>
+			<animation type="WindowClose">
+				<effect type="slide" start="0,0" end="-100,0" time="200" />
+			</animation>
+			<animation type="WindowOpen">
+				<effect type="slide" start="-100,0" end="0,0" time="200" delay="100" />
+			</animation>
+		</control>
+
 		<control type="group">
 			<visible>Control.IsVisible(54)</visible>
 			<animation type="TYPE" condition="Window.IsVisible(2003)" reversible="false">
@@ -18,16 +35,6 @@
 				<effect type="fade" time="300"/>
 				<effect type="slide" start="+1500,0" time="300"/>
 			</animation>
-
-			<control type="image">
-				<posx>-12</posx>
-				<posy>174</posy>
-				<width>72</width>
-				<height>72</height>
-				<texture background="true">other_textures/osd/playlistnf.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-				<animation effect="slide" start="-100,0" end="0,0" time="300" condition="Control.HasFocus(54)">Conditional</animation>
-			</control>
 
 			<control type="panel" id="54">
 				<viewtype label="Poster View">Poster View</viewtype>
@@ -433,12 +440,12 @@
 
 			<control type="label">
 				<posx>796</posx>
-        		<posy>320</posy>
-        		<width>485</width>
-        		<height>50</height>
-        		<align>center</align>
-        		<aligny>top</aligny>
-        		<font>Large_Letter_Music</font>
+				<posy>320</posy>
+				<width>485</width>
+				<height>50</height>
+				<align>center</align>
+				<aligny>top</aligny>
+				<font>Large_Letter_Music</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.SortLetter]</label>
 				<animation effect="fade" time="500">Visible</animation>
