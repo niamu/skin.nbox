@@ -24,7 +24,7 @@
       <animation type="VisibleChange">
         <effect type="fade" start="0" end="100" time="600" />
       </animation>
-      <visible>VideoPlayer.Content(Movies) | !VideoPlayer.Content(Movies)</visible>
+      <visible>Player.HasVideo + [VideoPlayer.Content(Movies) | !VideoPlayer.Content(Movies)]</visible>
     </control>
 
     <control type="group">
@@ -63,47 +63,9 @@
     </control>
 
     <control type="group">
-      <visible>Player.HasAudio + !Player.ShowInfo</visible>
-
-      <control type="progress">
-        <description>Progressbar</description>
-        <posx>450</posx>
-        <posy>640</posy>
-        <width>380</width>
-        <height>5</height>
-        <info>Player.Progress</info>
-        <texturebg>progressback.png</texturebg>
-        <midtexture>progressmidgreen.png</midtexture>
-      </control>
-
-      <control type="label">
-        <description>Player Times</description>
-        <posx>450</posx>
-        <posy>635</posy>
-        <width>100</width>
-        <label>$INFO[MusicPlayer.Time]</label>
-        <align>left</align>
-        <font>Small</font>
-        <textcolor>white</textcolor>
-      </control>
-
-      <control type="label">
-        <description>Player Times</description>
-        <posx>830</posx>
-        <posy>635</posy>
-        <width>100</width>
-        <label>$INFO[MusicPlayer.TimeRemaining,-]</label>
-        <align>right</align>
-        <font>Small</font>
-        <textcolor>black</textcolor>
-      </control>
-    </control>
-
-    <control type="group">
       <visible>Player.HasAudio</visible>
-
-      <posx>64</posx>
-      <posy>580</posy>
+      <posx>140</posx>
+      <posy>570</posy>
 
       <control type="label">
         <posx>0</posx>
@@ -206,6 +168,7 @@
     </control>
 
     <control type="group">
+      <visible>Player.HasVideo</visible>
       <posx>0</posx>
       <posy>0</posy>
 
@@ -238,6 +201,7 @@
     </control>
 
     <control type="group">
+      <visible>Player.HasVideo</visible>
       <posx>325</posx>
       <posy>515</posy>
 

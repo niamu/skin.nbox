@@ -242,25 +242,25 @@
 						</control>
 
 						<control type="label">
-              <description>Player Times</description>
-              <posx>30</posx>
-              <posy>670</posy>
-              <width>120</width>
-              <label>[COLOR Accent]$INFO[Player.Time][/COLOR]</label>
-              <align>left</align>
-              <font>Medium</font>
-            </control>
+							<description>Player Times</description>
+							<posx>30</posx>
+							<posy>670</posy>
+							<width>120</width>
+							<label>[COLOR Accent]$INFO[Player.Time][/COLOR]</label>
+							<align>left</align>
+							<font>Medium</font>
+						</control>
 
 						<control type="label">
-              <description>Player Times</description>
-              <posx>1250</posx>
-              <posy>670</posy>
-              <width>120</width>
-              <label>$INFO[Player.TimeRemaining,-]</label>
-              <align>right</align>
-              <font>Medium</font>
-              <textcolor>white</textcolor>
-            </control>
+							<description>Player Times</description>
+							<posx>1250</posx>
+							<posy>670</posy>
+							<width>120</width>
+							<label>$INFO[Player.TimeRemaining,-]</label>
+							<align>right</align>
+							<font>Medium</font>
+							<textcolor>white</textcolor>
+						</control>
 					</control>
 
 					<control type="button" id="12">
