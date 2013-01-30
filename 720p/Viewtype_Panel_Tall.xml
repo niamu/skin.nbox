@@ -302,10 +302,10 @@
 				<aligny>center</aligny>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[COLOR Accent]$INFO[ListItem.LastPlayed,[COLOR White]last played: [/COLOR]][/COLOR]</label>
-				<visible>StringCompare(ListItem.Property(UnWatchedEpisodes),0) + IsEmpty(ListItem.LastPlayed) + [Container.Content(tvshows) | !Container.Content(albums)] + !Container.Content(movies)</visible>
+				<label>$INFO[ListItem.Property(UnWatchedEpisodes),, unwatched episode]</label>
+				<visible>[!IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),1) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] + Container.Content(tvshows)</visible>
 			</control>
-			
+
 			<control type="label">
 				<posx>295</posx>
 				<posy>210</posy>
@@ -315,19 +315,7 @@
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Property(UnWatchedEpisodes),, unwatched episodes]</label>
-				<visible>[StringCompare(ListItem.LastPlayed,12/31/1969) | IsEmpty(ListItem.LastPlayed)] + [IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),1) | StringCompare(ListItem.Property(UnWatchedEpisodes),0)] + [Container.Content(tvshows) | !Container.Content(albums)] + !Container.Content(movies)</visible>
-			</control>
-
-			<control type="label">
-				<posx>295</posx>
-				<posy>210</posy>
-				<width>600</width>
-				<height>50</height>
-				<aligny>center</aligny>
-				<font>Sort_Font_Small</font>
-				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Property(UnWatchedEpisodes),, unwatched episode]</label>
-				<visible>[StringCompare(ListItem.LastPlayed,12/31/1969) | IsEmpty(ListItem.LastPlayed)] + [!IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),1) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] + [Container.Content(tvshows) | !Container.Content(albums)] + !Container.Content(movies)</visible>
+				<visible>[IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),1)] + Container.Content(tvshows)</visible>
 			</control>
 
 			<control type="label">
@@ -339,7 +327,19 @@
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<label>[COLOR Accent]$INFO[ListItem.LastPlayed,[COLOR White]last played: [/COLOR]][/COLOR]</label>
-				<visible>!IsEmpty(ListItem.LastPlayed) + !StringCompare(ListItem.LastPlayed,12/31/1969) + [Container.Content(tvshows) | !Container.Content(albums)] + !Container.Content(movies)</visible>
+				<visible>StringCompare(ListItem.Property(UnWatchedEpisodes),0) + !IsEmpty(ListItem.LastPlayed) + !StringCompare(ListItem.LastPlayed,12/31/1969) + Container.Content(tvshows)</visible>
+			</control>
+
+			<control type="label">
+				<posx>295</posx>
+				<posy>210</posy>
+				<width>600</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+				<label>[COLOR White]last played:[/COLOR] [COLOR Accent]never[/COLOR]</label>
+				<visible>StringCompare(ListItem.Property(UnWatchedEpisodes),0) + StringCompare(ListItem.LastPlayed,12/31/1969) + Container.Content(tvshows)</visible>
 			</control>
 
 			<control type="grouplist">
