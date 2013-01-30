@@ -200,6 +200,21 @@
         <texture fallback="">$INFO[ListItem.Icon]</texture>
         <visible>!IsEmpty(ListItem.Icon)</visible>
         <animation effect="fade" time="500"></animation>
+        <visible>!Window.IsVisible(Pictures)</visible>
+        <bordersize>4</bordersize>
+      </control>
+
+      <control type="image">
+        <posx>360</posx>
+        <posy>288</posy>
+        <width>317</width>
+        <height>315</height>
+        <fadetime>400</fadetime>
+        <aspectratio scalediffuse="false">scale</aspectratio>
+        <texture fallback="">$INFO[ListItem.Icon]</texture>
+        <visible>!IsEmpty(ListItem.Icon)</visible>
+        <animation effect="fade" time="500"></animation>
+        <visible>Window.IsVisible(Pictures)</visible>
         <bordersize>4</bordersize>
       </control>
 
