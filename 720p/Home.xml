@@ -3978,7 +3978,7 @@
             <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
             <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
             <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
-            <onclick>ActivateWindow(Pictures,return)</onclick>
+            <onclick>ActivateWindow(Pictures)</onclick>
           </control>
 
           <control type="label">
