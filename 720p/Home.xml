@@ -3690,64 +3690,58 @@
               <onclick>activatewindow(VideosSettings)</onclick>
             </item>
             <item id="3">
+              <description>Live TV</description>
+              <label>Live TV</label>
+              <thumb>tv_shows.png</thumb>
+              <onclick>activatewindow(pvr,return)</onclick>
+            </item>
+            <item id="4">
               <description>Music</description>
               <label>2</label>
               <thumb>icons/music.png</thumb>
               <onclick>activatewindow(MusicSettings,return)</onclick>
             </item>
-            <item id="4">
+            <item id="5">
               <description>Addons</description>
               <label>24001</label>
               <thumb>icons/addons.png</thumb>
               <onclick>activatewindow(AddonBrowser)</onclick>
             </item>
-            <item id="5">
+            <item id="6">
               <description>Pictures</description>
               <label>1</label>
               <thumb>icons/pictures.png</thumb>
               <onclick>activatewindow(PicturesSettings,return)</onclick>
             </item>
-            <item id="6">
+            <item id="7">
               <description>Weather</description>
               <label>8</label>
               <thumb>icons/weather.png</thumb>
               <onclick>activatewindow(WeatherSettings,return)</onclick>
             </item>
-            <item id="7">
+            <item id="8">
               <description>Network</description>
               <label>705</label>
               <thumb>icons/network.png</thumb>
               <onclick>activatewindow(NetworkSettings,return)</onclick>
             </item>
-            <item id="8">
+            <item id="9">
               <description>System</description>
               <label>13000</label>
               <thumb>icons/system.png</thumb>
               <onclick>activatewindow(SystemSettings,return)</onclick>
             </item>
-            <item id="9">
+            <item id="10">
               <description>Profiles</description>
               <label>13200</label>
               <thumb>icons/profile.png</thumb>
               <onclick>activatewindow(Profiles,return)</onclick>
             </item>
-            <item id="10">
+            <item id="11">
               <description>System Info</description>
               <label>130</label>
               <thumb>icons/info.png</thumb>
               <onclick>activatewindow(7,return)</onclick>
-            </item>
-            <item id="11">
-              <description>Live TV</description>
-              <label>Live TV</label>
-              <thumb>icons/videos.png</thumb>
-              <onclick>activatewindow(pvr,return)</onclick>
-            </item>
-            <item id="12">
-              <description>Custom Settings</description>
-              <label>636</label>
-              <thumb>icons/appearance.png</thumb>
-              <onclick>activatewindow(56,return)</onclick>
             </item>
           </content>
         </control>
