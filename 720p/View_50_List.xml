@@ -78,7 +78,7 @@
         <font>Home_header</font>
         <textcolor>White</textcolor>
         <align>left</align>
-        <visible>!IsEmpty(Container.FolderName) + !Window.IsVisible(AddonBrowser.xml)</visible>
+        <visible>!IsEmpty(Container.FolderName) + [!Window.IsVisible(AddonBrowser.xml) + !Window.IsVisible(Pictures)]</visible>
       </control>
 
       <control type="label">
@@ -90,7 +90,7 @@
         <font>Home_header</font>
         <textcolor>White</textcolor>
         <align>left</align>
-        <visible>IsEmpty(Container.FolderName) + !Window.IsVisible(AddonBrowser.xml)</visible>
+        <visible>IsEmpty(Container.FolderName) + [!Window.IsVisible(AddonBrowser.xml) + !Window.IsVisible(Pictures)]</visible>
       </control>
 
       <control type="label">
@@ -115,6 +115,17 @@
         <align>left</align>
       </control>
 
+      <control type="label">
+        <label>pictures</label>
+        <posx>70</posx>
+        <posy>170</posy>
+        <height>30</height>
+        <width>275</width>
+        <font>Home_header</font>
+        <visible>Window.IsVisible(Pictures)</visible>
+        <align>left</align>
+      </control>
+
 
       <control type="label">
         <posx>360</posx>
@@ -124,7 +135,7 @@
         <font>Home_menu</font>
         <textcolor>White</textcolor>
         <aligny>top</aligny>
-        <label>[COLOR Accent]$INFO[ListItem.Label][/COLOR] $INFO[ListItem.Property(Addon.Version)]</label>
+        <label>[COLOR Accent]$INFO[ListItem.Label][/COLOR] $INFO[ListItem.Property(Addon.Version)]$INFO[ListItem.PictureResolution]</label>
         <visible>true</visible>
         <align>left</align>
       </control>
@@ -232,7 +243,7 @@
           <posy>288</posy>
           <width>600</width>
           <height>315</height>
-          <texture background="true" >tile.png</texture>
+          <texture background="true" >music_fanart_diffuse.png</texture>
           <fadetime>200</fadetime>
           <aspectratio scalediffuse="false">stretch</aspectratio>
         </control>
@@ -290,6 +301,100 @@
           <autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
           <font>Plot_Font</font>
           <textcolor>White</textcolor>
+        </control>
+      </control>
+
+      <control type="group">
+        <visible>Window.IsVisible(Pictures) + !IsEmpty(ListItem.PicturePath)</visible>
+
+        <control type="image">
+          <posx>680</posx>
+          <posy>288</posy>
+          <width>600</width>
+          <height>315</height>
+          <texture background="true" >music_fanart_diffuse.png</texture>
+          <fadetime>200</fadetime>
+          <aspectratio scalediffuse="false">stretch</aspectratio>
+        </control>
+
+        <control type="label">
+          <posx>700</posx>
+          <posy>300</posy>
+          <width>400</width>
+          <height>50</height>
+          <aligny>Left</aligny>
+          <font>Artist_Font</font>
+          <textcolor>White</textcolor>
+          <label>Description</label>
+          <visible>!IsEmpty(ListItem.Description) | !IsEmpty(ListItem.PictureComment)</visible>
+        </control>
+
+        <control type="label">
+          <posx>700</posx>
+          <posy>300</posy>
+          <width>400</width>
+          <height>50</height>
+          <aligny>Left</aligny>
+          <font>Artist_Font</font>
+          <textcolor>White</textcolor>
+          <label>Information</label>
+          <visible>IsEmpty(ListItem.Description) + IsEmpty(ListItem.PictureComment)</visible>
+        </control>
+        
+        <control type="label">
+          <posx>700</posx>
+          <posy>350</posy>
+          <width>400</width>
+          <height>50</height>
+          <aligny>Left</aligny>
+          <textcolor>White</textcolor>
+          <label>[COLOR Accent]$INFO[ListItem.PictureCaption][/COLOR]</label>
+        </control>
+
+        <control type="label">
+          <posx>700</posx>
+          <posy>560</posy>
+          <width>400</width>
+          <height>50</height>
+          <aligny>Left</aligny>
+          <textcolor>White</textcolor>
+          <label>[COLOR Accent]$INFO[ListItem.PictureCamMake][/COLOR] $INFO[ListItem.PictureCamModel]</label>
+        </control>
+
+        <control type="label">
+          <posx>1260</posx>
+          <posy>320</posy>
+          <width>200</width>
+          <height>25</height>
+          <align>right</align>
+          <textcolor>White</textcolor>
+          <label>[LOWERCASE]$INFO[ListItem.PictureDateTime][/LOWERCASE]</label>
+        </control>
+
+        <control type="textbox">
+          <posx>700</posx>
+          <posy>385</posy>
+          <width>560</width>
+          <height>150</height>
+          <info>ListItem.PictureDesc</info>
+          <align>justify</align>
+          <autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
+          <font>Plot_Font</font>
+          <textcolor>White</textcolor>
+          <visible>!IsEmpty(ListItem.PictureDesc)</visible>
+        </control>
+
+        <control type="textbox">
+          <posx>700</posx>
+          <posy>385</posy>
+          <width>560</width>
+          <height>150</height>
+          <info>ListItem.PictureComment</info>
+          <align>justify</align>
+          <autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
+          <font>Plot_Font</font>
+          <textcolor>White</textcolor>
+          <visible>IsEmpty(ListItem.PictureDesc)</visible>
         </control>
 
       </control>
