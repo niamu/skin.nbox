@@ -436,7 +436,7 @@
 				<textcolor>White</textcolor>
 				<align>left</align>
 				<visible>Container.Content(TVShows)</visible>
-			</control>		
+			</control>
 
 			<control type="label">
 				<posx>796</posx>

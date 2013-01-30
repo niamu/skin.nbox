@@ -3865,6 +3865,16 @@
             <align>left</align>
           </control>
 
+          <control type="label">
+            <label>$INFO[Window(Weather).Property(Current.Temperature)][LOWERCASE]$INFO[System.TemperatureUnits][/LOWERCASE]</label>
+            <posx>145</posx>
+            <posy>119</posy>
+            <height>30</height>
+            <width>250</width>
+            <font>button_title</font>
+            <align>right</align>
+          </control>
+
           <control type="image">
             <posx>29</posx>
             <posy>20</posy>

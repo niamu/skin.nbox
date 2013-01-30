@@ -297,18 +297,6 @@
 			</control>
 		</control>
 
-		<control type="group">
-			<animation effect="fade" time="500">VisibleChange</animation>
-			<visible>[Container(5000).HasFocus(504) + Control.HasFocus(5000)] | [Container(5000).HasFocus(504) + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)]</visible>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window(Weather).Property(Day0.FanartCode),extras/weather_fanart/,.jpg]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-			</control>
-		</control>
-
 		<control type="image">
 			<animation effect="fade" time="500">VisibleChange</animation>
 			<include>Dimensions_Fullscreen</include>
@@ -329,10 +317,7 @@
 		</control>
 
 		<control type="image">
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>1280</width>
-			<height>720</height>
+			<include>Dimensions_Fullscreen</include>
 			<texture>music_fanart_diffuse_blue.png</texture>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
 			<colordiffuse>Diffuse3</colordiffuse>
