@@ -18,6 +18,26 @@
       <animation effect="fade" time="400">WindowClose</animation>
     </control>
 
+    <control type="label">
+      <label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
+      <posx>1284</posx>
+      <posy>-5</posy>
+      <height>100</height>
+      <width>550</width>
+      <font>Home_time</font>
+      <align>right</align>
+    </control>
+
+    <control type="label">
+      <label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(dd)] $INFO[System.Date(MMM)] [/LOWERCASE]</label>
+      <posx>1280</posx>
+      <posy>60</posy>
+      <height>100</height>
+      <width>750</width>
+      <font>Home_date</font>
+      <align>right</align>
+    </control>
+
     <control type="group">
       <animation type="WindowClose">
         <effect type="fade" time="300"/>
@@ -29,13 +49,66 @@
       </animation>
 
       <control type="label">
-        <label>settings</label>
+        <label>system</label>
         <posx>70</posx>
-        <posy>190</posy>
+        <posy>170</posy>
         <height>30</height>
-        <width>250</width>
+        <width>400</width>
         <font>Home_header</font>
         <align>left</align>
+      </control>
+
+      <control type="fadelabel" id="52">
+        <description>XBMC XBE BUILD Version</description>
+        <posx>360</posx>
+        <posy>171</posy>
+        <height>30</height>
+        <width>920</width>
+        <font>Home_menu</font>
+        <scroll>true</scroll>
+        <aligny>top</aligny>
+        <textcolor>Accent</textcolor>
+        <align>left</align>
+      </control>
+
+      <control type="group">
+        <posx>360</posx>
+        <posy>210</posy>
+
+        <control type="label" id="21">
+          <description>CPU Text</description>
+          <width>800</width>
+          <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
+        </control>
+
+        <control type="progress" id="22">
+          <description>CPU BAR</description>
+          <posx>0</posx>
+          <posy>40</posy>
+          <width>420</width>
+          <info>System.CPUUsage</info>
+          <height>5</height>
+          <texturebg>progressmidgreen.png</texturebg>
+          <midtexture>progresslime.png</midtexture>
+        </control>
+
+        <control type="label" id="23">
+          <description>Memory Text</description>
+          <posx>440</posx>
+          <width>800</width>
+          <label>RAM Usage: $INFO[system.memory(used.percent)]</label>
+        </control>
+
+        <control type="progress" id="24">
+          <posx>440</posx>
+          <posy>40</posy>
+          <description>Memory BAR</description>
+          <width>420</width>
+          <info>system.memory(used)</info>
+          <height>5</height>
+          <texturebg>progressmidgreen.png</texturebg>
+          <midtexture>progresslime.png</midtexture>
+        </control>
       </control>
 
       <control type="group">
@@ -95,93 +168,59 @@
 
         <control type="grouplist">
           <posx>360</posx>
-          <width>800</width>
+          <posy>225</posy>
+          <width>860</width>
           <height>600</height>
           <itemgap>2</itemgap>
 
-          <control type="label" id="52">
-            <description>XBMC XBE BUILD Version</description>
-            <width>800</width>
-          </control>
-
-          <control type="label" id="21">
-            <description>CPU Text</description>
-            <width>800</width>
-            <label>$LOCALIZE[13271] $INFO[System.CPUUsage]</label>
-          </control>
-
-          <control type="progress" id="22">
-            <description>CPU BAR</description>
-            <width>800</width>
-            <info>System.CPUUsage</info>
-          </control>
-
-          <control type="label" id="23">
-            <description>Memory Text</description>
-            <width>800</width>
-            <label>RAM Usage: $INFO[system.memory(used.percent)]</label>
-          </control>
-
-          <control type="progress" id="24">
-            <description>Memory BAR</description>
-            <width>800</width>
-            <info>system.memory(used)</info>
-          </control>
-
-          <control type="label" id="25">
-            <description>Spacer</description>
-            <font>-</font>
-            <width>800</width>
-          </control>
-
           <control type="label" id="2">
             <description>Label 2</description>
-            <width>800</width>
+            <width>860</width>
           </control>
 
           <control type="label" id="3">
             <description>Label 3</description>
-            <width>800</width>
+            <width>860</width>
           </control>
 
           <control type="label" id="4">
             <description>Label 4</description>
-            <width>800</width>
+            <width>860</width>
           </control>
 
-          <control type="label" id="5">
+          <control type="fadelabel" id="5">
             <description>Label 5</description>
-            <width>800</width>
+            <width>860</width>
           </control>
 
           <control type="label" id="6">
             <description>Label 6</description>
-            <width>800</width>
+            <width>860</width>
           </control>
 
           <control type="label" id="7">
             <description>Label 7</description>
-            <width>800</width>
+            <width>860</width>
           </control>
 
           <control type="label" id="8">
             <description>Label 8</description>
-            <width>800</width>
+            <width>860</width>
           </control>
 
           <control type="label" id="9">
             <description>Label 9</description>
-            <width>800</width>
+            <width>860</width>
           </control>
 
           <control type="label" id="10">
             <description>Label 10</description>
-            <width>800</width>
+            <width>860</width>
           </control>
 
           <control type="label" id="11">
             <description>Label 11</description>
-            <width>800</width>
+            <width>860</width>
           </control>
 
         </control>
