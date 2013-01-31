@@ -22,39 +22,9 @@
 			<include>Dimensions_Fullscreen</include>
 			<fadetime>500</fadetime>
 			<texture background="true">music_fanart_diffuse.png</texture>
-		</control> 		
-
-		<control type="image" id="2">
-			<description>top left bar</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>20</width>
-			<height>138</height>
-			<visible>true</visible>
-			<texture>bar.png</texture>
-			<animation effect="fade" time="400">WindowOpen</animation>
-			<animation effect="fade" time="400">WindowClose</animation>
-		</control>	
-
-		<control type="label">
-			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
-			<posx>1284</posx>
-			<posy>-5</posy>
-			<height>100</height>
-			<width>550</width>
-			<font>Home_time</font>
-			<align>right</align>
 		</control>
 
-		<control type="label">
-			<label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(dd)] $INFO[System.Date(MMM)] [/LOWERCASE]</label>
-			<posx>1280</posx>
-			<posy>60</posy>
-			<height>100</height>
-			<width>750</width>
-			<font>Home_date</font>
-			<align>right</align>
-		</control>
+		<include>BarClock</include>
 
 		<control type="image">
 			<posx>-12</posx>

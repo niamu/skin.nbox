@@ -9,26 +9,7 @@
 	<controls>
 		
 		<include>HomeBackground</include>
-		
-		<control type="label">
-			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
-					<posx>1284</posx>
-					<posy>-5</posy>
-					<height>100</height>
-					<width>550</width>
-					<font>Home_time</font>
-					<align>right</align>
-		</control>
-		
-		<control type="label">
-			<label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(MMM)] $INFO[System.Date(dd)][/LOWERCASE]</label>
-					<posx>1280</posx>
-					<posy>60</posy>
-					<height>100</height>
-					<width>750</width>
-					<font>Home_date</font>
-					<align>right</align>
-		</control>
+		<include>BarClock</include>
 		
 		<control type="group" id="2077">
 			<control type="label">
@@ -249,17 +230,6 @@
 			<width>400</width>
 			<font>Home_header</font>
 			<align>left</align>
-		</control>
-		
-		<control type="image" id="2">
-			<description>top left bar</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>20</width>
-			<height>138</height>
-			<texture>bar.png</texture>
-			<animation effect="fade" time="400">WindowOpen</animation>
-			<animation effect="fade" time="400">WindowClose</animation>
 		</control>
 		
 	</controls>
