@@ -154,6 +154,17 @@
 				<visible>Container.Content(genres)</visible>
 			</control>
 
+			<control type="label">
+				<label>music</label>
+				<posx>70</posx>
+				<posy>170</posy>
+				<height>30</height>
+				<width>550</width>
+				<font>Home_header</font>
+				<align>left</align>
+				<visible>Window.IsVisible(MusicLibrary)</visible>
+			</control>
+
 			<control type="fadelabel" id="140">
 				<posx>384</posx>
 				<posy>185</posy>

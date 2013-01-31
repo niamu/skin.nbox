@@ -60,7 +60,7 @@
 				<include>Animation_ZoomInZoomOut</include>
 				<include>Animation_ZoomedByMenu</include>
 				<include>Animation_HiddenByInfo</include>
-				<visible>Window.IsActive(musiclibrary) + Container.Content(songs)</visible>
+				<visible>Window.IsActive(musiclibrary) + [Container.Content(songs) | Container.Content(files)]</visible>
 				
 				<itemlayout height="45">
 					<control type="image">
