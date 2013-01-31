@@ -3867,6 +3867,7 @@
             <width>250</width>
             <font>button_title</font>
             <align>right</align>
+            <visible>!IsEmpty(Window(Weather).Property(Current.Temperature))</visible>
           </control>
 
           <control type="image">
