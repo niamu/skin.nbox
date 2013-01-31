@@ -2,9 +2,7 @@
 	<defaultcontrol>32</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
 	<controls>
-		<include>CommonBackground</include>
-		<include>ContentPanelBackgroundsPVR</include>
-		<include>MainWindowMouseButtons</include>
+		<include>HomeBackground</include>
 		<control type="image">
 			<description>Section header image</description>
 			<posx>20</posx>
@@ -96,13 +94,6 @@
 				<label>$INFO[VideoPlayer.Title]</label>
 				<visible>Player.HasVideo</visible>
 			</control>
-			<!-- control type="visualisation">
-				<posx>85</posx>
-				<posy>85</posy>
-				<width>700</width>
-				<height>390</height>
-				<visible>Player.HasAudio</visible>
-			</control -->
 		</control>
 
 		<control type="group" id="50">

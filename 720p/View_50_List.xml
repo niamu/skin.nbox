@@ -90,7 +90,7 @@
         <font>Home_header</font>
         <textcolor>White</textcolor>
         <align>left</align>
-        <visible>IsEmpty(Container.FolderName) + [!Window.IsVisible(AddonBrowser.xml) + !Window.IsVisible(Pictures)]</visible>
+        <visible>IsEmpty(Container.FolderName) + [!Window.IsVisible(AddonBrowser.xml) + !Window.IsVisible(Pictures) + !Window.IsVisible(Programs)]</visible>
       </control>
 
       <control type="label">
@@ -111,7 +111,7 @@
         <height>30</height>
         <width>275</width>
         <font>Home_header</font>
-        <visible>Window.IsVisible(AddonBrowser.xml)</visible>
+        <visible>Window.IsVisible(AddonBrowser.xml) | Window.IsVisible(Programs)</visible>
         <align>left</align>
       </control>
 

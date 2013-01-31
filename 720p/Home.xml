@@ -238,6 +238,11 @@
             <onclick>Control.SetFocus(801)</onclick>
             <property name="idnum">id503</property>
           </item>
+          <item id="504">
+            <label>pvr</label>
+            <onclick>ActivateWindow(PVR)</onclick>
+            <property name="idnum">id504</property>
+          </item>
         </content>
       </control>
 
@@ -3693,7 +3698,7 @@
               <description>Live TV</description>
               <label>Live TV</label>
               <thumb>tv_shows.png</thumb>
-              <onclick>activatewindow(pvr,return)</onclick>
+              <onclick>activatewindow(PVRSettings,return)</onclick>
             </item>
             <item id="4">
               <description>Music</description>
