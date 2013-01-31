@@ -3,7 +3,41 @@
 		<control type="group">
 			<description>TV Channels group</description>
 			<visible>Control.IsVisible(11)</visible>
-			<include>VisibleFadeEffect</include>
+
+			<control type="label">
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(32)][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+			</control>
+
+			<control type="image">
+				<posx>76</posx>
+				<posy>288</posy>
+				<width>315</width>
+				<height>315</height>
+				<texture>white_box.png</texture>
+				<fadetime>200</fadetime>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+				<visible>!StringCompare(ListItem.Label, )</visible>
+			</control>
+
+			<control type="image">
+				<posx>76</posx>
+				<posy>288</posy>
+				<width>315</width>
+				<height>315</height>
+				<texture fallback="defaultvideo.png" background="true" >$INFO[ListItem.Icon]</texture>
+				<fadetime>200</fadetime>
+				<aspectratio scalediffuse="false">scale</aspectratio>
+				<visible>!IsEmpty(ListItem.Icon)</visible>
+				<bordersize>4</bordersize>
+			</control>
+
 			<control type="group">
 				<posx>530</posx>
 				<posy>490</posy>
@@ -82,10 +116,10 @@
 				</control>
 			</control>
 			<control type="list" id="11">
-				<posx>70</posx>
-				<posy>85</posy>
-				<width>390</width>
-				<height>541</height>
+				<posx>396</posx>
+				<posy>288</posy>
+				<width>405</width>
+				<height>320</height>
 				<onleft>32</onleft>
 				<onright>70</onright>
 				<onup>11</onup>
@@ -94,14 +128,6 @@
 				<pagecontrol>70</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="60" width="390">
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>390</width>
-						<height>61</height>
-						<texture border="2">MenuItemNF.png</texture>
-						<include>VisibleFadeEffect</include>
-					</control>
 					<control type="label">
 						<posx>5</posx>
 						<posy>-4</posy>
@@ -180,22 +206,10 @@
 				</itemlayout>
 				<focusedlayout height="60" width="390">
 					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>390</width>
-						<height>61</height>
-						<texture border="2">MenuItemNF.png</texture>
-						<visible>!Control.HasFocus(11)</visible>
-						<include>VisibleFadeEffect</include>
-					</control>
-					<control type="image">
-						<posx>0</posx>
-						<posy>0</posy>
-						<width>390</width>
-						<height>61</height>
-						<texture border="2">MenuItemFO.png</texture>
-						<visible>Control.HasFocus(11)</visible>
-						<include>VisibleFadeEffect</include>
+						<width>440</width>
+						<height>44</height>
+						<texture border="5">other_textures/buttonfo.png</texture>
+						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(11)">Conditional</animation>
 					</control>
 					<control type="label">
 						<posx>5</posx>
@@ -311,7 +325,18 @@
 		<control type="group">
 			<description>Radio Channels group</description>
 			<visible>Control.IsVisible(12)</visible>
-			<include>VisibleFadeEffect</include>
+
+			<control type="label">
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(33)][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+			</control>
+
 			<control type="group">
 				<posx>530</posx>
 				<posy>490</posy>
@@ -619,7 +644,18 @@
 		<control type="group">
 			<description>Recordings group</description>
 			<visible>Control.IsVisible(13)</visible>
-			<include>VisibleFadeEffect</include>
+
+			<control type="label">
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(34)][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+			</control>
+
 			<control type="list" id="13">
 				<posx>70</posx>
 				<posy>75</posy>
@@ -633,7 +669,7 @@
 				<pagecontrol>72</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="40" width="760">
-				<control type="image">
+					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
 						<width>760</width>
@@ -843,11 +879,22 @@
 		<control type="group">
 			<description>TV Guide Timeline</description>
 			<visible>Control.IsVisible(10)</visible>
-			<include>VisibleFadeEffect</include>
+
+			<control type="label">
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>view: [COLOR Accent][LOWERCASE]$LOCALIZE[19030][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+			</control>
+
 			<control type="epggrid" id="10">
 				<description>EPG Grid</description>
 				<posx>80</posx>
-				<posy>81</posy>
+				<posy>281</posy>
 				<width>1120</width>
 				<height>555</height>
 				<pagecontrol>10</pagecontrol>
@@ -1047,7 +1094,18 @@
 		<control type="group">
 			<description>Timers group</description>
 			<visible>Control.IsVisible(14)</visible>
-			<include>VisibleFadeEffect</include>
+
+			<control type="label">
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(35)][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+			</control>
+
 			<control type="group">
 				<posx>80</posx>
 				<posy>60</posy>
@@ -1359,7 +1417,18 @@
 		<control type="group">
 			<description>TV Search group</description>
 			<visible>Control.IsVisible(17)</visible>
-			<include>VisibleFadeEffect</include>
+
+			<control type="label">
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(36)][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+			</control>
+
 			<control type="group">
 				<posx>80</posx>
 				<posy>60</posy>
@@ -1713,7 +1782,18 @@
 		<control type="group">
 			<description>TV Guide Channel</description>
 			<visible>Control.IsVisible(15)</visible>
-			<include>VisibleFadeEffect</include>
+
+			<control type="label">
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>view: [COLOR Accent][LOWERCASE]$LOCALIZE[19030][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+			</control>
+
 			<control type="group">
 				<posx>80</posx>
 				<posy>60</posy>
@@ -2037,7 +2117,18 @@
 		<control type="group">
 			<description>TV Guide Now/Next</description>
 			<visible>Control.IsVisible(16)</visible>
-			<include>VisibleFadeEffect</include>
+
+			<control type="label">
+				<posx>75</posx>
+				<posy>220</posy>
+				<width>300</width>
+				<align>left</align>
+				<aligny>top</aligny>
+				<label>view: [COLOR Accent][LOWERCASE]$LOCALIZE[19030][/LOWERCASE][/COLOR] </label>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+			</control>
+
 			<control type="group">
 				<posx>80</posx>
 				<posy>60</posy>

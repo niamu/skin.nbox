@@ -208,8 +208,8 @@
             <property name="idnum">id503</property>
           </item>
           <item id="504">
-            <label>pvr</label>
-            <onclick>ActivateWindow(PVR)</onclick>
+            <label>live tv</label>
+            <onclick>ActivateWindow(MyPVR)</onclick>
             <property name="idnum">id504</property>
           </item>
         </content>
