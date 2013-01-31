@@ -2,33 +2,5 @@
 	<allowoverlay>yes</allowoverlay>
 	<controls>
 
-		<control type="label">
-			<label>$INFO[slideshow.exiftime], $INFO[slideshow.exposuretime], $INFO[slideshow.filedate], $INFO[slideshow.filename], $INFO[slideshow.apreture,f ], $INFO[slideshow.isoequivalence,ISO ], $INFO[slideshow.focallength], $INFO[slideshow.path]</label>
-		</control>
-
-		<control type="group">
-
-			<control type="image">
-				<posx>1060</posx>
-				<posy>620</posy>
-				<width>350</width>
-				<height>100</height>
-				<texture background="true" >tile.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-			</control>
-			<control type="image">
-				<description>top left bar</description>
-				<posx>1050</posx>
-				<posy>620</posy>
-				<width>10</width>
-				<height>100</height>
-				<texture>bar.png</texture>
-				<animation type="Focus">
-					<effect type="fade" start="0" end="100" time="400" />
-				</animation>
-			</control>
-		</control>
-
-
 	</controls>
 </window>

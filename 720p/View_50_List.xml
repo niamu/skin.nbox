@@ -45,7 +45,7 @@
 
       <control type="group">
         <posy>60</posy>
-        <visible allowhiddenfocus="true">[Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums) | Container.Content(Artists)] | Container.Content(Movies)]</visible>
+        <visible allowhiddenfocus="true">[Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Songs) | Container.Content(Movies)]</visible>
         <animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(60) | Container.Scrolling">Conditional</animation>
       </control>
 
