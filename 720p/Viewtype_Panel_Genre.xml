@@ -180,20 +180,7 @@
 				<scrollspeed>50</scrollspeed>
 				<visible>Container.Content(Genres)</visible>
 			</control>
-		</control>	
-
-
-		<control type="image" id="2">
-			<description>top left bar</description>
-			<posx>0</posx>
-			<posy>0</posy>
-			<width>20</width>
-			<height>138</height>
-			<texture>bar.png</texture>
-			<animation effect="fade" time="400">WindowOpen</animation>
-			<animation effect="fade" time="400">WindowClose</animation>
-			<visible>!container.content(episodes) + !container.content(songs)</visible>
-		</control>	
+		</control>
 
 	</include>
 </includes>

@@ -3,6 +3,7 @@
 	<include file="Defaults.xml" />
 	<include file="CommonViews.xml" />
 	<include file="View_50_List.xml" />
+	<include file="Viewtype_PVR.xml" />
 	<include file="Viewtype_Songs.xml" />
 	<include file="Viewtype_Episodes.xml" />
 	<include file="Viewtype_Panel_Tall.xml" />

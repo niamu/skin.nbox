@@ -6,6 +6,7 @@
 	<controls>
 		<control type="group">
 			<include>HomeBackground</include>
+			<include>BarClock</include>
 			<control type="group">
 				<visible>Container.Content(songs)</visible>
 				<include>BackgroundTextScroll</include>
@@ -16,28 +17,6 @@
 			<include>Viewtype_Panel_Square</include>
 			<include>Viewtype_Panel_Genre</include>
 			<include>View_Artist_List</include>
-		</control>
-
-		<control type="label">
-			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
-			<posx>1284</posx>
-			<posy>-5</posy>
-			<height>100</height>
-			<width>550</width>
-			<font>Home_time</font>
-			<align>right</align>
-			<visible>Window.IsActive(musiclibrary) </visible>
-		</control>
-
-		<control type="label">
-			<label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(dd)] $INFO[System.Date(MMM)] [/LOWERCASE]</label>
-			<posx>1280</posx>
-			<posy>60</posy>
-			<height>100</height>
-			<width>750</width>
-			<font>Home_date</font>
-			<visible>Window.IsActive(musiclibrary)</visible>
-			<align>right</align>
 		</control>
 		
 		<control type="image">

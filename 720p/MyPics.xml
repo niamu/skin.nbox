@@ -6,6 +6,7 @@
 	<controls>
 
 		<include>HomeBackground</include>
+		<include>BarClock</include>
 		<include>View_50_List</include>
 
 		<control type="image">
