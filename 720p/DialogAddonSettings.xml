@@ -17,15 +17,6 @@
 				<effect type="slide" start="+1500,0" time="300" delay="400" />
 			</animation>
 			
-			<control type="image">
-				<posx>-12</posx>
-				<posy>174</posy>
-				<width>72</width>
-				<height>72</height>
-				<texture background="true">other_textures/osd/playlistnf.png</texture>
-				<aspectratio scalediffuse="false">stretch</aspectratio>
-			</control>
-			
 			<control type="label">
 				<label>settings</label>
 				<posx>70</posx>
@@ -66,8 +57,8 @@
 		        <width>640</width>
 		        <height>330</height>
 		        <itemgap>2</itemgap>
-				<onup>9001</onup>
-				<ondown>9001</ondown>
+				<onup>2</onup>
+				<ondown>2</ondown>
 				<onleft>9</onleft>
 				<onright>10</onright>
 			</control>

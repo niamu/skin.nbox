@@ -23,6 +23,7 @@
       <animation type="Visible">
         <effect type="slide" start="-100,0" end="0,0" time="200" delay="100" />
       </animation>
+      <visible>!Window.IsVisible(DialogAddonSettings.xml)</visible>
     </control>
 
     <control type="group">
