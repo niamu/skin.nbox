@@ -141,6 +141,19 @@
             </animation>
             <visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
           </control>
+
+          <control type="image">
+            <posx>95</posx>
+            <posy>-</posy>
+            <width>60</width>
+            <height>60</height>
+            <texture>watching.png</texture>
+            <animation type="Unfocus" reversible="false">
+              <effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
+              <effect type="fade" start="80" end="100" time="400" />
+            </animation>
+            <visible>Container.Content(Episodes) + ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+          </control>
         </itemlayout>
 
         <focusedlayout width="160" height="160">				
@@ -180,6 +193,19 @@
               <effect type="fade" start="80" end="100" time="400" />
             </animation>
             <visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
+          </control>
+
+          <control type="image">
+            <posx>95</posx>
+            <posy>0</posy>
+            <width>60</width>
+            <height>60</height>
+            <texture>watching.png</texture>
+            <animation type="Focus" reversible="false">
+              <effect type="zoom" center="155,0" start="80" end="120" time="400" tween="back" easing="out" />
+              <effect type="fade" start="80" end="100" time="400" />
+            </animation>
+            <visible>Container.Content(Episodes) + ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
           </control>
           
           <control type="label">

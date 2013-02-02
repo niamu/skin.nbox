@@ -89,13 +89,16 @@
 					</control>
 
 					<control type="image">
-						<posx></posx>
-						<posy></posy>
-						<width>100</width>
-						<height>155</height>
-						<texture>new.png</texture>
-						<colordiffuse>PanelDiffuse</colordiffuse>
-						<visible>Container.Content(TVShows) + !Skin.HasSetting(HideNewEpisodes) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]</visible>
+						<posx>40</posx>
+						<posy>-</posy>
+						<width>60</width>
+						<height>60</height>
+						<texture>watching.png</texture>
+						<animation type="Focus" reversible="false">
+							<effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
+							<effect type="fade" start="80" end="100" time="400" />
+						</animation>
+						<visible>[Container.Content(movies) + ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)] | [!Container.Content(movies) + ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 					</control>
 				</itemlayout>
 				<focusedlayout width="105" height="160">
@@ -138,16 +141,16 @@
 					</control>
 
 					<control type="image">
-						<posx>88</posx>
-						<posy>100</posy>
-						<width>20</width>
-						<height>20</height>
-						<texture>new.png</texture>
+						<posx>75</posx>
+						<posy>9</posy>
+						<width>18</width>
+						<height>15</height>
+						<texture>watchingpanel.png</texture>
 						<animation type="Focus" reversible="false">
-							<effect type="zoom" center="49,72" start="80" end="120" time="400" tween="back" easing="out" />
+							<effect type="zoom" center="100,0" start="80" end="120" time="400" tween="back" easing="out" />
 							<effect type="fade" start="80" end="100" time="400" />
 						</animation>
-						<visible>Container.Content(TVShows) + !stringcompare(ListItem.Overlay,OverlayWatched.png) + [StringCompare(Window(Home).Property(LatestEpisode.1.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.2.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.3.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.4.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.5.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.6.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.7.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.8.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.9.ShowTitle),ListItem.Label) | StringCompare(Window(Home).Property(LatestEpisode.10.ShowTitle),ListItem.Label)]</visible>
+						<visible>[Container.Content(movies) + ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)] | [!Container.Content(movies) + ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
 					</control>
 				</focusedlayout>
 			</control>
