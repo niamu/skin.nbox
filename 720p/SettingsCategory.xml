@@ -37,6 +37,17 @@
       </control>
 
       <control type="label">
+        <label>[COLOR Accent]Live TV[/COLOR]</label>
+        <posx>360</posx>
+        <posy>200</posy>
+        <height>30</height>
+        <width>450</width>
+        <font>Home_sub_header</font>
+        <align>left</align>
+        <visible>SubString(System.CurrentWindow,Browser)</visible>
+      </control>
+
+      <control type="label">
         <label>[COLOR Accent]Appearance[/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>

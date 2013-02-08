@@ -9,8 +9,8 @@
       <height>72</height>
       <texture background="true">other_textures/osd/playlistnf.png</texture>
       <aspectratio scalediffuse="false">stretch</aspectratio>
-      <animation effect="slide" start="0,0" end="-100,0" time="300" condition="ControlGroup(9000).HasFocus()" reversible="false">Conditional</animation>
-      <animation effect="slide" start="-100,0" end="0,0" time="300" delay="100" condition="!ControlGroup(9000).HasFocus()" reversible="false">Conditional</animation>
+      <animation effect="slide" start="0,0" end="-100,0" time="300" condition="Control.HasFocus(50)" reversible="false">Conditional</animation>
+      <animation effect="slide" start="-100,0" end="0,0" time="300" delay="100" condition="!Control.HasFocus(50)" reversible="false">Conditional</animation>
       <animation type="WindowClose">
         <effect type="slide" start="0,0" end="-100,0" time="200" />
       </animation>
@@ -23,7 +23,7 @@
       <animation type="Visible">
         <effect type="slide" start="-100,0" end="0,0" time="200" delay="100" />
       </animation>
-      <visible>!Window.IsVisible(DialogAddonSettings.xml)</visible>
+      <visible>Control.IsVisible(50) + !Window.IsVisible(DialogAddonSettings.xml)</visible>
     </control>
 
     <control type="group">
@@ -40,6 +40,14 @@
         <effect type="slide" end="+1500,0" time="300"/>
       </animation>
       <animation type="WindowOpen">
+        <effect type="fade" time="300"/>
+        <effect type="slide" start="+1500,0" time="300"/>
+      </animation>
+      <animation type="Hidden">
+        <effect type="fade" time="300"/>
+        <effect type="slide" end="+1500,0" time="300"/>
+      </animation>
+      <animation type="Visible">
         <effect type="fade" time="300"/>
         <effect type="slide" start="+1500,0" time="300"/>
       </animation>
