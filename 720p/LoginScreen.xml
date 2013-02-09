@@ -12,6 +12,15 @@
 		<include>BarClock</include>
 		
 		<control type="group" id="2077">
+			<animation type="WindowClose">
+				<effect type="fade" time="300"/>
+				<effect type="slide" end="+1500,0" time="300"/>
+			</animation>
+			<animation type="WindowOpen">
+				<effect type="fade" time="300"/>
+				<effect type="slide" start="+1500,0" time="300"/>
+			</animation>
+			
 			<control type="label">
 				<label>profiles</label>
 				<posx>74</posx>

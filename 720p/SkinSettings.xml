@@ -96,40 +96,21 @@
 
 				<content>
 
-					<item id="1">
-						<description>Background Visuals</description>
-						<label>$LOCALIZE[31110]</label>
-						<onclick>-</onclick>
-					</item>
-
 					<item id="2">
-						<description>Lyrics/Subtitles</description>
-						<label>$LOCALIZE[31542]</label>
+						<description>Home</description>
+						<label>Home</label>
 						<onclick>-</onclick>
 					</item>
 
-					<item id="3">
-						<description>Debug</description>
-						<label>Debug</label>
-						<onclick>-</onclick>
-					</item>
-
-					<item id="4">
-						<description>Général</description>
-						<label>Général</label>
-						<onclick>-</onclick>
-					</item>
-
-					<item id="5">
-						<description>Playlists</description>
-						<label>31003</label>
+					<item id="1">
+						<description>General</description>
+						<label>General</label>
 						<onclick>-</onclick>
 					</item>
 
 				</content>
 
 			</control>
-			<!--BACKGROUND-->
 			<control type="group" id="99">
 				<posx>340</posx>
 				<posy>280</posy>
@@ -147,183 +128,29 @@
 					<visible>Container(100).Hasfocus(1)</visible>
 
 					<control type="radiobutton" id="201">
-						<description>Background Visualiser</description>
+						<description>Toggle Fanart</description>
 						<width>820</width>
 						<align>left</align>
-						<label>Background Visualiser</label>
+						<label>Enable Fanart</label>
 						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(NoBackgroundVisualiser)</onclick>
-						<selected>Skin.HasSetting(NoBackgroundVisualiser)</selected>
+						<onclick>Skin.ToggleSetting(Fanart)</onclick>
+						<selected>Skin.HasSetting(Fanart)</selected>
 						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
 					</control>
 
 					<control type="radiobutton" id="202">
-						<description>Background Video</description>
+						<description>Toggle Avatar</description>
 						<width>820</width>
 						<align>left</align>
-						<label>Background Video</label>
+						<label>Enable Profile Avatar</label>
 						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(NoBackgroundVideo)</onclick>
-						<selected>Skin.HasSetting(NoBackgroundVideo)</selected>
+						<onclick>Skin.ToggleSetting(Avatar)</onclick>
+						<selected>Skin.HasSetting(Avatar)</selected>
 						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
 					</control>
-
-					<!--BACKGROUNDS ITEM MENUS -->
-					<!--movies-->
-					<control type="radiobutton" id="801">
-						<width>750</width>
-						<height>40</height>
-						<align>left</align>
-						<!--<font>font13</font>-->
-						<label>$LOCALIZE[31543] $LOCALIZE[342]</label>
-						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(Use_CustomMoviesFolder)</onclick>
-						<selected>Skin.HasSetting(Use_CustomMoviesFolder)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-					<control type="button" id="811">
-						<description>Multi Image button</description>
-						<width>700</width>
-						<height>40</height>
-						<label>Chemin</label>
-						<focusedcolor>Accent</focusedcolor>
-						<label2>$INFO[Skin.String(Home_Custom_Back_CustomMoviesFolder)]</label2>
-						<align>center</align>
-						<onclick>Skin.SetPath(Home_Custom_Back_CustomMoviesFolder)</onclick>
-						<enable>Skin.HasSetting(Use_CustomMoviesFolder)</enable>
-					</control>
-					<!--videos-->
-					<control type="radiobutton" id="802">
-						<width>750</width>
-						<height>40</height>
-						<align>left</align>
-						<!--<font>font13</font>-->
-						<label>$LOCALIZE[31543] $LOCALIZE[3]</label>
-						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(Use_CustomVideosFolder)</onclick>
-						<selected>Skin.HasSetting(Use_CustomVideosFolder)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-					<control type="button" id="812">
-						<description>Multi Image button</description>
-						<width>700</width>
-						<height>40</height>
-						<label>Chemin</label>
-						<focusedcolor>Accent</focusedcolor>
-						<label2>$INFO[Skin.String(Home_Custom_Back_CustomVideosFolder)]</label2>
-						<align>center</align>
-						<onclick>Skin.SetPath(Home_Custom_Back_CustomVideosFolder)</onclick>
-						<enable>Skin.HasSetting(Use_CustomVideosFolder)</enable>
-					</control>
-
-					<!--music-->
-
-					<control type="radiobutton" id="804">
-						<width>750</width>
-						<height>40</height>
-						<align>left</align>
-						<!--<font>font13</font>-->
-						<label>$LOCALIZE[31543] $LOCALIZE[2]</label>
-						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(Use_CustomMusicFolder)</onclick>
-						<selected>Skin.HasSetting(Use_CustomMusicFolder)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-					<control type="button" id="814">
-						<description>Multi Image button</description>
-						<width>700</width>
-						<height>40</height>
-						<label>Chemin</label>
-						<focusedcolor>Accent</focusedcolor>
-						<label2>$INFO[Skin.String(Home_Custom_Back_CustomMusicFolder)]</label2>
-						<align>center</align>
-						<onclick>Skin.SetPath(Home_Custom_Back_CustomMusicFolder)</onclick>
-						<enable>Skin.HasSetting(Use_CustomMusicFolder)</enable>
-					</control>
-					<!--photo-->
-
-					<control type="radiobutton" id="805">
-						<width>750</width>
-						<height>40</height>
-						<align>left</align>
-						<!--<font>font13</font>-->
-						<label>$LOCALIZE[31543] $LOCALIZE[1]</label>
-						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(Use_CustomPicturesFolder)</onclick>
-						<selected>Skin.HasSetting(Use_CustomPicturesFolder)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-					<control type="button" id="815">
-						<description>Multi Image button</description>
-						<width>700</width>
-						<height>40</height>
-						<label>Chemin</label>
-						<label2>$INFO[Skin.String(Home_Custom_Back_CustomPicturesFolder)]</label2>
-						<focusedcolor>Accent</focusedcolor>
-						<align>center</align>
-						<onclick>Skin.SetPath(Home_Custom_Back_CustomPicturesFolder)</onclick>
-						<enable>Skin.HasSetting(Use_CustomPicturesFolder)</enable>
-					</control>
-					<!--TV SHOW-->
-
-					<control type="radiobutton" id="806">
-						<width>750</width>
-						<height>40</height>
-						<align>left</align>
-						<!--<font>font13</font>-->
-						<label>$LOCALIZE[31543] $LOCALIZE[20343]</label>
-						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(Use_CustomTVFolder)</onclick>
-						<selected>Skin.HasSetting(Use_CustomTVFolder)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-					<control type="button" id="816">
-						<description>Multi Image button</description>
-						<width>700</width>
-						<height>40</height>
-						<label>Chemin</label>
-						<label2>$INFO[Skin.String(Home_Custom_Back_CustomTVFolder)]</label2>
-						<focusedcolor>Accent</focusedcolor>
-						<align>center</align>
-						<onclick>Skin.SetPath(Home_Custom_Back_CustomTVFolder)</onclick>
-						<enable>Skin.HasSetting(Use_CustomTVFolder)</enable>
-					</control>
-					<!--WEATHER-->
-
-					<control type="radiobutton" id="807">
-						<width>750</width>
-						<height>40</height>
-						<align>left</align>
-						<!--<font>font13</font>-->
-						<label>$LOCALIZE[31543] $LOCALIZE[8]</label>
-						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(Use_CustomMeteoFolder)</onclick>
-						<selected>Skin.HasSetting(Use_CustomMeteoFolder)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-					<control type="button" id="817">
-						<description>Multi Image button</description>
-						<width>700</width>
-						<height>40</height>
-						<label>Chemin</label>
-						<label2>$INFO[Skin.String(Home_Custom_Back_CustomMeteoFolder)]</label2>
-						<focusedcolor>Accent</focusedcolor>
-						<align>center</align>
-						<onclick>Skin.SetPath(Home_Custom_Back_CustomMeteoFolder)</onclick>
-						<enable>Skin.HasSetting(Use_CustomMeteoFolder)</enable>
-					</control>
-					<!--FIN BACKGROUNDS ITEM MENUS -->
-
 				</control>
-				<!--BACKGROUND-->
 
 				<control type="grouplist" id="300">
 					<description>Control Area</description>
@@ -337,382 +164,20 @@
 					<orientation>vertical</orientation>
 					<visible>Container(100).Hasfocus(2)</visible>
 
-					<control type="button" id="301">
-						<description>Default Button</description>
+					<control type="radiobutton" id="301">
+						<description>Extra Menu</description>
 						<width>820</width>
 						<align>left</align>
-						<label>$LOCALIZE[31127]</label>
+						<label>Hide Extra Menu</label>
 						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.SetAddon(LyricPath,xbmc.python.lyrics)</onclick>
+						<onclick>Skin.ToggleSetting(MoreMenu)</onclick>
+						<selected>Skin.HasSetting(MoreMenu)</selected>
+						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
 					</control>
-
-					<control type="button" id="302">
-						<description>Default Button</description>
-						<width>820</width>
-						<align>left</align>
-						<label>$LOCALIZE[31130]</label>
-						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.SetAddon(SubtitlePath,xbmc.python.subtitles)</onclick>
-					</control>
-
 				</control>
-
-				<control type="grouplist" id="400">
-					<description>Control Area</description>
-					<width>820</width>
-					<height>480</height>
-					<itemgap>2</itemgap>
-					<onup>200</onup>
-					<ondown>200</ondown>
-					<onleft>100</onleft>
-					<onright>-</onright>
-					<orientation>vertical</orientation>
-					<visible>Container(100).Hasfocus(2)</visible>
-
-					<control type="label" id="401">
-						<description>Default Button</description>
-						<width>800</width>
-						<align>right</align>
-						<label>$INFO[Skin.String(LyricPath)]</label>
-						<focusedcolor>Accent</focusedcolor>
-						<visible>!IsEmpty(Skin.String(LyricPath))</visible>
-					</control>
-
-					<control type="label" id="402">
-						<description>Default Button</description>
-						<width>800</width>
-						<align>right</align>
-						<label>CU Lyrics</label>
-						<focusedcolor>Accent</focusedcolor>
-						<visible>IsEmpty(Skin.String(LyricPath))</visible>
-					</control>
-
-					<control type="label" id="403">
-						<description>Default Button</description>
-						<width>800</width>
-						<align>right</align>
-						<label>$INFO[Skin.String(SubtitlesPath)]</label>
-						<focusedcolor>Accent</focusedcolor>
-						<visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
-					</control>
-
-					<control type="label" id="404">
-						<description>Default Button</description>
-						<width>800</width>
-						<align>right</align>
-						<label>XBMC Subtitles</label>
-						<focusedcolor>Accent</focusedcolor>
-						<visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
-					</control>
-
-				</control>
-
-				<control type="grouplist" id="500">
-					<description>Control Area</description>
-					<width>820</width>
-					<height>480</height>
-					<itemgap>2</itemgap>
-					<onup>500</onup>
-					<ondown>500</ondown>
-					<onleft>100</onleft>
-					<onright>-</onright>
-					<orientation>vertical</orientation>
-					<visible>Container(100).Hasfocus(3)</visible>
-
-					<control type="radiobutton" id="501">
-						<description>Enable Debug Grid</description>
-						<width>820</width>
-						<align>left</align>
-						<label>Enable Debug Grid</label>
-						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(DebugGrid)</onclick>
-						<onclick>XBMC.ReloadSkin()</onclick>
-						<selected>Skin.HasSetting(DebugGrid)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-
-					<control type="radiobutton" id="502">
-						<description>Disable Debug Info</description>
-						<width>820</width>
-						<align>left</align>
-						<label>Disable Debug Info</label>
-						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(HideDebugInfo)</onclick>
-						<selected>Skin.HasSetting(HideDebugInfo)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-
-				</control>
-				<!-- SPECIFIQUE SKIN GENERAL -->
-				<control type="grouplist" id="600">
-					<description>Général Area</description>
-					<width>820</width>
-					<height>480</height>
-					<itemgap>2</itemgap>
-					<onup>500</onup>
-					<ondown>500</ondown>
-					<onleft>100</onleft>
-					<onright>-</onright>
-					<orientation>vertical</orientation>
-					<visible>Container(100).Hasfocus(4)</visible>
-					<!--DEFILEMENT AUTO -->
-					<control type="radiobutton" id="601">
-						<label>20189</label>
-						<width>750</width>
-						<align>left</align>
-						<focusedcolor>Accent</focusedcolor>
-						<include>Default_SettingRadioButton</include>
-						<onclick>Skin.ToggleSetting(AutoScroll)</onclick>
-						<selected>Skin.HasSetting(AutoScroll)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-
-					<!--FIN DEFILEMENT AUTO -->
-					<!--PLAYLIST DEMARRAGE-->
-					<control type="radiobutton" id="602">
-						<width>750</width>
-						<height>40</height>
-						<align>left</align>
-						<!--<font>font13</font>-->
-						<label>21398</label>
-						<focusedcolor>Accent</focusedcolor>
-						<!--<textcolor>grey2</textcolor>
-						<focusedcolor>white</focusedcolor>
-						<texturefocus>menuitemfo.png</texturefocus>
-						<texturenofocus>menuitemnf.png</texturenofocus>-->
-						<onclick>Skin.ToggleSetting(Use_Startup_Playlist)</onclick>
-						<selected>Skin.HasSetting(Use_Startup_Playlist)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-
-					<control type="button" id="206">
-						<description>Startup Playlist Path</description>
-						<width>750</width>
-						<align>left</align>
-						<height>40</height>
-						<font>font13</font>
-						<focusedcolor>Accent</focusedcolor>
-						<label>15311</label>
-						<label2>$INFO[Skin.String(Startup_Playlist_Path)]</label2>
-						<onclick>Skin.SetFile(Startup_Playlist_Path,,special://MusicPlaylists/)</onclick>
-						<enable>Skin.HasSetting(Use_Startup_Playlist)</enable>
-					</control>
-          <!--
-					<control type="label" id="109">
-						<width>750</width>
-						<height>45</height>
-						<font>font13_title</font>
-						<label>31102</label>
-						<textcolor>blue</textcolor>
-						<shadowcolor>black</shadowcolor>
-						<align>left</align>
-						<aligny>center</aligny>
-					</control>
-				-->
-				<!--FIN PLAYLIST DEMARRAGE-->
 
 			</control>
-			<!-- CUSTOM HOME PLAYLISTE -->
-			<control type="grouplist" id="700">
-				<description>Général Area</description>
-				<width>820</width>
-				<height>480</height>
-				<itemgap>2</itemgap>
-				<onup>500</onup>
-				<ondown>500</ondown>
-				<onleft>100</onleft>
-				<onright>-</onright>
-				<orientation>vertical</orientation>
-				<visible>Container(100).Hasfocus(5)</visible>
-
-				<!--CUSTOM MOVIE PLAYLIST 1-->
-				<control type="radiobutton" id="710">
-					<width>750</width>
-					<height>40</height>
-					<align>left</align>
-					<label>$LOCALIZE[31544] 1</label>
-					<focusedcolor>Accent</focusedcolor>
-					<onclick>Skin.ToggleSetting(Use_custom1_Playlist)</onclick>
-					<selected>Skin.HasSetting(Use_custom1_Playlist)</selected>
-					<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-				</control>
-				<control type="button" id="711">
-					<description>Startup custom 1 Playlist Path</description>
-					<width>750</width>
-					<align>left</align>
-					<height>40</height>
-					<font>font13</font>
-					<label>15311</label>
-					<focusedcolor>Accent</focusedcolor>
-					<label2>$INFO[Skin.String(custom1_Playlist_Path)]</label2>
-					<onclick>Skin.SetFile(custom1_Playlist_Path,,special://VideoPlaylists/)</onclick>
-					<enable>Skin.HasSetting(Use_custom1_Playlist)</enable>
-				</control>
-				<control type="button" id="712">
-					<label>Name</label>
-					<label2>$INFO[Skin.String(custom1_Playlist_Label)]</label2>
-					<focusedcolor>Accent</focusedcolor>
-					<onclick>Skin.SetString(custom1_Playlist_Label)</onclick>
-					<align>left</align>
-					<enable>Skin.HasSetting(Use_custom1_Playlist)</enable>
-				</control>
-				<control type="button" id="713">
-					<description>Single Image button</description>
-					<width>680</width>
-					<height>40</height>
-					<align>left</align>
-					<label>Icon</label>
-					<focusedcolor>Accent</focusedcolor>
-					<label2>$INFO[Skin.String(custom1_Playlist_Icon)]</label2>
-					<onclick>Skin.SetFile(custom1_Playlist_Icon,.png|.jpg|.gif,special://skin/media/icons/)</onclick>
-					<enable>Skin.HasSetting(Use_custom1_Playlist)</enable>
-				</control>
-				<!--FIN CUSTOM MOVIE PLAYLIST 1-->
-				<!--CUSTOM MOVIE PLAYLIST 2-->
-				<control type="radiobutton" id="720">
-					<width>750</width>
-					<height>40</height>
-					<align>left</align>
-					<label>$LOCALIZE[31544] 2</label>
-					<focusedcolor>Accent</focusedcolor>
-					<onclick>Skin.ToggleSetting(Use_custom2_Playlist)</onclick>
-					<selected>Skin.HasSetting(Use_custom2_Playlist)</selected>
-					<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-				</control>
-				<control type="button" id="721">
-					<description>Startup custom 2 Playlist Path</description>
-					<width>750</width>
-					<align>left</align>
-					<height>40</height>
-					<font>font13</font>
-					<label>15311</label>
-					<label2>$INFO[Skin.String(custom2_Playlist_Path)]</label2>
-					<focusedcolor>Accent</focusedcolor>
-					<onclick>Skin.SetFile(custom2_Playlist_Path,,special://VideoPlaylists/)</onclick>
-					<enable>Skin.HasSetting(Use_custom2_Playlist)</enable>
-				</control>
-				<control type="button" id="722">
-					<label>Name</label>
-					<label2>$INFO[Skin.String(custom2_Playlist_Label)]</label2>
-					<focusedcolor>Accent</focusedcolor>
-					<onclick>Skin.SetString(custom2_Playlist_Label)</onclick>
-					<align>left</align>
-					<enable>Skin.HasSetting(Use_custom2_Playlist)</enable>
-				</control>
-				<control type="button" id="723">
-					<description>Single Image button</description>
-					<width>680</width>
-					<height>40</height>
-					<align>left</align>
-					<label>Icon</label>
-					<label2>$INFO[Skin.String(custom2_Playlist_Icon)]</label2>
-					<focusedcolor>Accent</focusedcolor>
-					<onclick>Skin.SetFile(custom2_Playlist_Icon,.png|.jpg|.gif,special://skin/media/icons/)</onclick>
-					<enable>Skin.HasSetting(Use_custom2_Playlist)</enable>
-				</control>
-				<!--FIN CUSTOM MOVIE PLAYLIST 2-->
-				<!--CUSTOM MOVIE PLAYLIST 3-->
-				<control type="radiobutton" id="730">
-					<width>750</width>
-					<height>40</height>
-					<align>left</align>
-					<label>$LOCALIZE[31544] 3</label>
-					<focusedcolor>Accent</focusedcolor>
-					<onclick>Skin.ToggleSetting(Use_custom3_Playlist)</onclick>
-					<selected>Skin.HasSetting(Use_custom3_Playlist)</selected>
-					<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-				</control>
-				<control type="button" id="731">
-					<description>Startup custom 3 Playlist Path</description>
-					<width>750</width>
-					<align>left</align>
-					<height>40</height>
-					<font>font13</font>
-					<label>15311</label>
-					<label2>$INFO[Skin.String(custom3_Playlist_Path)]</label2>
-					<focusedcolor>Accent</focusedcolor>
-					<onclick>Skin.SetFile(custom3_Playlist_Path,,special://VideoPlaylists/)</onclick>
-					<enable>Skin.HasSetting(Use_custom3_Playlist)</enable>
-				</control>
-				<control type="button" id="732">
-					<label>Name</label>
-					<label2>$INFO[Skin.String(custom3_Playlist_Label)]</label2>
-					<focusedcolor>Accent</focusedcolor>
-					<onclick>Skin.SetString(custom3_Playlist_Label)</onclick>
-					<align>left</align>
-					<enable>Skin.HasSetting(Use_custom3_Playlist)</enable>
-				</control>
-				<control type="button" id="733">
-					<description>Single Image button</description>
-					<width>680</width>
-					<height>40</height>
-					<align>left</align>
-					<label>Icon</label>
-					<label2>$INFO[Skin.String(custom3_Playlist_Icon)]</label2>
-					<focusedcolor>Accent</focusedcolor>
-					<onclick>Skin.SetFile(custom3_Playlist_Icon,.png|.jpg|.gif,special://skin/media/icons/)</onclick>
-					<enable>Skin.HasSetting(Use_custom3_Playlist)</enable>
-				</control>
-				<!--FIN CUSTOM MOVIE PLAYLIST 3-->
-				<!--CUSTOM MOVIE PLAYLIST 4-->
-				<control type="radiobutton" id="740">
-					<width>750</width>
-					<height>40</height>
-					<align>left</align>
-					<label>$LOCALIZE[31544] 4</label>
-					<focusedcolor>Accent</focusedcolor>
-					<onclick>Skin.ToggleSetting(Use_custom4_Playlist)</onclick>
-					<selected>Skin.HasSetting(Use_custom4_Playlist)</selected>
-					<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-				</control>
-				<control type="button" id="741">
-					<description>Startup custom 4 Playlist Path</description>
-					<width>750</width>
-					<align>left</align>
-					<height>40</height>
-					<font>font13</font>
-					<label>15311</label>
-					<focusedcolor>Accent</focusedcolor>
-					<label2>$INFO[Skin.String(custom4_Playlist_Path)]</label2>
-					<onclick>Skin.SetFile(custom4_Playlist_Path,,special://VideoPlaylists/)</onclick>
-					<enable>Skin.HasSetting(Use_custom4_Playlist)</enable>
-				</control>
-				<control type="button" id="742">
-					<label>Name</label>
-					<focusedcolor>Accent</focusedcolor>
-					<label2>$INFO[Skin.String(custom4_Playlist_Label)]</label2>
-					<onclick>Skin.SetString(custom4_Playlist_Label)</onclick>
-					<align>left</align>
-					<enable>Skin.HasSetting(Use_custom4_Playlist)</enable>
-				</control>
-				<control type="button" id="743">
-					<description>Single Image button</description>
-					<width>680</width>
-					<height>40</height>
-					<align>left</align>
-					<label>Icon</label>
-					<focusedcolor>Accent</focusedcolor>
-					<label2>$INFO[Skin.String(custom4_Playlist_Icon)]</label2>
-					<onclick>Skin.SetFile(custom4_Playlist_Icon,.png|.jpg|.gif,special://skin/media/icons/)</onclick>
-					<enable>Skin.HasSetting(Use_custom4_Playlist)</enable>
-				</control>
-				<!--FIN CUSTOM MOVIE PLAYLIST 4-->
-
-
-			</control>
-			<!-- FIN SPECIFIQUE -->
 		</control>
-
-		
-	</control>
-</controls>
-
+	</controls>
 </window>

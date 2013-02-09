@@ -90,6 +90,7 @@
       <animation type="WindowOpen">
         <effect type="slide" start="-100,0" end="0,0" time="200" delay="100" />
       </animation>
+      <visible>!Skin.HasSetting(MoreMenu)</visible>
     </control>
 
     <control type="image">
@@ -208,6 +209,7 @@
             <property name="idnum">id503</property>
           </item>
           <item id="504">
+            <visible>System.GetBool(pvrmanager.enabled)</visible>
             <label>live tv</label>
             <onclick>ActivateWindow(MyPVR)</onclick>
             <property name="idnum">id504</property>
@@ -3749,6 +3751,7 @@
     </control>
 
     <control type="group">
+      <visible>!Skin.HasSetting(MoreMenu)</visible>
       <animation type="Conditional" condition="!ControlGroup(9000).HasFocus()" reversible="true">
         <effect type="slide" start="0,0" end="-250,0" time="200" />
       </animation>

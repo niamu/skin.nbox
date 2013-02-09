@@ -102,253 +102,256 @@
 		</control>
 
 		<control type="group">
-			<animation effect="fade" time="500">VisibleChange</animation>
-			<visible>[Container(5000).HasFocus(501) + Control.HasFocus(5000)] | [Container(5000).HasFocus(501) + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)] | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705)</visible>
-			<control type="image">
+			<visible>Skin.HasSetting(Fanart)</visible>
+			<control type="group">
 				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>!IntegerGreaterThan(System.Time(ss),6)</visible>
+				<visible>[Container(5000).HasFocus(501) + Control.HasFocus(5000)] | [Container(5000).HasFocus(501) + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)] | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705)</visible>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestMovie.1.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>!IntegerGreaterThan(System.Time(ss),6)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),6) + !IntegerGreaterThan(System.Time(ss),12)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),12) + !IntegerGreaterThan(System.Time(ss),18)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestMovie.4.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),18) + !IntegerGreaterThan(System.Time(ss),24)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestMovie.5.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),24) + !IntegerGreaterThan(System.Time(ss),30)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestMovie.6.Fanart)]</texture>
+					<visible>IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),38)</visible>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestMovie.7.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),46)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestMovie.8.Fanart)]</texture>
+					<visible>IntegerGreaterThan(System.Time(ss),46) + !IntegerGreaterThan(System.Time(ss),54)</visible>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestMovie.9.Fanart)]</texture>
+					<visible>IntegerGreaterThan(System.Time(ss),54)</visible>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+				</control>
 			</control>
-			<control type="image">
+			
+			<control type="group">
 				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestMovie.2.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),6) + !IntegerGreaterThan(System.Time(ss),12)</visible>
+				<visible>[Container(5000).HasFocus(503) + Control.HasFocus(5000)] | [Container(5000).HasFocus(503) + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)] | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805)</visible>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>!IntegerGreaterThan(System.Time(ss),6)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestEpisode.2.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),6) + !IntegerGreaterThan(System.Time(ss),12)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestEpisode.3.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),12) + !IntegerGreaterThan(System.Time(ss),18)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestEpisode.4.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),18) + !IntegerGreaterThan(System.Time(ss),24)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestEpisode.5.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),24) + !IntegerGreaterThan(System.Time(ss),30)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestEpisode.6.Fanart)]</texture>
+					<visible>IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),38)</visible>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestEpisode.7.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),46)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestEpisode.8.Fanart)]</texture>
+					<visible>IntegerGreaterThan(System.Time(ss),46) + !IntegerGreaterThan(System.Time(ss),54)</visible>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestEpisode.9.Fanart)]</texture>
+					<visible>IntegerGreaterThan(System.Time(ss),54)</visible>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+				</control>
 			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestMovie.3.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),12) + !IntegerGreaterThan(System.Time(ss),18)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestMovie.4.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),18) + !IntegerGreaterThan(System.Time(ss),24)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestMovie.5.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),24) + !IntegerGreaterThan(System.Time(ss),30)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestMovie.6.Fanart)]</texture>
-				<visible>IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),38)</visible>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestMovie.7.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),46)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestMovie.8.Fanart)]</texture>
-				<visible>IntegerGreaterThan(System.Time(ss),46) + !IntegerGreaterThan(System.Time(ss),54)</visible>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestMovie.9.Fanart)]</texture>
-				<visible>IntegerGreaterThan(System.Time(ss),54)</visible>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-			</control>
-		</control>
-		
-		<control type="group">
-			<animation effect="fade" time="500">VisibleChange</animation>
-			<visible>[Container(5000).HasFocus(503) + Control.HasFocus(5000)] | [Container(5000).HasFocus(503) + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)] | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805)</visible>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestEpisode.1.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>!IntegerGreaterThan(System.Time(ss),6)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestEpisode.2.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),6) + !IntegerGreaterThan(System.Time(ss),12)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestEpisode.3.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),12) + !IntegerGreaterThan(System.Time(ss),18)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestEpisode.4.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),18) + !IntegerGreaterThan(System.Time(ss),24)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestEpisode.5.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),24) + !IntegerGreaterThan(System.Time(ss),30)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestEpisode.6.Fanart)]</texture>
-				<visible>IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),38)</visible>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestEpisode.7.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),46)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestEpisode.8.Fanart)]</texture>
-				<visible>IntegerGreaterThan(System.Time(ss),46) + !IntegerGreaterThan(System.Time(ss),54)</visible>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestEpisode.9.Fanart)]</texture>
-				<visible>IntegerGreaterThan(System.Time(ss),54)</visible>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-			</control>
-		</control>
 
-		<control type="group">
-			<animation effect="fade" time="500">VisibleChange</animation>
-			<visible>[Container(5000).HasFocus(502) + Control.HasFocus(5000)] | [Container(5000).HasFocus(502) + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)] | Control.HasFocus(67) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)</visible>
-			<control type="image">
+			<control type="group">
 				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestAlbum.1.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>!IntegerGreaterThan(System.Time(ss),6)</visible>
+				<visible>[Container(5000).HasFocus(502) + Control.HasFocus(5000)] | [Container(5000).HasFocus(502) + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)] | Control.HasFocus(67) | Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605)</visible>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestAlbum.1.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>!IntegerGreaterThan(System.Time(ss),6)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestAlbum.2.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),6) + !IntegerGreaterThan(System.Time(ss),12)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestAlbum.3.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),12) + !IntegerGreaterThan(System.Time(ss),18)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestAlbum.4.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),18) + !IntegerGreaterThan(System.Time(ss),24)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestAlbum.5.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),24) + !IntegerGreaterThan(System.Time(ss),30)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestAlbum.6.Fanart)]</texture>
+					<visible>IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),38)</visible>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestAlbum.7.Fanart)]</texture>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+					<visible>IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),46)</visible>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestAlbum.8.Fanart)]</texture>
+					<visible>IntegerGreaterThan(System.Time(ss),46) + !IntegerGreaterThan(System.Time(ss),54)</visible>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+				</control>
+				<control type="image">
+					<animation effect="fade" time="500">VisibleChange</animation>
+					<include>Dimensions_Fullscreen</include>
+					<fadetime>800</fadetime>
+					<texture background="true">$INFO[Window.Property(LatestAlbum.9.Fanart)]</texture>
+					<visible>IntegerGreaterThan(System.Time(ss),54)</visible>
+					<colordiffuse>FanartDiffuse</colordiffuse>
+				</control>
 			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestAlbum.2.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),6) + !IntegerGreaterThan(System.Time(ss),12)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestAlbum.3.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),12) + !IntegerGreaterThan(System.Time(ss),18)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestAlbum.4.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),18) + !IntegerGreaterThan(System.Time(ss),24)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestAlbum.5.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),24) + !IntegerGreaterThan(System.Time(ss),30)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestAlbum.6.Fanart)]</texture>
-				<visible>IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),38)</visible>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestAlbum.7.Fanart)]</texture>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-				<visible>IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),46)</visible>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestAlbum.8.Fanart)]</texture>
-				<visible>IntegerGreaterThan(System.Time(ss),46) + !IntegerGreaterThan(System.Time(ss),54)</visible>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-			</control>
-			<control type="image">
-				<animation effect="fade" time="500">VisibleChange</animation>
-				<include>Dimensions_Fullscreen</include>
-				<fadetime>800</fadetime>
-				<texture background="true">$INFO[Window.Property(LatestAlbum.9.Fanart)]</texture>
-				<visible>IntegerGreaterThan(System.Time(ss),54)</visible>
-				<colordiffuse>FanartDiffuse</colordiffuse>
-			</control>
-		</control>
 
-		<control type="image">
-			<animation effect="fade" time="500">VisibleChange</animation>
-			<include>Dimensions_Fullscreen</include>
-			<fadetime>800</fadetime>
-			<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
-			<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Episodes) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Songs)</visible>
-			<colordiffuse>FanartDiffuse</colordiffuse>
-		</control>
+			<control type="image">
+				<animation effect="fade" time="500">VisibleChange</animation>
+				<include>Dimensions_Fullscreen</include>
+				<fadetime>800</fadetime>
+				<texture background="true">$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<visible>Container.Content(Movies) | Container.Content(TVShows) | Container.Content(Seasons) | Container.Content(Episodes) | Container.Content(Episodes) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Songs)</visible>
+				<colordiffuse>FanartDiffuse</colordiffuse>
+			</control>
 
-		<control type="image">
-			<animation effect="fade" time="500">VisibleChange</animation>
-			<animation effect="fade" time="500" easing="out" tween="quadratic">WindowOpen</animation>
-			<include>Dimensions_Fullscreen</include>
-			<fadetime>800</fadetime>
-			<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-			<visible>Window.IsVisible(2006)</visible>
-			<colordiffuse>FanartDiffuse</colordiffuse>
+			<control type="image">
+				<animation effect="fade" time="500">VisibleChange</animation>
+				<animation effect="fade" time="500" easing="out" tween="quadratic">WindowOpen</animation>
+				<include>Dimensions_Fullscreen</include>
+				<fadetime>800</fadetime>
+				<texture background="true">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+				<visible>Window.IsVisible(2006)</visible>
+				<colordiffuse>FanartDiffuse</colordiffuse>
+			</control>
 		</control>
 
 		<control type="image">
