@@ -96,13 +96,13 @@
 
 				<content>
 
-					<item id="2">
+					<item id="1">
 						<description>Home</description>
 						<label>Home</label>
 						<onclick>-</onclick>
 					</item>
 
-					<item id="1">
+					<item id="2">
 						<description>General</description>
 						<label>General</label>
 						<onclick>-</onclick>
@@ -115,6 +115,67 @@
 				<posx>340</posx>
 				<posy>280</posy>
 
+				<control type="grouplist" id="100">
+					<description>Control Area</description>
+					<width>820</width>
+					<height>480</height>
+					<itemgap>2</itemgap>
+					<onup>200</onup>
+					<ondown>200</ondown>
+					<onleft>100</onleft>
+					<onright>-</onright>
+					<orientation>vertical</orientation>
+					<visible>Container(100).Hasfocus(1)</visible>
+
+					<control type="radiobutton" id="101">
+						<description>Extra Menu</description>
+						<width>820</width>
+						<align>left</align>
+						<label>Hide Extra Menu</label>
+						<focusedcolor>Accent</focusedcolor>
+						<onclick>Skin.ToggleSetting(MoreMenu)</onclick>
+						<selected>Skin.HasSetting(MoreMenu)</selected>
+						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					</control>
+
+					<control type="radiobutton" id="102">
+						<description>Toggle Movies</description>
+						<width>820</width>
+						<align>left</align>
+						<label>Hide Movies</label>
+						<focusedcolor>Accent</focusedcolor>
+						<onclick>Skin.ToggleSetting(HideMovies)</onclick>
+						<selected>Skin.HasSetting(HideMovies)</selected>
+						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					</control>
+
+					<control type="radiobutton" id="103">
+						<description>Toggle Music</description>
+						<width>820</width>
+						<align>left</align>
+						<label>Hide Music</label>
+						<focusedcolor>Accent</focusedcolor>
+						<onclick>Skin.ToggleSetting(HideMusic)</onclick>
+						<selected>Skin.HasSetting(HideMusic)</selected>
+						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					</control>
+
+					<control type="radiobutton" id="104">
+						<description>Toggle TV</description>
+						<width>820</width>
+						<align>left</align>
+						<label>Hide TV</label>
+						<focusedcolor>Accent</focusedcolor>
+						<onclick>Skin.ToggleSetting(HideTV)</onclick>
+						<selected>Skin.HasSetting(HideTV)</selected>
+						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					</control>
+				</control>
+
 				<control type="grouplist" id="200">
 					<description>Control Area</description>
 					<width>820</width>
@@ -125,7 +186,7 @@
 					<onleft>100</onleft>
 					<onright>-</onright>
 					<orientation>vertical</orientation>
-					<visible>Container(100).Hasfocus(1)</visible>
+					<visible>Container(100).Hasfocus(2)</visible>
 
 					<control type="radiobutton" id="201">
 						<description>Toggle Fanart</description>
@@ -135,43 +196,6 @@
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(Fanart)</onclick>
 						<selected>Skin.HasSetting(Fanart)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-
-					<control type="radiobutton" id="202">
-						<description>Toggle Avatar</description>
-						<width>820</width>
-						<align>left</align>
-						<label>Enable Profile Avatar</label>
-						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(Avatar)</onclick>
-						<selected>Skin.HasSetting(Avatar)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
-					</control>
-				</control>
-
-				<control type="grouplist" id="300">
-					<description>Control Area</description>
-					<width>820</width>
-					<height>480</height>
-					<itemgap>2</itemgap>
-					<onup>200</onup>
-					<ondown>200</ondown>
-					<onleft>100</onleft>
-					<onright>-</onright>
-					<orientation>vertical</orientation>
-					<visible>Container(100).Hasfocus(2)</visible>
-
-					<control type="radiobutton" id="301">
-						<description>Extra Menu</description>
-						<width>820</width>
-						<align>left</align>
-						<label>Hide Extra Menu</label>
-						<focusedcolor>Accent</focusedcolor>
-						<onclick>Skin.ToggleSetting(MoreMenu)</onclick>
-						<selected>Skin.HasSetting(MoreMenu)</selected>
 						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
 						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
 					</control>

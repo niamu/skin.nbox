@@ -194,16 +194,19 @@
 
         <content>
           <item id="501">
+            <visible>!Skin.HasSetting(HideMovies)</visible>
             <label>films</label>
             <onclick>Control.SetFocus(701)</onclick>
             <property name="idnum">id501</property>
           </item>
           <item id="502">
+            <visible>!Skin.HasSetting(HideMusic)</visible>
             <label>music</label>
             <onclick>Control.SetFocus(601)</onclick>
             <property name="idnum">id502</property>
           </item>
           <item id="503">
+            <visible>!Skin.HasSetting(HideTV)</visible>
             <label>tv shows</label>
             <onclick>Control.SetFocus(801)</onclick>
             <property name="idnum">id503</property>
