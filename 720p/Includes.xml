@@ -182,7 +182,7 @@
 			
 			<control type="group">
 				<animation effect="fade" time="500">VisibleChange</animation>
-				<visible>[Container(5000).HasFocus(503) + Control.HasFocus(5000)] | [Container(5000).HasFocus(503) + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)] | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805)</visible>
+				<visible>[[Container(5000).HasFocus(503) | Container(5000).HasFocus(504)] + Control.HasFocus(5000)] | [[Container(5000).HasFocus(503) | Container(5000).HasFocus(504)] + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)] | Control.HasFocus(68) | Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(63) | Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304) | Control.HasFocus(305)</visible>
 				<control type="image">
 					<animation effect="fade" time="500">VisibleChange</animation>
 					<include>Dimensions_Fullscreen</include>
