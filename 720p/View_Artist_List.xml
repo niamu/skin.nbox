@@ -383,7 +383,7 @@
 			<description>top left bar</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>20</width>
+			<width>12</width>
 			<height>138</height>
 			<texture>bar.png</texture>
 			<animation effect="fade" time="400">WindowOpen</animation>

@@ -130,9 +130,9 @@
 			</control>
 
 			<control type="scrollbar" id="63">
-				<posx>1270</posx>
+				<posx>1274</posx>
 				<posy>288</posy>
-				<width>10</width>
+				<width>6</width>
 				<height>315</height>
 				<texturesliderbackground></texturesliderbackground>
 				<textureslidernib>bar.png</textureslidernib>

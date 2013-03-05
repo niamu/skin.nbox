@@ -26,7 +26,7 @@
 			<description>top left bar</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>20</width>
+			<width>12</width>
 			<height>138</height>
 			<visible>true</visible>
 			<texture>bar.png</texture>
@@ -36,8 +36,8 @@
 
 		<control type="label">
 			<label>[LOWERCASE]$INFO[System.Time(hh:mm)][COLOR Accent]$INFO[System.Time(xx)][/COLOR][/LOWERCASE]</label>
-			<posx>1284</posx>
-			<posy>-5</posy>
+			<posx>1280</posx>
+			<posy>-20</posy>
 			<height>100</height>
 			<width>550</width>
 			<font>Home_time</font>
@@ -46,8 +46,8 @@
 
 		<control type="label">
 			<label>[LOWERCASE][COLOR Accent]$INFO[System.Date(DDD)][/COLOR] $INFO[System.Date(dd)] $INFO[System.Date(MMM)] [/LOWERCASE]</label>
-			<posx>1280</posx>
-			<posy>60</posy>
+			<posx>1284</posx>
+			<posy>30</posy>
 			<height>100</height>
 			<width>750</width>
 			<font>Home_date</font>
@@ -102,7 +102,7 @@
 		</control>
 
 		<control type="group">
-			<visible>Skin.HasSetting(Fanart)</visible>
+			<visible>!Skin.HasSetting(Fanart)</visible>
 			<control type="group">
 				<animation effect="fade" time="500">VisibleChange</animation>
 				<visible>[Container(5000).HasFocus(501) + Control.HasFocus(5000)] | [Container(5000).HasFocus(501) + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)] | Control.HasFocus(66) | Control.HasFocus(701) | Control.HasFocus(702) | Control.HasFocus(703) | Control.HasFocus(704) | Control.HasFocus(705)</visible>

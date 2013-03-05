@@ -2,7 +2,6 @@
   <defaultcontrol always="false">5000</defaultcontrol>
   <allowoverlay>yes</allowoverlay>
   <onload>SetProperty(menu,main)</onload>
-  <onload condition="System.HasAddon(script.tv.show.next.aired)">XBMC.RunScript(script.tv.show.next.aired,backend=True)</onload>
 
   <controls>
 
@@ -3629,7 +3628,7 @@
               <ondown>302</ondown>
               <onleft>5000</onleft>
               <onright>63</onright>
-              <onclick>RunScript(script.tv.show.next.aired)</onclick>
+              <onclick>ActivateWindow(PVR)</onclick>
             </control>
 
             <control type="image">

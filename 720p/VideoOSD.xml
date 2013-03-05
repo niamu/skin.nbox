@@ -169,7 +169,7 @@
 
 						<control type="label">
 							<description>Now Playing</description>
-							<posx>4</posx>
+							<posx>0</posx>
 							<posy>32</posy>
 							<width>830</width>
 							<label>[LOWERCASE]$INFO[VideoPlayer.Tagline][/LOWERCASE]</label>
@@ -181,7 +181,7 @@
 
 						<control type="label">
 							<description>Now Playing</description>
-							<posx>4</posx>
+							<posx>0</posx>
 							<posy>32</posy>
 							<width>830</width>
 							<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]director: [/COLOR]][/COLOR]</label>
@@ -194,7 +194,7 @@
 						<control type="label">
 							<description>Now Playing</description>
 							<visible>IsEmpty(VideoPlayer.Tagline)</visible>
-							<posx>4</posx>
+							<posx>0</posx>
 							<posy>32</posy>
 							<width>830</width>
 							<label>$INFO[VideoPlayer.TVShowTitle][COLOR Accent] $INFO[VideoPlayer.Season,Season ]$INFO[VideoPlayer.Episode, Episode ][/COLOR]</label>
@@ -219,7 +219,7 @@
 
 						<control type="image">
 							<description>Rating image</description>
-							<posx>4</posx>
+							<posx>0</posx>
 							<posy>70</posy>
 							<width>130</width>
 							<height>25</height>

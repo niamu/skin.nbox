@@ -31,7 +31,7 @@
 		<font>
 			<name>Home_time</name>
 			<filename>GeosansLight.ttf</filename>
-			<size>110</size>
+			<size>64</size>
 		</font>
 		
 		<font>
@@ -45,7 +45,7 @@
 		<font>
 			<name>Home_date</name>
 			<filename>GeosansLight.ttf</filename>
-			<size>45</size>
+			<size>28</size>
 		</font>
 		
 		

@@ -71,7 +71,7 @@
 						<onclick>dialog.close(all,true)</onclick>
 						<onclick>System.LogOff</onclick>
 						<visible>System.HasLoginScreen</visible>
-						<visible>System.Loggedon</visible>						
+						<visible>System.Loggedon</visible>
 						<align>right</align>
 						<textcolor>black</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -105,6 +105,17 @@
 						<align>right</align>
 						<textcolor>black</textcolor>
 						<focusedcolor>white</focusedcolor>
+					</control>
+
+					<control type="button" id="31151">
+						<description>Exit</description>
+						<width>340</width>
+						<label>Exit</label>
+						<onclick>Quit()</onclick>						
+						<align>right</align>
+						<textcolor>black</textcolor>
+						<focusedcolor>white</focusedcolor>
+						<visible>Skin.HasSetting(Exit)</visible>
 					</control>
 
 					<control type="button" id="3113">

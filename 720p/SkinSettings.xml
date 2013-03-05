@@ -195,7 +195,31 @@
 						<label>Enable Fanart</label>
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(Fanart)</onclick>
-						<selected>Skin.HasSetting(Fanart)</selected>
+						<selected>!Skin.HasSetting(Fanart)</selected>
+						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					</control>
+
+					<control type="radiobutton" id="202">
+						<description>Toggle Exit Button</description>
+						<width>820</width>
+						<align>left</align>
+						<label>Enable Exit XBMC Button</label>
+						<focusedcolor>Accent</focusedcolor>
+						<onclick>Skin.ToggleSetting(Exit)</onclick>
+						<selected>Skin.HasSetting(Exit)</selected>
+						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					</control>
+
+					<control type="radiobutton" id="203">
+						<description>Toggle Visualization</description>
+						<width>820</width>
+						<align>left</align>
+						<label>Enable Visualization</label>
+						<focusedcolor>Accent</focusedcolor>
+						<onclick>Skin.ToggleSetting(Visualization)</onclick>
+						<selected>Skin.HasSetting(Visualization)</selected>
 						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
 						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
 					</control>
