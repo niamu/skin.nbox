@@ -6,6 +6,13 @@
 		<include>BarClock</include>
 
 		<control type="group">
+			<animation type="TYPE" condition="Window.IsVisible(DialogPVRGuideInfo.xml) | Window.IsVisible(DialogPVRRecordingInfo.xml) | Window.IsVisible(DialogPVRGuideSearch.xml)" reversible="false">
+				<effect type="slide" end="-1500,0" time="200"/>
+			</animation>
+			<animation type="TYPE" condition="!Window.IsVisible(DialogPVRGuideInfo.xml) + !Window.IsVisible(DialogPVRRecordingInfo.xml) + !Window.IsVisible(DialogPVRGuideSearch.xml)" reversible="false">
+				<effect type="slide" start="-1500,0" time="200"/>
+			</animation>
+
 			<animation type="WindowClose">
 				<effect type="fade" time="300"/>
 				<effect type="slide" end="+1500,0" time="300"/>
@@ -24,6 +31,15 @@
 				<font>Home_header</font>
 				<textcolor>White</textcolor>
 				<align>left</align>
+			</control>
+
+			<control type="label" id="29">
+				<description>Empty so we can pass the values up one level</description>
+				<visible>False</visible>
+			</control>
+			<control type="label" id="30">
+				<description>Empty so we can pass the values up one level</description>
+				<visible>False</visible>
 			</control>
 
 			<control type="group">
@@ -98,8 +114,8 @@
 			<height>72</height>
 			<texture background="true">other_textures/osd/playlistnf.png</texture>
 			<aspectratio scalediffuse="false">stretch</aspectratio>
-			<animation effect="slide" start="0,0" end="-100,0" time="300" condition="ControlGroup(9000).HasFocus()" reversible="false">Conditional</animation>
-			<animation effect="slide" start="-100,0" end="0,0" time="300" delay="100" condition="!ControlGroup(9000).HasFocus()" reversible="false">Conditional</animation>
+			<animation effect="slide" start="0,0" end="-100,0" time="200" condition="ControlGroup(9000).HasFocus() | [Window.IsVisible(DialogPVRGuideInfo.xml) | Window.IsVisible(DialogPVRRecordingInfo.xml) | Window.IsVisible(DialogPVRGuideSearch.xml)]" reversible="false">Conditional</animation>
+			<animation effect="slide" start="-100,0" end="0,0" time="200" delay="100" condition="!ControlGroup(9000).HasFocus() + [!Window.IsVisible(DialogPVRGuideInfo.xml) + !Window.IsVisible(DialogPVRRecordingInfo.xml) + !Window.IsVisible(DialogPVRGuideSearch.xml)]" reversible="false">Conditional</animation>
 			<animation type="WindowClose">
 				<effect type="slide" start="0,0" end="-100,0" time="200" />
 			</animation>
