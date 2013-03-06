@@ -473,7 +473,7 @@
 			<control type="image">
 				<posx>296</posx>
 				<posy>288</posy>
-				<width>560</width>
+				<width>590</width>
 				<height>315</height>
 				<texture>music_fanart_diffuse.png</texture>
 				<fadetime>200</fadetime>
@@ -506,7 +506,7 @@
 			<control type="list" id="13">
 				<posx>296</posx>
 				<posy>288</posy>
-				<width>560</width>
+				<width>590</width>
 				<height>315</height>
 				<onleft>34</onleft>
 				<onright>72</onright>
@@ -523,7 +523,7 @@
 						<label>$INFO[ListItem.Label]</label>
 					</control>
 					<control type="label">
-						<posx>550</posx>
+						<posx>580</posx>
 						<posy>0</posy>
 						<width>500</width>
 						<align>right</align>
@@ -550,7 +550,7 @@
 					<control type="image">
 						<posx>0</posx>
 						<posy>0</posy>
-						<width>560</width>
+						<width>590</width>
 						<height>41</height>
 						<texture border="2">other_textures/buttonfo.png</texture>
 						<visible>Control.HasFocus(13)</visible>
@@ -563,7 +563,7 @@
 						<label>[COLOR Accent]$INFO[ListItem.Label][/COLOR]</label>
 					</control>
 					<control type="label">
-						<posx>550</posx>
+						<posx>580</posx>
 						<posy>0</posy>
 						<width>500</width>
 						<align>right</align>
@@ -587,50 +587,51 @@
 					</control>
 				</focusedlayout>
 			</control>
-			<control type="scrollbar" id="72">
-				<posx>850</posx>
-				<posy>78</posy>
-				<width>25</width>
-				<height>560</height>
-				<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-				<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-				<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-				<textureslidernib>ScrollBarNib.png</textureslidernib>
-				<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-				<onleft>13</onleft>
-				<onright>34</onright>
-				<showonepage>false</showonepage>
-				<orientation>vertical</orientation>
-			</control>
 			<control type="group">
-				<posx>910</posx>
-				<posy>80</posy>
+				<posx>891</posx>
+				<posy>288</posy>
+				<control type="image">
+					<posx>0</posx>
+					<posy>0</posy>
+					<width>560</width>
+					<height>315</height>
+					<texture>music_fanart_diffuse.png</texture>
+					<fadetime>200</fadetime>
+					<aspectratio scalediffuse="false">stretch</aspectratio>
+				</control>
 				<control type="fadelabel">
-					<posx>10</posx>
-					<posy>230</posy>
-					<width>290</width>
-					<height>25</height>
+					<posx>20</posx>
+					<posy>12</posy>
+					<width>349</width>
+					<height>50</height>
+					<aligny>Left</aligny>
+					<font>Artist_Font</font>
 					<label>$INFO[Container(13).ListItem.Title]</label>
-					<align>center</align>
-					<aligny>center</aligny>
-					<font>font13</font>
-					<textcolor>blue</textcolor>
-					<shadowcolor>black</shadowcolor>
-					<scrollout>false</scrollout>
-					<pauseatend>1000</pauseatend>
 				</control>
 				<control type="textbox">
-					<description>Description Value for TV Show</description>
-					<posx>10</posx>
-					<posy>270</posy>
-					<width>290</width>
-					<height>280</height>
-					<font>font12</font>
+					<posx>20</posx>
+					<posy>72</posy>
+					<width>349</width>
+					<height>215</height>
 					<align>justify</align>
-					<textcolor>white</textcolor>
+					<autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
+					<font>Plot_Font</font>
+					<textcolor>White</textcolor>
 					<label>$INFO[Container(13).ListItem.Plot]</label>
-					<autoscroll time="2000" delay="3000" repeat="5000">Skin.HasSetting(AutoScroll)</autoscroll>
 				</control>
+			</control>
+			<control type="scrollbar" id="72">
+				<posx>892</posx>
+				<posy>288</posy>
+				<width>6</width>
+				<height>315</height>
+				<texturesliderbackground></texturesliderbackground>
+				<textureslidernib>bar.png</textureslidernib>
+				<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+				<texturesliderbar></texturesliderbar>
+				<texturesliderbarfocus></texturesliderbarfocus>
+				<showonepage>true</showonepage>
+				<orientation>vertical</orientation>
 			</control>
 		</control>
 	</include>
@@ -824,9 +825,44 @@
 				<textcolor>White</textcolor>
 			</control>
 
+			<control type="fadelabel">
+				<label>[COLOR Accent]$INFO[ListItem.ChannelName][/COLOR] $INFO[ListItem.Title]</label>
+				<posx>395</posx>
+				<posy>171</posy>
+				<height>30</height>
+				<width>885</width>
+				<font>Home_menu</font>
+				<scroll>true</scroll>
+				<scrollout>false</scrollout>
+				<pauseatend>600</pauseatend>
+				<scrollspeed>50</scrollspeed>
+				<aligny>top</aligny>
+			</control>
+
+			<control type="label">
+				<posx>395</posx>
+				<posy>210</posy>
+				<width>600</width>
+				<height>50</height>
+				<aligny>center</aligny>
+				<font>Sort_Font_Small</font>
+				<textcolor>White</textcolor>
+				<label>$INFO[PVR.NextTimer]</label>
+			</control>
+
+			<control type="image">
+				<posx>76</posx>
+				<posy>288</posy>
+				<width>1204</width>
+				<height>315</height>
+				<texture>music_fanart_diffuse.png</texture>
+				<fadetime>200</fadetime>
+				<aspectratio scalediffuse="false">stretch</aspectratio>
+			</control>
+
 			<control type="group">
-				<posx>80</posx>
-				<posy>60</posy>
+				<posx>0</posx>
+				<posy>0</posy>
 				<control type="label">
 					<description>Channel header label</description>
 					<posx>0</posx>
@@ -879,254 +915,90 @@
 					<aligny>center</aligny>
 					<label>126</label>
 				</control>
-				<control type="image">
-					<description>separator image</description>
-					<posx>0</posx>
-					<posy>50</posy>
-					<width>1100</width>
-					<height>1</height>
-					<colordiffuse>88FFFFFF</colordiffuse>
-					<texture>separator2.png</texture>
-				</control>
 				<control type="list" id="14">
-					<posx>0</posx>
-					<posy>55</posy>
-					<width>1100</width>
-					<height>480</height>
+					<posx>76</posx>
+					<posy>288</posy>
+					<width>1204</width>
+					<height>315</height>
 					<onup>14</onup>
 					<ondown>14</ondown>
 					<onleft>35</onleft>
 					<onright>73</onright>
 					<pagecontrol>73</pagecontrol>
 					<scrolltime>200</scrolltime>
-					<itemlayout height="40">
-						<control type="image">
-							<posx>0</posx>
-							<posy>0</posy>
-							<width>1100</width>
-							<height>41</height>
-							<texture border="5">tile.png</texture>
-						</control>
-						<control type="image">
-							<posx>220</posx>
-							<posy>0</posy>
-							<width>300</width>
-							<height>40</height>
-							<colordiffuse>33FFFFFF</colordiffuse>
-							<texture border="5">StackFO.png</texture>
-						</control>
-						<control type="image">
-							<posx>940</posx>
-							<posy>0</posy>
-							<width>155</width>
-							<height>40</height>
-							<colordiffuse>33FFFFFF</colordiffuse>
-							<texture border="5">StackFO.png</texture>
-						</control>
-						<control type="image">
-							<posx>0</posx>
-							<posy>8</posy>
-							<width>50</width>
-							<height>26</height>
-							<visible>!IsEmpty(ListItem.Date)</visible>
-							<texture border="1">$INFO[ListItem.Icon]</texture>
-						</control>
+					<itemlayout height="45">
 						<control type="label">
-							<posx>50</posx>
+							<posx>10</posx>
 							<posy>0</posy>
 							<width>150</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
 							<info>ListItem.ChannelName</info>
 						</control>
 						<control type="label">
-							<posx>370</posx>
+							<posx>350</posx>
 							<posy>0</posy>
-							<width>290</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>center</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
+							<width>310</width>
 							<info>ListItem.Label</info>
 						</control>
 						<control type="label">
 							<posx>730</posx>
 							<posy>0</posy>
 							<width>400</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>center</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
 							<info>ListItem.Date</info>
 						</control>
 						<control type="label">
-							<posx>1018</posx>
+							<posx>1120</posx>
 							<posy>0</posy>
-							<width>170</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>center</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
+							<width>150</width>
 							<info>ListItem.Comment</info>
 						</control>
 					</itemlayout>
-					<focusedlayout height="40">
+					<focusedlayout height="45">
 						<control type="image">
 							<posx>0</posx>
 							<posy>0</posy>
 							<width>1100</width>
-							<height>41</height>
-							<texture border="5">tile.png</texture>
-						</control>
-						<control type="image">
-							<posx>220</posx>
-							<posy>0</posy>
-							<width>300</width>
-							<height>40</height>
-							<colordiffuse>33FFFFFF</colordiffuse>
-							<texture border="5">StackFO.png</texture>
-							<visible>!Control.HasFocus(14)</visible>
-						</control>
-						<control type="image">
-							<posx>940</posx>
-							<posy>0</posy>
-							<width>155</width>
-							<height>40</height>
-							<colordiffuse>33FFFFFF</colordiffuse>
-							<texture border="5">StackFO.png</texture>
-							<visible>!Control.HasFocus(14)</visible>
-						</control>
-						<control type="image">
-							<posx>220</posx>
-							<posy>0</posy>
-							<width>300</width>
-							<height>40</height>
-							<colordiffuse>88FFFFFF</colordiffuse>
-							<texture border="5">StackFO.png</texture>
-							<visible>Control.HasFocus(14)</visible>
-						</control>
-						<control type="image">
-							<posx>940</posx>
-							<posy>0</posy>
-							<width>155</width>
-							<height>40</height>
-							<colordiffuse>88FFFFFF</colordiffuse>
-							<texture border="5">StackFO.png</texture>
-							<visible>Control.HasFocus(14)</visible>
-						</control>
-						<control type="image">
-							<posx>0</posx>
-							<posy>8</posy>
-							<width>50</width>
-							<height>26</height>
-							<visible>!IsEmpty(ListItem.Date)</visible>
-							<texture border="1">$INFO[ListItem.Icon]</texture>
+							<height>45</height>
+							<texture border="5">other_textures/buttonfo.png</texture>
 						</control>
 						<control type="label">
-							<posx>50</posx>
+							<posx>10</posx>
 							<posy>0</posy>
 							<width>150</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>left</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
-							<info>ListItem.ChannelName</info>
+							<label>[COLOR Accent]$INFO[ListItem.ChannelName][/COLOR]</label>
 						</control>
 						<control type="label">
-							<posx>370</posx>
+							<posx>350</posx>
 							<posy>0</posy>
-							<width>290</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>center</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
-							<info>ListItem.Label</info>
+							<width>310</width>
+							<label>[COLOR Accent]$INFO[ListItem.Label][/COLOR]</label>
 						</control>
 						<control type="label">
 							<posx>730</posx>
 							<posy>0</posy>
 							<width>400</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>center</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
-							<info>ListItem.Date</info>
+							<label>[COLOR Accent]$INFO[ListItem.Date][/COLOR]</label>
 						</control>
 						<control type="label">
-							<posx>1018</posx>
+							<posx>1120</posx>
 							<posy>0</posy>
 							<width>150</width>
-							<height>40</height>
-							<font>font12</font>
-							<align>center</align>
-							<aligny>center</aligny>
-							<selectedcolor>selected</selectedcolor>
-							<info>ListItem.Comment</info>
+							<label>[COLOR Accent]$INFO[ListItem.Comment][/COLOR]</label>
 						</control>
 					</focusedlayout>
 				</control>
 				<control type="scrollbar" id="73">
-					<posx>1105</posx>
-					<posy>50</posy>
-					<width>25</width>
-					<height>480</height>
-					<texturesliderbackground border="0,14,0,14">ScrollBarV.png</texturesliderbackground>
-					<texturesliderbar border="0,14,0,14">ScrollBarV_bar.png</texturesliderbar>
-					<texturesliderbarfocus border="0,14,0,14">ScrollBarV_bar_focus.png</texturesliderbarfocus>
-					<textureslidernib>ScrollBarNib.png</textureslidernib>
-					<textureslidernibfocus>ScrollBarNib.png</textureslidernibfocus>
-					<onleft>11</onleft>
-					<onright>35</onright>
-					<showonepage>false</showonepage>
+					<posx>1274</posx>
+					<posy>288</posy>
+					<width>6</width>
+					<height>315</height>
+					<texturesliderbackground></texturesliderbackground>
+					<textureslidernib>bar.png</textureslidernib>
+					<textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+					<texturesliderbar></texturesliderbar>
+					<texturesliderbarfocus></texturesliderbarfocus>
+					<showonepage>true</showonepage>
 					<orientation>vertical</orientation>
 				</control>
-				<control type="image">
-					<description>separator image</description>
-					<posx>55</posx>
-					<posy>540</posy>
-					<width>1010</width>
-					<height>1</height>
-					<colordiffuse>88FFFFFF</colordiffuse>
-					<texture>separator2.png</texture>
-				</control>
-				<control type="label">
-					<description>Next timer date</description>
-					<posx>55</posx>
-					<posy>545</posy>
-					<width>1010</width>
-					<height>30</height>
-					<font>font13</font>
-					<align>center</align>
-					<aligny>center</aligny>
-					<scroll>true</scroll>
-					<textcolor>white</textcolor>
-					<label>$INFO[PVR.NextTimer]</label>
-					<visible>PVR.HasTimer</visible>
-				</control>
-			</control>
-			<control type="label">
-				<animation effect="slide" start="0,0" end="-90,0" time="0" condition="system.getbool(input.enablemouse)">Conditional</animation>
-				<description>Page Count Label</description>
-				<posx>40r</posx>
-				<posy>53r</posy>
-				<width>500</width>
-				<height>20</height>
-				<font>font12</font>
-				<textcolor>grey</textcolor>
-				<scroll>false</scroll>
-				<align>right</align>
-				<aligny>center</aligny>
-				<label>([COLOR=blue]$INFO[Container(14).NumItems][/COLOR]) $LOCALIZE[19040] - $LOCALIZE[31024] ([COLOR=blue]$INFO[Container(14).CurrentPage]/$INFO[Container(14).NumPages][/COLOR])</label>
-				<include>Window_OpenClose_Animation</include>		
 			</control>
 		</control>
 	</include>
