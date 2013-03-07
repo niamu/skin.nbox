@@ -8,6 +8,7 @@
       <posx>20</posx>
       <posy>32</posy>
       <label>-</label>
+      <shadowcolor>black</shadowcolor>
     </control>
 
     <control type="label" id="11">
@@ -15,6 +16,7 @@
       <posx>20</posx>
       <posy>64</posy>
       <label>-</label>
+      <shadowcolor>black</shadowcolor>
     </control>
 
     <control type="label" id="12">
@@ -22,11 +24,14 @@
       <posx>20</posx>
       <posy>96</posy>
       <label>-</label>
+      <shadowcolor>black</shadowcolor>
     </control>
 
     <control type="group">
       <posx>515</posx>
       <posy>324</posy>
+
+      <visible>IsEmpty(Player.CacheLevel)</visible>
 
       <control type="image">
         <description>background image</description>

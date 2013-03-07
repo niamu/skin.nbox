@@ -649,7 +649,7 @@
 						<label>[B]$INFO[ListItem.Label][/B]</label>
 					</control>
 				</rulerlayout>
-				<channellayout height="45" width="280">
+				<channellayout height="45" width="240">
 					<animation effect="fade" start="110" time="200">UnFocus</animation>
 					<control type="image">
 						<posx>0</posx>
@@ -723,13 +723,6 @@
 					</control>
 				</itemlayout>
 				<focusedlayout height="45" width="140">
-					<control type="image" id="14">
-						<width>40</width>
-						<height>45</height>
-						<posx>0</posx>
-						<posy>0</posy>
-						<texture border="5">tile.png</texture>
-					</control>
 					<control type="fadelabel" id="1">
 						<posx>10</posx>
 						<width>120</width>
