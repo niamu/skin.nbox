@@ -10,6 +10,14 @@
 				<effect type="fade" time="300"/>
 				<effect type="slide" start="+1500,0" time="300"/>
 			</animation>
+			<animation type="Hidden">
+				<effect type="fade" time="300"/>
+				<effect type="slide" end="+1500,0" time="300"/>
+			</animation>
+			<animation type="Visible">
+				<effect type="fade" time="300"/>
+				<effect type="slide" start="+1500,0" time="300"/>
+			</animation>
 
 			<control type="image">
 				<posx>230</posx>

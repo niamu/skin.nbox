@@ -1,59 +1,23 @@
 <window>
 	<defaultcontrol always="true">11</defaultcontrol>
-	<coordinates>
-		<system>1</system>
-		<posx>780</posx>
-		<posy>30</posy>
-	</coordinates>
-	<include>dialogeffect</include>
 	<controls>
 		<control type="group">
-			<control type="image">
-				<description>background image</description>
-				<posx>0</posx>
-				<posy>0</posy>
-				<width>480</width>
-				<height>660</height>
-				<texture border="40">DialogBack2.png</texture>
-			</control>
-			<control type="button">
-				<description>Close Window button</description>
-				<posx>390</posx>
-				<posy>15</posy>
-				<width>64</width>
-				<height>32</height>
-				<label>-</label>
-				<font>-</font>
-				<onclick>PreviousMenu</onclick>
-				<texturefocus>DialogCloseButton-focus.png</texturefocus>
-				<texturenofocus>DialogCloseButton.png</texturenofocus>
-				<onleft>2</onleft>
-				<onright>2</onright>
-				<onup>2</onup>
-				<ondown>2</ondown>
-				<visible>system.getbool(input.enablemouse)</visible>
-			</control>
-			<control type="image">
-				<description>Dialog Header image</description>
-				<posx>40</posx>
-				<posy>16</posy>
-				<width>400</width>
-				<height>40</height>
-				<texture>dialogheader.png</texture>
-			</control>
-			<control type="label">
-				<description>header label</description>
-				<posx>40</posx>
-				<posy>16</posy>
-				<width>430</width>
-				<height>40</height>
-				<font>font12_title</font>
-				<label>$LOCALIZE[19222] - $INFO[VideoPlayer.ChannelName]</label>
-				<align>center</align>
-				<aligny>center</aligny>
-				<textcolor>blue</textcolor>
-				<shadowcolor>black</shadowcolor>
-			</control>
+			<posx>880</posx>
+			<posy>0</posy>
+
+			<animation type="WindowOpen">
+				<effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+			</animation>
+			<animation type="Hidden">
+				<effect type="slide" time="300" start="0,0" end="+400,0" easing="in" tween="cubic" />
+			</animation>
+			<animation type="Visible">
+				<effect type="slide" time="300" start="+400, 0" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			
 			<control type="label">
 				<description>Selected item's date</description>
 				<posx>40</posx>

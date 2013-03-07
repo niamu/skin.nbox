@@ -3,11 +3,18 @@
   <controls>
 
     <control type="group">
+      <visible>!Window.IsVisible(DialogPVRChannelsOSD.xml)</visible>
 
       <animation type="WindowOpen">
         <effect type="fade" start="0" end="100" time="400" />
       </animation>
       <animation type="WindowClose">
+        <effect type="fade" start="100" end="0" time="400" />
+      </animation>
+      <animation type="Visible">
+        <effect type="fade" start="0" end="100" time="400" />
+      </animation>
+      <animation type="Hidden">
         <effect type="fade" start="100" end="0" time="400" />
       </animation>
 
@@ -73,7 +80,7 @@
           <posx>4</posx>
           <posy>32</posy>
           <width>830</width>
-          <label>[LOWERCASE]$INFO[VideoPlayer.Tagline][/LOWERCASE]</label>
+          <label>[LOWERCASE]$INFO[VideoPlayer.Tagline][/LOWERCASE]$INFO[VideoPlayer.ChannelName]</label>
           <scroll>true</scroll>
           <font>Medium</font>
           <align>left</align>
