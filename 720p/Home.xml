@@ -73,6 +73,20 @@
         <animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="[Container(5000).Position(3) + Control.HasFocus(5000)] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),504) + [Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(63)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),502) + [Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(67)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),503) + [Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(68)]]" >Conditional</animation>
         <animation effect="fade" time="200" delay="200">Hidden</animation>
       </control>
+
+      <control id="5115">
+        <type>image</type>
+        <posx>15</posx>
+        <posy>444</posy>
+        <height>50</height>
+        <width>50</width>
+        <align>left</align>
+        <texture>marker.png</texture>
+        <visible>[Container(5000).Position(4) + Control.HasFocus(5000)] | [Container(5000).Position(4) + SubString(Container(5000).ListItem.Property(idnum),505)] + [Control.HasFocus(49)]</visible>
+        <animation effect="fade" start="20" time="1200" condition="[Container(5000).Position(4) + Control.HasFocus(5000)] | [Container(5000).Position(4) + SubString(Container(5000).ListItem.Property(idnum),505)] | [Control.HasFocus(49)]" pulse="true">Conditional</animation>
+        <animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="[Container(5000).Position(4) + Control.HasFocus(5000)] | [Container(5000).Position(4) + SubString(Container(5000).ListItem.Property(idnum),505)] + [Control.HasFocus(49)]]" >Conditional</animation>
+        <animation effect="fade" time="200" delay="200">Hidden</animation>
+      </control>
     </control>
 
     <control type="image">
@@ -152,6 +166,7 @@
         <onright condition="Container(5000).HasFocus(502)">601</onright>
         <onright condition="Container(5000).HasFocus(503)">801</onright>
         <onright condition="Container(5000).HasFocus(504)">301</onright>
+        <onright condition="Container(5000).HasFocus(505)">49</onright>
         <orientation>vertical</orientation>
         <focusposition>0</focusposition>
         <scrolltime tween="cubic" easing="out">400</scrolltime>
@@ -217,6 +232,12 @@
             <label>live tv</label>
             <onclick>Control.SetFocus(301)</onclick>
             <property name="idnum">id504</property>
+          </item>
+          <item id="505">
+            <visible>!System.HasMediaDVD</visible>
+            <label>disc</label>
+            <onclick>Control.SetFocus(49)</onclick>
+            <property name="idnum">id505</property>
           </item>
         </content>
       </control>
@@ -289,7 +310,7 @@
           <font>Home_menu</font>
           <align>left</align>
           <onup>5000</onup>
-          <onup>Control.SetFocus(5000,3)</onup>
+          <onup>Control.SetFocus(5000,4)</onup>
           <ondown>506</ondown>
           <onleft>9000</onleft>
           <onright>69</onright>
@@ -3870,7 +3891,127 @@
           </control>
         </control>
 
-      </control> 
+      </control>
+
+      <!-- Disc -->
+
+      <control type="group">
+
+        <visible>[[Container(5000).HasFocus(505) + Control.HasFocus(5000)] | [Container(5000).HasFocus(505) + ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),main)]] | Control.HasFocus(49)</visible>
+        <animation effect="fade" time="400">VisibleChange</animation>
+        <animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="[Container(5000).HasFocus(505) + Control.HasFocus(5000)] | [Container(5000).HasFocus(505) + ControlGroup(9000).HasFocus()]] | Control.HasFocus(49)">Conditional</animation>
+        <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="[Container(5000).HasFocus(505) + Control.HasFocus(5000)] | ControlGroup(9000).HasFocus() | Control.HasFocus(49)" reversible="false">Conditional</animation> 
+        <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="[[!Container(5000).HasFocus(505) | !Control.HasFocus(5000)] + ![Container(5000).HasFocus(505) + ControlGroup(9000).HasFocus()]] + !Control.HasFocus(49)]" reversible="false">Conditional</animation>
+
+        <control type="label">
+          <label>disc</label>
+          <posx>360</posx>
+          <posy>200</posy>
+          <height>30</height>
+          <width>250</width>
+          <font>Home_sub_header</font>
+          <align>left</align>
+        </control>  
+
+        <control type="panel" id="49">
+          <posx>350</posx>
+          <posy>290</posy>
+          <width>800</width>
+          <height>318</height>
+          <preloaditems>2</preloaditems>
+          <visible>true</visible>
+          <onup>49</onup>
+          <ondown>49</ondown>
+          <onleft>5000</onleft>
+          <onright>49</onright>
+          <orientation>vertical</orientation>
+          <focusposition>0</focusposition>
+          <scrolltime tween="cubic" easing="out">400</scrolltime>
+
+          <itemlayout width="159" height="159">
+            <control type="image">
+              <posx>9</posx>
+              <posy>0</posy>
+              <width>155</width>
+              <height>155</height>
+              <texture blend="false">tile.png</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+
+            <control type="label">
+              <label>  $INFO[ListItem.Label]</label>
+              <posx>10</posx>
+              <posy>121</posy>
+              <height>30</height>
+              <width>153</width>
+              <font>button_bold</font>
+              <align>left</align>
+              <animation effect="fade" delay="200" start="0" time="300" easing="out" tween="square">Focus</animation>
+            </control>
+
+            <control type="image">
+              <posx>39</posx>
+              <posy>20</posy>
+              <width>100</width>
+              <height>100</height>
+              <texture>$INFO[ListItem.Thumb]</texture>
+              <aspectratio>scale</aspectratio>
+            </control>
+          </itemlayout>
+
+          <focusedlayout width="215" height="348">
+            <control type="group">
+              <posx>0</posx>
+              <posy>0</posy>
+
+              <control type="image">
+                <posx>9</posx>
+                <posy>0</posy>
+                <width>155</width>
+                <height>155</height>
+                <texture>button.png</texture>
+                <animation effect="fade" start="0" time="400" easing="out" tween="square">Focus</animation>
+              </control>
+
+              <control type="image">
+                <posx>39</posx>
+                <posy>20</posy>
+                <width>100</width>
+                <height>100</height>
+                <texture>$INFO[ListItem.Thumb]</texture>
+                <aspectratio>scale</aspectratio>
+              </control>
+
+            </control>
+
+            <control type="label">
+              <label>  $INFO[ListItem.Label]</label>
+              <posx>10</posx>
+              <posy>121</posy>
+              <height>30</height>
+              <width>153</width>
+              <font>button_bold</font>
+              <align>left</align>
+            </control>
+          </focusedlayout>
+
+          <content>
+            <item id="1">
+              <description>Play Disc</description>
+              <label>Play Disc</label>
+              <thumb>icons/videos.png</thumb>
+              <onclick>XBMC.PlayDVD()</onclick>
+            </item>
+            <item id="2">
+              <description>Eject Disc</description>
+              <label>Eject Disc</label>
+              <thumb>icons/music.png</thumb>
+              <onclick>XBMC.EjectTray()</onclick>
+            </item>
+          </content>
+        </control>
+
+      </control>
 
       <!-- Settings -->
 
