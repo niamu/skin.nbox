@@ -234,7 +234,7 @@
             <property name="idnum">id504</property>
           </item>
           <item id="505">
-            <visible>!System.HasMediaDVD</visible>
+            <visible>System.HasMediaDVD</visible>
             <label>disc</label>
             <onclick>Control.SetFocus(49)</onclick>
             <property name="idnum">id505</property>
