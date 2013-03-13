@@ -176,6 +176,15 @@
         <posx>325</posx>
         <posy>570</posy>
 
+        <control type="fadelabel">
+          <posx>-175</posx>
+          <posy>102</posy>
+          <width>980</width>
+          <align>left</align>
+          <shadowcolor>black</shadowcolor>
+          <label>$INFO[VideoPlayer.Plot]</label>
+        </control>
+
         <control type="label">
           <posx>0</posx>
           <posy>40</posy>
