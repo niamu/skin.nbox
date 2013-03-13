@@ -4407,8 +4407,8 @@
         <visible>Control.HasFocus(6000) | [ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),nowplaying)]</visible>
         <animation effect="fade" time="400">VisibleChange</animation>
         <animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="[ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),nowplaying)] | Control.HasFocus(6000)">Conditional</animation>
-        <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="[ControlGroup(9000).HasFocus() | SubString(Window(Home).Property(menu),nowplaying)] + Control.HasFocus(506) | Control.HasFocus(6000)" reversible="false">Conditional</animation>  
-        <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="![ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),nowplaying)] + Control.HasFocus(506) | Control.HasFocus(5000)" reversible="false">Conditional</animation>
+        <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="[ControlGroup(9000).HasFocus() | SubString(Window(Home).Property(menu),nowplaying) + Control.HasFocus(6000)] | Control.HasFocus(6000)" reversible="false">Conditional</animation>  
+        <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="![ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),nowplaying)] + !Control.HasFocus(6000)" reversible="false">Conditional</animation>
 
         <control type="label">
           <label>now playing</label>
@@ -4423,7 +4423,7 @@
         <control type="button" id="6002">
           <description>Ugly hack to show the videowindow on a delay after the animation</description>
           <animation effect="fade" start="0" end="100" time="300" delay="600">Visible</animation>
-          <visible>Control.HasFocus(6000)</visible>
+          <visible>Control.HasFocus(6000) | ControlGroup(9000).HasFocus()</visible>
         </control>
 
         <control type="image">

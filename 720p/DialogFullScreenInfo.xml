@@ -77,7 +77,7 @@
 
         <control type="label">
           <description>Now Playing</description>
-          <posx>4</posx>
+          <posx>0</posx>
           <posy>32</posy>
           <width>830</width>
           <label>[LOWERCASE]$INFO[VideoPlayer.Tagline][/LOWERCASE][COLOR Accent]$INFO[VideoPlayer.EndTime,[COLOR white]End Time: [/COLOR]][/COLOR] [COLOR Accent]$INFO[VideoPlayer.NextTitle,[COLOR white]On Next: [/COLOR]][/COLOR]</label>
@@ -88,7 +88,7 @@
 
         <control type="label">
           <description>Now Playing</description>
-          <posx>4</posx>
+          <posx>0</posx>
           <posy>32</posy>
           <width>830</width>
           <label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]director: [/COLOR]][/COLOR]</label>
@@ -101,7 +101,7 @@
         <control type="label">
           <description>Now Playing</description>
           <visible>IsEmpty(VideoPlayer.Tagline)</visible>
-          <posx>4</posx>
+          <posx>0</posx>
           <posy>32</posy>
           <width>830</width>
           <label>$INFO[VideoPlayer.TVShowTitle][COLOR Accent] $INFO[VideoPlayer.Season,Season ]$INFO[VideoPlayer.Episode, Episode ][/COLOR]</label>
@@ -126,7 +126,7 @@
 
         <control type="image">
           <description>Rating image</description>
-          <posx>4</posx>
+          <posx>0</posx>
           <posy>70</posy>
           <width>130</width>
           <height>25</height>
@@ -141,9 +141,9 @@
         <control type="progress">
           <description>Progressbar</description>
           <posx>0</posx>
-					<posy>715</posy>
-					<width>1280</width>
-					<height>5</height>
+          <posy>715</posy>
+          <width>1280</width>
+          <height>5</height>
           <info>Player.Progress</info>
           <texturebg>progressmidgreen.png</texturebg>
           <midtexture>progresslime.png</midtexture>
@@ -172,105 +172,106 @@
       </control>
 
       <control type="group">
-        <posx>140</posx>
+        <visible>Player.HasVideo</visible>
+        <posx>325</posx>
         <posy>570</posy>
 
         <control type="label">
           <posx>0</posx>
-          <posy>100</posy>
+          <posy>40</posy>
           <width>1000</width>
-          <align>center</align>
-          <label>[B]paused[/B]</label>
+          <align>left</align>
+          <label>[UPPERCASE][B]paused[/B][/UPPERCASE]</label>
           <visible>player.paused</visible>
         </control>
 
         <control type="label">
           <posx>0</posx>
-          <posy>100</posy>
+          <posy>40</posy>
           <width>1000</width>
-          <align>center</align>
-          <label>[B]FFx2[/B]</label>
+          <align>left</align>
+          <label>[UPPERCASE][B]FFx2[/B][/UPPERCASE]</label>
           <visible>player.forwarding2x</visible>
         </control>
 
         <control type="label">
           <posx>0</posx>
-          <posy>100</posy>
+          <posy>40</posy>
           <width>1000</width>
-          <align>center</align>
-          <label>[B]FFx4[/B]</label>
+          <align>left</align>
+          <label>[UPPERCASE][B]FFx4[/B][/UPPERCASE]</label>
           <visible>player.forwarding4x</visible>
         </control>
 
         <control type="label">
           <posx>0</posx>
-          <posy>100</posy>
+          <posy>40</posy>
           <width>1000</width>
-          <align>center</align>
-          <label>[B]FFx8[/B]</label>
+          <align>left</align>
+          <label>[UPPERCASE][B]FFx8[/B][/UPPERCASE]</label>
           <visible>player.forwarding8x</visible>
         </control>
 
         <control type="label">
           <posx>0</posx>
-          <posy>100</posy>
+          <posy>40</posy>
           <width>1000</width>
-          <align>center</align>
-          <label>[B]FFx16[/B]</label>
+          <align>left</align>
+          <label>[UPPERCASE][B]FFx16[/B][/UPPERCASE]</label>
           <visible>player.forwarding16x</visible>
         </control>
 
         <control type="label">
           <posx>0</posx>
-          <posy>100</posy>
+          <posy>40</posy>
           <width>1000</width>
-          <align>center</align>
+          <align>left</align>
           <label>FFx32</label>
           <visible>player.forwarding32x</visible>
         </control>
 
         <control type="label">
           <posx>0</posx>
-          <posy>100</posy>
+          <posy>40</posy>
           <width>1000</width>
-          <align>center</align>
-          <label>[B]RWx2[/B]</label>
+          <align>left</align>
+          <label>[UPPERCASE][B]RWx2[/B][/UPPERCASE]</label>
           <visible>player.rewinding2x</visible>
         </control>
 
         <control type="label">
           <posx>0</posx>
-          <posy>100</posy>
+          <posy>40</posy>
           <width>1000</width>
-          <align>center</align>
-          <label>[B]RWx4[/B]</label>
+          <align>left</align>
+          <label>[UPPERCASE][B]RWx4[/B][/UPPERCASE]</label>
           <visible>player.rewinding4x</visible>
         </control>
 
         <control type="label">
           <posx>0</posx>
-          <posy>100</posy>
+          <posy>40</posy>
           <width>1000</width>
-          <align>center</align>
-          <label>[B]RWx8[/B]</label>
+          <align>left</align>
+          <label>[UPPERCASE][B]RWx8[/B][/UPPERCASE]</label>
           <visible>player.rewinding8x</visible>
         </control>
 
         <control type="label">
           <posx>0</posx>
-          <posy>100</posy>
+          <posy>40</posy>
           <width>1000</width>
-          <align>center</align>
-          <label>[B]RWx16[/B]</label>
+          <align>left</align>
+          <label>[UPPERCASE][B]RWx16[/B][/UPPERCASE]</label>
           <visible>player.rewinding16x</visible>
         </control>
 
         <control type="label">
           <posx>0</posx>
-          <posy>100</posy>
+          <posy>40</posy>
           <width>1000</width>
-          <align>center</align>
-          <label>[B]RWx32[/B]</label>
+          <align>left</align>
+          <label>[UPPERCASE][B]RWx32[/B][/UPPERCASE]</label>
           <visible>player.rewinding32x</visible>
         </control>
 

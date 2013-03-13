@@ -29,7 +29,7 @@
 				<visible>!Window.IsVisible(sliderdialog)</visible>
 
 				<control type="grouplist" id="100">
-					<posx>1010</posx>
+					<posx>1040</posx>
 					<posy>2</posy>
 					<width>500</width>
 					<height>60</height>
