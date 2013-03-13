@@ -25,6 +25,66 @@
       </animation>
 
       <control type="group">
+        <visible>Player.HasAudio</visible>
+
+        <animation type="WindowOpen">
+          <effect type="slide" time="300" start="+1165, 0" end="0,0" easing="out" tween="cubic" />
+        </animation>
+        <animation type="WindowClose">
+          <effect type="slide" time="300" start="0,0" end="+1165,0" easing="in" tween="cubic" />
+        </animation>
+
+        <control type="image">
+          <posx>-765</posx>
+          <posy>172</posy>
+          <width>660</width>
+          <height>376</height>
+          <texture>white_box.png</texture>
+          <bordertexture border="5">white_box.png</bordertexture>
+          <bordersize>5</bordersize>
+        </control>
+        
+        <control type="image">
+          <posx>-760</posx>
+          <posy>177</posy>
+          <width>650</width>
+          <height>366</height>
+          <texture>black.png</texture>
+        </control>
+
+        <control type="image">
+          <posx>-760</posx>
+          <posy>177</posy>
+          <width>650</width>
+          <height>366</height>
+          <texture>$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+        </control>
+
+        <control type="button" id="2">
+          <posx>-760</posx>
+          <posy>177</posy>
+          <width>650</width>
+          <height>366</height>
+          <onleft>-</onleft>
+          <onright>1</onright>
+          <onup>-</onup>
+          <ondown>-</ondown>
+          <onclick>fullscreen</onclick>
+          <visible allowhiddenfocus="true">Control.HasFocus(2)</visible>
+        </control>
+
+        <control type="image">
+          <posx>-485</posx>
+          <posy>310</posy>
+          <width>100</width>
+          <height>100</height>
+          <texture>fullscreen.png</texture>
+          <animation effect="fade" start="0" end="100" time="300">VisibleChange</animation>
+          <visible>Control.HasFocus(2)</visible>
+        </control>
+      </control>
+
+      <control type="group">
         <visible>Player.HasVideo</visible>
         
         <animation type="WindowOpen">
@@ -114,114 +174,142 @@
         <align>left</align>
         <font>Home_sub_header</font>
         <textcolor>black</textcolor>
-        <label>$INFO[MusicPlayer.Title]$INFO[MusicPlayer.Artist, - ,]</label>
+        <label>$INFO[MusicPlayer.Title]</label>
         <scroll>true</scroll>
         <visible>Player.HasAudio</visible>
       </control>
       
       <control type="label">
-				<posx>30</posx>
-				<posy>100</posy>
-				<width>400</width>
-				<textcolor>black</textcolor>
-				<label>$INFO[VideoPlayer.Tagline]</label>
-				<visible>!IsEmpty(VideoPlayer.Tagline)</visible>
-			</control>
-			
-			<control type="label">
-				<posx>30</posx>
-				<posy>100</posy>
-				<width>400</width>
-				<textcolor>black</textcolor>
-				<label>$INFO[VideoPlayer.TVShowTitle]</label>
-				<visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
-			</control>
+        <posx>30</posx>
+        <posy>100</posy>
+        <width>400</width>
+        <textcolor>black</textcolor>
+        <label>$INFO[VideoPlayer.Tagline]</label>
+        <visible>!IsEmpty(VideoPlayer.Tagline)</visible>
+      </control>
+
+      <control type="label">
+        <posx>30</posx>
+        <posy>100</posy>
+        <width>400</width>
+        <textcolor>black</textcolor>
+        <label>$INFO[VideoPlayer.TVShowTitle]</label>
+        <visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
+      </control>
+
+      <control type="label">
+        <posx>30</posx>
+        <posy>100</posy>
+        <width>400</width>
+        <textcolor>black</textcolor>
+        <label>$INFO[MusicPlayer.Artist]</label>
+        <visible>!IsEmpty(MusicPlayer.Artist)</visible>
+      </control>
       
       <control type="group">
         <visible>!IntegerGreaterThan(System.Time(ss),30)</visible>
         <animation type="Hidden">
-  				<effect type="fade" time="300" />
-  			</animation>
-  			<animation type="Visible">
-  				<effect type="fade" time="300" />
-  			</animation>
-      
-      <control type="textbox">
-				<posx>30</posx>
-				<posy>180</posy>
-				<width>340</width>
-				<height>280</height>
-				<info>VideoPlayer.Plot</info>
-				<align>justify</align>
-				<autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
-				<font>Plot_Font</font>
-				<textcolor>Black</textcolor>
-				<visible>IsEmpty(VideoPlayer.TVShowTitle)</visible>
-			</control>
-			
-			<control type="label">
-				<posx>30</posx>
-				<posy>180</posy>
-				<width>340</width>
-				<textcolor>black</textcolor>
-				<label>$INFO[VideoPlayer.Season,Season ], $INFO[VideoPlayer.Episode,Episode ]</label>
-				<visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
-			</control>
-			
-			<control type="label">
-				<posx>30</posx>
-				<posy>490</posy>
-				<width>340</width>
-				<textcolor>black</textcolor>
-				<label>$INFO[VideoPlayer.Director,[B]director[/B]: ]</label>
-				<visible>!IsEmpty(VideoPlayer.Director)</visible>
-			</control>
-			
-			<control type="label">
-				<posx>30</posx>
-				<posy>520</posy>
-				<width>340</width>
-				<textcolor>black</textcolor>
-				<label>$INFO[VideoPlayer.Writer,[B]writer[/B]: ]</label>
-				<visible>!IsEmpty(VideoPlayer.Writer)</visible>
-			</control>
-			
-		</control>
-		
-		<control type="group">
-      <visible>IntegerGreaterThan(System.Time(ss),30)</visible>
-      <animation type="Hidden">
-				<effect type="fade" time="300" />
-			</animation>
-			<animation type="Visible">
-				<effect type="fade" time="300" />
-			</animation>
-			
-			<control type="image">
-        <posx>72</posx>
-				<posy>172</posy>
-				<width>255</width>
-				<height>375</height>
-        <texture border="2">$INFO[Player.Art(tvshow.poster)]</texture>
-        <bordertexture border="5">other_textures/buttonfo.png</bordertexture>
-				<bordersize>5</bordersize>
-				<aspectratio align="right" aligny="top">stretch</aspectratio>
-				<visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
+          <effect type="fade" time="300" />
+        </animation>
+        <animation type="Visible">
+          <effect type="fade" time="300" />
+        </animation>
+
+        <control type="textbox">
+          <posx>30</posx>
+          <posy>180</posy>
+          <width>340</width>
+          <height>280</height>
+          <info>VideoPlayer.Plot</info>
+          <align>justify</align>
+          <autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
+          <font>Plot_Font</font>
+          <textcolor>Black</textcolor>
+          <visible>IsEmpty(VideoPlayer.TVShowTitle)</visible>
+        </control>
+
+        <control type="label">
+          <posx>30</posx>
+          <posy>180</posy>
+          <width>340</width>
+          <textcolor>black</textcolor>
+          <label>$INFO[VideoPlayer.Season,Season ], $INFO[VideoPlayer.Episode,Episode ]</label>
+          <visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
+        </control>
+
+        <control type="label">
+          <posx>30</posx>
+          <posy>490</posy>
+          <width>340</width>
+          <textcolor>black</textcolor>
+          <label>$INFO[VideoPlayer.Director,[B]director[/B]: ]</label>
+          <visible>!IsEmpty(VideoPlayer.Director)</visible>
+        </control>
+
+        <control type="label">
+          <posx>30</posx>
+          <posy>520</posy>
+          <width>340</width>
+          <textcolor>black</textcolor>
+          <label>$INFO[VideoPlayer.Writer,[B]writer[/B]: ]</label>
+          <visible>!IsEmpty(VideoPlayer.Writer)</visible>
+        </control>
       </control>
-      
+
+      <control type="group">
+        <visible>IntegerGreaterThan(System.Time(ss),30)</visible>
+        <animation type="Hidden">
+          <effect type="fade" time="300" />
+        </animation>
+        <animation type="Visible">
+          <effect type="fade" time="300" />
+        </animation>
+
+        <control type="image">
+          <posx>72</posx>
+          <posy>172</posy>
+          <width>255</width>
+          <height>375</height>
+          <texture border="2">$INFO[Player.Art(tvshow.poster)]</texture>
+          <bordertexture border="5">other_textures/buttonfo.png</bordertexture>
+          <bordersize>5</bordersize>
+          <aspectratio align="right" aligny="top">stretch</aspectratio>
+          <visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
+        </control>
+
+        <control type="image">
+          <posx>72</posx>
+          <posy>172</posy>
+          <width>255</width>
+          <height>375</height>
+          <texture border="2">$INFO[Player.Art(poster)]</texture>
+          <bordertexture border="5">other_textures/buttonfo.png</bordertexture>
+          <bordersize>5</bordersize>
+          <aspectratio align="right" aligny="top">stretch</aspectratio>
+          <visible>IsEmpty(VideoPlayer.TVShowTitle)</visible>
+        </control>
+      </control>
+
       <control type="image">
-        <posx>72</posx>
-				<posy>172</posy>
-				<width>255</width>
-				<height>375</height>
-        <texture border="2">$INFO[Player.Art(poster)]</texture>
+        <posx>30</posx>
+        <posy>172</posy>
+        <width>340</width>
+        <height>340</height>
+        <texture border="2">$INFO[MusicPlayer.Cover]</texture>
         <bordertexture border="5">other_textures/buttonfo.png</bordertexture>
-				<bordersize>5</bordersize>
-				<aspectratio align="right" aligny="top">stretch</aspectratio>
-				<visible>IsEmpty(VideoPlayer.TVShowTitle)</visible>
+        <bordersize>5</bordersize>
+        <aspectratio align="right" aligny="top">stretch</aspectratio>
+        <visible>Player.HasAudio</visible>
       </control>
-      
-    </control>
+
+      <control type="label">
+          <posx>30</posx>
+          <posy>520</posy>
+          <width>340</width>
+          <textcolor>black</textcolor>
+          <label>$INFO[MusicPlayer.Album,[B]album[/B]: ]</label>
+          <visible>!IsEmpty(MusicPlayer.Album)</visible>
+        </control>
 
       <control type="grouplist" id="1">
         <posx>8</posx>
@@ -305,40 +393,6 @@
           <texturefocus>other_textures/osd/nexttrackfo.png</texturefocus>
           <texturenofocus>other_textures/osd/nexttracknf.png</texturenofocus>
           <onclick>playercontrol(next)</onclick>
-        </control>
-
-      </control>
-
-      <control type="group">
-        <posx>10</posx>
-        <posy>110</posy>
-
-        <control type="group">
-          <visible>Player.HasAudio</visible>
-
-          <control type="image">
-            <posx>-5</posx>
-            <posy>-5</posy>
-            <width>424</width>
-            <height>242</height>
-            <texture border="2">$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
-          </control>
-
-          <control type="button" id="2">
-            <posx>54</posx>
-            <width>305</width>
-            <height>231</height>
-            <texture border="2">other_textures/black-back.png</texture>
-            <bordertexture border="5">other_textures/buttonfo.png</bordertexture>
-            <bordersize>6</bordersize>
-            <onleft>-</onleft>
-            <onright>-</onright>
-            <onup>1</onup>
-            <ondown>-</ondown>
-            <onclick>fullscreen</onclick>
-            <visible allowhiddenfocus="true">Control.HasFocus(2)</visible>
-          </control>
-
         </control>
       </control>
     </control>

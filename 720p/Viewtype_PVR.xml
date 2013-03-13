@@ -902,13 +902,13 @@
 						<label>[COLOR Accent]$INFO[ListItem.Label][/COLOR]</label>
 					</control>
 					<control type="label">
-						<posx>730</posx>
+						<posx>580</posx>
 						<posy>0</posy>
 						<width>400</width>
 						<label>[COLOR Accent]$INFO[ListItem.Date][/COLOR]</label>
 					</control>
 					<control type="label">
-						<posx>1120</posx>
+						<posx>940</posx>
 						<posy>0</posy>
 						<width>150</width>
 						<label>[COLOR Accent]$INFO[ListItem.Comment][/COLOR]</label>
@@ -1074,7 +1074,7 @@
 						<visible>ListItem.IsRecording</visible>
 					</control>
 					<control type="image">
-						<posx>970</posx>
+						<posx>580</posx>
 						<posy>10</posy>
 						<width>20</width>
 						<height>20</height>
@@ -1082,7 +1082,7 @@
 						<visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
 					</control>
 					<control type="label">
-						<posx>1000</posx>
+						<posx>940</posx>
 						<posy>0</posy>
 						<width>80</width>
 						<height>40</height>

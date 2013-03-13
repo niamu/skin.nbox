@@ -159,7 +159,8 @@
         <height>200</height>
         <preloaditems>2</preloaditems>
         <visible>true</visible>
-        <onup>506</onup>
+        <onup condition="Window.IsVisible(2904) | Window.IsVisible(2903)">6000</onup>
+        <onup condition="!Window.IsVisible(2904) + !Window.IsVisible(2903)">506</onup>
         <ondown>505</ondown>
         <onleft>9000</onleft>
         <onright condition="Container(5000).HasFocus(501)">701</onright>
@@ -344,11 +345,13 @@
           <font>Home_menu</font>
           <align>left</align>
           <onup>505</onup>
-          <ondown>5000</ondown>
-          <ondown>Control.SetFocus(5000,0)</ondown>
+          <ondown condition="Window.IsVisible(2904) | Window.IsVisible(2903)">6000</ondown>
+          <ondown condition="!Window.IsVisible(2904) + !Window.IsVisible(2903)">5000</ondown>
+          <ondown condition="!Window.IsVisible(2904) + !Window.IsVisible(2903)">Control.SetFocus(5000,0)</ondown>
           <onleft>9000</onleft>
           <onclick>ActivateWindow(shutdownmenu)</onclick>
           <onfocus>SetProperty(menu,shutdown)</onfocus>
+          <onfocus>SetProperty(nowplaying,hide)</onfocus>
           <ondown>SetProperty(menu,main)</ondown>
         </control>
 
@@ -364,6 +367,35 @@
           <visible>Control.HasFocus(506)</visible>
           <animation effect="fade" start="20" time="1200" condition="Control.HasFocus(506)" pulse="true">Conditional</animation>
           <animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(506)" >Conditional</animation>
+          <animation effect="fade" time="200" delay="200">Hidden</animation>
+        </control>
+
+        <control type="button" id="6000">
+          <posx>-760</posx>
+          <posy>177</posy>
+          <width>650</width>
+          <height>366</height>
+          <onup>506</onup>
+          <onleft>9000</onleft>
+          <ondown>5000</ondown>
+          <ondown>Control.SetFocus(5000,0)</ondown>
+          <onclick>fullscreen</onclick>
+          <onfocus>SetProperty(menu,nowplaying)</onfocus>
+          <visible>Window.IsVisible(2904) | Window.IsVisible(2903)</visible>
+        </control>
+
+        <control id="6001">
+          <type>image</type>
+          <label></label>
+          <posx>15</posx>
+          <posy>640</posy>
+          <height>50</height>
+          <width>50</width>
+          <align>left</align>
+          <texture>marker.png</texture>
+          <visible>Control.HasFocus(6000)</visible>
+          <animation effect="fade" start="20" time="1200" condition="Control.HasFocus(6000)" pulse="true">Conditional</animation>
+          <animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="Control.HasFocus(6000)" >Conditional</animation>
           <animation effect="fade" time="200" delay="200">Hidden</animation>
         </control>
 
@@ -3585,7 +3617,7 @@
 
 
         <control type="label">
-          <label>pvr</label>
+          <label>library</label>
           <posx>360</posx>
           <posy>200</posy>
           <height>30</height>
@@ -3602,6 +3634,7 @@
           <width>400</width>
           <font>Home_sub_header</font>
           <align>left</align>
+          <visible>PVR.HasNonRecordingTimer | PVR.IsRecording</visible>
         </control>
 
         <control type="grouplist" id="3000">
@@ -4065,7 +4098,7 @@
           <width>250</width>
           <font>Home_sub_header</font>
           <align>left</align>
-        </control>  
+        </control>
 
         <control type="panel" id="49">
           <posx>350</posx>
@@ -4366,6 +4399,107 @@
         </control>
 
       </control>
+
+      <!-- Now Playing -->
+
+      <control type="group">
+
+        <visible>Control.HasFocus(6000) | [ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),nowplaying)]</visible>
+        <animation effect="fade" time="400">VisibleChange</animation>
+        <animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="[ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),nowplaying)] | Control.HasFocus(6000)">Conditional</animation>
+        <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="[ControlGroup(9000).HasFocus() | SubString(Window(Home).Property(menu),nowplaying)] + Control.HasFocus(506) | Control.HasFocus(6000)" reversible="false">Conditional</animation>  
+        <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="![ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),nowplaying)] + Control.HasFocus(506) | Control.HasFocus(5000)" reversible="false">Conditional</animation>
+
+        <control type="label">
+          <label>now playing</label>
+          <posx>360</posx>
+          <posy>200</posy>
+          <height>30</height>
+          <width>250</width>
+          <font>Home_sub_header</font>
+          <align>left</align>
+        </control>
+
+        <control type="button" id="6002">
+          <description>Ugly hack to show the videowindow on a delay after the animation</description>
+          <animation effect="fade" start="0" end="100" time="300" delay="600">Visible</animation>
+          <visible>Control.HasFocus(6000)</visible>
+        </control>
+
+        <control type="image">
+          <posx>360</posx>
+          <posy>290</posy>
+          <width>560</width>
+          <height>315</height>
+          <texture>tile.png</texture>
+          <bordertexture border="5">tile.png</bordertexture>
+          <bordersize>5</bordersize>
+        </control>
+
+        <control type="image">
+          <posx>365</posx>
+          <posy>295</posy>
+          <width>550</width>
+          <height>305</height>
+          <texture>black.png</texture>
+          <visible>Control.IsVisible(6002)</visible>
+        </control>
+
+        <control type="image">
+          <posx>365</posx>
+          <posy>295</posy>
+          <width>550</width>
+          <height>305</height>
+          <texture>$INFO[MusicPlayer.Property(Fanart_Image)]</texture>
+          <visible>Player.HasAudio</visible>
+        </control>
+
+        <control type="videowindow">
+          <description>video</description>
+          <posx>365</posx>
+          <posy>295</posy>
+          <width>550</width>
+          <height>305</height>
+          <visible>Control.IsVisible(6002)</visible>
+        </control>
+
+        <control type="image">
+          <posx>925</posx>
+          <posy>290</posy>
+          <width>214</width>
+          <height>315</height>
+          <texture border="2">$INFO[Player.Art(tvshow.poster)]</texture>
+          <bordertexture border="5">tile.png</bordertexture>
+          <bordersize>5</bordersize>
+          <aspectratio align="right" aligny="top">stretch</aspectratio>
+          <visible>!IsEmpty(VideoPlayer.TVShowTitle)</visible>
+        </control>
+
+        <control type="image">
+          <posx>925</posx>
+          <posy>290</posy>
+          <width>214</width>
+          <height>315</height>
+          <texture border="2">$INFO[Player.Art(poster)]</texture>
+          <bordertexture border="5">tile.png</bordertexture>
+          <bordersize>5</bordersize>
+          <aspectratio align="right" aligny="top">stretch</aspectratio>
+          <visible>IsEmpty(VideoPlayer.TVShowTitle)</visible>
+        </control>
+
+        <control type="image">
+          <posx>925</posx>
+          <posy>290</posy>
+          <width>315</width>
+          <height>315</height>
+          <texture border="2">$INFO[MusicPlayer.Cover]</texture>
+          <bordertexture border="5">tile.png</bordertexture>
+          <bordersize>5</bordersize>
+          <aspectratio align="right" aligny="top">stretch</aspectratio>
+          <visible>Player.HasAudio</visible>
+        </control>
+
+      </control>
     </control>
 
     <control type="group">
@@ -4441,6 +4575,7 @@
             <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
             <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
             <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
+            <onright condition="SubString(Window(Home).Property(menu),nowplaying)">6000</onright>
             <onclick>ActivateWindow(Weather,return)</onclick>
           </control>
 
@@ -4515,6 +4650,7 @@
             <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
             <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
             <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
+            <onright condition="SubString(Window(Home).Property(menu),nowplaying)">6000</onright>
             <onclick>ActivateWindow(Favourites,return)</onclick>
           </control>
 
@@ -4574,6 +4710,7 @@
             <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
             <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
             <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
+            <onright condition="SubString(Window(Home).Property(menu),nowplaying)">6000</onright>
             <onclick>ActivateWindow(Pictures)</onclick>
           </control>
 
@@ -4634,6 +4771,7 @@
             <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
             <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
             <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
+            <onright condition="SubString(Window(Home).Property(menu),nowplaying)">6000</onright>
             <onclick>ActivateWindow(Programs)</onclick>
           </control>
 

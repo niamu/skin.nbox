@@ -74,8 +74,8 @@
 				<posy>180</posy>
 				<width>340</width>
 				<height>450</height>
-				<onleft>60</onleft>
-				<onright>60</onright>
+				<onleft>PreviousChannelGroup</onleft>
+				<onright>NextChannelGroup</onright>
 				<onup>11</onup>
 				<ondown>11</ondown>
 				<viewtype label="535">list</viewtype>
