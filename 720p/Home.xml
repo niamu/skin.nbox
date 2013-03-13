@@ -68,9 +68,9 @@
         <width>50</width>
         <align>left</align>
         <texture>marker.png</texture>
-        <visible>[Container(5000).Position(3) + Control.HasFocus(5000)] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),504) + [Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(63)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),502) + [Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(67)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),503) + [Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(68)]]</visible>
-        <animation effect="fade" start="20" time="1200" condition="[Container(5000).Position(3) + Control.HasFocus(5000)] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),504) + [Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(63)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),502) + [Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(67)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),503) + [Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(68)]]" pulse="true">Conditional</animation>
-        <animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="[Container(5000).Position(3) + Control.HasFocus(5000)] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),504) + [Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(63)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),502) + [Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(67)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),503) + [Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(68)]]" >Conditional</animation>
+        <visible>[Container(5000).Position(3) + Control.HasFocus(5000)] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),504) + [Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304) | Control.HasFocus(305) | Control.HasFocus(63)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),502) + [Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(67)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),503) + [Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(68)]]</visible>
+        <animation effect="fade" start="20" time="1200" condition="[Container(5000).Position(3) + Control.HasFocus(5000)] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),504) + [Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304) | Control.HasFocus(305) | Control.HasFocus(63)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),502) + [Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(67)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),503) + [Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(68)]]" pulse="true">Conditional</animation>
+        <animation effect="slide" start="-70,0" time="180" tween="cubic" easing="out" condition="[Container(5000).Position(3) + Control.HasFocus(5000)] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),504) + [Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304) | Control.HasFocus(305) | Control.HasFocus(63)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),502) + [Control.HasFocus(601) | Control.HasFocus(602) | Control.HasFocus(603) | Control.HasFocus(604) | Control.HasFocus(605) | Control.HasFocus(67)]] | [Container(5000).Position(3) + SubString(Container(5000).ListItem.Property(idnum),503) + [Control.HasFocus(801) | Control.HasFocus(802) | Control.HasFocus(803) | Control.HasFocus(804) | Control.HasFocus(805) | Control.HasFocus(68)]]" >Conditional</animation>
         <animation effect="fade" time="200" delay="200">Hidden</animation>
       </control>
 
@@ -3650,6 +3650,8 @@
               <onleft>5000</onleft>
               <onright>63</onright>
               <onclick>ActivateWindow(PVR)</onclick>
+              <onclick>Setfocus(32)</onclick>
+              <onclick>Setfocus(11)</onclick>
             </control>
 
             <control type="image">
@@ -3689,7 +3691,7 @@
             <control type="image">
               <posx></posx>
               <posy>0</posy>
-              <width>315</width>
+              <width>155</width>
               <height>155</height>
               <texture>tile.png</texture>
             </control>
@@ -3697,35 +3699,37 @@
             <control type="image">
               <posx></posx>
               <posy>0</posy>
-              <width>315</width>
+              <width>155</width>
               <height>155</height>
               <texture>button.png</texture>
               <visible>[Control.HasFocus(302)]</visible>
               <animation effect="fade" time="200" tween="square">VisibleChange</animation>
               <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(302)">Conditional</animation>
-            </control>  
+            </control>
 
             <control id="302">
               <type>button</type>
               <label></label>
               <posx></posx>
               <posy>0</posy>
-              <width>315</width>
+              <width>155</width>
               <height>155</height>
               <align>left</align>
               <onup>301</onup>
-              <ondown>301</ondown>
+              <ondown>304</ondown>
               <onleft>5000</onleft>
-              <onright>63</onright>
-              <onclick>ActivateWindow(PVRSettings,return)</onclick>
+              <onright>303</onright>
+              <onclick>ActivateWindow(PVR)</onclick>
+              <onclick>Setfocus(31)</onclick>
+              <onclick>Setfocus(10)</onclick>
             </control>
 
             <control type="label">
-              <label>Edit PVR Settings</label>
+              <label>Guide</label>
               <posx>10</posx>
               <posy>119</posy>
               <height>30</height>
-              <width>295</width>
+              <width>250</width>
               <font>button_title</font>
               <align>left</align>
             </control>
@@ -3735,43 +3739,221 @@
               <posy>26</posy>
               <width>90</width>
               <height>90</height>
-              <texture>icons/appearance.png</texture>
+              <texture>icons/videos.png</texture>
+            </control>
+
+            <control type="image">
+              <posx>160</posx>
+              <posy></posy>
+              <width>155</width>
+              <height>155</height>
+              <texture>tile.png</texture>
+            </control>
+
+            <control type="image">
+              <posx>160</posx>
+              <posy></posy>
+              <width>155</width>
+              <height>155</height>
+              <texture>button.png</texture>
+              <visible>[Control.HasFocus(303)]</visible>
+              <animation effect="fade" time="200" tween="square">VisibleChange</animation>
+              <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(303)">Conditional</animation>
+            </control>
+
+            <control id="303">
+              <type>button</type>
+              <label></label>
+              <posx>1</posx>
+              <posy></posy>
+              <width>155</width>
+              <height>155</height>
+              <align>left</align>
+              <onup>301</onup>
+              <ondown>305</ondown>
+              <onleft>302</onleft>
+              <onright>66</onright>
+              <onclick>ActivateWindow(PVR)</onclick>
+              <onclick>Setfocus(33)</onclick>
+              <onclick>Setfocus(12)</onclick>
             </control>
 
             <control type="label">
-              <label>$INFO[PVR.BackendNumber]</label>
-              <posx>120</posx>
-              <posy>60</posy>
+              <label>Radio</label>
+              <posx>170</posx>
+              <posy>120</posy>
               <height>30</height>
-              <width>180</width>
-              <font>Home_numbers</font>
+              <width>250</width>
+              <font>button_title</font>
               <align>left</align>
+            </control>  
+
+            <control type="image">
+              <posx>190</posx>
+              <posy>25</posy>
+              <width>90</width>
+              <height>90</height>
+              <texture>icons/music.png</texture>
+            </control>
+          </control>
+
+          <control type="group">
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>155</width>
+            <height>155</height>
+            <control type="image">
+              <posx></posx>
+              <posy>0</posy>
+              <width>155</width>
+              <height>155</height>
+              <texture>tile.png</texture>
+            </control>
+
+            <control type="image">
+              <posx></posx>
+              <posy>0</posy>
+              <width>155</width>
+              <height>155</height>
+              <texture>button.png</texture>
+              <visible>[Control.HasFocus(304)]</visible>
+              <animation effect="fade" time="200" tween="square">VisibleChange</animation>
+              <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(304)">Conditional</animation>
+            </control>  
+
+            <control id="304">
+              <type>button</type>
+              <label></label>
+              <posx></posx>
+              <posy>0</posy>
+              <width>155</width>
+              <height>155</height>
+              <align>left</align>
+              <onup>302</onup>
+              <ondown>301</ondown>
+              <onleft>5000</onleft>
+              <onright>305</onright>
+              <onclick>ActivateWindow(PVR)</onclick>
+              <onclick>Setfocus(34)</onclick>
+              <onclick>Setfocus(14)</onclick>
+            </control>
+
+            <control type="label">
+              <label>Recordings</label>
+              <posx>10</posx>
+              <posy>119</posy>
+              <height>30</height>
+              <width>250</width>
+              <font>button_title</font>
+              <align>left</align>
+            </control>
+
+            <control type="image">
+              <posx>35</posx>
+              <posy>26</posy>
+              <width>90</width>
+              <height>90</height>
+              <texture>icons/videos.png</texture>
+            </control>
+
+            <control type="image">
+              <posx>160</posx>
+              <posy></posy>
+              <width>155</width>
+              <height>155</height>
+              <texture>tile.png</texture>
+            </control>
+
+            <control type="image">
+              <posx>160</posx>
+              <posy></posy>
+              <width>155</width>
+              <height>155</height>
+              <texture>button.png</texture>
+              <visible>[Control.HasFocus(305)]</visible>
+              <animation effect="fade" time="200" tween="square">VisibleChange</animation>
+              <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(305)">Conditional</animation>
+            </control>
+
+            <control id="305">
+              <type>button</type>
+              <label></label>
+              <posx>1</posx>
+              <posy></posy>
+              <width>155</width>
+              <height>155</height>
+              <align>left</align>
+              <onup>303</onup>
+              <ondown>301</ondown>
+              <onleft>304</onleft>
+              <onright>66</onright>
+              <onclick>ActivateWindow(PVR)</onclick>
+              <onclick>Setfocus(35)</onclick>
+              <onclick>Setfocus(14)</onclick>
+            </control>
+
+            <control type="label">
+              <label>Timers</label>
+              <posx>170</posx>
+              <posy>120</posy>
+              <height>30</height>
+              <width>250</width>
+              <font>button_title</font>
+              <align>left</align>
+            </control>  
+
+            <control type="image">
+              <posx>190</posx>
+              <posy>25</posy>
+              <width>90</width>
+              <height>90</height>
+              <texture>recent.png</texture>
             </control>
           </control>
 
         </control>
 
-        <control type="group">
+        <control type="scrollbar" id="3001">
+          <posx>680</posx>
+          <posy>287</posy>
+          <width>6</width>
+          <height>320</height>
+          <texturesliderbackground></texturesliderbackground>
+          <textureslidernib>bar.png</textureslidernib>
+          <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+          <texturesliderbar></texturesliderbar>
+          <texturesliderbarfocus></texturesliderbarfocus>
+          <showonepage>true</showonepage>
+          <orientation>vertical</orientation>
+          <visible>[Control.HasFocus(301) | Control.HasFocus(302) | Control.HasFocus(303) | Control.HasFocus(304) | Control.HasFocus(305)]</visible>
+
+          <animation effect="fade" time="200" tween="square">Visible</animation>
+
+          <animation type="Conditional" condition="Control.HasFocus(301)">
+            <effect type="fade" start="100" end="0" time="200" delay="3000"/>
+          </animation>
+
+          <animation type="Conditional" condition="Control.HasFocus(302) | Control.HasFocus(303)">
+            <effect type="fade" start="100" end="0" time="200" delay="3000"/>
+          </animation>
+
+          <animation type="Conditional" condition="Control.HasFocus(304) | Control.HasFocus(305)">
+            <effect type="fade" start="100" end="0" time="200" delay="3000"/>
+          </animation>
+        </control>
+
+        <control type="grouplist">
           <posx>710</posx>
           <posy>290</posy>
           <control type="group">
-            <visible>!PVR.IsRecording</visible>
+            <height>155</height>
+            <visible>PVR.IsRecording</visible>
             <control type="image">
               <posx>9</posx>
               <posy>0</posy>
               <width>470</width>
               <height>155</height>
               <texture>tile.png</texture>
-            </control>
-            <control type="image">
-              <posx>400</posx>
-              <posy>0</posy>
-              <width>80</width>
-              <height>80</height>
-              <aspectratio>keep</aspectratio>
-              <texture background="true" fallback="DefaultVideoCover.png">$INFO[PVR.NowRecordingChannelIcon]</texture>
-              <bordertexture border="8">ThumbBorder.png</bordertexture>
-              <bordersize>4</bordersize>
             </control>
             <control type="image">
               <posx>360</posx>
@@ -3783,63 +3965,44 @@
             </control>
             <control type="label">
               <description>Is Recording Header label</description>
-              <posx>350</posx>
-              <posy>5</posy>
-              <height>25</height>
-              <width>400</width>
+              <posx>20</posx>
+              <posy>119</posy>
+              <height>30</height>
+              <width>295</width>
+              <font>button_title</font>
+              <align>left</align>
               <label>$LOCALIZE[19158]</label>
-              <align>right</align>
-              <aligny>center</aligny>
-              <font>font12_title</font>
-              <textcolor>blue</textcolor>
-              <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
               <description>NextRecordingDateTime</description>
-              <posx>390</posx>
-              <posy>30</posy>
-              <height>25</height>
-              <width>400</width>
-              <label>$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]</label>
-              <align>right</align>
-              <aligny>center</aligny>
-              <font>font12</font>
-              <scroll>true</scroll>
-              <shadowcolor>black</shadowcolor>
-            </control>
-            <control type="label">
-              <description>NextRecordingTitle Channel</description>
-              <posx>390</posx>
-              <posy>50</posy>
+              <posx>465</posx>
+              <posy>119</posy>
               <height>30</height>
-              <width>800</width>
-              <label>$INFO[PVR.NowRecordingTitle][COLOR=grey]$INFO[PVR.NowRecordingChannel, - [COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
+              <width>295</width>
+              <font>button_title</font>
               <align>right</align>
-              <aligny>center</aligny>
-              <font>font12_title</font>
-              <shadowcolor>black</shadowcolor>
-              <scroll>true</scroll>
+              <label>$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]</label>
+            </control>
+            <control type="fadelabel">
+              <description>NextRecordingTitle Channel</description>
+              <posx>10</posx>
+              <posy>60</posy>
+              <height>30</height>
+              <width>470</width>
+              <font>Home_numbers</font>
+              <align>left</align>
+              <label>$INFO[PVR.NowRecordingTitle][COLOR=grey]$INFO[PVR.NowRecordingChannel, - [COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
             </control>
           </control>
           <control type="group">
-            <posy>160</posy>
-            <visible>!PVR.HasNonRecordingTimer</visible>
+            <height>155</height>
+            <visible>PVR.HasNonRecordingTimer</visible>
             <control type="image">
               <posx>9</posx>
               <posy>0</posy>
               <width>470</width>
               <height>155</height>
               <texture>tile.png</texture>
-            </control>
-            <control type="image">
-              <posx>400</posx>
-              <posy>0</posy>
-              <width>80</width>
-              <height>80</height>
-              <aspectratio>keep</aspectratio>
-              <texture background="true" fallback="DefaultVideoCover.png">$INFO[PVR.NextRecordingChannelIcon]</texture>
-              <bordertexture border="8">ThumbBorder.png</bordertexture>
-              <bordersize>4</bordersize>
             </control>
             <control type="image">
               <posx>365</posx>
@@ -3851,42 +4014,33 @@
             </control>
             <control type="label">
               <description>Next Timer Header label</description>
-              <posx>355</posx>
-              <posy>5</posy>
-              <height>25</height>
-              <width>400</width>
+              <posx>20</posx>
+              <posy>119</posy>
+              <height>30</height>
+              <width>295</width>
+              <font>button_title</font>
+              <align>left</align>
               <label>$LOCALIZE[19157]</label>
-              <align>right</align>
-              <aligny>center</aligny>
-              <font>font12_title</font>
-              <textcolor>blue</textcolor>
-              <shadowcolor>black</shadowcolor>
             </control>
             <control type="label">
               <description>NextRecordingDateTime</description>
-              <posx>390</posx>
-              <posy>30</posy>
-              <height>25</height>
-              <width>400</width>
-              <label>$INFO[PVR.NextRecordingDateTime,$LOCALIZE[19126] - ]</label>
+              <posx>465</posx>
+              <posy>119</posy>
+              <height>30</height>
+              <width>295</width>
+              <font>button_title</font>
               <align>right</align>
-              <aligny>center</aligny>
-              <font>font12</font>
-              <scroll>true</scroll>
-              <shadowcolor>black</shadowcolor>
+              <label>$INFO[PVR.NextRecordingDateTime]</label>
             </control>
-            <control type="label">
+            <control type="fadelabel">
               <description>NextRecordingTitle Channel</description>
-              <posx>390</posx>
-              <posy>50</posy>
-              <height>25</height>
-              <width>800</width>
-              <label>$INFO[PVR.NextRecordingTitle][COLOR=grey]$INFO[PVR.NextRecordingChannel, - [COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
-              <align>right</align>
-              <aligny>center</aligny>
-              <font>font12_title</font>
-              <shadowcolor>black</shadowcolor>
-              <scroll>true</scroll>
+              <posx>10</posx>
+              <posy>60</posy>
+              <height>30</height>
+              <width>470</width>
+              <font>Home_numbers</font>
+              <align>left</align>
+              <label> $INFO[PVR.NextRecordingChannel] [COLOR Accent]$INFO[PVR.NextRecordingTitle][/COLOR]</label>
             </control>
           </control>
         </control>

@@ -8,13 +8,13 @@
 
 		<control type="group">
 			<posx>420</posx>
-			<posy>240</posy>
+			<posy>200</posy>
 
 			<control type="image">
 				<posx></posx>
 				<posy></posy>
 				<width>440</width>
-				<height>220</height>
+				<height>260</height>
 				<texture border="22">button.png</texture>
 			</control>
 
@@ -29,7 +29,7 @@
 				<align>left</align>
 			</control>
 
-			<control type="label" id="2">
+			<control type="fadelabel" id="2">
 				<description>Line 1</description>
 				<posx>30</posx>
 				<posy>60</posy>
@@ -39,7 +39,7 @@
 				<scroll>true</scroll>
 			</control>
 
-			<control type="label" id="3">
+			<control type="fadelabel" id="3">
 				<description>Line 2</description>
 				<posx>30</posx>
 				<posy>85</posy>
@@ -49,7 +49,7 @@
 				<scroll>true</scroll>
 			</control>
 
-			<control type="label" id="4">
+			<control type="fadelabel" id="4">
 				<description>Line 3</description>
 				<posx>30</posx>
 				<posy>115</posy>
@@ -63,7 +63,7 @@
 				<description>No</description>
 				<textcolor>black</textcolor>
 				<posx>30</posx>
-				<posy>145</posy>
+				<posy>185</posy>
 				<width>180</width>
 				<label>106</label>
 				<onleft>11</onleft>
@@ -76,7 +76,7 @@
 				<description>Yes</description>			
 				<textcolor>black</textcolor>
 				<posx>230</posx>
-				<posy>145</posy>
+				<posy>185</posy>
 				<width>180</width>
 				<label>107</label>
 				<onleft>10</onleft>

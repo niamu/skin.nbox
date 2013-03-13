@@ -800,17 +800,6 @@
 				<height>50</height>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[COLOR Accent]$INFO[Container(14).NumItems,[COLOR White]timers: [/COLOR]][/COLOR]</label>
-				<visible>IsEmpty(PVR.NextTimer)</visible>
-			</control>
-
-			<control type="label">
-				<posx>395</posx>
-				<posy>210</posy>
-				<width>600</width>
-				<height>50</height>
-				<font>Sort_Font_Small</font>
-				<textcolor>White</textcolor>
 				<label>$INFO[PVR.NextTimer]</label>
 			</control>
 
@@ -985,16 +974,6 @@
 				<scrollspeed>50</scrollspeed>
 				<aligny>top</aligny>
 				<visible>IsEmpty(ListItem.Title)</visible>
-			</control>
-
-			<control type="label">
-				<posx>395</posx>
-				<posy>210</posy>
-				<width>600</width>
-				<height>50</height>
-				<font>Sort_Font_Small</font>
-				<textcolor>White</textcolor>
-				<label>[COLOR Accent]$INFO[Container(17).NumItems,[COLOR White]searches: [/COLOR]][/COLOR]</label>
 			</control>
 
 			<control type="image">
