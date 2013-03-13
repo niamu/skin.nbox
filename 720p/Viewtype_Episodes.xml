@@ -77,7 +77,11 @@
         <scrolltime>200</scrolltime>
         <onup>57</onup>
         <ondown>57</ondown>
-        <onright>57</onright>
+        <onright>left</onright>
+        <onright>left</onright>
+        <onright>left</onright>
+        <onright>right</onright>
+        <onright>down</onright>
         <onleft>9000</onleft>
 
         <viewtype label="Episodes View">Episodes View</viewtype>

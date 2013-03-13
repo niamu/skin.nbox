@@ -51,6 +51,13 @@
         <scrolltime>200</scrolltime>
         <orientation>vertical</orientation>
         <onleft>9000</onleft>
+        <onright>left</onright>
+        <onright>left</onright>
+        <onright>left</onright>
+        <onright>left</onright>
+        <onright>left</onright>
+        <onright>right</onright>
+        <onright>down</onright>
         <pagecontrol>61</pagecontrol>
         <preloaditems>2</preloaditems>
         <include>Animation_HiddenByInfo</include>
