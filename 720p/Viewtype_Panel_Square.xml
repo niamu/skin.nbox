@@ -60,7 +60,6 @@
         <onright>down</onright>
         <pagecontrol>61</pagecontrol>
         <preloaditems>2</preloaditems>
-        <include>Animation_HiddenByInfo</include>
         <visible>Window.IsActive(1) | Container.Content(Albums)</visible>
         <itemlayout width="80" height="80">
           <control type="image">

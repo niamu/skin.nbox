@@ -104,16 +104,6 @@
 				<label>  Hide Watched</label>
 			</control>
 
-			<control type="button" id="98">
-				<description>Open Player Controls</description>
-				<width>240</width>
-				<align>left</align>
-				<label>31015</label>
-				<onclick>ActivateWindow(playercontrols)</onclick>
-				<visible>Player.HasMedia</visible>
-				<font>small</font>
-				<textcolor>black</textcolor>
-			</control>
 		</control>
 	</controls>
 </window>

@@ -57,7 +57,7 @@
 						<label>20046</label>
 						<altlabel>20045</altlabel>
 						<onclick>xbmc.mastermode</onclick>
-						<visible>System.HasLocks</visible>						
+						<visible>System.HasLocks</visible>
 						<align>right</align>
 						<textcolor>black</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -66,7 +66,6 @@
 					<control type="button" id="3112">
 						<description>LogOff Profile</description>
 						<width>340</width>
-						<include>SettingsLabel</include>
 						<label>$LOCALIZE[20126] $INFO[system.profilename]</label>
 						<onclick>dialog.close(all,true)</onclick>
 						<onclick>System.LogOff</onclick>
@@ -81,7 +80,7 @@
 						<description>Shutdown</description>
 						<width>340</width>
 						<label>13005</label>
-						<onclick>ShutDown()</onclick>						
+						<onclick>ShutDown()</onclick>
 						<align>right</align>
 						<textcolor>black</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -91,7 +90,7 @@
 						<description>Suspend xbmc</description>
 						<width>340</width>
 						<label>13011</label>
-						<onclick>XBMC.Suspend()</onclick>						
+						<onclick>XBMC.Suspend()</onclick>
 						<align>right</align>
 						<textcolor>black</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -101,7 +100,7 @@
 						<description>Reboot button</description>
 						<width>340</width>
 						<label>13013</label>
-						<onclick>XBMC.Reset()</onclick>							
+						<onclick>XBMC.Reset()</onclick>	
 						<align>right</align>
 						<textcolor>black</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -111,7 +110,7 @@
 						<description>Exit</description>
 						<width>340</width>
 						<label>Exit</label>
-						<onclick>Quit()</onclick>						
+						<onclick>Quit()</onclick>
 						<align>right</align>
 						<textcolor>black</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -123,7 +122,7 @@
 						<width>340</width>
 						<label>20151</label>
 						<onclick>XBMC.CancelAlarm(shutdowntimer)</onclick>
-						<visible>System.HasAlarm(shutdowntimer)</visible>						
+						<visible>System.HasAlarm(shutdowntimer)</visible>
 						<align>right</align>
 						<textcolor>black</textcolor>
 						<focusedcolor>white</focusedcolor>
@@ -134,7 +133,7 @@
 						<width>340</width>
 						<label>20150</label>
 						<onclick>XBMC.AlarmClock(shutdowntimer,XBMC.Shutdown())</onclick>
-						<visible>!System.HasAlarm(shutdowntimer)</visible>							
+						<visible>!System.HasAlarm(shutdowntimer)</visible>	
 						<align>right</align>
 						<textcolor>black</textcolor>
 						<focusedcolor>white</focusedcolor>

@@ -65,7 +65,6 @@
 				<onleft>9000</onleft>
 				<pagecontrol>62</pagecontrol>
 				<preloaditems>2</preloaditems>
-				<include>Animation_HiddenByInfo</include>
 				<visible>Window.IsActive(1) | Container.Content(genres)</visible>
 
 				<itemlayout width="159" height="159">

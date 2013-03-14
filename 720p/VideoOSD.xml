@@ -281,7 +281,7 @@
 					</control>
 
 					<control type="button" id="13">
-						<description>rewind</description>						
+						<description>rewind</description>
 						<posx>540</posx>
 						<posy>609</posy>
 						<width>40</width>
@@ -319,7 +319,7 @@
 					</control>
 
 					<control type="button" id="15">
-						<description>Stop</description>						
+						<description>Stop</description>
 						<posx>655</posx>
 						<posy>609</posy>
 						<width>40</width>
@@ -336,7 +336,7 @@
 					</control>
 
 					<control type="button" id="16">
-						<description>Fast Forward</description>						
+						<description>Fast Forward</description>
 						<posx>700</posx>
 						<posy>609</posy>
 						<width>40</width>

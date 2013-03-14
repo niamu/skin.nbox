@@ -723,7 +723,6 @@
 				</control>
 		</control>
 		<control type="scrollbar" id="60">
-			<include>Animation_ZoomInZoomOut</include>
 			<posx>10</posx>
 			<posy>100</posy>
 			<width>25</width>

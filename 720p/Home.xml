@@ -1252,7 +1252,7 @@
             <scrollspeed>50</scrollspeed>
             <font>Home_sub_header</font>
             <align>left</align>
-          </control>						
+          </control>
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
@@ -2293,7 +2293,7 @@
             <scrollspeed>50</scrollspeed>
             <font>Home_sub_header</font>
             <align>left</align>
-          </control>						
+          </control>
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
@@ -3416,7 +3416,7 @@
             <scrollspeed>50</scrollspeed>
             <font>Home_sub_header</font>
             <align>left</align>
-          </control>						
+          </control>
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
