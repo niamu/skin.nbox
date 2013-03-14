@@ -67,7 +67,7 @@
           <description>Now Playing</description>
           <posx>0</posx>
           <posy>-5</posy>
-          <width>700</width>
+          <width>955</width>
           <label>$INFO[VideoPlayer.ChannelName,, ][COLOR Accent]$INFO[VideoPlayer.Title][/COLOR] [LOWERCASE]$INFO[VideoPlayer.Year][/LOWERCASE]</label>
           <scroll>true</scroll>
           <font>Home_menu</font>

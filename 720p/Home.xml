@@ -4014,7 +4014,7 @@
               <width>295</width>
               <font>button_title</font>
               <align>right</align>
-              <label>$INFO[PVR.NowRecordingDateTime,$LOCALIZE[19126] - ]</label>
+              <label>$INFO[PVR.NowRecordingDateTime]</label>
             </control>
             <control type="fadelabel">
               <description>NextRecordingTitle Channel</description>
@@ -4024,7 +4024,7 @@
               <width>470</width>
               <font>Home_numbers</font>
               <align>left</align>
-              <label>$INFO[PVR.NowRecordingTitle][COLOR=grey]$INFO[PVR.NowRecordingChannel, - [COLOR=blue]([/COLOR],[COLOR=blue])[/COLOR]][/COLOR]</label>
+              <label> $INFO[PVR.NowRecordingChannel] [COLOR Accent]$INFO[PVR.NowRecordingTitle][/COLOR]</label>
             </control>
           </control>
           <control type="group">
