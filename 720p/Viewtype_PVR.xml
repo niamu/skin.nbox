@@ -869,13 +869,13 @@
 						<info>ListItem.Label</info>
 					</control>
 					<control type="label">
-						<posx>730</posx>
+						<posx>580</posx>
 						<posy>0</posy>
 						<width>400</width>
 						<info>ListItem.Date</info>
 					</control>
 					<control type="label">
-						<posx>1120</posx>
+						<posx>940</posx>
 						<posy>0</posy>
 						<width>150</width>
 						<info>ListItem.Comment</info>
