@@ -31,6 +31,8 @@
       <posx>515</posx>
       <posy>324</posy>
 
+      <visible>IsEmpty(Player.CacheLevel)</visible>
+
       <control type="image">
         <description>background image</description>
         <posx>0</posx>
