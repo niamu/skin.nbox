@@ -2,31 +2,22 @@
 	<fontset id="default" unicode="true">
 
 		<font>
-			<name>Home</name>
-			<filename>Arial.ttf</filename>
-			<size>64</size>
-		</font>
-		
-		<font>
 			<name>Home_header</name>
 			<filename>GeosansLight.ttf</filename>
 			<size>80</size>
 		</font>
-		
-		
+
 		<font>
 			<name>Home_numbers</name>
 			<filename>GeosansLight.ttf</filename>
 			<size>70</size>
 		</font>
 		
-		
 		<font>
 			<name>Home_sub_header</name>
 			<filename>GeosansLight.ttf</filename>
 			<size>47</size>
 		</font>
-		
 		
 		<font>
 			<name>Home_time</name>
@@ -40,14 +31,11 @@
 			<size>230</size>
 		</font>
 
-
-
 		<font>
 			<name>Home_date</name>
 			<filename>GeosansLight.ttf</filename>
 			<size>28</size>
 		</font>
-		
 		
 		<font>
 			<name>Home_menu</name>
@@ -61,7 +49,6 @@
 			<size>50</size>
 		</font>
 		
-		
 		<font>
 			<name>weather_loc</name>
 			<filename>GeosansLight.ttf</filename>
@@ -74,15 +61,12 @@
 			<size>32</size>
 		</font>	
 		
-	
-		
 		<font>
 			<name>temp_big</name>
 			<filename>GeosansLight.ttf</filename>
 			<size>80</size>
-		</font>		
-		
-		
+		</font>
+
 		<font>
 			<name>Large</name>
 			<filename>GeosansLight.ttf</filename>
@@ -102,6 +86,7 @@
 		</font>
 
 		<!-- Required for system -->
+
 		<font>
 			<name>font13</name>
 			<filename>GeosansLight.ttf</filename>
@@ -110,30 +95,27 @@
 		
 		<font>
 			<name>letter_bold</name>
-			<filename>CartoGothicStd-Book.ttf</filename>
+			<filename>QuicksandBold.ttf</filename>
 			<size>24</size>
-		</font>		
-	
-	
-		
+		</font>
+
 		<font>
 			<name>button_bold</name>
-			<filename>CartoGothicStd-Book.ttf</filename>
+			<filename>QuicksandBold.ttf</filename>
 			<size>16</size>
 		</font>
 		
 		<font>
 			<name>button_bold_focus</name>
-			<filename>CartoGothicStd-Book.ttf</filename>
+			<filename>QuicksandBold.ttf</filename>
 			<size>18</size>
 		</font>
 		
 		<font>
 			<name>button_title</name>
-			<filename>CartoGothicStd-Book.ttf</filename>
+			<filename>QuicksandBold.ttf</filename>
 			<size>16</size>
 		</font>	
-		
 		
 		<font>
 			<name>weather_med</name>
@@ -143,24 +125,22 @@
 		
 		<font>
 			<name>weather_small</name>
-			<filename>CartoGothicStd-Book.ttf</filename>
+			<filename>QuicksandBold.ttf</filename>
 			<size>12</size>
 		</font>			
 
 		<font>
 			<name>rss_small</name>
-			<filename>CartoGothicStd-Book.ttf</filename>
+			<filename>QuicksandBold.ttf</filename>
 			<size>14</size>
 		</font>	
 
 		<font>
 			<name>plot_scroll_small</name>
-			<filename>CartoGothicStd-Book.ttf</filename>
+			<filename>QuicksandBold.ttf</filename>
 			<size>16</size>
 		</font>	
 		
-		
-	
 		<font>
 			<name>Artist_Font</name>
 			<filename>GeosansLight.ttf</filename>
@@ -191,16 +171,10 @@
 			<size>24</size>
 		</font>
 		
-			
 		<font>
 			<name>Large_Letter_Music</name>
 			<filename>GeosansLight.ttf</filename>
 			<size>220</size>
 		</font>
-		
-		
-		
-		
-
 	</fontset>
 </fonts>
