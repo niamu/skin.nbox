@@ -69,10 +69,11 @@
 				<visible>pvr.IsPlayingRadio</visible>
 			</control>
 
-<control type="label">
+			<control type="fadelabel">
 				<description>header label</description>
 				<posx>30</posx>
 				<posy>670</posy>
+				<width>340</width>
 				<font>Large</font>
 				<align>left</align>
 				<label>[COLOR Accent]$INFO[VideoPlayer.NextTitle,[COLOR white]On Next: [/COLOR]][/COLOR]</label>
