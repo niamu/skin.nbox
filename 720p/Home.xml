@@ -930,7 +930,7 @@
         <width>560</width>
         <height>320</height>
 
-        <control type="group"> <!------start black 1 --------->	
+        <control type="group"> <!-- start black 1 -->
           <posx>0</posx>
           <posy>0</posy>
           <control type="image">
@@ -1013,9 +1013,9 @@
             <align>left</align>
           </control>	
 
-        </control>		<!------end black 1 --------->	
+        </control>		<!-- end black 1 -->	
 
-        <control type="group"> <!------start black 2 --------->	
+        <control type="group"> <!-- start black 2 -->	
           <posx>159</posx>
           <posy>0</posy>
           <control type="image">
@@ -1098,9 +1098,9 @@
             <align>left</align>
           </control>
 
-        </control>		<!------end black 2 --------->	
+        </control>		<!-- end black 2 -->	
 
-        <control type="group"> <!------start black 3 --------->	
+        <control type="group"> <!-- start black 3 -->	
           <posx>318</posx>
           <posy>0</posy>
           <control type="image">
@@ -1183,9 +1183,9 @@
             <align>left</align>
           </control>
 
-        </control>		<!------end black 3 --------->	
+        </control>		<!-- end black 3 -->	
 
-        <control type="group"> <!------start black 4 --------->	
+        <control type="group"> <!-- start black 4 -->	
           <posx>0</posx>
           <posy>159</posy>
           <control type="image">
@@ -1268,9 +1268,9 @@
             <align>left</align>
           </control>				
 
-        </control>		<!------end black 4 --------->			
+        </control>		<!-- end black 4 -->			
 
-        <control type="group"> <!------start black 5 --------->	
+        <control type="group"> <!-- start black 5 -->	
           <posx>159</posx>
           <posy>159</posy>
           <control type="image">
@@ -1353,9 +1353,9 @@
             <align>left</align>
           </control>			
 
-        </control>		<!------end black 5 --------->	
+        </control>		<!-- end black 5 -->	
 
-        <control type="group"> <!------start black 6 --------->	
+        <control type="group"> <!-- start black 6 -->	
           <posx>318</posx>
           <posy>159</posy>
           <control type="image">
@@ -1438,7 +1438,7 @@
             <align>left</align>
           </control>			
 
-        </control>		<!------end black 6 --------->
+        </control>		<!-- end black 6 -->
       </control> <!-- end movies overlays-->
 
       <!--TV SHOWS-->
@@ -1971,7 +1971,7 @@
         <width>560</width>
         <height>320</height>
 
-        <control type="group"> <!------start black 1 --------->	
+        <control type="group"> <!-- start black 1 -->	
           <posx>0</posx>
           <posy>0</posy>
           <control type="image">
@@ -2054,9 +2054,9 @@
             <align>left</align>
           </control>
 
-        </control>		<!------end black 1 --------->	
+        </control>		<!-- end black 1 -->	
 
-        <control type="group"> <!------start black 2 --------->	
+        <control type="group"> <!-- start black 2 -->	
           <posx>159</posx>
           <posy>0</posy>
           <control type="image">
@@ -2139,9 +2139,9 @@
             <align>left</align>
           </control>
 
-        </control>		<!------end black 2 --------->	
+        </control>		<!-- end black 2 -->	
 
-        <control type="group"> <!------start black 3 --------->	
+        <control type="group"> <!-- start black 3 -->	
           <posx>318</posx>
           <posy>0</posy>
           <control type="image">
@@ -2224,9 +2224,9 @@
             <align>left</align>
           </control>
 
-        </control>		<!------end black 3 --------->	
+        </control>		<!-- end black 3 -->	
 
-        <control type="group"> <!------start black 4 --------->	
+        <control type="group"> <!-- start black 4 -->	
           <posx>0</posx>
           <posy>159</posy>
           <control type="image">
@@ -2309,9 +2309,9 @@
             <align>left</align>
           </control>				
 
-        </control>		<!------end black 4 --------->			
+        </control>		<!-- end black 4 -->			
 
-        <control type="group"> <!------start black 5 --------->	
+        <control type="group"> <!-- start black 5 -->	
           <posx>159</posx>
           <posy>159</posy>
           <control type="image">
@@ -2394,9 +2394,9 @@
             <align>left</align>
           </control>			
 
-        </control>		<!------end black 5 --------->	
+        </control>		<!-- end black 5 -->	
 
-        <control type="group"> <!------start black 6 --------->	
+        <control type="group"> <!-- start black 6 -->	
           <posx>318</posx>
           <posy>159</posy>
           <control type="image">
@@ -2479,7 +2479,7 @@
             <align>left</align>
           </control>			
 
-        </control>		<!------end black 6 --------->
+        </control>		<!-- end black 6 -->
       </control> <!-- end tvshows overlays-->
 
 
@@ -3010,7 +3010,7 @@
         <width>560</width>
         <height>315</height>
 
-        <control type= "group"> <!------start black 1 --------->	
+        <control type= "group"> <!-- start black 1 -->	
           <posx>0</posx>
           <posy>0</posy>
           <control type="image">
@@ -3121,9 +3121,9 @@
             <align>left</align>
           </control>		
 
-        </control>		<!------end black 1 --------->	
+        </control>		<!-- end black 1 -->	
 
-        <control type= "group"> <!------start black 2 --------->	
+        <control type= "group"> <!-- start black 2 -->	
           <posx>159</posx>
           <posy>0</posy>
           <control type="image">
@@ -3234,9 +3234,9 @@
             <align>left</align>
           </control>
 
-        </control>		<!------end black 2 --------->	
+        </control>		<!-- end black 2 -->	
 
-        <control type= "group"> <!------start black 3 --------->	
+        <control type= "group"> <!-- start black 3 -->	
           <posx>318</posx>
           <posy>0</posy>
           <control type="image">
@@ -3346,9 +3346,9 @@
             <font>Home_sub_header</font>
             <align>left</align>
           </control>
-        </control>		<!------end black 3 --------->	
+        </control>		<!-- end black 3 -->	
 
-        <control type= "group"> <!------start black 4 --------->	
+        <control type= "group"> <!-- start black 4 -->	
           <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).HasNext + Container(67).HasPrevious]</visible>
           <posx>0</posx>
           <posy>159</posy>
@@ -3432,9 +3432,9 @@
             <align>left</align>
           </control>				
 
-        </control>		<!------end black 4 --------->			
+        </control>		<!-- end black 4 -->			
 
-        <control type= "group"> <!------start black 5 --------->	
+        <control type= "group"> <!-- start black 5 -->	
           <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).HasNext + Container(67).HasPrevious]</visible>
           <posx>159</posx>
           <posy>159</posy>
@@ -3517,9 +3517,9 @@
             <font>Home_sub_header</font>
             <align>left</align>
           </control>
-        </control>		<!------end black 5 --------->	
+        </control>		<!-- end black 5 -->	
 
-        <control type= "group"> <!------start black 6 --------->	
+        <control type= "group"> <!-- start black 6 -->	
           <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).HasNext + Container(67).HasPrevious]</visible>
           <posx>318</posx>
           <posy>159</posy>
@@ -3603,7 +3603,7 @@
             <align>left</align>
           </control>
 
-        </control>		<!------end black 6 --------->	
+        </control>		<!-- end black 6 -->	
       </control> <!-- end music overlays-->
 
       <!--PVR-->

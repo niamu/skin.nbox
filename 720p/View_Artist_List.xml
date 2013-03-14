@@ -147,7 +147,7 @@
 				</focusedlayout>
 			</control>
 
-			<!-------------- INFOS ARRTISTE ---------------------->
+			<!-- INFOS ARRTISTE -->
 			<control type="image">
 				<posx>360</posx>
 				<posy>290</posy>
@@ -191,7 +191,7 @@
 				<visible>Container.Content(Artists)</visible>
 			</control>
 
-			<!------------ NOMBRE D'Albums de l'artiste --------------->
+			<!-- NOMBRE D'Albums de l'artiste -->
 			<control type="label">
 				<label>Albums de cet artiste</label>
 				<posx>370</posx>
@@ -212,7 +212,7 @@
 				<align>center</align>
 			</control>
 
-			<!--------------------------- ATTENTE DU SCRIPT ---------------------------------->
+			<!-- ATTENTE DU SCRIPT -->
 			<control type="image">
 				<posx>530</posx>
 				<posy>330</posy>
@@ -241,7 +241,7 @@
 				<animation effect="rotate" end="360" center="auto" time="350" loop="true" reversible="false" condition="IsEmpty(Window(Home).Property(albumsnumber))">Conditional</animation>
 				<visible>IsEmpty(Window(Home).Property(albumsnumber))</visible>
 			</control>
-			<!--------------------------- FIN ATTENTE DU SCRIPT ---------------------------------->
+			<!-- FIN ATTENTE DU SCRIPT -->
 
 			<control type="image">
 				<posx>360</posx>

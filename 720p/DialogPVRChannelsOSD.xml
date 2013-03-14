@@ -75,7 +75,7 @@
 				<width>340</width>
 				<font>Medium</font>
 				<align>left</align>
-				<label>[COLOR Accent]$INFO[ListItem.NextTitle,[COLOR white]On Next: [/COLOR]][/COLOR]</label>
+				<label>[COLOR Accent]$INFO[VideoPlayer.NextTitle,[COLOR white]On Next: [/COLOR]][/COLOR]</label>
 			</control>
 
 			<control type="list" id="11">
