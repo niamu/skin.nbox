@@ -4,8 +4,6 @@
 
 	<controls>
 
-		<include>GlobalOverlay</include>
-
 		<control type="group">
 
 			<control type="label">
