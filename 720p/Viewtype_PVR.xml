@@ -114,7 +114,7 @@
 					<height>50</height>
 					<font>Sort_Font_Small</font>
 					<textcolor>White</textcolor>
-					<label>[LOWERCASE][COLOR Accent]$INFO[Container(11).ListItem.NextTitle,[COLOR White]On Next: [/COLOR]][/COLOR][/LOWERCASE]</label>
+					<label>[COLOR Accent]$INFO[Container(11).ListItem.NextTitle,[LOWERCASE][COLOR White]On Next: [/COLOR][/LOWERCASE]][/COLOR]</label>
 				</control>
 			</control>
 

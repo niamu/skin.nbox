@@ -413,8 +413,8 @@
       <description>top left bar</description>
       <posx>0</posx>
       <posy>0</posy>
-      <width>12</width>
-      <height>138</height>
+      <width>8</width>
+      <height>100</height>
       <texture>bar.png</texture>
       <animation effect="fade" time="400">WindowOpen</animation>
       <animation effect="fade" time="400">WindowClose</animation>

@@ -5,7 +5,7 @@
 	<controls>
 
 		<control type="group">
-			<posx>12</posx>
+			<posx>8</posx>
 			<posy>0</posy>
 			
 			<animation type="WindowOpen">
@@ -20,7 +20,7 @@
 				<posx>0</posx>
 				<posy>0</posy>
 				<width>340</width>
-				<height>138</height>
+				<height>100</height>
 				<aspectratio>scale</aspectratio>
 				<texture border="20">tile.png</texture>
 			</control>
@@ -28,7 +28,7 @@
 			<control type="label" id="401">
 				<description>heading</description>
 				<posx>20</posx>
-				<posy>68</posy>
+				<posy>50</posy>
 				<width>320</width>
 				<height>32</height>
 				<label>-</label>
@@ -39,7 +39,7 @@
 			<control type="label" id="402">
 				<description>message</description>
 				<posx>20</posx>
-				<posy>35</posy>
+				<posy>20</posy>
 				<width>320</width>
 				<height>32</height>
 				<label>-</label>
@@ -54,8 +54,8 @@
 			<description>top left bar</description>
 			<posx>0</posx>
 			<posy>0</posy>
-			<width>12</width>
-			<height>138</height>
+			<width>8</width>
+			<height>100</height>
 			<visible>true</visible>
 			<texture>bar.png</texture>
 		</control>

@@ -4,7 +4,7 @@
 
 	<controls>
 
-		<include>GlobalOverlay</include>		
+		<include>GlobalOverlay</include>
 
 		<control type="group">
 			<posx>880</posx>
