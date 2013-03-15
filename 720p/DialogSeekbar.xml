@@ -276,6 +276,19 @@
         <texture>other_textures/ColorRating/$INFO[Player.StarRating]</texture>
       </control>
 
+      <control type="label">
+        <description>Now Playing</description>
+        <visible>IsEmpty(VideoPlayer.Tagline)</visible>
+        <posx>0</posx>
+        <posy>62</posy>
+        <width>830</width>
+        <label>Currently: [COLOR Accent]$INFO[System.Time(hh:mm)] $INFO[System.Time(xx)][/COLOR]</label>
+        <scroll>true</scroll>
+        <font>Medium</font>
+        <align>left</align>
+        <visible>!IsEmpty(VideoPlayer.EndTime)</visible>
+      </control>
+
     </control>
 
     <control type="group">

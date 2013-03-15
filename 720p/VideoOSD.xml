@@ -19,8 +19,8 @@
 				<posx>0</posx>
 				<posy>-10</posy>
 				<width>1280</width>
-				<height>720</height>
-				<texture>other_textures/black-back.png</texture>
+				<height>672</height>
+				<texture>tile.png</texture>
 				<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
 				<visible>Window.IsVisible(osdvideosettings) | Window.IsVisible(osdaudiosettings)</visible>
 			</control>
@@ -122,7 +122,7 @@
 						<animation type="VisibleChange">
 							<effect type="fade" start="0" end="100" time="600" />
 						</animation>
-						<visible>[VideoPlayer.Content(Movies) | !VideoPlayer.Content(Movies)] + !Player.paused + !Window.IsVisible(fullscreeninfo)</visible>
+						<visible>[VideoPlayer.Content(Movies) | !VideoPlayer.Content(Movies)] + !Player.paused + !Window.IsVisible(fullscreeninfo) + [!Window.IsVisible(osdvideosettings) + !Window.IsVisible(osdaudiosettings)]</visible>
 					</control>
 
 					<control type="image">
@@ -225,6 +225,19 @@
 							<height>25</height>
 							<aspectratio align="left">keep</aspectratio>
 							<texture>other_textures/colorrating/$INFO[Player.StarRating]</texture>
+						</control>
+
+						<control type="label">
+							<description>Now Playing</description>
+							<visible>IsEmpty(VideoPlayer.Tagline)</visible>
+							<posx>0</posx>
+							<posy>62</posy>
+							<width>830</width>
+							<label>Currently: [COLOR Accent]$INFO[System.Time(hh:mm)] $INFO[System.Time(xx)][/COLOR]</label>
+							<scroll>true</scroll>
+							<font>Medium</font>
+							<align>left</align>
+							<visible>!IsEmpty(VideoPlayer.EndTime)</visible>
 						</control>
 					</control>
 
