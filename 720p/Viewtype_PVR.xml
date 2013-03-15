@@ -94,16 +94,27 @@
 					<font>Artist_Font</font>
 					<label>Description</label>
 				</control>
+
 				<control type="textbox">
 					<posx>20</posx>
 					<posy>72</posy>
 					<width>349</width>
-					<height>215</height>
+					<height>185</height>
 					<align>justify</align>
 					<autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
 					<font>Plot_Font</font>
 					<textcolor>White</textcolor>
 					<label>$INFO[Container(11).ListItem.Plot]</label>
+				</control>
+
+				<control type="label">
+					<posx>20</posx>
+					<posy>265</posy>
+					<width>600</width>
+					<height>50</height>
+					<font>Sort_Font_Small</font>
+					<textcolor>White</textcolor>
+					<label>[LOWERCASE][COLOR Accent]$INFO[Container(11).ListItem.NextTitle,[COLOR White]On Next: [/COLOR]][/COLOR][/LOWERCASE]</label>
 				</control>
 			</control>
 
@@ -308,16 +319,27 @@
 					<font>Artist_Font</font>
 					<label>Description</label>
 				</control>
+				
 				<control type="textbox">
 					<posx>20</posx>
 					<posy>72</posy>
 					<width>349</width>
-					<height>215</height>
+					<height>185</height>
 					<align>justify</align>
 					<autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
 					<font>Plot_Font</font>
 					<textcolor>White</textcolor>
 					<label>$INFO[Container(12).ListItem.Plot]</label>
+				</control>
+
+				<control type="label">
+					<posx>20</posx>
+					<posy>265</posy>
+					<width>600</width>
+					<height>50</height>
+					<font>Sort_Font_Small</font>
+					<textcolor>White</textcolor>
+					<label>[LOWERCASE][COLOR Accent]$INFO[Container(12).ListItem.NextTitle,[COLOR White]On Next: [/COLOR]][/COLOR][/LOWERCASE]</label>
 				</control>
 			</control>
 
