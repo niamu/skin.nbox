@@ -25,7 +25,7 @@
 		</control>
 
 		<control type="group">
-			<visible>Control.IsVisible(54)</visible>
+			<visible>Control.IsVisible(54) + !Window.IsVisible(DialogAddonSettings.xml)</visible>
 			<animation type="TYPE" condition="Window.IsVisible(2003)" reversible="false">
 				<effect type="slide" end="-1500,0" time="200"/>
 			</animation>
