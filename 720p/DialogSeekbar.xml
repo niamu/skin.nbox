@@ -401,7 +401,7 @@
       <posx>515</posx>
       <posy>324</posy>
 
-      <visible>!IsEmpty(Player.CacheLevel) + !StringCompare(Player.CacheLevel,100)</visible>
+      <visible>!IsEmpty(Player.CacheLevel) + Player.Caching</visible>
 
       <control type="image">
         <description>background image</description>
