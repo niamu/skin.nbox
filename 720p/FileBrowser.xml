@@ -76,73 +76,58 @@
 				<posx>30</posx>
 				<posy>180</posy>
 				<width>340</width>
-				<height>440</height>
+				<height>450</height>
 				<onup>450</onup>
 				<onleft>9000</onleft>
 				<onright>9000</onright>
 				<ondown>450</ondown>
 
-				<itemlayout height="114">
+				<itemlayout height="50">
 
 					<control type="image">
-						<width>380</width>
-						<height>112</height>
+						<width>340</width>
+						<height>45</height>
 						<texture>other_textures/buttonnf.png</texture>
 					</control>
 
 					<control type="image">
-						<posx>8</posx>
-						<posy>8</posy>
-						<width>96</width>
-						<height>96</height>
+						<posx>297</posx>
+						<posy>2</posy>
+						<width>41</width>
+						<height>41</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 					</control>
 
 					<control type="label">
-						<posx>115</posx>
+						<posx>10</posx>
 						<width>228</width>
 						<info>ListItem.Label</info>
-						<textcolor>black</textcolor>
-					</control>
-
-					<control type="label">
-						<posx>115</posx>
-						<posy>30</posy>
-						<width>228</width>
-						<info>ListItem.Label2</info>
 						<textcolor>black</textcolor>
 					</control>
 
 				</itemlayout>
 
-				<focusedlayout height="114">
+				<focusedlayout height="50">
 
 					<control type="image">
-						<width>380</width>
-						<height>112</height>
+						<width>340</width>
+						<height>45</height>
 						<texture>other_textures/buttonfo.png</texture>
 						<animation effect="fade" start="100" end="50" condition="!Control.HasFocus(450)">Conditional</animation>
 					</control>
 
 					<control type="image">
-						<posx>8</posx>
-						<posy>8</posy>
-						<width>96</width>
-						<height>96</height>
+						<posx>297</posx>
+						<posy>2</posy>
+						<width>41</width>
+						<height>41</height>
 						<texture>$INFO[Listitem.Icon]</texture>
 					</control>
 
 					<control type="label">
-						<posx>115</posx>
+						<posx>10</posx>
 						<width>228</width>
 						<info>ListItem.Label</info>
-					</control>
-
-					<control type="label">
-						<posx>115</posx>
-						<posy>30</posy>
-						<width>228</width>
-						<info>ListItem.Label2</info>
 					</control>
 
 				</focusedlayout>
