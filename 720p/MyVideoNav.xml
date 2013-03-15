@@ -56,12 +56,6 @@
 				<effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic"/>
 			</animation>
 
-			<control type="button" id="20">
-				<align>left</align>
-				<label>$INFO[Container.ViewMode]</label>
-				<onclick>Container.NextViewMode</onclick>
-			</control>
-
 			<control type="button" id="3">
 				<description>Sort</description>
 				<width>240</width>
