@@ -30,7 +30,7 @@
         <animation type="VisibleChange">
           <effect type="fade" start="0" end="100" time="600" />
         </animation>
-        <visible>VideoPlayer.Content(Movies) | !VideoPlayer.Content(Movies)</visible>
+        <visible>VideoPlayer.Content(Movies) | !VideoPlayer.Content(Movies) + [!Window.IsVisible(osdvideosettings) + !Window.IsVisible(osdaudiosettings)]</visible>
       </control>
 
       <control type="image">
@@ -131,12 +131,12 @@
           <width>130</width>
           <height>25</height>
           <aspectratio align="left">keep</aspectratio>
-          <texture>other_textures/colorrating/$INFO[Player.StarRating]</texture>
+          <texture>other_textures/ColorRating/$INFO[Player.StarRating]</texture>
+          <visible>IsEmpty(VideoPlayer.EndTime)</visible>
         </control>
 
         <control type="label">
           <description>Now Playing</description>
-          <visible>IsEmpty(VideoPlayer.Tagline)</visible>
           <posx>0</posx>
           <posy>62</posy>
           <width>830</width>

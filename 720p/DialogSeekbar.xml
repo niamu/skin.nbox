@@ -274,11 +274,11 @@
         <height>25</height>
         <aspectratio align="left">keep</aspectratio>
         <texture>other_textures/ColorRating/$INFO[Player.StarRating]</texture>
+        <visible>IsEmpty(VideoPlayer.EndTime)</visible>
       </control>
 
       <control type="label">
         <description>Now Playing</description>
-        <visible>IsEmpty(VideoPlayer.Tagline)</visible>
         <posx>0</posx>
         <posy>62</posy>
         <width>830</width>
@@ -401,7 +401,7 @@
       <posx>515</posx>
       <posy>324</posy>
 
-      <visible>!IsEmpty(Player.CacheLevel) + [!StringCompare(Player.CacheLevel,100) + !StringCompare(Player.CacheLevel,0)] + !Player.paused</visible>
+      <visible>!IsEmpty(Player.CacheLevel) + !StringCompare(Player.CacheLevel,100)</visible>
 
       <control type="image">
         <description>background image</description>
