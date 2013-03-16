@@ -25,11 +25,11 @@
 		</control>
 
 		<control type="group">
-			<visible>Control.IsVisible(54) + !Window.IsVisible(DialogAddonSettings.xml)</visible>
-			<animation type="TYPE" condition="Window.IsVisible(2003)" reversible="false">
+			<visible>Control.IsVisible(54)</visible>
+			<animation type="TYPE" condition="Window.IsVisible(2003) | Window.IsVisible(DialogAddonSettings.xml)" reversible="false">
 				<effect type="slide" end="-1500,0" time="200"/>
 			</animation>
-			<animation type="TYPE" condition="!Window.IsVisible(2003)" reversible="false">
+			<animation type="TYPE" condition="!Window.IsVisible(2003) + !Window.IsVisible(DialogAddonSettings.xml)" reversible="false">
 				<effect type="slide" start="-1500,0" time="200"/>
 			</animation>
 

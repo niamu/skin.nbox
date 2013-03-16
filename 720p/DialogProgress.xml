@@ -4,38 +4,55 @@
 
 	<controls>
 
-		<include>GlobalOverlay</include>
-
 		<control type="group">
-			<posx>380</posx>
-			<posy>222</posy>
+			<posx>8</posx>
+			<posy>0</posy>
+			<visible>!Window.IsVisible(107) + !Window.IsVisible(151)</visible>
+
+			<animation type="WindowOpen">
+				<effect type="slide" time="300" start="-340, 0" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			<animation type="WindowClose">
+				<effect type="slide" time="300" start="0,0" end="-340,0" easing="in" tween="cubic" />
+			</animation>
+			<animation type="Visible">
+				<effect type="slide" time="300" start="-340, 0" end="0,0" easing="out" tween="cubic" />
+			</animation>
+			<animation type="Hidden">
+				<effect type="slide" time="300" start="0,0" end="-340,0" easing="in" tween="cubic" />
+			</animation>
 
 			<control type="image">
-				<posx>-20</posx>
-				<posy>-20</posy>
-				<width>560</width>
-				<height>276</height>
-				<texture border="22">button.png</texture>
+				<description>background image</description>
+				<posx>0</posx>
+				<posy>0</posy>
+				<width>340</width>
+				<height>100</height>
+				<aspectratio>scale</aspectratio>
+				<texture border="20">tile.png</texture>
 			</control>
-
 
 			<control type="label" id="1">
 				<description>heading</description>
-				<posx>10</posx>
-				<width>500</width>
+				<posx>20</posx>
+				<posy>50</posy>
+				<width>320</width>
+				<height>32</height>
 				<label>-</label>
-				<font>Large</font>
- 		        <textcolor>black</textcolor>
-				<align>left</align>
+				<textcolor>white</textcolor>
+				<scroll>true</scroll>
 			</control>
 
 			<control type="label" id="2">
 				<description>Line 1</description>
-				<posx>10</posx>
-				<posy>50</posy>
-				<width>500</width>
+				<posx>20</posx>
+				<posy>20</posy>
+				<width>320</width>
+				<height>32</height>
 				<label>-</label>
- 		        <textcolor>black</textcolor>
+				<textcolor>white</textcolor>
+				<scroll>true</scroll>
+				<font>Large</font>
 			</control>
 
 			<control type="label" id="3">
@@ -44,7 +61,7 @@
 				<posy>75</posy>
 				<width>500</width>
 				<label>-</label>
- 		        <textcolor>black</textcolor>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="label" id="4">
@@ -53,15 +70,17 @@
 				<posy>100</posy>
 				<width>500</width>
 				<label>-</label>
- 		        <textcolor>black</textcolor>
+				<textcolor>black</textcolor>
 			</control>
 
 			<control type="progress">
 				<description>Progressbar</description>
-				<posx>10</posx>
-				<posy>150</posy>
-				<width>500</width>
-				<height>18</height>
+				<posx>0</posx>
+				<posy>95</posy>
+				<width>340</width>
+				<height>5</height>
+				<texturebg>progressnotification.png</texturebg>
+				<midtexture>progresslime.png</midtexture>
 				<info>System.Progressbar</info>
 			</control>
 
@@ -76,9 +95,20 @@
 				<onup>10</onup>
 				<ondown>10</ondown>
 				<textcolor>black</textcolor>
+				<visible>false</visible>
 			</control>
 
-		
+		</control>
+
+		<control type="image" id="2">
+			<description>top left bar</description>
+			<posx>0</posx>
+			<posy>0</posy>
+			<width>8</width>
+			<height>100</height>
+			<visible>true</visible>
+			<texture>bar.png</texture>
+		</control>
 
 	</controls>
 

@@ -304,7 +304,6 @@
 				<control type="button" id="29">
 					<description>OK</description>
 					<width>300</width>
-					<include>ButtonInfoDialogsCommonValues</include>
 					<label>186</label>
 					<focusedcolor>Accent</focusedcolor>
 					<align>right</align>
@@ -312,7 +311,6 @@
 				<control type="button" id="26">
 					<description>Add Group</description>
 					<width>300</width>
-					<include>ButtonInfoDialogsCommonValues</include>
 					<label>Add Group</label>
 					<focusedcolor>Accent</focusedcolor>
 					<align>right</align>
@@ -320,7 +318,6 @@
 				<control type="button" id="27">
 					<description>Rename Group</description>
 					<width>300</width>
-					<include>ButtonInfoDialogsCommonValues</include>
 					<label>Rename Group</label>
 					<focusedcolor>Accent</focusedcolor>
 					<align>right</align>
@@ -328,7 +325,6 @@
 				<control type="button" id="28">
 					<description>Delete Group</description>
 					<width>300</width>
-					<include>ButtonInfoDialogsCommonValues</include>
 					<label>Delete Group</label>
 					<focusedcolor>Accent</focusedcolor>
 					<align>right</align>

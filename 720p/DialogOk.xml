@@ -21,7 +21,7 @@
 			<control type="label" id="1">
 				<description>heading</description>
 				<posx>30</posx>
-				<posy>20</posx>
+				<posy>20</posy>
 				<width>370</width>
 				<label>-</label>
 				<font>Large</font>
@@ -71,8 +71,5 @@
 
 		</control>
 
-		
-
 	</controls>
-
 </window>
