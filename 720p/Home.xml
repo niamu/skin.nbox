@@ -4024,7 +4024,7 @@
               <width>470</width>
               <font>Home_numbers</font>
               <align>left</align>
-              <label> $INFO[PVR.NowRecordingChannel] [COLOR Accent]$INFO[PVR.NowRecordingTitle][/COLOR]</label>
+              <label> [COLOR Accent]$INFO[PVR.NowRecordingTitle][/COLOR] $INFO[PVR.NowRecordingChannel]</label>
             </control>
           </control>
           <control type="group">
@@ -4073,7 +4073,7 @@
               <width>470</width>
               <font>Home_numbers</font>
               <align>left</align>
-              <label> $INFO[PVR.NextRecordingChannel] [COLOR Accent]$INFO[PVR.NextRecordingTitle][/COLOR]</label>
+              <label> [COLOR Accent]$INFO[PVR.NextRecordingTitle][/COLOR] $INFO[PVR.NextRecordingChannel]</label>
             </control>
           </control>
         </control>

@@ -79,10 +79,11 @@
         <posx>325</posx>
         <posy>515</posy>
 
-        <control type="fadelabel">
+        <control type="textbox">
           <posx>-175</posx>
-          <posy>158</posy>
+          <posy>165</posy>
           <width>980</width>
+          <height>28</height>
           <align>left</align>
           <shadowcolor>black</shadowcolor>
           <label>$INFO[VideoPlayer.Plot]</label>
@@ -103,7 +104,7 @@
           <posx>0</posx>
           <posy>32</posy>
           <width>830</width>
-          <label>[LOWERCASE]$INFO[VideoPlayer.Tagline][/LOWERCASE][COLOR Accent]$INFO[VideoPlayer.EndTime,[COLOR white]End Time: [/COLOR]][/COLOR] [COLOR Accent]$INFO[VideoPlayer.NextTitle,[COLOR white]On Next: [/COLOR]][/COLOR]</label>
+          <label>[LOWERCASE]$INFO[VideoPlayer.Tagline][/LOWERCASE]</label>
           <scroll>true</scroll>
           <font>Medium</font>
           <align>left</align>

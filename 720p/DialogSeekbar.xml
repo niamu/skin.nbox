@@ -8,6 +8,7 @@
     <control type="group">
       <posx>515</posx>
       <posy>440</posy>
+      <visible>!Player.Caching</visible>
 
       <control type="label">
         <posx>25</posx>
