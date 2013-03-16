@@ -87,6 +87,7 @@
           <align>left</align>
           <shadowcolor>black</shadowcolor>
           <label>$INFO[VideoPlayer.Plot]</label>
+          <autoscroll delay="3000" time="3000" repeat="3000">true</autoscroll>
           <visible>Window.IsVisible(fullscreeninfo) | Window.IsVisible(seekbar)</visible>
         </control>
 
@@ -161,6 +162,7 @@
           <scroll>true</scroll>
           <font>Medium</font>
           <align>left</align>
+          <visible>IsEmpty(VideoPlayer.EndTime)</visible>
         </control>
       </control>
 
