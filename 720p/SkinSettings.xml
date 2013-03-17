@@ -1,5 +1,8 @@
 <window id="56">
 	<defaultcontrol always="true">100</defaultcontrol>
+	<onload condition="IsEmpty(Skin.String(ItemsTypeTV))">Skin.SetString(ItemsTypeTV,Recent)</onload>
+	<onload condition="IsEmpty(Skin.String(ItemsTypeMovies))">Skin.SetString(ItemsTypeMovies,Recent)</onload>
+	<onload condition="IsEmpty(Skin.String(ItemsTypeMusic))">Skin.SetString(ItemsTypeMusic,Recent)</onload>
 	<allowoverlay>yes</allowoverlay>
 
 	<controls>
@@ -173,6 +176,45 @@
 						<selected>Skin.HasSetting(HideTV)</selected>
 						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
 						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					</control>
+				
+				
+					<control type="button" id="105">
+						<description>Movies to show:</description>
+						<width>820</width>
+						<align>left</align>
+						<label>Movies to show:</label>
+						<label2>[COLOR Accent]$INFO[Skin.String(ItemsTypeMovies)][/COLOR]</label2>
+						<focusedcolor>Accent</focusedcolor>
+						<onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),Random) | IsEmpty(Skin.String(ItemsTypeMovies))">Skin.SetString(ItemsTypeMovies,Recommended)</onclick>
+                		<onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),Recent)">Skin.SetString(ItemsTypeMovies,Random)</onclick>
+                		<onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),Recommended)">Skin.SetString(ItemsTypeMovies,Recent)</onclick>
+                		<onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),Random)">Skin.SetString(ItemsTypeMovies,Recommended)</onclick>
+					</control>
+				
+					<control type="button" id="106">
+						<description>TV to show:</description>
+						<width>820</width>
+						<align>left</align>
+						<label>TV to show:</label>
+						<label2>[COLOR Accent]$INFO[Skin.String(ItemsTypeTV)][/COLOR]</label2>
+						<focusedcolor>Accent</focusedcolor>
+						<onclick condition="Stringcompare(Skin.String(ItemsTypeTV),Random) | IsEmpty(Skin.String(ItemsTypeTV))">Skin.SetString(ItemsTypeTV,Recommended)</onclick>
+                		<onclick condition="Stringcompare(Skin.String(ItemsTypeTV),Recent)">Skin.SetString(ItemsTypeTV,Random)</onclick>
+             		   	<onclick condition="Stringcompare(Skin.String(ItemsTypeTV),Recommended)">Skin.SetString(ItemsTypeTV,Recent)</onclick>
+                		<onclick condition="Stringcompare(Skin.String(ItemsTypeTV),Random)">Skin.SetString(ItemsTypeTV,Recommended)</onclick>
+					</control>
+					<control type="button" id="107">
+						<description>Music to show:</description>
+						<width>820</width>
+						<align>left</align>
+						<label>Music to show:</label>
+						<label2>[COLOR Accent]$INFO[Skin.String(ItemsTypeMusic)][/COLOR]</label2>
+						<focusedcolor>Accent</focusedcolor>
+						<onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),Random) | IsEmpty(Skin.String(ItemsTypeMusic))">Skin.SetString(ItemsTypeMusic,Recommended)</onclick>
+                		<onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),Recent)">Skin.SetString(ItemsTypeMusic,Random)</onclick>
+                		<onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),Recommended)">Skin.SetString(ItemsTypeMusic,Recent)</onclick>
+                		<onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),Random)">Skin.SetString(ItemsTypeMusic,Recommended)</onclick>
 					</control>
 				</control>
 

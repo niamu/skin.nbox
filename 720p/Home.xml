@@ -423,7 +423,10 @@
 
 
         <control type="label">
-          <label>recent</label>
+          <include condition="Stringcompare(Skin.String(ItemsTypeMovies),Random)">RandomItemsTitle</include>
+          <include condition="Stringcompare(Skin.String(ItemsTypeMovies),Recent)">RecentItemsTitle</include>
+          <include condition="Stringcompare(Skin.String(ItemsTypeMovies),Recommended)">RecommendedItemsTitle</include>
+    	  
           <posx>720</posx>
           <posy>200</posy>
           <height>30</height>
@@ -835,60 +838,9 @@
           </focusedlayout>
 
           <content>
-            <item id="11">
-              <label>$INFO[Window.Property(LatestMovie.1.Year)]</label>
-              <label2>$INFO[Window.Property(LatestMovie.1.Title)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestMovie.1.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestMovie.1.Thumb)]</thumb>
-            </item>
-            <item id="12">
-              <label>$INFO[Window.Property(LatestMovie.2.Year)]</label>
-              <label2>$INFO[Window.Property(LatestMovie.2.Title)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestMovie.2.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestMovie.2.Thumb)]</thumb>
-            </item>
-            <item id="13">
-              <label>$INFO[Window.Property(LatestMovie.3.Year)]</label>
-              <label2>$INFO[Window.Property(LatestMovie.3.Title)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestMovie.3.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestMovie.3.Thumb)]</thumb>
-            </item>
-            <item id="14">
-              <label>$INFO[Window.Property(LatestMovie.4.Year)]</label>
-              <label2>$INFO[Window.Property(LatestMovie.4.Title)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestMovie.4.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestMovie.4.Thumb)]</thumb>
-            </item>
-            <item id="15">
-              <label>$INFO[Window.Property(LatestMovie.5.Year)]</label>
-              <label2>$INFO[Window.Property(LatestMovie.5.Title)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestMovie.5.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestMovie.5.Thumb)]</thumb>
-            </item>
-            <item id="16">
-              <label>$INFO[Window.Property(LatestMovie.6.Year)]</label>
-              <label2>$INFO[Window.Property(LatestMovie.6.Title)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestMovie.6.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestMovie.6.Thumb)]</thumb>
-            </item>
-            <item id="17">
-              <label>$INFO[Window.Property(LatestMovie.7.Year)]</label>
-              <label2>$INFO[Window.Property(LatestMovie.7.Title)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestMovie.7.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestMovie.7.Thumb)]</thumb>
-            </item>
-            <item id="18">
-              <label>$INFO[Window.Property(LatestMovie.8.Year)]</label>
-              <label2>$INFO[Window.Property(LatestMovie.8.Title)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestMovie.8.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestMovie.8.Thumb)]</thumb>
-            </item>
-            <item id="19">
-              <label>$INFO[Window.Property(LatestMovie.9.Year)]</label>
-              <label2>$INFO[Window.Property(LatestMovie.9.Title)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestMovie.9.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestMovie.9.Thumb)]</thumb>
-            </item>
+          	<include condition="Stringcompare(Skin.String(ItemsTypeMovies),Random)">RandomItemsMovies</include>
+          	<include condition="Stringcompare(Skin.String(ItemsTypeMovies),Recent)">RecentItemsMovies</include>
+          	<include condition="Stringcompare(Skin.String(ItemsTypeMovies),Recommended)">RecommendedItemsMovies</include>
           </content>
         </control>
 
@@ -947,7 +899,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.1.Title)]</label>
+            <label> $INFO[Container(66).ListItem(0).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -961,7 +913,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.4.Title)]</label>
+            <label> $INFO[Container(66).ListItem(3).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -987,7 +939,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.1.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(0).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1001,7 +953,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.4.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1019,7 +971,7 @@
           <posx>159</posx>
           <posy>0</posy>
           <control type="image">
-            <visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
+            <visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>
             <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
             <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
             <posx>0</posx>
@@ -1032,7 +984,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.2.Title)]</label>
+            <label> $INFO[Container(66).ListItem(1).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1046,7 +998,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.5.Title)]</label>
+            <label> $INFO[Container(66).ListItem(4).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1072,7 +1024,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.2.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(1).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1086,7 +1038,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.5.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(4).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1117,7 +1069,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.3.Title)]</label>
+            <label> $INFO[Container(66).ListItem(2).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1131,7 +1083,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.6.Title)]</label>
+            <label> $INFO[Container(66).ListItem(5).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1157,7 +1109,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.3.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(2).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1171,7 +1123,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.6.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(5).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1202,7 +1154,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.4.Title)]</label>
+            <label> $INFO[Container(66).ListItem(3).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1216,7 +1168,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.7.Title)]</label>
+            <label> $INFO[Container(66).ListItem(6).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1242,7 +1194,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.4.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1256,7 +1208,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.7.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(6).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1287,7 +1239,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.5.Title)]</label>
+            <label> $INFO[Container(66).ListItem(4).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1301,7 +1253,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.8.Title)]</label>
+            <label> $INFO[Container(66).ListItem(7).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1327,7 +1279,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.5.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(4).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1341,7 +1293,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.8.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(7).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1372,7 +1324,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.6.Title)]</label>
+            <label> $INFO[Container(66).ListItem(5).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1386,7 +1338,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label> $INFO[Window.Property(LatestMovie.9.Title)]</label>
+            <label> $INFO[Container(66).ListItem(8).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1412,7 +1364,7 @@
 
           <control type="fadelabel">
             <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.6.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(5).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1426,7 +1378,7 @@
 
           <control type="fadelabel">
             <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestMovie.9.Title)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(8).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1461,8 +1413,11 @@
           <align>left</align>
         </control>	
 
+
         <control type="label">
-          <label>recent</label>
+          <include condition="Stringcompare(Skin.String(ItemsTypeTV),Random)">RandomItemsTitle</include>
+          <include condition="Stringcompare(Skin.String(ItemsTypeTV),Recent)">RecentItemsTitle</include>
+          <include condition="Stringcompare(Skin.String(ItemsTypeTV),Recommended)">RecommendedItemsTitle</include>
           <posx>720</posx>
           <posy>200</posy>
           <height>30</height>
@@ -1875,60 +1830,9 @@
           </focusedlayout>
 
           <content>
-            <item id="11">
-              <label>$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label>
-              <label2>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.1.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
-            </item>
-            <item id="12">
-              <label>$INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label>
-              <label2>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
-            </item>
-            <item id="13">
-              <label>$INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label>
-              <label2>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.3.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
-            </item>
-            <item id="14">
-              <label>$INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label>
-              <label2>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.4.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestEpisode.4.Thumb)]</thumb>
-            </item>
-            <item id="15">
-              <label>$INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
-              <label2>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.5.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestEpisode.5.Thumb)]</thumb>
-            </item>
-            <item id="16">
-              <label>$INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
-              <label2>$INFO[Window.Property(LatestEpisode.6.ShowTitle)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.6.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestEpisode.6.Thumb)]</thumb>
-            </item>
-            <item id="17">
-              <label>$INFO[Window.Property(LatestEpisode.7.EpisodeTitle)]</label>
-              <label2>$INFO[Window.Property(LatestEpisode.7.ShowTitle)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.7.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestEpisode.7.Thumb)]</thumb>
-            </item>
-            <item id="18">
-              <label>$INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label>
-              <label2>$INFO[Window.Property(LatestEpisode.8.ShowTitle)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.8.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestEpisode.8.Thumb)]</thumb>
-            </item>
-            <item id="19">
-              <label>$INFO[Window.Property(LatestEpisode.9.EpisodeTitle)]</label>
-              <label2>$INFO[Window.Property(LatestEpisode.9.ShowTitle)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.9.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestEpisode.9.Thumb)]</thumb>
-            </item>
+          	<include condition="Stringcompare(Skin.String(ItemsTypeTV),Random)">RandomItemsTV</include>
+          	<include condition="Stringcompare(Skin.String(ItemsTypeTV),Recent)">RecentItemsTV</include>
+          	<include condition="Stringcompare(Skin.String(ItemsTypeTV),Recommended)">RecommendedItemsTV</include>
           </content>
         </control>
 
@@ -1970,6 +1874,7 @@
         <posy>290</posy>
         <width>560</width>
         <height>320</height>
+        <label>Foobar</label>
 
         <control type="group"> <!-- start black 1 -->	
           <posx>0</posx>
@@ -1988,7 +1893,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label>
+            <label>$INFO[Container(68).ListItem(0).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2002,7 +1907,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label>
+            <label>$INFO[Container(68).ListItem(3).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2028,7 +1933,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.1.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(0).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2042,7 +1947,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.4.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2073,7 +1978,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label>
+            <label> $INFO[Container(68).ListItem(1).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2087,7 +1992,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
+            <label> $INFO[Container(68).ListItem(4).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2113,7 +2018,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.2.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(1).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2127,7 +2032,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.5.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(4).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2158,7 +2063,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label>
+            <label> $INFO[Container(68).ListItem(2).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2172,7 +2077,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
+            <label>$INFO[Container(68).ListItem(5).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2198,7 +2103,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.3.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(2).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2212,7 +2117,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.6.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(5).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2243,7 +2148,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label>
+            <label>$INFO[Container(68).ListItem(3).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2257,7 +2162,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.7.EpisodeTitle)]</label>
+            <label>$INFO[Container(68).ListItem(6).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2283,7 +2188,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.4.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2297,7 +2202,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.7.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(6).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2328,7 +2233,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
+            <label>$INFO[Container(68).ListItem(4).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2342,7 +2247,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label>
+            <label>$INFO[Container(68).ListItem(7).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2368,7 +2273,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.5.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(4).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2382,7 +2287,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.8.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(7).Label][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2413,7 +2318,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
+            <label>$INFO[Container(68).ListItem(5).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2427,7 +2332,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label> $INFO[Window.Property(LatestEpisode.9.EpisodeTitle)]</label>
+            <label>$INFO[Container(68).ListItem(8).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2453,7 +2358,7 @@
 
           <control type="fadelabel">
             <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.6.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(5).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2467,7 +2372,7 @@
 
           <control type="fadelabel">
             <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestEpisode.9.ShowTitle)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(8).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2503,8 +2408,11 @@
           <align>left</align>
         </control>	
 
+
         <control type="label">
-          <label>recent</label>
+          <include condition="Stringcompare(Skin.String(ItemsTypeMusic),Random)">RandomItemsTitle</include>
+          <include condition="Stringcompare(Skin.String(ItemsTypeMusic),Recent)">RecentItemsTitle</include>
+          <include condition="Stringcompare(Skin.String(ItemsTypeMusic),Recommended)">RecommendedItemsTitle</include>
           <posx>720</posx>
           <posy>200</posy>
           <height>30</height>
@@ -2916,60 +2824,9 @@
           </focusedlayout>
 
           <content>
-            <item id="11">
-              <label>$INFO[Window.Property(LatestAlbum.1.Title)]</label>
-              <label2>$INFO[Window.Property(LatestAlbum.1.Artist)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.1.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestAlbum.1.Thumb)]</thumb>
-            </item>
-            <item id="12">
-              <label>$INFO[Window.Property(LatestAlbum.2.Title)]</label>
-              <label2>$INFO[Window.Property(LatestAlbum.2.Artist)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.2.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestAlbum.2.Thumb)]</thumb>
-            </item>
-            <item id="13">
-              <label>$INFO[Window.Property(LatestAlbum.3.Title)]</label>
-              <label2>$INFO[Window.Property(LatestAlbum.3.Artist)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.3.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestAlbum.3.Thumb)]</thumb>
-            </item>
-            <item id="14">
-              <label>$INFO[Window.Property(LatestAlbum.4.Title)]</label>
-              <label2>$INFO[Window.Property(LatestAlbum.4.Artist)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.4.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestAlbum.4.Thumb)]</thumb>
-            </item>
-            <item id="15">
-              <label>$INFO[Window.Property(LatestAlbum.5.Title)]</label>
-              <label2>$INFO[Window.Property(LatestAlbum.5.Artist)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.5.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestAlbum.5.Thumb)]</thumb>
-            </item>
-            <item id="16">
-              <label>$INFO[Window.Property(LatestAlbum.6.Title)]</label>
-              <label2>$INFO[Window.Property(LatestAlbum.6.Artist)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.6.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestAlbum.6.Thumb)]</thumb>
-            </item>
-            <item id="17">
-              <label>$INFO[Window.Property(LatestAlbum.7.Title)]</label>
-              <label2>$INFO[Window.Property(LatestAlbum.7.Artist)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.7.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestAlbum.7.Thumb)]</thumb>
-            </item>
-            <item id="18">
-              <label>$INFO[Window.Property(LatestAlbum.8.Title)]</label>
-              <label2>$INFO[Window.Property(LatestAlbum.8.Artist)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.8.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestAlbum.8.Thumb)]</thumb>
-            </item>
-            <item id="19">
-              <label>$INFO[Window.Property(LatestAlbum.9.Title)]</label>
-              <label2>$INFO[Window.Property(LatestAlbum.9.Artist)]</label2>
-              <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.9.Path)])</onclick>
-              <thumb>$INFO[Window.Property(LatestAlbum.9.Thumb)]</thumb>
-            </item>
+          	<include condition="Stringcompare(Skin.String(ItemsTypeMusic),Random)">RandomItemsMusic</include>
+          	<include condition="Stringcompare(Skin.String(ItemsTypeMusic),Recent)">RecentItemsMusic</include>
+          	<include condition="Stringcompare(Skin.String(ItemsTypeMusic),Recommended)">RecommendedItemsMusic</include>
           </content>
         </control>
 
@@ -3027,7 +2884,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.1.Title)]</label>
+            <label>$INFO[Container(67).ListItem(0).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3041,7 +2898,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.4.Title)]</label>
+            <label>$INFO[Container(67).ListItem(3).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3055,7 +2912,7 @@
 
           <control type="fadelabel">
             <visible>!Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.7.Title)]</label>
+            <label>$INFO[Container(67).ListItem(6).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3081,7 +2938,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.1.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(0).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3095,7 +2952,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.4.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3109,7 +2966,7 @@
 
           <control type="fadelabel">
             <visible>!Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.7.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(6).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3140,7 +2997,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.2.Title)]</label>
+            <label>$INFO[Container(67).ListItem(1).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3154,7 +3011,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.5.Title)]</label>
+            <label>$INFO[Container(67).ListItem(4).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3168,7 +3025,7 @@
 
           <control type="fadelabel">
             <visible>!Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.8.Title)]</label>
+            <label>$INFO[Container(67).ListItem(7).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3194,7 +3051,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.2.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(1).Label2]][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3208,7 +3065,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.5.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(4).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3222,7 +3079,7 @@
 
           <control type="fadelabel">
             <visible>!Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.8.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(7).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3253,7 +3110,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.3.Title)]</label>
+            <label>$INFO[Container(67).ListItem(2).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3267,7 +3124,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.6.Title)]</label>
+            <label>$INFO[Container(67).ListItem(5).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3281,7 +3138,7 @@
 
           <control type="fadelabel">
             <visible>!Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.9.Title)]</label>
+            <label>$INFO[Container(67).ListItem(8).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3307,7 +3164,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.3.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(2).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3321,7 +3178,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.6.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(5).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3335,7 +3192,7 @@
 
           <control type="fadelabel">
             <visible>!Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.9.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(8).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3366,7 +3223,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.4.Title)]</label>
+            <label> $INFO[Container(67).ListItem(3).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3380,7 +3237,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.7.Title)]</label>
+            <label> $INFO[Container(67).ListItem(6).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3406,7 +3263,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.4.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3420,7 +3277,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.7.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(6).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3452,7 +3309,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.5.Title)]</label>
+            <label> $INFO[Container(67).ListItem(4).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3466,7 +3323,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.8.Title)]</label>
+            <label> $INFO[Container(67).ListItem(7).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3492,7 +3349,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.5.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(4).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3506,7 +3363,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.8.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(7).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3537,7 +3394,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.6.Title)]</label>
+            <label> $INFO[Container(67).ListItem(5).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3551,7 +3408,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label> $INFO[Window.Property(LatestAlbum.9.Title)]</label>
+            <label> $INFO[Container(67).ListItem(8).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3577,7 +3434,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.6.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(5).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3591,7 +3448,7 @@
 
           <control type="fadelabel">
             <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Window.Property(LatestAlbum.9.Artist)][/B][/COLOR]</label>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(8).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
