@@ -241,7 +241,7 @@
 				<control type="scrollbar" id="64">
 					<posx>1135</posx>
 					<posy>288</posy>
-					<width>10</width>
+					<width>8</width>
 					<height>315</height>
 					<texturesliderbackground></texturesliderbackground>
 					<textureslidernib>bar.png</textureslidernib>
