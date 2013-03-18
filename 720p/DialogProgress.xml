@@ -86,16 +86,7 @@
 
 			<control type="button" id="10">
 				<description>Cancel</description>
-				<posx>185</posx>
-				<posy>178</posy>
-				<width>150</width>
-				<label>222</label>
-				<onleft>10</onleft>
-				<onright>10</onright>
-				<onup>10</onup>
-				<ondown>10</ondown>
-				<textcolor>black</textcolor>
-				<visible>false</visible>
+				<include>HiddenButton</include>
 			</control>
 
 		</control>
