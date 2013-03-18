@@ -1,0 +1,120 @@
+<window id="139">
+	<defaultcontrol always="true">5</defaultcontrol>
+	<allowoverlay>yes</allowoverlay>
+
+	<controls>
+
+		<control type="group">
+			<animation type="WindowClose">
+				<effect type="fade" time="300"/>
+				<effect type="slide" end="+1500,0" time="300"/>
+			</animation>
+			<animation type="WindowOpen">
+				<effect type="fade" time="300"/>
+				<effect type="slide" start="+1500,0" time="300"/>
+			</animation>
+
+			<control type="group">
+				<posx></posx>
+				<posy></posy>
+
+				<control type="image">
+					<posx>545</posx>
+					<posy>288</posy>
+					<width>600</width>
+					<height>315</height>
+					<texture>music_fanart_diffuse.png</texture>
+				</control>
+
+				<control type="image">
+					<description>Cover Image</description>
+					<posx>230</posx>
+					<posy>180</posy>
+					<width>424</width>
+					<height>424</height>
+					<texture>$INFO[ListItem.Icon]</texture>
+					<aspectratio align="right" aligny="center">scale</aspectratio>
+					<bordertexture border="5">white_box.png</bordertexture>
+					<bordersize>5</bordersize>
+				</control>
+
+				<control type="fadelabel" id="140">
+					<posx>682</posx>
+					<posy>171</posy>
+					<height>30</height>
+					<width>598</width>
+					<font>Home_menu</font>
+					<aligny>top</aligny>
+					<label>[COLOR Accent]$INFO[ListItem.Album][/COLOR] $INFO[ListItem.Title]</label>
+					<visible>true</visible>
+					<scroll>true</scroll>
+					<scrollout>false</scrollout>
+					<pauseatend>600</pauseatend>
+					<scrollspeed>50</scrollspeed>
+					<visible>Container.Content(Songs)</visible>
+				</control>
+
+				<control type="list" id="5">
+					<posx>10</posx>
+					<posy>74</posy>
+					<width>580</width>
+					<height>368</height>
+					<onleft>450</onleft>
+					<onright>450</onright>
+					<onup>450</onup>
+					<ondown>450</ondown>
+
+					<itemlayout height="46">
+
+						<control type="image">
+							<width>580</width>
+							<height>44</height>
+							<texture border="2">other_textures/ButtonNF.png</texture>
+						</control>
+
+						<control type="label">
+							<posx>20</posx>
+							<width>270</width>
+							<info>ListItem.Label</info>
+						</control>
+
+						<control type="label">
+							<posx>560</posx>
+							<width>270</width>
+							<align>right</align>
+							<info>ListItem.Label2</info>
+						</control>
+
+					</itemlayout>
+
+					<focusedlayout height="46">
+
+						<control type="image">
+							<width>580</width>
+							<height>44</height>
+							<texture border="5">other_textures/ButtonFO.png</texture>
+						</control>
+
+						<control type="label">
+							<posx>20</posx>
+							<width>270</width>
+							<info>ListItem.Label</info>
+						</control>
+
+						<control type="label">
+							<posx>560</posx>
+							<width>270</width>
+							<align>right</align>
+							<info>ListItem.Label2</info>
+						</control>
+
+					</focusedlayout>
+
+				</control>
+
+			</control>
+
+		</control>
+
+	</controls>
+</window>
