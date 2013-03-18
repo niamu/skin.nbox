@@ -150,7 +150,7 @@
 					<texturefocus>other_textures/osd/pausegreenfo.png</texturefocus>
 					<texturenofocus>other_textures/osd/pausenf.png</texturenofocus>
 					<usealttexture>Player.paused | Player.Forwarding | Player.rewinding</usealttexture>
-					<alttexturefocus>other_textures/osd/playGreenfo.png</alttexturefocus>
+					<alttexturefocus>other_textures/osd/playgreenfo.png</alttexturefocus>
 					<alttexturenofocus>other_textures/osd/playnf.png</alttexturenofocus>
 					<onclick>PlayerControl(Play)</onclick>
 				</control>
