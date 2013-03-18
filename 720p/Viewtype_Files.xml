@@ -734,7 +734,6 @@
 			<onright>50</onright>
 			<showonepage>true</showonepage>
 			<orientation>vertical</orientation>
-			<include>Animation_CommonFade</include>
 			<animation effect="slide" start="-500,0" end="0,0" time="400" tween="cubic" easing="inout" condition="Control.HasFocus(60)">Conditional</animation>
 		</control>
 		
