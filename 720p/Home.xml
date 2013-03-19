@@ -2625,11 +2625,11 @@
               <ondown>604</ondown>
               <onleft>5000</onleft>
               <onright>603</onright>
-              <onclick>ActivateWindow(MusicLibrary, RecentlyPlayedAlbums,return)</onclick>
+              <onclick>ActivateWindow(MusicLibrary, Playlists,return)</onclick>
             </control>
 
             <control type="label">
-              <label>Last Played</label>
+              <label>Playlists</label>
               <posx>10</posx>
               <posy>119</posy>
               <height>30</height>

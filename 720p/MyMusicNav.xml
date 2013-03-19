@@ -8,7 +8,7 @@
 			<include>HomeBackground</include>
 			<include>BarClock</include>
 			<control type="group">
-				<visible>Container.Content(songs) | Container.Content(playlists)</visible>
+				<visible>Container.Content(songs) | [Container.Content(playlists) + !Control.HasFocus(50)]</visible>
 				<include>BackgroundTextScroll</include>
 				<include>ListWalls</include>
 			</control>

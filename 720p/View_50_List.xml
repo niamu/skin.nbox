@@ -9,8 +9,8 @@
       <height>72</height>
       <texture background="true">other_textures/osd/playlistnf.png</texture>
       <aspectratio scalediffuse="false">stretch</aspectratio>
-      <animation effect="slide" start="0,0" end="-100,0" time="200" condition="ControlGroup(9000).HasFocus() | [Window.IsVisible(2003) | Window.IsVisible(2001) | Window.IsVisible(135) | Window.IsVisible(139)]" reversible="false">Conditional</animation>
-      <animation effect="slide" start="-100,0" end="0,0" time="200" delay="100" condition="!ControlGroup(9000).HasFocus() + [!Window.IsVisible(2003) + !Window.IsVisible(2001) + !Window.IsVisible(135) + !Window.IsVisible(139)]" reversible="false">Conditional</animation>
+      <animation effect="slide" start="0,0" end="-100,0" time="200" condition="ControlGroup(9000).HasFocus() | [Window.IsVisible(2003) | Window.IsVisible(2001) | Window.IsVisible(135) | Window.IsVisible(139) | Window.IsVisible(136)]" reversible="false">Conditional</animation>
+      <animation effect="slide" start="-100,0" end="0,0" time="200" delay="100" condition="!ControlGroup(9000).HasFocus() + [!Window.IsVisible(2003) + !Window.IsVisible(2001) + !Window.IsVisible(135) + !Window.IsVisible(139) + !Window.IsVisible(136)]" reversible="false">Conditional</animation>
       <animation type="WindowClose">
         <effect type="slide" start="0,0" end="-100,0" time="200" />
       </animation>
@@ -27,10 +27,10 @@
 
     <control type="group">
       <visible>Control.IsVisible(50) + !Window.IsVisible(DialogAddonSettings.xml)</visible>
-      <animation type="TYPE" condition="Window.IsVisible(2001) | Window.IsVisible(139)" reversible="false">
+      <animation type="TYPE" condition="Window.IsVisible(2001) | Window.IsVisible(139) | Window.IsVisible(136)" reversible="false">
         <effect type="slide" end="-1500,0" time="200"/>
       </animation>
-      <animation type="TYPE" condition="!Window.IsVisible(2001) + !Window.IsVisible(139)" reversible="false">
+      <animation type="TYPE" condition="!Window.IsVisible(2001) + !Window.IsVisible(139) + !Window.IsVisible(136)" reversible="false">
         <effect type="slide" start="-1500,0" time="200"/>
       </animation>		
 
