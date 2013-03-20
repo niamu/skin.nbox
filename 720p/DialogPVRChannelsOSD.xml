@@ -75,7 +75,7 @@
 				<width>340</width>
 				<font>Medium</font>
 				<align>left</align>
-				<label>[COLOR Accent]$INFO[Container(11).ListItem.NextTitle,[LOWERCASE][COLOR white]On Next: [/COLOR][/LOWERCASE]][/COLOR]</label>
+				<label>[COLOR Accent]$INFO[Container(11).ListItem.NextTitle,[LOWERCASE][COLOR white]$LOCALIZE[19031]: [/COLOR][/LOWERCASE]][/COLOR]</label>
 			</control>
 
 			<control type="list" id="11">

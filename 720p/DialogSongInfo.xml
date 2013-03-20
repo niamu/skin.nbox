@@ -75,7 +75,7 @@
 						<width>530</width>
 						<height>28</height>
 						<font>Sort_Font_Small</font>
-						<label>$LOCALIZE[557]: [COLOR Accent]$INFO[ListItem.Artist][/COLOR]   [COLOR Accent]$INFO[ListItem.Genre,[COLOR White][LOWERCASE]$LOCALIZE[515][/LOWERCASE]: [/COLOR]][/COLOR]</label>
+						<label>[LOWERCASE]$LOCALIZE[557][/LOWERCASE]: [COLOR Accent]$INFO[ListItem.Artist][/COLOR]   [COLOR Accent]$INFO[ListItem.Genre,[COLOR White][LOWERCASE]$LOCALIZE[515][/LOWERCASE]: [/COLOR]][/COLOR]</label>
 						<scroll>true</scroll>
 					</control>
 
@@ -136,7 +136,7 @@
 					<control type="button" id="13">
 						<description>Poster button</description>
 						<width>180</width>
-						<label>Poster</label>
+						<label>$LOCALIZE[31723]</label>
 						<align>right</align>
 						<focusedcolor>Accent</focusedcolor>
 					</control>

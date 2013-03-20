@@ -27,7 +27,7 @@
 				<posx>30</posx>
 				<posy>70</posy>
 				<width>400</width>
-				<label>timer</label>
+				<label>[LOWERCASE]$LOCALIZE[19040][/LOWERCASE]</label>
 				<font>Home_sub_header</font>
 				<align>left</align>
 				<textcolor>black</textcolor>

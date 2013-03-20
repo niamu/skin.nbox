@@ -36,7 +36,7 @@
 					<posx>0</posx>
 					<posy>32</posy>
 					<width>830</width>
-					<label>[LOWERCASE]$INFO[VideoPlayer.Tagline][/LOWERCASE][COLOR Accent]$INFO[VideoPlayer.EndTime,[COLOR white]End Time: [/COLOR]][/COLOR] [COLOR Accent]$INFO[VideoPlayer.NextTitle,[COLOR white]On Next: [/COLOR]][/COLOR]</label>
+					<label>[LOWERCASE]$INFO[VideoPlayer.Tagline][/LOWERCASE][COLOR Accent]$INFO[VideoPlayer.EndTime,[COLOR white]$LOCALIZE[19127]: [/COLOR]][/COLOR] [COLOR Accent]$INFO[VideoPlayer.NextTitle,[COLOR white]$LOCALIZE[19031]: [/COLOR]][/COLOR]</label>
 					<scroll>true</scroll>
 					<font>Medium</font>
 					<align>left</align>
@@ -48,7 +48,7 @@
 					<posx>0</posx>
 					<posy>32</posy>
 					<width>830</width>
-					<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White]director: [/COLOR]][/COLOR]</label>
+					<label>[COLOR Accent]$INFO[VideoPlayer.Director,[COLOR White][LOWERCASE]$LOCALIZE[20339][/LOWERCASE]: [/COLOR]][/COLOR]</label>
 					<scroll>true</scroll>
 					<font>Medium</font>
 					<align>left</align>
@@ -61,7 +61,7 @@
 					<posx>0</posx>
 					<posy>32</posy>
 					<width>830</width>
-					<label>$INFO[VideoPlayer.TVShowTitle][COLOR Accent] $INFO[VideoPlayer.Season,Season ]$INFO[VideoPlayer.Episode, Episode ][/COLOR]</label>
+					<label>$INFO[VideoPlayer.TVShowTitle][COLOR Accent] $INFO[VideoPlayer.Season,$LOCALIZE[20373] ]$INFO[VideoPlayer.Episode, $LOCALIZE[20359] ] [/COLOR]</label>
 					<scroll>true</scroll>
 					<font>Medium</font>
 					<align>left</align>

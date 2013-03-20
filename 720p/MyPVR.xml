@@ -1,8 +1,8 @@
 <window id="601">
 	<defaultcontrol>32</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<onload>SetProperty(tvlist,TV)</onload>
-	<onload>SetProperty(radiolist,Radio)</onload>
+	<onload>SetProperty(tvlist,$LOCALIZE[19020])</onload>
+	<onload>SetProperty(radiolist,$LOCALIZE[19021])</onload>
 	<controls>
 		<include>HomeBackground</include>
 		<include>BarClock</include>
@@ -25,7 +25,7 @@
 			</animation>
 
 			<control type="label">
-				<label>live tv</label>
+				<label>[LOWERCASE]$LOCALIZE[31601][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>170</posy>
 				<height>30</height>
@@ -180,9 +180,9 @@
 					<font>small</font>
 					<textcolor>black</textcolor>
 					<label>$INFO[Window.Property(tvlist)]</label>
-					<onfocus>SetProperty(tvlist,TV: $INFO[Control.GetLabel(30)])</onfocus>
-					<onunfocus>SetProperty(tvlist,TV)</onunfocus>
-					<onclick>SetProperty(tvlist,TV: $INFO[Control.GetLabel(30)])</onclick>
+					<onfocus>SetProperty(tvlist,$LOCALIZE[19020]: $INFO[Control.GetLabel(30)])</onfocus>
+					<onunfocus>SetProperty(tvlist,$LOCALIZE[19020])</onunfocus>
+					<onclick>SetProperty(tvlist,$LOCALIZE[19020]: $INFO[Control.GetLabel(30)])</onclick>
 				</control>
 				<control type="button" id="33">
 					<description>Radio Channels</description>
@@ -193,9 +193,9 @@
 					<label>$INFO[Window.Property(radiolist)]</label>
 					<onleft>12</onleft>
 					<onright>12</onright>
-					<onfocus>SetProperty(radiolist,Radio: $INFO[Control.GetLabel(30)])</onfocus>
-					<onunfocus>SetProperty(radiolist,Radio)</onunfocus>
-					<onclick>SetProperty(radiolist,Radio: $INFO[Control.GetLabel(30)])</onclick>
+					<onfocus>SetProperty(radiolist,$LOCALIZE[19021]: $INFO[Control.GetLabel(30)])</onfocus>
+					<onunfocus>SetProperty(radiolist,$LOCALIZE[19021])</onunfocus>
+					<onclick>SetProperty(radiolist,$LOCALIZE[19021]: $INFO[Control.GetLabel(30)])</onclick>
 				</control>
 				<control type="button" id="31">
 					<description>TV Guide</description>

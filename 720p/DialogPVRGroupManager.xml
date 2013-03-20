@@ -12,7 +12,7 @@
 				<effect type="slide" start="+1500,0" time="300"/>
 			</animation>
 			<control type="label">
-				<label>groups</label>
+				<label>[LOWERCASE]$LOCALIZE[19146][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>190</posy>
 				<height>30</height>
@@ -126,7 +126,7 @@
 					<posx>10</posx>
 					<posy>0</posy>
 					<width>280</width>
-					<label>[B]Hidden TV channels[/B]</label>
+					<label>[B]$LOCALIZE[19022][/B]</label>
 				</control>
 				<control type="list" id="11">
 					<posx>0</posx>
@@ -218,7 +218,7 @@
 					<posx>10</posx>
 					<posy>0</posy>
 					<width>280</width>
-					<label>[B]Visible TV channels[/B]</label>
+					<label>[B]$LOCALIZE[19218][/B]</label>
 				</control>
 				<control type="list" id="12">
 					<posx>0</posx>
@@ -311,21 +311,21 @@
 				<control type="button" id="26">
 					<description>Add Group</description>
 					<width>300</width>
-					<label>Add Group</label>
+					<label>15019</label>
 					<focusedcolor>Accent</focusedcolor>
 					<align>right</align>
 				</control>
 				<control type="button" id="27">
 					<description>Rename Group</description>
 					<width>300</width>
-					<label>Rename Group</label>
+					<label>118</label>
 					<focusedcolor>Accent</focusedcolor>
 					<align>right</align>
 				</control>
 				<control type="button" id="28">
 					<description>Delete Group</description>
 					<width>300</width>
-					<label>Delete Group</label>
+					<label>117</label>
 					<focusedcolor>Accent</focusedcolor>
 					<align>right</align>
 				</control>

@@ -15,7 +15,7 @@
 			</animation>
 
 			<control type="label">
-				<label>favs</label>
+				<label>[LOWERCASE]$LOCALIZE[31725][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>190</posy>
 				<height>30</height>

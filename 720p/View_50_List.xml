@@ -90,7 +90,7 @@
       </control>
 
       <control type="label">
-        <label>[LOWERCASE]Library[/LOWERCASE]</label>
+        <label>[LOWERCASE]$LOCALIZE[14022][/LOWERCASE]</label>
         <posx>70</posx>
         <posy>170</posy>
         <height>30</height>
@@ -107,13 +107,13 @@
         <width>300</width>
         <align>left</align>
         <aligny>top</aligny>
-        <label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
+        <label>[LOWERCASE]$LOCALIZE[31712][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
         <font>Sort_Font_Small</font>
         <textcolor>White</textcolor>
       </control>
 
       <control type="label">
-        <label>add-ons</label>
+        <label>[LOWERCASE]$LOCALIZE[24001][/LOWERCASE]</label>
         <posx>70</posx>
         <posy>170</posy>
         <height>30</height>
@@ -124,7 +124,7 @@
       </control>
 
       <control type="label">
-        <label>pictures</label>
+        <label>[LOWERCASE]$LOCALIZE[1][/LOWERCASE]</label>
         <posx>70</posx>
         <posy>170</posy>
         <height>30</height>
@@ -156,7 +156,7 @@
         <aligny>center</aligny>
         <font>Sort_Font_Small</font>
         <textcolor>White</textcolor>
-        <label>Creator: [COLOR Accent]$INFO[ListItem.Property(Addon.Creator)][/COLOR]</label>
+        <label>[LOWERCASE]$LOCALIZE[21863][/LOWERCASE]: [COLOR Accent]$INFO[ListItem.Property(Addon.Creator)][/COLOR]</label>
         <visible>!IsEmpty(ListItem.Property(Addon.Creator))</visible>
       </control>
 
@@ -264,7 +264,7 @@
           <aligny>Left</aligny>
           <font>Artist_Font</font>
           <textcolor>White</textcolor>
-          <label>Description</label>
+          <label>$LOCALIZE[21821]</label>
         </control>
         
         <control type="label">
@@ -333,7 +333,7 @@
           <aligny>Left</aligny>
           <font>Artist_Font</font>
           <textcolor>White</textcolor>
-          <label>Description</label>
+          <label>$LOCALIZE[21821]</label>
           <visible>!IsEmpty(ListItem.Description) | !IsEmpty(ListItem.PictureComment)</visible>
         </control>
 
@@ -345,7 +345,7 @@
           <aligny>Left</aligny>
           <font>Artist_Font</font>
           <textcolor>White</textcolor>
-          <label>Information</label>
+          <label>$LOCALIZE[19033]</label>
           <visible>IsEmpty(ListItem.Description) + IsEmpty(ListItem.PictureComment)</visible>
         </control>
         

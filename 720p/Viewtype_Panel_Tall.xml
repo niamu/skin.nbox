@@ -216,7 +216,7 @@
 				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Property(TotalSeasons)] seasons, $INFO[ListItem.Property(TotalEpisodes)] episodes</label>
+				<label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[33054][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]</label>
 				<visible>!Container.Content(movies) + IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
 			</control>
 			
@@ -228,7 +228,7 @@
 				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Property(TotalSeasons)] season, $INFO[ListItem.Property(TotalEpisodes)] episodes</label>
+				<label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[20373][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]</label>
 				<visible>!Container.Content(movies) + !IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
 			</control>
 			
@@ -240,7 +240,7 @@
 				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Property(TotalSeasons)] seasons, $INFO[ListItem.Property(TotalEpisodes)] episode</label>
+				<label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[33054][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20359][/LOWERCASE]</label>
 				<visible>!Container.Content(movies) + IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + !IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
 			</control>
 			
@@ -252,7 +252,7 @@
 				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Property(TotalSeasons)] season, $INFO[ListItem.Property(TotalEpisodes)] episode</label>
+				<label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[20373][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20359][/LOWERCASE]</label>
 				<visible>!Container.Content(movies) + !IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + !IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
 			</control>
 
@@ -265,7 +265,7 @@
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Duration]</label>
-				<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + Container.Content(movies)</visible>
+				<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,[LOWERCASE]$LOCALIZE[31299][/LOWERCASE]) + Container.Content(movies)</visible>
 			</control>
 			
 			<control type="label">
@@ -276,8 +276,8 @@
 				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Duration,, min]</label>
-				<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + Container.Content(movies)</visible>
+				<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
+				<visible>!IsEmpty(ListItem.Duration) + Container.Content(movies)</visible>
 			</control>
 
 			<control type="textbox">
@@ -317,7 +317,7 @@
 				<aligny>center</aligny>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Property(UnWatchedEpisodes),, unwatched episode]</label>
+				<label>$INFO[ListItem.Property(UnWatchedEpisodes),, [LOWERCASE]$LOCALIZE[31721][/LOWERCASE]]</label>
 				<visible>[!IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),1) + !StringCompare(ListItem.Property(UnWatchedEpisodes),0)] + Container.Content(tvshows)</visible>
 			</control>
 
@@ -329,7 +329,7 @@
 				<aligny>center</aligny>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Property(UnWatchedEpisodes),, unwatched episodes]</label>
+				<label>$INFO[ListItem.Property(UnWatchedEpisodes),, [LOWERCASE]$LOCALIZE[31722][/LOWERCASE]]</label>
 				<visible>[IntegerGreaterThan(ListItem.Property(UnWatchedEpisodes),1)] + Container.Content(tvshows)</visible>
 			</control>
 
@@ -341,7 +341,7 @@
 				<aligny>center</aligny>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[COLOR Accent]$INFO[ListItem.LastPlayed,[COLOR White]last played: [/COLOR]][/COLOR]</label>
+				<label>[COLOR Accent]$INFO[ListItem.LastPlayed,[COLOR White][LOWERCASE]$LOCALIZE[568][/LOWERCASE]: [/COLOR]][/COLOR]</label>
 				<visible>StringCompare(ListItem.Property(UnWatchedEpisodes),0) + !IsEmpty(ListItem.LastPlayed) + !StringCompare(ListItem.LastPlayed,12/31/1969) + Container.Content(tvshows)</visible>
 			</control>
 
@@ -353,7 +353,7 @@
 				<aligny>center</aligny>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[COLOR White]last played:[/COLOR] [COLOR Accent]never[/COLOR]</label>
+				<label>[COLOR White][LOWERCASE]$LOCALIZE[568][/LOWERCASE]:[/COLOR] [COLOR Accent][LOWERCASE]$LOCALIZE[13170][/LOWERCASE][/COLOR]</label>
 				<visible>StringCompare(ListItem.Property(UnWatchedEpisodes),0) + StringCompare(ListItem.LastPlayed,12/31/1969) + Container.Content(tvshows)</visible>
 			</control>
 
@@ -377,7 +377,7 @@
 				<aligny>center</aligny>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[COLOR Accent]$INFO[ListItem.Director,[COLOR White]director:[/COLOR] ][/COLOR]</label>
+				<label>[COLOR Accent]$INFO[ListItem.Director,[COLOR White][LOWERCASE]$LOCALIZE[20339][/LOWERCASE]:[/COLOR] ][/COLOR]</label>
 				<visible>IsEmpty(ListItem.Tagline)</visible>
 			</control>
 			
@@ -390,7 +390,7 @@
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Duration]</label>
-				<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,min) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline)</visible>
+				<visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,[LOWERCASE]$LOCALIZE[31299][/LOWERCASE]) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline)</visible>
 			</control>
 
 			<control type="label">
@@ -401,8 +401,8 @@
 				<aligny>center</aligny>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Duration,, min]</label>
-				<visible>!IsEmpty(ListItem.Duration) + !SubString(ListItem.Duration,min) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline)</visible>
+				<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
+				<visible>!IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline)</visible>
 			</control>
 
 			<control type="label">
@@ -411,14 +411,14 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31712][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<visible>Container.Content(Movies) | Container.Content(TvShows)</visible>
 			</control>
 
 			<control type="label">
-				<label>film</label>
+				<label>[LOWERCASE]$LOCALIZE[31715][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>170</posy>
 				<height>30</height>
@@ -430,7 +430,7 @@
 			</control>	
 
 			<control type="label">
-				<label>tv</label>
+				<label>[LOWERCASE]$LOCALIZE[19020][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>170</posy>
 				<height>30</height>

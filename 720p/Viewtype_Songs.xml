@@ -76,7 +76,7 @@
 					<control type="label">
 						<posx>65</posx>
 						<width>730</width>
-						<label>$INFO[ListItem.Title] $INFO[ListItem.Artist,by ]</label>
+						<label>$INFO[ListItem.Title] $INFO[ListItem.Artist,$LOCALIZE[31716] ]</label>
 					</control>
 
 					<control type="label">
@@ -114,7 +114,7 @@
 					<control type="label">
 						<posx>65</posx>
 						<width>730</width>
-						<label>[COLOR Accent]$INFO[ListItem.Title] $INFO[ListItem.Artist,[COLOR White]by [/COLOR]][/COLOR]</label>
+						<label>[COLOR Accent]$INFO[ListItem.Title] $INFO[ListItem.Artist,[COLOR White]$LOCALIZE[31716] [/COLOR]][/COLOR]</label>
 					</control>
 
 					<control type="label">
@@ -141,7 +141,7 @@
 			</control>
 
 			<control type="label">
-				<label>music</label>
+				<label>[LOWERCASE]$LOCALIZE[2][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>170</posy>
 				<height>30</height>
@@ -156,7 +156,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31712][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 				<visible>Window.IsActive(1) | Container.Content(Songs)</visible>
@@ -212,37 +212,7 @@
 				<bordersize>4</bordersize>
 			</control>
 			
-		</control>
-		
-		<control type="button" id="1">
-			<description>Bookmarks</description>
-			<posx>1120</posx>
-			<posy>310</posy>
-			<width>90</width>
-			<height>90</height>
-			<onleft>503</onleft>
-			<label></label>
-			<font>-</font>
-			<texturefocus>other_textures/osd/playvidfo.png</texturefocus>
-			<texturenofocus>other_textures/osd/playvidnf.png</texturenofocus>
-			<onclick>PlayMedia($ESCINFO[Window.Property(SongToMusicVideo.Path)])</onclick>
-			<visible>!IsEmpty(Window.Property(SongToMusicVideo.Path))</visible>
-			<animation effect="slide" start="200,0" end="0,0" time="200" tween="cubic" easing="out">VisibleChange</animation>
-		</control>
-
-		<control type="label">
-			<posx>1120</posx>
-			<posy>410</posy>
-			<width>780</width>
-			<height>17</height>
-			<aligny>center</aligny>
-			<font>Font_ListDetail</font>
-			<textcolor>white</textcolor>
-			<selectedcolor>Accent</selectedcolor>
-			<label>play video</label>
-			<visible>!IsEmpty(Window.Property(SongToMusicVideo.Path))</visible>
-			<animation effect="slide" start="200,0" end="0,0" time="200" tween="cubic" easing="out">VisibleChange</animation>
-		</control>			
+		</control>		
 
 	</include>
 </includes>

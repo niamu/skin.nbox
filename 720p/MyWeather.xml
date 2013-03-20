@@ -54,7 +54,7 @@
 			</animation>
 
 			<control type="label">
-				<label>weather</label>
+				<label>[LOWERCASE]$LOCALIZE[8][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>170</posy>
 				<height>30</height>
@@ -70,7 +70,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>city: [COLOR Accent][LOWERCASE]$INFO[Weather.Location][/LOWERCASE][/COLOR]</label>
+				<label>[COLOR Accent][LOWERCASE]$LOCALIZE[21873]: $INFO[Weather.Location][/LOWERCASE][/COLOR]</label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -87,7 +87,7 @@
 			</control>
 
 			<control type="label">
-				<label>Today</label>
+				<label>$LOCALIZE[33006]</label>
 				<posx>95</posx>
 				<posy>303</posy>
 				<width>190</width>
@@ -372,7 +372,7 @@
 						<posx>15</posx>
 						<posy>27</posy>
 						<width>200</width>
-						<label>Wind</label>
+						<label>$LOCALIZE[383]</label>
 						<font>weather_small</font>
 						<align>left</align>
 					</control>
@@ -392,7 +392,7 @@
 						<posx>15</posx>
 						<posy>97</posy>
 						<width>200</width>
-						<label>Feels Like</label>
+						<label>$LOCALIZE[402]</label>
 						<font>weather_small</font>
 						<align>left</align>
 					</control>
@@ -412,7 +412,7 @@
 						<posx>15</posx>
 						<posy>164</posy>
 						<width>200</width>
-						<label>Humidity</label>
+						<label>$LOCALIZE[406]</label>
 						<font>weather_small</font>
 						<align>left</align>
 					</control>
@@ -432,7 +432,7 @@
 						<posx>15</posx>
 						<posy>262</posy>
 						<width>200</width>
-						<label>Current Condition</label>
+						<label>$LOCALIZE[33020]</label>
 						<font>weather_small</font>
 						<align>left</align>
 					</control>
@@ -457,7 +457,7 @@
 						<posx>15</posx>
 						<posy>27</posy>
 						<width>200</width>
-						<label>UV Index</label>
+						<label>$LOCALIZE[403]</label>
 						<font>weather_small</font>
 						<align>left</align>
 					</control>
@@ -477,7 +477,7 @@
 						<posx>15</posx>
 						<posy>97</posy>
 						<width>200</width>
-						<label>Dew Point</label>
+						<label>$LOCALIZE[405]</label>
 						<font>weather_small</font>
 						<align>left</align>
 					</control>
@@ -487,7 +487,7 @@
 						<posx>15</posx>
 						<posy>240</posy>
 						<width>200</width>
-						<label>Last Updated</label>
+						<label>$LOCALIZE[31208]</label>
 						<font>weather_med</font>
 						<align>left</align>
 					</control>
@@ -536,7 +536,7 @@
 				<posx>30</posx>
 				<posy>70</posy>
 				<width>400</width>
-				<label>menu</label>
+				<label>[LOWERCASE]$LOCALIZE[33061][/LOWERCASE]</label>
 				<font>Home_sub_header</font>
 				<align>left</align>
 				<textcolor>black</textcolor>

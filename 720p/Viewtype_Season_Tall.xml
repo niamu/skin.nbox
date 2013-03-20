@@ -51,18 +51,6 @@
 				<effect type="fade" time="300"/>
 			</animation>
 
-			<control type="label">
-				<label>Personnages</label>
-				<posx>1000</posx>
-				<posy>575</posy>
-				<height>30</height>
-				<width></width>
-				<font>button_bold</font>
-				<align>left</align>
-				<visible>!IsEmpty(Control.GetLabel(6001))</visible>
-				<animation effect="slide" start="0,150" time="200">VisibleChange</animation>
-			</control>
-
 			<control type="panel" id="55">
 				<viewtype label="Seasons View">Seasons View</viewtype>
 				<posx>76</posx>
@@ -229,7 +217,7 @@
 				<aligny>center</aligny>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>$INFO[ListItem.Property(TotalEpisodes)] episodes</label>
+				<label>$INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]</label>
 			</control>
 
 			<control type="label">
@@ -252,7 +240,7 @@
 				<align>left</align>
 				<font>Small</font>
 				<textcolor>white</textcolor>
-				<label>[B]$INFO[ListItem.Property(TotalSeasons)] seasons[/B]  $INFO[ListItem.Property(TotalEpisodes)] episodes</label>
+				<label>[B]$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[33054][/LOWERCASE][/B]  $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]</label>
 				<visible>Container.Content(tvshows)</visible>
 			</control>
 
@@ -271,14 +259,14 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>[COLOR Accent][LOWERCASE]seasons[/LOWERCASE][/COLOR] </label>
+				<label>[COLOR Accent][LOWERCASE]$LOCALIZE[33054][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>white</textcolor>
 				<visible>Container.Content(Seasons)</visible>
 			</control>
 
 			<control type="label">
-				<label>tv</label>
+				<label>[LOWERCASE]$LOCALIZE[19020][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>170</posy>
 				<height>30</height>

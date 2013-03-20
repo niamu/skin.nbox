@@ -30,7 +30,7 @@
 				<posx>30</posx>
 				<posy>70</posy>
 				<width>400</width>
-				<label>shutdown</label>
+				<label>[LOWERCASE]$LOCALIZE[13005][/LOWERCASE]</label>
 				<font>Home_sub_header</font>
 				<align>left</align>
 				<textcolor>black</textcolor>
@@ -109,7 +109,7 @@
 					<control type="button" id="31151">
 						<description>Exit</description>
 						<width>340</width>
-						<label>Exit</label>
+						<label>$LOCALIZE[13012]</label>
 						<onclick>Quit()</onclick>
 						<align>right</align>
 						<textcolor>black</textcolor>

@@ -17,7 +17,7 @@
         <effect type="fade" time="300"/>
         <effect type="slide" start="+1500,0" time="300"/>
       </animation>
-
+      
       <control id="5111">
         <type>image</type>
         <posx>15</posx>

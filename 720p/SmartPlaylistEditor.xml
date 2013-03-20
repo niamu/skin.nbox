@@ -18,7 +18,7 @@
 			</animation>
 
 			<control type="label">
-				<label>music</label>
+				<label>[LOWERCASE]$LOCALIZE[2][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>170</posy>
 				<height>30</height>
@@ -33,7 +33,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>smart playlists</label>
+				<label>[LOWERCASE]$LOCALIZE[136][/LOWERCASE]</label>
 				<font>Sort_Font_Small</font>
 				<textcolor>Accent</textcolor>
 			</control>

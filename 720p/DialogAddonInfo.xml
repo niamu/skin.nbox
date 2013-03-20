@@ -120,7 +120,7 @@
 						<description>Reason label</description>
 						<width>340</width>
 						<height>95</height>
-						<label>$INFO[ListItem.Property(Addon.Broken),[B]Broken:[/B] ]</label>
+						<label>$INFO[ListItem.Property(Addon.Broken),[B]$LOCALIZE[24098]:[/B] ]</label>
 						<align>justify</align>
 						<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 						<textcolor>black</textcolor>

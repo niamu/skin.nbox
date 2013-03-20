@@ -10,7 +10,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(32)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(32)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -36,7 +36,7 @@
 				<height>50</height>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White]showing: [/COLOR]][/COLOR][/LOWERCASE]</label>
+				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE] [/COLOR]][/COLOR][/LOWERCASE]</label>
 			</control>
 
 			<control type="label">
@@ -92,7 +92,7 @@
 					<height>50</height>
 					<aligny>Left</aligny>
 					<font>Artist_Font</font>
-					<label>Description</label>
+					<label>$LOCALIZE[21821]</label>
 				</control>
 
 				<control type="textbox">
@@ -114,7 +114,7 @@
 					<height>50</height>
 					<font>Sort_Font_Small</font>
 					<textcolor>White</textcolor>
-					<label>[COLOR Accent]$INFO[Container(11).ListItem.NextTitle,[LOWERCASE][COLOR White]On Next: [/COLOR][/LOWERCASE]][/COLOR]</label>
+					<label>[COLOR Accent]$INFO[Container(11).ListItem.NextTitle,[LOWERCASE][COLOR White]$LOCALIZE[19031]: [/COLOR][/LOWERCASE]][/COLOR]</label>
 				</control>
 			</control>
 
@@ -235,7 +235,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(33)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(33)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -261,7 +261,7 @@
 				<height>50</height>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[COLOR Accent]$INFO[Container(12).NumItems,[COLOR White]channels: [/COLOR]][/COLOR]</label>
+				<label>[COLOR Accent]$INFO[Container(12).NumItems,[COLOR White][LOWERCASE]$LOCALIZE[19019][/LOWERCASE]: [/COLOR]][/COLOR]</label>
 			</control>
 
 			<control type="label">
@@ -317,7 +317,7 @@
 					<height>50</height>
 					<aligny>Left</aligny>
 					<font>Artist_Font</font>
-					<label>Description</label>
+					<label>$LOCALIZE[21821]</label>
 				</control>
 				
 				<control type="textbox">
@@ -339,7 +339,7 @@
 					<height>50</height>
 					<font>Sort_Font_Small</font>
 					<textcolor>White</textcolor>
-					<label>[LOWERCASE][COLOR Accent]$INFO[Container(12).ListItem.NextTitle,[COLOR White]On Next: [/COLOR]][/COLOR][/LOWERCASE]</label>
+					<label>[LOWERCASE][COLOR Accent]$INFO[Container(12).ListItem.NextTitle,[COLOR White]$LOCALIZE[19031]: [/COLOR]][/COLOR][/LOWERCASE]</label>
 				</control>
 			</control>
 
@@ -460,7 +460,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(34)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(34)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -486,7 +486,7 @@
 				<height>50</height>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[COLOR Accent]$INFO[Container(13).NumItems,[COLOR White]recordings: [/COLOR]][/COLOR]</label>
+				<label>[COLOR Accent]$INFO[Container(13).NumItems,[COLOR White][LOWERCASE]$LOCALIZE[19163][/LOWERCASE]: [/COLOR]][/COLOR]</label>
 			</control>
 
 			<control type="image">
@@ -609,7 +609,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -635,7 +635,7 @@
 				<height>50</height>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White]showing: [/COLOR]][/COLOR][/LOWERCASE]</label>
+				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE] [/COLOR]][/COLOR][/LOWERCASE]</label>
 			</control>
 
 			<control type="image">
@@ -781,7 +781,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(35)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(35)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -801,7 +801,7 @@
 			</control>
 
 			<control type="fadelabel">
-				<label>[COLOR Accent]Timers[/COLOR]</label>
+				<label>[COLOR Accent]$LOCALIZE[19040][/COLOR]</label>
 				<posx>395</posx>
 				<posy>171</posy>
 				<height>30</height>
@@ -843,28 +843,28 @@
 					<posx>10</posx>
 					<width>210</width>
 					<height>45</height>
-					<label>[B]Channel[/B]</label>
+					<label>[B]$LOCALIZE[19029][/B]</label>
 				</control>
 				<control type="label">
 					<description>Title header label</description>
 					<posx>220</posx>
 					<width>300</width>
 					<height>45</height>
-					<label>[B]Title[/B]</label>
+					<label>[B]$LOCALIZE[369][/B]</label>
 				</control>
 				<control type="label">
 					<description>Schedule Time header label</description>
 					<posx>580</posx>
 					<width>300</width>
 					<height>45</height>
-					<label>[B]Schedule[/B]</label>
+					<label>[B]$LOCALIZE[31610][/B]</label>
 				</control>
 				<control type="label">
 					<description>Status header label</description>
 					<posx>940</posx>
 					<width>150</width>
 					<height>45</height>
-					<label>[B]Status[/B]</label>
+					<label>[B]$LOCALIZE[126][/B]</label>
 				</control>
 			</control>
 			<control type="list" id="14">
@@ -964,7 +964,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(36)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(36)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -984,7 +984,7 @@
 			</control>
 
 			<control type="fadelabel">
-				<label>[COLOR Accent]Searches[/COLOR]</label>
+				<label>[COLOR Accent]$LOCALIZE[137][/COLOR]</label>
 				<posx>395</posx>
 				<posy>171</posy>
 				<height>30</height>
@@ -1017,7 +1017,7 @@
 					<width>210</width>
 					<height>45</height>
 					<height>20</height>
-					<label>[B]Channel[/B]</label>
+					<label>[B]$LOCALIZE[19029][/B]</label>
 				</control>
 				<control type="label">
 					<description>Title header label</description>
@@ -1025,7 +1025,7 @@
 					<width>300</width>
 					<height>45</height>
 					<height>20</height>
-					<label>[B]Title[/B]</label>
+					<label>[B]$LOCALIZE[369][/B]</label>
 				</control>
 				<control type="label">
 					<description>Time header label</description>
@@ -1033,7 +1033,7 @@
 					<width>300</width>
 					<height>45</height>
 					<height>20</height>
-					<label>[B]Date/Time[/B]</label>
+					<label>[B]$LOCALIZE[21820][/B]</label>
 				</control>
 				<control type="label">
 					<description>Status header label</description>
@@ -1041,7 +1041,7 @@
 					<width>150</width>
 					<height>45</height>
 					<height>20</height>
-					<label>[B]Status[/B]</label>
+					<label>[B]$LOCALIZE[126][/B]</label>
 				</control>
 			</control>
 			<control type="list" id="17">
@@ -1209,7 +1209,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -1235,7 +1235,7 @@
 				<height>50</height>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White]showing: [/COLOR]][/COLOR][/LOWERCASE]</label>
+				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE] [/COLOR]][/COLOR][/LOWERCASE]</label>
 			</control>
 
 			<control type="image">
@@ -1256,21 +1256,21 @@
 					<posx>10</posx>
 					<width>300</width>
 					<height>45</height>
-					<label>[B]Date/Time[/B]</label>
+					<label>[B]$LOCALIZE[21820][/B]</label>
 				</control>
 				<control type="label">
 					<description>Title</description>
 					<posx>360</posx>
 					<width>600</width>
 					<height>45</height>
-					<label>[B]Title[/B]</label>
+					<label>[B]$LOCALIZE[369][/B]</label>
 				</control>
 				<control type="label">
 					<description>Status header label</description>
 					<posx>940</posx>
 					<width>140</width>
 					<height>45</height>
-					<label>[B]Status[/B]</label>
+					<label>[B]$LOCALIZE[126][/B]</label>
 				</control>
 				<control type="list" id="15">
 					<posx>0</posx>
@@ -1434,7 +1434,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>view: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -1460,7 +1460,7 @@
 				<height>50</height>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White]showing: [/COLOR]][/COLOR][/LOWERCASE]</label>
+				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE] [/COLOR]][/COLOR][/LOWERCASE]</label>
 			</control>
 
 			<control type="image">
@@ -1481,28 +1481,28 @@
 					<posx>10</posx>
 					<height>45</height>
 					<width>100</width>
-					<label>[B]Time[/B]</label>
+					<label>[B]$LOCALIZE[555][/B]</label>
 				</control>
 				<control type="label">
 					<description>Channel label</description>
 					<posx>150</posx>
 					<height>45</height>
 					<width>250</width>
-					<label>[B]Channel[/B]</label>
+					<label>[B]$LOCALIZE[19029][/B]</label>
 				</control>
 				<control type="label">
 					<description>Title</description>
 					<posx>360</posx>
 					<height>45</height>
 					<width>550</width>
-					<label>[B]Title[/B]</label>
+					<label>[B]$LOCALIZE[369][/B]</label>
 				</control>
 				<control type="label">
 					<description>Status header label</description>
 					<posx>940</posx>
 					<height>45</height>
 					<width>140</width>
-					<label>[B]Status[/B]</label>
+					<label>[B]$LOCALIZE[126][/B]</label>
 				</control>
 				<control type="list" id="16">
 					<posx>0</posx>

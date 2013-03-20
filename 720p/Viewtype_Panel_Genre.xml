@@ -136,25 +136,36 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>categorised by: [COLOR Accent]genre[/COLOR]</label>
+				<label>[LOWERCASE]$LOCALIZE[31717]: [COLOR Accent]$LOCALIZE[515][/COLOR][/LOWERCASE]</label>
 				<font>Sort_Font_Small</font>
 				<textcolor>white</textcolor>
 				<visible>Container.Content(genres)</visible>
 			</control>
 
 			<control type="label">
-				<label>$INFO[Window(home).Property(genre)]</label>
+				<label>[LOWERCASE]$LOCALIZE[19020][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>170</posy>
 				<height>30</height>
 				<width>550</width>
 				<font>Home_header</font>
 				<align>left</align>
-				<visible>Container.Content(genres)</visible>
+				<visible>!StringCompare(Window(home).Property(genre),film)</visible>
 			</control>
 
 			<control type="label">
-				<label>music</label>
+				<label>[LOWERCASE]$LOCALIZE[31715][/LOWERCASE]</label>
+				<posx>70</posx>
+				<posy>170</posy>
+				<height>30</height>
+				<width>550</width>
+				<font>Home_header</font>
+				<align>left</align>
+				<visible>StringCompare(Window(home).Property(genre),film)</visible>
+			</control>
+
+			<control type="label">
+				<label>[LOWERCASE]$LOCALIZE[2][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>170</posy>
 				<height>30</height>
@@ -171,7 +182,7 @@
 				<width>985</width>
 				<font>Home_menu</font>
 				<aligny>top</aligny>
-				<label>$INFO[ListItem.Label]</label>
+				<label>[COLOR Accent]$INFO[ListItem.Label][/COLOR]</label>
 				<visible>true</visible>
 				<scroll>true</scroll>
 				<scrollout>false</scrollout>

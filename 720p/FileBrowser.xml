@@ -60,7 +60,7 @@
 				<align>left</align>
 				<font>Home_sub_header</font>
 				<textcolor>black</textcolor>
-				<label>browse</label>
+				<label>[LOWERCASE]$LOCALIZE[1024][/LOWERCASE]</label>
 			</control>
 
 			<control type="label" id="412">

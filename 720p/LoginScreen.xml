@@ -22,7 +22,7 @@
 			</animation>
 
 			<control type="label">
-				<label>login</label>
+				<label>[LOWERCASE]$LOCALIZE[31719][/LOWERCASE]</label>
 				<posx>70</posx>
 				<posy>190</posy>
 				<height>30</height>
@@ -32,7 +32,7 @@
 			</control>
 			
 			<control type="label">
-				<label>profiles</label>
+				<label>[LOWERCASE]$LOCALIZE[13200][/LOWERCASE]</label>
 				<posx>74</posx>
 				<posy>285</posy>
 				<height>30</height>
@@ -41,7 +41,7 @@
 				<align>left</align>
 			</control>
 			<control type="label">
-				<label>[COLOR Accent]profiles[/COLOR]</label>
+				<label>[COLOR Accent][LOWERCASE]$LOCALIZE[13200][/LOWERCASE][/COLOR]</label>
 				<posx>74</posx>
 				<posy>285</posy>
 				<height>30</height>
@@ -82,7 +82,7 @@
 			</control>
 			
 			<control type="label">
-				<label>shutdown</label>
+				<label>[LOWERCASE]$LOCALIZE[13005][/LOWERCASE]</label>
 				<posx>74</posx>
 				<posy>525</posy>
 				<height>30</height>
@@ -91,7 +91,7 @@
 				<align>left</align>
 			</control>
 			<control type="label">
-				<label>[COLOR Accent]shutdown[/COLOR]</label>
+				<label>[COLOR Accent][LOWERCASE]$LOCALIZE[13005][/LOWERCASE][/COLOR]</label>
 				<posx>74</posx>
 				<posy>525</posy>
 				<height>30</height>

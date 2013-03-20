@@ -242,7 +242,7 @@
         <font>Home_menu</font>
         <textcolor>White</textcolor>
         <aligny>top</aligny>
-        <label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] Season $INFO[ListItem.Season]</label>
+        <label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] $LOCALIZE[20373] $INFO[ListItem.Season]</label>
         <visible>true</visible>
         <scroll>true</scroll>
         <scrollout>false</scrollout>
@@ -259,7 +259,7 @@
         <aligny>center</aligny>
         <font>Sort_Font_Small</font>
         <textcolor>White</textcolor>
-        <label>[COLOR Accent]$INFO[ListItem.Writer,[COLOR White]writer: [/COLOR], ][/COLOR][COLOR Accent]$INFO[ListItem.Director,[COLOR White]director: [/COLOR]][/COLOR]</label>
+        <label>[COLOR Accent]$INFO[ListItem.Writer,[COLOR White][LOWERCASE]$LOCALIZE[20417][/LOWERCASE]: [/COLOR], ][/COLOR][COLOR Accent]$INFO[ListItem.Director,[COLOR White][LOWERCASE]$LOCALIZE[20339][/LOWERCASE]: [/COLOR]][/COLOR]</label>
         <visible>!IsEmpty(ListItem.Writer) | !IsEmpty(ListItem.Director)</visible>
       </control>
       
@@ -271,7 +271,7 @@
         <aligny>center</aligny>
         <font>Sort_Font_Small</font>
         <textcolor>White</textcolor>
-        <label>[COLOR Accent]$INFO[ListItem.Premiered,[COLOR White]premiered: [/COLOR]][/COLOR]</label>
+        <label>[COLOR Accent]$INFO[ListItem.Premiered,[COLOR White][LOWERCASE]$LOCALIZE[31718][/LOWERCASE]: [/COLOR]][/COLOR]</label>
         <visible>IsEmpty(ListItem.Writer) + IsEmpty(ListItem.Director)</visible>
       </control>
 
@@ -281,14 +281,14 @@
         <width>300</width>
         <align>left</align>
         <aligny>top</aligny>
-        <label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
+        <label>[LOWERCASE]$LOCALIZE[31712][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
         <font>Sort_Font_Small</font>
         <textcolor>White</textcolor>
         <visible>Container.Content(episodes)</visible>
       </control>
 
       <control type="label">
-        <label>tv</label>
+        <label>[LOWERCASE]$LOCALIZE[19020][/LOWERCASE]</label>
         <posx>70</posx>
         <posy>170</posy>
         <height>30</height>

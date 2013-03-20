@@ -95,7 +95,7 @@
 				<font>small</font>
 				<textcolor>black</textcolor>
 				<pulseonselect>false</pulseonselect>
-				<label>  Hide Watched</label>
+				<label>$LOCALIZE[20367]</label>
 			</control>
 
 		</control>

@@ -156,7 +156,7 @@
       </control>
 
       <control type="label">
-        <label>music</label>
+        <label>[LOWERCASE]$LOCALIZE[2][/LOWERCASE]</label>
         <posx>70</posx>
         <posy>170</posy>
         <height>30</height>
@@ -203,7 +203,7 @@
         <width>300</width>
         <align>left</align>
         <aligny>top</aligny>
-        <label>sort by: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
+        <label>[LOWERCASE]$LOCALIZE[31712][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Container.SortMethod][/LOWERCASE][/COLOR] </label>
         <font>Sort_Font_Small</font>
         <textcolor>White</textcolor>
         <visible>Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums)</visible>

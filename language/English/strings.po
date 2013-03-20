@@ -1,7 +1,7 @@
 # XBMC Media Center language file
-# Addon Name: Metropolis
-# Addon id: skin.metropolis
-# Addon Provider: Amra
+# Addon Name: nbox
+# Addon id: skin.nbox
+# Addon Provider: Niamu
 msgid ""
 msgstr ""
 "Project-Id-Version: XBMC Skins\n"
@@ -199,7 +199,7 @@ msgid "Current"
 msgstr ""
 
 msgctxt "#31208"
-msgid "Last Updated:"
+msgid "Last Updated"
 msgstr ""
 
 #empty string with id 31209
@@ -999,4 +999,84 @@ msgstr ""
 
 msgctxt "#31711"
 msgid "More"
+msgstr ""
+
+msgctxt "#31712"
+msgid "Sort By"
+msgstr ""
+
+msgctxt "#31713"
+msgid "View"
+msgstr ""
+
+msgctxt "#31714"
+msgid "Showing"
+msgstr ""
+
+msgctxt "#31715"
+msgid "Film"
+msgstr ""
+
+msgctxt "#31716"
+msgid "by"
+msgstr ""
+
+msgctxt "#31717"
+msgid "Categorised by"
+msgstr ""
+
+msgctxt "#31718"
+msgid "Premiered"
+msgstr ""
+
+msgctxt "#31719"
+msgid "Login"
+msgstr ""
+
+msgctxt "#31720"
+msgid "nbox"
+msgstr ""
+
+msgctxt "#31721"
+msgid "Unwatched episode"
+msgstr ""
+
+msgctxt "#31722"
+msgid "Unwatched episodes"
+msgstr ""
+
+msgctxt "#31723"
+msgid "Cover"
+msgstr ""
+
+msgctxt "#31724"
+msgid "Art"
+msgstr ""
+
+msgctxt "#31725"
+msgid "Favs"
+msgstr ""
+
+msgctxt "#31726"
+msgid "Hide Extra Menu"
+msgstr ""
+
+msgctxt "#31727"
+msgid "Hide Films"
+msgstr ""
+
+msgctxt "#31728"
+msgid "Hide Music"
+msgstr ""
+
+msgctxt "#31729"
+msgid "Hide TV"
+msgstr ""
+
+msgctxt "#31730"
+msgid "Enable Exit XBMC Button"
+msgstr ""
+
+msgctxt "#31731"
+msgid "Enable Visualization"
 msgstr ""

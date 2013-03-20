@@ -26,7 +26,7 @@
 			</animation>
 
 			<control type="label">
-				<label>nbox</label>
+				<label>$LOCALIZE[31720]</label>
 				<posx>70</posx>
 				<posy>190</posy>
 				<height>30</height>
@@ -36,7 +36,7 @@
 			</control>
 
 			<control type="label">
-				<label>[COLOR Accent]Customize[/COLOR]</label>
+				<label>[COLOR Accent]$LOCALIZE[5][/COLOR]</label>
 				<posx>360</posx>
 				<posy>200</posy>
 				<height>30</height>
@@ -98,13 +98,13 @@
 
 					<item id="1">
 						<description>Home</description>
-						<label>Home</label>
+						<label>10000</label>
 						<onclick>-</onclick>
 					</item>
 
 					<item id="2">
 						<description>General</description>
-						<label>General</label>
+						<label>16000</label>
 						<onclick>-</onclick>
 					</item>
 
@@ -131,7 +131,7 @@
 						<description>Extra Menu</description>
 						<width>820</width>
 						<align>left</align>
-						<label>Hide Extra Menu</label>
+						<label>31726</label>
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(MoreMenu)</onclick>
 						<selected>Skin.HasSetting(MoreMenu)</selected>
@@ -143,7 +143,7 @@
 						<description>Toggle Movies</description>
 						<width>820</width>
 						<align>left</align>
-						<label>Hide Movies</label>
+						<label>31727</label>
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(HideMovies)</onclick>
 						<selected>Skin.HasSetting(HideMovies)</selected>
@@ -155,7 +155,7 @@
 						<description>Toggle Music</description>
 						<width>820</width>
 						<align>left</align>
-						<label>Hide Music</label>
+						<label>31728</label>
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(HideMusic)</onclick>
 						<selected>Skin.HasSetting(HideMusic)</selected>
@@ -167,7 +167,7 @@
 						<description>Toggle TV</description>
 						<width>820</width>
 						<align>left</align>
-						<label>Hide TV</label>
+						<label>31729</label>
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(HideTV)</onclick>
 						<selected>Skin.HasSetting(HideTV)</selected>
@@ -192,10 +192,10 @@
 						<description>Toggle Fanart</description>
 						<width>820</width>
 						<align>left</align>
-						<label>Enable Fanart</label>
+						<label>31033</label>
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(Fanart)</onclick>
-						<selected>!Skin.HasSetting(Fanart)</selected>
+						<selected>Skin.HasSetting(Fanart)</selected>
 						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
 						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
 					</control>
@@ -204,7 +204,7 @@
 						<description>Toggle Exit Button</description>
 						<width>820</width>
 						<align>left</align>
-						<label>Enable Exit XBMC Button</label>
+						<label>31730</label>
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(Exit)</onclick>
 						<selected>Skin.HasSetting(Exit)</selected>
@@ -216,7 +216,7 @@
 						<description>Toggle Visualization</description>
 						<width>820</width>
 						<align>left</align>
-						<label>Enable Visualization</label>
+						<label>31731</label>
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(Visualization)</onclick>
 						<selected>Skin.HasSetting(Visualization)</selected>

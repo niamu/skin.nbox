@@ -27,7 +27,7 @@
       </animation>
 
       <control type="label">
-        <label>settings</label>
+        <label>[LOWERCASE]$LOCALIZE[5][/LOWERCASE]</label>
         <posx>70</posx>
         <posy>190</posy>
         <height>30</height>
@@ -37,18 +37,18 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]Live TV[/COLOR]</label>
+        <label>[COLOR Accent]$LOCALIZE[31601][/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>
         <height>30</height>
         <width>450</width>
         <font>Home_sub_header</font>
         <align>left</align>
-        <visible>SubString(System.CurrentWindow,Browser)</visible>
+        <visible>SubString(System.CurrentWindow,$LOCALIZE[10021])</visible>
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]Appearance[/COLOR]</label>
+        <label>[COLOR Accent]$LOCALIZE[480][/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>
         <height>30</height>
@@ -59,7 +59,7 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]Network[/COLOR]</label>
+        <label>[COLOR Accent]$LOCALIZE[705][/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>
         <height>30</height>
@@ -70,7 +70,7 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]Videos[/COLOR]</label>
+        <label>[COLOR Accent]$LOCALIZE[10006][/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>
         <height>30</height>
@@ -81,7 +81,7 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]System[/COLOR]</label>
+        <label>[COLOR Accent]$LOCALIZE[13000][/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>
         <height>30</height>
@@ -92,7 +92,7 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]Music[/COLOR]</label>
+        <label>[COLOR Accent]$LOCALIZE[2][/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>
         <height>30</height>
@@ -103,7 +103,7 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]Weather[/COLOR]</label>
+        <label>[COLOR Accent]$LOCALIZE[8][/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>
         <height>30</height>
@@ -114,7 +114,7 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]Programs[/COLOR]</label>
+        <label>[COLOR Accent]$LOCALIZE[0][/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>
         <height>30</height>
@@ -125,7 +125,7 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]Pictures[/COLOR]</label>
+        <label>[COLOR Accent]$LOCALIZE[1][/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>
         <height>30</height>

@@ -32,7 +32,7 @@
 				<posy>70</posy>
 				<width>400</width>
 				<font>Home_sub_header</font>
-				<label>value</label>
+				<label>[LOWERCASE]$LOCALIZE[16028][/LOWERCASE]</label>
 				<align>left</align>
 				<textcolor>black</textcolor>
 			</control>

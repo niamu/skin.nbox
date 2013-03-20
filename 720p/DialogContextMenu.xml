@@ -30,7 +30,7 @@
 				<posx>30</posx>
 				<posy>70</posy>
 				<width>400</width>
-				<label>menu</label>
+				<label>[LOWERCASE]$LOCALIZE[33061][/LOWERCASE]</label>
 				<font>Home_sub_header</font>
 				<align>left</align>
 				<textcolor>black</textcolor>

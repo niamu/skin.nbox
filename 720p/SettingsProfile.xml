@@ -18,7 +18,7 @@
       </animation>
 
       <control type="label">
-        <label>settings</label>
+        <label>[LOWERCASE]$LOCALIZE[5][/LOWERCASE]</label>
         <posx>70</posx>
         <posy>190</posy>
         <height>30</height>
@@ -28,7 +28,7 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]Profiles[/COLOR]</label>
+        <label>[COLOR Accent]$LOCALIZE[13200][/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>
         <height>30</height>
@@ -52,7 +52,7 @@
         <control type="button" id="4495">
           <description>General</description>
           <width>300</width>
-          <label>Profiles</label>
+          <label>$LOCALIZE[13200]</label>
           <align>right</align>
           <onright>4</onright>
           <focusedcolor>Accent</focusedcolor>
@@ -98,14 +98,14 @@
               <width>820</width>
               <height>104</height>
               <texture border="2">other_textures/buttonnf.png</texture>
-              <visible>!SubString(ListItem.Label,Add profile)</visible>
+              <visible>!SubString(ListItem.Label,$LOCALIZE[20058])</visible>
             </control>
 
             <control type="image">
               <width>820</width>
               <height>44</height>
               <texture border="2">other_textures/buttonnf.png</texture>
-              <visible>SubString(ListItem.Label,Add profile)</visible>
+              <visible>SubString(ListItem.Label,$LOCALIZE[20058])</visible>
             </control>
 
             <control type="image">
@@ -123,14 +123,14 @@
               <width>820</width>
               <height>96</height>
               <info>ListItem.Label</info>
-              <visible>!SubString(ListItem.Label,Add profile)</visible>
+              <visible>!SubString(ListItem.Label,$LOCALIZE[20058])</visible>
             </control>
 
             <control type="label">
               <posx>15</posx>
               <width>820</width>
               <info>ListItem.Label</info>
-              <visible>SubString(ListItem.Label,Add profile)</visible>
+              <visible>SubString(ListItem.Label,$LOCALIZE[20058])</visible>
             </control>
 
             <control type="label">
@@ -150,7 +150,7 @@
               <height>104</height>
               <texture border="5">other_textures/buttonfo.png</texture>
               <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(2)">Conditional</animation>
-              <visible>!SubString(ListItem.Label,Add profile)</visible>
+              <visible>!SubString(ListItem.Label,$LOCALIZE[20058])</visible>
             </control>
 
             <control type="image">
@@ -158,7 +158,7 @@
               <height>44</height>
               <texture border="5">other_textures/buttonfo.png</texture>
               <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(2)">Conditional</animation>
-              <visible>SubString(ListItem.Label,Add profile)</visible>
+              <visible>SubString(ListItem.Label,$LOCALIZE[20058])</visible>
             </control>
 
             <control type="image">
@@ -176,7 +176,7 @@
               <width>820</width>
               <height>96</height>
               <info>ListItem.Label</info>
-              <visible>!SubString(ListItem.Label,Add profile)</visible>
+              <visible>!SubString(ListItem.Label,$LOCALIZE[20058])</visible>
               <textcolor>Accent</textcolor>
             </control>
 
@@ -184,7 +184,7 @@
               <posx>15</posx>
               <width>820</width>
               <info>ListItem.Label</info>
-              <visible>SubString(ListItem.Label,Add profile)</visible>
+              <visible>SubString(ListItem.Label,$LOCALIZE[20058])</visible>
               <textcolor>Accent</textcolor>
             </control>
 

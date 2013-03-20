@@ -18,7 +18,7 @@
       </animation>
 
       <control type="label">
-        <label>system</label>
+        <label>[LOWERCASE]$LOCALIZE[13000][/LOWERCASE]</label>
         <posx>70</posx>
         <posy>170</posy>
         <height>30</height>
@@ -65,7 +65,7 @@
           <description>Memory Text</description>
           <posx>440</posx>
           <width>800</width>
-          <label>RAM Usage: $INFO[system.memory(used.percent)]</label>
+          <label>$LOCALIZE[22012]: $INFO[system.memory(used.percent)]</label>
         </control>
 
         <control type="progress" id="24">

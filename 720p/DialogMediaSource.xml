@@ -37,7 +37,7 @@
         <posx>30</posx>
         <posy>70</posy>
         <width>370</width>
-        <label>[LOWERCASE]Path[/LOWERCASE]</label>
+        <label>[LOWERCASE]$LOCALIZE[573][/LOWERCASE]</label>
         <font>Home_sub_header</font>
         <align>left</align>
         <textcolor>black</textcolor>
