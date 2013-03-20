@@ -75,7 +75,7 @@
 						<width>530</width>
 						<height>28</height>
 						<font>Sort_Font_Small</font>
-						<label>$LOCALIZE[557]: [COLOR Accent]$INFO[ListItem.Artist][/COLOR]   [COLOR Accent]$INFO[ListItem.Genre,[COLOR White]$LOCALIZE[21515]: [/COLOR]][/COLOR]</label>
+						<label>$LOCALIZE[557]: [COLOR Accent]$INFO[ListItem.Artist][/COLOR]   [COLOR Accent]$INFO[ListItem.Genre,[COLOR White][LOWERCASE]$LOCALIZE[515][/LOWERCASE]: [/COLOR]][/COLOR]</label>
 						<scroll>true</scroll>
 					</control>
 

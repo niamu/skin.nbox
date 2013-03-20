@@ -240,7 +240,7 @@
 				<aligny>center</aligny>
 				<font>Sort_Font_Small</font>
 				<textcolor>white</textcolor>
-				<label>$LOCALIZE[21515]: [B]$INFO[ListItem.Genre][/B]</label>
+				<label>[LOWERCASE]$LOCALIZE[515][/LOWERCASE]: [B]$INFO[ListItem.Genre][/B]</label>
 				<visible>!IsEmpty(ListItem.Genre) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(albums)]</visible>
 			</control>
 

@@ -655,7 +655,7 @@
 				<height>50</height>
 				<align>center</align>
 				<font>LiberationSans_Regular_22</font>
-				<label>[B][COLOR=ListTrackF]$LOCALIZE[21515][/COLOR] [B][COLOR=white]$INFO[ListItem.Genre][/B][/COLOR]</label>
+				<label>[B][COLOR=ListTrackF][LOWERCASE]$LOCALIZE[515][/LOWERCASE][/COLOR] [B][COLOR=white]$INFO[ListItem.Genre][/B][/COLOR]</label>
 			</control>
 			<control type="label">
 				<visible>Container.Content(tvshows) + !IsEmpty(ListItem.Date)</visible>

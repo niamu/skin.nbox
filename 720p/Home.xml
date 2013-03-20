@@ -212,31 +212,31 @@
         <content>
           <item id="501">
             <visible>!Skin.HasSetting(HideMovies)</visible>
-            <label>films</label>
+            <label>[LOWERCASE]$LOCALIZE[31700][/LOWERCASE]</label>
             <onclick>Control.SetFocus(701)</onclick>
             <property name="idnum">id501</property>
           </item>
           <item id="502">
             <visible>!Skin.HasSetting(HideMusic)</visible>
-            <label>music</label>
+            <label>[LOWERCASE]$LOCALIZE[2][/LOWERCASE]</label>
             <onclick>Control.SetFocus(601)</onclick>
             <property name="idnum">id502</property>
           </item>
           <item id="503">
             <visible>!Skin.HasSetting(HideTV)</visible>
-            <label>tv shows</label>
+            <label>[LOWERCASE]$LOCALIZE[20343][/LOWERCASE]</label>
             <onclick>Control.SetFocus(801)</onclick>
             <property name="idnum">id503</property>
           </item>
           <item id="504">
             <visible>System.GetBool(pvrmanager.enabled)</visible>
-            <label>live tv</label>
+            <label>[LOWERCASE]$LOCALIZE[31703][/LOWERCASE]</label>
             <onclick>Control.SetFocus(301)</onclick>
             <property name="idnum">id504</property>
           </item>
           <item id="505">
             <visible>System.HasMediaDVD</visible>
-            <label>disc</label>
+            <label>[LOWERCASE]$LOCALIZE[427][/LOWERCASE]</label>
             <onclick>Control.SetFocus(49)</onclick>
             <property name="idnum">id505</property>
           </item>
@@ -244,7 +244,7 @@
       </control>
 
       <control type="label">
-        <label>home</label>
+        <label>[LOWERCASE]$LOCALIZE[10000][/LOWERCASE]</label>
         <posx>70</posx>
         <posy>190</posy>
         <height>30</height>
@@ -254,7 +254,7 @@
       </control>
 
       <control type="label">
-        <label>settings</label>
+        <label>[LOWERCASE]$LOCALIZE[10004][/LOWERCASE]</label>
         <posx>74</posx>
         <posy>523</posy>
         <height>30</height>
@@ -264,7 +264,7 @@
       </control>
 
       <control type="label">
-        <label>shutdown</label>
+        <label>[LOWERCASE]$LOCALIZE[13005][/LOWERCASE]</label>
         <posx>74</posx>
         <posy>563</posy>
         <height>30</height>
@@ -274,7 +274,7 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]settings[/COLOR]</label>
+        <label>[LOWERCASE][COLOR Accent]$LOCALIZE[10004][/COLOR][/LOWERCASE]</label>
         <posx>74</posx>
         <posy>523</posy>
         <height>30</height>
@@ -287,7 +287,7 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]shutdown[/COLOR]</label>
+        <label>[LOWERCASE][COLOR Accent]$LOCALIZE[13005][/COLOR][/LOWERCASE]</label>
         <posx>74</posx>
         <posy>563</posy>
         <height>30</height>
@@ -303,7 +303,7 @@
 
         <control id="505">
           <type>button</type>
-          <label></label>
+          <label>$LOCALIZE[5]</label>
           <posx>20</posx>
           <posy>523</posy>
           <height>40</height>
@@ -322,7 +322,6 @@
 
         <control id="515">
           <type>image</type>
-          <label></label>
           <posx>15</posx>
           <posy>520</posy>
           <height>50</height>
@@ -337,7 +336,6 @@
 
         <control id="506">
           <type>button</type>
-          <label></label>
           <posx>20</posx>
           <posy>563</posy>
           <height>40</height>
@@ -357,7 +355,6 @@
 
         <control id="516">
           <type>image</type>
-          <label></label>
           <posx>15</posx>
           <posy>560</posy>
           <height>50</height>
@@ -386,7 +383,6 @@
 
         <control id="6001">
           <type>image</type>
-          <label></label>
           <posx>15</posx>
           <posy>640</posy>
           <height>50</height>
@@ -412,7 +408,7 @@
         <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="[[!Container(5000).HasFocus(501) | !Control.HasFocus(5000)] + ![Container(5000).HasFocus(501) + ControlGroup(9000).HasFocus()]] + !Control.HasFocus(701) + !Control.HasFocus(702) + !Control.HasFocus(703) + !Control.HasFocus(704) + !Control.HasFocus(705) + !Control.HasFocus(66)" reversible="false">Conditional</animation>
 
         <control type="label">
-          <label>library</label>
+          <label>[LOWERCASE]$LOCALIZE[14022][/LOWERCASE]</label>
           <posx>360</posx>
           <posy>200</posy>
           <height>30</height>
@@ -423,7 +419,7 @@
 
 
         <control type="label">
-          <label>recent</label>
+          <label>[LOWERCASE]$LOCALIZE[31709][/LOWERCASE]</label>
           <posx>720</posx>
           <posy>200</posy>
           <height>30</height>
@@ -466,7 +462,7 @@
 
             <control id="701">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[31700]</label>
               <posx></posx>
               <posy></posy>
               <width>315</width>
@@ -498,7 +494,7 @@
             </control>
 
             <control type="label">
-              <label>All Films</label>
+              <label>$LOCALIZE[31701]</label>
               <posx>10</posx>
               <posy>120</posy>
               <height>30</height>
@@ -534,7 +530,7 @@
 
             <control id="702">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[135]</label>
               <posx></posx>
               <posy>0</posy>
               <width>155</width>
@@ -549,7 +545,7 @@
             </control>
 
             <control type="label">
-              <label>Genres</label>
+              <label>$LOCALIZE[135]</label>
               <posx>10</posx>
               <posy>119</posy>
               <height>30</height>
@@ -587,7 +583,7 @@
 
             <control id="703">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[31702]</label>
               <posx>1</posx>
               <posy></posy>
               <width>155</width>
@@ -601,7 +597,7 @@
             </control>
 
             <control type="label">
-              <label>All Recent</label>
+              <label>$LOCALIZE[31702]</label>
               <posx>170</posx>
               <posy>120</posy>
               <height>30</height>
@@ -645,7 +641,7 @@
 
             <control id="704">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[31704]</label>
               <posx></posx>
               <posy>0</posy>
               <width>155</width>
@@ -659,7 +655,7 @@
             </control>
 
             <control type="label">
-              <label>Manage Library</label>
+              <label>$LOCALIZE[31704]</label>
               <posx>10</posx>
               <posy>119</posy>
               <height>30</height>
@@ -697,7 +693,7 @@
 
             <control id="705">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[1037]</label>
               <posx>1</posx>
               <posy></posy>
               <width>155</width>
@@ -711,7 +707,7 @@
             </control>
 
             <control type="label">
-              <label>Video Add-ons</label>
+              <label>$LOCALIZE[1037]</label>
               <posx>170</posx>
               <posy>120</posy>
               <height>30</height>
@@ -1452,7 +1448,7 @@
 
 
         <control type="label">
-          <label>library</label>
+          <label>[LOWERCASE]$LOCALIZE[14022][/LOWERCASE]</label>
           <posx>360</posx>
           <posy>200</posy>
           <height>30</height>
@@ -1462,7 +1458,7 @@
         </control>	
 
         <control type="label">
-          <label>recent</label>
+          <label>[LOWERCASE]$LOCALIZE[31709][/LOWERCASE]</label>
           <posx>720</posx>
           <posy>200</posy>
           <height>30</height>
@@ -1506,7 +1502,7 @@
 
             <control id="801">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[20342]</label>
               <posx></posx>
               <posy></posy>
               <width>315</width>
@@ -1538,7 +1534,7 @@
             </control>
 
             <control type="label">
-              <label>All TV Shows</label>
+              <label>$LOCALIZE[31706]</label>
               <posx>10</posx>
               <posy>120</posy>
               <height>30</height>
@@ -1574,7 +1570,7 @@
 
             <control id="802">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[135]</label>
               <posx></posx>
               <posy>0</posy>
               <width>155</width>
@@ -1589,7 +1585,7 @@
             </control>
 
             <control type="label">
-              <label>Genres</label>
+              <label>$LOCALIZE[135]</label>
               <posx>10</posx>
               <posy>119</posy>
               <height>30</height>
@@ -1627,7 +1623,7 @@
 
             <control id="803">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[31702]</label>
               <posx>1</posx>
               <posy></posy>
               <width>155</width>
@@ -1641,7 +1637,7 @@
             </control>
 
             <control type="label">
-              <label>All Recent</label>
+              <label>$LOCALIZE[31702]</label>
               <posx>170</posx>
               <posy>120</posy>
               <height>30</height>
@@ -1685,7 +1681,7 @@
 
             <control id="804">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[31704]</label>
               <posx></posx>
               <posy>0</posy>
               <width>155</width>
@@ -1699,7 +1695,7 @@
             </control>
 
             <control type="label">
-              <label>Manage Library</label>
+              <label>$LOCALIZE[31704]</label>
               <posx>10</posx>
               <posy>119</posy>
               <height>30</height>
@@ -1737,7 +1733,7 @@
 
             <control id="805">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[1037]</label>
               <posx>1</posx>
               <posy></posy>
               <width>155</width>
@@ -1751,7 +1747,7 @@
             </control>
 
             <control type="label">
-              <label>Video Add-ons</label>
+              <label>$LOCALIZE[1037]</label>
               <posx>170</posx>
               <posy>120</posy>
               <height>30</height>
@@ -2494,7 +2490,7 @@
         <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="[[!Container(5000).HasFocus(502) | !Control.HasFocus(5000)] + ![Container(5000).HasFocus(502) + ControlGroup(9000).HasFocus()]]] + !Control.HasFocus(601) + !Control.HasFocus(602) + !Control.HasFocus(603) + !Control.HasFocus(604) + !Control.HasFocus(605) + !Control.HasFocus(67)" reversible="false">Conditional</animation>
 
         <control type="label">
-          <label>library</label>
+          <label>[LOWERCASE]$LOCALIZE[14022][/LOWERCASE]</label>
           <posx>360</posx>
           <posy>200</posy>
           <height>30</height>
@@ -2504,7 +2500,7 @@
         </control>	
 
         <control type="label">
-          <label>recent</label>
+          <label>[LOWERCASE]$LOCALIZE[31709][/LOWERCASE]</label>
           <posx>720</posx>
           <posy>200</posy>
           <height>30</height>
@@ -2547,7 +2543,7 @@
 
             <control id="601">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[31705]</label>
               <posx></posx>
               <posy></posy>
               <width>315</width>
@@ -2579,7 +2575,7 @@
             </control>
 
             <control type="label">
-              <label>All Albums</label>
+              <label>$LOCALIZE[31705]</label>
               <posx>10</posx>
               <posy>120</posy>
               <height>30</height>
@@ -2615,7 +2611,7 @@
 
             <control id="602">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[136]</label>
               <posx></posx>
               <posy>0</posy>
               <width>155</width>
@@ -2629,7 +2625,7 @@
             </control>
 
             <control type="label">
-              <label>Playlists</label>
+              <label>$LOCALIZE[136]</label>
               <posx>10</posx>
               <posy>119</posy>
               <height>30</height>
@@ -2667,7 +2663,7 @@
 
             <control id="603">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[31702]</label>
               <posx>1</posx>
               <posy></posy>
               <width>155</width>
@@ -2681,7 +2677,7 @@
             </control>
 
             <control type="label">
-              <label>All Recent</label>
+              <label>$LOCALIZE[31702]</label>
               <posx>170</posx>
               <posy>120</posy>
               <height>30</height>
@@ -2725,7 +2721,7 @@
 
             <control id="604">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[31704]</label>
               <posx></posx>
               <posy>0</posy>
               <width>155</width>
@@ -2739,7 +2735,7 @@
             </control>
 
             <control type="label">
-              <label>Manage Library</label>
+              <label>$LOCALIZE[31704]</label>
               <posx>10</posx>
               <posy>119</posy>
               <height>30</height>
@@ -2777,7 +2773,7 @@
 
             <control id="605">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[1038]</label>
               <posx>1</posx>
               <posy></posy>
               <width>155</width>
@@ -2791,7 +2787,7 @@
             </control>
 
             <control type="label">
-              <label>Music Add-ons</label>
+              <label>$LOCALIZE[1038]</label>
               <posx>170</posx>
               <posy>120</posy>
               <height>30</height>
@@ -3617,7 +3613,7 @@
 
 
         <control type="label">
-          <label>library</label>
+          <label>[LOWERCASE]$LOCALIZE[14022][/LOWERCASE]</label>
           <posx>360</posx>
           <posy>200</posy>
           <height>30</height>
@@ -3627,7 +3623,7 @@
         </control>  
 
         <control type="label">
-          <label>recording</label>
+          <label>[LOWERCASE]$LOCALIZE[19043][/LOWERCASE]</label>
           <posx>720</posx>
           <posy>200</posy>
           <height>30</height>
@@ -3672,7 +3668,7 @@
 
             <control id="301">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[31708]</label>
               <posx></posx>
               <posy></posy>
               <width>315</width>
@@ -3706,7 +3702,7 @@
             </control>
 
             <control type="label">
-              <label>All Channels</label>
+              <label>$LOCALIZE[31708]</label>
               <posx>10</posx>
               <posy>120</posy>
               <height>30</height>
@@ -3742,7 +3738,7 @@
 
             <control id="302">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[22020]</label>
               <posx></posx>
               <posy>0</posy>
               <width>155</width>
@@ -3758,7 +3754,7 @@
             </control>
 
             <control type="label">
-              <label>Guide</label>
+              <label>$LOCALIZE[22020]</label>
               <posx>10</posx>
               <posy>119</posy>
               <height>30</height>
@@ -3796,7 +3792,7 @@
 
             <control id="303">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[19021]</label>
               <posx>1</posx>
               <posy></posy>
               <width>155</width>
@@ -3812,7 +3808,7 @@
             </control>
 
             <control type="label">
-              <label>Radio</label>
+              <label>$LOCALIZE[19021]</label>
               <posx>170</posx>
               <posy>120</posy>
               <height>30</height>
@@ -3856,7 +3852,7 @@
 
             <control id="304">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[19163]</label>
               <posx></posx>
               <posy>0</posy>
               <width>155</width>
@@ -3872,7 +3868,7 @@
             </control>
 
             <control type="label">
-              <label>Recordings</label>
+              <label>$LOCALIZE[19163]</label>
               <posx>10</posx>
               <posy>119</posy>
               <height>30</height>
@@ -3910,7 +3906,7 @@
 
             <control id="305">
               <type>button</type>
-              <label></label>
+              <label>$LOCALIZE[31710]</label>
               <posx>1</posx>
               <posy></posy>
               <width>155</width>
@@ -3926,7 +3922,7 @@
             </control>
 
             <control type="label">
-              <label>Timers</label>
+              <label>$LOCALIZE[31710]</label>
               <posx>170</posx>
               <posy>120</posy>
               <height>30</height>
@@ -4091,7 +4087,7 @@
         <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="[[!Container(5000).HasFocus(505) | !Control.HasFocus(5000)] + ![Container(5000).HasFocus(505) + ControlGroup(9000).HasFocus()]] + !Control.HasFocus(49)]" reversible="false">Conditional</animation>
 
         <control type="label">
-          <label>disc</label>
+          <label>[LOWERCASE]$LOCALIZE[14022][/LOWERCASE]</label>
           <posx>360</posx>
           <posy>200</posy>
           <height>30</height>
@@ -4185,13 +4181,13 @@
           <content>
             <item id="1">
               <description>Play Disc</description>
-              <label>Play Disc</label>
+              <label>$LOCALIZE[341]</label>
               <thumb>icons/videos.png</thumb>
               <onclick>XBMC.PlayDVD()</onclick>
             </item>
             <item id="2">
               <description>Eject Disc</description>
-              <label>Eject Disc</label>
+              <label>$LOCALIZE[13391]</label>
               <thumb>icons/music.png</thumb>
               <onclick>XBMC.EjectTray()</onclick>
             </item>
@@ -4211,7 +4207,7 @@
         <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="![ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),settings)] + Control.HasFocus(506) | Control.HasFocus(5000)" reversible="false">Conditional</animation>
 
         <control type="label">
-          <label>settings</label>
+          <label>[LOWERCASE]$LOCALIZE[10004][/LOWERCASE]</label>
           <posx>360</posx>
           <posy>200</posy>
           <height>30</height>
@@ -4318,7 +4314,7 @@
             </item>
             <item id="3">
               <description>Live TV</description>
-              <label>Live TV</label>
+              <label>$LOCALIZE[31703]</label>
               <thumb>tv_shows.png</thumb>
               <onclick>activatewindow(PVRSettings,return)</onclick>
             </item>
@@ -4411,7 +4407,7 @@
         <animation effect="rotatey" time="500" start="0" end="+30" center="1200,0" condition="![ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),nowplaying)] + !Control.HasFocus(6000)" reversible="false">Conditional</animation>
 
         <control type="label">
-          <label>now playing</label>
+          <label>[LOWERCASE]$LOCALIZE[31707][/LOWERCASE]</label>
           <posx>360</posx>
           <posy>200</posy>
           <height>30</height>
@@ -4521,7 +4517,7 @@
       </animation>
 
       <control type="label">
-        <label>more</label>
+        <label>[LOWERCASE]$LOCALIZE[31711][/LOWERCASE]</label>
         <posx>75</posx>
         <posy>200</posy>
         <height>30</height>
@@ -4564,7 +4560,7 @@
 
           <control id="901">
             <type>button</type>
-            <label></label>
+            <label>$LOCALIZE[8]</label>
             <posx></posx>
             <posy>0</posy>
             <width>155</width>
@@ -4580,7 +4576,7 @@
           </control>
 
           <control type="label">
-            <label>Weather</label>
+            <label>$LOCALIZE[8]</label>
             <posx>10</posx>
             <posy>119</posy>
             <height>30</height>
@@ -4636,7 +4632,7 @@
 
           <control id="902">
             <type>button</type>
-            <label></label>
+            <label>$LOCALIZE[1036]</label>
             <posx>1</posx>
             <posy></posy>
             <width>155</width>
@@ -4655,7 +4651,7 @@
           </control>
 
           <control type="label">
-            <label>Favourites</label>
+            <label>$LOCALIZE[1036]</label>
             <posx>10</posx>
             <posy>120</posy>
             <height>30</height>
@@ -4699,7 +4695,7 @@
 
           <control id="903">
             <type>button</type>
-            <label></label>
+            <label>$LOCALIZE[1]</label>
             <posx></posx>
             <posy>0</posy>
             <width>155</width>
@@ -4715,7 +4711,7 @@
           </control>
 
           <control type="label">
-            <label>Pictures</label>
+            <label>$LOCALIZE[1]</label>
             <posx>10</posx>
             <posy>119</posy>
             <height>30</height>
@@ -4760,7 +4756,7 @@
 
           <control id="904">
             <type>button</type>
-            <label></label>
+            <label>$LOCALIZE[0]</label>
             <posx>1</posx>
             <posy></posy>
             <width>155</width>
@@ -4776,7 +4772,7 @@
           </control>
 
           <control type="label">
-            <label>Programs</label>
+            <label>$LOCALIZE[0]</label>
             <posx>10</posx>
             <posy>120</posy>
             <height>30</height>

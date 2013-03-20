@@ -232,7 +232,7 @@
         <aligny>center</aligny>
         <font>Sort_Font_Small</font>
         <textcolor>White</textcolor>
-        <label>$LOCALIZE[21515]: [COLOR Accent]$INFO[ListItem.Genre][/COLOR]</label>
+        <label>[LOWERCASE]$LOCALIZE[515][/LOWERCASE]: [COLOR Accent]$INFO[ListItem.Genre][/COLOR]</label>
         <visible>Container.Content(Albums) + !IsEmpty(ListItem.Genre)</visible>
       </control>
 
