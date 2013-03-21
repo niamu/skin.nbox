@@ -37,7 +37,7 @@
       </control>
 
       <control type="label">
-        <label>[COLOR Accent]$LOCALIZE[31601][/COLOR]</label>
+        <label>[COLOR Accent]$LOCALIZE[31703][/COLOR]</label>
         <posx>360</posx>
         <posy>200</posy>
         <height>30</height>
