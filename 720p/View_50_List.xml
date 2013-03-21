@@ -57,26 +57,6 @@
         <animation effect="fade" start="0" end="100" time="400" condition="Control.HasFocus(60) | Container.Scrolling">Conditional</animation>
       </control>
 
-      <control type="image">
-        <posx>20</posx>
-        <posy>245</posy>
-        <width>40</width>
-        <height>40</height>
-        <texture flipy="true">down_arrow.png</texture>
-        <visible>Container(50).HasPrevious</visible>
-        <animation effect="fade" time="400">VisibleChange</animation>
-      </control>
-
-      <control type="image">
-        <posx>20</posx>
-        <posy>600</posy>
-        <width>40</width>
-        <height>40</height>
-        <texture>down_arrow.png</texture>
-        <visible>Container(50).HasNext</visible>
-        <animation effect="fade" time="400">VisibleChange</animation>
-      </control>
-
       <control type="label">
         <label>[LOWERCASE]$INFO[Container.FolderName][/LOWERCASE]</label>
         <posx>70</posx>
@@ -135,11 +115,11 @@
       </control>
 
 
-      <control type="label">
-        <posx>360</posx>
+      <control type="fadelabel">
+        <posx>396</posx>
         <posy>171</posy>
         <height>30</height>
-        <width>920</width>
+        <width>884</width>
         <font>Home_menu</font>
         <textcolor>White</textcolor>
         <aligny>top</aligny>
@@ -148,10 +128,10 @@
         <align>left</align>
       </control>
 
-      <control type="label">
-        <posx>360</posx>
+      <control type="fadelabel">
+        <posx>396</posx>
         <posy>210</posy>
-        <width>600</width>
+        <width>884</width>
         <height>50</height>
         <aligny>center</aligny>
         <font>Sort_Font_Small</font>
@@ -160,11 +140,33 @@
         <visible>!IsEmpty(ListItem.Property(Addon.Creator))</visible>
       </control>
 
+      <control type="fadelabel">
+        <posx>396</posx>
+        <posy>210</posy>
+        <width>884</width>
+        <height>50</height>
+        <aligny>center</aligny>
+        <font>Sort_Font_Small</font>
+        <textcolor>White</textcolor>
+        <label>[COLOR Accent][LOWERCASE]$INFO[ListItem.PictureDateTime, [COLOR white]$LOCALIZE[552]: [/COLOR]][/LOWERCASE][/COLOR]</label>
+        <visible>Window.IsVisible(Pictures) + !IsEmpty(ListItem.PicturePath)</visible>
+      </control>
+
+      <control type="image">
+        <posx>396</posx>
+        <posy>288</posy>
+        <width>510</width>
+        <height>315</height>
+        <texture>music_fanart_diffuse.png</texture>
+        <fadetime>200</fadetime>
+        <aspectratio scalediffuse="false">stretch</aspectratio>
+      </control>
+
       <control type="list" id="50">
         <visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(movies) + !Container.Content(seasons) + !Container.Content(genres) + !Container.Content(songs) + !Container.Content(albums)</visible>
-        <posx>10</posx>
+        <posx>396</posx>
         <posy>288</posy>
-        <width>300</width>
+        <width>510</width>
         <height>315</height>
         <onleft>9000</onleft>
         <onright>60</onright>
@@ -173,19 +175,29 @@
         <pagecontrol>60</pagecontrol>
         <viewtype label="List">List</viewtype>
         <scrolltime>200</scrolltime>
-        <itemlayout width="350" height="38">
+        <itemlayout width="510" height="45">
+          <control type="image">
+            <width>884</width>
+            <height>45</height>
+            <texture border="2">other_textures/buttonnf.png</texture>
+          </control>
+
           <control type="label">
-            <posx>280</posx>
-            <width>260</width>
+            <posx>10</posx>
+            <width>470</width>
             <label>$INFO[ListItem.Label]</label>
-            <align>right</align>
           </control>
         </itemlayout>
-        <focusedlayout width="350" height="38">
+        <focusedlayout width="510" height="45">
+          <control type="image">
+            <width>510</width>
+            <height>45</height>
+            <texture border="2">other_textures/buttonfo.png</texture>
+          </control>
+
           <control type="label">
-            <posx>280</posx>
-            <width>260</width>
-            <align>right</align>
+            <posx>10</posx>
+            <width>470</width>
             <label>[COLOR Accent]$INFO[ListItem.Label][/COLOR]</label>
             <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(50)">Conditional</animation>
           </control>
@@ -193,7 +205,7 @@
       </control>
 
       <control type="image">
-        <posx>362</posx>
+        <posx>76</posx>
         <posy>288</posy>
         <width>315</width>
         <height>315</height>
@@ -204,7 +216,7 @@
       </control>
 
       <control type="image">
-        <posx>362</posx>
+        <posx>76</posx>
         <posy>288</posy>
         <width>315</width>
         <height>315</height>
@@ -216,50 +228,48 @@
       </control>
 
       <control type="image">
-        <posx>360</posx>
+        <posx>76</posx>
         <posy>288</posy>
-        <width>317</width>
+        <width>315</width>
         <height>315</height>
-        <fadetime>400</fadetime>
+        <texture>$INFO[ListItem.Icon]</texture>
+        <fadetime>200</fadetime>
         <aspectratio scalediffuse="false">keep</aspectratio>
-        <texture fallback="">$INFO[ListItem.Icon]</texture>
-        <visible>!IsEmpty(ListItem.Icon)</visible>
-        <animation effect="fade" time="500"></animation>
-        <visible>!Window.IsVisible(Pictures)</visible>
+        <visible>true</visible>
         <bordersize>4</bordersize>
+        <visible>!Window.IsVisible(Pictures)</visible>
       </control>
 
       <control type="image">
-        <posx>360</posx>
+        <posx>76</posx>
         <posy>288</posy>
-        <width>317</width>
+        <width>315</width>
         <height>315</height>
-        <fadetime>400</fadetime>
+        <texture>$INFO[ListItem.Icon]</texture>
+        <fadetime>200</fadetime>
         <aspectratio scalediffuse="false">scale</aspectratio>
-        <texture fallback="">$INFO[ListItem.Icon]</texture>
-        <visible>!IsEmpty(ListItem.Icon)</visible>
-        <animation effect="fade" time="500"></animation>
-        <visible>Window.IsVisible(Pictures)</visible>
+        <visible>true</visible>
         <bordersize>4</bordersize>
+        <visible>Window.IsVisible(Pictures)</visible>
       </control>
 
       <control type="group">
         <visible>!IsEmpty(ListItem.Property(Addon.Name))</visible>
 
         <control type="image">
-          <posx>680</posx>
+          <posx>911</posx>
           <posy>288</posy>
           <width>600</width>
           <height>315</height>
-          <texture background="true" >music_fanart_diffuse.png</texture>
+          <texture background="true">music_fanart_diffuse.png</texture>
           <fadetime>200</fadetime>
           <aspectratio scalediffuse="false">stretch</aspectratio>
         </control>
 
         <control type="label">
-          <posx>700</posx>
+          <posx>930</posx>
           <posy>300</posy>
-          <width>400</width>
+          <width>330</width>
           <height>50</height>
           <aligny>Left</aligny>
           <font>Artist_Font</font>
@@ -268,9 +278,9 @@
         </control>
         
         <control type="label">
-          <posx>700</posx>
+          <posx>930</posx>
           <posy>350</posy>
-          <width>400</width>
+          <width>330</width>
           <height>50</height>
           <aligny>Left</aligny>
           <textcolor>White</textcolor>
@@ -300,9 +310,9 @@
         </control>
 
         <control type="textbox">
-          <posx>700</posx>
+          <posx>930</posx>
           <posy>385</posy>
-          <width>560</width>
+          <width>330</width>
           <height>200</height>
           <info>ListItem.Property(Addon.Description)</info>
           <align>justify</align>
@@ -316,19 +326,19 @@
         <visible>Window.IsVisible(Pictures) + !IsEmpty(ListItem.PicturePath)</visible>
 
         <control type="image">
-          <posx>680</posx>
+          <posx>911</posx>
           <posy>288</posy>
           <width>600</width>
           <height>315</height>
-          <texture background="true" >music_fanart_diffuse.png</texture>
+          <texture background="true">music_fanart_diffuse.png</texture>
           <fadetime>200</fadetime>
           <aspectratio scalediffuse="false">stretch</aspectratio>
         </control>
 
         <control type="label">
-          <posx>700</posx>
+          <posx>930</posx>
           <posy>300</posy>
-          <width>400</width>
+          <width>330</width>
           <height>50</height>
           <aligny>Left</aligny>
           <font>Artist_Font</font>
@@ -338,9 +348,9 @@
         </control>
 
         <control type="label">
-          <posx>700</posx>
+          <posx>930</posx>
           <posy>300</posy>
-          <width>400</width>
+          <width>330</width>
           <height>50</height>
           <aligny>Left</aligny>
           <font>Artist_Font</font>
@@ -350,9 +360,9 @@
         </control>
         
         <control type="label">
-          <posx>700</posx>
+          <posx>930</posx>
           <posy>350</posy>
-          <width>400</width>
+          <width>330</width>
           <height>50</height>
           <aligny>Left</aligny>
           <textcolor>White</textcolor>
@@ -360,30 +370,20 @@
         </control>
 
         <control type="label">
-          <posx>700</posx>
-          <posy>560</posy>
-          <width>400</width>
+          <posx>930</posx>
+          <posy>350</posy>
+          <width>330</width>
           <height>50</height>
           <aligny>Left</aligny>
           <textcolor>White</textcolor>
           <label>[COLOR Accent]$INFO[ListItem.PictureCamMake][/COLOR] $INFO[ListItem.PictureCamModel]</label>
         </control>
 
-        <control type="label">
-          <posx>1260</posx>
-          <posy>320</posy>
-          <width>200</width>
-          <height>25</height>
-          <align>right</align>
-          <textcolor>White</textcolor>
-          <label>[LOWERCASE]$INFO[ListItem.PictureDateTime][/LOWERCASE]</label>
-        </control>
-
         <control type="textbox">
-          <posx>700</posx>
+          <posx>930</posx>
           <posy>385</posy>
-          <width>560</width>
-          <height>150</height>
+          <width>330</width>
+          <height>190</height>
           <info>ListItem.PictureDesc</info>
           <align>justify</align>
           <autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
@@ -393,10 +393,10 @@
         </control>
 
         <control type="textbox">
-          <posx>700</posx>
+          <posx>930</posx>
           <posy>385</posy>
-          <width>560</width>
-          <height>150</height>
+          <width>330</width>
+          <height>190</height>
           <info>ListItem.PictureComment</info>
           <align>justify</align>
           <autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
@@ -405,6 +405,20 @@
           <visible>IsEmpty(ListItem.PictureDesc)</visible>
         </control>
 
+      </control>
+
+      <control type="scrollbar" id="60">
+        <posx>911</posx>
+        <posy>288</posy>
+        <width>6</width>
+        <height>315</height>
+        <texturesliderbackground></texturesliderbackground>
+        <textureslidernib>bar.png</textureslidernib>
+        <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+        <texturesliderbar></texturesliderbar>
+        <texturesliderbarfocus></texturesliderbarfocus>
+        <showonepage>true</showonepage>
+        <orientation>vertical</orientation>   
       </control>
 
     </control>

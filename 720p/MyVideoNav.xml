@@ -8,7 +8,7 @@
 			<include>HomeBackground</include>
 			<include>BarClock</include>
 			<include>View_50_List</include>
-			<include>Viewtype_Episodes</include>
+			<include condition="!Skin.HasSetting(LightMode)">Viewtype_Episodes</include>
 			<include>Viewtype_Panel_Tall</include>
 			<include>Viewtype_Season_Tall</include>
 			<include>Viewtype_Panel_Genre</include>
@@ -89,7 +89,7 @@
 				<height>40</height>
 				<width>250</width>
 				<radioposx>200</radioposx>
-				<textoffsetx>10</textoffsetx>
+				<textoffsetx>20</textoffsetx>
 				<textwidth>200</textwidth>
 				<align>left</align>
 				<font>small</font>

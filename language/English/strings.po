@@ -193,3 +193,7 @@ msgstr ""
 msgctxt "#31731"
 msgid "Enable Visualization"
 msgstr ""
+
+msgctxt "#31732"
+msgid "Enable Light Mode (List View Only)"
+msgstr ""

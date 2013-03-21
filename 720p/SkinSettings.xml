@@ -223,6 +223,18 @@
 						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
 						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
 					</control>
+
+					<control type="radiobutton" id="204">
+						<description>Toggle Light Mode</description>
+						<width>820</width>
+						<align>left</align>
+						<label>31732</label>
+						<focusedcolor>Accent</focusedcolor>
+						<onclick>Skin.ToggleSetting(LightMode)</onclick>
+						<selected>Skin.HasSetting(LightMode)</selected>
+						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					</control>
 				</control>
 
 			</control>
