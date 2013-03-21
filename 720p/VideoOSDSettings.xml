@@ -22,7 +22,6 @@
 			<posy>-20</posy>
 			<animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
 
-
 			<control type="label" id="2">
 				<description>Settings</description>
 				<posx>28</posx>
@@ -30,7 +29,7 @@
 				<width>580</width>
 				<font>Large</font>
 				<align>Left</align>
-        	    <textcolor>Accent</textcolor>
+				<textcolor>Accent</textcolor>
 			</control>
 
 			<control type="grouplist" id="5">
@@ -46,73 +45,59 @@
 				<onright>28</onright>
 				<onup>28</onup>
 				<ondown>28</ondown>
-				
 			</control>
 
 			<control type="button" id="7">
 				<description>Default Button</description>
 				<align>left</align>
-        	    <focusedcolor>Accent</focusedcolor>
+				<focusedcolor>Accent</focusedcolor>
 			</control>
 
 			<control type="radiobutton" id="8">
 				<description>Default RadioButton</description>
 				<align>left</align>
-        	    <focusedcolor>Accent</focusedcolor>
-      <textureradioon>other_textures/radiobutton2fo.png</textureradioon>
-      <textureradiooff>other_textures/radiobutton2nf.png</textureradiooff>
-
+				<focusedcolor>Accent</focusedcolor>
+				<textureradioon>other_textures/radiobutton2fo.png</textureradioon>
+				<textureradiooff>other_textures/radiobutton2nf.png</textureradiooff>
 			</control>
 
 			<control type="spincontrolex" id="9">
 				<description>Default spincontrolex</description>
 				<align>left</align>
 				<reverse>yes</reverse>
-        	    <focusedcolor>Accent</focusedcolor>
-				
-      <textureup>other_textures/arrowupfo.png</textureup>
-      <textureupfocus>other_textures/arrowupg.png</textureupfocus>
-      <texturedown>other_textures/arrowdownfo.png</texturedown>
-      <texturedownfocus>other_textures/arrowdowng.png</texturedownfocus>
-				
-				
+				<focusedcolor>Accent</focusedcolor>
+				<textureup>other_textures/arrowupfo.png</textureup>
+				<textureupfocus>other_textures/arrowupg.png</textureupfocus>
+				<texturedown>other_textures/arrowdownfo.png</texturedown>
+				<texturedownfocus>other_textures/arrowdowng.png</texturedownfocus>
 			</control>
 
 			<control type="sliderex" id="10">
 				<description>Default Slider</description>
 				<align>left</align>
-        	    <focusedcolor>Accent</focusedcolor>
-				
+				<focusedcolor>Accent</focusedcolor>
 			</control>
 
-
-	
-		<control type="image">
-					<posx>620</posx>
-						<posy>85</posy>
-						<width>40</width>
-						<height>40</height>
+			<control type="image">
+				<posx>620</posx>
+				<posy>85</posy>
+				<width>40</width>
+				<height>40</height>
 				<texture flipy="true">down_arrow.png</texture>
 				<visible>Container(5).HasPrevious</visible>
 				<animation effect="fade" time="400">VisibleChange</animation>
 			</control>
 
 			<control type="image">
-					<posx>620</posx>
-						<posy>405</posy>
-						<width>40</width>
-						<height>40</height>
+				<posx>620</posx>
+				<posy>405</posy>
+				<width>40</width>
+				<height>40</height>
 				<texture>down_arrow.png</texture>
 				<visible>Container(5).HasNext</visible>
 				<animation effect="fade" time="400">VisibleChange</animation>
 			</control>
 
 		</control>
-		
-		
-
-		
-
 	</controls>
-
 </window>

@@ -7,7 +7,7 @@
 		<control type="group">
 			<posx>8</posx>
 			<posy>0</posy>
-			<visible>!Window.IsVisible(107)</visible>
+			<visible>!Window.IsVisible(107) + !Window.IsVisible(FullScreenVideo)</visible>
 			
 			<animation type="WindowOpen">
 				<effect type="slide" time="300" start="-340, 0" end="0,0" easing="out" tween="cubic" />

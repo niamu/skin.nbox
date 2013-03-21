@@ -37,7 +37,7 @@
         <fadetime>200</fadetime>
         <texture background="true">tile.png</texture>
         <colordiffuse>White80</colordiffuse>
-        <visible>!Window.IsVisible(osdvideosettings) + !Window.IsVisible(osdaudiosettings) + !Window.IsVisible(videobookmarks)</visible>
+        <visible>!Window.IsVisible(osdvideosettings) + !Window.IsVisible(osdaudiosettings) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(script-XBMC-Subtitles-main.xml)</visible>
       </control>
 
       <control type="label">
