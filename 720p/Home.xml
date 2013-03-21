@@ -4400,7 +4400,7 @@
 
       <control type="group">
 
-        <visible>Control.HasFocus(6000) | [ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),nowplaying)]</visible>
+        <visible>Control.HasFocus(6000) | [ControlGroup(9000).HasFocus() + [SubString(Window(Home).Property(menu),nowplaying) + Player.HasMedia]]</visible>
         <animation effect="fade" time="400">VisibleChange</animation>
         <animation effect="slide" start="+800,0" time="500" easing="out" tween="cubic" condition="[ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),nowplaying)] | Control.HasFocus(6000)">Conditional</animation>
         <animation effect="rotatey" time="500" start="-30" end="0" center="1200,0" condition="[ControlGroup(9000).HasFocus() | SubString(Window(Home).Property(menu),nowplaying) + Control.HasFocus(6000)] | Control.HasFocus(6000)" reversible="false">Conditional</animation>  
@@ -4568,7 +4568,7 @@
             <align>left</align>
             <onup>904</onup>
             <ondown>902</ondown>
-            <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
+            <onright condition="SubString(Window(Home).Property(menu),main) | [SubString(Window(Home).Property(menu),nowplaying) + !Player.HasMedia]">5000</onright>
             <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
             <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
             <onright condition="SubString(Window(Home).Property(menu),nowplaying)">6000</onright>
@@ -4643,7 +4643,7 @@
             <onup>ClearProperty(favourites)</onup>
             <ondown>903</ondown>
             <ondown>ClearProperty(favourites)</ondown>
-            <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
+            <onright condition="SubString(Window(Home).Property(menu),main) | [SubString(Window(Home).Property(menu),nowplaying) + !Player.HasMedia]">5000</onright>
             <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
             <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
             <onright condition="SubString(Window(Home).Property(menu),nowplaying)">6000</onright>
@@ -4703,7 +4703,7 @@
             <align>left</align>
             <onup>902</onup>
             <ondown>904</ondown>
-            <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
+            <onright condition="SubString(Window(Home).Property(menu),main) | [SubString(Window(Home).Property(menu),nowplaying) + !Player.HasMedia]">5000</onright>
             <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
             <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
             <onright condition="SubString(Window(Home).Property(menu),nowplaying)">6000</onright>
@@ -4764,7 +4764,7 @@
             <align>left</align>
             <onup>903</onup>
             <ondown>901</ondown>
-            <onright condition="SubString(Window(Home).Property(menu),main)">5000</onright>
+            <onright condition="SubString(Window(Home).Property(menu),main) | [SubString(Window(Home).Property(menu),nowplaying) + !Player.HasMedia]">5000</onright>
             <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
             <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
             <onright condition="SubString(Window(Home).Property(menu),nowplaying)">6000</onright>
