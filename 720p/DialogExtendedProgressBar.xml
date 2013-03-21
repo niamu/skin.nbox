@@ -75,6 +75,7 @@
 			<height>100</height>
 			<visible>true</visible>
 			<texture>bar.png</texture>
+			<visible>!Window.IsVisible(FullScreenVideo)</visible>
 		</control>
 
 	</controls>
