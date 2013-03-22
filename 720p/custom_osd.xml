@@ -148,7 +148,7 @@
           <posx>0</posx>
           <posy>32</posy>
           <width>830</width>
-          <label>[COLOR Accent]$INFO[VideoPlayer.EndTime,[COLOR white][LOWERCASE]$LOCALIZE[19127]: [/LOWERCASE][/COLOR]][/COLOR] [COLOR Accent]$INFO[VideoPlayer.NextTitle,[COLOR white]$LOCALIZE[19031]: [/COLOR]][/COLOR]</label>
+          <label>[COLOR Accent]$INFO[VideoPlayer.EndTime,[COLOR white][LOWERCASE]$LOCALIZE[19127]: [/LOWERCASE][/COLOR]][/COLOR] [COLOR Accent]$INFO[VideoPlayer.NextTitle,[COLOR white][LOWERCASE]$LOCALIZE[19031][/LOWERCASE]: [/COLOR]][/COLOR]</label>
           <scroll>true</scroll>
           <font>Medium</font>
           <align>left</align>
