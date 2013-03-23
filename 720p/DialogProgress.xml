@@ -55,24 +55,6 @@
 				<font>Large</font>
 			</control>
 
-			<control type="label" id="3">
-				<description>Line 2</description>
-				<posx>10</posx>
-				<posy>75</posy>
-				<width>500</width>
-				<label>-</label>
-				<textcolor>black</textcolor>
-			</control>
-
-			<control type="label" id="4">
-				<description>Line 3</description>
-				<posx>10</posx>
-				<posy>100</posy>
-				<width>500</width>
-				<label>-</label>
-				<textcolor>black</textcolor>
-			</control>
-
 			<control type="progress">
 				<description>Progressbar</description>
 				<posx>0</posx>

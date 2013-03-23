@@ -5,6 +5,7 @@
 	<controls>
 
 		<control type="group">
+			<visible>!Window.IsActive(visualisation)</visible>
 			<animation type="TYPE" condition="Window.IsVisible(2001)" reversible="false">
 				<effect type="slide" end="-1500,0" time="200"/>
 			</animation>

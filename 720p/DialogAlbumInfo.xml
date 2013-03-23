@@ -5,7 +5,7 @@
 	<controls>
 
 		<control type="group">
-
+			<visible>!Window.IsActive(visualisation)</visible>
 			<animation type="WindowClose">
 				<effect type="fade" time="300"/>
 				<effect type="slide" end="+1500,0" time="300"/>

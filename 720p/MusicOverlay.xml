@@ -22,7 +22,7 @@
 					<description>Now Playing</description>
 					<posx>0</posx>
 					<posy>0</posy>
-					<width>1220</width>
+					<width>920</width>
 					<label>[COLOR Accent]$INFO[MusicPlayer.Artist,,][/COLOR]</label>
 					<scroll>true</scroll>
 					<font>Large</font>
@@ -33,7 +33,7 @@
 					<description>Now Playing</description>
 					<posx>0</posx>
 					<posy>32</posy>
-					<width>1220</width>
+					<width>920</width>
 					<label>$INFO[MusicPlayer.Title,,][COLOR Accent]$INFO[MusicPlayer.Album, ,][/COLOR]</label>
 					<scroll>true</scroll>
 					<font>Medium</font>

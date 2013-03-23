@@ -36,7 +36,7 @@
 					<posx>0</posx>
 					<posy>32</posy>
 					<width>830</width>
-					<label>[LOWERCASE]$INFO[VideoPlayer.Tagline][/LOWERCASE][COLOR Accent]$INFO[VideoPlayer.EndTime,[COLOR white]$LOCALIZE[19127]: [/COLOR]][/COLOR] [COLOR Accent]$INFO[VideoPlayer.NextTitle,[COLOR white]$LOCALIZE[19031]: [/COLOR]][/COLOR]</label>
+					<label>[LOWERCASE]$INFO[VideoPlayer.Tagline][/LOWERCASE][COLOR Accent]$INFO[VideoPlayer.EndTime,[COLOR white][LOWERCASE]$LOCALIZE[19127][/LOWERCASE]: [/COLOR]][/COLOR] [COLOR Accent]$INFO[VideoPlayer.NextTitle,[COLOR white][LOWERCASE]$LOCALIZE[19031][/LOWERCASE]: [/COLOR]][/COLOR]</label>
 					<scroll>true</scroll>
 					<font>Medium</font>
 					<align>left</align>
@@ -60,8 +60,8 @@
 					<visible>IsEmpty(VideoPlayer.Tagline)</visible>
 					<posx>0</posx>
 					<posy>32</posy>
-					<width>830</width>
-					<label>$INFO[VideoPlayer.TVShowTitle][COLOR Accent] $INFO[VideoPlayer.Season,$LOCALIZE[20373] ]$INFO[VideoPlayer.Episode, $LOCALIZE[20359] ] [/COLOR]</label>
+					<width>920</width>
+					<label>$INFO[VideoPlayer.TVShowTitle][COLOR Accent] $INFO[VideoPlayer.Season,[LOWERCASE]$LOCALIZE[20373][/LOWERCASE] ]$INFO[VideoPlayer.Episode, [LOWERCASE]$LOCALIZE[20359][/LOWERCASE] ] [/COLOR]</label>
 					<scroll>true</scroll>
 					<font>Medium</font>
 					<align>left</align>
@@ -73,7 +73,7 @@
 					<visible>IsEmpty(VideoPlayer.Tagline)</visible>
 					<posx>60</posx>
 					<posy>32</posy>
-					<width>830</width>
+					<width>920</width>
 					<label>$INFO[VideoPlayer.Artist] [COLOR Accent]$INFO[VideoPlayer.Album][/COLOR]</label>
 					<scroll>true</scroll>
 					<font>Medium</font>

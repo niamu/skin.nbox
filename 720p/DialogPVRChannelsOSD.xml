@@ -87,7 +87,6 @@
 				<onright>NextChannelGroup</onright>
 				<onup>11</onup>
 				<ondown>11</ondown>
-				<viewtype label="535">list</viewtype>
 				<pagecontrol>60</pagecontrol>
 				<scrolltime>200</scrolltime>
 				<itemlayout height="90">
