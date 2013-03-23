@@ -114,7 +114,6 @@
         <align>left</align>
       </control>
 
-
       <control type="fadelabel">
         <posx>396</posx>
         <posy>171</posy>
@@ -160,13 +159,25 @@
         <texture>music_fanart_diffuse.png</texture>
         <fadetime>200</fadetime>
         <aspectratio scalediffuse="false">stretch</aspectratio>
+        <visible>!IsEmpty(ListItem.PicturePath) | !IsEmpty(ListItem.Property(Addon.Name))</visible>
+      </control>
+
+      <control type="image">
+        <posx>396</posx>
+        <posy>288</posy>
+        <width>884</width>
+        <height>315</height>
+        <texture background="true">music_fanart_diffuse.png</texture>
+        <fadetime>200</fadetime>
+        <aspectratio scalediffuse="false">stretch</aspectratio>
+        <visible>IsEmpty(ListItem.PicturePath) + IsEmpty(ListItem.Property(Addon.Name))</visible>
       </control>
 
       <control type="list" id="50">
         <visible>!Container.Content(episodes) + !Container.Content(tvshows) + !Container.Content(movies) + !Container.Content(seasons) + !Container.Content(genres) + !Container.Content(songs) + !Container.Content(albums)</visible>
         <posx>396</posx>
         <posy>288</posy>
-        <width>510</width>
+        <width>884</width>
         <height>315</height>
         <onleft>9000</onleft>
         <onright>60</onright>
@@ -175,11 +186,19 @@
         <pagecontrol>60</pagecontrol>
         <viewtype label="List">List</viewtype>
         <scrolltime>200</scrolltime>
-        <itemlayout width="510" height="45">
+        <itemlayout width="884" height="45">
           <control type="image">
             <width>884</width>
             <height>45</height>
             <texture border="2">other_textures/buttonnf.png</texture>
+            <visible>IsEmpty(ListItem.PicturePath) + IsEmpty(ListItem.Property(Addon.Name))</visible>
+          </control>
+
+          <control type="image">
+            <width>510</width>
+            <height>45</height>
+            <texture border="2">other_textures/buttonnf.png</texture>
+            <visible>!IsEmpty(ListItem.PicturePath) | !IsEmpty(ListItem.Property(Addon.Name))</visible>
           </control>
 
           <control type="label">
@@ -188,11 +207,19 @@
             <label>$INFO[ListItem.Label]</label>
           </control>
         </itemlayout>
-        <focusedlayout width="510" height="45">
+        <focusedlayout width="884" height="45">
+          <control type="image">
+            <width>884</width>
+            <height>45</height>
+            <texture border="2">other_textures/buttonfo.png</texture>
+            <visible>IsEmpty(ListItem.PicturePath) + IsEmpty(ListItem.Property(Addon.Name))</visible>
+          </control>
+
           <control type="image">
             <width>510</width>
             <height>45</height>
             <texture border="2">other_textures/buttonfo.png</texture>
+            <visible>!IsEmpty(ListItem.PicturePath) | !IsEmpty(ListItem.Property(Addon.Name))</visible>
           </control>
 
           <control type="label">
@@ -253,18 +280,19 @@
         <visible>Window.IsVisible(Pictures)</visible>
       </control>
 
+      <control type="image">
+        <posx>911</posx>
+        <posy>288</posy>
+        <width>600</width>
+        <height>315</height>
+        <texture background="true">music_fanart_diffuse.png</texture>
+        <fadetime>200</fadetime>
+        <aspectratio scalediffuse="false">stretch</aspectratio>
+        <visible>!IsEmpty(ListItem.PicturePath) | !IsEmpty(ListItem.Property(Addon.Name))</visible>
+      </control>
+
       <control type="group">
         <visible>!IsEmpty(ListItem.Property(Addon.Name))</visible>
-
-        <control type="image">
-          <posx>911</posx>
-          <posy>288</posy>
-          <width>600</width>
-          <height>315</height>
-          <texture background="true">music_fanart_diffuse.png</texture>
-          <fadetime>200</fadetime>
-          <aspectratio scalediffuse="false">stretch</aspectratio>
-        </control>
 
         <control type="label">
           <posx>930</posx>
@@ -324,16 +352,6 @@
 
       <control type="group">
         <visible>Window.IsVisible(Pictures) + !IsEmpty(ListItem.PicturePath)</visible>
-
-        <control type="image">
-          <posx>911</posx>
-          <posy>288</posy>
-          <width>600</width>
-          <height>315</height>
-          <texture background="true">music_fanart_diffuse.png</texture>
-          <fadetime>200</fadetime>
-          <aspectratio scalediffuse="false">stretch</aspectratio>
-        </control>
 
         <control type="label">
           <posx>930</posx>
@@ -418,7 +436,23 @@
         <texturesliderbar></texturesliderbar>
         <texturesliderbarfocus></texturesliderbarfocus>
         <showonepage>true</showonepage>
-        <orientation>vertical</orientation>   
+        <orientation>vertical</orientation>
+        <visible>!IsEmpty(ListItem.PicturePath) | !IsEmpty(ListItem.Property(Addon.Name))</visible>
+      </control>
+
+      <control type="scrollbar" id="60">
+        <posx>1274</posx>
+        <posy>288</posy>
+        <width>6</width>
+        <height>315</height>
+        <texturesliderbackground></texturesliderbackground>
+        <textureslidernib>bar.png</textureslidernib>
+        <textureslidernibfocus>scroll_nib.png</textureslidernibfocus>
+        <texturesliderbar></texturesliderbar>
+        <texturesliderbarfocus></texturesliderbarfocus>
+        <showonepage>true</showonepage>
+        <orientation>vertical</orientation>
+        <visible>IsEmpty(ListItem.PicturePath) + IsEmpty(ListItem.Property(Addon.Name))</visible>
       </control>
 
     </control>
