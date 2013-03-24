@@ -10,7 +10,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(32)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(32)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -36,7 +36,7 @@
 				<height>50</height>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE] [/COLOR]][/COLOR][/LOWERCASE]</label>
+				<label>[COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE]: [/COLOR]][/COLOR]</label>
 			</control>
 
 			<control type="label">
@@ -262,7 +262,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(33)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(33)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -514,7 +514,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(34)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(34)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -663,7 +663,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -689,7 +689,7 @@
 				<height>50</height>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE] [/COLOR]][/COLOR][/LOWERCASE]</label>
+				<label>[COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE]: [/COLOR]][/COLOR]</label>
 			</control>
 
 			<control type="image">
@@ -835,7 +835,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(35)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(35)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -1018,7 +1018,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(36)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(36)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -1263,7 +1263,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -1289,7 +1289,7 @@
 				<height>50</height>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE] [/COLOR]][/COLOR][/LOWERCASE]</label>
+				<label>[COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE]: [/COLOR]][/COLOR]</label>
 			</control>
 
 			<control type="image">
@@ -1488,7 +1488,7 @@
 				<width>300</width>
 				<align>left</align>
 				<aligny>top</aligny>
-				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE] [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
+				<label>[LOWERCASE]$LOCALIZE[31713][/LOWERCASE]: [COLOR Accent][LOWERCASE]$INFO[Control.GetLabel(29)][/LOWERCASE][/COLOR] </label>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
 			</control>
@@ -1514,7 +1514,7 @@
 				<height>50</height>
 				<font>Sort_Font_Small</font>
 				<textcolor>White</textcolor>
-				<label>[LOWERCASE][COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE] [/COLOR]][/COLOR][/LOWERCASE]</label>
+				<label>[COLOR Accent]$INFO[Control.GetLabel(30),[COLOR White][LOWERCASE]$LOCALIZE[31714][/LOWERCASE]: [/COLOR]][/COLOR]</label>
 			</control>
 
 			<control type="image">
