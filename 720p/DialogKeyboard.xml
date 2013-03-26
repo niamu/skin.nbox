@@ -1,48 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
 <window id="103">
-	<defaultcontrol always="true">300</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-
-	<controls>
-
-		<include>GlobalOverlay</include>
-
-		<control type="group">
-			<visible>!Window.IsVisible(numericinput)</visible>
-			
-			<animation type="WindowOpen">
-				<effect type="slide" time="400" start="0,720" end="0,570" easing="out" tween="cubic" />
-			</animation>
-			<animation type="WindowClose">
-				<effect type="slide" time="400" start="0,570" end="0,720" easing="in" tween="cubic" />
-			</animation>
-
-			<control type="image">
-				<posy>0</posy>
-				<posx>0</posx>
-				<width>1280</width>
-				<height>150</height>
-				<texture border="22">button.png</texture>
-			</control>
-
-			<control type="image">
-				<posx>290</posx>
-				<posy>50</posy>
-				<width>700</width>
-				<height>50</height>
-				<aspectratio>stretch</aspectratio>
-				<texture border="20">black.png</texture>
-				<colordiffuse>Diffuse3</colordiffuse>
-			</control>
-
-			<control type="label" id="310">
-				<description>Edit Text</description>
-				<posx>315</posx>
-				<posy>50</posy>
-				<width>650</width>
-				<height>50</height>
-				<align>center</align>
-			</control>
-
-		</control>
-	</controls>
+    <defaultcontrol always="true">300</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <controls>
+        <include>GlobalOverlay</include>
+        <control type="group">
+            <visible>!Window.IsVisible(numericinput)</visible>
+            <animation type="WindowOpen">
+                <effect type="slide" time="400" start="0,720" end="0,570" easing="out" tween="cubic" />
+            </animation>
+            <animation type="WindowClose">
+                <effect type="slide" time="400" start="0,570" end="0,720" easing="in" tween="cubic" />
+            </animation>
+            <control type="image">
+                <posy>0</posy>
+                <posx>0</posx>
+                <width>1280</width>
+                <height>150</height>
+                <texture border="22">button.png</texture>
+            </control>
+            <control type="image">
+                <posx>290</posx>
+                <posy>50</posy>
+                <width>700</width>
+                <height>50</height>
+                <aspectratio>stretch</aspectratio>
+                <texture border="20">black.png</texture>
+                <colordiffuse>Diffuse3</colordiffuse>
+            </control>
+            <control type="label" id="310">
+                <description>Edit Text</description>
+                <posx>315</posx>
+                <posy>50</posy>
+                <width>650</width>
+                <height>50</height>
+                <align>center</align>
+            </control>
+        </control>
+    </controls>
 </window>

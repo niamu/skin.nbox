@@ -1,70 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
 <window id="122">
-	<defaultcontrol always="true">2</defaultcontrol>
-	<allowoverlay>yes</allowoverlay>
-
-	<controls>
-
-		<control type="group">
-			<posx>20</posx>
-			<posy>20</posy>
-
-			<control type="image">
-				<posx>-20</posx>
-				<posy>-20</posy>
-				<width>1280</width>
-				<height>720</height>
-				<texture border="22">tile.png</texture>
-			</control>
-
-			<control type="list" id="2">
-				<description>Preset List</description>
-				<posx>150</posx>
-				<posy>90</posy>
-				<width>580</width>
-				<height>460</height>
-				<onleft>-</onleft>
-				<onright>-</onright>
-				<onup>2</onup>
-				<ondown>2</ondown>
-
-				<itemlayout height="46">
-
-					<control type="image">
-						<width>580</width>
-						<height>44</height>
-						<texture border="2">other_textures/buttonnf.png</texture>
-					</control>
-
-					<control type="label">
-						<posx>20</posx>
-						<width>540</width>
-						<info>ListItem.Label</info>
-					</control>
-
-				</itemlayout>
-
-				<focusedlayout height="46">
-
-					<control type="image">
-						<width>580</width>
-						<height>44</height>
-						<texture border="5">other_textures/buttonfo.png</texture>
-					</control>
-
-					<control type="label">
-						<posx>20</posx>
-						<width>540</width>
-						<info>ListItem.Label</info>
-					</control>
-
-				</focusedlayout>
-
-			</control>
-
-		</control>
-
-		
-
-	</controls>
-
+    <defaultcontrol always="true">2</defaultcontrol>
+    <allowoverlay>yes</allowoverlay>
+    <controls>
+        <control type="group">
+            <posx>20</posx>
+            <posy>20</posy>
+            <control type="image">
+                <posx>-20</posx>
+                <posy>-20</posy>
+                <width>1280</width>
+                <height>720</height>
+                <texture border="22">tile.png</texture>
+            </control>
+            <control type="list" id="2">
+                <description>Preset List</description>
+                <posx>150</posx>
+                <posy>90</posy>
+                <width>580</width>
+                <height>460</height>
+                <onleft>-</onleft>
+                <onright>-</onright>
+                <onup>2</onup>
+                <ondown>2</ondown>
+                <itemlayout height="46">
+                    <control type="image">
+                        <width>580</width>
+                        <height>44</height>
+                        <texture border="2">other_textures/buttonnf.png</texture>
+                    </control>
+                    <control type="label">
+                        <posx>20</posx>
+                        <width>540</width>
+                        <info>ListItem.Label</info>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="46">
+                    <control type="image">
+                        <width>580</width>
+                        <height>44</height>
+                        <texture border="5">other_textures/buttonfo.png</texture>
+                    </control>
+                    <control type="label">
+                        <posx>20</posx>
+                        <width>540</width>
+                        <info>ListItem.Label</info>
+                    </control>
+                </focusedlayout>
+            </control>
+        </control>
+    </controls>
 </window>
