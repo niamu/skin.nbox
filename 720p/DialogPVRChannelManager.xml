@@ -1,12 +1,6 @@
 <window>
 	<defaultcontrol always="true">20</defaultcontrol>
 	<allowoverlay>no</allowoverlay>
-	<coordinates>
-		<system>1</system>
-		<posx>190</posx>
-		<posy>30</posy>
-	</coordinates>
-	<include>dialogeffect</include>
 
 	<controls>
 		<control type="image">

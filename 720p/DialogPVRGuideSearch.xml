@@ -55,8 +55,8 @@
 					<onup>9</onup>
 					<ondown>11</ondown>
 					<focusedcolor>Accent</focusedcolor>
-					<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-					<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+					<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 				</control>
 				<control type="radiobutton" id="11">
 					<description>Case Sensitive</description>
@@ -67,8 +67,8 @@
 					<onup>10</onup>
 					<ondown>14</ondown>
 					<focusedcolor>Accent</focusedcolor>
-					<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-					<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+					<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 				</control>
 				<control type="edit" id="14">
 					<description>Start Date</description>
@@ -124,8 +124,8 @@
 					<onup>18</onup>
 					<ondown>22</ondown>
 					<focusedcolor>Accent</focusedcolor>
-					<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-					<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+					<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 				</control>
 				<control type="radiobutton" id="22">
 					<description>FTA only</description>
@@ -136,8 +136,8 @@
 					<onup>20</onup>
 					<ondown>24</ondown>
 					<focusedcolor>Accent</focusedcolor>
-					<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-					<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+					<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 				</control>
 				<control type="radiobutton" id="24">
 					<description>Ignore Timers</description>
@@ -148,8 +148,8 @@
 					<onup>22</onup>
 					<ondown>26</ondown>
 					<focusedcolor>Accent</focusedcolor>
-					<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-					<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+					<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 				</control>
 			</control>
 			<control type="grouplist">
@@ -231,8 +231,8 @@
 					<onup>17</onup>
 					<ondown>21</ondown>
 					<focusedcolor>Accent</focusedcolor>
-					<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-					<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+					<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 				</control>
 				<control type="spincontrolex" id="21">
 					<description>Groups</description>
@@ -272,8 +272,8 @@
 					<onup>23</onup>
 					<ondown>26</ondown>
 					<focusedcolor>Accent</focusedcolor>
-					<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-					<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+					<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+					<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 				</control>
 			</control>
 			<control type="group" id="9000">

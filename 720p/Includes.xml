@@ -93,7 +93,7 @@
 			<fadetime>3000</fadetime>
 			<pauseatend>0</pauseatend>
 			<loop>true</loop>
-			<aspectratio background="true" aligny="top">stretch</aspectratio>
+			<aspectratio aligny="top">stretch</aspectratio>
 			<imagepath background="true">backgrounds/shutdown</imagepath>
 			<colordiffuse>HomeFanart</colordiffuse>
 			<visible>Control.HasFocus(506) | [Control.HasFocus(20) + Window.IsActive(loginscreen)] | [ControlGroup(9000).HasFocus() + SubString(Window(Home).Property(menu),shutdown)]</visible>
@@ -614,7 +614,7 @@
 			<fadetime>10000</fadetime>
 			<pauseatend>0</pauseatend>
 			<loop>true</loop>
-			<aspectratio background="true" aligny="top">stretch</aspectratio>
+			<aspectratio aligny="top">stretch</aspectratio>
 			<imagepath background="true">walls</imagepath>
 			<visible>true</visible>
 		</control>

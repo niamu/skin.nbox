@@ -213,7 +213,6 @@
 				<posy>300</posy>
 				<width>400</width>
 				<height>50</height>
-				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[33054][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]</label>
@@ -225,7 +224,6 @@
 				<posy>300</posy>
 				<width>400</width>
 				<height>50</height>
-				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[20373][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]</label>
@@ -237,7 +235,6 @@
 				<posy>300</posy>
 				<width>400</width>
 				<height>50</height>
-				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[33054][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20359][/LOWERCASE]</label>
@@ -249,7 +246,6 @@
 				<posy>300</posy>
 				<width>400</width>
 				<height>50</height>
-				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[20373][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20359][/LOWERCASE]</label>
@@ -261,7 +257,6 @@
 				<posy>300</posy>
 				<width>400</width>
 				<height>50</height>
-				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Duration]</label>
@@ -273,7 +268,6 @@
 				<posy>300</posy>
 				<width>400</width>
 				<height>50</height>
-				<aligny>Left</aligny>
 				<font>Artist_Font</font>
 				<textcolor>White</textcolor>
 				<label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>

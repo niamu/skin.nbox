@@ -85,7 +85,6 @@
 
 			<control type="radiobutton" id="14">
 				<description>Watched Toggle</description>
-				<textwidth>170</textwidth>
 				<height>40</height>
 				<width>250</width>
 				<radioposx>200</radioposx>

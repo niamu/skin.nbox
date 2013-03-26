@@ -107,7 +107,7 @@
 					<width>340</width>
 					<height>95</height>
 					<label>$INFO[ListItem.Property(Addon.Disclaimer),[B]$LOCALIZE[24052]:[/B] ]</label>
-					<scroll>true</scroll>
+					<autoscroll time="2000" delay="3000" repeat="5000">true</autoscroll>
 					<visible>!IsEmpty(ListItem.Property(Addon.Disclaimer))</visible>
 					<textcolor>black</textcolor>
 				</control>

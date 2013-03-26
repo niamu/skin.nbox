@@ -42,30 +42,6 @@
 			<filename>GeosansLight.ttf</filename>
 			<size>47</size>
 		</font>
-		
-		<font>
-			<name>Home_menu_over</name>
-			<filename>GeosansLight.ttf</filename>
-			<size>50</size>
-		</font>
-		
-		<font>
-			<name>weather_loc</name>
-			<filename>GeosansLight.ttf</filename>
-			<size>48</size>
-		</font>
-
-		<font>
-			<name>button_title_big</name>
-			<filename>GeosansLight.ttf</filename>
-			<size>32</size>
-		</font>	
-		
-		<font>
-			<name>temp_big</name>
-			<filename>GeosansLight.ttf</filename>
-			<size>80</size>
-		</font>
 
 		<font>
 			<name>Large</name>
@@ -92,25 +68,13 @@
 			<filename>GeosansLight.ttf</filename>
 			<size>20</size>
 		</font>
-		
-		<font>
-			<name>letter_bold</name>
-			<filename>QuicksandBold.ttf</filename>
-			<size>24</size>
-		</font>
 
 		<font>
 			<name>button_bold</name>
 			<filename>QuicksandBold.ttf</filename>
 			<size>16</size>
 		</font>
-		
-		<font>
-			<name>button_bold_focus</name>
-			<filename>QuicksandBold.ttf</filename>
-			<size>18</size>
-		</font>
-		
+
 		<font>
 			<name>button_title</name>
 			<filename>QuicksandBold.ttf</filename>
@@ -130,35 +94,11 @@
 		</font>			
 
 		<font>
-			<name>rss_small</name>
-			<filename>QuicksandBold.ttf</filename>
-			<size>14</size>
-		</font>	
-
-		<font>
-			<name>plot_scroll_small</name>
-			<filename>QuicksandBold.ttf</filename>
-			<size>16</size>
-		</font>	
-		
-		<font>
 			<name>Artist_Font</name>
 			<filename>GeosansLight.ttf</filename>
 			<size>42</size>
 		</font>
-		
-		<font>
-			<name>Genre_Font_Small</name>
-			<filename>GeosansLight.ttf</filename>
-			<size>16</size>
-		</font>
-		
-		<font>
-			<name>Genre_Font</name>
-			<filename>GeosansLight.ttf</filename>
-			<size>17</size>
-		</font>
-		
+
 		<font>
 			<name>Plot_Font</name>
 			<filename>GeosansLight.ttf</filename>

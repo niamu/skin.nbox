@@ -171,7 +171,6 @@
         <posy>300</posy>
         <width>465</width>
         <height>50</height>
-        <aligny>Left</aligny>
         <font>Artist_Font</font>
         <textcolor>White</textcolor>
         <visible>true</visible>

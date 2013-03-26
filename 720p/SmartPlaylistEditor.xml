@@ -268,10 +268,6 @@
 				<onup>17</onup>
 				<ondown>12</ondown>
 				<focusedcolor>Accent</focusedcolor>
-		        <textureup>other_textures/arrowupfo.png</textureup>
-		        <texturedown>other_textures/arrowdownfo.png</texturedown>
-		        <textureupfocus>other_textures/arrowupg.png</textureupfocus>
-		        <texturedownfocus>other_textures/arrowdowng.png</texturedownfocus>
 		        <visible>Control.HasFocus(18) | Control.HasFocus(19)</visible>
 			</control>
 

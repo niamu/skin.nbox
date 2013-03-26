@@ -197,3 +197,7 @@ msgstr ""
 msgctxt "#31732"
 msgid "Enable Light Mode (List View Only)"
 msgstr ""
+
+msgctxt "#31733"
+msgid "Sync"
+msgstr ""

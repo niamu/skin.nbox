@@ -55,7 +55,6 @@
 						<description>Master mode button</description>
 						<width>340</width>
 						<label>20046</label>
-						<altlabel>20045</altlabel>
 						<onclick>xbmc.mastermode</onclick>
 						<visible>System.HasLocks</visible>
 						<align>right</align>
@@ -142,12 +141,10 @@
 					<control type="label" id="3118">
 						<description>Alarm Time</description>
 						<width>340</width>
-						<align>center</align>
 						<label>$LOCALIZE[20145] [B]$INFO[System.Alarmpos][/B]</label>
 						<visible>System.HasAlarm(shutdowntimer)</visible>
 						<align>right</align>
 						<textcolor>black</textcolor>
-						<focusedcolor>white</focusedcolor>
 					</control>
 
 					<control type="button" id="3119">

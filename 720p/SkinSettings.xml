@@ -60,7 +60,6 @@
 				<pagecontrol>-</pagecontrol>
 
 				<itemlayout height="46" width="300">
-
 					<control type="image">
 						<width>300</width>
 						<height>44</height>
@@ -73,11 +72,9 @@
 						<align>right</align>
 						<label>$INFO[ListItem.Label]</label>
 					</control>
-
 				</itemlayout>
 
 				<focusedlayout height="46" width="300">
-
 					<control type="image">
 						<width>300</width>
 						<height>44</height>
@@ -91,11 +88,9 @@
 						<align>right</align>
 						<label>[COLOR Accent]$INFO[ListItem.Label][/COLOR]</label>
 					</control>
-
 				</focusedlayout>
 
 				<content>
-
 					<item id="1">
 						<description>Home</description>
 						<label>10000</label>
@@ -107,7 +102,6 @@
 						<label>16000</label>
 						<onclick>-</onclick>
 					</item>
-
 				</content>
 
 			</control>
@@ -135,8 +129,8 @@
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(MoreMenu)</onclick>
 						<selected>Skin.HasSetting(MoreMenu)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+						<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+						<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 					</control>
 
 					<control type="radiobutton" id="102">
@@ -147,8 +141,8 @@
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(HideMovies)</onclick>
 						<selected>Skin.HasSetting(HideMovies)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+						<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+						<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 					</control>
 
 					<control type="radiobutton" id="103">
@@ -159,8 +153,8 @@
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(HideMusic)</onclick>
 						<selected>Skin.HasSetting(HideMusic)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+						<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+						<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 					</control>
 
 					<control type="radiobutton" id="104">
@@ -171,8 +165,8 @@
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(HideTV)</onclick>
 						<selected>Skin.HasSetting(HideTV)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+						<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+						<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 					</control>
 				</control>
 
@@ -196,8 +190,8 @@
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(Fanart)</onclick>
 						<selected>Skin.HasSetting(Fanart)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+						<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+						<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 					</control>
 
 					<control type="radiobutton" id="202">
@@ -208,8 +202,8 @@
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(Exit)</onclick>
 						<selected>Skin.HasSetting(Exit)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+						<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+						<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 					</control>
 
 					<control type="radiobutton" id="203">
@@ -220,8 +214,8 @@
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(Visualization)</onclick>
 						<selected>Skin.HasSetting(Visualization)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+						<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+						<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 					</control>
 
 					<control type="radiobutton" id="204">
@@ -232,8 +226,8 @@
 						<focusedcolor>Accent</focusedcolor>
 						<onclick>Skin.ToggleSetting(LightMode)</onclick>
 						<selected>Skin.HasSetting(LightMode)</selected>
-						<textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-						<textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+						<texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+						<texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
 					</control>
 				</control>
 

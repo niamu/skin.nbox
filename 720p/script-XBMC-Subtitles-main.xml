@@ -34,7 +34,7 @@
 				<width>760</width>
 				<align>Left</align>
 				<font>Large</font>
-				<label>[COLOR Accent]XBMC Subtitles[/COLOR]</label>
+				<label>[COLOR Accent]$LOCALIZE[287][/COLOR]</label>
 			</control>
 
 			<control type="button">
@@ -131,7 +131,7 @@
 							<width>100</width>
 							<align>right</align>
 							<aligny>center</aligny>
-							<label>[B]SYNC[/B]</label>
+							<label>[B][UPPERCASE]$LOCALIZE[31733][/UPPERCASE][/B]</label>
 							<visible>ListItem.property(sync)</visible>
 						</control>
 						<control type="image">
@@ -172,7 +172,7 @@
 							<width>100</width>
 							<align>right</align>
 							<aligny>center</aligny>
-							<label>[B]SYNC[/B]</label>
+							<label>[B][UPPERCASE]$LOCALIZE[31733][/UPPERCASE][/B]</label>
 							<visible>ListItem.property(sync)</visible>
 						</control>
 						<control type="image">

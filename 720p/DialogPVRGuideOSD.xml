@@ -49,7 +49,6 @@
 						<width>410</width>
 						<height>30</height>
 						<texture border="5">button-nofocus.png</texture>
-						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
 						<posx>10</posx>
@@ -114,7 +113,6 @@
 						<height>30</height>
 						<texture border="5">button-nofocus.png</texture>
 						<visible>!Control.HasFocus(11)</visible>
-						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="image">
 						<posx>0</posx>
@@ -123,7 +121,6 @@
 						<height>30</height>
 						<texture border="5">button-focus2.png</texture>
 						<visible>Control.HasFocus(11)</visible>
-						<include>VisibleFadeEffect</include>
 					</control>
 					<control type="label">
 						<posx>10</posx>

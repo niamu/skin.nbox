@@ -44,7 +44,7 @@
 						<posy>0</posy>
 						<width>155</width>
 						<height>155</height>
-						<texture blend="false">tile.png</texture>
+						<texture>tile.png</texture>
 						<aspectratio>scale</aspectratio>
 					</control>
 
@@ -53,7 +53,7 @@
 						<posy>0</posy>
 						<width>155</width>
 						<height>155</height>
-						<texture blend="false">$INFO[ListItem.Icon]</texture>
+						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>scale</aspectratio>
 						<colordiffuse>ImageDiffuse</colordiffuse>
 					</control>

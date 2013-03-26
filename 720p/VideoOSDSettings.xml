@@ -57,8 +57,8 @@
 				<description>Default RadioButton</description>
 				<align>left</align>
 				<focusedcolor>Accent</focusedcolor>
-				<textureradioon>other_textures/radiobutton2fo.png</textureradioon>
-				<textureradiooff>other_textures/radiobutton2nf.png</textureradiooff>
+				<textureon>other_textures/radiobutton2fo.png</textureon>
+				<textureoff>other_textures/radiobutton2nf.png</textureoff>
 			</control>
 
 			<control type="spincontrolex" id="9">

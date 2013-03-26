@@ -90,7 +90,6 @@
 					<posy>12</posy>
 					<width>350</width>
 					<height>50</height>
-					<aligny>Left</aligny>
 					<font>Artist_Font</font>
 					<label>$LOCALIZE[21821]</label>
 				</control>
@@ -342,7 +341,6 @@
 					<posy>12</posy>
 					<width>349</width>
 					<height>50</height>
-					<aligny>Left</aligny>
 					<font>Artist_Font</font>
 					<label>$LOCALIZE[21821]</label>
 				</control>
@@ -620,7 +618,6 @@
 					<posy>12</posy>
 					<width>349</width>
 					<height>50</height>
-					<aligny>Left</aligny>
 					<font>Artist_Font</font>
 					<label>$INFO[Container(13).ListItem.Title]</label>
 				</control>
@@ -1069,7 +1066,6 @@
 					<description>Channel header label</description>
 					<posx>10</posx>
 					<width>210</width>
-					<height>45</height>
 					<height>20</height>
 					<label>[B]$LOCALIZE[19029][/B]</label>
 				</control>
@@ -1077,7 +1073,6 @@
 					<description>Title header label</description>
 					<posx>220</posx>
 					<width>300</width>
-					<height>45</height>
 					<height>20</height>
 					<label>[B]$LOCALIZE[369][/B]</label>
 				</control>
@@ -1085,7 +1080,6 @@
 					<description>Time header label</description>
 					<posx>580</posx>
 					<width>300</width>
-					<height>45</height>
 					<height>20</height>
 					<label>[B]$LOCALIZE[21820][/B]</label>
 				</control>
@@ -1093,7 +1087,6 @@
 					<description>Status header label</description>
 					<posx>940</posx>
 					<width>150</width>
-					<height>45</height>
 					<height>20</height>
 					<label>[B]$LOCALIZE[126][/B]</label>
 				</control>

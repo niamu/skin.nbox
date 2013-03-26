@@ -94,8 +94,8 @@
 		<radioheight>30</radioheight>
 		<texturenofocus border="2">other_textures/buttonnf.png</texturenofocus>
 		<texturefocus border="5">other_textures/buttonfo.png</texturefocus>
-		<textureradiofocus>other_textures/radiobuttonfo.png</textureradiofocus>
-		<textureradionofocus>other_textures/radiobuttonnf.png</textureradionofocus>
+		<texturefocus>other_textures/radiobuttonfo.png</texturefocus>
+		<texturenofocus>other_textures/radiobuttonnf.png</texturenofocus>
 		<textoffsetx>20</textoffsetx>
 		<pulseonselect>false</pulseonselect>
 	</default>

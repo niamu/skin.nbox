@@ -54,7 +54,6 @@
 			</control>
 			<control id="2001">
 				<type>button</type>
-				<label></label>
 				<posx>20</posx>
 				<posy>288</posy>
 				<height>40</height>
@@ -68,7 +67,6 @@
 			</control>
 			<control id="2011">
 				<type>image</type>
-				<label></label>
 				<posx>15</posx>
 				<posy>275</posy>
 				<height>50</height>
@@ -104,7 +102,6 @@
 			</control>
 			<control id="20">
 				<type>button</type>
-				<label></label>
 				<posx>20</posx>
 				<posy>525</posy>
 				<height>40</height>
@@ -119,7 +116,6 @@
 			</control>
 			<control id="2016">
 				<type>image</type>
-				<label></label>
 				<posx>15</posx>
 				<posy>522</posy>
 				<height>50</height>
@@ -192,7 +188,7 @@
 						<posy>0</posy>
 						<width>155</width>
 						<height>155</height>
-						<texture blend="false">tile.png</texture>
+						<texture>tile.png</texture>
 						<aspectratio>scale</aspectratio>
 					</control>
 
@@ -201,7 +197,7 @@
 						<posy>0</posy>
 						<width>155</width>
 						<height>155</height>
-						<texture blend="false">$INFO[ListItem.Icon]</texture>
+						<texture>$INFO[ListItem.Icon]</texture>
 						<aspectratio>scale</aspectratio>
 						<colordiffuse>ImageDiffuse</colordiffuse>
 					</control>

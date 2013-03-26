@@ -78,8 +78,8 @@
           <onup>-</onup>
           <ondown>2</ondown>
           <focusedcolor>Accent</focusedcolor>
-          <textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
-          <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+          <texturefocus>other_textures/radiobutton2fo.png</texturefocus>
+          <texturenofocus>other_textures/radiobutton2nf.png</texturenofocus>
         </control>
 
         <control type="list" id="2">
