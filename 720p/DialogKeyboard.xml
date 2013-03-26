@@ -22,7 +22,7 @@
             <control type="image">
                 <posx>290</posx>
                 <posy>50</posy>
-                <width>700</width>
+                <width>515</width>
                 <height>50</height>
                 <aspectratio>stretch</aspectratio>
                 <texture border="20">black.png</texture>
@@ -32,9 +32,19 @@
                 <description>Edit Text</description>
                 <posx>315</posx>
                 <posy>50</posy>
-                <width>650</width>
+                <width>475</width>
                 <height>50</height>
                 <align>center</align>
+                <onright>300</onright>
+            </control>
+            <control type="button" id="300">
+                <description>DONE button</description>
+                <posx>810</posx>
+                <posy>50</posy>
+                <width>180</width>
+                <height>50</height>
+                <label>20177</label>
+                <onleft>310</onleft>
             </control>
         </control>
     </controls>
