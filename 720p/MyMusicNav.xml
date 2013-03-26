@@ -18,7 +18,7 @@
             <include>Viewtype_Panel_Genre</include>
         </control>
         <control type="image">
-            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus() | Window.IsActive(PlayerControls)">
                 <effect type="fade" time="300" start="100" end="0" />
             </animation>
             <posx>0</posx>
@@ -34,7 +34,7 @@
             <width>305</width>
             <height>720</height>
             <texture border="22">button.png</texture>
-            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus() | Window.IsActive(PlayerControls)">
                 <effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic" />
             </animation>
         </control>
@@ -52,7 +52,7 @@
             <onup></onup>
             <ondown></ondown>
             <orientation>vertical</orientation>
-            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus() | Window.IsActive(PlayerControls)">
                 <effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic" />
             </animation>
             <control type="button" id="3">
@@ -108,6 +108,16 @@
                 <visible>!IsEmpty(Window.Property(filter))</visible>
                 <font>small</font>
                 <textcolor>black</textcolor>
+            </control>
+            <control type="button" id="98">
+                <description>Open Player Controls</description>
+                <width>240</width>
+                <align>left</align>
+                <label>$LOCALIZE[13350]</label>
+                <font>small</font>
+                <textcolor>black</textcolor>
+                <onclick>ActivateWindow(playercontrols)</onclick>
+                <visible>Player.HasMedia</visible>
             </control>
         </control>
     </controls>

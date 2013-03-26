@@ -14,7 +14,7 @@
         <include>Viewtype_Songs</include>
         <include>View_50_List</include>
         <control type="image">
-            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus() | Window.IsActive(PlayerControls)">
                 <effect type="fade" time="300" start="100" end="0" />
             </animation>
             <posx>0</posx>
@@ -30,7 +30,7 @@
             <width>305</width>
             <height>720</height>
             <texture border="22">button.png</texture>
-            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus() | Window.IsActive(PlayerControls)">
                 <effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic" />
             </animation>
         </control>
@@ -49,7 +49,7 @@
             <onup></onup>
             <ondown></ondown>
             <orientation>vertical</orientation>
-            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus() | Window.IsActive(PlayerControls)">
                 <effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic" />
             </animation>
             <control type="button" id="2">

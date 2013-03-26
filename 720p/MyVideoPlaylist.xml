@@ -17,7 +17,7 @@
             <onup>9000</onup>
             <ondown>9000</ondown>
             <orientation>vertical</orientation>
-            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus()">
+            <animation type="Conditional" condition="!ControlGroup(9000).HasFocus() | Window.IsActive(PlayerControls)">
                 <effect type="fade" start="100" end="50" time="200" />
                 <effect type="zoom" center="0,300" start="100" end="80" time="200" />
             </animation>
@@ -64,9 +64,11 @@
             </control>
             <control type="button" id="98">
                 <description>Open Player Controls</description>
-                <width>220</width>
+                <width>240</width>
                 <align>left</align>
-                <label>31015</label>
+                <label>$LOCALIZE[13350]</label>
+                <font>small</font>
+                <textcolor>black</textcolor>
                 <onclick>ActivateWindow(playercontrols)</onclick>
                 <visible>Player.HasMedia</visible>
             </control>
