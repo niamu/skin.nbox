@@ -242,8 +242,8 @@
                         <width>180</width>
                         <align>right</align>
                         <focusedcolor>Accent</focusedcolor>
-                        <onclick condition="SubString(Control.GetLabel(5),$LOCALIZE[183])">right</onclick>
-                        <onclick condition="SubString(Control.GetLabel(5),$LOCALIZE[183])">down</onclick>
+                        <onclick condition="SubString(Control.GetLabel(5),$LOCALIZE[183]) | SubString(Control.GetLabel(5),$LOCALIZE[21887])">right</onclick>
+                        <onclick condition="SubString(Control.GetLabel(5),$LOCALIZE[183]) | SubString(Control.GetLabel(5),$LOCALIZE[21887])">down</onclick>
                     </control>
                     <control type="button" id="6">
                         <description>Refresh button</description>

@@ -151,6 +151,17 @@
                         <textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
                         <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
                     </control>
+                    <control type="radiobutton" id="105">
+                        <description>Toggle Artists Page</description>
+                        <width>820</width>
+                        <align>left</align>
+                        <label>31734</label>
+                        <focusedcolor>Accent</focusedcolor>
+                        <onclick>Skin.ToggleSetting(Artists)</onclick>
+                        <selected>Skin.HasSetting(Artists)</selected>
+                        <textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+                        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+                    </control>
                 </control>
                 <control type="grouplist" id="200">
                     <description>Control Area</description>

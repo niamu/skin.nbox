@@ -201,3 +201,11 @@ msgstr ""
 msgctxt "#31733"
 msgid "Sync"
 msgstr ""
+
+msgctxt "#31734"
+msgid "Show Music Artists"
+msgstr ""
+
+msgctxt "#31735"
+msgid "All Artists"
+msgstr ""

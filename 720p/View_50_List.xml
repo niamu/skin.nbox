@@ -39,14 +39,6 @@
                 <effect type="fade" time="300" />
                 <effect type="slide" start="+1500,0" time="300" />
             </animation>
-            <animation type="Hidden">
-                <effect type="fade" time="300" />
-                <effect type="slide" end="+1500,0" time="300" />
-            </animation>
-            <animation type="Visible">
-                <effect type="fade" time="300" />
-                <effect type="slide" start="+1500,0" time="300" />
-            </animation>
             <control type="group">
                 <posy>60</posy>
                 <visible allowhiddenfocus="true">[Window.IsActive(1) | Container.Content(Addons) | Container.Content(Albums) | Container.Content(Artists) | Container.Content(Songs) | Container.Content(Movies)]</visible>
@@ -61,7 +53,17 @@
                 <font>Home_header</font>
                 <textcolor>White</textcolor>
                 <align>left</align>
-                <visible>!IsEmpty(Container.FolderName) + [!Window.IsVisible(AddonBrowser.xml) + !Window.IsVisible(Pictures)]</visible>
+                <visible>!IsEmpty(Container.FolderName) + [!Window.IsVisible(AddonBrowser.xml) + !Window.IsVisible(Pictures)] + !Container.Content(artists)</visible>
+            </control>
+            <control type="label">
+                <label>[LOWERCASE]$LOCALIZE[2][/LOWERCASE]</label>
+                <posx>70</posx>
+                <posy>170</posy>
+                <height>30</height>
+                <width>250</width>
+                <font>Home_header</font>
+                <align>left</align>
+                <visible>Container.Content(artists)</visible>
             </control>
             <control type="label">
                 <label>[LOWERCASE]$LOCALIZE[14022][/LOWERCASE]</label>
