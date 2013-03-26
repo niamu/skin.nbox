@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="56">
-    <defaultcontrol always="true">100</defaultcontrol>
+    <defaultcontrol always="true">1000</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
         <include>HomeBackground</include>
@@ -106,7 +106,7 @@
                     <onleft>1000</onleft>
                     <onright>-</onright>
                     <orientation>vertical</orientation>
-                    <visible>Container(100).Hasfocus(1)</visible>
+                    <visible>Container(1000).Hasfocus(1)</visible>
                     <control type="radiobutton" id="101">
                         <description>Extra Menu</description>
                         <width>820</width>
@@ -162,7 +162,7 @@
                     <onleft>1000</onleft>
                     <onright>-</onright>
                     <orientation>vertical</orientation>
-                    <visible>Container(100).Hasfocus(2)</visible>
+                    <visible>Container(1000).Hasfocus(2)</visible>
                     <control type="radiobutton" id="201">
                         <description>Toggle Fanart</description>
                         <width>820</width>
