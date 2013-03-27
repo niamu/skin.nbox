@@ -53,7 +53,7 @@
                 <font>Home_header</font>
                 <textcolor>White</textcolor>
                 <align>left</align>
-                <visible>!IsEmpty(Container.FolderName) + [!Window.IsVisible(AddonBrowser.xml) + !Window.IsVisible(Pictures)] + !Container.Content(artists)</visible>
+                <visible>!IsEmpty(Container.FolderName) + [!Window.IsVisible(AddonBrowser.xml) + !Window.IsVisible(Pictures)] + !Container.Content(artists) + !SubString(Container.FolderName,$LOCALIZE[2])</visible>
             </control>
             <control type="label">
                 <label>[LOWERCASE]$LOCALIZE[2][/LOWERCASE]</label>
@@ -63,7 +63,7 @@
                 <width>250</width>
                 <font>Home_header</font>
                 <align>left</align>
-                <visible>Container.Content(artists)</visible>
+                <visible>Container.Content(artists) | SubString(Container.FolderName,$LOCALIZE[2])</visible>
             </control>
             <control type="label">
                 <label>[LOWERCASE]$LOCALIZE[14022][/LOWERCASE]</label>

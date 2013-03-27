@@ -213,3 +213,7 @@ msgstr ""
 msgctxt "#31736"
 msgid "Peripherals"
 msgstr ""
+
+msgctxt "#31737"
+msgid "Music Videos"
+msgstr ""

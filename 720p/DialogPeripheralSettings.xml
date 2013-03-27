@@ -77,6 +77,7 @@
 				<control type="button" id="50">
 					<description>Defaults</description>
 					<posx>20</posx>
+					<posy>-50</posy>
 					<width>340</width>
 					<textcolor>black</textcolor>
 					<label>$LOCALIZE[409]</label>
