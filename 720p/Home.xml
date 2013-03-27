@@ -2341,8 +2341,7 @@
                             <posx></posx>
                             <posy></posy>
                             <type>button</type>
-                            <label condition="!Skin.HasSetting(Artists)">$LOCALIZE[31705]</label>
-                            <label condition="Skin.HasSetting(Artists)">$LOCALIZE[31735]</label>
+                            <label>$LOCALIZE[31705]</label>
                             <width>315</width>
                             <height>155</height>
                             <align>left</align>
@@ -2350,8 +2349,23 @@
                             <ondown>602</ondown>
                             <onleft>5000</onleft>
                             <onright>67</onright>
-                            <onclick condition="!Skin.HasSetting(Artists)">ActivateWindow(MusicLibrary,Albums,return)</onclick>
-                            <onclick condition="Skin.HasSetting(Artists)">ActivateWindow(MusicLibrary,Artists,return)</onclick>
+                            <onclick>ActivateWindow(MusicLibrary,Albums,return)</onclick>
+                            <visible>!Skin.HasSetting(Artists)</visible>
+                        </control>
+                        <control id="601">
+                            <posx></posx>
+                            <posy></posy>
+                            <type>button</type>
+                            <label>$LOCALIZE[31735]</label>
+                            <width>315</width>
+                            <height>155</height>
+                            <align>left</align>
+                            <onup>604</onup>
+                            <ondown>602</ondown>
+                            <onleft>5000</onleft>
+                            <onright>67</onright>
+                            <onclick>ActivateWindow(MusicLibrary,Artists,return)</onclick>
+                            <visible>Skin.HasSetting(Artists)</visible>
                         </control>
                         <control type="image">
                             <posx>50</posx>
@@ -2361,14 +2375,24 @@
                             <texture>headphones.png</texture>
                         </control>
                         <control type="label">
-                            <label condition="!Skin.HasSetting(Artists)">$INFO[Window.Property(Music.AlbumsCount)]$INFO[Music.AlbumsCount]</label>
-                            <label condition="Skin.HasSetting(Artists)">$INFO[Window.Property(Music.ArtistsCount)]$INFO[Music.ArtistsCount]</label>
+                            <label>$INFO[Window.Property(Music.AlbumsCount)]$INFO[Music.AlbumsCount]</label>
                             <posx>150</posx>
                             <posy>60</posy>
                             <height>30</height>
                             <width>160</width>
                             <font>Home_numbers</font>
                             <align>left</align>
+                            <visible>!Skin.HasSetting(Artists)</visible>
+                        </control>
+                        <control type="label">
+                            <label>$INFO[Window.Property(Music.ArtistsCount)]$INFO[Music.ArtistsCount]</label>
+                            <posx>150</posx>
+                            <posy>60</posy>
+                            <height>30</height>
+                            <width>160</width>
+                            <font>Home_numbers</font>
+                            <align>left</align>
+                            <visible>Skin.HasSetting(Artists)</visible>
                         </control>
                         <control type="label">
                             <label>$LOCALIZE[31705]</label>
@@ -2378,6 +2402,17 @@
                             <width>280</width>
                             <font>button_title</font>
                             <align>left</align>
+                            <visible>!Skin.HasSetting(Artists)</visible>
+                        </control>
+                        <control type="label">
+                            <label>$LOCALIZE[31735]</label>
+                            <posx>10</posx>
+                            <posy>120</posy>
+                            <height>30</height>
+                            <width>280</width>
+                            <font>button_title</font>
+                            <align>left</align>
+                            <visible>Skin.HasSetting(Artists)</visible>
                         </control>
                     </control>
                     <control type="group">
