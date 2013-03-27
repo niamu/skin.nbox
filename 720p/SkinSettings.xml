@@ -71,7 +71,7 @@
                         <width>300</width>
                         <height>44</height>
                         <texture border="5">other_textures/buttonfo.png</texture>
-                        <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(100)">Conditional</animation>
+                        <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(1000)">Conditional</animation>
                     </control>
                     <control type="label">
                         <posx>280</posx>
@@ -161,6 +161,42 @@
                         <selected>Skin.HasSetting(Artists)</selected>
                         <textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
                         <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+                    </control>
+                    <control type="button" id="106">
+                        <description>Movies to show</description>
+                        <width>820</width>
+                        <align>left</align>
+                        <label>$LOCALIZE[31700]:</label>
+                        <label2>$VAR[ShowMovies]</label2>
+                        <focusedcolor>Accent</focusedcolor>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),$LOCALIZE[31738]) | IsEmpty(Skin.String(ItemsTypeMovies))">Skin.SetString(ItemsTypeMovies,$LOCALIZE[31738])</onclick>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),$LOCALIZE[31709])">Skin.SetString(ItemsTypeMovies,$LOCALIZE[31738])</onclick>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),$LOCALIZE[31739])">Skin.SetString(ItemsTypeMovies,$LOCALIZE[31709])</onclick>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMovies),$LOCALIZE[31738])">Skin.SetString(ItemsTypeMovies,$LOCALIZE[31739])</onclick>
+                    </control>
+                    <control type="button" id="107">
+                        <description>TV to show:</description>
+                        <width>820</width>
+                        <align>left</align>
+                        <label>$LOCALIZE[19020]:</label>
+                        <label2>$VAR[ShowTV]</label2>
+                        <focusedcolor>Accent</focusedcolor>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeTV),$LOCALIZE[31738]) | IsEmpty(Skin.String(ItemsTypeTV))">Skin.SetString(ItemsTypeTV,$LOCALIZE[31738])</onclick>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeTV),$LOCALIZE[31709])">Skin.SetString(ItemsTypeTV,$LOCALIZE[31738])</onclick>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeTV),$LOCALIZE[31739])">Skin.SetString(ItemsTypeTV,$LOCALIZE[31709])</onclick>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeTV),$LOCALIZE[31738])">Skin.SetString(ItemsTypeTV,$LOCALIZE[31739])</onclick>
+                    </control>
+                    <control type="button" id="108">
+                        <description>Music to show:</description>
+                        <width>820</width>
+                        <align>left</align>
+                        <label>$LOCALIZE[2]:</label>
+                        <label2>$VAR[ShowMusic]</label2>
+                        <focusedcolor>Accent</focusedcolor>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),$LOCALIZE[31738]) | IsEmpty(Skin.String(ItemsTypeMusic))">Skin.SetString(ItemsTypeMusic,$LOCALIZE[31738])</onclick>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),$LOCALIZE[31709])">Skin.SetString(ItemsTypeMusic,$LOCALIZE[31738])</onclick>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),$LOCALIZE[31739])">Skin.SetString(ItemsTypeMusic,$LOCALIZE[31709])</onclick>
+                        <onclick condition="Stringcompare(Skin.String(ItemsTypeMusic),$LOCALIZE[31738])">Skin.SetString(ItemsTypeMusic,$LOCALIZE[31739])</onclick>
                     </control>
                 </control>
                 <control type="grouplist" id="200">
