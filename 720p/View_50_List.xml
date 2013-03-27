@@ -167,7 +167,6 @@
                 <width>884</width>
                 <height>315</height>
                 <onleft>9000</onleft>
-                <onright>60</onright>
                 <onup>50</onup>
                 <ondown>50</ondown>
                 <pagecontrol>60</pagecontrol>

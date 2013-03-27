@@ -612,7 +612,7 @@
                             <posy>26</posy>
                             <width>90</width>
                             <height>90</height>
-                            <texture>icons/videos.png</texture>
+                            <texture>icons/appearance.png</texture>
                         </control>
                         <control type="image">
                             <posy></posy>
@@ -1570,7 +1570,7 @@
                             <posy>26</posy>
                             <width>90</width>
                             <height>90</height>
-                            <texture>icons/videos.png</texture>
+                            <texture>icons/appearance.png</texture>
                         </control>
                         <control type="image">
                             <posy></posy>
@@ -2530,7 +2530,7 @@
                             <posy>26</posy>
                             <width>90</width>
                             <height>90</height>
-                            <texture>icons/music.png</texture>
+                            <texture>icons/appearance.png</texture>
                         </control>
                         <control type="image">
                             <posy></posy>
@@ -3472,7 +3472,7 @@
                             <posy>26</posy>
                             <width>90</width>
                             <height>90</height>
-                            <texture>icons/videos.png</texture>
+                            <texture>guide.png</texture>
                         </control>
                         <control type="image">
                             <posy></posy>
@@ -3521,7 +3521,7 @@
                             <posy>25</posy>
                             <width>90</width>
                             <height>90</height>
-                            <texture>icons/music.png</texture>
+                            <texture>radio.png</texture>
                         </control>
                     </control>
                     <control type="group">
@@ -3849,13 +3849,13 @@
                         <item id="1">
                             <description>Play Disc</description>
                             <label>$LOCALIZE[341]</label>
-                            <thumb>icons/videos.png</thumb>
+                            <thumb>icons/music.png</thumb>
                             <onclick>XBMC.PlayDVD()</onclick>
                         </item>
                         <item id="2">
                             <description>Eject Disc</description>
                             <label>$LOCALIZE[13391]</label>
-                            <thumb>icons/music.png</thumb>
+                            <thumb>eject.png</thumb>
                             <onclick>XBMC.EjectTray()</onclick>
                         </item>
                     </content>
@@ -4394,7 +4394,7 @@
                         <posy>25</posy>
                         <width>90</width>
                         <height>90</height>
-                        <texture>icons/addons.png</texture>
+                        <texture>programs.png</texture>
                     </control>
                 </control>
             </control>

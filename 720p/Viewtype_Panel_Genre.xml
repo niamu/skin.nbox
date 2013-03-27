@@ -74,7 +74,7 @@
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                     </control>
                     <control type="label">
-                        <label>  $INFO[ListItem.Genre]</label>
+                        <label>  $INFO[ListItem.Label]</label>
                         <posx>10</posx>
                         <posy>121</posy>
                         <height>30</height>
@@ -104,7 +104,7 @@
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                     </control>
                     <control type="label">
-                        <label>  $INFO[ListItem.DBID]</label>
+                        <label>  $INFO[ListItem.Label]</label>
                         <posx>10</posx>
                         <posy>121</posy>
                         <height>30</height>
