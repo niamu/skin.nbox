@@ -209,3 +209,7 @@ msgstr ""
 msgctxt "#31735"
 msgid "All Artists"
 msgstr ""
+
+msgctxt "#31736"
+msgid "Peripherals"
+msgstr ""
