@@ -16,7 +16,7 @@
                 <align>center</align>
                 <font>Medium</font>
                 <label>[COLOR Accent][LOWERCASE]$LOCALIZE[112][/LOWERCASE][/COLOR]</label>
-                <visible>player.paused</visible>
+                <visible>player.paused + !Window.IsVisible(10140)</visible>
             </control>
             <control type="label">
                 <posx>25</posx>

@@ -29,7 +29,7 @@
                 <onright>1</onright>
                 <onup>-</onup>
                 <ondown>-</ondown>
-                <visible>!Window.IsVisible(osdvideosettings) + !Window.IsVisible(osdaudiosettings) + !Window.IsVisible(videobookmarks)</visible>
+                <visible>!Window.IsVisible(osdvideosettings) + !Window.IsVisible(osdaudiosettings) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(script-XBMC-Subtitles-main.xml)</visible>
                 <control type="button" id="1">
                     <description>Bookmarks</description>
                     <width>50</width>
@@ -73,21 +73,8 @@
                     <font>-</font>
                     <texturefocus>other_textures/osd/subtitlesfo.png</texturefocus>
                     <texturenofocus>other_textures/osd/subtitlesnf.png</texturenofocus>
-                    <onclick>Close</onclick>
                     <onclick>XBMC.RunScript(script.xbmc.subtitles)</onclick>
-                    <visible>IsEmpty(Skin.String(SubtitlesPath))</visible>
-                </control>
-                <control type="button" id="5">
-                    <description>Subtitles</description>
-                    <width>50</width>
-                    <height>50</height>
-                    <label>287</label>
-                    <font>-</font>
-                    <texturefocus>other_textures/osd/subtitlesfo.png</texturefocus>
-                    <texturenofocus>other_textures/osd/subtitlesnf.png</texturenofocus>
-                    <onclick>Close</onclick>
-                    <onclick>XBMC.RunScript($INFO[Skin.String(SubtitlesPath)])</onclick>
-                    <visible>!IsEmpty(Skin.String(SubtitlesPath))</visible>
+                    <visible>System.HasAddon(script.xbmc.subtitles)</visible>
                 </control>
             </control>
             <control type="group">
