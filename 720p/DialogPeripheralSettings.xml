@@ -40,23 +40,35 @@
 				<posx>30</posx>
                 <posy>180</posy>
                 <width>340</width>
+                <align>left</align>
+                <textcolor>Black</textcolor>
+                <selectedcolor>White</selectedcolor>
 			</control>
 			<control type="radiobutton" id="8">
 				<description>Default RadioButton</description>
 				<posx>30</posx>
                 <posy>180</posy>
                 <width>340</width>
+                <align>left</align>
+                <textcolor>Black</textcolor>
+                <selectedcolor>White</selectedcolor>
 			</control>
 			<control type="spincontrolex" id="9">
 				<description>Default SpinControlex</description>
 				<posx>30</posx>
                 <posy>180</posy>
                 <width>340</width>
+                <align>left</align>
+                <textcolor>Black</textcolor>
+                <selectedcolor>White</selectedcolor>
 			</control>
 			<control type="sliderex" id="10">
 				<description>Default Slider</description>
 				<posx>30</posx>
                 <posy>180</posy>
+                <align>left</align>
+                <textcolor>Black</textcolor>
+                <selectedcolor>White</selectedcolor>
 			</control>
 			<control type="grouplist" id="5">
 				<description>Control Area</description>

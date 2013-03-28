@@ -334,7 +334,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
                 <label>$INFO[ListItem.Tagline]</label>
-                <visible>!IsEmpty(ListItem.Tagline)</visible>
+                <visible>!IsEmpty(ListItem.Tagline) + Container.Content(Movies)</visible>
             </control>
             <control type="label">
                 <posx>295</posx>
@@ -345,7 +345,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
                 <label>[COLOR Accent]$INFO[ListItem.Director,[COLOR White][LOWERCASE]$LOCALIZE[20339][/LOWERCASE]:[/COLOR] ][/COLOR]</label>
-                <visible>IsEmpty(ListItem.Tagline)</visible>
+                <visible>IsEmpty(ListItem.Tagline) + Container.Content(Movies)</visible>
             </control>
             <control type="label">
                 <posx>295</posx>
@@ -356,7 +356,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
                 <label>$INFO[ListItem.Duration]</label>
-                <visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,[LOWERCASE]$LOCALIZE[31299][/LOWERCASE]) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline)</visible>
+                <visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,[LOWERCASE]$LOCALIZE[31299][/LOWERCASE]) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline) + Container.Content(Movies)</visible>
             </control>
             <control type="label">
                 <posx>295</posx>
@@ -367,7 +367,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
                 <label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
-                <visible>!IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline)</visible>
+                <visible>!IsEmpty(ListItem.Duration) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline) + Container.Content(Movies)</visible>
             </control>
             <control type="label">
                 <posx>75</posx>
