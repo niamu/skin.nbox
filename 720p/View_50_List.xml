@@ -220,18 +220,7 @@
                 <texture>white_box.png</texture>
                 <fadetime>200</fadetime>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                <visible>!StringCompare(ListItem.Label, )</visible>
-            </control>
-            <control type="image">
-                <posx>76</posx>
-                <posy>288</posy>
-                <width>315</width>
-                <height>315</height>
-                <fadetime>400</fadetime>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
-                <texture fallback="">tile.png</texture>
-                <animation effect="fade" time="500"></animation>
-                <bordersize>5</bordersize>
+                <visible>!StringCompare(ListItem.Title, ) | !StringCompare(ListItem.Property(Addon.Name), ) | !StringCompare(ListItem.PicturePath, ) | !StringCompare(ListItem.Artist, )</visible>
             </control>
             <control type="image">
                 <posx>76</posx>

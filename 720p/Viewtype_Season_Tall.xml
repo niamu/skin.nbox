@@ -64,16 +64,7 @@
                         <height>315</height>
                         <texture>white_box.png</texture>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <visible>!StringCompare(ListItem.Label, )</visible>
-                    </control>
-                    <control type="image">
-                        <posx></posx>
-                        <posy></posy>
-                        <width>215</width>
-                        <height>315</height>
-                        <texture background="true">tile.png</texture>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <bordersize>4</bordersize>
+                        <visible>!StringCompare(ListItem.Title, )</visible>
                     </control>
                     <control type="image">
                         <posx></posx>
@@ -81,7 +72,7 @@
                         <width>215</width>
                         <height>315</height>
                         <texture background="true">$INFO[ListItem.Icon]</texture>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
                         <bordersize>4</bordersize>
                     </control>
                     <control type="image">
@@ -95,6 +86,7 @@
                         </animation>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
                         <bordersize>4</bordersize>
+                        <visible>!StringCompare(ListItem.Title, )</visible>
                     </control>
                     <control type="image">
                         <posx>151</posx>
@@ -127,7 +119,7 @@
                         <height>315</height>
                         <texture>white_box.png</texture>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <visible>!StringCompare(ListItem.Label, )</visible>
+                        <visible>!StringCompare(ListItem.Title, )</visible>
                     </control>
                     <control type="image">
                         <posx></posx>
@@ -135,7 +127,7 @@
                         <width>215</width>
                         <height>315</height>
                         <texture>$INFO[ListItem.Icon]</texture>
-                        <aspectratio scalediffuse="false">stretch</aspectratio>
+                        <aspectratio scalediffuse="false">scale</aspectratio>
                         <bordersize>4</bordersize>
                     </control>
                     <control type="image">
@@ -195,7 +187,7 @@
                 <aligny>center</aligny>
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
-                <label>$INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]</label>
+                <label>$INFO[ListItem.Property(TotalEpisodes),, [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]]</label>
             </control>
             <control type="label">
                 <posx>388</posx>
@@ -216,7 +208,7 @@
                 <align>left</align>
                 <font>Small</font>
                 <textcolor>white</textcolor>
-                <label>[B]$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[33054][/LOWERCASE][/B]  $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]</label>
+                <label>[B]$INFO[ListItem.Property(TotalSeasons),, [LOWERCASE]$LOCALIZE[33054][/LOWERCASE]][/B]  $INFO[ListItem.Property(TotalEpisodes),, [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]]</label>
                 <visible>Container.Content(tvshows)</visible>
             </control>
             <control type="image">

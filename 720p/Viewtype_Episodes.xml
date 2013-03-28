@@ -49,7 +49,7 @@
                 <texture>white_box.png</texture>
                 <fadetime>200</fadetime>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                <visible>!StringCompare(ListItem.Label, )</visible>
+                <visible>!StringCompare(ListItem.Title, )</visible>
             </control>
             <control type="image">
                 <posx>76</posx>
@@ -58,8 +58,19 @@
                 <height>315</height>
                 <texture fallback="defaultvideo.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                 <fadetime>200</fadetime>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
-                <visible>!IsEmpty(ListItem.Icon)</visible>
+                <aspectratio scalediffuse="false">scale</aspectratio>
+                <visible>!IsEmpty(ListItem.Icon) + !StringCompare(ListItem.Title, )</visible>
+                <bordersize>4</bordersize>
+            </control>
+            <control type="image">
+                <posx>76</posx>
+                <posy>288</posy>
+                <width>215</width>
+                <height>315</height>
+                <texture fallback="defaultfolderback.png" background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
+                <fadetime>200</fadetime>
+                <aspectratio scalediffuse="false">scale</aspectratio>
+                <visible>StringCompare(ListItem.Title, )</visible>
                 <bordersize>4</bordersize>
             </control>
             <control type="panel" id="57">
@@ -219,7 +230,7 @@
                 <font>Home_menu</font>
                 <textcolor>White</textcolor>
                 <aligny>top</aligny>
-                <label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] $LOCALIZE[20373] $INFO[ListItem.Season]</label>
+                <label>[COLOR Accent]$INFO[ListItem.TVShowTitle][/COLOR] $INFO[ListItem.Season,$LOCALIZE[20373] ]</label>
                 <visible>true</visible>
                 <scroll>true</scroll>
                 <scrollout>false</scrollout>

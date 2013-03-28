@@ -168,16 +168,16 @@
                 <texture>white_box.png</texture>
                 <fadetime>200</fadetime>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                <visible>!StringCompare(ListItem.Label, )</visible>
+                <visible>!StringCompare(ListItem.Title, )</visible>
             </control>
             <control type="image">
                 <posx>76</posx>
                 <posy>288</posy>
                 <width>215</width>
                 <height>315</height>
-                <texture fallback="defaultvideo.png" background="true">$INFO[ListItem.Icon]</texture>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
                 <fadetime>200</fadetime>
-                <aspectratio scalediffuse="false">stretch</aspectratio>
+                <aspectratio scalediffuse="false">scale</aspectratio>
                 <visible>!IsEmpty(ListItem.Icon)</visible>
                 <bordersize>4</bordersize>
             </control>
@@ -201,7 +201,7 @@
                 <height>50</height>
                 <font>Artist_Font</font>
                 <textcolor>White</textcolor>
-                <label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[33054][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]</label>
+                <label>$INFO[ListItem.Property(TotalSeasons),, [LOWERCASE]$LOCALIZE[33054][/LOWERCASE]$COMMA ]$INFO[ListItem.Property(TotalEpisodes),, [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]]</label>
                 <visible>!Container.Content(movies) + IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
             </control>
             <control type="label">
@@ -211,7 +211,7 @@
                 <height>50</height>
                 <font>Artist_Font</font>
                 <textcolor>White</textcolor>
-                <label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[20373][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]</label>
+                <label>$INFO[ListItem.Property(TotalSeasons),, [LOWERCASE]$LOCALIZE[20373][/LOWERCASE]$COMMA ]$INFO[ListItem.Property(TotalEpisodes),, [LOWERCASE]$LOCALIZE[20360][/LOWERCASE]]</label>
                 <visible>!Container.Content(movies) + !IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
             </control>
             <control type="label">
@@ -221,7 +221,7 @@
                 <height>50</height>
                 <font>Artist_Font</font>
                 <textcolor>White</textcolor>
-                <label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[33054][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20359][/LOWERCASE]</label>
+                <label>$INFO[ListItem.Property(TotalSeasons),, [LOWERCASE]$LOCALIZE[33054][/LOWERCASE]$COMMA ]$INFO[ListItem.Property(TotalEpisodes),, [LOWERCASE]$LOCALIZE[20359][/LOWERCASE]]</label>
                 <visible>!Container.Content(movies) + IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + !IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
             </control>
             <control type="label">
@@ -231,7 +231,7 @@
                 <height>50</height>
                 <font>Artist_Font</font>
                 <textcolor>White</textcolor>
-                <label>$INFO[ListItem.Property(TotalSeasons)] [LOWERCASE]$LOCALIZE[20373][/LOWERCASE], $INFO[ListItem.Property(TotalEpisodes)] [LOWERCASE]$LOCALIZE[20359][/LOWERCASE]</label>
+                <label>$INFO[ListItem.Property(TotalSeasons),, [LOWERCASE]$LOCALIZE[20373][/LOWERCASE]$COMMA ]$INFO[ListItem.Property(TotalEpisodes),, [LOWERCASE]$LOCALIZE[20359][/LOWERCASE]]</label>
                 <visible>!Container.Content(movies) + !IntegerGreaterThan(ListItem.Property(TotalSeasons),1) + !IntegerGreaterThan(ListItem.Property(TotalEpisodes),1)</visible>
             </control>
             <control type="label">
