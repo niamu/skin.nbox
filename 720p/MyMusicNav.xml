@@ -14,7 +14,8 @@
             </control>
             <include>Viewtype_Songs</include>
             <include>View_50_List</include>
-            <include>Viewtype_Panel_Square</include>
+            <include condition="!Skin.HasSetting(LightMode)">Viewtype_Panel_Square</include>
+            <include condition="Skin.HasSetting(LightMode)">Viewtype_Panel_Square_List</include>
             <include>Viewtype_Panel_Genre</include>
         </control>
         <control type="image">

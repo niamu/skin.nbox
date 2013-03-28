@@ -5,10 +5,13 @@
     <include file="Viewtype_PVR.xml" />
     <include file="Viewtype_Songs.xml" />
     <include file="Viewtype_Episodes.xml" />
+    <include file="Viewtype_Episodes_List.xml" />
     <include file="Viewtype_Panel_Tall.xml" />
+    <include file="Viewtype_Panel_Tall_List.xml" />
     <include file="Viewtype_Panel_Genre.xml" />
     <include file="Viewtype_Season_Tall.xml" />
     <include file="Viewtype_Panel_Square.xml" />
+    <include file="Viewtype_Panel_Square_List.xml" />
     <include name="HiddenButton">
         <posx>-20</posx>
         <posy>-20</posy>

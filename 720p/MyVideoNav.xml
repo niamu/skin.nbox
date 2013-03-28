@@ -9,7 +9,9 @@
             <include>BarClock</include>
             <include>View_50_List</include>
             <include condition="!Skin.HasSetting(LightMode)">Viewtype_Episodes</include>
-            <include>Viewtype_Panel_Tall</include>
+            <include condition="Skin.HasSetting(LightMode)">Viewtype_Episodes_List</include>
+            <include condition="!Skin.HasSetting(LightMode)">Viewtype_Panel_Tall</include>
+            <include condition="Skin.HasSetting(LightMode)">Viewtype_Panel_Tall_List</include>
             <include>Viewtype_Season_Tall</include>
             <include>Viewtype_Panel_Genre</include>
         </control>
