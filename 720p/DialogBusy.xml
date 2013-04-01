@@ -34,6 +34,7 @@
                 <align>left</align>
                 <font>Medium</font>
                 <label>20186</label>
+                <shadowcolor>Black<shadowcolor>
             </control>
         </control>
     </controls>

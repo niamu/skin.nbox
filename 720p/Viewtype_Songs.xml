@@ -72,6 +72,14 @@
                         <width>730</width>
                         <label>$INFO[ListItem.Title] $INFO[ListItem.Artist,$LOCALIZE[31716] ]</label>
                     </control>
+                    <control type="image">
+                        <posx>690</posx>
+                        <posy>10</posy>
+                        <width>100</width>
+                        <height>25</height>
+                        <texture>other_textures/colorrating/$INFO[ListItem.StarRating]</texture>
+                        <visible>StringCompare(Container.SortMethod,$LOCALIZE[563])</visible>
+                    </control>
                     <control type="label">
                         <posx>864</posx>
                         <align>right</align>
@@ -104,6 +112,14 @@
                         <posx>65</posx>
                         <width>730</width>
                         <label>[COLOR Accent]$INFO[ListItem.Title] $INFO[ListItem.Artist,[COLOR White]$LOCALIZE[31716] [/COLOR]][/COLOR]</label>
+                    </control>
+                    <control type="image">
+                        <posx>690</posx>
+                        <posy>10</posy>
+                        <width>100</width>
+                        <height>25</height>
+                        <texture>other_textures/colorrating/$INFO[ListItem.StarRating]</texture>
+                        <visible>StringCompare(Container.SortMethod,$LOCALIZE[563])</visible>
                     </control>
                     <control type="label">
                         <posx>864</posx>
