@@ -254,11 +254,37 @@
                 <label>$INFO[ListItem.Duration,, [LOWERCASE]$LOCALIZE[31299][/LOWERCASE]]</label>
                 <visible>!IsEmpty(ListItem.Duration) + Container.Content(movies)</visible>
             </control>
+            <control type="image">
+                <posx>840</posx>
+                <posy>562</posy>
+                <width>100</width>
+                <height>25</height>
+                <texture>other_textures/colorrating/$INFO[ListItem.StarRating]</texture>
+                <visible>!IsEmpty(ListItem.Title) + [Container.Content(movies) | Container.Content(tvshows) | Container.Content(Episodes)] + StringCompare(Container.SortMethod,$LOCALIZE[563])</visible>
+            </control>
+            <control type="label">
+                <posx>840</posx>
+                <posy>548</posy>
+                <width>400</width>
+                <height>50</height>
+                <textcolor>Accent</textcolor>
+                <label>$INFO[ListItem.Mpaa]</label>
+                <visible>[Container.Content(movies) | Container.Content(tvshows)] + StringCompare(Container.SortMethod,$LOCALIZE[20074]</visible>
+            </control>
+            <control type="label">
+                <posx>840</posx>
+                <posy>548</posy>
+                <width>400</width>
+                <height>50</height>
+                <textcolor>Accent</textcolor>
+                <label>$INFO[ListItem.DateAdded]</label>
+                <visible>[Container.Content(movies) | Container.Content(tvshows)] + StringCompare(Container.SortMethod,$LOCALIZE[570]</visible>
+            </control>
             <control type="textbox">
                 <posx>840</posx>
                 <posy>360</posy>
                 <width>420</width>
-                <height>215</height>
+                <height>192</height>
                 <info>ListItem.Plot</info>
                 <align>justify</align>
                 <autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
