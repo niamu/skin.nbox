@@ -6,6 +6,8 @@
     <include file="Viewtype_Songs.xml" />
     <include file="Viewtype_Episodes.xml" />
     <include file="Viewtype_Episodes_List.xml" />
+    <include file="Viewtype_MusicVideos.xml" />
+    <include file="Viewtype_MusicVideos_List.xml" />
     <include file="Viewtype_Panel_Tall.xml" />
     <include file="Viewtype_Panel_Tall_List.xml" />
     <include file="Viewtype_Panel_Genre.xml" />

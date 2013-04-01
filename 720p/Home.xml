@@ -2496,7 +2496,7 @@
                             <ondown>605</ondown>
                             <onleft>602</onleft>
                             <onright>67</onright>
-                            <onclick>ActivateWindow(VideoFiles,MusicVideos,return)</onclick>
+                            <onclick>ActivateWindow(Videos,MusicVideoTitles,return)</onclick>
                         </control>
                         <control type="label">
                             <label>$LOCALIZE[31737]</label>

@@ -310,7 +310,6 @@
                     <itemgap>-</itemgap>
                     <onup>9000</onup>
                     <ondown>9000</ondown>
-                    <onright>60</onright>
                     <onleft>9000</onleft>
                     <orientation>vertical</orientation>
                     <control type="button" id="5">
@@ -321,6 +320,7 @@
                         <focusedcolor>Accent</focusedcolor>
                         <onclick condition="SubString(Control.GetLabel(5),Plot)">right</onclick>
                         <onclick condition="SubString(Control.GetLabel(5),Plot)">down</onclick>
+                        <onright condition="SubString(Control.GetLabel(5),Plot)">60</onright>
                     </control>
                     <control type="button" id="8">
                         <description>Play</description>
@@ -394,6 +394,14 @@
                             <posx>20</posx>
                             <width>540</width>
                             <info>ListItem.Label</info>
+                            <visible>!Control.HasFocus(50)</visible>
+                        </control>
+                        <control type="label">
+                            <posx>20</posx>
+                            <width>540</width>
+                            <info>ListItem.Label</info>
+                            <textcolor>Accent</textcolor>
+                            <visible>Control.HasFocus(50)</visible>
                         </control>
                     </focusedlayout>
                 </control>

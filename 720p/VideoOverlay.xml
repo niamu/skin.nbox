@@ -64,7 +64,7 @@
                 <control type="label">
                     <description>Now Playing</description>
                     <visible>IsEmpty(VideoPlayer.Tagline)</visible>
-                    <posx>60</posx>
+                    <posx>0</posx>
                     <posy>32</posy>
                     <width>920</width>
                     <label>$INFO[VideoPlayer.Artist] [COLOR Accent]$INFO[VideoPlayer.Album][/COLOR]</label>
