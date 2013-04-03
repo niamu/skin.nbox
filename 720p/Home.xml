@@ -898,8 +898,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label> $INFO[Container(66).ListItem(0).Label2]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
+            <label> $INFO[Container(66).ListItem(-2).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -912,8 +912,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label> $INFO[Container(66).ListItem(3).Label2]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
+            <label> $INFO[Container(66).ListItem(0).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -938,8 +938,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(0).Label2][/B][/COLOR]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(-3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -952,8 +952,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(3).Label2][/B][/COLOR]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(0).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -983,8 +983,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label> $INFO[Container(66).ListItem(1).Label2]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
+            <label> $INFO[Container(66).ListItem(-2).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -997,8 +997,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label> $INFO[Container(66).ListItem(4).Label2]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
+            <label> $INFO[Container(66).ListItem(1).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1023,8 +1023,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(1).Label2][/B][/COLOR]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(-2).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1037,8 +1037,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(4).Label2][/B][/COLOR]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(1).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1068,8 +1068,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label> $INFO[Container(66).ListItem(2).Label2]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
+            <label> $INFO[Container(66).ListItem(-1).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1082,8 +1082,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label> $INFO[Container(66).ListItem(5).Label2]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
+            <label> $INFO[Container(66).ListItem(2).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1108,8 +1108,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(2).Label2][/B][/COLOR]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(-1).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1122,8 +1122,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(5).Label2][/B][/COLOR]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(2).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1153,8 +1153,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label> $INFO[Container(66).ListItem(3).Label2]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
+            <label> $INFO[Container(66).ListItem(0).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1167,8 +1167,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label> $INFO[Container(66).ListItem(6).Label2]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
+            <label> $INFO[Container(66).ListItem(3).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1193,8 +1193,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(3).Label2][/B][/COLOR]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(0).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1207,8 +1207,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(6).Label2][/B][/COLOR]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1238,8 +1238,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label> $INFO[Container(66).ListItem(4).Label2]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
+            <label> $INFO[Container(66).ListItem(1).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1252,8 +1252,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label> $INFO[Container(66).ListItem(7).Label2]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
+            <label> $INFO[Container(66).ListItem(4).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1278,8 +1278,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(4).Label2][/B][/COLOR]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(1).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1292,8 +1292,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(7).Label2][/B][/COLOR]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(4).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1323,8 +1323,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label> $INFO[Container(66).ListItem(5).Label2]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
+            <label> $INFO[Container(66).ListItem(2).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1337,8 +1337,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label> $INFO[Container(66).ListItem(8).Label2]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
+            <label> $INFO[Container(66).ListItem(5).Label2]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1363,8 +1363,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(66).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(5).Label2][/B][/COLOR]</label>
+            <visible>Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+            <label>[COLOR Accent][B]$INFO[Container(66).ListItem(2).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1377,8 +1377,8 @@
           </control>			
 
           <control type="fadelabel">
-            <visible>!Container(66).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(66).ListItem(8).Label2][/B][/COLOR]</label>
+            <visible>!Container(66).Position(3) + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+            <label>[COLOR Accent][B]$INFO[Container(66).ListItem(5).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1892,8 +1892,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label>$INFO[Container(68).ListItem(0).Label]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
+            <label>$INFO[Container(68).ListItem(-3).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1906,8 +1906,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label>$INFO[Container(68).ListItem(3).Label]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
+            <label>$INFO[Container(68).ListItem(0).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1932,8 +1932,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(0).Label2][/B][/COLOR]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(-3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1946,8 +1946,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(3).Label2][/B][/COLOR]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(0).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1977,8 +1977,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label> $INFO[Container(68).ListItem(1).Label]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
+            <label> $INFO[Container(68).ListItem(-2).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -1991,8 +1991,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label> $INFO[Container(68).ListItem(4).Label]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
+            <label> $INFO[Container(68).ListItem(1).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2017,8 +2017,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(1).Label2][/B][/COLOR]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(-2).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2031,8 +2031,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(4).Label2][/B][/COLOR]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(1).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2062,8 +2062,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label> $INFO[Container(68).ListItem(2).Label]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
+            <label> $INFO[Container(68).ListItem(-1).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2076,8 +2076,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label>$INFO[Container(68).ListItem(5).Label]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
+            <label>$INFO[Container(68).ListItem(2).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2102,8 +2102,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(2).Label2][/B][/COLOR]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(-1).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2116,8 +2116,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(5).Label2][/B][/COLOR]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(2).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2147,8 +2147,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label>$INFO[Container(68).ListItem(3).Label]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
+            <label>$INFO[Container(68).ListItem(0).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2161,8 +2161,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label>$INFO[Container(68).ListItem(6).Label]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
+            <label>$INFO[Container(68).ListItem(3).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2187,8 +2187,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(3).Label2][/B][/COLOR]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(0).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2201,8 +2201,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(6).Label2][/B][/COLOR]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2232,8 +2232,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label>$INFO[Container(68).ListItem(4).Label]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
+            <label>$INFO[Container(68).ListItem(1).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2246,8 +2246,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label>$INFO[Container(68).ListItem(7).Label]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
+            <label>$INFO[Container(68).ListItem(4).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2272,8 +2272,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(4).Label2][/B][/COLOR]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(1).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2286,8 +2286,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(7).Label][/B][/COLOR]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(4).Label][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2317,8 +2317,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label>$INFO[Container(68).ListItem(5).Label]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
+            <label>$INFO[Container(68).ListItem(2).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2331,8 +2331,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label>$INFO[Container(68).ListItem(8).Label]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
+            <label>$INFO[Container(68).ListItem(5).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2357,8 +2357,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(5).Label2][/B][/COLOR]</label>
+            <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(2).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2371,8 +2371,8 @@
           </control>			
 
           <control type="fadelabel">
-            <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(8).Label2][/B][/COLOR]</label>
+            <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(68).ListItem(5).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2883,36 +2883,22 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
+            <visible>Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
+            <label>$INFO[Container(67).ListItem(-3).Label]</label>
+            <scroll>true</scroll>
+            <pauseatend>300</pauseatend>
+            <posx>0</posx>
+            <posy>56</posy>
+            <width>155</width>
+            <height>155</height>
+            <font>button_bold</font>
+            <align>left</align>
+            <scrollspeed>50</scrollspeed>
+          </control>	
+
+          <control type="fadelabel">
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
             <label>$INFO[Container(67).ListItem(0).Label]</label>
-            <scroll>true</scroll>
-            <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-            <font>button_bold</font>
-            <align>left</align>
-            <scrollspeed>50</scrollspeed>
-          </control>	
-
-          <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label>$INFO[Container(67).ListItem(3).Label]</label>
-            <scroll>true</scroll>
-            <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-            <font>button_bold</font>
-            <align>left</align>
-            <scrollspeed>50</scrollspeed>
-          </control>	
-
-          <control type="fadelabel">
-            <visible>!Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>	
-            <label>$INFO[Container(67).ListItem(6).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2937,22 +2923,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(0).Label2][/B][/COLOR]</label>
-            <scroll>true</scroll>
-            <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <scrollspeed>50</scrollspeed>
-            <font>Home_sub_header</font>
-            <align>left</align>
-          </control>		
-
-          <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(3).Label2][/B][/COLOR]</label>
+            <visible>Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(-3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2965,8 +2937,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>!Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(6).Label2][/B][/COLOR]</label>
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(0).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -2996,36 +2968,22 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
+            <visible>Container(67).Position(3) + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
+            <label>$INFO[Container(67).ListItem(-2).Label]</label>
+            <scroll>true</scroll>
+            <pauseatend>300</pauseatend>
+            <posx>0</posx>
+            <posy>56</posy>
+            <width>155</width>
+            <height>155</height>
+            <font>button_bold</font>
+            <align>left</align>
+            <scrollspeed>50</scrollspeed>
+          </control>
+
+          <control type="fadelabel">
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
             <label>$INFO[Container(67).ListItem(1).Label]</label>
-            <scroll>true</scroll>
-            <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-            <font>button_bold</font>
-            <align>left</align>
-            <scrollspeed>50</scrollspeed>
-          </control>
-
-          <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label>$INFO[Container(67).ListItem(4).Label]</label>
-            <scroll>true</scroll>
-            <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-            <font>button_bold</font>
-            <align>left</align>
-            <scrollspeed>50</scrollspeed>
-          </control>
-
-          <control type="fadelabel">
-            <visible>!Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>	
-            <label>$INFO[Container(67).ListItem(7).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3050,8 +3008,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(1).Label2]][/B][/COLOR]</label>
+            <visible>Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(-2).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3064,22 +3022,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(4).Label2][/B][/COLOR]</label>
-            <scroll>true</scroll>
-            <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <scrollspeed>50</scrollspeed>
-            <font>Home_sub_header</font>
-            <align>left</align>
-          </control>	
-
-          <control type="fadelabel">
-            <visible>!Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(7).Label2][/B][/COLOR]</label>
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(1).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3109,36 +3053,22 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
+            <visible>Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
+            <label>$INFO[Container(67).ListItem(-1).Label]</label>
+            <scroll>true</scroll>
+            <pauseatend>300</pauseatend>
+            <posx>0</posx>
+            <posy>56</posy>
+            <width>155</width>
+            <height>155</height>
+            <font>button_bold</font>
+            <align>left</align>
+            <scrollspeed>50</scrollspeed>
+          </control>
+
+          <control type="fadelabel">
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
             <label>$INFO[Container(67).ListItem(2).Label]</label>
-            <scroll>true</scroll>
-            <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-            <font>button_bold</font>
-            <align>left</align>
-            <scrollspeed>50</scrollspeed>
-          </control>
-
-          <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label>$INFO[Container(67).ListItem(5).Label]</label>
-            <scroll>true</scroll>
-            <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>56</posy>
-            <width>155</width>
-            <height>155</height>
-            <font>button_bold</font>
-            <align>left</align>
-            <scrollspeed>50</scrollspeed>
-          </control>
-
-          <control type="fadelabel">
-            <visible>!Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>	
-            <label>$INFO[Container(67).ListItem(8).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3163,36 +3093,22 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+            <visible>Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(-1).Label2][/B][/COLOR]</label>
+            <scroll>true</scroll>
+            <pauseatend>300</pauseatend>
+            <posx>0</posx>
+            <posy>0</posy>
+            <width>155</width>
+            <height>155</height>
+            <scrollspeed>50</scrollspeed>
+            <font>Home_sub_header</font>
+            <align>left</align>
+          </control>	
+
+          <control type="fadelabel">
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
             <label> [COLOR Accent][B]$INFO[Container(67).ListItem(2).Label2][/B][/COLOR]</label>
-            <scroll>true</scroll>
-            <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <scrollspeed>50</scrollspeed>
-            <font>Home_sub_header</font>
-            <align>left</align>
-          </control>	
-
-          <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(5).Label2][/B][/COLOR]</label>
-            <scroll>true</scroll>
-            <pauseatend>300</pauseatend>
-            <posx>0</posx>
-            <posy>0</posy>
-            <width>155</width>
-            <height>155</height>
-            <scrollspeed>50</scrollspeed>
-            <font>Home_sub_header</font>
-            <align>left</align>
-          </control>	
-
-          <control type="fadelabel">
-            <visible>!Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(8).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3206,7 +3122,7 @@
         </control>		<!-- end black 3 -->	
 
         <control type= "group"> <!-- start black 4 -->	
-          <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).HasNext + Container(67).HasPrevious]</visible>
+          <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).Position(3) + Container(67).HasPrevious]</visible>
           <posx>0</posx>
           <posy>159</posy>
           <control type="image">
@@ -3222,8 +3138,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label> $INFO[Container(67).ListItem(3).Label]</label>
+            <visible>Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
+            <label> $INFO[Container(67).ListItem(0).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3236,8 +3152,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
-            <label> $INFO[Container(67).ListItem(6).Label]</label>
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>	
+            <label> $INFO[Container(67).ListItem(3).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3262,8 +3178,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(3).Label2][/B][/COLOR]</label>
+            <visible>Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(0).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3276,8 +3192,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(6).Label2][/B][/COLOR]</label>
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(3).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3292,7 +3208,7 @@
         </control>		<!-- end black 4 -->			
 
         <control type= "group"> <!-- start black 5 -->	
-          <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).HasNext + Container(67).HasPrevious]</visible>
+          <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).Position(3) + Container(67).HasPrevious]</visible>
           <posx>159</posx>
           <posy>159</posy>
           <control type="image">
@@ -3308,8 +3224,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label> $INFO[Container(67).ListItem(4).Label]</label>
+            <visible>Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
+            <label> $INFO[Container(67).ListItem(1).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3322,8 +3238,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
-            <label> $INFO[Container(67).ListItem(7).Label]</label>
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>	
+            <label> $INFO[Container(67).ListItem(4).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3348,8 +3264,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(4).Label2][/B][/COLOR]</label>
+            <visible>Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(1).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3362,8 +3278,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(7).Label2][/B][/COLOR]</label>
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(4).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3377,7 +3293,7 @@
         </control>		<!-- end black 5 -->	
 
         <control type= "group"> <!-- start black 6 -->	
-          <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).HasNext + Container(67).HasPrevious]</visible>
+          <visible>[Container(67).HasNext + !Container(67).HasPrevious] | [Container(67).Position(3) + Container(67).HasPrevious]</visible>
           <posx>318</posx>
           <posy>159</posy>
           <control type="image">
@@ -3393,8 +3309,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label> $INFO[Container(67).ListItem(5).Label]</label>
+            <visible>Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
+            <label> $INFO[Container(67).ListItem(2).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3407,8 +3323,8 @@
           </control>	
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
-            <label> $INFO[Container(67).ListItem(8).Label]</label>
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>	
+            <label> $INFO[Container(67).ListItem(5).Label]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3433,8 +3349,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + !Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(5).Label2][/B][/COLOR]</label>
+            <visible>Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(2).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
@@ -3447,8 +3363,8 @@
           </control>
 
           <control type="fadelabel">
-            <visible>Container(67).HasNext + Container(67).HasPrevious +  IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(8).Label2][/B][/COLOR]</label>
+            <visible>!Container(67).Position(3) + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+            <label> [COLOR Accent][B]$INFO[Container(67).ListItem(5).Label2][/B][/COLOR]</label>
             <scroll>true</scroll>
             <pauseatend>300</pauseatend>
             <posx>0</posx>
