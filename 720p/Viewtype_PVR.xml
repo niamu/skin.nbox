@@ -1292,7 +1292,7 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="label">
-                            <posx>945</posx>
+                            <posx>940</posx>
                             <posy>0</posy>
                             <width>80</width>
                             <height>40</height>
@@ -1363,7 +1363,7 @@
                             <visible>ListItem.IsRecording</visible>
                         </control>
                         <control type="label">
-                            <posx>945</posx>
+                            <posx>940</posx>
                             <posy>0</posy>
                             <width>80</width>
                             <height>40</height>
@@ -1540,7 +1540,7 @@
                             <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
                         <control type="label">
-                            <posx>945</posx>
+                            <posx>940</posx>
                             <posy>0</posy>
                             <width>80</width>
                             <height>40</height>
@@ -1617,7 +1617,7 @@
                             <visible>ListItem.HasTimer + !ListItem.IsRecording</visible>
                         </control>
                         <control type="label">
-                            <posx>945</posx>
+                            <posx>940</posx>
                             <posy>0</posy>
                             <width>80</width>
                             <height>40</height>
