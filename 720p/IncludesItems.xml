@@ -186,7 +186,7 @@
 	
 	<!-- Recent items-->
 	<include name="RecentItemsTitle">
-		<label>recent</label>
+		<label>[LOWERCASE]$LOCALIZE[31709][/LOWERCASE]</label>
 	</include>
 	
 	<include name="RecentItemsMovies">
