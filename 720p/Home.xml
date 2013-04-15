@@ -596,7 +596,9 @@
                             <ondown>701</ondown>
                             <onleft>5000</onleft>
                             <onright>705</onright>
-                            <onclick>ActivateWindow(Video,Files,return)</onclick>
+                            <onclick>ActivateWindow(Videos,MovieTitles)</onclick>
+                            <onclick>back</onclick>
+                            <onclick>back</onclick>
                         </control>
                         <control type="label">
                             <label>$LOCALIZE[31704]</label>
@@ -1554,7 +1556,9 @@
                             <ondown>801</ondown>
                             <onleft>5000</onleft>
                             <onright>805</onright>
-                            <onclick>ActivateWindow(Video,Files,return)</onclick>
+                            <onclick>ActivateWindow(Videos,tvshowtitles)</onclick>
+                            <onclick>back</onclick>
+                            <onclick>back</onclick>
                         </control>
                         <control type="label">
                             <label>$LOCALIZE[31704]</label>
@@ -4229,7 +4233,7 @@
                         <width>155</width>
                         <height>155</height>
                         <align>left</align>
-                        <onup>904</onup>
+                        <onup>905</onup>
                         <ondown>902</ondown>
                         <onright condition="SubString(Window(Home).Property(menu),main) | [SubString(Window(Home).Property(menu),nowplaying) + !Player.HasMedia]">5000</onright>
                         <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
@@ -4408,7 +4412,7 @@
                         <height>155</height>
                         <align>left</align>
                         <onup>903</onup>
-                        <ondown>901</ondown>
+                        <ondown>905</ondown>
                         <onright condition="SubString(Window(Home).Property(menu),main) | [SubString(Window(Home).Property(menu),nowplaying) + !Player.HasMedia]">5000</onright>
                         <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
                         <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
@@ -4432,6 +4436,61 @@
                         <texture>programs.png</texture>
                     </control>
                 </control>
+                <control type="group">
+                    <posx>0</posx>
+                    <posy>0</posy>
+                    <width>155</width>
+                    <height>155</height>
+                    <control type="image">
+                        <posx></posx>
+                        <posy></posy>
+                        <width>155</width>
+                        <height>155</height>
+                        <texture>tile.png</texture>
+                    </control>
+                    <control type="image">
+                        <posx></posx>
+                        <posy></posy>
+                        <width>155</width>
+                        <height>155</height>
+                        <texture>button.png</texture>
+                        <visible>[Control.HasFocus(905)]</visible>
+                        <animation effect="fade" time="200" tween="square">VisibleChange</animation>
+                        <animation effect="fade" start="0" end="100" time="400" easing="Out" tween="square" condition="Control.HasFocus(905)">Conditional</animation>
+                    </control>
+                    <control id="905">
+                        <posy></posy>
+                        <type>button</type>
+                        <label>$LOCALIZE[744]</label>
+                        <posx>1</posx>
+                        <width>155</width>
+                        <height>155</height>
+                        <align>left</align>
+                        <onup>904</onup>
+                        <ondown>901</ondown>
+                        <onright condition="SubString(Window(Home).Property(menu),main) | [SubString(Window(Home).Property(menu),nowplaying) + !Player.HasMedia]">5000</onright>
+                        <onright condition="SubString(Window(Home).Property(menu),settings)">505</onright>
+                        <onright condition="SubString(Window(Home).Property(menu),shutdown)">506</onright>
+                        <onright condition="SubString(Window(Home).Property(menu),nowplaying)">6000</onright>
+                        <onclick>ActivateWindow(filemanager)</onclick>
+                    </control>
+                    <control type="label">
+                        <label>$LOCALIZE[744]</label>
+                        <posx>10</posx>
+                        <posy>120</posy>
+                        <height>30</height>
+                        <width>250</width>
+                        <font>button_title</font>
+                        <align>left</align>
+                    </control>
+                    <control type="image">
+                        <posx>30</posx>
+                        <posy>25</posy>
+                        <width>90</width>
+                        <height>90</height>
+                        <texture>defaultfile.png</texture>
+                    </control>
+                </control>
             </control>
             <control type="scrollbar" id="9001">
                 <posx>235</posx>
@@ -4445,7 +4504,7 @@
                 <texturesliderbarfocus></texturesliderbarfocus>
                 <showonepage>true</showonepage>
                 <orientation>vertical</orientation>
-                <visible>[Control.HasFocus(901) | Control.HasFocus(902) | Control.HasFocus(903) | Control.HasFocus(904)]</visible>
+                <visible>[Control.HasFocus(901) | Control.HasFocus(902) | Control.HasFocus(903) | Control.HasFocus(904) | Control.HasFocus(905)]</visible>
                 <animation effect="fade" time="200" tween="square">Visible</animation>
                 <animation type="Conditional" condition="Control.HasFocus(901)">
                     <effect type="fade" start="100" end="0" time="200" delay="3000" />
@@ -4457,6 +4516,9 @@
                     <effect type="fade" start="100" end="0" time="200" delay="3000" />
                 </animation>
                 <animation type="Conditional" condition="Control.HasFocus(904)">
+                    <effect type="fade" start="100" end="0" time="200" delay="3000" />
+                </animation>
+                <animation type="Conditional" condition="Control.HasFocus(905)">
                     <effect type="fade" start="100" end="0" time="200" delay="3000" />
                 </animation>
             </control>
