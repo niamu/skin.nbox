@@ -32,7 +32,18 @@
                     <aspectratio align="right" aligny="center">stretch</aspectratio>
                     <bordertexture border="5">white_box.png</bordertexture>
                     <bordersize>5</bordersize>
-                    <visible>!Control.HasFocus(50) + Container.Content(episodes)</visible>
+                    <visible>!Control.HasFocus(50) + Container.Content(episodes) + !SubString(ListItem.Art(tvshow.poster),default)</visible>
+                </control>
+                <control type="image">
+                    <description>Cover Image</description>
+                    <posx>230</posx>
+                    <posy>180</posy>
+                    <width>290</width>
+                    <height>424</height>
+                    <texture>$INFO[ListItem.Art(tvshow.poster)]</texture>
+                    <aspectratio align="right" aligny="center">keep</aspectratio>
+                    <bordersize>5</bordersize>
+                    <visible>!Control.HasFocus(50) + Container.Content(episodes) + SubString(ListItem.Art(tvshow.poster),default)</visible>
                 </control>
                 <control type="image">
                     <description>Cover Image</description>
@@ -44,7 +55,18 @@
                     <aspectratio align="right" aligny="center">stretch</aspectratio>
                     <bordertexture border="5">white_box.png</bordertexture>
                     <bordersize>5</bordersize>
-                    <visible>!Control.HasFocus(50) + !Container.Content(episodes)</visible>
+                    <visible>!Control.HasFocus(50) + !Container.Content(episodes) + !SubString(ListItem.Icon,default)</visible>
+                </control>
+                <control type="image">
+                    <description>Cover Image</description>
+                    <posx>230</posx>
+                    <posy>180</posy>
+                    <width>290</width>
+                    <height>424</height>
+                    <texture>$INFO[ListItem.Icon]</texture>
+                    <aspectratio align="right" aligny="center">keep</aspectratio>
+                    <bordersize>5</bordersize>
+                    <visible>!Control.HasFocus(50) + !Container.Content(episodes) + SubString(ListItem.Icon,default)</visible>
                 </control>
                 <control type="image">
                     <description>Actor Image</description>

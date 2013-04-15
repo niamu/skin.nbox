@@ -134,7 +134,7 @@
                 <texture>white_box.png</texture>
                 <fadetime>200</fadetime>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                <visible>!StringCompare(ListItem.Title, )</visible>
+                <visible>!StringCompare(ListItem.Title, ) + !SubString(ListItem.Icon,default)</visible>
             </control>
             <control type="image">
                 <posx>76</posx>
@@ -144,7 +144,18 @@
                 <texture background="true">$INFO[ListItem.Icon]</texture>
                 <fadetime>200</fadetime>
                 <aspectratio scalediffuse="false">scale</aspectratio>
-                <visible>!IsEmpty(ListItem.Icon)</visible>
+                <visible>!IsEmpty(ListItem.Icon) + !SubString(ListItem.Icon,default)</visible>
+                <bordersize>4</bordersize>
+            </control>
+            <control type="image">
+                <posx>76</posx>
+                <posy>288</posy>
+                <width>215</width>
+                <height>315</height>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
+                <fadetime>200</fadetime>
+                <aspectratio scalediffuse="false">keep</aspectratio>
+                <visible>!IsEmpty(ListItem.Icon) + SubString(ListItem.Icon,default)</visible>
                 <bordersize>4</bordersize>
             </control>
             <control type="scrollbar" id="62">
