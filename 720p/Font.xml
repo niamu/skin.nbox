@@ -112,7 +112,7 @@
         <font>
             <name>Home_sub_header</name>
             <filename>mplus-2p-light.ttf</filename>
-            <size>47</size>
+            <size>38</size>
         </font>
         <font>
             <name>Home_time</name>
@@ -132,7 +132,7 @@
         <font>
             <name>Home_menu</name>
             <filename>mplus-2p-light.ttf</filename>
-            <size>47</size>
+            <size>38</size>
         </font>
         <font>
             <name>Large</name>
@@ -168,12 +168,12 @@
         <font>
             <name>weather_med</name>
             <filename>mplus-2p-light.ttf</filename>
-            <size>24</size>
+            <size>20</size>
         </font>
         <font>
             <name>weather_small</name>
             <filename>mplus-2p-bold.ttf</filename>
-            <size>12</size>
+            <size>13</size>
         </font>
         <font>
             <name>Artist_Font</name>
@@ -188,7 +188,7 @@
         <font>
             <name>Sort_Font_Small</name>
             <filename>mplus-2p-light.ttf</filename>
-            <size>24</size>
+            <size>20</size>
         </font>
         <font>
             <name>Large_Letter_Music</name>
