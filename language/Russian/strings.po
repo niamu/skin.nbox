@@ -9,227 +9,209 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: XBMC Translation Team\n"
-"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
+"Language-Team: Russian (http://www.transifex.com/projects/p/xbmc-skins/language/ru/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#strings 31000 thru 31999 reserved for skins
+"Language: ru\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
 
 msgctxt "#31001"
 msgid "View Options"
-msgstr ""
-
-#empty strings from id 31002 to 31032
+msgstr "Настройки просмотра"
 
 msgctxt "#31033"
 msgid "Hide Background Fanart"
-msgstr ""
-
-#empty strings from id 31034 to 31035
+msgstr "Скрыть фоновый фанарт"
 
 msgctxt "#31036"
 msgid "Rewind"
-msgstr ""
+msgstr "Перемотка назад"
 
 msgctxt "#31037"
 msgid "Play/Pause"
-msgstr ""
+msgstr "Воспр./Пауза"
 
 msgctxt "#31038"
 msgid "Stop"
-msgstr ""
+msgstr "Стоп"
 
 msgctxt "#31039"
 msgid "Fast Forward"
-msgstr ""
+msgstr "Перемотка вперед"
 
 msgctxt "#31040"
 msgid "Visualisation Presets"
-msgstr ""
-
-#empty strings from id 31041 to 31207
+msgstr "Предустановки визуализации"
 
 msgctxt "#31208"
 msgid "Last Updated"
-msgstr ""
-
-#empty strings from id 31209 to 31298
+msgstr "Последнее обновление"
 
 msgctxt "#31299"
 msgid "Min"
-msgstr ""
-
-#empty strings from id 31300 to 31324
+msgstr "Мин"
 
 msgctxt "#31325"
 msgid "Playlist Options"
-msgstr ""
-
-#empty strings from id 31326 to 31505
+msgstr "Параметры плейлиста"
 
 msgctxt "#31506"
 msgid "Available Groups"
-msgstr ""
-
-#empty strings from id 31507 to 31509
+msgstr "Доступные группы"
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr ""
-
-#empty strings from id 31511 to 31699
+msgstr "Таймер установлен"
 
 msgctxt "#31700"
 msgid "Films"
-msgstr ""
+msgstr "Фильмы"
 
 msgctxt "#31701"
 msgid "All Films"
-msgstr ""
+msgstr "Все фильмы"
 
 msgctxt "#31702"
 msgid "All Recent"
-msgstr ""
+msgstr "Все последние"
 
 msgctxt "#31703"
 msgid "Live TV"
-msgstr ""
+msgstr "ТВ"
 
 msgctxt "#31704"
 msgid "Manage Library"
-msgstr ""
+msgstr "Управление медиатекой"
 
 msgctxt "#31705"
 msgid "All Albums"
-msgstr ""
+msgstr "Все альбомы"
 
 msgctxt "#31706"
 msgid "All TV Shows"
-msgstr ""
+msgstr "Все сериалы"
 
 msgctxt "#31707"
 msgid "Now Playing"
-msgstr ""
+msgstr "Сейчас проигрывается:"
 
 msgctxt "#31708"
 msgid "All Channels"
-msgstr ""
+msgstr "Все каналы"
 
 msgctxt "#31709"
 msgid "Recent"
-msgstr ""
+msgstr "Недавние"
 
 msgctxt "#31710"
 msgid "Timers"
-msgstr ""
+msgstr "Таймеры"
 
 msgctxt "#31711"
 msgid "More"
-msgstr ""
+msgstr "Еще"
 
 msgctxt "#31712"
 msgid "Sort By"
-msgstr ""
+msgstr "Сортировать по"
 
 msgctxt "#31713"
 msgid "View"
-msgstr ""
+msgstr "Вид"
 
 msgctxt "#31714"
 msgid "Showing"
-msgstr ""
+msgstr "Показать"
 
 msgctxt "#31715"
 msgid "Film"
-msgstr ""
+msgstr "Фильм"
 
 msgctxt "#31716"
 msgid "by"
-msgstr ""
+msgstr "реж."
 
 msgctxt "#31717"
 msgid "Categorised by"
-msgstr ""
+msgstr "Обьединено в категории по "
 
 msgctxt "#31718"
 msgid "Premiered"
-msgstr ""
+msgstr "Премьера"
 
 msgctxt "#31719"
 msgid "Login"
-msgstr ""
+msgstr "Вход"
 
 msgctxt "#31720"
 msgid "nbox"
-msgstr ""
+msgstr "nbox"
 
 msgctxt "#31721"
 msgid "Unwatched episode"
-msgstr ""
+msgstr "Не просмотренные серия"
 
 msgctxt "#31722"
 msgid "Unwatched episodes"
-msgstr ""
+msgstr "Не просмотренные серии"
 
 msgctxt "#31723"
 msgid "Cover"
-msgstr ""
+msgstr "Обложка"
 
 msgctxt "#31724"
 msgid "Art"
-msgstr ""
+msgstr "Картинки"
 
 msgctxt "#31725"
 msgid "Favs"
-msgstr ""
+msgstr "Избранное"
 
 msgctxt "#31726"
 msgid "Hide Extra Menu"
-msgstr ""
+msgstr "Скрыть дополнительное меню"
 
 msgctxt "#31727"
 msgid "Hide Films"
-msgstr ""
+msgstr "Убрать Фильмы"
 
 msgctxt "#31728"
 msgid "Hide Music"
-msgstr ""
+msgstr "Убрать Музыку"
 
 msgctxt "#31729"
 msgid "Hide TV"
-msgstr ""
+msgstr "Убрать ТВ"
 
 msgctxt "#31730"
 msgid "Enable Exit XBMC Button"
-msgstr ""
+msgstr "Показывать кнопку выхода"
 
 msgctxt "#31731"
 msgid "Enable Visualization"
-msgstr ""
+msgstr "Включить визуализации"
 
 msgctxt "#31732"
 msgid "Enable Light Mode (List View Only)"
-msgstr ""
+msgstr "Включить быстрый режим (только вид Список)"
 
 msgctxt "#31733"
 msgid "Sync"
-msgstr ""
+msgstr "Синхронизация"
 
 msgctxt "#31734"
 msgid "Show Music Artists"
-msgstr ""
+msgstr "Показать исполнителей"
 
 msgctxt "#31735"
 msgid "All Artists"
-msgstr ""
+msgstr "Все исполнители"
 
 msgctxt "#31736"
 msgid "Peripherals"
-msgstr ""
+msgstr "Периферия"
 
 msgctxt "#31737"
 msgid "Music Videos"
-msgstr ""
+msgstr "Клипы"

@@ -9,227 +9,209 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: XBMC Translation Team\n"
-"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
+"Language-Team: Greek (http://www.transifex.com/projects/p/xbmc-skins/language/el/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
+"Language: el\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#strings 31000 thru 31999 reserved for skins
 
 msgctxt "#31001"
 msgid "View Options"
-msgstr ""
-
-#empty strings from id 31002 to 31032
+msgstr "Επιλογές Προβολής"
 
 msgctxt "#31033"
 msgid "Hide Background Fanart"
-msgstr ""
-
-#empty strings from id 31034 to 31035
+msgstr "Απόκρυψη Fanart Υποβάθρου"
 
 msgctxt "#31036"
 msgid "Rewind"
-msgstr ""
+msgstr "Πίσω"
 
 msgctxt "#31037"
 msgid "Play/Pause"
-msgstr ""
+msgstr "Αναπαραγωγή/Παύση"
 
 msgctxt "#31038"
 msgid "Stop"
-msgstr ""
+msgstr "Διακοπή"
 
 msgctxt "#31039"
 msgid "Fast Forward"
-msgstr ""
+msgstr "Μπροστά"
 
 msgctxt "#31040"
 msgid "Visualisation Presets"
-msgstr ""
-
-#empty strings from id 31041 to 31207
+msgstr "Προρυθμίσεις Οπτικοποιητή"
 
 msgctxt "#31208"
 msgid "Last Updated"
-msgstr ""
-
-#empty strings from id 31209 to 31298
+msgstr "Τελευταία Ενημέρωση"
 
 msgctxt "#31299"
 msgid "Min"
-msgstr ""
-
-#empty strings from id 31300 to 31324
+msgstr "Λεπτά"
 
 msgctxt "#31325"
 msgid "Playlist Options"
-msgstr ""
-
-#empty strings from id 31326 to 31505
+msgstr "Επιλογές Λίστας Αναπ/γής"
 
 msgctxt "#31506"
 msgid "Available Groups"
-msgstr ""
-
-#empty strings from id 31507 to 31509
+msgstr "Διαθέσιμα Γκρουπ"
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr ""
-
-#empty strings from id 31511 to 31699
+msgstr "Ορίστηκε Χρονοδιακόπτης"
 
 msgctxt "#31700"
 msgid "Films"
-msgstr ""
+msgstr "Ταινίες"
 
 msgctxt "#31701"
 msgid "All Films"
-msgstr ""
+msgstr "Όλες οι Ταινίες"
 
 msgctxt "#31702"
 msgid "All Recent"
-msgstr ""
+msgstr "Όλα τα Πρόσφατα"
 
 msgctxt "#31703"
 msgid "Live TV"
-msgstr ""
+msgstr "Live TV"
 
 msgctxt "#31704"
 msgid "Manage Library"
-msgstr ""
+msgstr "Διαχείριση Συλλογής"
 
 msgctxt "#31705"
 msgid "All Albums"
-msgstr ""
+msgstr "Όλα τα Άλμπουμ"
 
 msgctxt "#31706"
 msgid "All TV Shows"
-msgstr ""
+msgstr "Όλες οι Τηλ. Σειρές"
 
 msgctxt "#31707"
 msgid "Now Playing"
-msgstr ""
+msgstr "Τώρα Εκτελείται"
 
 msgctxt "#31708"
 msgid "All Channels"
-msgstr ""
+msgstr "Όλα τα Κανάλια"
 
 msgctxt "#31709"
 msgid "Recent"
-msgstr ""
+msgstr "Πρόσφατα"
 
 msgctxt "#31710"
 msgid "Timers"
-msgstr ""
+msgstr "Χρονοδιακόπτες"
 
 msgctxt "#31711"
 msgid "More"
-msgstr ""
+msgstr "Περισσότερα"
 
 msgctxt "#31712"
 msgid "Sort By"
-msgstr ""
+msgstr "Ταξ. Ανά"
 
 msgctxt "#31713"
 msgid "View"
-msgstr ""
+msgstr "Προβολή"
 
 msgctxt "#31714"
 msgid "Showing"
-msgstr ""
+msgstr "Προβολή"
 
 msgctxt "#31715"
 msgid "Film"
-msgstr ""
+msgstr "Ταινία"
 
 msgctxt "#31716"
 msgid "by"
-msgstr ""
+msgstr "από"
 
 msgctxt "#31717"
 msgid "Categorised by"
-msgstr ""
+msgstr "Κατηγοριοποιημένα ανά"
 
 msgctxt "#31718"
 msgid "Premiered"
-msgstr ""
+msgstr "Πρεμιέρα"
 
 msgctxt "#31719"
 msgid "Login"
-msgstr ""
+msgstr "Είσοδος"
 
 msgctxt "#31720"
 msgid "nbox"
-msgstr ""
+msgstr "nbox"
 
 msgctxt "#31721"
 msgid "Unwatched episode"
-msgstr ""
+msgstr "Μη προβληθέν επεισόδιο"
 
 msgctxt "#31722"
 msgid "Unwatched episodes"
-msgstr ""
+msgstr "Μη προβληθέντα επεισόδια"
 
 msgctxt "#31723"
 msgid "Cover"
-msgstr ""
+msgstr "Εξώφυλλο"
 
 msgctxt "#31724"
 msgid "Art"
-msgstr ""
+msgstr "Εικόνες"
 
 msgctxt "#31725"
 msgid "Favs"
-msgstr ""
+msgstr "Αγαπημένα"
 
 msgctxt "#31726"
 msgid "Hide Extra Menu"
-msgstr ""
+msgstr "Απόκρυψη Επιπλέον Μενού"
 
 msgctxt "#31727"
 msgid "Hide Films"
-msgstr ""
+msgstr "Απόκρυψη Ταινιών"
 
 msgctxt "#31728"
 msgid "Hide Music"
-msgstr ""
+msgstr "Απόκρυψη Μουσικής"
 
 msgctxt "#31729"
 msgid "Hide TV"
-msgstr ""
+msgstr "Απόκρυψης Τηλεόρασης"
 
 msgctxt "#31730"
 msgid "Enable Exit XBMC Button"
-msgstr ""
+msgstr "Ενεργοποίηση Πλήκτρου Εξόδου"
 
 msgctxt "#31731"
 msgid "Enable Visualization"
-msgstr ""
+msgstr "Ενεργοποίηση Οπτικοποίησης"
 
 msgctxt "#31732"
 msgid "Enable Light Mode (List View Only)"
-msgstr ""
+msgstr "Ενεργοποίηση Light Λειτουργίας (Μόνο για τη Λίστα)"
 
 msgctxt "#31733"
 msgid "Sync"
-msgstr ""
+msgstr "Συγχρονισμός"
 
 msgctxt "#31734"
 msgid "Show Music Artists"
-msgstr ""
+msgstr "Εμφάνιση Μουσικών Καλλιτεχνών"
 
 msgctxt "#31735"
 msgid "All Artists"
-msgstr ""
+msgstr "Όλοι οι Καλλιτέχνες"
 
 msgctxt "#31736"
 msgid "Peripherals"
-msgstr ""
+msgstr "Περιφερειακά"
 
 msgctxt "#31737"
 msgid "Music Videos"
-msgstr ""
+msgstr "Μουσικά Βίντεο"

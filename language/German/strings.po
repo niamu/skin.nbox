@@ -9,227 +9,141 @@ msgstr ""
 "POT-Creation-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: XBMC Translation Team\n"
-"Language-Team: English (http://www.transifex.com/projects/p/xbmc-skins/language/en/)\n"
+"Language-Team: German (http://www.transifex.com/projects/p/xbmc-skins/language/de/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language: en\n"
+"Language: de\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-
-#strings 31000 thru 31999 reserved for skins
 
 msgctxt "#31001"
 msgid "View Options"
-msgstr ""
-
-#empty strings from id 31002 to 31032
+msgstr "Anzeige - Optionen"
 
 msgctxt "#31033"
 msgid "Hide Background Fanart"
-msgstr ""
-
-#empty strings from id 31034 to 31035
+msgstr "Verstecke Hintergrund - Fanart"
 
 msgctxt "#31036"
 msgid "Rewind"
-msgstr ""
+msgstr "Rückspulen"
 
 msgctxt "#31037"
 msgid "Play/Pause"
-msgstr ""
+msgstr "Play/Pause"
 
 msgctxt "#31038"
 msgid "Stop"
-msgstr ""
+msgstr "Stop"
 
 msgctxt "#31039"
 msgid "Fast Forward"
-msgstr ""
-
-msgctxt "#31040"
-msgid "Visualisation Presets"
-msgstr ""
-
-#empty strings from id 31041 to 31207
+msgstr "Vorspulen"
 
 msgctxt "#31208"
 msgid "Last Updated"
-msgstr ""
-
-#empty strings from id 31209 to 31298
+msgstr "Zuletzt aktualisiert"
 
 msgctxt "#31299"
 msgid "Min"
-msgstr ""
-
-#empty strings from id 31300 to 31324
+msgstr "Min"
 
 msgctxt "#31325"
 msgid "Playlist Options"
-msgstr ""
-
-#empty strings from id 31326 to 31505
+msgstr "Wiedergabeliste - Optionen"
 
 msgctxt "#31506"
 msgid "Available Groups"
-msgstr ""
-
-#empty strings from id 31507 to 31509
+msgstr "Verfügbare Gruppen"
 
 msgctxt "#31510"
 msgid "Timer Set"
-msgstr ""
-
-#empty strings from id 31511 to 31699
+msgstr "Timer gesetzt"
 
 msgctxt "#31700"
 msgid "Films"
-msgstr ""
+msgstr "Filme"
 
 msgctxt "#31701"
 msgid "All Films"
-msgstr ""
-
-msgctxt "#31702"
-msgid "All Recent"
-msgstr ""
+msgstr "Alle Filme"
 
 msgctxt "#31703"
 msgid "Live TV"
-msgstr ""
+msgstr "Live TV"
 
 msgctxt "#31704"
 msgid "Manage Library"
-msgstr ""
+msgstr "Bibliothek verwalten"
 
 msgctxt "#31705"
 msgid "All Albums"
-msgstr ""
+msgstr "Alle Alben"
 
 msgctxt "#31706"
 msgid "All TV Shows"
-msgstr ""
+msgstr "Alle TV-Serien"
 
 msgctxt "#31707"
 msgid "Now Playing"
-msgstr ""
+msgstr "Jetzt gespielt"
 
 msgctxt "#31708"
 msgid "All Channels"
-msgstr ""
+msgstr "Alle Sender"
 
 msgctxt "#31709"
 msgid "Recent"
-msgstr ""
+msgstr "Letzte"
 
 msgctxt "#31710"
 msgid "Timers"
-msgstr ""
+msgstr "Zeitmesser"
 
 msgctxt "#31711"
 msgid "More"
-msgstr ""
+msgstr "Mehr"
 
 msgctxt "#31712"
 msgid "Sort By"
-msgstr ""
+msgstr "Sortieren nach"
 
 msgctxt "#31713"
 msgid "View"
-msgstr ""
+msgstr "Ansicht"
 
 msgctxt "#31714"
 msgid "Showing"
-msgstr ""
+msgstr "Zeigen"
 
 msgctxt "#31715"
 msgid "Film"
-msgstr ""
+msgstr "Film"
 
 msgctxt "#31716"
 msgid "by"
-msgstr ""
-
-msgctxt "#31717"
-msgid "Categorised by"
-msgstr ""
+msgstr "von"
 
 msgctxt "#31718"
 msgid "Premiered"
-msgstr ""
+msgstr "Erstmals ausgestahlt"
 
 msgctxt "#31719"
 msgid "Login"
-msgstr ""
-
-msgctxt "#31720"
-msgid "nbox"
-msgstr ""
-
-msgctxt "#31721"
-msgid "Unwatched episode"
-msgstr ""
-
-msgctxt "#31722"
-msgid "Unwatched episodes"
-msgstr ""
-
-msgctxt "#31723"
-msgid "Cover"
-msgstr ""
-
-msgctxt "#31724"
-msgid "Art"
-msgstr ""
-
-msgctxt "#31725"
-msgid "Favs"
-msgstr ""
-
-msgctxt "#31726"
-msgid "Hide Extra Menu"
-msgstr ""
-
-msgctxt "#31727"
-msgid "Hide Films"
-msgstr ""
-
-msgctxt "#31728"
-msgid "Hide Music"
-msgstr ""
-
-msgctxt "#31729"
-msgid "Hide TV"
-msgstr ""
-
-msgctxt "#31730"
-msgid "Enable Exit XBMC Button"
-msgstr ""
+msgstr "Anmeldung"
 
 msgctxt "#31731"
 msgid "Enable Visualization"
-msgstr ""
-
-msgctxt "#31732"
-msgid "Enable Light Mode (List View Only)"
-msgstr ""
-
-msgctxt "#31733"
-msgid "Sync"
-msgstr ""
-
-msgctxt "#31734"
-msgid "Show Music Artists"
-msgstr ""
+msgstr "Visualisierung verwenden"
 
 msgctxt "#31735"
 msgid "All Artists"
-msgstr ""
+msgstr "Alle Künstler"
 
 msgctxt "#31736"
 msgid "Peripherals"
-msgstr ""
+msgstr "Geräte"
 
 msgctxt "#31737"
 msgid "Music Videos"
-msgstr ""
+msgstr "Musik Videos"
