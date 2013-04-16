@@ -64,7 +64,7 @@
                         <height>315</height>
                         <texture>white_box.png</texture>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <visible>!StringCompare(ListItem.Title, )</visible>
+                        <visible>!StringCompare(ListItem.Title, ) + !SubString(ListItem.Icon,default)</visible>
                     </control>
                     <control type="image">
                         <posx></posx>
@@ -119,7 +119,7 @@
                         <height>315</height>
                         <texture>white_box.png</texture>
                         <aspectratio scalediffuse="false">stretch</aspectratio>
-                        <visible>!StringCompare(ListItem.Title, )</visible>
+                        <visible>!StringCompare(ListItem.Title, ) + !SubString(ListItem.Icon,default)</visible>
                     </control>
                     <control type="image">
                         <posx></posx>
@@ -129,6 +129,17 @@
                         <texture>$INFO[ListItem.Icon]</texture>
                         <aspectratio scalediffuse="false">scale</aspectratio>
                         <bordersize>4</bordersize>
+                        <visible>!SubString(ListItem.Icon,default)</visible>
+                    </control>
+                    <control type="image">
+                        <posx></posx>
+                        <posy></posy>
+                        <width>215</width>
+                        <height>315</height>
+                        <texture>$INFO[ListItem.Icon]</texture>
+                        <aspectratio scalediffuse="false">keep</aspectratio>
+                        <bordersize>4</bordersize>
+                        <visible>SubString(ListItem.Icon,default)</visible>
                     </control>
                     <control type="image">
                         <posx>151</posx>
@@ -140,7 +151,19 @@
                             <effect type="zoom" center="215,0" start="80" end="120" time="400" tween="back" easing="out" />
                             <effect type="fade" start="80" end="100" time="400" />
                         </animation>
-                        <visible>[Container.Content(Seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
+                        <visible>[[Container.Content(Seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]] + !SubString(ListItem.Icon,default)</visible>
+                    </control>
+                    <control type="image">
+                        <posx>181</posx>
+                        <posy>13</posy>
+                        <width>18</width>
+                        <height>15</height>
+                        <texture>watchedpanel.png</texture>
+                        <animation type="Focus" reversible="false">
+                            <effect type="zoom" center="215,0" start="80" end="120" time="400" tween="back" easing="out" />
+                            <effect type="fade" start="80" end="100" time="400" />
+                        </animation>
+                        <visible>[[Container.Content(Seasons) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]] + SubString(ListItem.Icon,default)</visible>
                     </control>
                     <control type="image" id="2">
                         <posx>0</posx>
