@@ -880,7 +880,7 @@
                     <posx>159</posx>
                     <posy>0</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
                         <posx>0</posx>
@@ -960,7 +960,7 @@
                     <posx>318</posx>
                     <posy>0</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
                         <posx>0</posx>
@@ -997,7 +997,7 @@
                         <scrollspeed>50</scrollspeed>
                     </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -1040,7 +1040,7 @@
                     <posx>0</posx>
                     <posy>159</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -1077,7 +1077,7 @@
                         <scrollspeed>50</scrollspeed>
                     </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -1120,7 +1120,7 @@
                     <posx>159</posx>
                     <posy>159</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -1157,7 +1157,7 @@
                         <scrollspeed>50</scrollspeed>
                     </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -1200,7 +1200,7 @@
                     <posx>318</posx>
                     <posy>159</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -1237,7 +1237,7 @@
                         <scrollspeed>50</scrollspeed>
                     </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -1301,10 +1301,6 @@
                     <width>400</width>
                     <font>Home_sub_header</font>
                     <align>left</align>
-                </control>
-                <control type="label">
-                    <visible>Container(68).HasNext</visible>
-                    <label>$INFO[Container(68).ListItem(2).Label2]</label>
                 </control>
                 <control type="grouplist" id="8000">
                     <posx>360</posx>
@@ -1710,19 +1706,19 @@
                     <posx>0</posx>
                     <posy>0</posy>
                     <control type="image">
-                        <visible>IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>  
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>155</width>
                         <height>155</height>
-                        <texture>black.png</texture>
+                        <texture blend="false">black.png</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>
-                        <label> $INFO[Container(68).ListItem(0).Label]</label>
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>  
+                        <label> $INFO[Container(68).ListItem(-3).Label]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
                         <posx>0</posx>
@@ -1734,8 +1730,8 @@
                         <scrollspeed>50</scrollspeed>
                     </control>
                     <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible>
-                        <label> $INFO[Container(68).ListItem(3).Label]</label>
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),3) + !IntegerGreaterThan(System.Time(ss),12)</visible> 
+                        <label> $INFO[Container(68).ListItem(0).Label]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
                         <posx>0</posx>
@@ -1754,12 +1750,12 @@
                         <posy>0</posy>
                         <width>155</width>
                         <height>155</height>
-                        <texture>black.png</texture>
+                        <texture blend="false">black.png</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(0).Label2][/B][/COLOR]</label>
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(-3).Label2][/B][/COLOR]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
                         <posx>0</posx>
@@ -1771,8 +1767,8 @@
                         <align>left</align>
                     </control>
                     <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
-                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(3).Label2][/B][/COLOR]</label>
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(0).Label2][/B][/COLOR]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
                         <posx>0</posx>
@@ -1790,18 +1786,31 @@
                     <posx>159</posx>
                     <posy>0</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>155</width>
                         <height>155</height>
-                        <texture>black.png</texture>
+                        <texture blend="false">black.png</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible> 
+                        <label> $INFO[Container(68).ListItem(-2).Label]</label>
+                        <scroll>true</scroll>
+                        <pauseatend>300</pauseatend>
+                        <posx>0</posx>
+                        <posy>56</posy>
+                        <width>155</width>
+                        <height>155</height>
+                        <font>button_bold</font>
+                        <align>left</align>
+                        <scrollspeed>50</scrollspeed>
+                    </control>
+                    <control type="fadelabel">
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>
                         <label> $INFO[Container(68).ListItem(1).Label]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
@@ -1813,33 +1822,20 @@
                         <align>left</align>
                         <scrollspeed>50</scrollspeed>
                     </control>
-                    <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>
-                        <label> $INFO[Container(68).ListItem(4).Label]</label>
-                        <scroll>true</scroll>
-                        <pauseatend>300</pauseatend>
-                        <posx>0</posx>
-                        <posy>56</posy>
-                        <width>155</width>
-                        <height>155</height>
-                        <font>button_bold</font>
-                        <align>left</align>
-                        <scrollspeed>50</scrollspeed>
-                    </control>
                     <control type="image">
-                        <visible>IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible> 
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>155</width>
                         <height>155</height>
-                        <texture>black.png</texture>
+                        <texture blend="false">black.png</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(1).Label2][/B][/COLOR]</label>
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(-2).Label2][/B][/COLOR]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
                         <posx>0</posx>
@@ -1851,8 +1847,8 @@
                         <align>left</align>
                     </control>
                     <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
-                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(4).Label2][/B][/COLOR]</label>
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(1).Label2][/B][/COLOR]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
                         <posx>0</posx>
@@ -1870,18 +1866,31 @@
                     <posx>318</posx>
                     <posy>0</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>155</width>
                         <height>155</height>
-                        <texture>black.png</texture>
+                        <texture blend="false">black.png</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible> 
+                        <label> $INFO[Container(68).ListItem(-1).Label]</label>
+                        <scroll>true</scroll>
+                        <pauseatend>300</pauseatend>
+                        <posx>0</posx>
+                        <posy>56</posy>
+                        <width>155</width>
+                        <height>155</height>
+                        <font>button_bold</font>
+                        <align>left</align>
+                        <scrollspeed>50</scrollspeed>
+                    </control>
+                    <control type="fadelabel">
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>
                         <label> $INFO[Container(68).ListItem(2).Label]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
@@ -1893,33 +1902,20 @@
                         <align>left</align>
                         <scrollspeed>50</scrollspeed>
                     </control>
-                    <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>
-                        <label> $INFO[Container(68).ListItem(5).Label]</label>
-                        <scroll>true</scroll>
-                        <pauseatend>300</pauseatend>
-                        <posx>0</posx>
-                        <posy>56</posy>
-                        <width>155</width>
-                        <height>155</height>
-                        <font>button_bold</font>
-                        <align>left</align>
-                        <scrollspeed>50</scrollspeed>
-                    </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>155</width>
                         <height>155</height>
-                        <texture>black.png</texture>
+                        <texture blend="false">black.png</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(2).Label2][/B][/COLOR]</label>
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(-1).Label2][/B][/COLOR]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
                         <posx>0</posx>
@@ -1931,8 +1927,8 @@
                         <align>left</align>
                     </control>
                     <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
-                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(5).Label2][/B][/COLOR]</label>
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(2).Label2][/B][/COLOR]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
                         <posx>0</posx>
@@ -1950,18 +1946,31 @@
                     <posx>0</posx>
                     <posy>159</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>155</width>
                         <height>155</height>
-                        <texture>black.png</texture>
+                        <texture blend="false">black.png</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible> 
+                        <label> $INFO[Container(68).ListItem(0).Label]</label>
+                        <scroll>true</scroll>
+                        <pauseatend>300</pauseatend>
+                        <posx>0</posx>
+                        <posy>56</posy>
+                        <width>155</width>
+                        <height>155</height>
+                        <font>button_bold</font>
+                        <align>left</align>
+                        <scrollspeed>50</scrollspeed>
+                    </control>
+                    <control type="fadelabel">
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>
                         <label> $INFO[Container(68).ListItem(3).Label]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
@@ -1973,32 +1982,32 @@
                         <align>left</align>
                         <scrollspeed>50</scrollspeed>
                     </control>
-                    <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>
-                        <label> $INFO[Container(68).ListItem(6).Label]</label>
-                        <scroll>true</scroll>
-                        <pauseatend>300</pauseatend>
-                        <posx>0</posx>
-                        <posy>56</posy>
-                        <width>155</width>
-                        <height>155</height>
-                        <font>button_bold</font>
-                        <align>left</align>
-                        <scrollspeed>50</scrollspeed>
-                    </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>  
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>155</width>
                         <height>155</height>
-                        <texture>black.png</texture>
+                        <texture blend="false">black.png</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(0).Label2][/B][/COLOR]</label>
+                        <scroll>true</scroll>
+                        <pauseatend>300</pauseatend>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>155</width>
+                        <height>155</height>
+                        <scrollspeed>50</scrollspeed>
+                        <font>Home_sub_header</font>
+                        <align>left</align>
+                    </control>
+                    <control type="fadelabel">
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
                         <label> [COLOR Accent][B]$INFO[Container(68).ListItem(3).Label2][/B][/COLOR]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
@@ -2010,38 +2019,40 @@
                         <font>Home_sub_header</font>
                         <align>left</align>
                     </control>
-                    <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
-                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(6).Label2][/B][/COLOR]</label>
-                        <scroll>true</scroll>
-                        <pauseatend>300</pauseatend>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>155</width>
-                        <height>155</height>
-                        <scrollspeed>50</scrollspeed>
-                        <font>Home_sub_header</font>
-                        <align>left</align>
-                    </control>
+
                 </control>
                 <!-- end black 4 -->
+
                 <control type="group">
                     <!-- start black 5 -->
                     <posx>159</posx>
                     <posy>159</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>155</width>
                         <height>155</height>
-                        <texture>black.png</texture>
+                        <texture blend="false">black.png</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible> 
+                        <label> $INFO[Container(68).ListItem(1).Label]</label>
+                        <scroll>true</scroll>
+                        <pauseatend>300</pauseatend>
+                        <posx>0</posx>
+                        <posy>56</posy>
+                        <width>155</width>
+                        <height>155</height>
+                        <font>button_bold</font>
+                        <align>left</align>
+                        <scrollspeed>50</scrollspeed>
+                    </control>
+                    <control type="fadelabel">
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>
                         <label> $INFO[Container(68).ListItem(4).Label]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
@@ -2053,9 +2064,64 @@
                         <align>left</align>
                         <scrollspeed>50</scrollspeed>
                     </control>
+                    <control type="image">
+                        <visible>IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+                        <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
+                        <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>155</width>
+                        <height>155</height>
+                        <texture blend="false">black.png</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
                     <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>
-                        <label> $INFO[Container(68).ListItem(7).Label]</label>
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(1).Label2][/B][/COLOR]</label>
+                        <scroll>true</scroll>
+                        <pauseatend>300</pauseatend>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>155</width>
+                        <height>155</height>
+                        <scrollspeed>50</scrollspeed>
+                        <font>Home_sub_header</font>
+                        <align>left</align>
+                    </control>
+                    <control type="fadelabel">
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(4).Label][/B][/COLOR]</label>
+                        <scroll>true</scroll>
+                        <pauseatend>300</pauseatend>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>155</width>
+                        <height>155</height>
+                        <scrollspeed>50</scrollspeed>
+                        <font>Home_sub_header</font>
+                        <align>left</align>
+                    </control>
+
+                </control>
+                <!-- end black 5 -->
+                <control type="group">
+                    <!-- start black 6 -->
+                    <posx>318</posx>
+                    <posy>159</posy>
+                    <control type="image">
+                        <visible>IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible> 
+                        <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
+                        <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
+                        <posx>0</posx>
+                        <posy>0</posy>
+                        <width>155</width>
+                        <height>155</height>
+                        <texture blend="false">black.png</texture>
+                        <aspectratio>scale</aspectratio>
+                    </control>
+                    <control type="fadelabel">
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>  
+                        <label> $INFO[Container(68).ListItem(2).Label]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
                         <posx>0</posx>
@@ -2066,62 +2132,8 @@
                         <align>left</align>
                         <scrollspeed>50</scrollspeed>
                     </control>
-                    <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-                        <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
-                        <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>155</width>
-                        <height>155</height>
-                        <texture>black.png</texture>
-                        <aspectratio>scale</aspectratio>
-                    </control>
                     <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(4).Label2][/B][/COLOR]</label>
-                        <scroll>true</scroll>
-                        <pauseatend>300</pauseatend>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>155</width>
-                        <height>155</height>
-                        <scrollspeed>50</scrollspeed>
-                        <font>Home_sub_header</font>
-                        <align>left</align>
-                    </control>
-                    <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
-                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(7).Label2][/B][/COLOR]</label>
-                        <scroll>true</scroll>
-                        <pauseatend>300</pauseatend>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>155</width>
-                        <height>155</height>
-                        <scrollspeed>50</scrollspeed>
-                        <font>Home_sub_header</font>
-                        <align>left</align>
-                    </control>
-                </control>
-                <!-- end black 5 -->
-                <control type="group">
-                    <!-- start black 6 -->
-                    <posx>318</posx>
-                    <posy>159</posy>
-                    <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>
-                        <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
-                        <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>155</width>
-                        <height>155</height>
-                        <texture>black.png</texture>
-                        <aspectratio>scale</aspectratio>
-                    </control>
-                    <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible> 
                         <label> $INFO[Container(68).ListItem(5).Label]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
@@ -2133,33 +2145,20 @@
                         <align>left</align>
                         <scrollspeed>50</scrollspeed>
                     </control>
-                    <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>
-                        <label> $INFO[Container(68).ListItem(8).Label]</label>
-                        <scroll>true</scroll>
-                        <pauseatend>300</pauseatend>
-                        <posx>0</posx>
-                        <posy>56</posy>
-                        <width>155</width>
-                        <height>155</height>
-                        <font>button_bold</font>
-                        <align>left</align>
-                        <scrollspeed>50</scrollspeed>
-                    </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
                         <posy>0</posy>
                         <width>155</width>
                         <height>155</height>
-                        <texture>black.png</texture>
+                        <texture blend="false">black.png</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
                     <control type="fadelabel">
-                        <visible>Container(68).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(5).Label2][/B][/COLOR]</label>
+                        <visible>Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(2).Label2][/B][/COLOR]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
                         <posx>0</posx>
@@ -2171,8 +2170,8 @@
                         <align>left</align>
                     </control>
                     <control type="fadelabel">
-                        <visible>!Container(68).HasNext + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
-                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(8).Label2][/B][/COLOR]</label>
+                        <visible>!Container(68).Position(3) + IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+                        <label> [COLOR Accent][B]$INFO[Container(68).ListItem(5).Label2][/B][/COLOR]</label>
                         <scroll>true</scroll>
                         <pauseatend>300</pauseatend>
                         <posx>0</posx>
@@ -2668,7 +2667,7 @@
                         <scrollspeed>50</scrollspeed>
                     </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),19) + !IntegerGreaterThan(System.Time(ss),26)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out" tween="square">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
                         <posx>0</posx>
@@ -2724,7 +2723,7 @@
                     <posx>159</posx>
                     <posy>0</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),20) + !IntegerGreaterThan(System.Time(ss),31)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
                         <posx>0</posx>
@@ -2774,7 +2773,7 @@
                         <scrollspeed>50</scrollspeed>
                     </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),35) + !IntegerGreaterThan(System.Time(ss),42)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -2830,7 +2829,7 @@
                     <posx>318</posx>
                     <posy>0</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),52) + !IntegerGreaterThan(System.Time(ss),60)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out" tween="square">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in" tween="square">Hidden</animation>
                         <posx>0</posx>
@@ -2880,7 +2879,7 @@
                         <scrollspeed>50</scrollspeed>
                     </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),38) + !IntegerGreaterThan(System.Time(ss),48)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -2937,7 +2936,7 @@
                     <posx>0</posx>
                     <posy>159</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),33) + !IntegerGreaterThan(System.Time(ss),40)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -2974,7 +2973,7 @@
                         <scrollspeed>50</scrollspeed>
                     </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),0) + !IntegerGreaterThan(System.Time(ss),8)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -3018,7 +3017,7 @@
                     <posx>159</posx>
                     <posy>159</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),42) + !IntegerGreaterThan(System.Time(ss),52)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -3055,7 +3054,7 @@
                         <scrollspeed>50</scrollspeed>
                     </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),30) + !IntegerGreaterThan(System.Time(ss),39)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -3099,7 +3098,7 @@
                     <posx>318</posx>
                     <posy>159</posy>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),9) + !IntegerGreaterThan(System.Time(ss),17)</visible>
                         <animation effect="zoom" start="100,0" end="100,26" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,26" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
@@ -3136,7 +3135,7 @@
                         <scrollspeed>50</scrollspeed>
                     </control>
                     <control type="image">
-                        <visible> IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
+                        <visible>IntegerGreaterThan(System.Time(ss),15) + !IntegerGreaterThan(System.Time(ss),23)</visible>
                         <animation effect="zoom" start="100,0" end="100,100" center="0,155" time="300" easing="out">Visible</animation>
                         <animation effect="zoom" start="100,100" end="100,0" center="0,155" time="400" easing="in">Hidden</animation>
                         <posx>0</posx>
