@@ -6,6 +6,7 @@
 	provider-name="Niamu">
 	<requires>
 		<import addon="xbmc.gui" version="4.0.0"/>
+		<import addon="service.skin.widgets" version="0.0.14"/>
 	</requires>
 	<extension
 		point="xbmc.gui.skin"
@@ -14,7 +15,6 @@
 		effectslowdown="1.00">
 		<res width="1280" height="720" aspect="16:9" default="true" folder="720p" />
 	</extension>
-
 	<extension point="xbmc.addon.metadata">
 		<summary lang="el">Ένας ελαφρύς και απλός σχεδιασμός. Το αρχικό κέλυφος Lightbox από τον Tree_Jammer - τροποποιημένο από τον Niamu με το όνομα nbox</summary>
 		<summary lang="en">A lean and simple design. Original Lightbox skin by Tree_Jammer - modified by Niamu as nbox</summary>

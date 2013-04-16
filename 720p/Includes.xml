@@ -14,6 +14,7 @@
     <include file="Viewtype_Season_Tall.xml" />
     <include file="Viewtype_Panel_Square.xml" />
     <include file="Viewtype_Panel_Square_List.xml" />
+    <include file="Variables.xml" />
     <include name="HiddenButton">
         <posx>-20</posx>
         <posy>-20</posy>
@@ -574,4 +575,607 @@
             <visible>true</visible>
         </control>
     </include>
+    <include name="RecommendedItemsTV">
+      <item id="11">
+          <label>$INFO[Window(Home).Property(RecommendedEpisode.1.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedEpisode.1.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RecommendedEpisode.1.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.1.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedEpisode.1.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.1.TVshowTitle))</visible>
+      </item>
+      <item id="12">
+          <label>$INFO[Window(Home).Property(RecommendedEpisode.2.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedEpisode.2.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RecommendedEpisode.2.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.2.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedEpisode.2.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.2.TVshowTitle))</visible>
+      </item>
+      <item id="13">
+          <label>$INFO[Window(Home).Property(RecommendedEpisode.3.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedEpisode.3.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RecommendedEpisode.3.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.3.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedEpisode.3.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.3.TVshowTitle))</visible>
+      </item>
+      <item id="14">
+          <label>$INFO[Window(Home).Property(RecommendedEpisode.4.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedEpisode.4.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RecommendedEpisode.4.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.4.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedEpisode.4.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.4.TVshowTitle))</visible>
+      </item>
+      <item id="15">
+          <label>$INFO[Window(Home).Property(RecommendedEpisode.5.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedEpisode.5.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RecommendedEpisode.5.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.5.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedEpisode.5.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.5.TVshowTitle))</visible>
+      </item>
+      <item id="16">
+          <label>$INFO[Window(Home).Property(RecommendedEpisode.6.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedEpisode.6.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RecommendedEpisode.6.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.6.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedEpisode.6.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.6.TVshowTitle))</visible>
+      </item>
+      <item id="17">
+          <label>$INFO[Window(Home).Property(RecommendedEpisode.7.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedEpisode.7.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RecommendedEpisode.7.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.7.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedEpisode.7.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.7.TVshowTitle))</visible>
+      </item>
+      <item id="18">
+          <label>$INFO[Window(Home).Property(RecommendedEpisode.8.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedEpisode.8.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RecommendedEpisode.8.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.8.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedEpisode.8.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.8.TVshowTitle))</visible>
+      </item>
+      <item id="19">
+          <label>$INFO[Window(Home).Property(RecommendedEpisode.9.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedEpisode.9.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RecommendedEpisode.9.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedEpisode.9.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedEpisode.9.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedEpisode.9.TVshowTitle))</visible>
+      </item>
+  </include>
+  <include name="RecommendedItemsMovies">
+      <item id="11">
+          <label>$INFO[Window(Home).Property(RecommendedMovie.1.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedMovie.1.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.1.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedMovie.1.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.1.Title))</visible>
+      </item>
+      <item id="12">
+          <label>$INFO[Window(Home).Property(RecommendedMovie.2.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedMovie.2.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.2.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedMovie.2.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.2.Title))</visible>
+      </item>
+      <item id="13">
+          <label>$INFO[Window(Home).Property(RecommendedMovie.3.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedMovie.3.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.3.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedMovie.3.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.3.Title))</visible>
+      </item>
+      <item id="14">
+          <label>$INFO[Window(Home).Property(RecommendedMovie.4.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedMovie.4.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.4.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedMovie.4.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.4.Title))</visible>
+      </item>
+      <item id="15">
+          <label>$INFO[Window(Home).Property(RecommendedMovie.5.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedMovie.5.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.5.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedMovie.5.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.5.Title))</visible>
+      </item>
+      <item id="16">
+          <label>$INFO[Window(Home).Property(RecommendedMovie.6.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedMovie.6.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.6.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedMovie.6.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.6.Title))</visible>
+      </item>
+      <item id="17">
+          <label>$INFO[Window(Home).Property(RecommendedMovie.7.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedMovie.7.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.7.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedMovie.7.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.7.Title))</visible>
+      </item>
+      <item id="18">
+          <label>$INFO[Window(Home).Property(RecommendedMovie.8.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedMovie.8.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.8.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedMovie.8.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.8.Title))</visible>
+      </item>
+      <item id="19">
+          <label>$INFO[Window(Home).Property(RecommendedMovie.9.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedMovie.9.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RecommendedMovie.9.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedMovie.9.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedMovie.9.Title))</visible>
+      </item>
+  </include>
+  <include name="RecommendedItemsMusic">
+      <item id="11">
+          <label>$INFO[Window(Home).Property(RecommendedAlbum.1.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedAlbum.1.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RecommendedAlbum.1.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedAlbum.1.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.1.Title))</visible>
+      </item>
+      <item id="12">
+          <label>$INFO[Window(Home).Property(RecommendedAlbum.2.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedAlbum.2.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RecommendedAlbum.2.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedAlbum.2.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.2.Title))</visible>
+      </item>
+      <item id="13">
+          <label>$INFO[Window(Home).Property(RecommendedAlbum.3.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedAlbum.3.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RecommendedAlbum.3.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedAlbum.3.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.3.Title))</visible>
+      </item>
+      <item id="14">
+          <label>$INFO[Window(Home).Property(RecommendedAlbum.4.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedAlbum.4.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RecommendedAlbum.4.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedAlbum.4.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.4.Title))</visible>
+      </item>
+      <item id="15">
+          <label>$INFO[Window(Home).Property(RecommendedAlbum.5.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedAlbum.5.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RecommendedAlbum.5.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedAlbum.5.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.5.Title))</visible>
+      </item>
+      <item id="16">
+          <label>$INFO[Window(Home).Property(RecommendedAlbum.6.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedAlbum.6.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RecommendedAlbum.6.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedAlbum.6.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.6.Title))</visible>
+      </item>
+      <item id="17">
+          <label>$INFO[Window(Home).Property(RecommendedAlbum.7.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedAlbum.7.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RecommendedAlbum.7.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedAlbum.7.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.7.Title))</visible>
+      </item>
+      <item id="18">
+          <label>$INFO[Window(Home).Property(RecommendedAlbum.8.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedAlbum.8.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RecommendedAlbum.8.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedAlbum.8.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.8.Title))</visible>
+      </item>
+      <item id="19">
+          <label>$INFO[Window(Home).Property(RecommendedAlbum.9.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RecommendedAlbum.9.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RecommendedAlbum.9.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RecommendedAlbum.9.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RecommendedAlbum.9.Title))</visible>
+      </item>
+  </include>
+  <include name="RecentItemsMovies">
+      <item id="11">
+          <label>$INFO[Window.Property(LatestMovie.1.Year)]</label>
+          <label2>$INFO[Window.Property(LatestMovie.1.Title)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestMovie.1.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestMovie.1.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestMovie.1.Title))</visible>
+      </item>
+      <item id="12">
+          <label>$INFO[Window.Property(LatestMovie.2.Year)]</label>
+          <label2>$INFO[Window.Property(LatestMovie.2.Title)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestMovie.2.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestMovie.2.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestMovie.2.Title))</visible>
+      </item>
+      <item id="13">
+          <label>$INFO[Window.Property(LatestMovie.3.Year)]</label>
+          <label2>$INFO[Window.Property(LatestMovie.3.Title)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestMovie.3.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestMovie.3.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestMovie.3.Title))</visible>
+      </item>
+      <item id="14">
+          <label>$INFO[Window.Property(LatestMovie.4.Year)]</label>
+          <label2>$INFO[Window.Property(LatestMovie.4.Title)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestMovie.4.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestMovie.4.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestMovie.4.Title))</visible>
+      </item>
+      <item id="15">
+          <label>$INFO[Window.Property(LatestMovie.5.Year)]</label>
+          <label2>$INFO[Window.Property(LatestMovie.5.Title)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestMovie.5.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestMovie.5.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestMovie.5.Title))</visible>
+      </item>
+      <item id="16">
+          <label>$INFO[Window.Property(LatestMovie.6.Year)]</label>
+          <label2>$INFO[Window.Property(LatestMovie.6.Title)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestMovie.6.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestMovie.6.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestMovie.6.Title))</visible>
+      </item>
+      <item id="17">
+          <label>$INFO[Window.Property(LatestMovie.7.Year)]</label>
+          <label2>$INFO[Window.Property(LatestMovie.7.Title)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestMovie.7.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestMovie.7.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestMovie.7.Title))</visible>
+      </item>
+      <item id="18">
+          <label>$INFO[Window.Property(LatestMovie.8.Year)]</label>
+          <label2>$INFO[Window.Property(LatestMovie.8.Title)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestMovie.8.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestMovie.8.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestMovie.8.Title))</visible>
+      </item>
+      <item id="19">
+          <label>$INFO[Window.Property(LatestMovie.9.Year)]</label>
+          <label2>$INFO[Window.Property(LatestMovie.9.Title)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestMovie.9.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestMovie.9.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestMovie.9.Title))</visible>
+      </item>
+  </include>
+  <include name="RecentItemsTV">
+      <item id="11">
+          <label>$INFO[Window.Property(LatestEpisode.1.EpisodeTitle)]</label>
+          <label2>$INFO[Window.Property(LatestEpisode.1.ShowTitle)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.1.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestEpisode.1.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestEpisode.1.ShowTitle))</visible>
+      </item>
+      <item id="12">
+          <label>$INFO[Window.Property(LatestEpisode.2.EpisodeTitle)]</label>
+          <label2>$INFO[Window.Property(LatestEpisode.2.ShowTitle)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.2.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestEpisode.2.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestEpisode.2.ShowTitle))</visible>
+      </item>
+      <item id="13">
+          <label>$INFO[Window.Property(LatestEpisode.3.EpisodeTitle)]</label>
+          <label2>$INFO[Window.Property(LatestEpisode.3.ShowTitle)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.3.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestEpisode.3.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestEpisode.3.ShowTitle))</visible>
+      </item>
+      <item id="14">
+          <label>$INFO[Window.Property(LatestEpisode.4.EpisodeTitle)]</label>
+          <label2>$INFO[Window.Property(LatestEpisode.4.ShowTitle)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.4.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestEpisode.4.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestEpisode.4.ShowTitle))</visible>
+      </item>
+      <item id="15">
+          <label>$INFO[Window.Property(LatestEpisode.5.EpisodeTitle)]</label>
+          <label2>$INFO[Window.Property(LatestEpisode.5.ShowTitle)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.5.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestEpisode.5.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestEpisode.5.ShowTitle))</visible>
+      </item>
+      <item id="16">
+          <label>$INFO[Window.Property(LatestEpisode.6.EpisodeTitle)]</label>
+          <label2>$INFO[Window.Property(LatestEpisode.6.ShowTitle)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.6.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestEpisode.6.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestEpisode.6.ShowTitle))</visible>
+      </item>
+      <item id="17">
+          <label>$INFO[Window.Property(LatestEpisode.7.EpisodeTitle)]</label>
+          <label2>$INFO[Window.Property(LatestEpisode.7.ShowTitle)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.7.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestEpisode.7.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestEpisode.7.ShowTitle))</visible>
+      </item>
+      <item id="18">
+          <label>$INFO[Window.Property(LatestEpisode.8.EpisodeTitle)]</label>
+          <label2>$INFO[Window.Property(LatestEpisode.8.ShowTitle)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.8.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestEpisode.8.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestEpisode.8.ShowTitle))</visible>
+      </item>
+      <item id="19">
+          <label>$INFO[Window.Property(LatestEpisode.9.EpisodeTitle)]</label>
+          <label2>$INFO[Window.Property(LatestEpisode.9.ShowTitle)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestEpisode.9.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestEpisode.9.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestEpisode.9.ShowTitle))</visible>
+      </item>
+  </include>
+  <include name="RecentItemsMusic">
+      <item id="11">
+          <label>$INFO[Window.Property(LatestAlbum.1.Title)]</label>
+          <label2>$INFO[Window.Property(LatestAlbum.1.Artist)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.1.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestAlbum.1.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestAlbum.1.Title))</visible>
+      </item>
+      <item id="12">
+          <label>$INFO[Window.Property(LatestAlbum.2.Title)]</label>
+          <label2>$INFO[Window.Property(LatestAlbum.2.Artist)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.2.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestAlbum.2.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestAlbum.2.Title))</visible>
+      </item>
+      <item id="13">
+          <label>$INFO[Window.Property(LatestAlbum.3.Title)]</label>
+          <label2>$INFO[Window.Property(LatestAlbum.3.Artist)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.3.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestAlbum.3.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestAlbum.3.Title))</visible>
+      </item>
+      <item id="14">
+          <label>$INFO[Window.Property(LatestAlbum.4.Title)]</label>
+          <label2>$INFO[Window.Property(LatestAlbum.4.Artist)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.4.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestAlbum.4.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestAlbum.4.Title))</visible>
+      </item>
+      <item id="15">
+          <label>$INFO[Window.Property(LatestAlbum.5.Title)]</label>
+          <label2>$INFO[Window.Property(LatestAlbum.5.Artist)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.5.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestAlbum.5.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestAlbum.5.Title))</visible>
+      </item>
+      <item id="16">
+          <label>$INFO[Window.Property(LatestAlbum.6.Title)]</label>
+          <label2>$INFO[Window.Property(LatestAlbum.6.Artist)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.6.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestAlbum.6.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestAlbum.6.Title))</visible>
+      </item>
+      <item id="17">
+          <label>$INFO[Window.Property(LatestAlbum.7.Title)]</label>
+          <label2>$INFO[Window.Property(LatestAlbum.7.Artist)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.7.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestAlbum.7.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestAlbum.7.Title))</visible>
+      </item>
+      <item id="18">
+          <label>$INFO[Window.Property(LatestAlbum.8.Title)]</label>
+          <label2>$INFO[Window.Property(LatestAlbum.8.Artist)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.8.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestAlbum.8.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestAlbum.8.Title))</visible>
+      </item>
+      <item id="19">
+          <label>$INFO[Window.Property(LatestAlbum.9.Title)]</label>
+          <label2>$INFO[Window.Property(LatestAlbum.9.Artist)]</label2>
+          <onclick>PlayMedia($INFO[Window.Property(LatestAlbum.9.Path)])</onclick>
+          <thumb>$INFO[Window.Property(LatestAlbum.9.Thumb)]</thumb>
+          <visible>!IsEmpty(Window.Property(LatestAlbum.9.Title))</visible>
+      </item>
+  </include>
+  <include name="RandomItemsMovies">
+      <item id="11">
+          <label>$INFO[Window(Home).Property(RandomMovie.1.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RandomMovie.1.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.1.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomMovie.1.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomMovie.1.Title))</visible>
+      </item>
+      <item id="12">
+          <label>$INFO[Window(Home).Property(RandomMovie.2.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RandomMovie.2.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.2.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomMovie.2.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomMovie.2.Title))</visible>
+      </item>
+      <item id="13">
+          <label>$INFO[Window(Home).Property(RandomMovie.3.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RandomMovie.3.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.3.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomMovie.3.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomMovie.3.Title))</visible>
+      </item>
+      <item id="14">
+          <label>$INFO[Window(Home).Property(RandomMovie.4.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RandomMovie.4.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.4.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomMovie.4.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomMovie.4.Title))</visible>
+      </item>
+      <item id="15">
+          <label>$INFO[Window(Home).Property(RandomMovie.5.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RandomMovie.5.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.5.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomMovie.5.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomMovie.5.Title))</visible>
+      </item>
+      <item id="16">
+          <label>$INFO[Window(Home).Property(RandomMovie.6.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RandomMovie.6.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.6.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomMovie.6.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomMovie.6.Title))</visible>
+      </item>
+      <item id="17">
+          <label>$INFO[Window(Home).Property(RandomMovie.7.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RandomMovie.7.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.7.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomMovie.7.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomMovie.7.Title))</visible>
+      </item>
+      <item id="18">
+          <label>$INFO[Window(Home).Property(RandomMovie.8.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RandomMovie.8.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.8.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomMovie.8.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomMovie.8.Title))</visible>
+      </item>
+      <item id="19">
+          <label>$INFO[Window(Home).Property(RandomMovie.9.Year)]</label>
+          <label2>$INFO[Window(Home).Property(RandomMovie.9.Title)]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomMovie.9.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomMovie.9.Art(poster))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomMovie.9.Title))</visible>
+      </item>
+  </include>
+  <include name="RandomItemsTV">
+      <item id="11">
+          <label>$INFO[Window(Home).Property(RandomEpisode.1.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomEpisode.1.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RandomEpisode.1.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.1.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomEpisode.1.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomEpisode.1.TVshowTitle))</visible>
+      </item>
+      <item id="12">
+          <label>$INFO[Window(Home).Property(RandomEpisode.2.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomEpisode.2.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RandomEpisode.2.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.2.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomEpisode.2.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomEpisode.2.TVshowTitle))</visible>
+      </item>
+      <item id="13">
+          <label>$INFO[Window(Home).Property(RandomEpisode.3.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomEpisode.3.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RandomEpisode.3.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.3.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomEpisode.3.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomEpisode.3.TVshowTitle))</visible>
+      </item>
+      <item id="14">
+          <label>$INFO[Window(Home).Property(RandomEpisode.4.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomEpisode.4.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RandomEpisode.4.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.4.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomEpisode.4.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomEpisode.4.TVshowTitle))</visible>
+      </item>
+      <item id="15">
+          <label>$INFO[Window(Home).Property(RandomEpisode.5.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomEpisode.5.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RandomEpisode.5.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.5.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomEpisode.5.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomEpisode.5.TVshowTitle))</visible>
+      </item>
+      <item id="16">
+          <label>$INFO[Window(Home).Property(RandomEpisode.6.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomEpisode.6.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RandomEpisode.6.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.6.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomEpisode.6.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomEpisode.6.TVshowTitle))</visible>
+      </item>
+      <item id="17">
+          <label>$INFO[Window(Home).Property(RandomEpisode.7.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomEpisode.7.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RandomEpisode.7.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.7.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomEpisode.7.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomEpisode.7.TVshowTitle))</visible>
+      </item>
+      <item id="18">
+          <label>$INFO[Window(Home).Property(RandomEpisode.8.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomEpisode.8.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RandomEpisode.8.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.8.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomEpisode.8.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomEpisode.8.TVshowTitle))</visible>
+      </item>
+      <item id="19">
+          <label>$INFO[Window(Home).Property(RandomEpisode.9.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomEpisode.9.TVshowTitle),, -] [UPPERCASE]$INFO[Window(Home).Property(RandomEpisode.9.EpisodeNo)][/UPPERCASE]</label2>
+          <onclick>PlayMedia($ESCINFO[Window(Home).Property(RandomEpisode.9.File)])</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomEpisode.9.Art(thumb))]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomEpisode.9.TVshowTitle))</visible>
+      </item>
+  </include>
+  <include name="RandomItemsMusic">
+      <item id="11">
+          <label>$INFO[Window(Home).Property(RandomAlbum.1.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomAlbum.1.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RandomAlbum.1.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomAlbum.1.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomAlbum.1.Title))</visible>
+      </item>
+      <item id="12">
+          <label>$INFO[Window(Home).Property(RandomAlbum.2.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomAlbum.2.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RandomAlbum.2.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomAlbum.2.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomAlbum.2.Title))</visible>
+      </item>
+      <item id="13">
+          <label>$INFO[Window(Home).Property(RandomAlbum.3.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomAlbum.3.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RandomAlbum.3.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomAlbum.3.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomAlbum.3.Title))</visible>
+      </item>
+      <item id="14">
+          <label>$INFO[Window(Home).Property(RandomAlbum.4.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomAlbum.4.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RandomAlbum.4.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomAlbum.4.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomAlbum.4.Title))</visible>
+      </item>
+      <item id="15">
+          <label>$INFO[Window(Home).Property(RandomAlbum.5.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomAlbum.5.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RandomAlbum.5.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomAlbum.5.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomAlbum.5.Title))</visible>
+      </item>
+      <item id="16">
+          <label>$INFO[Window(Home).Property(RandomAlbum.6.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomAlbum.6.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RandomAlbum.6.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomAlbum.6.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomAlbum.6.Title))</visible>
+      </item>
+      <item id="17">
+          <label>$INFO[Window(Home).Property(RandomAlbum.7.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomAlbum.7.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RandomAlbum.7.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomAlbum.7.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomAlbum.7.Title))</visible>
+      </item>
+      <item id="18">
+          <label>$INFO[Window(Home).Property(RandomAlbum.8.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomAlbum.8.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RandomAlbum.8.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomAlbum.8.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomAlbum.8.Title))</visible>
+      </item>
+      <item id="19">
+          <label>$INFO[Window(Home).Property(RandomAlbum.9.Title)]</label>
+          <label2>$INFO[Window(Home).Property(RandomAlbum.9.Artist)]</label2>
+          <onclick>PlayList.Clear</onclick>
+          <onclick>$INFO[Window(Home).Property(RandomAlbum.9.Play)]</onclick>
+          <thumb>$INFO[Window(Home).Property(RandomAlbum.9.Thumb)]</thumb>
+          <visible>!IsEmpty(Window(Home).Property(RandomAlbum.9.Title))</visible>
+      </item>
+  </include>
 </includes>
