@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon 
-	id="skin.nbox.dev"
+	id="skin.nbox"
 	version="0.9.0"
 	name="nbox"
 	provider-name="Niamu">
