@@ -23,6 +23,16 @@
             <animation effect="fade" start="100" end="0" time="400" condition="Window.IsVisible(SliderDialog) | Window.IsVisible(FileBrowser)">Conditional</animation>
         </control>
         <control type="group">
+            <animation type="Hidden">
+                <effect type="fade" time="300" />
+                <effect type="slide" end="-1500,0" time="300" />
+            </animation>
+            <animation type="Visible">
+                <effect type="fade" time="300" />
+                <effect type="slide" start="-1500,0" time="300" />
+            </animation>
+            <visible>!Window.IsVisible(addonsettings)</visible>
+        <control type="group">
             <control type="label">
                 <description>header label</description>
                 <posx>48</posx>
@@ -31,17 +41,6 @@
                 <align>Left</align>
                 <font>Large</font>
                 <label>[COLOR Accent]$LOCALIZE[287][/COLOR]</label>
-            </control>
-            <control type="button">
-                <description>Subtitle chooser Button</description>
-                <posx>10</posx>
-                <posy>70</posy>
-                <width>250</width>
-                <height>46</height>
-                <label>-</label>
-                <texturenofocus border="5">other_textures/buttonnf.png</texturenofocus>
-                <texturefocus border="5">other_textures/buttonfo.png</texturefocus>
-                <onclick>Skin.ToggleSetting(SubtitleSourceChooserVisible)</onclick>
             </control>
             <control type="image" id="110">
                 <description>Service Logo</description>
@@ -64,24 +63,15 @@
             <control type="group" id="250">
                 <control type="group" id="111">
                     <control type="grouplist">
-                        <posx>760</posx>
-                        <posy>10</posy>
+                        <posx>48</posx>
+                        <posy>75</posy>
                         <width>760</width>
-                        <height>40</height>
-                        <align>right</align>
+                        <height>45</height>
+                        <align>left</align>
                         <orientation>horizontal</orientation>
-                        <itemgap>5</itemgap>
-                        <control type="image">
-                            <width>40</width>
-                            <height>40</height>
-                            <texture>DefaultIconInfo.png</texture>
-                        </control>
                         <control type="label">
                             <description>notification</description>
-                            <width min="1" max="720">auto</width>
-                            <height>40</height>
                             <label>$LOCALIZE[SCRIPT655]</label>
-                            <aligny>center</aligny>
                         </control>
                     </control>
                 </control>
@@ -91,10 +81,9 @@
                     <width>760</width>
                     <height>315</height>
                     <onleft>120</onleft>
-                    <onright>120</onright>
+                    <onright>150</onright>
                     <onup>120</onup>
                     <ondown>120</ondown>
-                    <viewtype label="535">list</viewtype>
                     <pagecontrol>-</pagecontrol>
                     <scrolltime>200</scrolltime>
                     <itemlayout width="760" height="45">
@@ -145,6 +134,7 @@
                             <width>760</width>
                             <height>45</height>
                             <texture border="3">other_textures/buttonfo.png</texture>
+                            <visible>Control.HasFocus(120)</visible>
                         </control>
                         <control type="label">
                             <posx>20</posx>
@@ -183,75 +173,58 @@
             </control>
         </control>
         <control type="group">
-            <visible>Skin.HasSetting(SubtitleSourceChooserVisible)</visible>
-            <control type="button">
-                <description>Hidden button to close the sort when its focused</description>
-                <posx>0</posx>
-                <posy>0</posy>
-                <width>ScreenWidth</width>
-                <height>ScreenHeight</height>
-                <texturenofocus>-</texturenofocus>
-                <texturefocus>-</texturefocus>
-                <onclick>Skin.Reset(SubtitleSourceChooserVisible)</onclick>
+            <control type="label">
+                <description>Available sources label</description>
+                <posx>880</posx>
+                <posy>45</posy>
+                <width>300</width>
+                <label>$LOCALIZE[SCRIPT760]</label>
+                <font>Medium</font>
             </control>
             <control type="group">
-                <posx>330</posx>
-                <posy>230</posy>
-                <control type="label">
-                    <description>Available sources label</description>
-                    <posx>10</posx>
-                    <posy>5</posy>
+                <posx>880</posx>
+                <posy>115</posy>
+                <control type="list" id="150">
+                    <posx>0</posx>
+                    <posy>0</posy>
                     <width>300</width>
-                    <height>25</height>
-                    <label>$LOCALIZE[SCRIPT760]</label>
-                    <align>center</align>
-                    <aligny>top</aligny>
-                </control>
-                <control type="panel" id="150">
-                    <posx>11</posx>
-                    <posy>40</posy>
-                    <width>298</width>
                     <height>390</height>
-                    <onleft>150</onleft>
+                    <onleft>120</onleft>
                     <onright>150</onright>
                     <onup>150</onup>
                     <ondown>150</ondown>
-                    <viewtype label="535">list</viewtype>
                     <scrolltime>200</scrolltime>
-                    <itemlayout width="298" height="60">
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>298</width>
-                            <height>60</height>
-                            <texture>button-nofocus.png</texture>
-                        </control>
+                    <itemlayout width="298" height="45">
                         <control type="label">
-                            <posx>149</posx>
+                            <posx>10</posx>
                             <posy>0</posy>
                             <width>290</width>
-                            <height>60</height>
-                            <aligny>center</aligny>
-                            <align>center</align>
                             <info>ListItem.Label</info>
                         </control>
                     </itemlayout>
-                    <focusedlayout width="298" height="60">
+                    <focusedlayout width="298" height="45">
                         <control type="image">
                             <posx>0</posx>
                             <posy>0</posy>
                             <width>298</width>
-                            <height>60</height>
-                            <texture>button-focus2.png</texture>
+                            <height>45</height>
+                            <texture>other_textures/buttonfo.png</texture>
+                            <visible>Control.HasFocus(150)</visible>
                         </control>
                         <control type="label">
-                            <posx>149</posx>
+                            <posx>10</posx>
                             <posy>0</posy>
                             <width>290</width>
-                            <height>60</height>
-                            <aligny>center</aligny>
-                            <align>center</align>
                             <info>ListItem.Label</info>
+                            <textcolor>Accent</textcolor>
+                            <visible>Control.HasFocus(150)</visible>
+                        </control>
+                        <control type="label">
+                            <posx>10</posx>
+                            <posy>0</posy>
+                            <width>290</width>
+                            <info>ListItem.Label</info>
+                            <visible>!Control.HasFocus(150)</visible>
                         </control>
                     </focusedlayout>
                 </control>
@@ -275,5 +248,6 @@
             <visible>Container(120).HasNext</visible>
             <animation effect="fade" time="400">VisibleChange</animation>
         </control>
+    </control>
     </controls>
 </window>
