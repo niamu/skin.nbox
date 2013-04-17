@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <includes>
-    <include name="Viewtype_MusicVideos">
+    <include name="Viewtype_MusicVideos_List">
         <control type="image">
             <posx>-12</posx>
             <posy>174</posy>
@@ -24,8 +24,8 @@
             </animation>
         </control>
         <control type="group">
-            <visible>Control.IsVisible(59)</visible>
-            <description>Music Videos View (id=59)</description>
+            <visible>Control.IsVisible(590)</visible>
+            <description>Music Videos List View (id=590)</description>
             <visible>Container.Content(musicvideos)</visible>
             <animation type="TYPE" condition="Window.IsVisible(2003)" reversible="false">
                 <effect type="slide" end="-1500,0" time="200" />
@@ -73,131 +73,86 @@
                 <visible>StringCompare(ListItem.Title, )</visible>
                 <bordersize>4</bordersize>
             </control>
-            <control type="panel" id="59">
-                <posx>395</posx>
+            <control type="image">
+                <posx>396</posx>
+                <posy>288</posy>
+                <width>875</width>
+                <height>315</height>
+                <texture>music_fanart_diffuse.png</texture>
+                <fadetime>200</fadetime>
+                <aspectratio scalediffuse="false">stretch</aspectratio>
+            </control>
+            <control type="list" id="590">
+                <posx>396</posx>
                 <posy>288</posy>
                 <width>875</width>
                 <height>320</height>
                 <scrolltime>200</scrolltime>
-                <onup>59</onup>
-                <ondown>59</ondown>
+                <onup>590</onup>
+                <ondown>590</ondown>
                 <onright>left</onright>
                 <onright>left</onright>
                 <onright>left</onright>
                 <onright>right</onright>
                 <onright>down</onright>
                 <onleft>9000</onleft>
-                <viewtype label="Music Videos View">Music Videos View</viewtype>
+                <viewtype label="Music Videos List View">Music Videos List View</viewtype>
                 <orientation>vertical</orientation>
                 <focusposition>4</focusposition>
                 <pagecontrol>63</pagecontrol>
                 <visible>Container.Content(musicvideos)</visible>
-                <itemlayout width="175" height="160">
+                <itemlayout height="45">
+                    <control type="label">
+                        <posx>6</posx>
+                        <width>730</width>
+                        <label>$INFO[ListItem.Title] $INFO[ListItem.Artist,$LOCALIZE[31716] ]</label>
+                    </control>
+                    <control type="image">
+                        <posx>830</posx>
+                        <posy>-</posy>
+                        <width>45</width>
+                        <height>45</height>
+                        <texture>watched.png</texture>
+                        <visible>stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+                    </control>
+                    <control type="image">
+                        <posx>830</posx>
+                        <posy>-</posy>
+                        <width>45</width>
+                        <height>45</height>
+                        <texture>watching.png</texture>
+                        <visible>ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
+                    </control>
+                </itemlayout>
+                <focusedlayout height="45">
                     <control type="image">
                         <posx>0</posx>
                         <posy>0</posy>
-                        <width>170</width>
-                        <height>155</height>
+                        <width>875</width>
+                        <height>45</height>
                         <texture>tile.png</texture>
                         <aspectratio>scale</aspectratio>
                     </control>
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>170</width>
-                        <height>155</height>
-                        <texture>$INFO[ListItem.Icon]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <colordiffuse>ImageDiffuse</colordiffuse>
-                    </control>
                     <control type="label">
-                        <label>$INFO[ListItem.Title]</label>
                         <posx>6</posx>
-                        <posy>121</posy>
-                        <height>30</height>
-                        <width>158</width>
-                        <font>button_bold</font>
-                        <align>left</align>
+                        <width>730</width>
+                        <label>[COLOR Accent]$INFO[ListItem.Title] $INFO[ListItem.Artist,[COLOR White]$LOCALIZE[31716] [/COLOR]][/COLOR]</label>
                     </control>
                     <control type="image">
-                        <posx>110</posx>
+                        <posx>830</posx>
                         <posy>-</posy>
-                        <width>60</width>
-                        <height>60</height>
+                        <width>45</width>
+                        <height>45</height>
                         <texture>watched.png</texture>
-                        <animation type="Unfocus" reversible="false">
-                            <effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
-                            <effect type="fade" start="80" end="100" time="400" />
-                        </animation>
-                        <visible>[Container.Content(musicvideos) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
+                        <visible>stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
                     </control>
                     <control type="image">
-                        <posx>110</posx>
+                        <posx>830</posx>
                         <posy>-</posy>
-                        <width>60</width>
-                        <height>60</height>
+                        <width>45</width>
+                        <height>45</height>
                         <texture>watching.png</texture>
-                        <animation type="Unfocus" reversible="false">
-                            <effect type="zoom" center="0,0" start="80" end="120" time="400" tween="back" easing="out" />
-                            <effect type="fade" start="80" end="100" time="400" />
-                        </animation>
-                        <visible>Container.Content(musicvideos) + ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
-                    </control>
-                </itemlayout>
-                <focusedlayout width="175" height="160">
-                    <control type="image">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <width>170</width>
-                        <height>155</height>
-                        <texture>$INFO[ListItem.Icon]</texture>
-                        <aspectratio>scale</aspectratio>
-                        <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
-                    </control>
-                    <control type="group">
-                        <posx>0</posx>
-                        <posy>0</posy>
-                        <animation effect="fade" start="50" time="400" easing="out" tween="square">Focus</animation>
-                        <control type="image">
-                            <posx>0</posx>
-                            <posy>0</posy>
-                            <width>170</width>
-                            <height>155</height>
-                            <texture>button_fade.png</texture>
-                        </control>
-                    </control>
-                    <control type="image">
-                        <posx>110</posx>
-                        <posy>0</posy>
-                        <width>60</width>
-                        <height>60</height>
-                        <texture>watched.png</texture>
-                        <animation type="Focus" reversible="false">
-                            <effect type="zoom" center="170,0" start="80" end="120" time="400" tween="back" easing="out" />
-                            <effect type="fade" start="80" end="100" time="400" />
-                        </animation>
-                        <visible>[Container.Content(musicvideos) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
-                    </control>
-                    <control type="image">
-                        <posx>110</posx>
-                        <posy>0</posy>
-                        <width>60</width>
-                        <height>60</height>
-                        <texture>watching.png</texture>
-                        <animation type="Focus" reversible="false">
-                            <effect type="zoom" center="170,0" start="80" end="120" time="400" tween="back" easing="out" />
-                            <effect type="fade" start="80" end="100" time="400" />
-                        </animation>
-                        <visible>Container.Content(musicvideos) + ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
-                    </control>
-                    <control type="label">
-                        <label>[COLOR Accent]$INFO[ListItem.Title][/COLOR]</label>
-                        <posx>6</posx>
-                        <posy>121</posy>
-                        <height>30</height>
-                        <width>158</width>
-                        <font>button_bold</font>
-                        <align>left</align>
+                        <visible>ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
                     </control>
                 </focusedlayout>
             </control>

@@ -2,7 +2,7 @@
 <window id="6">
     <defaultcontrol always="true">50</defaultcontrol>
     <allowoverlay>yes</allowoverlay>
-    <views>50,54,55,56,57,58,59</views>
+    <views>50,54,55,56,57,58,59,590</views>
     <controls>
         <control type="group">
             <include>HomeBackground</include>
