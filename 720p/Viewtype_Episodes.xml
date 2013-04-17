@@ -49,7 +49,7 @@
                 <texture>white_box.png</texture>
                 <fadetime>200</fadetime>
                 <aspectratio scalediffuse="false">stretch</aspectratio>
-                <visible>!StringCompare(ListItem.Title, ) + !IsEmpty(ListItem.Art(tvshow.poster))</visible>
+                <visible>!IsEmpty(ListItem.Title) + !StringCompare(ListItem.Title, ) + !IsEmpty(ListItem.Art(tvshow.poster))</visible>
             </control>
             <control type="image">
                 <posx>76</posx>
@@ -59,7 +59,7 @@
                 <texture background="true">$INFO[ListItem.Art(tvshow.poster)]</texture>
                 <fadetime>200</fadetime>
                 <aspectratio scalediffuse="false">scale</aspectratio>
-                <visible>!StringCompare(ListItem.Title, ) + !IsEmpty(ListItem.Art(tvshow.poster)</visible>
+                <visible>!IsEmpty(ListItem.Title) + !StringCompare(ListItem.Title, ) + !IsEmpty(ListItem.Art(tvshow.poster)</visible>
                 <bordersize>4</bordersize>
             </control>
             <control type="image">
@@ -67,10 +67,21 @@
                 <posy>288</posy>
                 <width>215</width>
                 <height>315</height>
-                <texture background="true">defaultfolder.png</texture>
+                <texture background="true">$INFO[ListItem.Icon]</texture>
                 <fadetime>200</fadetime>
                 <aspectratio scalediffuse="false">keep</aspectratio>
-                <visible>!StringCompare(ListItem.Title, ) + IsEmpty(ListItem.Art(tvshow.poster)</visible>
+                <visible>IsEmpty(ListItem.Title)</visible>
+                <bordersize>4</bordersize>
+            </control>
+            <control type="image">
+                <posx>76</posx>
+                <posy>288</posy>
+                <width>215</width>
+                <height>315</height>
+                <texture background="true">defaultvideo.png</texture>
+                <fadetime>200</fadetime>
+                <aspectratio scalediffuse="false">keep</aspectratio>
+                <visible>!IsEmpty(ListItem.Title) + !StringCompare(ListItem.Title, ) + IsEmpty(ListItem.Art(tvshow.poster)</visible>
                 <bordersize>4</bordersize>
             </control>
             <control type="panel" id="57">
