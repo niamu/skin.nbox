@@ -268,17 +268,6 @@
                 <font>Plot_Font</font>
                 <textcolor>White</textcolor>
             </control>
-            <control type="textbox">
-                <posx>840</posx>
-                <posy>360</posy>
-                <width>420</width>
-                <height>215</height>
-                <info>ListItem.Plot</info>
-                <align>justify</align>
-                <autoscroll time="3000" delay="6000" repeat="8000"></autoscroll>
-                <font>Plot_Font</font>
-                <textcolor>White</textcolor>
-            </control>
             <control type="fadelabel" id="140">
                 <posx>295</posx>
                 <posy>171</posy>
