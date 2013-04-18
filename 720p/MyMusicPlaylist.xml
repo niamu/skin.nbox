@@ -52,13 +52,6 @@
             <animation type="Conditional" condition="!ControlGroup(9000).HasFocus() | Window.IsActive(PlayerControls)">
                 <effect type="slide" start="0,0" end="-305,0" time="300" easing="out" tween="cubic" />
             </animation>
-            <control type="button" id="2">
-                <description>View</description>
-                <width>240</width>
-                <align>left</align>
-                <font>small</font>
-                <textcolor>black</textcolor>
-            </control>
             <control type="button" id="3">
                 <description>Sort</description>
                 <width>240</width>

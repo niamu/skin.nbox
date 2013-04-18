@@ -3941,7 +3941,18 @@
                     <bordertexture border="5">tile.png</bordertexture>
                     <bordersize>5</bordersize>
                     <aspectratio align="right" aligny="top">stretch</aspectratio>
-                    <visible>IsEmpty(VideoPlayer.TVShowTitle)</visible>
+                    <visible>IsEmpty(VideoPlayer.TVShowTitle) + !VideoPlayer.Content(musicvideos)</visible>
+                </control>
+                <control type="image">
+                    <posx>925</posx>
+                    <posy>290</posy>
+                    <width>315</width>
+                    <height>315</height>
+                    <texture border="2">$INFO[Player.Art(poster)]</texture>
+                    <bordertexture border="5">tile.png</bordertexture>
+                    <bordersize>5</bordersize>
+                    <aspectratio align="right" aligny="top">stretch</aspectratio>
+                    <visible>VideoPlayer.Content(musicvideos)</visible>
                 </control>
                 <control type="image">
                     <posx>925</posx>
