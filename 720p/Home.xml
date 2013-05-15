@@ -761,7 +761,7 @@
                     </focusedlayout>
                     <content>
                         <include condition="Stringcompare(Skin.String(ItemsTypeMovies),$LOCALIZE[31738])">RandomItemsMovies</include>
-                        <include condition="Stringcompare(Skin.String(ItemsTypeMovies),$LOCALIZE[31709] | IsEmpty(Skin.String(ItemsTypeMovies)))">RecentItemsMovies</include>
+                        <include condition="Stringcompare(Skin.String(ItemsTypeMovies),$LOCALIZE[31709]) | IsEmpty(Skin.String(ItemsTypeMovies))">RecentItemsMovies</include>
                         <include condition="Stringcompare(Skin.String(ItemsTypeMovies),$LOCALIZE[31739])">RecommendedItemsMovies</include>
                     </content>
                 </control>
@@ -1675,7 +1675,7 @@
                     </focusedlayout>
                     <content>
                         <include condition="Stringcompare(Skin.String(ItemsTypeTV),$LOCALIZE[31738])">RandomItemsTV</include>
-                        <include condition="Stringcompare(Skin.String(ItemsTypeTV),$LOCALIZE[31709] | IsEmpty(Skin.String(ItemsTypeTV)))">RecentItemsTV</include>
+                        <include condition="Stringcompare(Skin.String(ItemsTypeTV),$LOCALIZE[31709]) | IsEmpty(Skin.String(ItemsTypeTV))">RecentItemsTV</include>
                         <include condition="Stringcompare(Skin.String(ItemsTypeTV),$LOCALIZE[31739])">RecommendedItemsTV</include>
                     </content>
                 </control>
@@ -2625,7 +2625,7 @@
                     </focusedlayout>
                     <content>
                         <include condition="Stringcompare(Skin.String(ItemsTypeMusic),$LOCALIZE[31738])">RandomItemsMusic</include>
-                        <include condition="Stringcompare(Skin.String(ItemsTypeMusic),$LOCALIZE[31709] | IsEmpty(Skin.String(ItemsTypeMusic)))">RecentItemsMusic</include>
+                        <include condition="Stringcompare(Skin.String(ItemsTypeMusic),$LOCALIZE[31709]) | IsEmpty(Skin.String(ItemsTypeMusic))">RecentItemsMusic</include>
                         <include condition="Stringcompare(Skin.String(ItemsTypeMusic),$LOCALIZE[31739])">RecommendedItemsMusic</include>
                     </content>
                 </control>
