@@ -147,7 +147,7 @@
                         <font>Sort_Font_Small</font>
                         <textcolor>white</textcolor>
                         <label>$INFO[ListItem.Duration]</label>
-                        <visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,[LOWERCASE]$LOCALIZE[31299][/LOWERCASE]) + IsEmpty(ListItem.Genre) + Container.Content(movies)</visible>
+                        <visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,$LOCALIZE[31299]) + IsEmpty(ListItem.Genre) + Container.Content(movies)</visible>
                     </control>
                     <control type="label">
                         <posx>550</posx>

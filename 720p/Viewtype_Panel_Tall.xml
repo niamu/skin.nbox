@@ -278,7 +278,7 @@
                 <font>Artist_Font</font>
                 <textcolor>White</textcolor>
                 <label>$INFO[ListItem.Duration]</label>
-                <visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,[LOWERCASE]$LOCALIZE[31299][/LOWERCASE]) + Container.Content(movies)</visible>
+                <visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,$LOCALIZE[31299]) + Container.Content(movies)</visible>
             </control>
             <control type="label">
                 <posx>840</posx>
@@ -305,7 +305,7 @@
                 <height>50</height>
                 <textcolor>Accent</textcolor>
                 <label>$INFO[ListItem.Mpaa]</label>
-                <visible>[Container.Content(movies) | Container.Content(tvshows)] + StringCompare(Container.SortMethod,$LOCALIZE[20074]</visible>
+                <visible>[Container.Content(movies) | Container.Content(tvshows)] + StringCompare(Container.SortMethod,$LOCALIZE[20074])</visible>
             </control>
             <control type="label">
                 <posx>840</posx>
@@ -314,7 +314,7 @@
                 <height>50</height>
                 <textcolor>Accent</textcolor>
                 <label>$INFO[ListItem.DateAdded]</label>
-                <visible>[Container.Content(movies) | Container.Content(tvshows)] + StringCompare(Container.SortMethod,$LOCALIZE[570]</visible>
+                <visible>[Container.Content(movies) | Container.Content(tvshows)] + StringCompare(Container.SortMethod,$LOCALIZE[570])</visible>
             </control>
             <control type="textbox">
                 <posx>840</posx>
@@ -418,7 +418,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
                 <label>$INFO[ListItem.Duration]</label>
-                <visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,[LOWERCASE]$LOCALIZE[31299][/LOWERCASE]) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline) + Container.Content(Movies)</visible>
+                <visible>!IsEmpty(ListItem.Duration) + SubString(ListItem.Duration,$LOCALIZE[31299]) + IsEmpty(ListItem.Director) + IsEmpty(ListItem.Tagline) + Container.Content(Movies)</visible>
             </control>
             <control type="label">
                 <posx>295</posx>
