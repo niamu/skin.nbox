@@ -70,7 +70,7 @@
                     <control type="label">
                         <posx>65</posx>
                         <width>730</width>
-                        <label>$INFO[ListItem.Title] $INFO[ListItem.Artist,$LOCALIZE[31716] ]</label>
+                        <label>$INFO[ListItem.Title]</label>
                     </control>
                     <control type="image">
                         <posx>690</posx>
@@ -91,13 +91,13 @@
                     <control type="image">
                         <width>884</width>
                         <height>45</height>
-                        <texture border="5">other_textures/buttonfo.png</texture>
-                        <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(50)">Conditional</animation>
+                        <texture border="5">button.png</texture>
+                        <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(503)">Conditional</animation>
                     </control>
                     <control type="image">
                         <width>45</width>
                         <height>45</height>
-                        <texture border="5">button.png</texture>
+                        <texture border="5">tile.png</texture>
                         <animation type="Focus" reversible="false">
                             <effect type="fade" start="60" end="100" time="400" />
                         </animation>
@@ -111,7 +111,7 @@
                     <control type="label">
                         <posx>65</posx>
                         <width>730</width>
-                        <label>[COLOR Accent]$INFO[ListItem.Title] $INFO[ListItem.Artist,[COLOR White]$LOCALIZE[31716] [/COLOR]][/COLOR]</label>
+                        <label>[COLOR White][B]$INFO[ListItem.Title][/B][/COLOR]</label>
                     </control>
                     <control type="image">
                         <posx>690</posx>
@@ -125,7 +125,7 @@
                         <posx>864</posx>
                         <align>right</align>
                         <width>100</width>
-                        <label>[COLOR Accent]$INFO[ListItem.Duration][/COLOR]</label>
+                        <label>[COLOR White][B]$INFO[ListItem.Duration][/B][/COLOR]</label>
                     </control>
                 </focusedlayout>
             </control>
@@ -184,7 +184,7 @@
                 <aligny>center</aligny>
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
-                <label>[COLOR Accent]$INFO[ListItem.Genre,[COLOR White][LOWERCASE]$LOCALIZE[515][/LOWERCASE]: [/COLOR]][/COLOR]</label>
+                <label>[COLOR Accent]$INFO[ListItem.Artist,[COLOR White][LOWERCASE]$LOCALIZE[557][/LOWERCASE]: [/COLOR]][/COLOR]</label>
                 <visible>Container.Content(Songs)</visible>
             </control>
             <control type="image">

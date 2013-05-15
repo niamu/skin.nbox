@@ -113,19 +113,19 @@
                         <label>$INFO[ListItem.Title]</label>
                     </control>
                     <control type="image">
-                        <posx>430</posx>
-                        <posy>-</posy>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>watched.png</texture>
+                        <posx>450</posx>
+                        <posy>13</posy>
+                        <width>18</width>
+                        <height>15</height>
+                        <texture>watchedpanel.png</texture>
                         <visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
                     </control>
                     <control type="image">
-                        <posx>430</posx>
-                        <posy>-</posy>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>watching.png</texture>
+                        <posx>450</posx>
+                        <posy>13</posy>
+                        <width>18</width>
+                        <height>15</height>
+                        <texture>watchingpanel.png</texture>
                         <visible>Container.Content(Episodes) + ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
                     </control>
                 </itemlayout>
@@ -133,16 +133,17 @@
                     <control type="image">
                         <width>475</width>
                         <height>45</height>
-                        <texture border="5">other_textures/buttonfo.png</texture>
+                        <texture border="5">button.png</texture>
                         <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(57)">Conditional</animation>
                     </control>
                     <control type="image">
                         <width>45</width>
                         <height>45</height>
-                        <texture border="5">button.png</texture>
+                        <texture border="5">tile.png</texture>
                         <animation type="Focus" reversible="false">
                             <effect type="fade" start="60" end="100" time="400" />
                         </animation>
+                        <visible>!IsEmpty(ListItem.Episode)</visible>
                     </control>
                     <control type="label">
                         <posx>22</posx>
@@ -151,25 +152,25 @@
                         <label>[B]$INFO[ListItem.Episode][/B]</label>
                     </control>
                     <control type="image">
-                        <posx>430</posx>
-                        <posy>-</posy>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>watched.png</texture>
+                        <posx>450</posx>
+                        <posy>13</posy>
+                        <width>18</width>
+                        <height>15</height>
+                        <texture>watchedpanel.png</texture>
                         <visible>[Container.Content(Episodes) + stringcompare(ListItem.Overlay,OverlayWatched.png)] | [Container.Content(TVShows) + stringcompare(ListItem.Overlay,OverlayWatched.png)]</visible>
                     </control>
                     <control type="image">
-                        <posx>430</posx>
-                        <posy>-</posy>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>watching.png</texture>
+                        <posx>450</posx>
+                        <posy>13</posy>
+                        <width>18</width>
+                        <height>15</height>
+                        <texture>watchingpanel.png</texture>
                         <visible>Container.Content(Episodes) + ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
                     </control>
                     <control type="label">
                         <posx>65</posx>
                         <width>390</width>
-                        <label>[COLOR Accent]$INFO[ListItem.Title][/COLOR]</label>
+                        <label>[COLOR White][B]$INFO[ListItem.Title][/B][/COLOR]</label>
                     </control>
                 </focusedlayout>
             </control>

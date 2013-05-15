@@ -195,7 +195,7 @@
                     <control type="image">
                         <width>884</width>
                         <height>45</height>
-                        <texture border="2">other_textures/buttonfo.png</texture>
+                        <texture border="2">button.png</texture>
                         <visible>IsEmpty(ListItem.PicturePath) + IsEmpty(ListItem.Property(Addon.Name))</visible>
                     </control>
                     <control type="image">
@@ -207,7 +207,7 @@
                     <control type="label">
                         <posx>10</posx>
                         <width>470</width>
-                        <label>[COLOR Accent]$INFO[ListItem.Label][/COLOR]</label>
+                        <label>[COLOR White][B]$INFO[ListItem.Label][/B][/COLOR]</label>
                         <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(50)">Conditional</animation>
                     </control>
                 </focusedlayout>

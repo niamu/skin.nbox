@@ -68,20 +68,20 @@
                     <control type="label">
                         <posx>20</posx>
                         <width>355</width>
-                        <label>$INFO[ListItem.Label] $INFO[ListItem.Year]</label>
+                        <label>$INFO[ListItem.Label]</label>
                     </control>
                 </itemlayout>
                 <focusedlayout height="45">
                     <control type="image">
                         <width>395</width>
                         <height>45</height>
-                        <texture border="2">other_textures/buttonfo.png</texture>
+                        <texture border="2">button.png</texture>
                         <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(58)">Conditional</animation>
                     </control>
                     <control type="label">
                         <posx>20</posx>
                         <width>355</width>
-                        <label>[COLOR Accent]$INFO[ListItem.Label][/COLOR] $INFO[ListItem.Year]</label>
+                        <label>[COLOR White][B]$INFO[ListItem.Label][/B][/COLOR]</label>
                     </control>
                 </focusedlayout>
             </control>

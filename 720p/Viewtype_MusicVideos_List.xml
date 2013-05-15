@@ -105,22 +105,22 @@
                     <control type="label">
                         <posx>6</posx>
                         <width>730</width>
-                        <label>$INFO[ListItem.Title] $INFO[ListItem.Artist,$LOCALIZE[31716] ]</label>
+                        <label>$INFO[ListItem.Title]</label>
                     </control>
                     <control type="image">
-                        <posx>830</posx>
-                        <posy>-</posy>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>watched.png</texture>
+                        <posx>850</posx>
+                        <posy>13</posy>
+                        <width>18</width>
+                        <height>15</height>
+                        <texture>watchedpanel.png</texture>
                         <visible>stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
                     </control>
                     <control type="image">
-                        <posx>830</posx>
-                        <posy>-</posy>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>watching.png</texture>
+                        <posx>850</posx>
+                        <posy>13</posy>
+                        <width>18</width>
+                        <height>15</height>
+                        <texture>watchingpanel.png</texture>
                         <visible>ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
                     </control>
                 </itemlayout>
@@ -130,28 +130,28 @@
                         <posy>0</posy>
                         <width>875</width>
                         <height>45</height>
-                        <texture>tile.png</texture>
-                        <aspectratio>scale</aspectratio>
+                        <texture border="5">button.png</texture>
+                        <animation effect="fade" start="100" end="50" condition="!Control.HasFocus(590)">Conditional</animation>
                     </control>
                     <control type="label">
                         <posx>6</posx>
                         <width>730</width>
-                        <label>[COLOR Accent]$INFO[ListItem.Title] $INFO[ListItem.Artist,[COLOR White]$LOCALIZE[31716] [/COLOR]][/COLOR]</label>
+                        <label>[COLOR White][B]$INFO[ListItem.Title][/B][/COLOR]</label>
                     </control>
                     <control type="image">
-                        <posx>830</posx>
-                        <posy>-</posy>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>watched.png</texture>
+                        <posx>850</posx>
+                        <posy>13</posy>
+                        <width>18</width>
+                        <height>15</height>
+                        <texture>watchedpanel.png</texture>
                         <visible>stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
                     </control>
                     <control type="image">
-                        <posx>830</posx>
-                        <posy>-</posy>
-                        <width>45</width>
-                        <height>45</height>
-                        <texture>watching.png</texture>
+                        <posx>850</posx>
+                        <posy>13</posy>
+                        <width>18</width>
+                        <height>15</height>
+                        <texture>watchingpanel.png</texture>
                         <visible>ListItem.IsResumable + !stringcompare(ListItem.Overlay,OverlayWatched.png)</visible>
                     </control>
                 </focusedlayout>
