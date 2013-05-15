@@ -72,7 +72,7 @@
             <control type="group">
                 <posx>325</posx>
                 <posy>515</posy>
-                <control type="textbox">
+                <control type="fadelabel">
                     <posx>-175</posx>
                     <posy>165</posy>
                     <width>980</width>
@@ -80,8 +80,7 @@
                     <align>left</align>
                     <shadowcolor>black</shadowcolor>
                     <label>$INFO[VideoPlayer.Plot]</label>
-                    <autoscroll delay="3000" time="3000" repeat="3000">true</autoscroll>
-                    <visible>Window.IsVisible(fullscreeninfo) | Window.IsVisible(seekbar)</visible>
+                    <visible>[Window.IsVisible(fullscreeninfo) | Window.IsVisible(seekbar)] + !Skin.HasSetting(Plot)</visible>
                 </control>
                 <control type="label">
                     <posx>0</posx>

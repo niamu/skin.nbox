@@ -91,6 +91,11 @@
                         <label>16000</label>
                         <onclick>-</onclick>
                     </item>
+                    <item id="3">
+                        <description>OSD</description>
+                        <label>478</label>
+                        <onclick>-</onclick>
+                    </item>
                 </content>
             </control>
             <control type="group" id="99">
@@ -251,6 +256,29 @@
                         <focusedcolor>Accent</focusedcolor>
                         <onclick>Skin.ToggleSetting(LightMode)</onclick>
                         <selected>Skin.HasSetting(LightMode)</selected>
+                        <textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
+                        <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
+                    </control>
+                </control>
+                <control type="grouplist" id="300">
+                    <description>Control Area</description>
+                    <width>820</width>
+                    <height>330</height>
+                    <itemgap>2</itemgap>
+                    <onup>200</onup>
+                    <ondown>200</ondown>
+                    <onleft>1000</onleft>
+                    <onright>-</onright>
+                    <orientation>vertical</orientation>
+                    <visible>Container(1000).Hasfocus(3)</visible>
+                    <control type="radiobutton" id="301">
+                        <description>Toggle Plot Information</description>
+                        <width>820</width>
+                        <align>left</align>
+                        <label>20189</label>
+                        <focusedcolor>Accent</focusedcolor>
+                        <onclick>Skin.ToggleSetting(Plot)</onclick>
+                        <selected>!Skin.HasSetting(Plot)</selected>
                         <textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
                         <textureradionofocus>other_textures/radiobutton2nf.png</textureradionofocus>
                     </control>
