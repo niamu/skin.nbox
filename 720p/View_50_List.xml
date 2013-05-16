@@ -63,7 +63,7 @@
                 <width>250</width>
                 <font>Home_header</font>
                 <align>left</align>
-                <visible>Container.Content(artists) | SubString(Container.FolderName,$LOCALIZE[2])</visible>
+                <visible>Container.Content(artists) | [SubString(Container.FolderName,$LOCALIZE[2] + !Window.IsVisible(AddonBrowser.xml)])</visible>
             </control>
             <control type="label">
                 <label>[LOWERCASE]$LOCALIZE[14022][/LOWERCASE]</label>
@@ -201,7 +201,7 @@
                     <control type="image">
                         <width>510</width>
                         <height>45</height>
-                        <texture border="2">other_textures/buttonfo.png</texture>
+                        <texture border="2">button.png</texture>
                         <visible>!IsEmpty(ListItem.PicturePath) | !IsEmpty(ListItem.Property(Addon.Name))</visible>
                     </control>
                     <control type="label">
