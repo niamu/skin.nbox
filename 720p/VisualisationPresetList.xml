@@ -43,8 +43,8 @@
                 <posy>70</posy>
                 <width>760</width>
                 <height>315</height>
-                <onleft>-</onleft>
-                <onright>-</onright>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
                 <onup>2</onup>
                 <ondown>2</ondown>
                 <itemlayout height="45">

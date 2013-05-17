@@ -27,8 +27,8 @@
                 <align>left</align>
                 <onleft>6</onleft>
                 <onright>1</onright>
-                <onup>-</onup>
-                <ondown>-</ondown>
+                <onup>noop</onup>
+                <ondown>noop</ondown>
                 <visible>!Window.IsVisible(osdvideosettings) + !Window.IsVisible(osdaudiosettings) + !Window.IsVisible(videobookmarks) + !Window.IsVisible(script-XBMC-Subtitles-main.xml)</visible>
                 <control type="button" id="1">
                     <description>Bookmarks</description>
@@ -84,10 +84,10 @@
                     <posy>546</posy>
                     <width>74</width>
                     <height>74</height>
-                    <onleft>-</onleft>
+                    <onleft>noop</onleft>
                     <onright>13</onright>
                     <onup>100</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <label>210</label>
                     <font>-</font>
                     <texturefocus>other_textures/osd/prevtrackgreenfo.png</texturefocus>
@@ -103,7 +103,7 @@
                     <onleft>12</onleft>
                     <onright>14</onright>
                     <onup>1</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <label>31036</label>
                     <font>-</font>
                     <texturefocus>other_textures/osd/rewindgreenfo.png</texturefocus>
@@ -119,7 +119,7 @@
                     <onleft>13</onleft>
                     <onright>15</onright>
                     <onup>2</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <label>31037</label>
                     <altlabel>208</altlabel>
                     <font>-</font>
@@ -139,7 +139,7 @@
                     <onleft>14</onleft>
                     <onright>16</onright>
                     <onup>3</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <label>31038</label>
                     <font>-</font>
                     <texturefocus>other_textures/osd/stopgreenfo.png</texturefocus>
@@ -155,7 +155,7 @@
                     <onleft>15</onleft>
                     <onright>17</onright>
                     <onup>4</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <label>31039</label>
                     <font>-</font>
                     <texturefocus>other_textures/osd/forwardgreenfo.png</texturefocus>
@@ -171,7 +171,7 @@
                     <onleft>16</onleft>
                     <onright>17</onright>
                     <onup>4</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <label>209</label>
                     <font>-</font>
                     <texturefocus>other_textures/osd/nexttrackgreenfo.png</texturefocus>

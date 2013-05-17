@@ -14,7 +14,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
             </control>
-            <control type="fadelabel">
+            <control type="label">
                 <label>[COLOR Accent]$INFO[ListItem.Label][/COLOR] $INFO[ListItem.Title]</label>
                 <posx>395</posx>
                 <posy>171</posy>
@@ -96,7 +96,7 @@
                     <textcolor>White</textcolor>
                     <label>$INFO[Container(11).ListItem.Plot]</label>
                 </control>
-                <control type="fadelabel">
+                <control type="label">
                     <posx>20</posx>
                     <posy>265</posy>
                     <width>350</width>
@@ -193,7 +193,7 @@
                         <align>center</align>
                         <label>[B]$INFO[ListItem.ChannelNumber][/B]</label>
                     </control>
-                    <control type="fadelabel">
+                    <control type="label">
                         <posx>65</posx>
                         <width>265</width>
                         <label>$INFO[ListItem.Label] [COLOR Accent]$INFO[ListItem.Title][/COLOR]</label>
@@ -248,7 +248,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
             </control>
-            <control type="fadelabel">
+            <control type="label">
                 <label>[COLOR Accent]$INFO[ListItem.Label][/COLOR] $INFO[ListItem.Title]</label>
                 <posx>395</posx>
                 <posy>171</posy>
@@ -427,7 +427,7 @@
                         <align>center</align>
                         <label>[B]$INFO[ListItem.ChannelNumber][/B]</label>
                     </control>
-                    <control type="fadelabel">
+                    <control type="label">
                         <posx>65</posx>
                         <width>265</width>
                         <label>$INFO[ListItem.Label] [COLOR Accent]$INFO[ListItem.Title][/COLOR]</label>
@@ -482,7 +482,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
             </control>
-            <control type="fadelabel">
+            <control type="label">
                 <label>[COLOR Accent]$INFO[ListItem.Label][/COLOR] $INFO[ListItem.Date]</label>
                 <posx>395</posx>
                 <posy>171</posy>
@@ -575,7 +575,7 @@
                     <fadetime>200</fadetime>
                     <aspectratio scalediffuse="false">stretch</aspectratio>
                 </control>
-                <control type="fadelabel">
+                <control type="label">
                     <posx>20</posx>
                     <posy>12</posy>
                     <width>349</width>
@@ -624,7 +624,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
             </control>
-            <control type="fadelabel">
+            <control type="label">
                 <label>[COLOR Accent]$INFO[ListItem.ChannelName][/COLOR] $INFO[ListItem.Title]</label>
                 <posx>395</posx>
                 <posy>171</posy>
@@ -751,7 +751,7 @@
                     </control>
                 </itemlayout>
                 <focusedlayout height="45" width="140">
-                    <control type="fadelabel" id="1">
+                    <control type="label" id="1">
                         <posx>10</posx>
                         <width>120</width>
                         <label>[COLOR Accent]$INFO[ListItem.Label][/COLOR]</label>
@@ -790,7 +790,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
             </control>
-            <control type="fadelabel">
+            <control type="label">
                 <label>[COLOR Accent]$INFO[ListItem.ChannelName][/COLOR] $INFO[ListItem.Title]</label>
                 <posx>395</posx>
                 <posy>171</posy>
@@ -803,7 +803,7 @@
                 <scrollspeed>50</scrollspeed>
                 <aligny>top</aligny>
             </control>
-            <control type="fadelabel">
+            <control type="label">
                 <label>[COLOR Accent]$LOCALIZE[19040][/COLOR]</label>
                 <posx>395</posx>
                 <posy>171</posy>
@@ -966,7 +966,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
             </control>
-            <control type="fadelabel">
+            <control type="label">
                 <label>[COLOR Accent]$INFO[ListItem.ChannelName][/COLOR] $INFO[ListItem.Title]</label>
                 <posx>395</posx>
                 <posy>171</posy>
@@ -979,7 +979,7 @@
                 <scrollspeed>50</scrollspeed>
                 <aligny>top</aligny>
             </control>
-            <control type="fadelabel">
+            <control type="label">
                 <label>[COLOR Accent]$LOCALIZE[137][/COLOR]</label>
                 <posx>395</posx>
                 <posy>171</posy>
@@ -1009,28 +1009,28 @@
                     <description>Channel header label</description>
                     <posx>10</posx>
                     <width>210</width>
-                    <height>20</height>
+                    <height>45</height>
                     <label>[B]$LOCALIZE[19029][/B]</label>
                 </control>
                 <control type="label">
                     <description>Title header label</description>
                     <posx>220</posx>
                     <width>300</width>
-                    <height>20</height>
+                    <height>45</height>
                     <label>[B]$LOCALIZE[369][/B]</label>
                 </control>
                 <control type="label">
                     <description>Time header label</description>
                     <posx>580</posx>
                     <width>300</width>
-                    <height>20</height>
+                    <height>45</height>
                     <label>[B]$LOCALIZE[21820][/B]</label>
                 </control>
                 <control type="label">
                     <description>Status header label</description>
                     <posx>940</posx>
                     <width>150</width>
-                    <height>20</height>
+                    <height>45</height>
                     <label>[B]$LOCALIZE[126][/B]</label>
                 </control>
             </control>
@@ -1201,7 +1201,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
             </control>
-            <control type="fadelabel">
+            <control type="label">
                 <label>[COLOR Accent]$INFO[ListItem.ChannelName][/COLOR] $INFO[ListItem.Title]</label>
                 <posx>395</posx>
                 <posy>171</posy>
@@ -1420,7 +1420,7 @@
                 <font>Sort_Font_Small</font>
                 <textcolor>White</textcolor>
             </control>
-            <control type="fadelabel">
+            <control type="label">
                 <label>[COLOR Accent]$INFO[ListItem.ChannelName][/COLOR] $INFO[ListItem.Title]</label>
                 <posx>395</posx>
                 <posy>171</posy>

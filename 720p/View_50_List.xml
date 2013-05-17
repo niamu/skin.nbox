@@ -63,7 +63,7 @@
                 <width>250</width>
                 <font>Home_header</font>
                 <align>left</align>
-                <visible>Container.Content(artists) | [SubString(Container.FolderName,$LOCALIZE[2] + !Window.IsVisible(AddonBrowser.xml)])</visible>
+                <visible>Container.Content(artists) | [SubString(Container.FolderName,$LOCALIZE[2]) + !Window.IsVisible(AddonBrowser.xml)]</visible>
             </control>
             <control type="label">
                 <label>[LOWERCASE]$LOCALIZE[14022][/LOWERCASE]</label>

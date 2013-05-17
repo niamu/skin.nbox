@@ -18,7 +18,7 @@
                 <description>Heading</description>
                 <posx>30</posx>
                 <posy>20</posy>
-                <label>-</label>
+                <label></label>
                 <textcolor>black</textcolor>
                 <width>370</width>
                 <font>Large</font>
@@ -28,7 +28,7 @@
                 <description>Line 1</description>
                 <posx>30</posx>
                 <posy>60</posy>
-                <label>-</label>
+                <label></label>
                 <width>370</width>
                 <textcolor>black</textcolor>
                 <scroll>true</scroll>
@@ -37,7 +37,7 @@
                 <description>Line 2</description>
                 <posx>30</posx>
                 <posy>85</posy>
-                <label>-</label>
+                <label></label>
                 <width>370</width>
                 <textcolor>black</textcolor>
                 <scroll>true</scroll>
@@ -46,7 +46,7 @@
                 <description>Line 3</description>
                 <posx>30</posx>
                 <posy>115</posy>
-                <label>-</label>
+                <label></label>
                 <width>370</width>
                 <textcolor>black</textcolor>
                 <scroll>true</scroll>

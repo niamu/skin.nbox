@@ -3,7 +3,7 @@
     <default type="label">
         <posx>0</posx>
         <posy>0</posy>
-        <label>-</label>
+        <label></label>
         <height>44</height>
         <align>left</align>
         <aligny>center</aligny>
@@ -17,7 +17,7 @@
         <posx>0</posx>
         <posy>0</posy>
         <height>44</height>
-        <label>-</label>
+        <label></label>
         <align>left</align>
         <aligny>center</aligny>
         <font>Small</font>
@@ -45,7 +45,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>Small</font>
-        <label>-</label>
+        <label></label>
         <textoffsetx>20</textoffsetx>
         <textcolor>White</textcolor>
         <focusedcolor>White</focusedcolor>
@@ -59,7 +59,7 @@
         <posy>0</posy>
         <width>300</width>
         <height>44</height>
-        <label>-</label>
+        <label></label>
         <textoffsetx>20</textoffsetx>
         <font>Small</font>
         <textcolor>White</textcolor>
@@ -81,7 +81,7 @@
         <align>center</align>
         <aligny>center</aligny>
         <font>Small</font>
-        <label>-</label>
+        <label></label>
         <textcolor>White</textcolor>
         <focusedcolor>White</focusedcolor>
         <disabledcolor>Red</disabledcolor>
@@ -99,7 +99,7 @@
         <posy>0</posy>
         <width>300</width>
         <height>44</height>
-        <label>-</label>
+        <label></label>
         <font>Small</font>
         <spinwidth>26</spinwidth>
         <spinheight>26</spinheight>
@@ -189,7 +189,7 @@
         <orientation>vertical</orientation>
     </default>
     <default type="textbox">
-        <label>-</label>
+        <label></label>
         <font>Small</font>
         <textcolor>white</textcolor>
         <pagecontrol>61</pagecontrol>

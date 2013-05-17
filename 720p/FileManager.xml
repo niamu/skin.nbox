@@ -48,7 +48,7 @@
 					<posx>20</posx>
 					<width>580</width>
 					<align>left</align>
-					<label>-</label>
+					<label></label>
 					<font>Medium</font>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -111,7 +111,7 @@
 					<posy>588</posy>
 					<width>320</width>
 					<align>left</align>
-					<label>-</label>
+					<label></label>
 				</control>
 				<control type="scrollbar" id="2000">
 					<posx>585</posx>
@@ -142,7 +142,7 @@
 					<posx>20</posx>
 					<width>320</width>
 					<align>left</align>
-					<label>-</label>
+					<label></label>
 					<font>Medium</font>
 					<shadowcolor>black</shadowcolor>
 				</control>
@@ -205,7 +205,7 @@
 					<posy>588</posy>
 					<width>320</width>
 					<align>left</align>
-					<label>-</label>
+					<label></label>
 				</control>
 				<control type="scrollbar" id="2100">
 					<posx>585</posx>

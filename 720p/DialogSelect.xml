@@ -92,7 +92,7 @@
                 <align>center</align>
                 <font>Medium</font>
                 <textcolor>black</textcolor>
-                <label>-</label>
+                <label></label>
             </control>
             <control type="button" id="5">
                 <description>Manual</description>

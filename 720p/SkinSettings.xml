@@ -48,7 +48,7 @@
                 <height>370</height>
                 <onup>1000</onup>
                 <ondown>1000</ondown>
-                <onleft>-</onleft>
+                <onleft>noop</onleft>
                 <onright>99</onright>
                 <scrolltime>0</scrolltime>
                 <orientation>vertical</orientation>
@@ -84,17 +84,17 @@
                     <item id="1">
                         <description>Home</description>
                         <label>10000</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                     <item id="2">
                         <description>General</description>
                         <label>16000</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                     <item id="3">
                         <description>OSD</description>
                         <label>478</label>
-                        <onclick>-</onclick>
+                        <onclick>noop</onclick>
                     </item>
                 </content>
             </control>
@@ -109,7 +109,7 @@
                     <onup>100</onup>
                     <ondown>100</ondown>
                     <onleft>1000</onleft>
-                    <onright>-</onright>
+                    <onright>noop</onright>
                     <orientation>vertical</orientation>
                     <visible>Container(1000).Hasfocus(1)</visible>
                     <control type="radiobutton" id="101">
@@ -212,7 +212,7 @@
                     <onup>200</onup>
                     <ondown>200</ondown>
                     <onleft>1000</onleft>
-                    <onright>-</onright>
+                    <onright>noop</onright>
                     <orientation>vertical</orientation>
                     <visible>Container(1000).Hasfocus(2)</visible>
                     <control type="radiobutton" id="201">
@@ -268,7 +268,7 @@
                     <onup>200</onup>
                     <ondown>200</ondown>
                     <onleft>1000</onleft>
-                    <onright>-</onright>
+                    <onright>noop</onright>
                     <orientation>vertical</orientation>
                     <visible>Container(1000).Hasfocus(3)</visible>
                     <control type="radiobutton" id="301">

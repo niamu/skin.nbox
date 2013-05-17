@@ -104,7 +104,7 @@
                     </control>
                     <control type="button" id="6">
                         <description>Record</description>
-                        <label>-</label>
+                        <label></label>
                         <width>180</width>
                         <align>right</align>
                         <focusedcolor>Accent</focusedcolor>

@@ -39,8 +39,8 @@
                 <width>300</width>
                 <height>345</height>
                 <itemgap>2</itemgap>
-                <onleft>-</onleft>
-                <onright>-</onright>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
                 <onup>9004</onup>
                 <ondown>9004</ondown>
                 <control type="button" id="4495">
@@ -64,9 +64,9 @@
                     <width>820</width>
                     <label>20096</label>
                     <align>left</align>
-                    <onright>-</onright>
+                    <onright>noop</onright>
                     <onleft>4495</onleft>
-                    <onup>-</onup>
+                    <onup>noop</onup>
                     <ondown>2</ondown>
                     <focusedcolor>Accent</focusedcolor>
                     <textureradiofocus>other_textures/radiobutton2fo.png</textureradiofocus>
@@ -78,9 +78,9 @@
                     <width>820</width>
                     <height>322</height>
                     <onleft>4495</onleft>
-                    <onright>-</onright>
+                    <onright>noop</onright>
                     <onup>4</onup>
-                    <ondown>-</ondown>
+                    <ondown>noop</ondown>
                     <itemlayout height="110">
                         <control type="image">
                             <width>820</width>

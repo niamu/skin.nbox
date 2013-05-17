@@ -17,14 +17,14 @@
                 <description>Heading</description>
                 <posx>10</posx>
                 <width>250</width>
-                <label>-</label>
+                <label></label>
                 <textcolor>Accent</textcolor>
             </control>
             <control type="label" id="12">
                 <description>Label</description>
                 <posx>410</posx>
                 <width>250</width>
-                <label>-</label>
+                <label></label>
                 <align>right</align>
             </control>
             <control type="slider" id="11">
@@ -32,8 +32,8 @@
                 <posx>10</posx>
                 <posy>44</posy>
                 <width>400</width>
-                <onup>-</onup>
-                <ondown>-</ondown>
+                <onup>noop</onup>
+                <ondown>noop</ondown>
                 <onleft>11</onleft>
                 <onright>11</onright>
             </control>

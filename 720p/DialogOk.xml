@@ -19,7 +19,7 @@
                 <posx>30</posx>
                 <posy>20</posy>
                 <width>370</width>
-                <label>-</label>
+                <label></label>
                 <font>Large</font>
                 <align>left</align>
                 <textcolor>black</textcolor>
@@ -29,7 +29,7 @@
                 <posx>30</posx>
                 <posy>60</posy>
                 <width>370</width>
-                <label>-</label>
+                <label></label>
                 <textcolor>black</textcolor>
             </control>
             <control type="label" id="3">
@@ -37,7 +37,7 @@
                 <posx>30</posx>
                 <posy>85</posy>
                 <width>370</width>
-                <label>-</label>
+                <label></label>
                 <textcolor>black</textcolor>
             </control>
             <control type="label" id="4">
@@ -45,7 +45,7 @@
                 <posx>30</posx>
                 <posy>115</posy>
                 <width>370</width>
-                <label>-</label>
+                <label></label>
                 <textcolor>black</textcolor>
             </control>
             <control type="button" id="10">

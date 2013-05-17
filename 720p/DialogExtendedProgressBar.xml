@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <window id="151">
-    <defaultcontrol always="true">31</defaultcontrol>
+    <defaultcontrol></defaultcontrol>
     <allowoverlay>yes</allowoverlay>
     <controls>
         <control type="group">
@@ -34,7 +34,7 @@
                 <posy>50</posy>
                 <width>320</width>
                 <height>32</height>
-                <label>-</label>
+                <label></label>
                 <textcolor>white</textcolor>
                 <scroll>true</scroll>
             </control>
@@ -44,7 +44,7 @@
                 <posy>20</posy>
                 <width>320</width>
                 <height>32</height>
-                <label>-</label>
+                <label></label>
                 <textcolor>white</textcolor>
                 <scroll>true</scroll>
                 <font>Large</font>

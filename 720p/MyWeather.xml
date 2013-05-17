@@ -508,7 +508,7 @@
                     <width>240</width>
                     <align>left</align>
                     <font>small</font>
-                    <label>-</label>
+                    <label></label>
                     <textcolor>-</textcolor>
                     <focusedcolor>-</focusedcolor>
                 </control>

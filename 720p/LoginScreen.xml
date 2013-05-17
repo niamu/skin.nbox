@@ -59,7 +59,7 @@
                 <align>left</align>
                 <onup>20</onup>
                 <ondown>20</ondown>
-                <onleft>-</onleft>
+                <onleft>noop</onleft>
                 <onright>52</onright>
             </control>
             <control id="2011">
@@ -106,8 +106,8 @@
                 <align>left</align>
                 <onup>2001</onup>
                 <ondown>2001</ondown>
-                <onleft>-</onleft>
-                <onright>-</onright>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
                 <onclick>ActivateWindow(shutdownmenu)</onclick>
             </control>
             <control id="2016">
@@ -167,7 +167,7 @@
                 <orientation>vertical</orientation>
                 <onup>52</onup>
                 <onleft>2001</onleft>
-                <onright>-</onright>
+                <onright>noop</onright>
                 <ondown>52</ondown>
                 <pagecontrol>63</pagecontrol>
                 <preloaditems>2</preloaditems>

@@ -56,10 +56,10 @@
                     <posy>177</posy>
                     <width>650</width>
                     <height>366</height>
-                    <onleft>-</onleft>
+                    <onleft>noop</onleft>
                     <onright>1</onright>
-                    <onup>-</onup>
-                    <ondown>-</ondown>
+                    <onup>noop</onup>
+                    <ondown>noop</ondown>
                     <onclick>fullscreen</onclick>
                     <visible allowhiddenfocus="true">Control.HasFocus(2)</visible>
                 </control>
@@ -109,10 +109,10 @@
                     <posy>177</posy>
                     <width>650</width>
                     <height>366</height>
-                    <onleft>-</onleft>
+                    <onleft>noop</onleft>
                     <onright>1</onright>
-                    <onup>-</onup>
-                    <ondown>-</ondown>
+                    <onup>noop</onup>
+                    <ondown>noop</ondown>
                     <onclick>fullscreen</onclick>
                     <visible allowhiddenfocus="true">Control.HasFocus(2)</visible>
                 </control>
@@ -286,15 +286,15 @@
                 <usecontrolcoords>true</usecontrolcoords>
                 <onleft>2</onleft>
                 <onright>1</onright>
-                <onup>-</onup>
-                <ondown>-</ondown>
+                <onup>noop</onup>
+                <ondown>noop</ondown>
                 <control type="button" id="401">
                     <description>Skip Back</description>
                     <posy>5</posy>
                     <posx>0</posx>
                     <width>70</width>
                     <height>70</height>
-                    <label>-</label>
+                    <label></label>
                     <texturefocus>other_textures/osd/prevtrackfo.png</texturefocus>
                     <texturenofocus>other_textures/osd/prevtracknf.png</texturenofocus>
                     <onclick>playercontrol(previous)</onclick>
@@ -305,7 +305,7 @@
                     <posx>5</posx>
                     <width>50</width>
                     <height>50</height>
-                    <label>-</label>
+                    <label></label>
                     <texturefocus>other_textures/osd/rewindfo.png</texturefocus>
                     <texturenofocus>other_textures/osd/rewindnf.png</texturenofocus>
                     <onclick>playercontrol(rewind)</onclick>
@@ -314,7 +314,7 @@
                     <description>Play/pause</description>
                     <width>80</width>
                     <height>80</height>
-                    <label>-</label>
+                    <label></label>
                     <texturefocus>other_textures/osd/pausefo.png</texturefocus>
                     <texturenofocus>other_textures/osd/pausenf.png</texturenofocus>
                     <usealttexture>Player.paused | Player.Forwarding | Player.rewinding</usealttexture>
@@ -327,7 +327,7 @@
                     <posy>15</posy>
                     <width>50</width>
                     <height>50</height>
-                    <label>-</label>
+                    <label></label>
                     <texturefocus>other_textures/osd/stopfo.png</texturefocus>
                     <texturenofocus>other_textures/osd/stopnf.png</texturenofocus>
                     <onclick>playercontrol(stop)</onclick>
@@ -337,7 +337,7 @@
                     <posy>15</posy>
                     <width>50</width>
                     <height>50</height>
-                    <label>-</label>
+                    <label></label>
                     <texturefocus>other_textures/osd/forwardfo.png</texturefocus>
                     <texturenofocus>other_textures/osd/forwardnf.png</texturenofocus>
                     <onclick>playercontrol(forward)</onclick>
@@ -348,7 +348,7 @@
                     <posx>5</posx>
                     <width>70</width>
                     <height>70</height>
-                    <label>-</label>
+                    <label></label>
                     <texturefocus>other_textures/osd/nexttrackfo.png</texturefocus>
                     <texturenofocus>other_textures/osd/nexttracknf.png</texturenofocus>
                     <onclick>playercontrol(next)</onclick>

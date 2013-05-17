@@ -49,7 +49,7 @@
             <posy>40</posy>
             <width>1240</width>
             <align>center</align>
-            <label>-</label>
+            <label></label>
         </control>
         <control type="label" id="3">
             <description>help information</description>
@@ -57,7 +57,7 @@
             <posy>70</posy>
             <width>1240</width>
             <align>center</align>
-            <label>-</label>
+            <label></label>
         </control>
     </controls>
 </window>

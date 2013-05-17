@@ -27,7 +27,7 @@
                 <posy>50</posy>
                 <width>320</width>
                 <height>32</height>
-                <label>-</label>
+                <label></label>
                 <textcolor>white</textcolor>
                 <scroll>true</scroll>
             </control>
@@ -37,7 +37,7 @@
                 <posy>20</posy>
                 <width>320</width>
                 <height>32</height>
-                <label>-</label>
+                <label></label>
                 <textcolor>white</textcolor>
                 <scroll>true</scroll>
                 <font>Large</font>

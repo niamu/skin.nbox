@@ -31,7 +31,7 @@
                 <width>720</width>
                 <height>370</height>
                 <onleft>9000</onleft>
-                <onright>-</onright>
+                <onright>noop</onright>
                 <ondown>11</ondown>
                 <onup>11</onup>
                 <scrolltime>200</scrolltime>

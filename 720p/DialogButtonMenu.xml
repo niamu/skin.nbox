@@ -36,8 +36,8 @@
                 <width>340</width>
                 <height>382</height>
                 <itemgap>2</itemgap>
-                <onleft>-</onleft>
-                <onright>-</onright>
+                <onleft>noop</onleft>
+                <onright>noop</onright>
                 <onup>1</onup>
                 <ondown>1</ondown>
                 <orientation>vertical</orientation>

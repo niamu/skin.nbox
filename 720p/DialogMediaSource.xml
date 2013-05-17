@@ -113,7 +113,7 @@
                 <description>Name</description>
                 <posx>30</posx>
                 <posy>448</posy>
-                <label>-</label>
+                <label></label>
                 <width>340</width>
                 <align>center</align>
                 <textoffsetx>20</textoffsetx>

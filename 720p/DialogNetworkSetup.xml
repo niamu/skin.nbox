@@ -40,7 +40,7 @@
                 <posy>106</posy>
                 <width>400</width>
                 <align>left</align>
-                <label>-</label>
+                <label></label>
                 <textoffsetx>20</textoffsetx>
                 <onup>10</onup>
                 <onleft>12</onleft>
@@ -63,7 +63,7 @@
                 <posx>10</posx>
                 <posy>152</posy>
                 <width>580</width>
-                <label>-</label>
+                <label></label>
                 <onup>11</onup>
                 <onleft>16</onleft>
                 <onright>16</onright>

@@ -90,13 +90,13 @@
                 </control>
             </control>
             <control type="group" id="50">
-                <include>EPGTimelineView</include>
                 <include>LiveTVChannelView</include>
                 <include>LiveRadioChannelView</include>
-                <include>LiveTVRecordingsView</include>
-                <include>LiveTVTimersView</include>
+                <include>EPGTimelineView</include>
                 <include>LiveTVGuideChannelView</include>
                 <include>LiveTVGuideNowNextView</include>
+                <include>LiveTVRecordingsView</include>
+                <include>LiveTVTimersView</include>
                 <include>LiveTVSearchView</include>
             </control>
         </control>
@@ -216,7 +216,7 @@
                     <font>small</font>
                     <textcolor>black</textcolor>
                     <label>137</label>
-                    <onclick>-</onclick>
+                    <onclick>noop</onclick>
                     <onclick>17</onclick>
                 </control>
             </control>

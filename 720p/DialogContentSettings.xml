@@ -67,7 +67,7 @@
                 <posy>180</posy>
                 <width>340</width>
                 <font>-</font>
-                <label>-</label>
+                <label></label>
                 <align>right</align>
                 <onup>29</onup>
                 <ondown>4</ondown>
