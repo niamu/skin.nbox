@@ -69,7 +69,9 @@
                         <description>Shutdown</description>
                         <width>340</width>
                         <label>13005</label>
-                        <onclick>ShutDown()</onclick>
+                        <!--onclick>ShutDown()</onclick-->
+						<onclick condition="System.CanPowerDown">XBMC.Powerdown()</onclick>
+                        <onclick condition="!System.CanPowerDown">XBMC.Shutdown()</onclick>
                         <align>right</align>
                         <textcolor>black</textcolor>
                         <focusedcolor>white</focusedcolor>
@@ -96,7 +98,7 @@
                         <description>Exit</description>
                         <width>340</width>
                         <label>$LOCALIZE[13012]</label>
-                        <onclick>Quit()</onclick>
+                        <onclick>XBMC.Quit()</onclick>
                         <align>right</align>
                         <textcolor>black</textcolor>
                         <focusedcolor>white</focusedcolor>
